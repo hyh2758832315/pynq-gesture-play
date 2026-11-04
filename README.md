@@ -39,6 +39,10 @@ Studio 安装、离线测试与硬件重建命令见 [工程 README](project/REA
 
 项目自有源码、文档及自制测试动画采用 [MIT](LICENSE)，第三方范围见 [许可说明](THIRD_PARTY_NOTICES.md)。
 
+## 项目作者
+
+[hyh2758832315](https://github.com/hyh2758832315) · [Cui-Peiqi](https://github.com/Cui-Peiqi) · [HH-bit-dev](https://github.com/HH-bit-dev)
+
 ## 参考项目与致谢
 
 感谢以下开源项目提供的实现基础、硬件方案和设计参考。
