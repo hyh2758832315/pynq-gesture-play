@@ -10,7 +10,7 @@ INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been d
 # Command line       : vivado.exe -mode tcl -log .vivado-ai\vivado_68166625_e074bbf4.log -journal .vivado-ai\vivado_68166625_e074bbf4.jou -notrace -source .vivado-ai\init_68166625_e074bbf4.tcl
 # Log file           : E:/projects/fpga/voice-view-game/build/contest-v3-work/.vivado-ai/vivado_68166625_e074bbf4.log
 # Journal file       : E:/projects/fpga/voice-view-game/build/contest-v3-work\.vivado-ai\vivado_68166625_e074bbf4.jou
-# Running On         : DESKTOP-JBJOBKD
+# Running On         : build-host
 # Platform           : Windows 11
 # Operating System   : 26200
 # Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics

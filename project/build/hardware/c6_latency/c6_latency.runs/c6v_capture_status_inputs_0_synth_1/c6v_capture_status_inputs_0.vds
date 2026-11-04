@@ -10,7 +10,7 @@ INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been d
 # Command line       : vivado.exe -log c6v_capture_status_inputs_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_capture_status_inputs_0.tcl
 # Log file           : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_status_inputs_0_synth_1/c6v_capture_status_inputs_0.vds
 # Journal file       : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_status_inputs_0_synth_1\vivado.jou
-# Running On         : DESKTOP-JBJOBKD
+# Running On         : build-host
 # Platform           : Windows 11
 # Operating System   : 26200
 # Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics

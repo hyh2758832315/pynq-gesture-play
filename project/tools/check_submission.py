@@ -28,6 +28,10 @@ def main():
         'report/submission_checklist.md', 'report/report_materials.md',
         'report/templates/official_report_template.docx',
         'report/requirements/recheck_20261104.json', 'data/report_metrics.csv',
+        'report/ai_collaboration.md', 'report/gpu_optimization.md',
+        'build/scripts/apply_gpu_profile.tcl', 'tools/prepare_runtime.py',
+        'data/gpu_optimization/measurements.csv', 'data/gpu_optimization/resources.csv',
+        'sim/gpu_optimization/run_compare.tcl',
     ]
     failures.extend('missing: '+name for name in required if not (ROOT/name).is_file())
     if failures:

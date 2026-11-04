@@ -1,0 +1,115 @@
+{
+  "assertions": [
+    {
+      "expected": "READY",
+      "field": "values.phase",
+      "message": "",
+      "operator": "eq",
+      "tick": 28
+    },
+    {
+      "expected": "COUNTDOWN",
+      "field": "values.phase",
+      "message": "",
+      "operator": "eq",
+      "tick": 29
+    },
+    {
+      "expected": null,
+      "field": "values.robot_locked",
+      "message": "",
+      "operator": "eq",
+      "tick": 208
+    },
+    {
+      "expected": "fist",
+      "field": "values.human_locked",
+      "message": "",
+      "operator": "eq",
+      "tick": 209
+    },
+    {
+      "expected": "scissors",
+      "field": "values.robot_locked",
+      "message": "",
+      "operator": "eq",
+      "tick": 209
+    },
+    {
+      "expected": "READY",
+      "field": "values.phase",
+      "message": "",
+      "operator": "eq",
+      "tick": 329
+    },
+    {
+      "expected": "COUNTDOWN",
+      "field": "values.phase",
+      "message": "",
+      "operator": "eq",
+      "tick": 358
+    },
+    {
+      "expected": "RUNNING",
+      "field": "status",
+      "message": "",
+      "operator": "eq",
+      "tick": 628
+    },
+    {
+      "expected": 2,
+      "field": "values.human_wins",
+      "message": "",
+      "operator": "eq",
+      "tick": 628
+    },
+    {
+      "expected": "WON",
+      "field": "status",
+      "message": "",
+      "operator": "eq",
+      "tick": 957
+    },
+    {
+      "expected": 3,
+      "field": "score",
+      "message": "",
+      "operator": "eq",
+      "tick": 957
+    },
+    {
+      "expected": 3,
+      "field": "values.rounds_completed",
+      "message": "",
+      "operator": "eq",
+      "tick": 958
+    }
+  ],
+  "events": [
+    {
+      "duration_ms": null,
+      "event_id": "round-1-rock",
+      "frequency_hz": null,
+      "gesture": "fist",
+      "kind": "gesture",
+      "tick": 0,
+      "x": 160,
+      "y": 90
+    },
+    {
+      "duration_ms": null,
+      "event_id": "round-3-paper",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 658,
+      "x": 160,
+      "y": 90
+    }
+  ],
+  "max_ticks": 958,
+  "name": "PC示例：三轮猜拳",
+  "schema_version": 2,
+  "seed": 0,
+  "test_id": "00-pc-example"
+}

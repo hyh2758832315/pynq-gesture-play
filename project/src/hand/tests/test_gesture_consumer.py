@@ -50,7 +50,7 @@ class PassiveGestureTests(unittest.TestCase):
             self.assertFalse(slot.offer(self.observation(1, 1)))
         self.assertIsNone(slot.read())
 
-    def session(self, waits=(0.001,) * 3):
+    def session(self, waits=(0.001,) * 3, *, qualified=False):
         backend = MockBackend()
         controller = Controller(lambda: backend, lease_seconds=5,
                                 settings=MotionSettings.fixed_playback(stage_waits=waits))
@@ -60,7 +60,8 @@ class PassiveGestureTests(unittest.TestCase):
         self.assertTrue(controller.wait_idle())
         slot = LatestGesture()
         consumer = GestureConsumer(controller, slot, source_identity=("run-a", "cfg-a"),
-                                   max_age=0.5, stable_seconds=0.1, renew_interval=0.2)
+                                   max_age=0.5, stable_seconds=0.1, renew_interval=0.2,
+                                   qualified_gestures=qualified)
         return consumer, slot, controller, backend
 
     def publish(self, consumer, slot, frame, now, gesture="paper", **changes):
@@ -123,6 +124,20 @@ class PassiveGestureTests(unittest.TestCase):
         self.assertEqual(self.publish(consumer, slot, 9, 2.2, "paper"), "accepted")
         self.assertTrue(controller.wait_idle())
         self.assertEqual(controller.status()["operation"]["state"], "paper")
+
+    def test_qualified_visible_unknown_holds_then_explicit_no_hand_returns_default(self):
+        consumer, slot, controller, backend = self.session(qualified=True)
+        self.assertEqual(self.publish(consumer, slot, 1, 1, "paper"), "accepted")
+        self.assertTrue(controller.wait_idle())
+        count = len(backend.writes)
+        for frame, now in ((2, 1.2), (3, 1.4), (4, 1.6)):
+            self.assertEqual(self.publish(consumer, slot, frame, now, None), "unclassified_hold")
+        self.assertEqual(len(backend.writes), count)
+        self.assertEqual(controller.status()["estimated_state"], "paper")
+        self.assertEqual(self.publish(consumer, slot, 5, 1.7, "default"), "accepted")
+        self.assertTrue(controller.wait_idle())
+        self.assertEqual(controller.status()["estimated_state"], "default")
+        self.assertEqual(len(backend.writes), count + 1)
 
     def test_unclassified_frame_with_nonadvancing_source_time_cannot_move_hand(self):
         consumer, slot, controller, backend = self.session()

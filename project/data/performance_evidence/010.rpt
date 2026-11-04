@@ -2,7 +2,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanc
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 | Date         : Sat Oct  3 22:03:16 2026
-| Host         : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+| Host         : build-host running 64-bit major release  (build 9200)
 | Command      : report_utilization -file E:/projects/fpga/voice-view-game/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt
 | Design       : c6i_wrapper
 | Device       : xc7z020clg400-1

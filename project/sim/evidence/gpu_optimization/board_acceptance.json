@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "date": "2026-11-04",
+  "board": "PYNQ-Z2",
+  "build_id": "0xC0061000",
+  "profiles": {
+    "cache_pipeline": {
+      "standard_studio_install_and_start": "PASS",
+      "native_ui": true,
+      "hand_enabled": true,
+      "preview": false,
+      "synthetic_input_during_human_acceptance": false,
+      "library_preserved": true,
+      "deployment_manifest_sha256": "dcaf0ccfbb685da23d816fd702c2fbac45e018b3eafc8f5bfee9a1ba65275d68",
+      "artifacts_sha256": {
+        "c6v_candidate.bit": "833cf2b54e0ffe370f9f0f45faf68f622293a9aa7f9e8120ad6e5cff2b6e2584",
+        "c6v_candidate.hwh": "5c08225dfae5ad27428822fdc5b73874efa0821903df7fd419a74fc0864b3548",
+        "c6v_candidate.xsa": "1c89795c71383c89b7e5c4722f5afb4a4a2edc95d4748e0b24e0a6570471b133"
+      },
+      "startup_default": "not_needed",
+      "human_acceptance": {
+        "result": "PASS",
+        "source": "现场操作者反馈",
+        "scope": [
+          "菜单握拳选择",
+          "游戏移动与跳跃",
+          "返回",
+          "灵巧手三态连续切换"
+        ],
+        "feedback": "操作、画面和灵巧手均正常"
+      },
+      "receipt_sha256": "d0366324544f3f87b6ccdd89e08b975a450c74a288cc98df2c5a7c9bf4d0fb65"
+    },
+    "cache_pipeline_pair": {
+      "standard_studio_install_and_start": "PASS",
+      "native_ui": true,
+      "hand_enabled": true,
+      "preview": false,
+      "synthetic_input_during_human_acceptance": false,
+      "library_preserved": true,
+      "deployment_manifest_sha256": "78a3be9c9e9012b972d149b1c91ab5319a86348325603d25692fd81643419944",
+      "artifacts_sha256": {
+        "c6v_candidate.bit": "6859a004a57c93bb479ed02c89cac5b5bb31b25ed10c2ab0a76f2ca56bbe240f",
+        "c6v_candidate.hwh": "004fc8ed7ee010bbc2b9f59e93b21318f4a1fc6f69219b274479d23cddddbf20",
+        "c6v_candidate.xsa": "1211682a1e0e0c145511286810941b928898f27cf634e69d1aea3e744e0c490f"
+      },
+      "startup_default": "not_needed",
+      "human_acceptance": {
+        "result": "PASS",
+        "source": "现场操作者反馈",
+        "scope": [
+          "菜单握拳选择",
+          "游戏移动与跳跃",
+          "返回",
+          "灵巧手三态连续切换"
+        ],
+        "feedback": "操作、画面和灵巧手均正常"
+      },
+      "receipt_sha256": "c115654e78d9b823eae3283c0976a2be769d0f05324e205eebe70cdc9ae6df34"
+    }
+  },
+  "final_shutdown": {
+    "running": false,
+    "owners": [],
+    "vision_cleanup_confirmed": true,
+    "serial_closed": true,
+    "torque_off_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "source_receipt_sha256": "cf440c9dcb30db0fa4be7d16c208426f17b6533552d7e92487767accd790eae9"
+  }
+}

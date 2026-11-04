@@ -1,0 +1,15 @@
+C4M7_BLIT_FRAME=PASS mixed=0 frame=0 writes=11 crc=610c6a31 cycles=97 generation=001234f0
+C4M7_BLIT_FRAME=PASS mixed=0 frame=1 writes=11 crc=ec8497d3 cycles=97 generation=001234f1
+C4M7_BLIT_FRAME=PASS mixed=1 frame=2 writes=14 crc=c383c07c cycles=138 generation=001234f2
+C4M7_BLIT_FRAME=PASS mixed=1 frame=3 writes=14 crc=bea4a135 cycles=138 generation=001234f3
+SCENE2D_C4M7_BLIT=PASS cache=0 pipeline=0 frames=6
+C4M7_TILE_FRAME=PASS frame=0 writes=27 crc=e677367e cycles=301 asset=001234f4 tilemap=00123460
+C4M7_TILE_FRAME=PASS frame=1 writes=27 crc=4ab74596 cycles=301 asset=001234f5 tilemap=00123461
+C4M7_TILE_FRAME=PASS frame=2 writes=27 crc=e677367e cycles=301 asset=001234f6 tilemap=00123462
+C4M7_TILE_FRAME=PASS frame=3 writes=27 crc=4ab74596 cycles=301 asset=001234f7 tilemap=00123463
+SCENE2D_C4M7_TILE_ERROR=PASS pipeline=0 writes=11 crc=4ee0cf48
+SCENE2D_C4M7_TILE_PIPELINE=PASS pipeline=0 frames=4
+C4M7_PAIR_FRAME=PASS pair=0 mask=0 writes=513 crc=88cea2ab cycles=4653 readbacks=7950
+C4M7_PAIR_FRAME=PASS pair=0 mask=1 writes=257 crc=822c709e cycles=4653 readbacks=13029
+SCENE2D_C4M7_TILE_PAIR=PASS pair=0 frames=2
+$finish called at time : 393785 ns : File "src/development/sim/scene2d_gpu/tb_scene2d_c4m7_core.sv" Line 818

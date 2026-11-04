@@ -2935,9 +2935,10 @@
   },
   "board/runtime/overlay/bus_skew.rpt": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\overlay\\bus_skew.rpt",
-    "sha256": "de11df0113054fca4b70ff58fad8811c949500e948f5cfde597b2d238612d3a6",
-    "current_sha256": "de11df0113054fca4b70ff58fad8811c949500e948f5cfde597b2d238612d3a6",
-    "changed": false
+    "sha256": "bba2e8fdbcd63d06a44add0250516decd0189bbcafc1a7f998fc6d996ecdfe72",
+    "current_sha256": "bba2e8fdbcd63d06a44add0250516decd0189bbcafc1a7f998fc6d996ecdfe72",
+    "changed": false,
+    "original_sha256": "de11df0113054fca4b70ff58fad8811c949500e948f5cfde597b2d238612d3a6"
   },
   "board/runtime/overlay/c6v_candidate.bit": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\overlay\\c6v_candidate.bit",
@@ -2965,15 +2966,17 @@
   },
   "board/runtime/overlay/cdc.rpt": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\overlay\\cdc.rpt",
-    "sha256": "4269a05b8231cc3936d4bd1fcc9174bda92f6f340dc97bb913bae589a38f0f8e",
-    "current_sha256": "4269a05b8231cc3936d4bd1fcc9174bda92f6f340dc97bb913bae589a38f0f8e",
-    "changed": false
+    "sha256": "240641293145f912cdca5807fe932235c166b7c96190eafc9050f6d77d537925",
+    "current_sha256": "240641293145f912cdca5807fe932235c166b7c96190eafc9050f6d77d537925",
+    "changed": false,
+    "original_sha256": "4269a05b8231cc3936d4bd1fcc9174bda92f6f340dc97bb913bae589a38f0f8e"
   },
   "board/runtime/overlay/drc.rpt": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\overlay\\drc.rpt",
-    "sha256": "bce04c44bb6b7d41d28b87705336cbc1bbf5b57d04310acd07484a379f70ad81",
-    "current_sha256": "bce04c44bb6b7d41d28b87705336cbc1bbf5b57d04310acd07484a379f70ad81",
-    "changed": false
+    "sha256": "0cb1f254ed93f7daff9dc9d060c2b51fc1edba1fb5adc0425ac8d0d2d6ae83c3",
+    "current_sha256": "0cb1f254ed93f7daff9dc9d060c2b51fc1edba1fb5adc0425ac8d0d2d6ae83c3",
+    "changed": false,
+    "original_sha256": "bce04c44bb6b7d41d28b87705336cbc1bbf5b57d04310acd07484a379f70ad81"
   },
   "board/runtime/overlay/route.rpt": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\overlay\\route.rpt",
@@ -2983,9 +2986,10 @@
   },
   "board/runtime/overlay/timing.rpt": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\overlay\\timing.rpt",
-    "sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172",
-    "current_sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172",
-    "changed": false
+    "sha256": "0d27bc4c73f57bdecc75de16188386636901d833e8bb3cd9e2ed28a617bfe95a",
+    "current_sha256": "0d27bc4c73f57bdecc75de16188386636901d833e8bb3cd9e2ed28a617bfe95a",
+    "changed": false,
+    "original_sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172"
   },
   "board/runtime/python/collision/circle.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\python\\collision\\circle.py",
@@ -11719,9 +11723,10 @@
   },
   "src/development/subprojects/hdmi_input_osd/marker_visibility_r02/rtl/c6v_input_osd_0_0.sv": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\subprojects\\hdmi_input_osd\\marker_visibility_r02\\rtl\\c6v_input_osd_0_0.sv",
-    "sha256": "827b1b01a51968be6d68552264f19bbcf11f4727bac95087dffad9f69fa3ec33",
-    "current_sha256": "827b1b01a51968be6d68552264f19bbcf11f4727bac95087dffad9f69fa3ec33",
-    "changed": false
+    "sha256": "32564ddd7866ca6acd2eb10774c71d3654c6fe4ae0f76dcbfc5f14d9ba7d795a",
+    "current_sha256": "32564ddd7866ca6acd2eb10774c71d3654c6fe4ae0f76dcbfc5f14d9ba7d795a",
+    "changed": false,
+    "original_sha256": "827b1b01a51968be6d68552264f19bbcf11f4727bac95087dffad9f69fa3ec33"
   },
   "src/development/subprojects/hdmi_input_osd/marker_visibility_r02/rtl/input_osd_axi.sv": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\subprojects\\hdmi_input_osd\\marker_visibility_r02\\rtl\\input_osd_axi.sv",
@@ -12091,9 +12096,10 @@
   },
   "src/development/subprojects/hdmi_input_osd/osd_reset_repair_r01/rtl/c6v_input_osd_0_0.sv": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\subprojects\\hdmi_input_osd\\osd_reset_repair_r01\\rtl\\c6v_input_osd_0_0.sv",
-    "sha256": "827b1b01a51968be6d68552264f19bbcf11f4727bac95087dffad9f69fa3ec33",
-    "current_sha256": "827b1b01a51968be6d68552264f19bbcf11f4727bac95087dffad9f69fa3ec33",
-    "changed": false
+    "sha256": "32564ddd7866ca6acd2eb10774c71d3654c6fe4ae0f76dcbfc5f14d9ba7d795a",
+    "current_sha256": "32564ddd7866ca6acd2eb10774c71d3654c6fe4ae0f76dcbfc5f14d9ba7d795a",
+    "changed": false,
+    "original_sha256": "827b1b01a51968be6d68552264f19bbcf11f4727bac95087dffad9f69fa3ec33"
   },
   "src/development/subprojects/hdmi_input_osd/osd_reset_repair_r01/rtl/input_osd_axi.sv": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\subprojects\\hdmi_input_osd\\osd_reset_repair_r01\\rtl\\input_osd_axi.sv",
@@ -16615,51 +16621,59 @@
   },
   "sim/evidence/v3_release/studio-boot-probe.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\studio-boot-probe.xml",
-    "sha256": "5b90be8ece3417d5afe6effc87febbf188f4f4f0290697a2a44024d1d83f7627",
-    "current_sha256": "5b90be8ece3417d5afe6effc87febbf188f4f4f0290697a2a44024d1d83f7627",
-    "changed": false
+    "sha256": "5421ab06da3931fadf7cde0cafac1ffd58ed9179ef54811d259bb9788aa9b047",
+    "current_sha256": "5421ab06da3931fadf7cde0cafac1ffd58ed9179ef54811d259bb9788aa9b047",
+    "changed": false,
+    "original_sha256": "5b90be8ece3417d5afe6effc87febbf188f4f4f0290697a2a44024d1d83f7627"
   },
   "sim/evidence/v3_release/studio-unified-start-final.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\studio-unified-start-final.xml",
-    "sha256": "455114861132516f1ecfa458dfa3b7faf7c0606bf908425986b9d62f228ac5bf",
-    "current_sha256": "455114861132516f1ecfa458dfa3b7faf7c0606bf908425986b9d62f228ac5bf",
-    "changed": false
+    "sha256": "4610d79a3e43dc6dc3609b3198091a6ac493665198dfce5969cf9b1144ffbd68",
+    "current_sha256": "4610d79a3e43dc6dc3609b3198091a6ac493665198dfce5969cf9b1144ffbd68",
+    "changed": false,
+    "original_sha256": "455114861132516f1ecfa458dfa3b7faf7c0606bf908425986b9d62f228ac5bf"
   },
   "sim/evidence/v3_release/v3-autostart.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\v3-autostart.xml",
-    "sha256": "15b87edcf4cd6e686d79158bd719904a878446cc460cf30d4cd1b38b0ba6cc1a",
-    "current_sha256": "15b87edcf4cd6e686d79158bd719904a878446cc460cf30d4cd1b38b0ba6cc1a",
-    "changed": false
+    "sha256": "3e3910c78723cd438a94428388cc4095bb3af821e9e99cfac93eb880521c47b9",
+    "current_sha256": "3e3910c78723cd438a94428388cc4095bb3af821e9e99cfac93eb880521c47b9",
+    "changed": false,
+    "original_sha256": "15b87edcf4cd6e686d79158bd719904a878446cc460cf30d4cd1b38b0ba6cc1a"
   },
   "sim/evidence/v3_release/menu-video-preview-recovery/frozen.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\menu-video-preview-recovery\\frozen.xml",
-    "sha256": "15bb67a8aea84ec45c23015f68a4d853c92985df4e1a3517d9a8b73f83bc2a92",
-    "current_sha256": "15bb67a8aea84ec45c23015f68a4d853c92985df4e1a3517d9a8b73f83bc2a92",
-    "changed": false
+    "sha256": "6a10042f3b666ece3e747c630af3efb903be9335436191cdf8eed401fd3694cc",
+    "current_sha256": "6a10042f3b666ece3e747c630af3efb903be9335436191cdf8eed401fd3694cc",
+    "changed": false,
+    "original_sha256": "15bb67a8aea84ec45c23015f68a4d853c92985df4e1a3517d9a8b73f83bc2a92"
   },
   "sim/evidence/v3_release/menu-video-preview-recovery/hand-integration-final.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\menu-video-preview-recovery\\hand-integration-final.xml",
-    "sha256": "0c86854f176b73d42e5b45d2e7e61fcd97bf5b9033ea3718012410514935d538",
-    "current_sha256": "0c86854f176b73d42e5b45d2e7e61fcd97bf5b9033ea3718012410514935d538",
-    "changed": false
+    "sha256": "4944919a5c04df0bb9f6e9c0ea94b23e732b1915d1d03c29b6adffe01ee6a2b7",
+    "current_sha256": "4944919a5c04df0bb9f6e9c0ea94b23e732b1915d1d03c29b6adffe01ee6a2b7",
+    "changed": false,
+    "original_sha256": "0c86854f176b73d42e5b45d2e7e61fcd97bf5b9033ea3718012410514935d538"
   },
   "sim/evidence/v3_release/menu-video-preview-recovery/localhost.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\menu-video-preview-recovery\\localhost.xml",
-    "sha256": "de931628f4032443af71d109a217b351f8358255d97ad6073eeaae5b9d57d4e8",
-    "current_sha256": "de931628f4032443af71d109a217b351f8358255d97ad6073eeaae5b9d57d4e8",
-    "changed": false
+    "sha256": "d6c3f0b4db79a162ce378440c797c53612b8452be1be7417aae19b0d3a2466fd",
+    "current_sha256": "d6c3f0b4db79a162ce378440c797c53612b8452be1be7417aae19b0d3a2466fd",
+    "changed": false,
+    "original_sha256": "de931628f4032443af71d109a217b351f8358255d97ad6073eeaae5b9d57d4e8"
   },
   "sim/evidence/v3_release/menu-video-preview-recovery/regression-final.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\menu-video-preview-recovery\\regression-final.xml",
-    "sha256": "b38487e3a01699eb58de516850059cfc45f78d81f0a074a593c567b3524e3f9d",
-    "current_sha256": "b38487e3a01699eb58de516850059cfc45f78d81f0a074a593c567b3524e3f9d",
-    "changed": false
+    "sha256": "91e164c929dafdbc4b73a3e1289c6d654973427d47a913a3f90a969d71f43c92",
+    "current_sha256": "91e164c929dafdbc4b73a3e1289c6d654973427d47a913a3f90a969d71f43c92",
+    "changed": false,
+    "original_sha256": "b38487e3a01699eb58de516850059cfc45f78d81f0a074a593c567b3524e3f9d"
   },
   "sim/evidence/v3_release/menu-video-preview-recovery/studio-final.xml": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\menu-video-preview-recovery\\studio-final.xml",
-    "sha256": "8546568c6aca666710445ccd009cd255c023c1bbf45ec6ff3f03668f4b7e199c",
-    "current_sha256": "8546568c6aca666710445ccd009cd255c023c1bbf45ec6ff3f03668f4b7e199c",
-    "changed": false
+    "sha256": "b238a178de89ebc7ecad5c47fbb4289538e97b1e4ec933bbd400b12c5a6741c5",
+    "current_sha256": "b238a178de89ebc7ecad5c47fbb4289538e97b1e4ec933bbd400b12c5a6741c5",
+    "changed": false,
+    "original_sha256": "8546568c6aca666710445ccd009cd255c023c1bbf45ec6ff3f03668f4b7e199c"
   },
   "sim/evidence/v3_release/studio-ui/receipt.json": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\verification\\studio-ui\\receipt.json",
@@ -17126,20 +17140,20 @@
   "report/reference_v2_performance/chapter.html": {
     "source": "report\\performance_resource\\chapter.html",
     "sha256": "ca41f0acf763a618dc2baa23bee1b7bd57292fbd2e147b8022f97c3d451e6b2b",
-    "current_sha256": "a107bf9e13cb58b0a7c4f6b50c95f614a020e3c1adf22b714eabfc624f815c1b",
+    "current_sha256": "a430b1024c3a29971aa68e882d5593ebc0d5c36b5df2479f5accc0a765462f3e",
     "changed": true
   },
   "report/reference_v2_performance/README.txt": {
     "source": "report\\performance_resource\\README.txt",
     "sha256": "f656b2da2dde12285dad162a8b93177991e3c61768ffad72864c4b018e386c23",
-    "current_sha256": "e01f7e775bd1facb77bcda2077edc5762b2b19eb0132ae96b6266125d514e6aa",
+    "current_sha256": "ece1822b6fca0732da31fcdc5bd37ba35044f740407ddb47f54fa6fdeaeb2c0c",
     "changed": true
   },
   "report/reference_v2_performance/data/expanded_verification.json": {
     "source": "report\\performance_resource\\data\\expanded_verification.json",
     "sha256": "0de4b4840721e3c7e40003da63528597ca5e507a1130094d8e0667a51be7d1d1",
-    "current_sha256": "0de4b4840721e3c7e40003da63528597ca5e507a1130094d8e0667a51be7d1d1",
-    "changed": false
+    "current_sha256": "96591a742910f8d6340c957696b0b3863090b073675eea43d80ec84742284472",
+    "changed": true
   },
   "report/reference_v2_performance/data/hand_motion_runs.csv": {
     "source": "report\\performance_resource\\data\\hand_motion_runs.csv",
@@ -17186,8 +17200,8 @@
   "report/reference_v2_performance/data/source_manifest.json": {
     "source": "report\\performance_resource\\data\\source_manifest.json",
     "sha256": "e81f55fab8b98b60bd8468aab51618c532df2703f1687b947148df0c924cbf3c",
-    "current_sha256": "e81f55fab8b98b60bd8468aab51618c532df2703f1687b947148df0c924cbf3c",
-    "changed": false
+    "current_sha256": "bc03c37516a2af09942f62a98df34c5eda7c7a7406e1224f067f8a940381c89c",
+    "changed": true
   },
   "report/reference_v2_performance/data/tile_ablation.csv": {
     "source": "report\\performance_resource\\data\\tile_ablation.csv",
@@ -17204,8 +17218,8 @@
   "report/reference_v2_performance/data/verification.json": {
     "source": "report\\performance_resource\\data\\verification.json",
     "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65",
-    "current_sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65",
-    "changed": false
+    "current_sha256": "b88eb66b382ec67d4f441e827ec7e7f42bed575b03ea55060d795f58b37315de",
+    "changed": true
   },
   "report/reference_v2_performance/data/vision_resources.csv": {
     "source": "report\\performance_resource\\data\\vision_resources.csv",
@@ -17221,87 +17235,101 @@
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_blit_experiment\\reports\\c6i_blit_pipeline_p2a\\timing_summary.rpt",
-    "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282",
-    "current_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282",
-    "changed": false
+    "sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+    "current_sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+    "changed": false,
+    "original_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_blit_experiment\\reports\\c6i_blit_pipeline_p2a\\utilization.rpt",
-    "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e",
-    "current_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e",
-    "changed": false
+    "sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+    "current_sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+    "changed": false,
+    "original_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_cache_experiment\\reports\\c6i_tile_cache_p1\\timing_summary.rpt",
-    "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9",
-    "current_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9",
-    "changed": false
+    "sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+    "current_sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+    "changed": false,
+    "original_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_cache_experiment\\reports\\c6i_tile_cache_p1\\utilization.rpt",
-    "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b",
-    "current_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b",
-    "changed": false
+    "sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+    "current_sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+    "changed": false,
+    "original_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_raster_pair_experiment\\reports\\c6i_raster_pair_p3b\\timing_summary.rpt",
-    "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4",
-    "current_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4",
-    "changed": false
+    "sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+    "current_sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+    "changed": false,
+    "original_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_raster_pair_experiment\\reports\\c6i_raster_pair_p3b\\utilization.rpt",
-    "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a",
-    "current_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a",
-    "changed": false
+    "sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+    "current_sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+    "changed": false,
+    "original_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_tile_pair_experiment\\reports\\c6i_tile_pair_p3a\\timing_summary.rpt",
-    "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b",
-    "current_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b",
-    "changed": false
+    "sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+    "current_sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+    "changed": false,
+    "original_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_tile_pair_experiment\\reports\\c6i_tile_pair_p3a\\utilization.rpt",
-    "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51",
-    "current_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51",
-    "changed": false
+    "sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+    "current_sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+    "changed": false,
+    "original_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_tile_pipeline_experiment\\reports\\c6i_tile_pipeline_p2b\\timing_summary.rpt",
-    "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459",
-    "current_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459",
-    "changed": false
+    "sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+    "current_sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+    "changed": false,
+    "original_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_tile_pipeline_experiment\\reports\\c6i_tile_pipeline_p2b\\utilization.rpt",
-    "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71",
-    "current_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71",
-    "changed": false
+    "sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+    "current_sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+    "changed": false,
+    "original_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_upload_overlap_experiment\\reports\\c6i_upload_render_overlap_p4\\timing_summary.rpt",
-    "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2",
-    "current_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2",
-    "changed": false
+    "sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+    "current_sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+    "changed": false,
+    "original_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\gpu_upload_overlap_experiment\\reports\\c6i_upload_render_overlap_p4\\utilization.rpt",
-    "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08",
-    "current_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08",
-    "changed": false
+    "sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+    "current_sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+    "changed": false,
+    "original_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\reports\\c6i\\timing_summary.rpt",
-    "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8",
-    "current_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8",
-    "changed": false
+    "sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+    "current_sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+    "changed": false,
+    "original_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
   },
   "report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt": {
     "source": "report\\performance_resource\\evidence\\board\\pynq_z2\\output\\reports\\c6i\\utilization.rpt",
-    "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431",
-    "current_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431",
-    "changed": false
+    "sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+    "current_sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+    "changed": false,
+    "original_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
   },
   "report/reference_v2_performance/evidence/build/r30-arm-idle-r19.json": {
     "source": "report\\performance_resource\\evidence\\build\\r30-arm-idle-r19.json",
@@ -17347,15 +17375,16 @@
   },
   "report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt": {
     "source": "report\\performance_resource\\evidence\\build\\v2-release-repo\\releases\\v2.0\\board_runtime\\overlay\\timing.rpt",
-    "sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172",
-    "current_sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172",
-    "changed": false
+    "sha256": "0d27bc4c73f57bdecc75de16188386636901d833e8bb3cd9e2ed28a617bfe95a",
+    "current_sha256": "0d27bc4c73f57bdecc75de16188386636901d833e8bb3cd9e2ed28a617bfe95a",
+    "changed": false,
+    "original_sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172"
   },
   "report/reference_v2_performance/evidence/docs/gpu_ai_optimization_p0_p4_summary.md": {
     "source": "report\\performance_resource\\evidence\\docs\\gpu_ai_optimization_p0_p4_summary.md",
     "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
-    "current_sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
-    "changed": false
+    "current_sha256": "fcaf44c162c2d9c67f9694407859541533ba1a3672544bdb51d0a450b767aece",
+    "changed": true
   },
   "report/reference_v2_performance/evidence/docs/scene2d_gpu_architecture.md": {
     "source": "report\\performance_resource\\evidence\\docs\\scene2d_gpu_architecture.md",
@@ -17369,16 +17398,10 @@
     "current_sha256": "2d2fe98645e6404ff08359070997eba22928c5dd4fe4d1e211dbdfa0b2ee9b8c",
     "changed": true
   },
-  "report/reference_v2_performance/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md": {
-    "source": "report\\performance_resource\\evidence\\docs\\bringup\\2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-    "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
-    "current_sha256": "08e7c5269d7199d747e979f5753a107dd4ad8aba42168635b912e7673c9869ed",
-    "changed": true
-  },
   "report/reference_v2_performance/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md": {
     "source": "report\\performance_resource\\evidence\\docs\\bringup\\2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
     "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4",
-    "current_sha256": "c39a4043eb09824535930855a6cdf2d58b2a10db4fa16adcf55767ea6dd795b5",
+    "current_sha256": "858e79e038969e175bd774292d84573b474332642038d467fe911d1f56f2bc28",
     "changed": true
   },
   "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_pl_timing_repair.md": {
@@ -17732,13 +17755,13 @@
   "report/gpu_ai_preparation/chapter.html": {
     "source": "report\\gpu_ai_preparation\\chapter.html",
     "sha256": "e509d606eddbb9144b41f3360722841b13375d2d6615c855d03886e4881b3776",
-    "current_sha256": "0ade0240bdcaf1f5aae076857e403a9ed4d70888f12af7dd2d899a1448dae308",
+    "current_sha256": "a625ae779c44d0b55dfee7fc2a3e43e18bc3a060b755a5504f488bb9af11656b",
     "changed": true
   },
   "report/gpu_ai_preparation/README.txt": {
     "source": "report\\gpu_ai_preparation\\README.txt",
     "sha256": "a64101811ba0adc562150e225d959cc2d70fe77b48dbaacba58f8627a502a977",
-    "current_sha256": "879191c3efe4d28ee7f0131444512fbecd8ced84dad9aa1304f9c95cad764b02",
+    "current_sha256": "ee7312b3191d6513ca9766d6698e98b688eb16abc7a971b704523aa9b5ae194a",
     "changed": true
   },
   "report/gpu_ai_preparation/data/overlap.csv": {
@@ -17768,8 +17791,8 @@
   "report/gpu_ai_preparation/data/source_manifest.json": {
     "source": "report\\gpu_ai_preparation\\data\\source_manifest.json",
     "sha256": "133d340ea848c1fac4b7ee7d25734017d26371fd398c3c2f90d5bc02bd35b6bb",
-    "current_sha256": "133d340ea848c1fac4b7ee7d25734017d26371fd398c3c2f90d5bc02bd35b6bb",
-    "changed": false
+    "current_sha256": "270d3313be36f65b36d008dde46507858dadc38e05b2c858a7102c0a845c3ba8",
+    "changed": true
   },
   "report/gpu_ai_preparation/data/tile_ablation.csv": {
     "source": "report\\gpu_ai_preparation\\data\\tile_ablation.csv",
@@ -17780,98 +17803,112 @@
   "report/gpu_ai_preparation/data/verification.json": {
     "source": "report\\gpu_ai_preparation\\data\\verification.json",
     "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65",
-    "current_sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65",
-    "changed": false
+    "current_sha256": "65265b013592a6dfe0be613a607540db701c8a1a93ffd99c2b59e6b0a3f292eb",
+    "changed": true
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_blit_experiment\\reports\\c6i_blit_pipeline_p2a\\timing_summary.rpt",
-    "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282",
-    "current_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282",
-    "changed": false
+    "sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+    "current_sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+    "changed": false,
+    "original_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_blit_experiment\\reports\\c6i_blit_pipeline_p2a\\utilization.rpt",
-    "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e",
-    "current_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e",
-    "changed": false
+    "sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+    "current_sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+    "changed": false,
+    "original_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_cache_experiment\\reports\\c6i_tile_cache_p1\\timing_summary.rpt",
-    "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9",
-    "current_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9",
-    "changed": false
+    "sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+    "current_sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+    "changed": false,
+    "original_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_cache_experiment\\reports\\c6i_tile_cache_p1\\utilization.rpt",
-    "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b",
-    "current_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b",
-    "changed": false
+    "sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+    "current_sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+    "changed": false,
+    "original_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_raster_pair_experiment\\reports\\c6i_raster_pair_p3b\\timing_summary.rpt",
-    "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4",
-    "current_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4",
-    "changed": false
+    "sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+    "current_sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+    "changed": false,
+    "original_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_raster_pair_experiment\\reports\\c6i_raster_pair_p3b\\utilization.rpt",
-    "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a",
-    "current_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a",
-    "changed": false
+    "sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+    "current_sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+    "changed": false,
+    "original_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_tile_pair_experiment\\reports\\c6i_tile_pair_p3a\\timing_summary.rpt",
-    "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b",
-    "current_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b",
-    "changed": false
+    "sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+    "current_sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+    "changed": false,
+    "original_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_tile_pair_experiment\\reports\\c6i_tile_pair_p3a\\utilization.rpt",
-    "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51",
-    "current_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51",
-    "changed": false
+    "sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+    "current_sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+    "changed": false,
+    "original_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_tile_pipeline_experiment\\reports\\c6i_tile_pipeline_p2b\\timing_summary.rpt",
-    "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459",
-    "current_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459",
-    "changed": false
+    "sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+    "current_sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+    "changed": false,
+    "original_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_tile_pipeline_experiment\\reports\\c6i_tile_pipeline_p2b\\utilization.rpt",
-    "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71",
-    "current_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71",
-    "changed": false
+    "sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+    "current_sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+    "changed": false,
+    "original_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_upload_overlap_experiment\\reports\\c6i_upload_render_overlap_p4\\timing_summary.rpt",
-    "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2",
-    "current_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2",
-    "changed": false
+    "sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+    "current_sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+    "changed": false,
+    "original_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\gpu_upload_overlap_experiment\\reports\\c6i_upload_render_overlap_p4\\utilization.rpt",
-    "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08",
-    "current_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08",
-    "changed": false
+    "sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+    "current_sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+    "changed": false,
+    "original_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\reports\\c6i\\timing_summary.rpt",
-    "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8",
-    "current_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8",
-    "changed": false
+    "sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+    "current_sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+    "changed": false,
+    "original_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
   },
   "report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt": {
     "source": "report\\gpu_ai_preparation\\evidence\\board\\pynq_z2\\output\\reports\\c6i\\utilization.rpt",
-    "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431",
-    "current_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431",
-    "changed": false
+    "sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+    "current_sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+    "changed": false,
+    "original_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
   },
   "report/gpu_ai_preparation/evidence/docs/gpu_ai_optimization_p0_p4_summary.md": {
     "source": "report\\gpu_ai_preparation\\evidence\\docs\\gpu_ai_optimization_p0_p4_summary.md",
     "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
-    "current_sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
-    "changed": false
+    "current_sha256": "fcaf44c162c2d9c67f9694407859541533ba1a3672544bdb51d0a450b767aece",
+    "changed": true
   },
   "report/gpu_ai_preparation/evidence/docs/scene2d_gpu_architecture.md": {
     "source": "report\\gpu_ai_preparation\\evidence\\docs\\scene2d_gpu_architecture.md",
@@ -17879,16 +17916,10 @@
     "current_sha256": "fbd0f95942061dabbc5fb2f1fdfbc943b9f937f056efc78e96dcb595b7096580",
     "changed": false
   },
-  "report/gpu_ai_preparation/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md": {
-    "source": "report\\gpu_ai_preparation\\evidence\\docs\\bringup\\2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-    "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
-    "current_sha256": "08e7c5269d7199d747e979f5753a107dd4ad8aba42168635b912e7673c9869ed",
-    "changed": true
-  },
   "report/gpu_ai_preparation/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md": {
     "source": "report\\gpu_ai_preparation\\evidence\\docs\\bringup\\2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
     "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4",
-    "current_sha256": "c39a4043eb09824535930855a6cdf2d58b2a10db4fa16adcf55767ea6dd795b5",
+    "current_sha256": "858e79e038969e175bd774292d84573b474332642038d467fe911d1f56f2bc28",
     "changed": true
   },
   "report/gpu_ai_preparation/evidence/results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log": {
@@ -18086,7 +18117,7 @@
   "report/reference_v2_performance/performance_resource_report.pdf": {
     "source": "report\\performance_resource\\性能与资源优化报告.pdf",
     "sha256": "6082b058c9c3d1199bce0cebdc173c7d5cf1013a59d4f149a46cce1c197ef47f",
-    "current_sha256": "29706e94d0c41d7b018c0cfb1463b3f04fac99ffc955a7a0916842a8a483771a",
+    "current_sha256": "16c6235f6d214db747f47e576853bff27eff0ec3818aabf1ce5fe1cf91c6b93f",
     "changed": true
   },
   "src/development/third_party/verilog-axis/COPYING": {
@@ -18123,7 +18154,21 @@
     "source": "report\\gpu_ai_preparation\\Scene2D_GPU_AI_优化过程与效果.pdf",
     "sha256": "bd929e67e3b1d7fc4e9417bf2e06854c26bda9ec5499e3d1a7b5b84644e41273",
     "renamed_from": "report/gpu_ai_preparation/Scene2D_GPU_AI_优化过程与效果.pdf",
-    "current_sha256": "689daae5793d3a9868150057aed4a473fd210c20cff11901613a98c3301014d1",
+    "current_sha256": "55275ec1834743dd44a56e73af69189bebd397466af21c5189bd6bafed435be2",
     "changed": true
+  },
+  "report/reference_v2_performance/evidence/docs/bringup/gpu_design_notes.md": {
+    "source": "report\\performance_resource\\evidence\\docs\\bringup\\2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+    "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
+    "current_sha256": "043e3ee3d1b75d848e63611458772e75e26a19efd5622b2ade59730917ccb9d5",
+    "changed": true,
+    "representation": "technical_summary"
+  },
+  "report/gpu_ai_preparation/evidence/docs/bringup/gpu_design_notes.md": {
+    "source": "report\\gpu_ai_preparation\\evidence\\docs\\bringup\\2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+    "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
+    "current_sha256": "043e3ee3d1b75d848e63611458772e75e26a19efd5622b2ade59730917ccb9d5",
+    "changed": true,
+    "representation": "technical_summary"
   }
 }

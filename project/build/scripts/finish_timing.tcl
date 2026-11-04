@@ -1,14 +1,11 @@
 # Included by build_hardware.tcl after opening the routed checkpoint outside the project.
 # Requires result_dir. Outputs final timing/DRC/resources and paired hardware files.
-# The R23b2 release used this same targeted pin reroute after full implementation.
+# Preserve the complete routed solution; route corrections require a measured failing path.
 # Next: require signoff checks and verify exported bit/HWH before any deployment.
 # Do not call from open_run: include_bit can use the run's earlier uncorrected bit.
 if {![info exists result_dir]} {error {result_dir required}}
 file mkdir $result_dir
-set target_pin [get_pins c6v_i/video_in/inst/FORMATTER_INST/de_1_reg/D]
-if {[llength $target_pin] != 1} {error {Target topology differs from frozen R23b2}}
-route_design -unroute -pins $target_pin
-route_design -pins $target_pin -auto_delay
+# Run acceptance checks on the post-route checkpoint without changing routing.
 report_timing_summary -delay_type min_max -report_unconstrained -file $result_dir/timing.rpt
 report_drc -file $result_dir/drc.rpt
 report_route_status -file $result_dir/route.rpt

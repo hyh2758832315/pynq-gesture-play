@@ -9,7 +9,7 @@
 # Command line       : vivado.exe -log c6v_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_wrapper.tcl
 # Log file           : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/c6v_wrapper.vds
 # Journal file       : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23\vivado.jou
-# Running On         : DESKTOP-JBJOBKD
+# Running On         : build-host
 # Platform           : Windows 11
 # Operating System   : 26200
 # Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics

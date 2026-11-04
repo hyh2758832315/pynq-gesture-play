@@ -3,7 +3,7 @@
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 -- Date        : Fri Oct 30 22:10:35 2026
--- Host        : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+-- Host        : build-host running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_gp0_smc_0/c6v_gp0_smc_0_stub.vhdl
 -- Design      : c6v_gp0_smc_0

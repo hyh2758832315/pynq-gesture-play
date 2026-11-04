@@ -1,7 +1,7 @@
 """Run relocated Studio/startup checks without connecting physical hardware.
 
 Run: python -B tools/run_offline_tests.py
-Output: sim/evidence/normalized_studio.xml. Next: review failures before deployment.
+Output: build/output/tests/normalized_studio.xml. Next: review failures before deployment.
 Requires the Studio dependencies plus pytest. Local loopback networking is used.
 """
 import os
@@ -11,7 +11,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 source = ROOT / 'src/development'
-output = ROOT / 'sim/evidence'
+output = ROOT / 'build/output/tests'
 output.mkdir(parents=True, exist_ok=True)
 env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1',
            PYTHONPATH=os.pathsep.join((str(source/'python'), str(source))),

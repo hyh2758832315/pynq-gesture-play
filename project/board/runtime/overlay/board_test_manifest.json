@@ -2,21 +2,30 @@
   "schema": "c6i-vision-button-offline-candidate-v1",
   "profile": "C6I_VISION_BUTTON_V1",
   "build_id": "0xC0061000",
-  "implementation": "FULL_ROUTE_SHARED_ID_GPIO_TARGETED_PIN_REROUTE",
+  "implementation": "FULL_ROUTE_POSTROUTE_PHYSOPT_NO_LEGACY_PIN_REROUTE",
   "release_ready": false,
   "board_pending": true,
-  "validation_scope": "timing/DRC, XSA bit/HWH pairing and offline button tests",
+  "validation_scope": "module simulation, full implementation timing/DRC, XSA pairing and interface comparison",
   "timing": {
-    "wns": 0.011,
-    "tns": 0.0,
+    "wns": 0.001,
+    "tns": 0,
     "whs": 0.05,
-    "ths": 0.0,
+    "ths": 0,
     "wpws": 0.538,
-    "tpws": 0.0
+    "tpws": 0
   },
   "sha256": {
-    "c6v_candidate.bit": "8F8CE2B979528E9E7B1F1DF16A9B9920EEADD05B2F7AEB79DD4D8040E21C691D",
-    "c6v_candidate.hwh": "E2CE377E5FB94BA2EB277EB2DEFEB642E2E9359C6AA2AA0B6013BB9A4D8B49DD",
-    "c6v_candidate.xsa": "F8C91886E21946552289999C9E1E90E43D87225798C82DB4BBA8BB97C8986D4E"
+    "c6v_candidate.bit": "6859A004A57C93BB479ED02C89CAC5B5BB31B25ED10C2AB0A76F2CA56BBE240F",
+    "c6v_candidate.hwh": "004FC8ED7EE010BBC2B9F59E93B21318F4A1FC6F69219B274479D23CDDDDBF20",
+    "c6v_candidate.xsa": "1211682A1E0E0C145511286810941B928898F27CF634E69D1AEA3E744E0C490F"
+  },
+  "gpu_features": {
+    "TILE_DESCRIPTOR_CACHE_ENABLE": 1,
+    "BLIT_PIXEL_PIPELINE_ENABLE": 1,
+    "TILE_PIXEL_PIPELINE_ENABLE": 1,
+    "TILE_PIXEL_PAIR_ENABLE": 1,
+    "BLIT_PIXEL_PAIR_ENABLE": 1,
+    "CLEAR_FILL_PIXEL_PAIR_ENABLE": 1,
+    "UPLOAD_RENDER_OVERLAP_ENABLE": 0
   }
 }

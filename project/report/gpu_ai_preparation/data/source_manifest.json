@@ -1,8 +1,8 @@
 [
   {
     "path": "board/pynq_z2/output/reports/c6i/utilization.rpt",
-    "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431",
-    "bytes": 13938,
+    "sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+    "bytes": 13933,
     "excerpts": [
       {
         "line": 35,
@@ -28,17 +28,19 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
   },
   {
     "path": "board/pynq_z2/output/reports/c6i/timing_summary.rpt",
-    "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8",
-    "bytes": 132176
+    "sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+    "bytes": 132171,
+    "original_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
   },
   {
     "path": "board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
-    "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b",
-    "bytes": 14009,
+    "sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+    "bytes": 14004,
     "excerpts": [
       {
         "line": 35,
@@ -64,17 +66,19 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
   },
   {
     "path": "board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
-    "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9",
-    "bytes": 134381
+    "sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+    "bytes": 134376,
+    "original_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
   },
   {
     "path": "board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
-    "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e",
-    "bytes": 14018,
+    "sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+    "bytes": 14013,
     "excerpts": [
       {
         "line": 35,
@@ -100,17 +104,19 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
   },
   {
     "path": "board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
-    "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282",
-    "bytes": 131516
+    "sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+    "bytes": 131511,
+    "original_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
   },
   {
     "path": "board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
-    "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71",
-    "bytes": 14045,
+    "sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+    "bytes": 14040,
     "excerpts": [
       {
         "line": 35,
@@ -136,17 +142,19 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
   },
   {
     "path": "board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
-    "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459",
-    "bytes": 131800
+    "sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+    "bytes": 131795,
+    "original_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
   },
   {
     "path": "board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
-    "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51",
-    "bytes": 14067,
+    "sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+    "bytes": 14062,
     "excerpts": [
       {
         "line": 35,
@@ -172,17 +180,19 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
   },
   {
     "path": "board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
-    "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b",
-    "bytes": 127374
+    "sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+    "bytes": 127369,
+    "original_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
   },
   {
     "path": "board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
-    "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a",
-    "bytes": 14079,
+    "sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+    "bytes": 14074,
     "excerpts": [
       {
         "line": 35,
@@ -208,17 +218,19 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
   },
   {
     "path": "board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
-    "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4",
-    "bytes": 130695
+    "sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+    "bytes": 130690,
+    "original_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
   },
   {
     "path": "board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
-    "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08",
-    "bytes": 14163,
+    "sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+    "bytes": 14158,
     "excerpts": [
       {
         "line": 35,
@@ -244,12 +256,14 @@
         "line": 160,
         "text": "| MMCME2_ADV |    2 |     0 |          0 |         4 | 50.00 |"
       }
-    ]
+    ],
+    "original_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
   },
   {
     "path": "board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
-    "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2",
-    "bytes": 136465
+    "sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+    "bytes": 136460,
+    "original_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
   },
   {
     "path": "results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log",
@@ -452,18 +466,26 @@
   },
   {
     "path": "docs/gpu_ai_optimization_p0_p4_summary.md",
-    "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
-    "bytes": 13730
+    "sha256": "fcaf44c162c2d9c67f9694407859541533ba1a3672544bdb51d0a450b767aece",
+    "bytes": 13750,
+    "source_sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
+    "representation": "technical_summary_with_source_reports"
   },
   {
-    "path": "docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-    "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
-    "bytes": 74709
+    "path": "docs/bringup/gpu_design_notes.md",
+    "sha256": "043e3ee3d1b75d848e63611458772e75e26a19efd5622b2ade59730917ccb9d5",
+    "bytes": 2079,
+    "source_path": "docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+    "source_sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
+    "previous_public_sha256": "08e7c5269d7199d747e979f5753a107dd4ad8aba42168635b912e7673c9869ed",
+    "representation": "technical_summary"
   },
   {
     "path": "docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
-    "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4",
-    "bytes": 10496
+    "sha256": "858e79e038969e175bd774292d84573b474332642038d467fe911d1f56f2bc28",
+    "bytes": 10272,
+    "source_sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4",
+    "representation": "technical_summary_with_source_reports"
   },
   {
     "path": "docs/scene2d_gpu_architecture.md",

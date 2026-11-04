@@ -18,6 +18,14 @@ import sys
 import time
 
 
+def verify_deployment_identity(root: Path, manifest: dict) -> None:
+    for name, digest in manifest["sha256"].items():
+        path = (root / name).resolve()
+        if (not path.is_relative_to(root)
+                or hashlib.sha256(path.read_bytes()).hexdigest() != digest.lower()):
+            raise ValueError("Deployment identity mismatch: " + name)
+
+
 def main():
     root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser()
@@ -58,10 +66,7 @@ def main():
         parser.error("approval window requires serial mode and a finite value in (0, 10]")
     check_only = options.check_only
     manifest = json.loads((root / "deployment_manifest.json").read_text(encoding="utf-8"))
-    for name, digest in manifest["sha256"].items():
-        path = (root / name).resolve()
-        if not path.is_relative_to(root) or hashlib.sha256(path.read_bytes()).hexdigest().upper() != digest:
-            raise ValueError("Deployment identity mismatch: " + name)
+    verify_deployment_identity(root, manifest)
     sys.path.insert(0, str(root / "python"))
     os.environ["PYTHONPATH"] = str(root / "python")
     os.environ["XILINX_XRT"] = "/usr"

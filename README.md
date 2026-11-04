@@ -31,6 +31,12 @@ Studio 安装、离线测试与硬件重建命令见 [工程 README](project/REA
 
 默认视频为两段自制测试动画，生成入口为 `project/tools/generate_demo_media.py`。可在 Studio 中换成有权使用的素材。
 
+## GPU 优化与复现
+
+提供基线、描述符缓存＋像素流水线、再加条件双像素三种完整构建配置。相同输入的 32×16 图块渲染从 4653 降至 557 周期，320×180 光栅场景从 58929 降至 28974 周期；输出 CRC 与写入数保持一致。当前默认运行包采用三项优化，新增配置已通过 Studio 安装和现场交互验收。
+
+[机制与性能/资源对照](project/report/gpu_optimization.md) · [三配置构建和安装命令](project/README.md#gpu-配置与硬件重建) · [验证结果](project/report/validation.md)
+
 ## Skill 与报告
 
 [PYNQ Skill](project/skill/README.md) 提供 PL 行为保持校验和 20 张诊断卡片，包含可运行示例、适用条件及验证结果。

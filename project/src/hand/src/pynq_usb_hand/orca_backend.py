@@ -140,6 +140,9 @@ class OrcaBackend:
         from .transport import BoundedSCSCL
 
         self.client.servo = BoundedSCSCL(self.transport)
+        self.check_connected_position(cancel)
+
+    def check_connected_position(self, cancel):
         self.sample(cancel)
 
     @staticmethod
@@ -156,7 +159,11 @@ class OrcaBackend:
         cancel.check()
         return value
 
-    def sample(self, cancel):
+    def read_motor_positions(self, cancel, *, bounds=None, torques=None):
+        # Only the startup recovery subclass supplies narrower motion corridors
+        # or a bounded OFF-only preflight allowance. Normal samples stay strict.
+        bounds = self.model.bounds if bounds is None else bounds
+        torques = dict.fromkeys(self.model.ids, self.expected_torque) if torques is None else torques
         started = time.monotonic()
         motor = {}
         health = {}
@@ -170,7 +177,7 @@ class OrcaBackend:
             if type(raw) is not int or not 0 <= raw <= 4095:
                 raise ValueError(f"Invalid position ID {motor_id}")
             position = raw * 2 * math.pi / 4096
-            lower, upper = self.model.bounds[motor_id]
+            lower, upper = bounds[motor_id]
             if not lower <= position <= upper:
                 raise ValueError(f"Feedback outside motor limits ID {motor_id}")
             voltage = registers[46] / 10.0
@@ -181,7 +188,7 @@ class OrcaBackend:
                 raise OSError(f"Voltage protection ID {motor_id}: {voltage}")
             if not 0 <= temperature < self.policy.max_temperature:
                 raise OSError(f"Temperature protection ID {motor_id}: {temperature}")
-            if torque != self.expected_torque or limit != 1000:
+            if torque != torques[motor_id] or limit != 1000:
                 raise OSError(f"Unexpected torque/limit ID {motor_id}: {torque}/{limit}")
             motor[motor_id] = position
             health[motor_id] = {"voltage": voltage, "temperature": temperature, "torque": torque}
@@ -189,6 +196,10 @@ class OrcaBackend:
         if finished - started > self.policy.max_scan_age:
             raise TimeoutError("Complete safety scan exceeded approved age")
         self.health = health
+        return started, finished, motor
+
+    def sample(self, cancel):
+        started, finished, motor = self.read_motor_positions(cancel)
         self.sequence += 1
         return Snapshot(self.sequence, started, finished, self.model.to_joint(motor))
 

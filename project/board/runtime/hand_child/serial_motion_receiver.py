@@ -71,7 +71,8 @@ def run(args):
     import pynq_usb_hand
     from pynq_usb_hand.actuator_owner import VisionActuatorOwner, preview_pause_generation
     from pynq_usb_hand.game_bridge import DatagramReceiver
-    from pynq_usb_hand.orca_backend import OrcaBackend, OrcaModel, SafetyPolicy
+    from pynq_usb_hand.orca_backend import OrcaModel, SafetyPolicy
+    from pynq_usb_hand.startup_default import StartupDefaultBackend
 
     if not Path(pynq_usb_hand.__file__).resolve().is_relative_to(source):
         raise ImportError("hand package origin mismatch")
@@ -104,8 +105,15 @@ def run(args):
                                     recover_stale=getattr(args,'preview_interlock',False))
         receiver = receiver_factory()
 
+        def recovery_report(value):
+            value = dict(value, pid=os.getpid(), session=args.session, game_run=args.game_run)
+            temporary = args.output_dir / "startup-default.tmp"
+            temporary.write_text(json.dumps(value, indent=2), encoding="utf-8")
+            temporary.replace(args.output_dir / "startup-default.json")
+
         def factory():
-            return OrcaBackend(model, args.port, SafetyPolicy(40, 2),
+            return StartupDefaultBackend(model, args.port, SafetyPolicy(40, 2),
+                               recovery_report=recovery_report,
                                skip_unchanged=True, speed=500,
                                allow_stage_targets=True, allow_playback=True)
 

@@ -255,5 +255,16 @@
   "board_pending": true,
   "hardware_tested": false,
   "release_ready": false,
-  "studio_receipt_sha256": "CDCD6D870D377FA7DEF5FD119A5769C38459F9EA8F18C023DD4F25167C633C09"
+  "studio_receipt_sha256": "CDCD6D870D377FA7DEF5FD119A5769C38459F9EA8F18C023DD4F25167C633C09",
+  "gpu_profile": "cache_pipeline_pair",
+  "gpu_features": {
+    "TILE_DESCRIPTOR_CACHE_ENABLE": 1,
+    "BLIT_PIXEL_PIPELINE_ENABLE": 1,
+    "TILE_PIXEL_PIPELINE_ENABLE": 1,
+    "TILE_PIXEL_PAIR_ENABLE": 1,
+    "BLIT_PIXEL_PAIR_ENABLE": 1,
+    "CLEAR_FILL_PIXEL_PAIR_ENABLE": 1,
+    "UPLOAD_RENDER_OVERLAP_ENABLE": 0
+  },
+  "purpose": "GPU descriptor cache, pixel pipeline and conditional paired writes; compatible software ABI."
 }

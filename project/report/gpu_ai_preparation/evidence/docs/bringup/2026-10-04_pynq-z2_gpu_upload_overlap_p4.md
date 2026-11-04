@@ -11,13 +11,12 @@
 | 阶段/日期 | P4 / 2026-10-04；构建于2026-10-03开始 |
 | 最终结果 | PASS：功能、软件、同钟核心OOC、整机与产物身份离线闭合 |
 | Skill源 | xilinx-skill/plugins/xilinx-suite/references/vivado_guide.md |
-| 部署副本 | C:/Users/developer/.agents/skills/xilinx-suite/references/vivado_guide.md |
 
 ## 目标与边界
 
 同Palette/Asset/Tilemap generation的一帧Scene预上传与当前渲染重叠，最多一个READY；复用两份4KiB命令bank及原framebuffer，无新增素材存储或绘图引擎。完成结果保持到present及软件release后再启动后帧。Scene ABI1.0、GameSDK1.1及原MMIO地址保持；P4 profile使用配套驱动，默认关闭硬件选项。资源更新先drain并等待generation实际提交，VIDEO每帧asset更新保留串行。
 
-本轮为离线门禁，未上板、未commit/push。同板实时视觉、声音、游戏及Studio最终端到端验收独立进行。
+本页记录 P4 的离线功能、资源与时序验证；板端端到端结果按整机测试单独统计。
 
 ## 基线与配置
 
@@ -29,7 +28,7 @@ P4 C0060760：render=100MHz、pixel=74.25MHz；六P3开关及UPLOAD_RENDER_OVERL
 
 ## 已通过门禁
 
-- 原始失败及修复逐轮保存在2026-10-03_pynq-z2_gpu_parallel_optimization.md；CLEAR保留字段、NBA前握手及router核心末拍接受判据修复已复验。
+- 边界验证覆盖 CLEAR 保留字段、NBA 前握手及 router 核心末拍接受判据；相关设计依据见 [GPU 技术过程摘要](gpu_design_notes.md)。
 - done边界修复仅P4 renderer_start增加!renderer_done，阻止busy撤销到hold锁存间隙启动READY；原默认关闭条件保持。
 - results/gpu-stage4-verify-1791042086109：实际410.718秒/exit0，18份独立日志，无Fatal/Error/watchdog。off/on完整320×180扫描、bank锁定、CLEAR/FILL/Blit/Tile/掩码/错误前缀及资源更新通过。
 - 重叠黄金：两模式均57602写，CLEAR CRC=A0708AC3、FILL CRC=3094986A；off=0拍/on=520拍真实上传与renderer_busy重叠。full_queue/early及repeat release/resource_fence/三类generation拒绝/partial reset通过，最后字节读回11次。

@@ -11,11 +11,12 @@ from .scene import IndexedImage, PalettePack, Scene, SpriteDescriptor
 from .scene_compiler import SceneCompiler
 from .gpu_abi import (pack_assets,pack_resource_packet,PacketType,ASSET_BUNDLE_CAPACITY_BYTES,
                       GpuCommand,COMMAND_CAPACITY)
-from .shell_theme import PALETTE
+from .shell_theme import PALETTE, draw_header_brand
 
 WIDTH, HEIGHT, CANVAS_WIDTH = 320, 180, 256
 SIZES = (8, 12, 16, 22, 30, 40)
 SHAPES = ('triangle', 'square', 'circle', 'star')
+SHAPE_CENTERS = (39, 71, 103, 135)
 COLORS = (3, 4, 5, 6)
 DIALOG_TARGETS = (('continue',10),('save',86),('clear',162),('home',238))
 
@@ -61,6 +62,22 @@ def text(pixels, value, x, y, *, color=9, scale=1):
             for xx, dot in enumerate(row):
                 if dot == '1':
                     rect(pixels, x+(4*i+xx)*scale, y+yy*scale, scale, scale, color)
+
+
+def header_title(pixels,value,*,height=48,subtitle=None):
+    """Readable page names centered in the space between the two wordmarks."""
+    center=160 if height<48 else 165
+    lines=value.split() if len(value)*4*3-3>70 and ' ' in value else [value]
+    scale=min(3,70//max(len(line)*4-1 for line in lines))
+    block_height=len(lines)*5*scale+(len(lines)-1)*3
+    available_height=height-(8 if subtitle else 0)
+    y=(available_height-block_height)//2
+    for line in lines:
+        width=(len(line)*4-1)*scale
+        text(pixels,line,center-width//2,y,color=9,scale=scale)
+        y+=5*scale+3
+    if subtitle:
+        text(pixels,subtitle,center-(len(subtitle)*4-1)//2,height-8,color=7)
 
 
 def polygon(points, x, y):
@@ -129,7 +146,7 @@ class CanvasPage:
         self._last_brush = None
         self._choices=MenuInputController()
         self._choice_targets=tuple(MenuTarget(shape,MenuIcon.RESERVED,288,cy,
-            hit_width=64,hit_height=34) for shape,cy in zip(SHAPES,(31,66,101,136)))+(
+            hit_width=64,hit_height=28) for shape,cy in zip(SHAPES,SHAPE_CENTERS))+(
             MenuTarget('smaller',MenuIcon.RESERVED,272,167,hit_width=32,hit_height=24),
             MenuTarget('larger',MenuIcon.RESERVED,304,167,hit_width=32,hit_height=24))
         self._last_stamp_at = -1
@@ -262,14 +279,11 @@ class CanvasPage:
         rect(pixels,9,28,241,146,12)
         for y in range(26,172):
             pixels[y*WIDTH+8:y*WIDTH+248] = self.pixels[y*CANVAS_WIDTH+8:y*CANVAS_WIDTH+248]
-        text(pixels,'CANVAS',28,8,color=9,scale=2)
-        text(pixels,'MAKE IT YOURS',191,12,color=8)
         if self.revision==0 and self.shape is None:
             text(pixels,'MAKE SOMETHING',76,80,color=8,scale=2)
             text(pixels,'CHOOSE A SHAPE TO BEGIN',85,100,color=8)
         rect(pixels,256,0,64,180,11)
-        text(pixels,'SHAPES',277,5,color=9)
-        for i,cy in enumerate((31,66,101,136)):
+        for i,cy in enumerate(SHAPE_CENTERS):
             panel(pixels,262,cy-14,52,28,2)
             highlighted=self.shape==SHAPES[i] or hover and self._choices.hovered_id==SHAPES[i]
             border(pixels,262,cy-14,52,28,7 if highlighted else 12,2 if highlighted else 1)
@@ -289,6 +303,9 @@ class CanvasPage:
                     pixels[yy*320+8:yy*320+248]=preview[yy*256+8:yy*256+248]
         border(pixels,7,25,242,148,12)
         text(pixels,'SAVED TO ALBUM' if self.saved else 'FIST TO DRAW',128,175,color=8)
+        rect(pixels,0,0,320,25,11)
+        draw_header_brand(pixels,max_height=21)
+        header_title(pixels,'CANVAS',height=25)
         if self.dialog:
             pixels[:] = bytes([1])*len(pixels)
             rect(pixels,0,0,320,50,11)
@@ -320,7 +337,9 @@ def album_frame(saved):
     """Latest in-memory drawing only; no pointer, controls or disk persistence."""
     from .shell_pages import border
     pixels=bytearray([1])*57600
-    rect(pixels,0,0,320,25,11);text(pixels,'ALBUM',126,8,color=9,scale=2)
+    rect(pixels,0,0,320,25,11)
+    draw_header_brand(pixels,max_height=21)
+    header_title(pixels,'ALBUM',height=25)
     if saved is None:
         text(pixels,'NO SAVED DRAWING',100,82,color=9,scale=2)
         text(pixels,'SAVE YOUR CANVAS FIRST',118-1,107,color=8)
@@ -353,7 +372,7 @@ class PixelPageRenderer:
         hovered=page._choices.hovered_id
         if not page.dialog and hovered is not None:
             if hovered in SHAPES:
-                x,y,w,h=262,(31,66,101,136)[SHAPES.index(hovered)]-14,52,28
+                x,y,w,h=262,SHAPE_CENTERS[SHAPES.index(hovered)]-14,52,28
             else:
                 x,y,w,h=261 if hovered=='smaller' else 290,158,26,20
             extra.extend(GpuCommand.fill_rect(x=xx,y=yy,width=ww,height=hh,token=7)
@@ -494,9 +513,9 @@ def robot_frame(pose='default',phase='WAITING',index=0, geometry=None):
     pixels=bytearray(_robot_hand_pixels(curls,tuple(values.get('bases',curls)),
         tuple(values.get('spread',[0]*5)),values.get('thumb_opposition',0)))
     rect(pixels,0,0,320,49,11)
-    text(pixels,'HAND SHOW',107,10,color=9,scale=3)
+    draw_header_brand(pixels)
     caption=pose.replace('demo:','').upper()
-    text(pixels,caption,(320-(len(caption)*8-2))//2,33,scale=2,color=7)
+    header_title(pixels,'HAND SHOW',subtitle=caption)
     text(pixels,'RIGHT',240,113,color=10)
     text(pixels,'HAND',240,121,color=8)
     if pose=='demo:heart':

@@ -199,7 +199,7 @@ proc checkRequiredFiles { origin_dir} {
   }
 
   set paths [list \
- "[file normalize "$origin_dir/../../../../build/contest-v3-work/[file normalize "$origin_dir/c6_latency.ipdefs/rgb2dvi_v1_2"]"]"\
+ "[file normalize "$origin_dir/c6_latency.ipdefs/rgb2dvi_v1_2"]"\
   ]
   foreach ipath $paths {
     if { ![file isdirectory $ipath] } {
@@ -3870,7 +3870,7 @@ set_property -name "options.warn_on_violation" -value "1" -objects $obj
 set obj [get_runs impl_button_r23]
 set_property -name "part" -value "xc7z020clg400-1" -objects $obj
 set_property -name "strategy" -value "Vivado Implementation Defaults" -objects $obj
-set_property -name "steps.opt_design.tcl.post" -value "$proj_dir/${origin_dir}/hooks/postopt_button_admission.tcl" -objects $obj
+set_property -name "steps.opt_design.tcl.post" -value "${origin_dir}/hooks/postopt_button_admission.tcl" -objects $obj
 set_property -name "steps.post_route_phys_opt_design.is_enabled" -value "1" -objects $obj
 set_property -name "steps.post_route_phys_opt_design.args.directive" -value "Explore" -objects $obj
 set_property -name "steps.write_bitstream.args.readback_file" -value "0" -objects $obj

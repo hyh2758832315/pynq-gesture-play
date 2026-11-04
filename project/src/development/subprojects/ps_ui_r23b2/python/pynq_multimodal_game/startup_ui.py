@@ -9,7 +9,7 @@ from typing import Callable, Sequence
 
 from .menu import MENU_BACKGROUND, MenuAssets, _MENU_GLYPHS, create_menu_assets
 from .scene import IndexedImage, Scene, SpriteDescriptor, PalettePack
-from .shell_theme import PALETTE, draw_wordmark, wordmark
+from .shell_theme import PALETTE, draw_brand_lockup, brand_lockup
 from .scene_compiler import SceneCompiler
 
 
@@ -106,7 +106,7 @@ class StartupRenderer:
         for y in range(4):
             for x in range(4):
                 pixels[(60+y)*self.WIDTH+x] = 7
-        draw_wordmark(pixels,0,176,stride=self.WIDTH)
+        draw_brand_lockup(pixels,0,176,stride=self.WIDTH)
         base = create_menu_assets()
         self.assets = MenuAssets(IndexedImage(self.WIDTH,self.HEIGHT,bytes(pixels)),
                                  base.tile_atlas,PalettePack((PALETTE,)))
@@ -124,7 +124,7 @@ class StartupRenderer:
         def sprite(x,y,w,h,ax,ay):
             sprites.append(SpriteDescriptor(x,y,w,h,ax,ay,0,10+len(sprites)))
         failed = bool(snapshot.error)
-        logo_w,logo_h,_=wordmark()
+        logo_w,logo_h,_=brand_lockup()
         sprite((320-logo_w)//2,14,logo_w,logo_h,0,176)
         if failed:
             sprite(82,78,156,20,0,20)

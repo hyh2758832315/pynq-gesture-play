@@ -1,8 +1,8 @@
 """Cached pixel artwork for the HDMI shell; no animation or worker ownership."""
 from functools import lru_cache
 from dataclasses import replace
-from .creative_pages import rect, text, stamp
-from .shell_theme import draw_wordmark
+from .creative_pages import rect, text, stamp, header_title
+from .shell_theme import draw_brand_lockup, brand_lockup, draw_header_brand
 from .gpu_abi import GpuCommand
 
 
@@ -106,11 +106,8 @@ def _base(page,targets,labels):
     header_height=48
     rect(p,0,0,320,header_height,11)
     rect(p,0,header_height,320,1,12)
+    draw_header_brand(p)
     if page=='home':
-        # Complete official AMD/PYNQ lockup, preserving its aspect ratio.
-        draw_wordmark(p,36,2,max_height=44)
-        text(p,'GESTURE PLAY',188,15,color=9,scale=2)
-        text(p,'PLAY  MAKE  EXPLORE',191,32,color=8)
         subtitles=('FOUR ADVENTURES','YOUR VIDEO LIBRARY','GESTURE SHOW','SHAPE YOUR IDEAS')
         for index,target in enumerate(targets[1:]):
             x,y=target.center_x-66,target.center_y-23
@@ -120,9 +117,7 @@ def _base(page,targets,labels):
             text(p,subtitles[index],x+45,y+28,color=8)
     else:
         title={'games':'GAMES','videos':'VIDEOS','hand-placeholder':'HAND STATUS'}.get(page,'EXPLORE')
-        text(p,title,28,11,color=9,scale=3)
-        text(p,'CHOOSE YOUR NEXT',222,17,color=8)
-        text(p,'EXPERIENCE',242,27,color=8)
+        header_title(p,title)
         if len(targets)==1:
             text(p,'NO VIDEOS YET',84,84,color=9,scale=3)
             text(p,'ADD VIDEOS IN STUDIO',122-39,111,color=8,scale=2)
@@ -165,7 +160,8 @@ def render_shell_page(page,targets,labels,selected=None,*,armed=True,status=None
 def content_loading(title,kind='game',progress=None):
     p=bytearray([1])*57600
     rect(p,0,0,320,7,11);rect(p,0,173,320,7,11)
-    draw_wordmark(p,108,15)
+    width,_,_=brand_lockup()
+    draw_brand_lockup(p,(320-width)//2,15)
     text(p,'LOADING',105,79,color=9,scale=4)
     panel(p,60,112,200,10,12);rect(p,62,114,196,6,2);rect(p,62,114,78 if progress is None else round(196*max(0,min(1,progress))),6,7)
     caption=('STARTING ' if kind=='game' else 'OPENING ')+title.upper()[:25]

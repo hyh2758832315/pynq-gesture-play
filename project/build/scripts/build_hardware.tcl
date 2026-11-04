@@ -1,9 +1,11 @@
 # Vivado 2026.1 / PYNQ-Z2 xc7z020clg400-1, full non-incremental rebuild.
-# Run: vivado -mode batch -source build/scripts/build_hardware.tcl -tclargs NEW_OUTPUT_DIR
+# Run: vivado -mode batch -source build/scripts/build_hardware.tcl -tclargs NEW_OUTPUT_DIR [GPU_PROFILE]
 # Output: NEW_OUTPUT_DIR/gesture_play plus result/{candidate.dcp,*.bit,*.xsa,*.rpt}.
 # Next: verify timing/DRC, exported interface and software pairing before board use.
 set script_dir [file dirname [file normalize [info script]]]
-if {[version -short] ne {2026.1} || $argc != 1} {error {Vivado 2026.1 and a fresh output directory required}}
+if {[version -short] ne {2026.1} || $argc < 1 || $argc > 2} {error {Vivado 2026.1 and a fresh output directory required}}
+set gpu_profile [expr {$argc == 2 ? [lindex $argv 1] : {cache_pipeline_pair}}]
+if {$gpu_profile ni {baseline cache_pipeline cache_pipeline_pair}} {error {Unknown GPU profile}}
 set destination [file normalize [lindex $argv 0]]
 if {[file exists $destination]} {error {Output exists; preserve earlier evidence}}
 file mkdir $destination
@@ -12,6 +14,7 @@ set ::user_project_name gesture_play
 set ::argc 0
 set ::argv {}
 source [file join $script_dir recreate_project.tcl]
+source [file join $script_dir apply_gpu_profile.tcl]
 current_run -synthesis [get_runs synth_button_r23]
 current_run -implementation [get_runs impl_button_r23]
 set_property AUTO_INCREMENTAL_CHECKPOINT 0 [get_runs synth_button_r23]

@@ -1,0 +1,89 @@
+{
+  "assertions": [
+    {
+      "expected": 0,
+      "field": "values.moves",
+      "message": "",
+      "operator": "eq",
+      "tick": 119
+    },
+    {
+      "expected": 6,
+      "field": "values.moves",
+      "message": "",
+      "operator": "eq",
+      "tick": 149
+    },
+    {
+      "expected": false,
+      "field": "values.boosted",
+      "message": "",
+      "operator": "eq",
+      "tick": 155
+    },
+    {
+      "expected": 6,
+      "field": "values.moves",
+      "message": "",
+      "operator": "gt",
+      "tick": 200
+    }
+  ],
+  "events": [
+    {
+      "duration_ms": null,
+      "event_id": "step-0",
+      "frequency_hz": null,
+      "gesture": "fist",
+      "kind": "gesture",
+      "tick": 0,
+      "x": 310,
+      "y": 80
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-151",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 151,
+      "x": 310,
+      "y": 80
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-180",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 180,
+      "x": 310,
+      "y": 175
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-240",
+      "frequency_hz": null,
+      "gesture": "fist",
+      "kind": "gesture",
+      "tick": 240,
+      "x": 0,
+      "y": 175
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-299",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 299,
+      "x": 160,
+      "y": 90
+    }
+  ],
+  "max_ticks": 300,
+  "name": "PC示例：指向转弯、握拳加速与松开",
+  "schema_version": 2,
+  "seed": 17,
+  "test_id": "00-pc-example"
+}

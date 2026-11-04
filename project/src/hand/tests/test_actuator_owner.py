@@ -63,7 +63,7 @@ class ActuatorOwnerTests(unittest.TestCase):
             with self.subTest(seconds=seconds), self.assertRaises(ValueError):
                 owner(Receiver(), MockBackend(), max_seconds=seconds)
 
-    def test_three_gestures_and_unknown_then_release_same_owner(self):
+    def test_three_gestures_and_no_hand_then_release_same_owner(self):
         activated = []
         backend = MockBackend()
 
@@ -71,7 +71,7 @@ class ActuatorOwnerTests(unittest.TestCase):
             if not activated:
                 return "paper"
             index = min(int((now - activated[0]) / .15), 3)
-            return ("paper", "fist", "scissors", None)[index]
+            return ("paper", "fist", "scissors", "default")[index]
 
         session = owner(Receiver(gesture), backend, max_seconds=.75,
                         on_active=lambda source: activated.append(time.monotonic()))

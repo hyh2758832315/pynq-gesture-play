@@ -1601,7 +1601,6 @@
     "source/docs/bringup/2026-09-30_pynq-z2_studio-s5-spatial.md": "docs/bringup/2026-09-30_pynq-z2_studio-s5-spatial.md",
     "source/docs/bringup/2026-10-01_pynq-z2_camera_direct_plug.md": "docs/bringup/2026-10-01_pynq-z2_camera_direct_plug.md",
     "source/docs/bringup/2026-10-01_pynq-z2_ov5640.md": "docs/bringup/2026-10-01_pynq-z2_ov5640.md",
-    "source/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md": "docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
     "source/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md": "docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
     "source/docs/bringup/2026-10-05_pynq-z2_vision_v0_v1.md": "docs/bringup/2026-10-05_pynq-z2_vision_v0_v1.md",
     "source/docs/bringup/2026-10-05_pynq-z2_vision_v2.md": "docs/bringup/2026-10-05_pynq-z2_vision_v2.md",
@@ -4522,6 +4521,7 @@
     "restore_assets.py": "tools/release_v3/restore_assets.py",
     "start_board.py": "tools/release_v3/start_board.py",
     "start_studio.py": "tools/release_v3/start_studio.py",
-    "verify_release.py": "tools/release_v3/verify_release.py"
+    "verify_release.py": "tools/release_v3/verify_release.py",
+    "data/performance_evidence/032.md": "docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md"
   }
 }

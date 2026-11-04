@@ -3,7 +3,7 @@
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 // Date        : Fri Oct 23 06:48:24 2026
-// Host        : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+// Host        : build-host running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               e:/vvl/c0e/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_lifecycle_0/c6v_capture_lifecycle_0_sim_netlist.v
 // Design      : c6v_capture_lifecycle_0

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "date": "2026-11-04",
+  "profile": "cache_pipeline_pair",
+  "result": "PASS",
+  "deployment_manifest_sha256": "78a3be9c9e9012b972d149b1c91ab5319a86348325603d25692fd81643419944",
+  "scope": "same installed game package and replay inputs on PC and PYNQ; hand disabled during automated replay; visual/hand acceptance recorded separately",
+  "games": [
+    {
+      "game": "game1",
+      "package_sha256": "34130fdc6cb5205314dcd29d3b34262dca81aecedfe6284bcce69bd1994335b1",
+      "matched_ticks": 181,
+      "assertions_passed": 4,
+      "assertions_failed": 0,
+      "files_sha256": {
+        "game1-case.json": "7a06af347d2ab7a5bc8dfd0b96caf09362548a818897a2c53055a0069096a4f6",
+        "game1-pc.json": "d1e3643d99cb90da51eaa02fc8d953bcbaec7f2cf4a20bd5a3e958a7812cb1f0",
+        "game1-pynq.json": "d8e45df5a7ccff071941fe1102d894d0a5213f5da1fdd34a3ebb974f98f3825b",
+        "game1-comparison.json": "31ccf43ec70cc37bae1a8c914b534793ae0c955ee1c082bdae0ab44858f07674"
+      }
+    },
+    {
+      "game": "game2",
+      "package_sha256": "bff4cf3cf560f0b2c2def49716b2b88c49d007b0701c8850ab70f865cd7ebd0d",
+      "matched_ticks": 959,
+      "assertions_passed": 12,
+      "assertions_failed": 0,
+      "files_sha256": {
+        "game2-case.json": "685fee3d8ecbe6189bed74f3900e9bfaf79ff644281e870b530af93d6c55a443",
+        "game2-pc.json": "f42d60e4a12d3ecda171442877780b7aed161bd9f13e1d2e60a01d7c7b37a658",
+        "game2-pynq.json": "5d1e3a8e035b384a19877abdcbcadd1ec1bb2508b6390b4cc410e7ae8653eff4",
+        "game2-comparison.json": "fbe6c05be1a42ed27cb531a47fe8b9c74529d96a1c6686772af22dd624f18e1f"
+      }
+    },
+    {
+      "game": "game3",
+      "package_sha256": "e480d2ff1f84cc0d9de5ca9c082b1c2ade5562dd6195bf0d0f4c4413aec880e2",
+      "matched_ticks": 150,
+      "assertions_passed": 4,
+      "assertions_failed": 0,
+      "files_sha256": {
+        "game3-case.json": "550419a37538ddf9e1ef66b3c0f28607b64c14a6ddf337b95d9e3da4b9b756fe",
+        "game3-pc.json": "48e281c5984992a0de552d5c2f440ad201219f42a631e45df63ef41743d16f96",
+        "game3-pynq.json": "a2defa44c0879dc4ae38fd4da28ae2281cb80f90254309742d4e5347aab9ac00",
+        "game3-comparison.json": "bb62edb8faff3287e40a7137f2a6568aca8fe2f8242b490975b2c4b948f63ee2"
+      }
+    },
+    {
+      "game": "game4",
+      "package_sha256": "53b99f41792f835b32e8a817abe09d82bd9f2f24d09edfb098a09d6b21d3ed3e",
+      "matched_ticks": 301,
+      "assertions_passed": 4,
+      "assertions_failed": 0,
+      "files_sha256": {
+        "game4-case.json": "e99bb95fb516656f7f95e280691d7ef4e35cab8120292f6c83f20571e178f7d0",
+        "game4-pc.json": "3e3aa737002a219906f153cd9867d78d0fe10b92db1f31ab2b8e5eda419d8898",
+        "game4-pynq.json": "a4b8d052c01808ff798f2eaf1f5e66788cb4d4493afeff1ad20eaedf9f29c8d5",
+        "game4-comparison.json": "4d24f75e1775382509ffa603d71c58d44cb50c4805e2c3b2fb6ab3fc7c3dbfee"
+      }
+    }
+  ],
+  "total_matched_ticks": 1591,
+  "total_assertions_passed": 24
+}

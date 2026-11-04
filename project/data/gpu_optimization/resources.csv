@@ -1,0 +1,4 @@
+profile,LUT,FF,Slice,BRAM36_equivalent,DSP,WNS_ns,WHS_ns,TNS_ns,THS_ns,WPWS_ns,TPWS_ns
+baseline,32570,47672,13136,89.5,20,0.011,0.05,0.0,0.0,0.538,0.0
+cache_pipeline,32268,47402,13145,89.5,20,0.002,0.032,0.0,0.0,0.538,0.0
+cache_pipeline_pair,32860,47464,13178,87.5,20,0.001,0.05,0.0,0.0,0.538,0.0

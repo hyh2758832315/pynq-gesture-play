@@ -2,7 +2,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanc
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 | Date         : Fri Oct 30 22:35:15 2026
-| Host         : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+| Host         : build-host running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -delay_type min_max -report_unconstrained -file E:/projects/fpga/voice-view-game/contest_v3/build/rebuilt/timing.rpt
 | Design       : c6v_wrapper
 | Device       : 7z020-clg400

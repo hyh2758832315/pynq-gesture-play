@@ -2,7 +2,7 @@ Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanc
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 | Date         : Sun Oct  4 00:29:57 2026
-| Host         : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+| Host         : build-host running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -delay_type min_max -report_unconstrained -file E:/projects/fpga/voice-view-game/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt
 | Design       : c6i_wrapper
 | Device       : 7z020-clg400

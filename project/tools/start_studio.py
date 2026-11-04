@@ -17,7 +17,7 @@ from pynq_multimodal_game.studio.app import main
 if __name__ == '__main__':
     app = QApplication([sys.executable])
     app.setOrganizationName('Voice View Game')
-    QSettings().setValue('content/system-candidate', str(ROOT / 'board/runtime'))
+    QSettings().setValue('content/system-candidate', os.environ.get('PYNQ_RUNTIME', str(ROOT / 'board/runtime')))
     raise SystemExit(main(['PYNQ Studio', '--agent-host', '192.168.2.99',
         '--agent-port', '8765', '--agent-build-id', '0xC0061000',
         '--agent-source-address', '192.168.2.1', *sys.argv[1:]]))

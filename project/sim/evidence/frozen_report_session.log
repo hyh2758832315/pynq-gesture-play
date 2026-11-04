@@ -10,7 +10,7 @@ INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been d
 # Command line       : vivado.exe -mode batch -nojournal -log build/contest-v3-work/frozen-report.log -source contest_v3/build/scripts/report_frozen.tcl
 # Log file           : E:/projects/fpga/voice-view-game/build/contest-v3-work/frozen-report.log
 # Journal file       : 
-# Running On         : DESKTOP-JBJOBKD
+# Running On         : build-host
 # Platform           : Windows 11
 # Operating System   : 26200
 # Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics

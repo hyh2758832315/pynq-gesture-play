@@ -3,7 +3,7 @@
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 //Date        : Fri Oct 23 07:15:37 2026
-//Host        : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+//Host        : build-host running 64-bit major release  (build 9200)
 //Command     : generate_target c6v.bd
 //Design      : c6v
 //Purpose     : IP block netlist

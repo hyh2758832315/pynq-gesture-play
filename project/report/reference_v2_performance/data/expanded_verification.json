@@ -4,9 +4,11 @@
   "source_hash_checks": "PASS",
   "figures": 11,
   "new_data_tables": 6,
-  "final_version": "v2.0 / bd6858bbe4ded19caf1f91322850150c97cab21e",
   "scope": "archival evidence, no new hardware experiments",
-  "visual_review": "PASS: 14 pages reviewed; tables, charts, glyphs and footer checked",
+  "visual_review": "First and last pages of the regenerated 14-page report rendered and inspected; tables, figures, Chinese glyphs and footer are readable.",
   "v2_hwh_sha_match": true,
-  "v2_experiment_flags_verified_zero": true
+  "v2_experiment_flags_verified_zero": true,
+  "archived_visual_review": "PASS: 14 pages reviewed; tables, charts, glyphs and footer checked",
+  "stage_version": "v2.0 / bd6858bbe4ded19caf1f91322850150c97cab21e",
+  "current_gpu_report": "../../gpu_optimization.md"
 }

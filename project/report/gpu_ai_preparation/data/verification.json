@@ -13,14 +13,24 @@
     "single deterministic examples; no empirical uncertainty estimated",
     "visual QA recorded separately"
   ],
-  "revision": "v2 polished",
-  "pdf_pages": 9,
+  "revision": "stage_comparison_with_current_report_link",
+  "pdf_pages": 8,
   "figure_sets": 6,
   "csv_tables": 5,
   "source_copy_hash_checks": 36,
-  "visual_review": "Nine pages inspected after rendering. No clipped text, broken tables, missing glyphs or overlapping figure labels.",
+  "visual_review": "First and last pages rendered and inspected after this update; readable tables, figures, Chinese glyphs and page footers. Existing numerical figures retained.",
   "additional_checks": [
     "archived RTL confirms cache/pipeline prerequisites for Tile pair",
     "four raster opcode combinations have equal write count and CRC"
-  ]
+  ],
+  "original_pdf_pages": 9,
+  "publication_check": {
+    "date": "2026-11-04",
+    "numerical_sources_retained": true,
+    "internal_narrative_replaced_by_technical_summary": true,
+    "current_gpu_report": "../../gpu_optimization.md",
+    "modified_note_links_checked": 14,
+    "modified_source_hashes_match": true,
+    "pdf_author": ""
+  }
 }

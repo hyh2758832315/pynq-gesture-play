@@ -3,7 +3,7 @@
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
 // Date        : Thu Oct 22 03:19:13 2026
-// Host        : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+// Host        : build-host running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top c6v_axi_dma_0 -prefix
 //               c6v_axi_dma_0_ c6v_axi_dma_0_sim_netlist.v
 // Design      : c6v_axi_dma_0

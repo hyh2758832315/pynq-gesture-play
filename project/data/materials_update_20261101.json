@@ -1232,7 +1232,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/chapter.html",
       "path": "report/gpu_ai_preparation/chapter.html",
-      "sha256": "e509d606eddbb9144b41f3360722841b13375d2d6615c855d03886e4881b3776"
+      "sha256": "e509d606eddbb9144b41f3360722841b13375d2d6615c855d03886e4881b3776",
+      "current_sha256": "a625ae779c44d0b55dfee7fc2a3e43e18bc3a060b755a5504f488bb9af11656b"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/overlap.csv",
@@ -1257,7 +1258,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/source_manifest.json",
       "path": "report/gpu_ai_preparation/data/source_manifest.json",
-      "sha256": "133d340ea848c1fac4b7ee7d25734017d26371fd398c3c2f90d5bc02bd35b6bb"
+      "sha256": "133d340ea848c1fac4b7ee7d25734017d26371fd398c3c2f90d5bc02bd35b6bb",
+      "current_sha256": "270d3313be36f65b36d008dde46507858dadc38e05b2c858a7102c0a845c3ba8"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/tile_ablation.csv",
@@ -1267,92 +1269,111 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/verification.json",
       "path": "report/gpu_ai_preparation/data/verification.json",
-      "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65"
+      "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65",
+      "current_sha256": "65265b013592a6dfe0be613a607540db701c8a1a93ffd99c2b59e6b0a3f292eb"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
-      "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
+      "sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+      "original_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
-      "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
+      "sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+      "original_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
-      "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
+      "sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+      "original_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
-      "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
+      "sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+      "original_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
-      "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
+      "sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+      "original_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
-      "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
+      "sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+      "original_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
-      "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
+      "sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+      "original_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
-      "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
+      "sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+      "original_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
-      "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
+      "sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+      "original_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
-      "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
+      "sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+      "original_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
-      "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
+      "sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+      "original_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
-      "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
+      "sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+      "original_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
-      "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
+      "sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+      "original_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
       "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
-      "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
+      "sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+      "original_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-      "path": "report/gpu_ai_preparation/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-      "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f"
+      "path": "report/gpu_ai_preparation/evidence/docs/bringup/gpu_design_notes.md",
+      "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
+      "representation": "technical_summary",
+      "current_sha256": "043e3ee3d1b75d848e63611458772e75e26a19efd5622b2ade59730917ccb9d5"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
       "path": "report/gpu_ai_preparation/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
-      "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4"
+      "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4",
+      "current_sha256": "858e79e038969e175bd774292d84573b474332642038d467fe911d1f56f2bc28"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
       "path": "report/gpu_ai_preparation/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
-      "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587"
+      "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
+      "current_sha256": "fcaf44c162c2d9c67f9694407859541533ba1a3672544bdb51d0a450b767aece"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/scene2d_gpu_architecture.md",
@@ -1512,17 +1533,20 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/gpu_optimization_report.pdf",
       "path": "report/gpu_ai_preparation/gpu_optimization_report.pdf",
-      "sha256": "bd929e67e3b1d7fc4e9417bf2e06854c26bda9ec5499e3d1a7b5b84644e41273"
+      "sha256": "bd929e67e3b1d7fc4e9417bf2e06854c26bda9ec5499e3d1a7b5b84644e41273",
+      "current_sha256": "55275ec1834743dd44a56e73af69189bebd397466af21c5189bd6bafed435be2"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/README.txt",
       "path": "report/gpu_ai_preparation/README.txt",
-      "sha256": "a64101811ba0adc562150e225d959cc2d70fe77b48dbaacba58f8627a502a977"
+      "sha256": "a64101811ba0adc562150e225d959cc2d70fe77b48dbaacba58f8627a502a977",
+      "current_sha256": "ee7312b3191d6513ca9766d6698e98b688eb16abc7a971b704523aa9b5ae194a"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/tools/build_report.py",
       "path": "report/gpu_ai_preparation/tools/build_report.py",
-      "sha256": "4acc550dee0b473236a788ecdc52eb34127b99ef10b8cad79b626387436c92b2"
+      "sha256": "4acc550dee0b473236a788ecdc52eb34127b99ef10b8cad79b626387436c92b2",
+      "current_sha256": "23c8755bffa734152fb4085b35713cd061fd54b96b6839e9e0d41c4116a51596"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/tools/plot_figures.py",
@@ -1632,12 +1656,14 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/chapter.html",
       "path": "report/reference_v2_performance/chapter.html",
-      "sha256": "ca41f0acf763a618dc2baa23bee1b7bd57292fbd2e147b8022f97c3d451e6b2b"
+      "sha256": "ca41f0acf763a618dc2baa23bee1b7bd57292fbd2e147b8022f97c3d451e6b2b",
+      "current_sha256": "a430b1024c3a29971aa68e882d5593ebc0d5c36b5df2479f5accc0a765462f3e"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/expanded_verification.json",
       "path": "report/reference_v2_performance/data/expanded_verification.json",
-      "sha256": "0de4b4840721e3c7e40003da63528597ca5e507a1130094d8e0667a51be7d1d1"
+      "sha256": "0de4b4840721e3c7e40003da63528597ca5e507a1130094d8e0667a51be7d1d1",
+      "current_sha256": "96591a742910f8d6340c957696b0b3863090b073675eea43d80ec84742284472"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/hand_motion_runs.csv",
@@ -1677,7 +1703,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/source_manifest.json",
       "path": "report/reference_v2_performance/data/source_manifest.json",
-      "sha256": "e81f55fab8b98b60bd8468aab51618c532df2703f1687b947148df0c924cbf3c"
+      "sha256": "e81f55fab8b98b60bd8468aab51618c532df2703f1687b947148df0c924cbf3c",
+      "current_sha256": "bc03c37516a2af09942f62a98df34c5eda7c7a7406e1224f067f8a940381c89c"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/tile_ablation.csv",
@@ -1692,7 +1719,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/verification.json",
       "path": "report/reference_v2_performance/data/verification.json",
-      "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65"
+      "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65",
+      "current_sha256": "b88eb66b382ec67d4f441e827ec7e7f42bed575b03ea55060d795f58b37315de"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/vision_resources.csv",
@@ -1707,72 +1735,86 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
-      "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
+      "sha256": "4b474716e30f54b64736ad689831b4c0be68cc3576a31755e33adf9908913bb7",
+      "original_sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
-      "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
+      "sha256": "7ca32b062eb72668f86ea2cd56318d5b80e2dbc6023657542f2994494b8cc23c",
+      "original_sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
-      "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
+      "sha256": "2ee40265bab584eb6acdde7eda5a09c8a800126690a1c0f58fd1ea102c594057",
+      "original_sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
-      "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
+      "sha256": "f589353d6f09db276b9b0801768022e50270780493d3f9e022b1505eb0babbe2",
+      "original_sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
-      "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
+      "sha256": "161e10dafb611862e6759fcf36d75609edd87184a388eb15754c3b3b9ad45f4d",
+      "original_sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
-      "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
+      "sha256": "9009cb30880342a030ab7b5952c466fc25466ecd0a81219eb01aee4db6dc40db",
+      "original_sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
-      "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
+      "sha256": "09bdd666c5e29ebdaa9e79ba89688972e24ecf8fcd30255138eb06d0d8ec7a6b",
+      "original_sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
-      "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
+      "sha256": "497a4a7ec8a31f0ba92d55a7b5c48fa4058e4d82415c69e80832727d305102b3",
+      "original_sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
-      "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
+      "sha256": "b9f628a6b8fed99d4600d6ed49137acac05c105af4de581422d02c022e71bc08",
+      "original_sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
-      "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
+      "sha256": "38bcd80c3649d2442dbe316ad2ba7ffb919088f8dbb8dc1b5954f06c95a5c3e9",
+      "original_sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
-      "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
+      "sha256": "1dc793ca57ee548fc864c20b58a5ef1a762dfe0095d5b20b97d32666b6efa289",
+      "original_sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
-      "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
+      "sha256": "7db55161c3c0cda6a862c72ab7c33073fb78fa0ad49a1e524eb9795f25b57f06",
+      "original_sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
-      "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
+      "sha256": "b62096baae57f451cc0180121d25f3df6ff63cbab38326544adbae8d297d8772",
+      "original_sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
       "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
-      "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
+      "sha256": "a012b7caf7d331d9391590ec5487b58ae8f6f6b7c0843548ba04bf21332ba21c",
+      "original_sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/r30-arm-idle-r19.json",
@@ -1807,7 +1849,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt",
       "path": "report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt",
-      "sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172"
+      "sha256": "0d27bc4c73f57bdecc75de16188386636901d833e8bb3cd9e2ed28a617bfe95a",
+      "original_sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/voice-view-v2-github-release.json",
@@ -1816,28 +1859,34 @@
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
-      "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f"
+      "path": "report/reference_v2_performance/evidence/docs/bringup/gpu_design_notes.md",
+      "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f",
+      "representation": "technical_summary",
+      "current_sha256": "043e3ee3d1b75d848e63611458772e75e26a19efd5622b2ade59730917ccb9d5"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
-      "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4"
+      "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4",
+      "current_sha256": "858e79e038969e175bd774292d84573b474332642038d467fe911d1f56f2bc28"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_pl_timing_repair.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_pl_timing_repair.md",
-      "sha256": "9f723fd8b59892f359880e83f4f8792a8812ddf733ab131e653dbbd3d6b89514"
+      "sha256": "9f723fd8b59892f359880e83f4f8792a8812ddf733ab131e653dbbd3d6b89514",
+      "current_sha256": "08895339a8516db32dddfa9c1ea93b651be222b8d130eddfc87f435a80fa75ee"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_r20_board_test.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_r20_board_test.md",
-      "sha256": "b659d9be35656db1ee0aa56584c6186f437f91841f146cc7496bfcdccd67fdfa"
+      "sha256": "b659d9be35656db1ee0aa56584c6186f437f91841f146cc7496bfcdccd67fdfa",
+      "current_sha256": "5abde6ec224196a26ee6575feb74dbcf48c62d15b14c47a11b99eee56d08deac"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq_usb_hand_board.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq_usb_hand_board.md",
-      "sha256": "437d1877d27d8666ebcd00fe19906080c69ff0daec1d1ac2a606e767cb494880"
+      "sha256": "437d1877d27d8666ebcd00fe19906080c69ff0daec1d1ac2a606e767cb494880",
+      "current_sha256": "1c871fce478386606baa9eee413dfe4e749d5411f793f2a893247f9f19960004"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_continuous_owner.md",
@@ -1847,7 +1896,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_source_clock_audit.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_source_clock_audit.md",
-      "sha256": "daa028f57d36bd5d27a24deaf90bd8a05b2e0ba669f2adfa9b687982916899a4"
+      "sha256": "daa028f57d36bd5d27a24deaf90bd8a05b2e0ba669f2adfa9b687982916899a4",
+      "current_sha256": "af922015220bab07b0a1bf4d41f2cbf5be242fa79b1b456b5543f1683936676c"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_preview_demand_board.md",
@@ -1862,27 +1912,32 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-26_r30_preview_idle.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-26_r30_preview_idle.md",
-      "sha256": "276f8b66ae4ebae6099668568a4cf0333d54f56883c25ed8effa81d17a7d4dfa"
+      "sha256": "276f8b66ae4ebae6099668568a4cf0333d54f56883c25ed8effa81d17a7d4dfa",
+      "current_sha256": "5a46dd95eff0cfa3e9dc295addf81584694e7d6268e0f6b90d59ede6fa4a05ac"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-28_r60_pure_live.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-28_r60_pure_live.md",
-      "sha256": "551bf35ba9db549efd7dd4c0f1aa58cd8b06734cbe47a5eb1e3fe294875b0437"
+      "sha256": "551bf35ba9db549efd7dd4c0f1aa58cd8b06734cbe47a5eb1e3fe294875b0437",
+      "current_sha256": "ce977dda5b835592d69bc8b3d88fdba6e2383a9f78da57dbc7286f19cbd50dc5"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-28_v2_canvas_menu.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-28_v2_canvas_menu.md",
-      "sha256": "4fcbf4efbb1d89a13db4bf1783ccf941eb457e7cc8a8ea92d573fe56d26cf4f4"
+      "sha256": "4fcbf4efbb1d89a13db4bf1783ccf941eb457e7cc8a8ea92d573fe56d26cf4f4",
+      "current_sha256": "e64b866bee327ce18e47c5e37fa383a1ce0e3149604ff974a311c15defda2571"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-29_v2_release.md",
       "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-29_v2_release.md",
-      "sha256": "bf3aea27e787a42aa0c53bfa49c36f04086b4dd8d90e903f19ef1911359585f2"
+      "sha256": "bf3aea27e787a42aa0c53bfa49c36f04086b4dd8d90e903f19ef1911359585f2",
+      "current_sha256": "65f0337c14d5cc3e0fb52648b393100f7d25b75583fef1044753da9bfae6c2fc"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
       "path": "report/reference_v2_performance/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
-      "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587"
+      "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587",
+      "current_sha256": "fcaf44c162c2d9c67f9694407859541533ba1a3672544bdb51d0a450b767aece"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/scene2d_gpu_architecture.md",
@@ -1892,7 +1947,8 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/vision_latency_acceleration_plan_20261023.md",
       "path": "report/reference_v2_performance/evidence/docs/vision_latency_acceleration_plan_20261023.md",
-      "sha256": "e93ec69e9b0d2920633bc36265dfcf9b1d8d822e191dd14d8e95b33f2da6bd94"
+      "sha256": "e93ec69e9b0d2920633bc36265dfcf9b1d8d822e191dd14d8e95b33f2da6bd94",
+      "current_sha256": "2d2fe98645e6404ff08359070997eba22928c5dd4fe4d1e211dbdfa0b2ee9b8c"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log",
@@ -2127,17 +2183,20 @@
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/performance_resource_report.pdf",
       "path": "report/reference_v2_performance/performance_resource_report.pdf",
-      "sha256": "6082b058c9c3d1199bce0cebdc173c7d5cf1013a59d4f149a46cce1c197ef47f"
+      "sha256": "6082b058c9c3d1199bce0cebdc173c7d5cf1013a59d4f149a46cce1c197ef47f",
+      "current_sha256": "16c6235f6d214db747f47e576853bff27eff0ec3818aabf1ce5fe1cf91c6b93f"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/README.txt",
       "path": "report/reference_v2_performance/README.txt",
-      "sha256": "f656b2da2dde12285dad162a8b93177991e3c61768ffad72864c4b018e386c23"
+      "sha256": "f656b2da2dde12285dad162a8b93177991e3c61768ffad72864c4b018e386c23",
+      "current_sha256": "ece1822b6fca0732da31fcdc5bd37ba35044f740407ddb47f54fa6fdeaeb2c0c"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/tools/build_report.py",
       "path": "report/reference_v2_performance/tools/build_report.py",
-      "sha256": "b51bff0d5e3608c2a5332548d05744ffc532481df0deaef268d7cf2f9ca91109"
+      "sha256": "b51bff0d5e3608c2a5332548d05744ffc532481df0deaef268d7cf2f9ca91109",
+      "current_sha256": "23c8755bffa734152fb4085b35713cd061fd54b96b6839e9e0d41c4116a51596"
     },
     {
       "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/requirements/open_topic_guide.md",
@@ -2577,12 +2636,14 @@
     {
       "source": "contest_v3/skill/validation/evidence/return_source/baseline_ooc/post_synth_timing.rpt",
       "path": "skill/validation/evidence/return_source/baseline_ooc/post_synth_timing.rpt",
-      "sha256": "6bb562a624bc4b28d2a914bc56a7904a5eba8dfdbaa1e58d30145f4dbc0be3b3"
+      "sha256": "3153fc6b0295fc1055d1b543ef88b73b39b8ba362cedeb22b66df998b6c68255",
+      "original_sha256": "6bb562a624bc4b28d2a914bc56a7904a5eba8dfdbaa1e58d30145f4dbc0be3b3"
     },
     {
       "source": "contest_v3/skill/validation/evidence/return_source/baseline_ooc/utilization.rpt",
       "path": "skill/validation/evidence/return_source/baseline_ooc/utilization.rpt",
-      "sha256": "5d72f1a01d085cca8c3534803612bc3183c0e6ea7739e8b9f9ede7489cce4db7"
+      "sha256": "b0ab4a01062310668a367e9c6a710a4303abd25b81ef60efac0ea1073ece7431",
+      "original_sha256": "5d72f1a01d085cca8c3534803612bc3183c0e6ea7739e8b9f9ede7489cce4db7"
     },
     {
       "source": "contest_v3/skill/validation/evidence/return_source/boundary_preserve/simulate.log",
@@ -2597,12 +2658,14 @@
     {
       "source": "contest_v3/skill/validation/evidence/return_source/candidate_ooc/post_synth_timing.rpt",
       "path": "skill/validation/evidence/return_source/candidate_ooc/post_synth_timing.rpt",
-      "sha256": "316982d5b46b6d3b174751ac461363c8f8960285b04253ec8754de09ef9e2a2a"
+      "sha256": "8b3ad442e634570259353877e8eff0c9a7cfb0ae5352c29a6a57c8b80390ae5f",
+      "original_sha256": "316982d5b46b6d3b174751ac461363c8f8960285b04253ec8754de09ef9e2a2a"
     },
     {
       "source": "contest_v3/skill/validation/evidence/return_source/candidate_ooc/utilization.rpt",
       "path": "skill/validation/evidence/return_source/candidate_ooc/utilization.rpt",
-      "sha256": "56bd93f66775b4f0d847c7ccce68f321f8a6961b3a36220b11a7218dd53e463e"
+      "sha256": "3b7c431766f8a037555b31c72ae266e4e9c7268f5dc90433edd4e1887d2de716",
+      "original_sha256": "56bd93f66775b4f0d847c7ccce68f321f8a6961b3a36220b11a7218dd53e463e"
     },
     {
       "source": "contest_v3/skill/validation/evidence/return_source/original_preserve/simulate.log",

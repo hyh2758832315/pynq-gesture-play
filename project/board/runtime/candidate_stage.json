@@ -4,11 +4,21 @@
   "target_build_id": "0xC0061000",
   "release_ready": false,
   "board_pending": true,
-  "bit_sha256": "8F8CE2B979528E9E7B1F1DF16A9B9920EEADD05B2F7AEB79DD4D8040E21C691D",
+  "bit_sha256": "6859a004a57c93bb479ed02c89cac5b5bb31b25ed10c2ab0a76f2ca56bbe240f",
   "audio_sampling": false,
   "button_mapping": {
     "BTN0": "LOW",
     "BTN1": "HIGH"
   },
-  "board_operations": false
+  "board_operations": false,
+  "gpu_profile": "cache_pipeline_pair",
+  "gpu_features": {
+    "TILE_DESCRIPTOR_CACHE_ENABLE": 1,
+    "BLIT_PIXEL_PIPELINE_ENABLE": 1,
+    "TILE_PIXEL_PIPELINE_ENABLE": 1,
+    "TILE_PIXEL_PAIR_ENABLE": 1,
+    "BLIT_PIXEL_PAIR_ENABLE": 1,
+    "CLEAR_FILL_PIXEL_PAIR_ENABLE": 1,
+    "UPLOAD_RENDER_OVERLAP_ENABLE": 0
+  }
 }

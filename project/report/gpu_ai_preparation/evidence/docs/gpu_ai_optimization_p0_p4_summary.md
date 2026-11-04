@@ -149,7 +149,7 @@ AI 的贡献体现为在明确约束下组织并执行“提出局部假设 → 
 
 ### 原始记录
 
-1. [P1 至 P3 及逐轮优化记录](bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md)：原始周期、OOC/整机资源、失败与修复、产物 SHA。
+1. [P1 至 P3 技术过程摘要](bringup/gpu_design_notes.md)：描述符复用、像素流水、条件双像素和边界验证；原数值与报告见 data/source_manifest.json。
 2. [P4 最终离线验收](bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md)：整机最终结果、重叠黄金、边界、软件、安全关闭及源码/产物 SHA。
 3. [GPU 架构](scene2d_gpu_architecture.md)：数据流、存储所有权、可选 P4 协议及配套驱动。
 4. [P4 实现后资源报告](../board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt)与[时序报告](../board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt)：最终物理实现数据。
