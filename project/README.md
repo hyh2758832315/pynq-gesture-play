@@ -6,7 +6,7 @@
 
 | 官方推荐用途 | 本目录 |
 | --- | --- |
-| 设计源码 | src/studio、src/hand、src/development；当前硬件实际输入在 build/hardware/c6_latency |
+| 设计源码 | src/studio、src/hand、src/development；集成硬件源码位于 build/hardware/c6_latency |
 | 仿真与验证 | src/development/tests、src/development/sim、sim/evidence |
 | 可复现构建、实现报告 | build/scripts、build/hardware、build/reports |
 | 上板工程、脚本、实测 | board/runtime、sim/evidence/gpu_optimization；基线见 sim/evidence/v3_release |
@@ -60,7 +60,7 @@ $env:PYNQ_RUNTIME=(Resolve-Path build/output/runtime_pair).Path
 python -B tools/start_studio.py
 ```
 
-准备脚本检查时序、布线、DRC、配置负载、软件地址映射与实际 GPU 参数，生成新的完整性清单，并执行启动预检。预期输出 `RUNTIME_PACKAGE_VERIFIED`；它只准备文件，安装和启动由 Studio 完成。其余配置对应修改三个路径/配置参数。
+准备脚本检查时序、布线、DRC、配置负载、软件地址映射与实际 GPU 参数，生成新的完整性清单，并执行启动预检。预期输出 `RUNTIME_PACKAGE_VERIFIED`；运行包准备完成后，由 Studio 执行安装和启动。其余配置对应修改三个路径/配置参数。
 
 相同输入的三配置周期与输出对照：
 
@@ -92,11 +92,11 @@ RTL 可复现自检入口：`vivado -mode batch -source sim/run_frame_owner.tcl`
 
 ## 报告及许可
 
-[设计报告](report/design_report.md) 介绍系统设计与实现，优化数据保留测量版本与实验条件。项目自有源码与文档采用 [MIT](LICENSE)，署名留空；第三方范围见 [许可说明](report/licensing.md)。工程验证范围见 [检查清单](report/missing_items.md)。
+[设计报告](report/design_report.md) 介绍系统设计与实现，优化数据保留测量版本与实验条件。项目自有源码与文档采用 [MIT](LICENSE)；第三方范围见 [许可说明](report/licensing.md)。工程验证范围见 [检查清单](report/missing_items.md)。
 
 ## 提交材料
 
-[官方逐项对照](report/submission_checklist.md) · [报告图稿与数据](report/report_materials.md) · [官方 Word 模板](report/templates/official_report_template.docx) · [PYNQ Skill](skill/README.md)。运行 `python -B tools/check_submission.py` 核对本次补充材料，完整性清单包含这些新文件。
+[官方逐项对照](report/submission_checklist.md) · [报告图稿与数据](report/report_materials.md) · [官方 Word 模板](report/templates/official_report_template.docx) · [PYNQ Skill](skill/README.md)。运行 `python -B tools/check_submission.py` 核对材料入口、指标来源和 Skill 文件；完整性清单提供逐文件校验依据。
 
 ## 参考项目与致谢
 

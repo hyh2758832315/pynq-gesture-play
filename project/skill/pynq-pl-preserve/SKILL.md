@@ -21,27 +21,28 @@ original reference and monitors all declared outputs using the existing DUT's
 input signals, without editing or replacing the testbench stimulus. Runtime
 parameter checks prevent a reference configured for a different test instance.
 
-Run generated `run.tcl` using the project's authorized Vivado session or batch
-flow. Run `preserve.py verify` afterward: simulator exit zero alone is not a
-pass. Preserve first failures and their logs; rebuild into a fresh directory
-after source/config changes. Keep hardware, shared sessions and production
-deployment outside this check's scope.
+Run generated `run.tcl` in an idle Vivado session or batch flow, then run
+`preserve.py verify`. The verifier combines the terminal marker, monitor
+coverage, actual simulation finish and runtime diagnostics. Keep each run and
+its logs in a separate directory so the result remains bound to its inputs.
+This workflow performs development-PC simulation; hardware deployment uses
+the project's board validation flow.
 
-A source-language/dependency rejection is a limit of this checker, not an RTL
-failure. Continue the requested task with an appropriate independently frozen
-reference/verification flow; do not delete checks or rewrite protected inputs
-merely to make this tool accept them.
+For source language or dependencies beyond the supported subset, use a
+verification flow that supports those constructs. Retain an independently
+frozen reference, the original inputs and equivalent comparison criteria.
 
-The result covers only the named instances and stimulus actually exercised.
-Review the existing tests for the changed boundary and add missing scenarios
-when needed; this tool does not create stimulus or prove algorithm correctness.
-Resource/timing checks remain separate. Report actual behavior, sampled scope,
-limitations and any necessary corrections. The packaged control experiments validate defect detection; resource and timing
-results are reported separately for the tested RTL candidate.
+The result covers the configured instances and exercised stimulus. Review
+tests against the changed boundary and add the required scenarios. Use the
+functional specification and an independent algorithm reference to assess
+correctness; use synthesis and implementation for resource/timing results.
+Record the sampled scope, comparison result and applicable conditions.
+The packaged control experiments demonstrate defect detection, while the
+RTL candidate reports quantify resource and timing effects.
 
 
 ## Related project diagnosis
 
-For build/export, tool-result, startup or ownership symptoms, consult only the
-matching group in [PYNQ debug cards](../pynq-debug-cards/SKILL.md). Those historical
-cards do not add mandatory checks to a local RTL preservation task.
+For build/export, tool-result, startup or ownership symptoms, select the
+matching group in [PYNQ debug cards](../pynq-debug-cards/SKILL.md). Each card
+provides its own trigger, handling steps and completion criteria.

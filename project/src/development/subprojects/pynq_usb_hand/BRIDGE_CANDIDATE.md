@@ -1,6 +1,6 @@
-# 灵巧手被动接入候选（2026-10-24）
+# 灵巧手被动接入：双进程通道验证
 
-状态：`PC_VERIFIED / BOARD_PENDING / release_ready=false`。本轮没有装入板端运行时，也没有打开真实串口或驱动灵巧手。板卡 R21 整机启动后网络失联，恢复经过见 `docs/bringup/2026-10-24_pynq-z2_marker_hand.md`。
+本文记录2026-10-24的 PC 通道原型和边界验证，采用内存执行后端。当前整机部署、可恢复跟随及实物验证见[设计报告](../../../../report/design_report.md)和[验证报告](../../../../report/validation.md)。
 
 后续影子入口已经实现：`run_agent_shadow.py` 用两个显式manifest SHA核验冻结游戏和手侧源码，校验实际模块来源，在PYNQ Python3.10/root/显式boot门禁下运行原Agent；只有独立发布线程和观察子进程增加到该候选。默认未安装，支持纯PC `--check-only`。`shadow_session.py`复用单槽数据报合同，在独立手解释器运行 `shadow_receiver.py`；后者不导入串口、PYNQ或ORCA，也不构造Controller，不能驱动实物。启动前没有游戏就不产生子进程。
 
@@ -23,7 +23,7 @@
 - `build/bridge-20261024/b01-regression.json`：168项离线测试通过、117冻结文件通过、Python3.10 AST 通过、真实串口打开0。新增8项覆盖单槽竞争、暂停丢包、重复帧、身份变化、格式/未来时间/超量队列、回放隔离和 hook 恢复。
 - `b02-frozen-game.json`：使用哈希核过的 R21 marker-r02 实际 `PackagedGameRuntime` 和 `GameVisionInputProvider`，一次取样→hook→数据报协议内存替身→接收器→GestureConsumer→真实冻结 SDK 内存后端，paper/rock/scissors 与暂停卸力通过。返回对象身份不变，provider调用数等于样本数；正常播放全是位置写包，无寄存器READ。该项不是物理机械模拟。
 - `b05-processes-host.json`：两个真实独立 PC 进程经私有127.0.0.1数据报通道传三类合成手势；暂停撤销与源停止后的过期停用通过。此项未构造 actuator，没有电机操作，不是 ARM 性能或实物证据。
-- b03 首次尝试在沙箱内传递socket句柄，Windows named-pipe资源共享失败，原源码另存。改为两进程各自创建socket后，b04沙箱回环传输仍超时；相同实现经宿主执行的b05通过。失败记录不覆盖、不当作协议成功。
+- b03 首次尝试在沙箱内传递socket句柄，Windows named-pipe资源共享失败，原源码另存。改为两进程各自创建socket后，b04沙箱回环传输仍超时；相同实现经宿主执行的b05通过。b03/b04 保留为环境诊断记录，双进程协议结论由 b05 的完整结果支持。
 
 ## 复验命令
 
@@ -36,4 +36,4 @@ subprojects/pynq_usb_hand/.venv/Scripts/python.exe -I -B subprojects/pynq_usb_ha
 
 预期输出为 JSON/日志、FROZEN_GAME_HAND_BRIDGE_PASS 和 TWO_PROCESS_PASSIVE_BRIDGE_PASS。输出路径须为新文件。第二条只需允许本机回环，不访问外网或板卡。
 
-下一步先恢复板卡并定位 R21 完整启动失联，完成整机门禁；再在独立候选目录复跑 ARM 回归/双进程验证，安装明确身份绑定的观察器并做无动作影子测试。真实阶段等待、轨迹、持力温升、拔线和卸力确认仍需现场实物验收。当前不能称已融合运行。
+下一步先恢复板卡并定位 R21 完整启动失联，完成整机门禁；再在独立候选目录复跑 ARM 回归/双进程验证，安装明确身份绑定的观察器并做无动作影子测试。真实阶段等待、轨迹、持力温升、拔线和卸力确认仍需现场实物验收。该阶段结果用于后续整机集成验证。

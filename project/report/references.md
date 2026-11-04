@@ -24,7 +24,7 @@
 
 [9] N-B-Studio. [orca_core：面向 SCS225 / ST3215 舵机的 ORCA Hand 控制适配](https://github.com/N-B-Studio/orca_core)[CP/OL]. 本项目使用的 ORCA 软件分支；[SCS-225 改装资料](https://github.com/N-B-Studio/orca_core/tree/main/SCS-225)。
 
-[10] KPTKleist. [Pynq_Gesture_Detect：手势识别算法与实现](https://github.com/KPTKleist/Pynq_Gesture_Detect)[CP/OL]. 早期 OpenCV 手势识别参考实现，相关代码保留 MIT 声明。
+[10] KPTKleist. [Pynq_Gesture_Detect：手势识别算法与实现](https://github.com/KPTKleist/Pynq_Gesture_Detect)[CP/OL]. OpenCV 手势识别参考实现，相关代码保留 MIT 声明。
 
 [11] OpenMV. [openmv：相机与传感器驱动](https://github.com/openmv/openmv)[CP/OL]. [项目参考的 OV5640 驱动版本](https://github.com/openmv/openmv/blob/62369938a94bd04624cf53ffb25a2d923031ebdd/drivers/sensors/ov5640.c)，用于传感器初始化和寄存器配置参考。
 

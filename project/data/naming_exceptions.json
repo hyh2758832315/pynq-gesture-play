@@ -1,7 +1,10 @@
 {
   "non_english_or_special_paths": [],
   "case_sensitive_tool_and_standard_paths": [
+    "LICENSE",
     "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "project/LICENSE",
     "project/README.md",
     "project/board/README.md",
     "project/board/runtime/board/pynq_z2/scripts/NA/ps7_summary.html",
@@ -225,6 +228,7 @@
     "project/sim/evidence/frame_owner/frame_owner.sim/sim_1/behav/xsim/xsim.dir/tb_vision_frame_owner_behav/Compile_Options.txt",
     "project/sim/evidence/frame_owner/frame_owner.sim/sim_1/behav/xsim/xsim.dir/tb_vision_frame_owner_behav/TempBreakPointFile.txt",
     "project/sim/evidence/frame_owner/frame_owner.sim/sim_1/behav/xsim/xsim.dir/tb_vision_frame_owner_behav/xsimSettings.ini",
+    "project/skill/LICENSE",
     "project/skill/README.md",
     "project/skill/pynq-debug-cards/LICENSE",
     "project/skill/pynq-debug-cards/README.md",
@@ -233,8 +237,6 @@
     "project/skill/pynq-pl-preserve/README.md",
     "project/skill/pynq-pl-preserve/SKILL.md",
     "project/skill/validation/README.md",
-    "project/src/development/.pytest_cache/CACHEDIR.TAG",
-    "project/src/development/.pytest_cache/README.md",
     "project/src/development/DESIGN.md",
     "project/src/development/README.md",
     "project/src/development/board/README.md",

@@ -1,6 +1,6 @@
 # 二维 GPU 优化与验证
 
-GPU 在 PL 内执行 Scene 指令，PS 保持原有资源上传、命令提交及完成握手。优化不改变寄存器映射、指令编码、BUILD_ID `0xC0061000` 或图像格式；每份硬件以配套 bit/HWH/XSA 和文件摘要区分。
+GPU 在 PL 内执行 Scene 指令，PS 负责资源上传、命令提交及完成握手。三种配置共用寄存器映射、指令编码、BUILD_ID `0xC0061000` 和图像格式；每份硬件以配套 bit/HWH/XSA 和文件摘要区分。
 
 ## 三种可重建配置
 
@@ -51,7 +51,7 @@ PYNQ-Z2 / xc7z020clg400-1，Vivado 2026.1，控制时钟100 MHz。
 
 三种配置均完成布线，布线错误为 0，DRC 无 Error／Critical Warning；已约束路径的 TNS、THS 均为 0，WPWS 均为 +0.538 ns。三项配置的 Slice 占用为 99.08%，WNS 为 +0.001 ns。原报告保留异步控制、I/O 延迟等检查项，后续扩展可据此评估布局及约束。
 
-[完整实现报告](../build/reports/gpu_optimization/)提供三配置的资源、时序、布线、DRC 和总线偏斜报告；[资源表](../data/gpu_optimization/resources.csv)可直接用于作图。报告仅清理本机标识与绝对输出路径，数值、路径分析和警告保留；`provenance.json` 记录原件与发布件摘要。
+[完整实现报告](../build/reports/gpu_optimization/)提供三配置的资源、时序、布线、DRC 和总线偏斜报告；[资源表](../data/gpu_optimization/resources.csv)可直接用于作图。报告保留完整数值、时序路径分析和检查项；`provenance.json` 提供原始报告与公开报告的摘要映射。
 
 ## 复现
 
@@ -70,7 +70,7 @@ python -B sim/evidence/gpu_optimization/replay_pc.py --out build/output/game_com
 
 ## 板端验证
 
-两种优化配置均通过 Studio 标准安装和启动，内容库保持完整，灵巧手正常初始化。真人短测覆盖菜单握拳选择、游戏移动／跳跃、返回与灵巧手三态连续切换；两轮反馈均为“操作、画面和灵巧手均正常”。真人测试期间关闭回传，未注入测试输入。
+两种优化配置均通过 Studio 标准安装和启动，内容库保持完整，灵巧手正常初始化。真人短测覆盖菜单握拳选择、游戏移动／跳跃、返回与灵巧手三态连续切换；两轮反馈均为“操作、画面和灵巧手均正常”。现场测试使用真实相机输入，回传保持关闭。
 
 三项配置另完成四个游戏的 PC／PYNQ 同包、同输入回放：
 

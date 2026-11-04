@@ -1,7 +1,7 @@
 # Existing-stimulus preservation
 
 Run on the development PC using Python3.11+ and Vivado. Actual component checks
-used Vivado2026.1, xc7z020clg400-1. This is not a board deployment flow.
+used Vivado2026.1, xc7z020clg400-1. The workflow runs HDL simulation on the PC.
 
 Save an unchanged reference source before editing. Supply a JSON configuration
 with exactly the following fields; paths resolve relative to that JSON file:
@@ -26,8 +26,8 @@ with exactly the following fields; paths resolve relative to that JSON file:
 }
 ```
 
-Use actual top, hierarchy, parameters and marker from the caller's testbench;
-these are example bindings, not universal values. Each path is relative to the
+Replace the example bindings with the actual top, hierarchy, parameters and
+terminal marker from the selected testbench. Each path is relative to the
 legacy top instance. List every declared module parameter explicitly, including
 defaults. Values are integers or integral SV literals such as `"32'h50443253"`.
 The wrapper compares them against the actual DUT parameters before sampling.
@@ -37,8 +37,8 @@ Choose the minimum samples and watchdog from the test's real duration.
 Calibrate the binding on unchanged RTL before relying on a changed-design result.
 Inputs should remain stable around the DUT sampling edge. A legacy testbench
 that drives blocking updates on that same edge can race the two instances;
-the monitor does not resolve such simulator scheduling races. Diagnose that
-boundary rather than treating every mismatch as an RTL bug or weakening checks.
+resolve this stimulus scheduling boundary before comparing the RTL versions.
+Keep the original comparison criteria when correcting testbench scheduling.
 
 From the directory containing `SKILL.md`:
 
@@ -48,47 +48,45 @@ vivado -mode batch -source C:/work/check_01/run.tcl
 python -X utf8 -B scripts/preserve.py verify C:/work/check_01
 ```
 
-Alternatively source generated `run.tcl` in an owned idle Vivado Tcl session.
-Do not share a session concurrently. The script creates a new simulation project
-and closes it. `verify` reads the actual XSim transcript and requires the legacy
-terminal marker, actual finish, every monitor's final coverage result and no
-runtime error/fatal. A failed DUT can produce a zero Vivado tool code; that is
-why transcript verification is separate. Do not weaken checks to convert a
-failure into a pass. Existing outputs and receipts are never overwritten.
+Alternatively source generated `run.tcl` in an owned idle Vivado Tcl session,
+executing tasks sequentially within that session. The script creates and closes
+a new simulation project. `verify` reads the XSim transcript and requires the
+legacy terminal marker, actual finish, every monitor's final coverage result
+and a run free of runtime error/fatal messages. This connects the tool result
+to the observed RTL behavior. Each run keeps its own outputs and receipts.
 
 Outputs: frozen_reference.sv, monitor.sv, run.tcl, manifest.json, simulation/
 compile/elaborate/simulate logs, and verified.json only after successful checking.
-The manifest records reference/config/source/generated-file hashes. Any of those
-changing before verification invalidates the result. It hashes listed HDL files,
-not external data files, tool binaries or all environment settings; retain those
-dependencies separately if the test uses them. Preserve raw logs on failure.
+The manifest binds the reference, configuration, listed HDL sources and
+generated files to the run through hashes. Changed inputs require a new run.
+Record external test data, tool versions and environment settings separately
+when used, and retain the raw logs for diagnosis and review.
 
-## Deliberate boundaries
+## Supported inputs and validation scope
 
 - All listed sources must be self-contained module-only units. The only allowed
   preprocessing directives are timescale and default_nettype. Includes,
   definitions/conditional macros, packages/imports, binds and compilation-unit
-  globals are rejected. Otherwise a copied original could resolve the same
-  changed definition as the DUT and falsely appear preserved. DUT file/env/random
-  dependencies and hierarchical/structured dependencies are also outside this
-  tool. Do not bypass these guards: use a separately frozen, appropriately
-  elaborated reference/checker for such designs. This conservative scanner is
-  not a compiler, full symbol resolver or proof of arbitrary source isolation.
-  Testbench stimulus must reach the DUT through its ports; hierarchical state
-  forcing requires an appropriate fault-aware reference instead.
+  globals are rejected to keep reference dependencies independent of candidate
+  changes. DUT file/env/random dependencies and hierarchical/structured
+  dependencies require a separately frozen reference and a checker supporting
+  those constructs. The scanner validates the documented source subset; full
+  language elaboration and dependency isolation use the corresponding HDL
+  tools. Testbench stimulus reaches the DUT through its ports; hierarchical
+  state forcing requires a fault-aware reference.
 - The DUT must be a leaf module, with no child module/IP instances in either
-  version. Otherwise a reference could silently share a changed dependency.
-  Ordinary child-instance syntax is conservatively rejected; the source scanner
-  is not a compiler/elaborator, so inspect the actual design dependency scope.
-  Escaped identifiers, macros that create instances, interfaces and complex
-  elaboration constructs are outside the supported source language.
+  version. This makes the reference self-contained. Child instances, escaped
+  identifiers, macros that create instances, interfaces and complex elaboration
+  constructs are outside the supported subset. Inspect the actual design
+  dependency scope before selecting the verification flow.
 - The parser supports one-module files with explicit ANSI input/output scalar or
   packed wire/logic/reg ports and simple integral parameters. It rejects interfaces,
   structs, unpacked ports, inout, inherited port declarations, non-ANSI modules,
   string/type parameters and unsupported syntax rather than silently omitting it.
   Testbench helper modules may be in other listed source files. Sources
   must define the actual DUT once; its port and parameter declarations must match
-  the frozen interface. It is not a general SystemVerilog parser or compiler.
+  the frozen interface. Use a full SystemVerilog parser/elaborator for other
+  language constructs.
 - A selected existing testbench must instantiate without external top ports.
   Use simple named hierarchy paths; generated-index or escaped paths are not
   supported. Reference and current RTL must share the declared semantics of all
@@ -97,15 +95,15 @@ dependencies separately if the test uses them. Preserve raw logs on failure.
 - The monitor samples one clock domain after rising/falling edges at 1ps settling offset,
   starting after an active reset sample. It compares every output using four-state
   case inequality, even when VALID is false. It requires both reset and active
-  samples. It is not an asynchronous/glitch, CDC or analog checker, nor secure
-  zeroization verification. Designs requiring a different observation contract
-  need an appropriate checker rather than suppressed mismatches.
-- It adds no transactions, error packets, backpressure or reset scenarios. Its
-  strength is reusing existing stimulus without rewriting the comparison harness.
-  Cover missing cases independently. The frozen original defines preservation,
-  not correctness; a bug shared with it remains a bug. Intentional changes require
-  a separately specified expected behavior and must not use strict equality as
-  their entire acceptance test.
+  samples. Asynchronous/glitch, CDC, analog and secure zeroization properties
+  require their respective checkers. Select the observation contract and
+  checker to match the properties under validation.
+- The tool reuses existing stimulus and generates the comparison harness.
+  Add transactions, error packets, backpressure and reset scenarios according
+  to the changed boundary. The frozen original defines the behavior-preservation
+  reference; algorithm correctness is assessed against the functional
+  specification. Intentional behavior changes require separately specified
+  expected results and matching acceptance tests.
 
 ## Validation
 

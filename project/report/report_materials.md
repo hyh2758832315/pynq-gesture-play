@@ -1,8 +1,6 @@
 # 技术报告、数据与图稿入口
 
-署名：
-
-报告正文见 [系统设计](design_report.md)，下表提供接口、性能、数据和可编辑图稿。[官方 Word 模板](templates/official_report_template.docx)保留原版式，并清理个人文档属性。
+报告正文见 [系统设计](design_report.md)，下表提供接口、性能、数据和可编辑图稿。[官方 Word 模板](templates/official_report_template.docx)提供报告排版格式。
 
 | 内容 | 材料 |
 | --- | --- |

@@ -1,6 +1,6 @@
 # PL–PS 系统图：横向展开中英文版
 
-基线是独立项目 `contest_v3`，PYNQ-Z2 / Zynq-7020，冻结运行包 R15b 与手部运行时 R16，BUILD_ID `0xC0061000`。本次调整图的布局和表达，不改变系统实现。
+图稿依据 2026-11-01 系统基线：PYNQ-Z2 / Zynq-7020，BUILD_ID `0xC0061000`。模块身份与数据流由随附来源索引核对。
 
 ## 文件
 
@@ -15,37 +15,37 @@
 
 ## 布局与表达
 
-- PL 在左，PS 在右，宽度比例 1660:510，约 3.25:1；这只是绘图空间分配，不代表芯片面积或资源利用率。
+- PL 在左，PS 在右，宽度比例 1660:510，约 3.25:1；该比例用于布局；芯片资源利用率见完整实现报告。
 - PL 视觉处理与渲染 GPU 上下分区，颜色及横向实线同时区分。视觉数据向右交给 PS，绘图命令向左返回 GPU。
 - OV5640、HDMI 显示器、上位机和灵巧手在芯片框外保留图片位置；接口分别为 DVP、HDMI、Ethernet、USB。
 - 模块只保留一至两行核心功能；展开实际分支与连接，版本身份、滤波窗口、寄存器及帧身份细节留在证据与说明中。
 
-本次展开的 PL 功能包括：RGB 旁路与 RGB VDMA；缩减 / HSV 后的原始掩膜 FIFO、形态 / 高斯滤波分支及双掩膜打包；独立掩膜 SG DMA；相机 I²C 和帧准入 / 三槽管理；GPU 包分发、命令缓冲、Atlas / Tilemap 资源存储、调色板、填充 / 精灵 / 图块绘制、共享 BRAM 双帧缓冲、消隐期交换、扫描和独立 OSD。
+PL 功能包括：RGB 旁路与 RGB VDMA；缩减 / HSV 后的原始掩膜 FIFO、形态 / 高斯滤波分支及双掩膜打包；独立掩膜 SG DMA；相机 I²C 和帧准入 / 三槽管理；GPU 包分发、命令缓冲、Atlas / Tilemap 资源存储、调色板、填充 / 精灵 / 图块绘制、共享 BRAM 双帧缓冲、消隐期交换、扫描和独立 OSD。
 
 ## 拓扑含义与省略项
 
-本图是功能与数据流概览，不是逐网表连接图。`AXI HP` 区块与标有 `DDR` 的箭头表示经 PS DDR 控制器和板载 DDR 交换缓冲区，不表示 DMA 直接连接 OpenCV 或软件函数，也不表示 DDR 实体属于 PL。为精简主图，未画独立 DDR 芯片及控制器方框。
+本图概括功能与数据流；逐网表连接见 Vivado Block Design。`AXI HP` 区块与标有 `DDR` 的箭头表示经 PS DDR 控制器和板载 DDR 交换缓冲区，DMA 将数据写入共享缓冲区，由 PS 软件读取；DDR 由 PS 控制器访问，物理存储位于芯片外。主图将 DDR 芯片和控制器汇总为数据通路。
 
-当前图将 HP0、HP1、HP3 的多组 AXI 数据互连汇总成一条竖向 `AXI HP` 区块，并用各端口标注保留通路身份；它不是一个新增硬件 IP，也不表示三条 DMA 流在 PL 内直接互相连通。通往 PS 的箭头是经 DDR 的功能数据通路。
+当前图将 HP0、HP1、HP3 的多组 AXI 数据互连汇总成一条竖向 `AXI HP` 区块，并用各端口标注保留通路身份；区块汇总已有互连接口，各 DMA 流保持独立；通往 PS 的箭头表示经 DDR 的功能数据通路。
 
-RGB 从 Demosaic 输出旁路进入帧采集；肤色分割和滤波分支形成原始/滤波双掩膜。实际 BD 中 `frame_dma → HP1`、`moments_dma → HP3`，绘图上传 `axi_dma MM2S → HP0`。PS 使用 OpenCV 完成手势识别，最新手势与位置分别供交互应用和灵巧手调度读取。图中保留两条独立语义通路，未画成必须由游戏进程转发识别结果。
+RGB 从 Demosaic 输出旁路进入帧采集；肤色分割和滤波分支形成原始/滤波双掩膜。实际 BD 中 `frame_dma → HP1`、`moments_dma → HP3`，绘图上传 `axi_dma MM2S → HP0`。PS 使用 OpenCV 完成手势识别，最新手势与位置分别供交互应用和灵巧手调度读取。图中保留识别结果到应用与灵巧手调度的两条独立通路。
 
-GPU 接收 Scene 命令和资源，完成光栅化后写入 BRAM 双帧缓冲，再经扫描、独立 OSD 和 rgb2dvi 输出 HDMI。GPU 与视觉前端不存在直接像素串联通路。灰色 AXI GP 控制箭头汇总采集配置、相机 I²C、GPU 与 OSD 的 AXI-Lite / MMIO 访问。按键 GPIO、时钟复位、HP2 调试回读、状态回执、具体视频解码过程等未展开。
+GPU 接收 Scene 命令和资源，完成光栅化后写入 BRAM 双帧缓冲，再经扫描、独立 OSD 和 rgb2dvi 输出 HDMI。GPU 绘制与视觉前处理采用独立像素通路，由 PS 识别与应用逻辑衔接。灰色 AXI GP 控制箭头汇总采集配置、相机 I²C、GPU 与 OSD 的 AXI-Lite / MMIO 访问。按键 GPIO、时钟复位、HP2 调试回读、状态回执、具体视频解码过程等未展开。
 
 GPU 内的填充、精灵、图块是按命令选择和调度的绘制功能，三条写入箭头表示它们共享帧缓冲写入通路，各绘制模块按调度共享写入端口。图集和图块存储合并展示，供绘制模块读取；调色板单独连接扫描输出。消隐期帧交换根据绘制完成状态切换读写帧。控制寄存器条只展开相机 I²C、帧管理、独立 OSD 的代表性访问分支，未逐个列出全部 GPIO 状态和控制连线。
 
-Ethernet 概括 Studio 与板端的管理、内容和观察接口；灵巧手由 PS 的独立动作进程通过 USB SDK 访问。外设图片仍为用户要求的预留位置，不使用他人项目的设备照片。
+Ethernet 概括 Studio 与板端的管理、内容和观察接口；灵巧手由 PS 的独立动作进程通过 USB SDK 访问。外设区域预留照片位置，可放置本项目设备实拍。
 
 ## 版式参考
 
 1. [PYNQ-Z2 Audio Analyzer 系统图](https://github.com/VincentttWang/FPGA_SocChina_2025/blob/main/doc/img/System%20Graph.png)：参考其横向 PL 大区、PS 小区与芯片外上位机的空间组织。
 2. [AMD / Xilinx PYNQ-ZU Base Overlay 模块图](https://xilinx.github.io/PYNQ-ZU/overlays)：参考功能模块、硬件区域边界和外部接口的简洁表达。
 
-以上图片已查看，仅借鉴表达方式。本图重新绘制，连接、模块和算法均以本项目为依据，不沿用参考项目的音频链路或未核实的接线。
+参考图提供版式与信息组织思路；本图的模块、算法和连接依据本项目源码、HWH 与 Block Design 绘制。
 
 ## 可复现生成
 
-在 `contest_v3` 目录中，使用已具备 PySide6 的 Python 环境：
+在 `project` 目录中，使用已具备 PySide6 的 Python 环境：
 
 ```powershell
 python -B tools/draw_pl_ps_system.py
@@ -53,7 +53,7 @@ python -B tools/render_system_diagram.py report/figures/pl_ps_v3/system_zh.json 
 python -B tools/render_system_diagram.py report/figures/pl_ps_v3/system_en.json --output report/figures/pl_ps_v3/system_en
 ```
 
-第一条输出两份 JSON 和 `evidence.json`，后两条分别输出四种格式。下一步可在 draw.io 中替换图片预留、编辑模块或导出所需尺寸。直接编辑 draw.io 不会反向更新 JSON。兼容别名 `system.*` 是导出后的中文版副本；正式使用建议选明确带 `_zh` / `_en` 的文件。
+第一条输出两份 JSON 和 `evidence.json`，后两条分别输出四种格式。下一步可在 draw.io 中替换图片预留、编辑模块或导出所需尺寸。draw.io 与 JSON 分别维护，后续编辑选定其中一种作为母稿。兼容别名 `system.*` 是导出后的中文版副本；正式使用建议选明确带 `_zh` / `_en` 的文件。
 
 ## 核验
 

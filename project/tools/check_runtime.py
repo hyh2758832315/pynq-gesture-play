@@ -12,7 +12,7 @@ from xml.etree import ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 board = ROOT / 'board/runtime'
 manifest = board / 'deployment_manifest.json'
-expected = '56499ea2d1919fffc92ee5cf4b0e15794fc95290201777d10f65424ac71185a3'
+expected = '18acc3445e9acfde4189ebe75d15b7bd0b7dedf7f55a6a6d35be48e09c31ae81'
 assert hashlib.sha256(manifest.read_bytes()).hexdigest() == expected
 data = json.loads(manifest.read_text(encoding='utf-8'))
 assert data['build_id'] == '0xC0061000'
