@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" version="24.7.17">
-  <diagram name="GESTURE PLAY v3.0 PL–PS" id="system">
+  <diagram name="GESTURE PLAY PL–PS" id="system">
     <mxGraphModel dx="2400" dy="1060" grid="1" gridSize="10" page="1" pageWidth="2400" pageHeight="1060">
       <root>
         <mxCell id="0" />
@@ -106,7 +106,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="title" value="GESTURE PLAY v3.0  |  PL–PS System Architecture" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#697887;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=39;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="title" value="GESTURE PLAY  |  PL–PS System Architecture" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#697887;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=39;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="30" y="20" width="2340" height="65" />
         </mxCell>
         <mxCell id="cpu" value="ARM Cortex-A9 · Linux / PYNQ" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#697887;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=22;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">

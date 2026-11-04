@@ -1,7 +1,7 @@
 {
   "width": 3080,
   "height": 1640,
-  "title": "GESTURE PLAY v3.0 PL–PS",
+  "title": "GESTURE PLAY PL–PS",
   "subtitle": "Expanded functional architecture of independent contest_v3",
   "edge_font_size": 23,
   "nodes": [
@@ -11,7 +11,7 @@
       "y": 20,
       "w": 3020,
       "h": 65,
-      "lines": "GESTURE PLAY v3.0  |  PL–PS 系统架构",
+      "lines": "GESTURE PLAY  |  PL–PS 系统架构",
       "fill": "#ffffff",
       "stroke": "#697887",
       "font_size": 42,

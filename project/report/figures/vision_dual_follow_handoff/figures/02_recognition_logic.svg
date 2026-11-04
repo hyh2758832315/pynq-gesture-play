@@ -17,7 +17,7 @@
 <text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  视觉识别与双路跟随  /  02  识别逻辑</text>
 <text x="1100.0" y="129.98" text-anchor="middle" font-size="47" font-weight="600">位置可先跟随，类别经过多帧确认</text>
 <text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">确定手在哪里，与确定是握拳 / 剪刀 / 张手，使用不同特征与有效性条件。</text>
-<text x="1100.0" y="1661.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意</text>
+<text x="1100.0" y="1661.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  BUILD_ID 0xC0061000  ·  源码机制示意</text>
 <rect x="100" y="325" width="440" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
 <text x="320.0" y="373.25" text-anchor="middle" font-size="25" font-weight="600">滤波掩膜 → 外轮廓</text>
 <text x="320.0" y="405.75" text-anchor="middle" font-size="25" font-weight="400">候选面积 ≥ 2000 px²</text>

@@ -41,7 +41,7 @@
         <mxCell id="subtitle" value="确定手在哪里，与确定是握拳 / 剪刀 / 张手，使用不同特征与有效性条件。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
         </mxCell>
-        <mxCell id="footer" value="GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="footer" value="GESTURE PLAY  ·  BUILD_ID 0xC0061000  ·  源码机制示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="1639" width="2080" height="33" />
         </mxCell>
         <mxCell id="contour" value="滤波掩膜 → 外轮廓&#10;候选面积 ≥ 2000 px²" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">

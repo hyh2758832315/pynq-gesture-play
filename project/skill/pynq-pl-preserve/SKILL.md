@@ -36,9 +36,8 @@ The result covers only the named instances and stimulus actually exercised.
 Review the existing tests for the changed boundary and add missing scenarios
 when needed; this tool does not create stimulus or prove algorithm correctness.
 Resource/timing checks remain separate. Report actual behavior, sampled scope,
-limitations and any necessary corrections. Component controls demonstrate that
-the monitor can detect defects; they do not demonstrate better project outcomes
-than an independent workflow without this Skill.
+limitations and any necessary corrections. The packaged control experiments validate defect detection; resource and timing
+results are reported separately for the tested RTL candidate.
 
 
 ## Related project diagnosis

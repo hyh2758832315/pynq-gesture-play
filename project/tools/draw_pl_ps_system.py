@@ -40,8 +40,8 @@ def make_scene():
                 item['en_label'] = en_label
         edges.append(item)
 
-    box('title', 30, 20, 3020, 65, 'GESTURE PLAY v3.0  |  PL–PS 系统架构',
-        'GESTURE PLAY v3.0  |  PL–PS System Architecture', size=42, kind='text')
+    box('title', 30, 20, 3020, 65, 'GESTURE PLAY  |  PL–PS 系统架构',
+        'GESTURE PLAY  |  PL–PS System Architecture', size=42, kind='text')
     box('soc', 290, 130, 2440, 1435, 'PYNQ-Z2 · Zynq-7020',
         'PYNQ-Z2 · Zynq-7020', stroke='#3a5061', size=29, kind='group')
     box('pl', 320, 205, 1660, 1325, 'PL / 可编程逻辑', 'PL / Programmable Logic',
@@ -172,7 +172,7 @@ def make_scene():
         '蓝：视觉数据    紫：绘图数据    灰虚线：控制 / 状态    ·    图元按命令调度，共享帧缓冲',
         'Blue: vision data    Purple: graphics data    Dashed: control / status    |    Primitives share the framebuffer',
         size=25, kind='text')
-    scene = dict(width=3080, height=1640, title='GESTURE PLAY v3.0 PL–PS',
+    scene = dict(width=3080, height=1640, title='GESTURE PLAY PL–PS',
                  subtitle='Expanded functional architecture of independent contest_v3',
                  edge_font_size=23, nodes=nodes, edges=edges)
     return scene, english

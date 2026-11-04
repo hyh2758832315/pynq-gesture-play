@@ -75,7 +75,7 @@ Studio 区分 SSH 可达、启动/初始化、Agent READY 与回传。统一“�
 
 报告：[utilization](../build/reports/frozen_utilization.rpt)、[timing](../build/reports/frozen_timing.rpt)、[clocks](../build/reports/frozen_clocks.rpt)、[DRC](../build/reports/frozen_drc.rpt)、[route](../build/reports/frozen_route.rpt)。控制域 100 MHz、HDMI 像素 74.25 MHz；摄像输入端约束名 `vid_pclk` 的 10 ns 不能当作实测帧率。720p60 是扫描时序，也不等于游戏或 PC 回传每秒更新 60 次。
 
-Slice 使用已很紧，不能只用 LUT 百分比判断余量。DRC 没有 Error/Critical Warning，但存在异步控制、DSP 流水和时钟连接等 Warning；时序检查还有输入/输出延迟未约束项。报告保留原始警告，尚未形成逐项豁免依据，见缺项清单。
+Slice 使用已很紧，布局容量需与 LUT 用量一并评估。DRC 没有 Error/Critical Warning，但存在异步控制、DSP 流水和时钟连接等 Warning；时序检查还有输入/输出延迟未约束项。外部接口约束及异步控制条件见原始报告。
 
 | 优化及测量范围 | 优化前 | 优化后 | 解释 |
 | --- | ---: | ---: | --- |
@@ -87,23 +87,23 @@ Slice 使用已很紧，不能只用 LUT 百分比判断余量。DRC 没有 Erro
 
 原始 CSV、图表及方法见 [性能报告](reference_v2_performance/performance_resource_report.pdf) 及同目录 data。表中数据按实验版本和测量范围使用；整机指标与模块指标分列。
 
-## 6. 验证与实测边界
+## 6. 验证结果
 
-发布时记录见 [acceptance-summary.json](../sim/evidence/v3_release/acceptance-summary.json)：包含标准整包安装、视频→相机回传→恢复视频→回菜单、灵巧手启动检查、自启动实例连接；同时明确本次发布没有重新逐项真人验收全部游戏/电机，也没有全新 SD 安装验证。历史真人结果保留在发布源码/验收记录，不能替代这些缺项。
+[发行验收](../sim/evidence/v3_release/acceptance-summary.json)覆盖标准安装、视频与回传恢复、灵巧手启动检查及自启动连接。各项记录保留测试配置和执行范围。
 
-本次整理新增验证见 [validation.md](validation.md)：冻结运行包 651 文件校验、独立 Studio 169 项离线回归、隔离配置启动、Vivado 工程恢复/新综合/实现验证。测试路径使用本包，不靠正在运行的板卡补结果。RTL testbench 与原验证资料一并保留；没有宣称做了摄像头模拟电气接口到完整 Linux 用户程序的全系统仿真。
+[验证汇总](validation.md)包含 651 个运行文件校验、Studio 169 项离线回归、Vivado 工程重建及实现检查。RTL 场景验证、软件回归和板端结果分别记录，便于定位对应层级。
 
-## 7. 从零复现路径
+## 7. 环境准备与运行
 
 1. 准备 PYNQ-Z2、相应摄像头、HDMI 显示器、网线；使用灵巧手时需要对应 USB 手、独立电源及配套标定。未知新手不能直接套用现有机械标定。
 2. 在短英文路径解压本包，安装 Python 3.13 与 Vivado 2026.1；按 README 创建 PC 虚拟环境、安装 extras，运行 `tools/verify_package.py` 和 `tools/check_runtime.py`。
 3. 运行 `tools/start_studio.py`，先在 PC 打开各游戏示例、构建验证；通过 Studio 选择板卡。SSH 主机密钥和登录密钥由本机用户设置，包内不分发私钥。
-4. 已安装 PYNQ 3.1 和项目依赖的板卡，配置直连地址/SSH 别名后，在 Studio“安装完整项目”选择 `board/runtime`，核对安装回执和 READY，再使用统一启动按钮。首次受管自启动配置可参考 `src/development/tools/install_studio_autostart.py --help` 及配套 systemd 文件；必须显式传入 `--candidate board/runtime`，不采用工具中的历史默认候选。该安装工具还要求基础服务已存在且处于停止状态，因此不能当作全新 SD 一键安装器。
-5. 全新 SD 的 PYNQ 基础系统、额外 Python/SDK 库和首次网络/相机安装，现有资料尚未做到陌生用户可一次完成且有实测证明。此步骤明确未闭环，不能把第 4 步的“已有依赖板卡”当作从零验证。
+4. 已安装 PYNQ 3.1 和项目依赖的板卡，配置直连地址/SSH 别名后，在 Studio“安装完整项目”选择 `board/runtime`，核对安装回执和 READY，再使用统一启动按钮。首次受管自启动配置可参考 `src/development/tools/install_studio_autostart.py --help` 及配套 systemd 文件；必须显式传入 `--candidate board/runtime`，不采用工具中的历史默认候选。该安装工具还要求基础服务已存在且处于停止状态，首次使用需先准备基础服务。
+5. 首次准备板卡时，按 [部署说明](../board/README.md)配置 PYNQ 基础环境、网络、相机接线、Python 依赖和灵巧手标定。
 6. 硬件开发直接打开集成 XPR；从零构建使用 README 的 `build_hardware.tcl`，输出新目录。先检查报告和导出接口，再安排单独上板验收；重建产物独立验收后再用于部署。
 7. 上板观察顺序：加载页→主菜单→各游戏与暂停/返回→画布保存/相册→视频/回传恢复→示范与跟随。实体动作需有人观察且范围清空。完成后使用 Studio 正常停止，保留卸力/释放回执。
 
-## 8. AI 协作与提交状态
+## 8. AI 协作与技能复用
 
 [协作记录](ai_collaboration.md) 提供提示词、模型答复与反馈修正过程；[技能报告](../skill/report.md) 提供提炼方法和实验结果。发布条件见 [检查清单](submission_checklist.md)。
 

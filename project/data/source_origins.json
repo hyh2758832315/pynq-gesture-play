@@ -17036,62 +17036,38 @@
   "report/reference_v2_design/gesture_play_v2_junior.pdf": {
     "source": "report\\v2_architecture_junior\\gesture_play_v2_junior.pdf",
     "sha256": "889e75298aaf0468d2589a4a6fd10a2911f6106287b27da3064d66ce72a78cf4",
-    "current_sha256": "889e75298aaf0468d2589a4a6fd10a2911f6106287b27da3064d66ce72a78cf4",
-    "changed": false
+    "current_sha256": "0818a591c441862260a9c7bd7dfdee70422f58e24f558e0c55cad878f2dec8a7",
+    "changed": true
   },
   "report/reference_v2_design/gesture_play_v2_junior_source.zip": {
     "source": "report\\v2_architecture_junior\\gesture_play_v2_junior_source.zip",
     "sha256": "accacc57351dc58dc68259fd4f3fdb542ac2e3b21b24abcb5f96fac60ff5780f",
-    "current_sha256": "accacc57351dc58dc68259fd4f3fdb542ac2e3b21b24abcb5f96fac60ff5780f",
-    "changed": false
-  },
-  "report/reference_v2_design/main.aux": {
-    "source": "report\\v2_architecture_junior\\main.aux",
-    "sha256": "49c6c12eb2d50093c14a937f6ed427b80fff52d5b6d7c9216b2edc0e68e0eb1f",
-    "current_sha256": "49c6c12eb2d50093c14a937f6ed427b80fff52d5b6d7c9216b2edc0e68e0eb1f",
-    "changed": false
-  },
-  "report/reference_v2_design/main.log": {
-    "source": "report\\v2_architecture_junior\\main.log",
-    "sha256": "418a9237b0361605c6a8f4f7082dfbacda5dbea1f6dfd7fc4a80e65b2ceaeb00",
-    "current_sha256": "418a9237b0361605c6a8f4f7082dfbacda5dbea1f6dfd7fc4a80e65b2ceaeb00",
-    "changed": false
-  },
-  "report/reference_v2_design/main.out": {
-    "source": "report\\v2_architecture_junior\\main.out",
-    "sha256": "c80e1fc4fe4d910fa52204478e543fc9d25d3da2738df1654c4b917453193bf4",
-    "current_sha256": "c80e1fc4fe4d910fa52204478e543fc9d25d3da2738df1654c4b917453193bf4",
-    "changed": false
+    "current_sha256": "7a0496e90c7de74e569f164cde18a46f2cd6b6f0450bec2ad546903a7798dcde",
+    "changed": true
   },
   "report/reference_v2_design/main.pdf": {
     "source": "report\\v2_architecture_junior\\main.pdf",
     "sha256": "35454b0d4fe1614e59f508ab0056aa236a433e82b0a10fff13dd20ed5f21301d",
-    "current_sha256": "35454b0d4fe1614e59f508ab0056aa236a433e82b0a10fff13dd20ed5f21301d",
-    "changed": false
+    "current_sha256": "0818a591c441862260a9c7bd7dfdee70422f58e24f558e0c55cad878f2dec8a7",
+    "changed": true
   },
   "report/reference_v2_design/main.tex": {
     "source": "report\\v2_architecture_junior\\main.tex",
     "sha256": "2dc3faabf8440ae2ac2a700aa69428711863e3876b4431db0861a1ef019ee38e",
-    "current_sha256": "2dc3faabf8440ae2ac2a700aa69428711863e3876b4431db0861a1ef019ee38e",
-    "changed": false
-  },
-  "report/reference_v2_design/main.toc": {
-    "source": "report\\v2_architecture_junior\\main.toc",
-    "sha256": "52f5b44eb049e6934610d397753e32c9c2f83207418f64368c1e7b812dce266f",
-    "current_sha256": "52f5b44eb049e6934610d397753e32c9c2f83207418f64368c1e7b812dce266f",
-    "changed": false
+    "current_sha256": "9f9d6bc73aa5a1a053cb8e9f5056f82b5d42cf44b41127567d9168a5860a6933",
+    "changed": true
   },
   "report/reference_v2_design/readme.md": {
     "source": "report\\v2_architecture_junior\\readme.md",
     "sha256": "fbfd885d2a451af41e0c7d011352e1ff924d1a79e868f0b7b5c5db03538891b7",
-    "current_sha256": "fbfd885d2a451af41e0c7d011352e1ff924d1a79e868f0b7b5c5db03538891b7",
-    "changed": false
+    "current_sha256": "be842ff0a331ed6a785f18698004ef48a92806da61bc39ce98f6461f31786ecb",
+    "changed": true
   },
   "report/reference_v2_design/report.md": {
     "source": "report\\v2_architecture_junior\\report.md",
     "sha256": "9cb2008007107631bb09042efa5d3d9e02f158d4b7ed95adf8c4cff48a4c7c18",
-    "current_sha256": "9cb2008007107631bb09042efa5d3d9e02f158d4b7ed95adf8c4cff48a4c7c18",
-    "changed": false
+    "current_sha256": "593ca6f96a260482cf98c4f7eb542b79c1275dd17ed98c62aca787643d361141",
+    "changed": true
   },
   "report/reference_v2_design/figures/admission.tex": {
     "source": "report\\v2_architecture_junior\\figures\\admission.tex",
@@ -17126,8 +17102,8 @@
   "report/reference_v2_design/sections/design.tex": {
     "source": "report\\v2_architecture_junior\\sections\\design.tex",
     "sha256": "4369e0d250493284a04153249e466999386e208b308a9ae7da7d167d5716d3df",
-    "current_sha256": "4369e0d250493284a04153249e466999386e208b308a9ae7da7d167d5716d3df",
-    "changed": false
+    "current_sha256": "b105507ff450677837bc93c43752602e75ce84b74f066ae4f853834e6719ef95",
+    "changed": true
   },
   "report/reference_v2_design/sources/open_topic_guide.md": {
     "source": "report\\v2_architecture_junior\\sources\\open_topic_guide.md",
@@ -17135,22 +17111,10 @@
     "current_sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
     "changed": false
   },
-  "report/reference_v2_design/tools/compose_report.py": {
-    "source": "report\\v2_architecture_junior\\tools\\compose_report.py",
-    "sha256": "2002fe649d8552deff0fca87fd4138e8000d25a99282bdb73a489d4e751bc0d6",
-    "current_sha256": "2002fe649d8552deff0fca87fd4138e8000d25a99282bdb73a489d4e751bc0d6",
-    "changed": false
-  },
   "report/reference_v2_design/tools/package_report.py": {
     "source": "report\\v2_architecture_junior\\tools\\package_report.py",
     "sha256": "42d149280f1b52c6fb619b9258af28c1e4f68102cbc6a1c9690670bb8b2eeaad",
     "current_sha256": "42d149280f1b52c6fb619b9258af28c1e4f68102cbc6a1c9690670bb8b2eeaad",
-    "changed": false
-  },
-  "report/reference_v2_design/tools/repair_pdf_unicode.py": {
-    "source": "report\\v2_architecture_junior\\tools\\repair_pdf_unicode.py",
-    "sha256": "9ee266181bd04b4197051cf581480fe6544d13620f3560c344e4e0434013079c",
-    "current_sha256": "9ee266181bd04b4197051cf581480fe6544d13620f3560c344e4e0434013079c",
     "changed": false
   },
   "report/reference_v2_design/tools/review_pdf.py": {
@@ -17162,14 +17126,14 @@
   "report/reference_v2_performance/chapter.html": {
     "source": "report\\performance_resource\\chapter.html",
     "sha256": "ca41f0acf763a618dc2baa23bee1b7bd57292fbd2e147b8022f97c3d451e6b2b",
-    "current_sha256": "ca41f0acf763a618dc2baa23bee1b7bd57292fbd2e147b8022f97c3d451e6b2b",
-    "changed": false
+    "current_sha256": "a107bf9e13cb58b0a7c4f6b50c95f614a020e3c1adf22b714eabfc624f815c1b",
+    "changed": true
   },
   "report/reference_v2_performance/README.txt": {
     "source": "report\\performance_resource\\README.txt",
     "sha256": "f656b2da2dde12285dad162a8b93177991e3c61768ffad72864c4b018e386c23",
-    "current_sha256": "f656b2da2dde12285dad162a8b93177991e3c61768ffad72864c4b018e386c23",
-    "changed": false
+    "current_sha256": "e01f7e775bd1facb77bcda2077edc5762b2b19eb0132ae96b6266125d514e6aa",
+    "changed": true
   },
   "report/reference_v2_performance/data/expanded_verification.json": {
     "source": "report\\performance_resource\\data\\expanded_verification.json",
@@ -17762,19 +17726,19 @@
   "report/reference_v2_performance/tools/build_report.py": {
     "source": "report\\performance_resource\\tools\\build_report.py",
     "sha256": "b51bff0d5e3608c2a5332548d05744ffc532481df0deaef268d7cf2f9ca91109",
-    "current_sha256": "b51bff0d5e3608c2a5332548d05744ffc532481df0deaef268d7cf2f9ca91109",
-    "changed": false
+    "current_sha256": "23c8755bffa734152fb4085b35713cd061fd54b96b6839e9e0d41c4116a51596",
+    "changed": true
   },
   "report/gpu_ai_preparation/chapter.html": {
     "source": "report\\gpu_ai_preparation\\chapter.html",
     "sha256": "e509d606eddbb9144b41f3360722841b13375d2d6615c855d03886e4881b3776",
-    "current_sha256": "e509d606eddbb9144b41f3360722841b13375d2d6615c855d03886e4881b3776",
-    "changed": false
+    "current_sha256": "0ade0240bdcaf1f5aae076857e403a9ed4d70888f12af7dd2d899a1448dae308",
+    "changed": true
   },
   "report/gpu_ai_preparation/README.txt": {
     "source": "report\\gpu_ai_preparation\\README.txt",
     "sha256": "a64101811ba0adc562150e225d959cc2d70fe77b48dbaacba58f8627a502a977",
-    "current_sha256": "4e9e1ae75d7ed77e4dc823514cc1a982f3e9e78a2a2e0f2a6e3698d042fef4c3",
+    "current_sha256": "879191c3efe4d28ee7f0131444512fbecd8ced84dad9aa1304f9c95cad764b02",
     "changed": true
   },
   "report/gpu_ai_preparation/data/overlap.csv": {
@@ -18110,7 +18074,7 @@
   "report/gpu_ai_preparation/tools/build_report.py": {
     "source": "report\\gpu_ai_preparation\\tools\\build_report.py",
     "sha256": "4acc550dee0b473236a788ecdc52eb34127b99ef10b8cad79b626387436c92b2",
-    "current_sha256": "3392d79f037f5494007acc160f7b85773878ed358440c7313ed688ee3b04e643",
+    "current_sha256": "23c8755bffa734152fb4085b35713cd061fd54b96b6839e9e0d41c4116a51596",
     "changed": true
   },
   "report/gpu_ai_preparation/tools/plot_figures.py": {
@@ -18122,8 +18086,8 @@
   "report/reference_v2_performance/performance_resource_report.pdf": {
     "source": "report\\performance_resource\\性能与资源优化报告.pdf",
     "sha256": "6082b058c9c3d1199bce0cebdc173c7d5cf1013a59d4f149a46cce1c197ef47f",
-    "current_sha256": "6082b058c9c3d1199bce0cebdc173c7d5cf1013a59d4f149a46cce1c197ef47f",
-    "changed": false
+    "current_sha256": "29706e94d0c41d7b018c0cfb1463b3f04fac99ffc955a7a0916842a8a483771a",
+    "changed": true
   },
   "src/development/third_party/verilog-axis/COPYING": {
     "source": "third_party\\verilog-axis\\COPYING",
@@ -18159,7 +18123,7 @@
     "source": "report\\gpu_ai_preparation\\Scene2D_GPU_AI_优化过程与效果.pdf",
     "sha256": "bd929e67e3b1d7fc4e9417bf2e06854c26bda9ec5499e3d1a7b5b84644e41273",
     "renamed_from": "report/gpu_ai_preparation/Scene2D_GPU_AI_优化过程与效果.pdf",
-    "current_sha256": "bd929e67e3b1d7fc4e9417bf2e06854c26bda9ec5499e3d1a7b5b84644e41273",
-    "changed": false
+    "current_sha256": "689daae5793d3a9868150057aed4a473fd210c20cff11901613a98c3301014d1",
+    "changed": true
   }
 }

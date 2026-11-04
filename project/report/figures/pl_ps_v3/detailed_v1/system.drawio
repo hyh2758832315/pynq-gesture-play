@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" version="24.7.17">
-  <diagram name="GESTURE PLAY v3.0 PL–PS" id="system">
+  <diagram name="GESTURE PLAY PL–PS" id="system">
     <mxGraphModel dx="2400" dy="1630" grid="1" gridSize="10" page="1" pageWidth="2400" pageHeight="1630">
       <root>
         <mxCell id="0" />
@@ -155,7 +155,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="title" value="GESTURE PLAY v3.0  |  PL–PS 系统架构" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=40;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="title" value="GESTURE PLAY  |  PL–PS 系统架构" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=40;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="40" y="20" width="2320" height="62" />
         </mxCell>
         <mxCell id="subtitle" value="PYNQ-Z2 · Zynq-7020 · xc7z020clg400-1  /  冻结运行包 R15b · 手部运行时 R16 · BUILD_ID 0xC0061000" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=21;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">

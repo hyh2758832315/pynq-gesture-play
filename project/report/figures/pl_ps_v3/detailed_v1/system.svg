@@ -39,7 +39,7 @@
 <path d="M850,1335 L920,1335 L920,1190 L1000,1190" fill="none" stroke="#64748b" stroke-width="2.7" marker-end="url(#arrow2)" marker-start="url(#arrow2)" stroke-dasharray="9 6"/>
 <path d="M305,1020 L430,1020" fill="none" stroke="#af8844" stroke-width="2.7" marker-end="url(#arrow4)" marker-start="url(#arrow4)"/>
 <path d="M305,800 L345,800 L345,1090 L1210,1090 L1210,1115" fill="none" stroke="#64748b" stroke-width="2.7" marker-end="url(#arrow2)" stroke-dasharray="9 6"/>
-<text x="1200.0" y="64.6" text-anchor="middle" font-size="40" font-weight="600">GESTURE PLAY v3.0  |  PL–PS 系统架构</text>
+<text x="1200.0" y="64.6" text-anchor="middle" font-size="40" font-weight="600">GESTURE PLAY  |  PL–PS 系统架构</text>
 <text x="1200.0" y="114.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ-Z2 · Zynq-7020 · xc7z020clg400-1  /  冻结运行包 R15b · 手部运行时 R16 · BUILD_ID 0xC0061000</text>
 <rect x="1155" y="295" width="3" height="570" rx="6" fill="#536577" stroke="#536577" stroke-width="2"/>
 <text x="1156.5" y="588.5" text-anchor="middle" font-size="25" font-weight="600"></text>
@@ -123,32 +123,32 @@
 <text x="1195.0" y="1459.96" text-anchor="middle" font-size="19" font-weight="600">控制面：PS M_AXI_GP0 → AXI-Lite / MMIO → 采集配置、相机 I²C、GPU 状态与 OSD 位置寄存器</text>
 <text x="1200.0" y="1537.14" text-anchor="middle" font-size="21" font-weight="600">视觉与渲染分离：双掩膜送往 DDR / PS 识别，应用生成 Scene 后才进入 GPU；相机画面不直接作为 GPU 帧缓冲。</text>
 <text x="1200.0" y="1591.48" text-anchor="middle" font-size="22" font-weight="600">蓝：视觉数据流    紫：渲染 / 显示流    绿：PS 语义与动作    灰虚线：控制 / 管理    ·    外设框内保留图片位置</text>
-<rect x="307.90625" y="377" width="114.1875" height="27" fill="white"/>
+<rect x="307.90625" y="377" width="114.1875" height="27" fill="#ffffff"/>
 <text x="365" y="397" font-size="18" text-anchor="middle" fill="#286b95">DVP 像素流</text>
-<rect x="249.328125" y="635" width="147.34375" height="27" fill="white"/>
+<rect x="249.328125" y="635" width="147.34375" height="27" fill="#ffffff"/>
 <text x="323" y="655" font-size="18" text-anchor="middle" fill="#64748b">I²C / SCCB 配置</text>
-<rect x="668.2890625" y="634" width="173.421875" height="27" fill="white"/>
+<rect x="668.2890625" y="634" width="173.421875" height="27" fill="#ffffff"/>
 <text x="755" y="654" font-size="18" text-anchor="middle" fill="#286b95">RGB 旁路 + 双掩膜</text>
-<rect x="1325.3046875" y="885" width="269.390625" height="27" fill="white"/>
+<rect x="1325.3046875" y="885" width="269.390625" height="27" fill="#ffffff"/>
 <text x="1460" y="905" font-size="18" text-anchor="middle" fill="#286b95">HP1：RGB / HP3：掩膜与状态</text>
-<rect x="764.6875" y="1238" width="180.625" height="27" fill="white"/>
+<rect x="764.6875" y="1238" width="180.625" height="27" fill="#ffffff"/>
 <text x="855" y="1258" font-size="18" text-anchor="middle" fill="#247663">位置 / 分类 / 帧身份</text>
-<rect x="1455.5625" y="1133" width="68.875" height="27" fill="white"/>
+<rect x="1455.5625" y="1133" width="68.875" height="27" fill="#ffffff"/>
 <text x="1490" y="1153" font-size="18" text-anchor="middle" fill="#78549b">Scene</text>
-<rect x="1831.109375" y="320" width="197.78125" height="27" fill="white"/>
+<rect x="1831.109375" y="320" width="197.78125" height="27" fill="#ffffff"/>
 <text x="1930" y="340" font-size="18" text-anchor="middle" fill="#78549b">HP0：命令 / 资源读取</text>
-<rect x="1975.5390625" y="698" width="116.921875" height="27" fill="white"/>
+<rect x="1975.5390625" y="698" width="116.921875" height="27" fill="#ffffff"/>
 <text x="2034" y="718" font-size="18" text-anchor="middle" fill="#78549b">HDMI 720p</text>
-<rect x="1666.7734375" y="815" width="266.453125" height="27" fill="white"/>
+<rect x="1666.7734375" y="815" width="266.453125" height="27" fill="#ffffff"/>
 <text x="1800" y="835" font-size="18" text-anchor="middle" fill="#64748b">最新手位置 → OSD（MMIO）</text>
-<rect x="1943.890625" y="1308" width="148.21875" height="27" fill="white"/>
+<rect x="1943.890625" y="1308" width="148.21875" height="27" fill="#ffffff"/>
 <text x="2018" y="1328" font-size="18" text-anchor="middle" fill="#247663">USB 串口 / SDK</text>
-<rect x="318.65625" y="1318" width="90.6875" height="27" fill="white"/>
+<rect x="318.65625" y="1318" width="90.6875" height="27" fill="#ffffff"/>
 <text x="364" y="1338" font-size="18" text-anchor="middle" fill="#64748b">Ethernet</text>
-<rect x="868.84375" y="1268" width="108.3125" height="27" fill="white"/>
+<rect x="868.84375" y="1268" width="108.3125" height="27" fill="#ffffff"/>
 <text x="923" y="1288" font-size="18" text-anchor="middle" fill="#64748b">管理 / 内容</text>
-<rect x="315.765625" y="979" width="98.46875" height="27" fill="white"/>
+<rect x="315.765625" y="979" width="98.46875" height="27" fill="#ffffff"/>
 <text x="365" y="999" font-size="18" text-anchor="middle" fill="#af8844">DDR 总线</text>
-<rect x="1088.5703125" y="1063" width="242.859375" height="27" fill="white"/>
+<rect x="1088.5703125" y="1063" width="242.859375" height="27" fill="#ffffff"/>
 <text x="1210" y="1083" font-size="18" text-anchor="middle" fill="#64748b">PL 按键同步 → PS 游戏输入</text>
 </g></svg>

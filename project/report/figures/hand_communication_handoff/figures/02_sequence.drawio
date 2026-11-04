@@ -108,7 +108,7 @@
         <mxCell id="subtitle" value="PYNQ PS 独立动作进程 → USB 串口 / SDK → 17 个电机；每次写入仍检查状态应答" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
         </mxCell>
-        <mxCell id="footer" value="GESTURE PLAY  ·  v3.0 / 手部运行时 R16  ·  按已交付源码绘制  ·  技术示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="footer" value="GESTURE PLAY  ·  按已交付源码绘制  ·  技术示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="1548" width="2080" height="34" />
         </mxCell>
         <mxCell id="ps" value="PS 动作调度" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">

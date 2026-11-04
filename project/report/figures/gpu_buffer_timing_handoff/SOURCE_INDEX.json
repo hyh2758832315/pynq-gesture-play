@@ -3,324 +3,378 @@
     "origin": "report/figures/gpu_buffer_timing/01_gpu_buffers.json",
     "copy": "figures/01_gpu_buffers.json",
     "sha256": "071f1138d1c7f1a93efd551cb94a0afddc2ad9dc6d7f417125f3f5a095b2eacb",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "f525453af33980c9612b9788a022ff329994bc66a0793977e3012efb297894fb"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/01_gpu_buffers.drawio",
     "copy": "figures/01_gpu_buffers.drawio",
     "sha256": "30cb91302e8279e0ca161ee852ad993c2c28c5ccfe0fdd4ca7e63a03c219d711",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "614925dc1ae37a8c499f091e814016056da985ebeaa3893ea2eba891b76bb561"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/01_gpu_buffers.svg",
     "copy": "figures/01_gpu_buffers.svg",
     "sha256": "e968d78c36e0d0bac9cbeb3b89001c58e83a234042f85ef704bee16c3bfffd1b",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "14aa5f549d4425ae2b090eec52fbf4609d6172eef7b291771eafa9cf5005f98e"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/01_gpu_buffers.png",
     "copy": "figures/01_gpu_buffers.png",
     "sha256": "8c556b6738b3facbf269a861cd186b2f43f1219693d6f78f456f51c6705aca44",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "603ff7f64272f691403595dae04788d90c38bb1ab35cc82a606b48ed76cd5888"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/01_gpu_buffers.pdf",
     "copy": "figures/01_gpu_buffers.pdf",
     "sha256": "a0937d99e7479c8f7baa0f1147b97eb76a85e8036936e6fe276d50a355bf034f",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "91505a15aa5b342305ed8acf996f5593cb0672dae93f3c89eab9f17631ad545c"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/01_gpu_buffers_preview.png",
     "copy": "figures/01_gpu_buffers_preview.png",
     "sha256": "d8e017c91a63a01a6c9952cdb496ef36b150eab68838e8f01a41e1e4011ea22f",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "dc22f2b2092bbe14211c501cf3eedcd416436e29c7c31c7a4a4ab6f8d0d78cc5"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/02_gpu_present_timing.json",
     "copy": "figures/02_gpu_present_timing.json",
     "sha256": "9d7f068dd8644ffa7e8234540fbf9d606914d69165da13d81369cb3e6fab401f",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "2630f12eb9d595d4eeb6a9fd2711a828a568921af9bfdaef10fadcd1f64683e7"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/02_gpu_present_timing.drawio",
     "copy": "figures/02_gpu_present_timing.drawio",
     "sha256": "3a0e76382d23089fc00759acece154c08f1715dd924b9eedc5cf9fba0928c386",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "66b6f3e0441b6d8db8c29a5227602a51fe39dc370f6babde9e90465bccd79244"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/02_gpu_present_timing.svg",
     "copy": "figures/02_gpu_present_timing.svg",
     "sha256": "97af7d7254e7b43011064aaebe67fb6a23be747d5fb3be4d4057460e9b3884ea",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "069e796a25a7d80f9362df23996d55293eeaa55b1615db7d1599689526bd5865"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/02_gpu_present_timing.png",
     "copy": "figures/02_gpu_present_timing.png",
     "sha256": "d151285abb0c548f701750765afb835d72e92d0f65f1f53c411d755f9d6ccf06",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "d2c100802c24eb786d3ce8d0a39d96061d5bde067753e62ac7093df4e1f40261"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/02_gpu_present_timing.pdf",
     "copy": "figures/02_gpu_present_timing.pdf",
     "sha256": "d30dc57f44b595f5fe96b34404088dd5ff920119a71003d42ec20e9dc81c179b",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "9c087e7507f309fd523b993efa7d10260b7e754755494d4b1dc3a4f724eefbe1"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/02_gpu_present_timing_preview.png",
     "copy": "figures/02_gpu_present_timing_preview.png",
     "sha256": "67546d96004933df1528e91ad623be343d8dcec36f8239f29c5b3ff91e3c4af9",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "bddd3ddf6f934efd352ab7e330423f3ae5d52962f1b0c3a522ae6f80f1667735"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/03_gpu_encoding_storage.json",
     "copy": "figures/03_gpu_encoding_storage.json",
     "sha256": "7656623f1fc41935359a6c9bfb6dce16abb82abaa451d6f58149c4ad640978ae",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "af7c8f69871f62104b66515e38061cc87ee77660bad9aeeeb18ffe8b81b97e5b"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/03_gpu_encoding_storage.drawio",
     "copy": "figures/03_gpu_encoding_storage.drawio",
     "sha256": "677a5ca3034de0aed741b9cd4fcaf5023d2332c7c144d3fbc791c52d4f9aede8",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "5e6c05785f7508ef71122807bf791ef3cda80d499a7883f01158c2a69d07adc1"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/03_gpu_encoding_storage.svg",
     "copy": "figures/03_gpu_encoding_storage.svg",
     "sha256": "470a87478d66a9d84e7278874389e961bd7c07e89710586488a7f80c23cda606",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "fd6c8cdaec784650a2c3f91aaff7ff52fb695b1c9d87c3955f50eda01031e742"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/03_gpu_encoding_storage.png",
     "copy": "figures/03_gpu_encoding_storage.png",
     "sha256": "388c5989321faf07a9c73babcaeede1abfeddda6b570783ed87a59952ef85e07",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "1295006a3c6b0c2b628639d2957120f0f1058f9cd56682607414c5d6355e90e7"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/03_gpu_encoding_storage.pdf",
     "copy": "figures/03_gpu_encoding_storage.pdf",
     "sha256": "83427735e865fe1b0ad698b0d9a49729d85be658fa46fe04d2ecd5e0c4a91081",
-    "scope": "Editable scene / export"
+    "scope": "Editable scene / export",
+    "published_sha256": "740418ee3d78e493bb0c195b81a079a09b2d2c46dfacf876746035399df60246"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/03_gpu_encoding_storage_preview.png",
     "copy": "figures/03_gpu_encoding_storage_preview.png",
     "sha256": "1c1fb806a40fc630cd8d2dfacad772311fccda305e7c91a5fd9a72e6851ed87d",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "6b7c70ad8fcaa83bed9b6fdbe904a0e35421f33b89c1d11bb8fc16bd5c203ebb"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/gpu_buffer_timing_all.pdf",
     "copy": "figures/gpu_buffer_timing_all.pdf",
     "sha256": "2871e1ba30886dc47514859e9fa4927bd839be4f16fa33365e51b96ad26b72c7",
-    "scope": "Three-page figure set"
+    "scope": "Three-page figure set",
+    "published_sha256": "b6e1232ea4ec2210a7989a63d3caa3ef97f3905be5d14be99bd34c6373feea74"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/commands.csv",
     "copy": "data/commands.csv",
     "sha256": "e0afc40663f93f180c4c11fa84f56ebb9368647f8c6216baeb1165b5ceffbc09",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "e0afc40663f93f180c4c11fa84f56ebb9368647f8c6216baeb1165b5ceffbc09"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/driver_trace.csv",
     "copy": "data/driver_trace.csv",
     "sha256": "af28281e4854edec96edb254a7433b81294d65e0d35caace713067ee1ace483c",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "af28281e4854edec96edb254a7433b81294d65e0d35caace713067ee1ace483c"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/ownership.csv",
     "copy": "data/ownership.csv",
     "sha256": "2c8dc184f58d423ecfe411d082a81109e532d7f981ffb59513708c84a29afed4",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "2c8dc184f58d423ecfe411d082a81109e532d7f981ffb59513708c84a29afed4"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/palette_example.bin",
     "copy": "data/palette_example.bin",
     "sha256": "8cf01ac5233f60f60a72a310ec3f178a1ea379ec715a07403a546fc45703a7ea",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "8cf01ac5233f60f60a72a310ec3f178a1ea379ec715a07403a546fc45703a7ea"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/scene_example.bin",
     "copy": "data/scene_example.bin",
     "sha256": "5dc2c68ff829ab6ca56fdfa62dedff5a124a461bc2c1f87d39e9e349a32912a6",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "5dc2c68ff829ab6ca56fdfa62dedff5a124a461bc2c1f87d39e9e349a32912a6"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/scene_header.csv",
     "copy": "data/scene_header.csv",
     "sha256": "190f9be2856ebecd32632e01c8b8693e4a251606a1cde3855f6a34523b881c6a",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "190f9be2856ebecd32632e01c8b8693e4a251606a1cde3855f6a34523b881c6a"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/storage.csv",
     "copy": "data/storage.csv",
     "sha256": "4220ccdf3d7328a3848701df9c045f797c5e03975c7d8a48f74825c4bc0de919",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "4220ccdf3d7328a3848701df9c045f797c5e03975c7d8a48f74825c4bc0de919"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/timing.json",
     "copy": "data/timing.json",
     "sha256": "8c9096832c7d0c63620d3a3929b6c87ec39a2a59848b041345ee83e7a373b68f",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "8c9096832c7d0c63620d3a3929b6c87ec39a2a59848b041345ee83e7a373b68f"
   },
   {
     "origin": "report/figures/gpu_buffer_timing/data/verification.json",
     "copy": "data/verification.json",
     "sha256": "49ad44e664e3ff239674ae6380ec8856d2141bf39007e8aac1a7b99cb3ca35bf",
-    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values"
+    "scope": "Constructed examples, deterministic memory fixture or configuration-derived values",
+    "published_sha256": "49ad44e664e3ff239674ae6380ec8856d2141bf39007e8aac1a7b99cb3ca35bf"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/gpu_abi.py",
     "copy": "reference_only/gpu_abi.py",
     "sha256": "0f87227ede298bfd9f05ead74a189e64442e311ce284f77461a544ea65fe4810",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "0f87227ede298bfd9f05ead74a189e64442e311ce284f77461a544ea65fe4810"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/scene.py",
     "copy": "reference_only/scene.py",
     "sha256": "31872dec6b4a940843031a43efd252cc441a94b0a89bd054f143ea5ae05dfd21",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "31872dec6b4a940843031a43efd252cc441a94b0a89bd054f143ea5ae05dfd21"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/scene_compiler.py",
     "copy": "reference_only/scene_compiler.py",
     "sha256": "fa31b8e254bcd04f7f4e321ef82f6dc044b694f309029ff0e44ec0b23699efb9",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "fa31b8e254bcd04f7f4e321ef82f6dc044b694f309029ff0e44ec0b23699efb9"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/video_codec.py",
     "copy": "reference_only/video_codec.py",
     "sha256": "1471ac5c63b0c0d1f6d0e225828fa851277019830b41671584796ddbb4e626b7",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "1471ac5c63b0c0d1f6d0e225828fa851277019830b41671584796ddbb4e626b7"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/c6i_backend.py",
     "copy": "reference_only/c6i_backend.py",
     "sha256": "7290001214184f441c1bdc9a0c351d439c9edbd012e59e17c2b7c40b48582409",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "7290001214184f441c1bdc9a0c351d439c9edbd012e59e17c2b7c40b48582409"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/c6i_video.py",
     "copy": "reference_only/c6i_video.py",
     "sha256": "10ff1fd126546e2b0836788d9fea4449aba80381a8e0af5c30c6787e5c4e1725",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "10ff1fd126546e2b0836788d9fea4449aba80381a8e0af5c30c6787e5c4e1725"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/c6i_shell.py",
     "copy": "reference_only/c6i_shell.py",
     "sha256": "5b02590e8060931400b47e321bbb39824494e54d65407b2c40018a80e86fd0f1",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "5b02590e8060931400b47e321bbb39824494e54d65407b2c40018a80e86fd0f1"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/video_runtime.py",
     "copy": "reference_only/video_runtime.py",
     "sha256": "eabf6b7025ee4aae4747ce5875d77c65df947bd3c961e71f22defacdd52ca288",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "eabf6b7025ee4aae4747ce5875d77c65df947bd3c961e71f22defacdd52ca288"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/game_runtime.py",
     "copy": "reference_only/game_runtime.py",
     "sha256": "1308024e2a96dfcbd2a3908d6ea7fb5cd4fe16e7b3ab8a5b8ec8cc4b276c73e8",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "1308024e2a96dfcbd2a3908d6ea7fb5cd4fe16e7b3ab8a5b8ec8cc4b276c73e8"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_c4m7_core.sv",
     "copy": "reference_only/scene2d_c4m7_core.sv",
     "sha256": "5c6c3044ea52b6808ca3781b7c2c00cf371f9a0f72ec692d7615463568ae442b",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "5c6c3044ea52b6808ca3781b7c2c00cf371f9a0f72ec692d7615463568ae442b"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_c4m3_core.sv",
     "copy": "reference_only/scene2d_c4m3_core.sv",
     "sha256": "a245921fe8f41100629b799d963f4ce87d3f4e0e0a4a25caab180fcbdf89d0fa",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "a245921fe8f41100629b799d963f4ce87d3f4e0e0a4a25caab180fcbdf89d0fa"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_command_upload.sv",
     "copy": "reference_only/scene2d_command_upload.sv",
     "sha256": "339ca98a837b92e3be8a9f93c0930761ec1cb1f66d78291cbb02bb83862715d8",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "339ca98a837b92e3be8a9f93c0930761ec1cb1f66d78291cbb02bb83862715d8"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_frame_swap.sv",
     "copy": "reference_only/scene2d_frame_swap.sv",
     "sha256": "2da55288eda7fe7ad7978ecc719d40880c1ffd9630161be261e53393da317de0",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "2da55288eda7fe7ad7978ecc719d40880c1ffd9630161be261e53393da317de0"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_framebuffer.sv",
     "copy": "reference_only/scene2d_framebuffer.sv",
     "sha256": "06e74be9f61d03da0fccb9f53c7eb16d4b643cd7aa73468fde0dcafa28286a74",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "06e74be9f61d03da0fccb9f53c7eb16d4b643cd7aa73468fde0dcafa28286a74"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_palette_scanout.sv",
     "copy": "reference_only/scene2d_palette_scanout.sv",
     "sha256": "ce24d42562e2550088e9c5c1f0a982aefa4b1a558a4352955b93706f41fb9802",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "ce24d42562e2550088e9c5c1f0a982aefa4b1a558a4352955b93706f41fb9802"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_video_timing.sv",
     "copy": "reference_only/scene2d_video_timing.sv",
     "sha256": "7946aaade4b51d2ea89f4d64136992bf7d88b494721c63bed3ec09937b074cea",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "7946aaade4b51d2ea89f4d64136992bf7d88b494721c63bed3ec09937b074cea"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_palette_store.sv",
     "copy": "reference_only/scene2d_palette_store.sv",
     "sha256": "1696f9cab0cb4521f10e62b01bda8deaa945fff61045a6fd22cb18cfdcff621c",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "1696f9cab0cb4521f10e62b01bda8deaa945fff61045a6fd22cb18cfdcff621c"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_asset_bundle_store.sv",
     "copy": "reference_only/scene2d_asset_bundle_store.sv",
     "sha256": "2021d35c3d44b55badfe8b248a5727e9c955b35383b0915fd66b6e3cc5422717",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "2021d35c3d44b55badfe8b248a5727e9c955b35383b0915fd66b6e3cc5422717"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_tilemap_store.sv",
     "copy": "reference_only/scene2d_tilemap_store.sv",
     "sha256": "8e7b4fd92013b87276695490a23c4b3df52e4e54c70047ac64cc83f510691d6f",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "8e7b4fd92013b87276695490a23c4b3df52e4e54c70047ac64cc83f510691d6f"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_resource_upload.sv",
     "copy": "reference_only/scene2d_resource_upload.sv",
     "sha256": "9ba76af93a14dcc94bd5260001abbbf824113a0fd805f4cea42868bf9157367a",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "9ba76af93a14dcc94bd5260001abbbf824113a0fd805f4cea42868bf9157367a"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_packet_router.sv",
     "copy": "reference_only/scene2d_packet_router.sv",
     "sha256": "6cabbcebb25494eb2152ee8f2a60ccc3d5a1afef9fdc64c4534228b018894016",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "6cabbcebb25494eb2152ee8f2a60ccc3d5a1afef9fdc64c4534228b018894016"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/scene2d_clear_fill_renderer.sv",
     "copy": "reference_only/scene2d_clear_fill_renderer.sv",
     "sha256": "0d4f4998dd7e7312777b2b29efb1fbaceae9b68fd4e44631d43cfe8bd4c92599",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "0d4f4998dd7e7312777b2b29efb1fbaceae9b68fd4e44631d43cfe8bd4c92599"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_top.sv",
     "copy": "reference_only/input_osd_top.sv",
     "sha256": "4323f9d0cb0d180f5e61f0efe3e2fe45450ccca590836c9056ab82f57089ef69",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "4323f9d0cb0d180f5e61f0efe3e2fe45450ccca590836c9056ab82f57089ef69"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/bd/c6v/c6v.bd",
     "copy": "reference_only/c6v.bd",
     "sha256": "74ff2746b88245cc56ed9bf218d328a66f85855e74e1a6371b8e0e6878591a4e",
-    "scope": "Frozen source reference; not a complete deployable project"
+    "scope": "Frozen source reference; not a complete deployable project",
+    "published_sha256": "74ff2746b88245cc56ed9bf218d328a66f85855e74e1a6371b8e0e6878591a4e"
   },
   {
     "origin": "tools/render_vision_diagram.py",
     "copy": "scripts/render_scene.py",
     "sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b",
-    "scope": "Shared vector renderer"
+    "scope": "Shared vector renderer",
+    "published_sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b"
   },
   {
     "origin": "tools/verify_gpu_figure.py",
     "copy": "scripts/verify_gpu_figure.py",
     "sha256": "454febbc6b7c93bbb56733727c2b1a442f7584470a8f8cb17d094c976bb2df2f",
-    "scope": "Production ABI / sink memory-fixture checks"
+    "scope": "Production ABI / sink memory-fixture checks",
+    "published_sha256": "454febbc6b7c93bbb56733727c2b1a442f7584470a8f8cb17d094c976bb2df2f"
   }
 ]

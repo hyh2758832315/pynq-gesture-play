@@ -40,7 +40,7 @@ def make_scene():
         edges.append(item)
 
     box('title', 30, 20, 2340, 65,
-        'GESTURE PLAY v3.0  |  PL–PS 系统架构', size=39, kind='text')
+        'GESTURE PLAY  |  PL–PS 系统架构', size=39, kind='text')
     box('soc', 305, 135, 1775, 815, 'PYNQ-Z2  ·  Zynq-7020',
         stroke='#3a5061', size=27, kind='group')
     box('pl', 335, 205, 1135, 715, 'PL  /  可编程逻辑',
@@ -107,7 +107,7 @@ def make_scene():
     box('note', 305, 990, 1775, 38,
         '蓝：视觉数据    紫：绘图数据    灰虚线：控制    ·    PL 与 PS 经 DDR 交换数据',
         size=23, kind='text')
-    return dict(width=2400, height=1060, title='GESTURE PLAY v3.0 PL–PS',
+    return dict(width=2400, height=1060, title='GESTURE PLAY PL–PS',
                 subtitle='Landscape architecture; independent contest_v3 runtime',
                 edge_font_size=21, nodes=nodes, edges=edges)
 
@@ -117,7 +117,7 @@ def main():
     zh = make_scene()
     en = copy.deepcopy(zh)
     labels = {
-        'title': 'GESTURE PLAY v3.0  |  PL–PS System Architecture',
+        'title': 'GESTURE PLAY  |  PL–PS System Architecture',
         'soc': 'PYNQ-Z2  ·  Zynq-7020',
         'pl': 'PL  /  Programmable Logic', 'ps': 'PS  /  Processing System',
         'cpu': 'ARM Cortex-A9 · Linux / PYNQ',

@@ -32,7 +32,7 @@
 <text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  灵巧手驱动与低负荷通信  /  02  通信时序</text>
 <text x="1100.0" y="130.66" text-anchor="middle" font-size="49" font-weight="600">按阶段通信，等待期间不轮询位置</text>
 <text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">PYNQ PS 独立动作进程 → USB 串口 / SDK → 17 个电机；每次写入仍检查状态应答</text>
-<text x="1100.0" y="1571.12" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / 手部运行时 R16  ·  按已交付源码绘制  ·  技术示意</text>
+<text x="1100.0" y="1571.12" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  按已交付源码绘制  ·  技术示意</text>
 <rect x="385" y="245" width="390" height="70" rx="6" fill="#fff0f6" stroke="#bf286e" stroke-width="2"/>
 <text x="580.0" y="288.84" text-anchor="middle" font-size="26" font-weight="600">PS 动作调度</text>
 <text x="580.5" y="1480.84" text-anchor="middle" font-size="1" font-weight="600"></text>

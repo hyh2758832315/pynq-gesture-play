@@ -30,7 +30,7 @@
 <text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  视觉识别与双路跟随  /  01  总览</text>
 <text x="1100.0" y="129.98" text-anchor="middle" font-size="47" font-weight="600">一帧观察，位置与类别分别跟随</text>
 <text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">位置驱动 HDMI 手圈；类别驱动实体手。两路都读取最新状态，互不消费对方的输入。</text>
-<text x="1100.0" y="1651.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意</text>
+<text x="1100.0" y="1651.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  BUILD_ID 0xC0061000  ·  源码机制示意</text>
 <rect x="100" y="335" width="270" height="105" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
 <text x="235.0" y="379.13" text-anchor="middle" font-size="27" font-weight="600">OV5640 / DVP</text>
 <text x="235.0" y="414.23" text-anchor="middle" font-size="27" font-weight="400">1280 × 720</text>

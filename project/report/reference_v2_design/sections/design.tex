@@ -1,10 +1,10 @@
-\section{设计概述与初级组要求对应}
-GESTURE PLAY v2.0 是面向手势交互与创作体验的 Zynq 系统。作品以 PYNQ-Z2 为核心，将摄像头视觉输入、自研 Scene2D 二维图形处理器、四款游戏、画布相册、视频与灵巧手协同组织为一个完整应用。用户通过手的位置、握拳和板载按键完成选择与操作，系统给出 HDMI 图形反馈，并通过独立的实体手通道执行姿态与演示动作。
+\section{系统概述与设计目标}
+GESTURE PLAY 是面向手势交互与创作体验的 Zynq 系统。作品以 PYNQ-Z2 为核心，将摄像头视觉输入、自研 Scene2D 二维图形处理器、四款游戏、画布相册、视频与灵巧手协同组织为一个完整应用。用户通过手的位置、握拳和板载按键完成选择与操作，系统给出 HDMI 图形反馈，并通过独立的实体手通道执行姿态与演示动作。
 
-v2.0 已完成从输入采集、手势识别、应用决策到图形呈现的板端运行链路；PC Studio 提供内容创作、部署、测试与状态观测。发布验收结果为 PASS：四游戏 16 条 PC/PYNQ 对照用例、真实 GPU 60 项检查、真实串口协议 18 项检查，并完成设备关闭回执、正常服务与 Studio 重连验证。[E01–E03]
+系统已完成从输入采集、手势识别、应用决策到图形呈现的板端运行链路；PC Studio 提供内容创作、部署、测试与状态观测。2026-10-29 的集成验收结果为 PASS：四游戏 16 条 PC/PYNQ 对照用例、真实 GPU 60 项检查、真实串口协议 18 项检查，并完成设备关闭回执、正常服务与 Studio 重连验证。[E01–E03]
 
 \subsection{作品构成与实现基线}
-作品采用 PYNQ-Z2（xc7z020clg400-1），以 Vivado 2026.1 构建 R23b2 硬件，BUILD\_ID 为 0xC0061000。板端使用 Python 3.10 / PYNQ 3.1 和 R09 灵巧手运行时，发布基线于 2026-10-29 封存。
+作品采用 PYNQ-Z2（xc7z020clg400-1），以 Vivado 2026.1 构建 R23b2 硬件，BUILD\_ID 为 0xC0061000。板端使用 Python 3.10 / PYNQ 3.1。当前运行包与 Studio 配套发布；硬件标识、文件摘要与启动步骤见工程 README。本文的接口和硬件结构说明沿用同一 BUILD\_ID，历史实验均注明日期或配置。
 
 视觉端输出 640×360 双掩膜；显示端以 320×180 逻辑画面驱动 1280×720 / 60 Hz HDMI。四游戏、两段默认视频、手势菜单、画布相册及实体手/像素手演示共享这一底座，Studio 通过统一 SDK 与 Agent 管理应用。
 
@@ -132,7 +132,7 @@ Scene2D 是 PL 中的命令式二维绘图处理器。PS 将应用状态编译�
 
 HOME、GAMES、VIDEOS 列表共享 live 拥有者；画布与相册暂停动作；示范独占播放 0–9 与爱心的实体手/像素手对应内容；视频与预览交接先完成全部 17 个电机 OFF。返回 live 时重新建立新鲜观察来源。动作执行期间保存最新目标，当前阶段结束后选择最新观察，使动作链跟随当前交互意图。
 
-使能前读取电机状态，检查位置范围、电压、温度与扭矩状态，并设置速度和当前目标；执行时检查通信返回，跳过未变化的目标；退出时逐个写入扭矩关闭并读回确认。v2.0 的串口验证已覆盖 18 项协议检查及两次 17OFF/CLOSED 会话回执，形成可进入、可运行、可退出的设备生命周期。[E02]
+使能前读取电机状态，检查位置范围、电压、温度与扭矩状态，并设置速度和当前目标；执行时检查通信返回，跳过未变化的目标；退出时逐个写入扭矩关闭并读回确认。2026-10-29 的串口验证已覆盖 18 项协议检查及两次 17OFF/CLOSED 会话回执，形成可进入、可运行、可退出的设备生命周期。[E02]
 
 \clearpage
 \section{软硬件划分依据与接口设计}
@@ -401,7 +401,7 @@ R23b2 路由后报告给出 WNS +0.011 ns、TNS 0、WHS +0.050 ns、THS 0，setu
 表中容量由已定义接口直接计算，带帧率条件的行用于系统预算。双缓冲使绘制和扫描并行，命令式上传减小普通场景的主机传输量，最新帧策略控制输入积压，有界画布控制长期内存增长。这些设计分别对应显示连续性、数据搬运、输入响应和创作运行四个实际需求。
 
 \subsection{分层验证与作品完成度}
-v2.0 采用“RTL 验证点—软件合同—真实设备—完整业务流程”的分层验证方式。底层 testbench 针对握手保持、帧身份与缓冲拥有权设置场景；应用以同输入逐 tick 比对验证 PC/PYNQ 一致性；真实 GPU 和串口检查则验证设备路径；最后通过服务与 Studio 重连确认运行入口。[E02、E24]
+系统采用“RTL 验证点—软件合同—真实设备—完整业务流程”的分层验证方式。底层 testbench 针对握手保持、帧身份与缓冲拥有权设置场景；应用以同输入逐 tick 比对验证 PC/PYNQ 一致性；真实 GPU 和串口检查则验证设备路径；最后通过服务与 Studio 重连确认运行入口。[E02、E24]
 
 {\small\renewcommand{\arraystretch}{1.28}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.24\linewidth}>{\raggedright\arraybackslash}p{0.35\linewidth}>{\raggedright\arraybackslash}p{0.34\linewidth}@{}}
@@ -420,18 +420,18 @@ RTL 验证设计 & 流背压/配置上下文测试；frame\_owner 14 类场景 &
 服务运行 & 默认服务、测试注入移除、Studio 重连通过 & 日常运行与开发管理入口\\
 硬件实现 & R23b2 建立/保持检查无违例 & 当前发布 Overlay 的实现收敛\\
 \end{longtable}}
-作品已形成从 FPGA 逻辑到用户功能的连续实现：双掩膜提供统一视觉入口，Scene2D 提供统一图形出口，GamePlugin 连接四游戏及创作场景，独立动作通道连接实体手，Studio 连接开发与验证。功能扩展、状态管理、设备交接和回执检查都建立在同一 v2.0 基线上。
+作品已形成从 FPGA 逻辑到用户功能的连续实现：双掩膜提供统一视觉入口，Scene2D 提供统一图形出口，GamePlugin 连接四游戏及创作场景，独立动作通道连接实体手，Studio 连接开发与验证。功能扩展、状态管理、设备交接和回执检查都建立在同一软硬件接口上。
 
 \clearpage
 \section{附录：版本、证据与测试口径}
-\subsection{发布身份与数据分类}
-发布提交为 \nolinkurl{bd6858bbe4ded19caf1f91322850150c97cab21e}，运行清单 SHA-256 为 \nolinkurl{5f53d85d5bcdb8c871d387683cbf7b6b12c899b380b9370642c9bd2ff41e9d56}。正文中的格式、尺寸与容量来自源码；WNS/WHS 来自实现报告；16/60/18 与关闭回执来自 v2.0 验收。RTL testbench 的场景列表来自冻结测试源文件。
+\subsection{验证数据与当前配置}
+格式、尺寸与容量来自源码，资源与时序来自实现报告；16 条应用对照、60 项 GPU 检查、18 项串口检查来自 2026-10-29 的集成验收。当前发行验证另包括标准安装、视频与回传恢复、自启动连接；材料入口为上级目录的 validation.md 和 design\_report.md。
 
-v2.0 正式技能输入为板载按钮；兼容代码中的 Voice View 名称与 tone/volume 字段保留历史接口。实体手本轮证据为协议与 SDK 验证，\nolinkurl{acceptance-summary} 中 \nolinkurl{mechanical_verified} 为 false；真人姿态测量、摄像头到屏幕统一时延及全新 SD 安装属于独立验证项目。本文交互闭环描述用户操作和系统反馈，电机位置误差控制由执行器层处理。
+当前系统以摄像头手势和板载按钮作为交互输入。灵巧手启动时检查设备，运行时消费最新手势；同一有效姿态保持，动作完成且批准窗口到期后接收最新分类。视觉过期进入可恢复等待。实体设备的标定与机械状态按部署说明检查。
 
-时序报告 check\_timing 记录 4 个 no\_input\_delay 和 6 个 no\_output\_delay。正文的建立/保持结果针对已约束路径；外部 I/O 时序覆盖应结合完整约束清单阅读。vid\_pclk 表项为输入时钟约束值。带宽预算、OSD 发布目标与消抖采样周期分别属于设计值，不作为识别吞吐或整机实测时延。
+时序报告中的 4 个 no\_input\_delay 和 6 个 no\_output\_delay 为外部接口约束检查项；WNS/WHS 对应已约束路径。带宽预算、OSD 发布周期和 HDMI 扫描频率属于设计参数，识别吞吐与应用更新率按各自实测窗口报告。
 
-冻结候选 manifest 中的 release\_ready=false、board\_pending=true 保留生成时的阶段记录；本报告功能验收采用其后的 v2.0 \nolinkurl{acceptance-summary}。视觉运行时注明改编自 \nolinkurl{KPTKleist/Pynq_Gesture_Detect}（MIT），灵巧手适配使用 ORCA 代码与配置；相应版权与许可随工程保留。
+视觉参考实现来自 KPTKleist/Pynq\_Gesture\_Detect；灵巧手采用 ORCA 结构与 SCS225 适配代码。第三方许可和独立实现范围见仓库的参考资料与许可说明。
 
 \subsection{来源定位}
 下表以 B 表示 \nolinkurl{build/v2-release-repo/releases/v2.0/board_runtime/}，S 表示同版本 source/，V 表示 verification/，P 表示 \nolinkurl{B/python/pynq_multimodal_game/}。完整路径、文件大小与 SHA-256 见随附 \nolinkurl{evidence_index.json}。
@@ -472,7 +472,7 @@ E24 & \nolinkurl{S/tests/rtl/tb_vision_frame_owner.sv}、\nolinkurl{tb_axis_rgb_
 E25 & \nolinkurl{S/rtl/scene2d_gpu/scene2d_c4m7_core.sv}、\nolinkurl{scene2d_c4m3_core.sv}、\nolinkurl{scene2d_frame_swap.sv}；图形核心与帧交换\\
 \end{longtable}}
 \subsection{官方指南与总报告衔接}
-R01 为用户指定的官方仓库自主选题指南，读取日期 2026-10-30。原文保存在 \nolinkurl{sources/open_topic_guide.md}，SHA-256 为 \nolinkurl{bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678}。原文地址见下方链接。指南注明，完整指南与大赛官方公告具有最终解释优先级。
+R01 为官方仓库自主选题指南，读取日期 2026-10-30。原文保存在 \nolinkurl{sources/open_topic_guide.md}，SHA-256 为 \nolinkurl{bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678}。原文地址见下方链接。指南注明，完整指南与大赛官方公告具有最终解释优先级。
 
 \url{https://gitee.com/Vickyiii/fpgachina26-amd/blob/master/tracks/open-topic/GUIDE.md}
 本报告对应总报告的系统设计两章；其余章节衔接创新点、优化对比、AI 协作、Skill 与复现说明，工程提交附开源许可及目录对照。

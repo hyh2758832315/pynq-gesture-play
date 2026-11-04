@@ -54,5 +54,3 @@ python scripts/verify_vision_figure.py --source-root . --output regenerated_data
 ```
 
 预期输出：三组 SVG/PNG/PDF/draw.io；重新生成的数据与 PASS JSON。下一步检查长文字、连线、字节顺序和指标名称，再排入报告、海报或视频。直接编辑 draw.io 不会自动回写 JSON；选定其中一份作为后续母稿。
-
-本轮只读取项目文件并生成材料，没有上板、启动摄像头或驱动电机。

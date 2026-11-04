@@ -3,318 +3,371 @@
     "origin": "report/figures/vision_dual_follow/01_vision_dual_follow.png",
     "copy": "figures/01_vision_dual_follow.png",
     "sha256": "e670cf1e63aaadf7280f73a7c748c77ddca40065dd9c645cc542d02e9de1f0f2",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "c2a258cf787b234dfb90089d7062518ca8f0b5019b457830516293909a032c85"
   },
   {
     "origin": "report/figures/vision_dual_follow/01_vision_dual_follow.svg",
     "copy": "figures/01_vision_dual_follow.svg",
     "sha256": "a18c37b480da43e1206197914464c297d0088f8750b6b16f3a367bb0ba4b53a8",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "9cf97993d8ef8651da5670dbc861664784ad900f31eb64100aaba7b27c87e1fe"
   },
   {
     "origin": "report/figures/vision_dual_follow/01_vision_dual_follow.pdf",
     "copy": "figures/01_vision_dual_follow.pdf",
     "sha256": "2f9a5ba195a6fe1c755c4d45c71b85ae48deecbbdd1b29112d39d652422b17c0",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "d036fa8b724cb120194ea3498c946d41325374c602e6c86d49ff4356fa8a8089"
   },
   {
     "origin": "report/figures/vision_dual_follow/01_vision_dual_follow.drawio",
     "copy": "figures/01_vision_dual_follow.drawio",
     "sha256": "522086d8df352f9df13c02b965ed7c0dee3b950891a6810278bbb70595b6e7a2",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "8a6a70d76d896adc7c3a3d5d1f48427243a5c0a9411f76367641ba54c958eaf8"
   },
   {
     "origin": "report/figures/vision_dual_follow/01_vision_dual_follow.json",
     "copy": "figures/01_vision_dual_follow.json",
     "sha256": "24deafc29a72508f91d402b2f0b20d12696ef16f43206c8072f3e4b8264e921b",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "2a5d45d2d884af8767e4fce7562571f07dee56a404d4bbfae1e4549a29b378e2"
   },
   {
     "origin": "report/figures/vision_dual_follow/01_vision_dual_follow_preview.png",
     "copy": "figures/01_vision_dual_follow_preview.png",
     "sha256": "17ed6fa9949d3b9d5efd1b0e81d6bf2d36dc49edc6e546e4246b2108606701f9",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "c43eba86eb2af9a1dec9c0c1fbba7d808b6d68c9334ef89ca3e0a58b82b5e980"
   },
   {
     "origin": "report/figures/vision_dual_follow/02_recognition_logic.png",
     "copy": "figures/02_recognition_logic.png",
     "sha256": "a40f3c7690cc2a7f30b5b0afcf595d9b79ce57af149c06df5e3b1b6d97bf6039",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "519f33df8be1326bbb11de3f77d496dbeb7b29bcad3e61eba250895cc4b4f5a6"
   },
   {
     "origin": "report/figures/vision_dual_follow/02_recognition_logic.svg",
     "copy": "figures/02_recognition_logic.svg",
     "sha256": "d9b8fadf7df0ffcec3055a00dea0cf2c1d1851ba2f782988672ea6d38ec16bcf",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "ee06e88272e6b940de71fb5ba8d078a883625591b9b19d2b36479abbdca8cf34"
   },
   {
     "origin": "report/figures/vision_dual_follow/02_recognition_logic.pdf",
     "copy": "figures/02_recognition_logic.pdf",
     "sha256": "68400076cc97efb68a2b5def94c347a9cfa5735aac6a50925ec580dada80a604",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "affc0f8f413e3e740a15fcf25e1d3a967fc1978c1e60d10f3773f32db9a22241"
   },
   {
     "origin": "report/figures/vision_dual_follow/02_recognition_logic.drawio",
     "copy": "figures/02_recognition_logic.drawio",
     "sha256": "c222c173691b22875e630d868aab95c60637eaf786101c4e72f044dbd979a442",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "8c650e28ac5f2b46842a76317937e5a221d09e26111e8a348077ce223c4dc75f"
   },
   {
     "origin": "report/figures/vision_dual_follow/02_recognition_logic.json",
     "copy": "figures/02_recognition_logic.json",
     "sha256": "f7781e3366b85540020673841c40371d162684afb2f5a92b1985e1f27a147cf2",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "d73267d17a2917c0b7f6c73d473a95ad0477f8abf2731aa929a03ef144291064"
   },
   {
     "origin": "report/figures/vision_dual_follow/02_recognition_logic_preview.png",
     "copy": "figures/02_recognition_logic_preview.png",
     "sha256": "74f69ed2839d68dcf99fb25b838cedac640ace4ae5c31b79ea4281c1d6250bbc",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "e664dbdb51bb56f095ebf4d02532deeb9b4dc589dee35bce55c70ae2acecd614"
   },
   {
     "origin": "report/figures/vision_dual_follow/03_dms1_osd_timing.png",
     "copy": "figures/03_dms1_osd_timing.png",
     "sha256": "e438dc8a3576a08755eb43112ae61bf89e6c24ee63afd63cf319b6567ae2a2c5",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "842fbf12c6948245fb8ac6d520ae5a45f875034832edb27a84ee76b4c3b6afaf"
   },
   {
     "origin": "report/figures/vision_dual_follow/03_dms1_osd_timing.svg",
     "copy": "figures/03_dms1_osd_timing.svg",
     "sha256": "58d19676a06e4869de950d5da6dd7a8171ed7d0fcb6f5c31d9b2289228d4e2a8",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "717d805ed78380f003acb3985f50eafb55bd7ec3bfba9347f3115158117fef59"
   },
   {
     "origin": "report/figures/vision_dual_follow/03_dms1_osd_timing.pdf",
     "copy": "figures/03_dms1_osd_timing.pdf",
     "sha256": "ac722459c9b287e8b610ef61120879efc414c8f6700a8b7e693a3d9653b18b15",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "57b2308c592e35127f23a0d528e7646a9a6677d5fbccba6bbb9720c8470c1630"
   },
   {
     "origin": "report/figures/vision_dual_follow/03_dms1_osd_timing.drawio",
     "copy": "figures/03_dms1_osd_timing.drawio",
     "sha256": "f1ccf98dbc368d85f5ed8da4b389a0501cffa614ffab83e27be44ebcb3490b84",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "47aa94ae495392ea1c909039f66b8bcaf59996b7d43369402b793093041605fd"
   },
   {
     "origin": "report/figures/vision_dual_follow/03_dms1_osd_timing.json",
     "copy": "figures/03_dms1_osd_timing.json",
     "sha256": "340eae5ec2c7f2a66d719c45029e964acaabdcb597c79f1845104f3a909f876e",
-    "scope": "Editable scene or export"
+    "scope": "Editable scene or export",
+    "published_sha256": "a7f6b579aba57c880f9bc25e0d2028f2a4936173a96ac3f206826731df0ab5a7"
   },
   {
     "origin": "report/figures/vision_dual_follow/03_dms1_osd_timing_preview.png",
     "copy": "figures/03_dms1_osd_timing_preview.png",
     "sha256": "002b556b6d2587545a7897ca788c7707fca5b0b87891351e33c42d19ccf3823a",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "7adf6d75ab283db8e0e4711211127205a0ed47fabc24abc6fdca7c244f6f6d37"
   },
   {
     "origin": "report/figures/vision_dual_follow/vision_dual_follow_all.pdf",
     "copy": "figures/vision_dual_follow_all.pdf",
     "sha256": "c27e8e730a8f6e43bcc427143071c09d15864ab7038e728ac0837f4da5bfdc48",
-    "scope": "Three-page overview"
+    "scope": "Three-page overview",
+    "published_sha256": "5a79a0e9628c4ec5a438a89305aa0350d21d90c06f932a2ec8bc1e6570a6b7de"
   },
   {
     "origin": "report/figures/vision_dual_follow/data/dms1_example.bin",
     "copy": "data/dms1_example.bin",
     "sha256": "d21dca66533088dec0b7fc1b4cca05dfd91782a3b4acbe4bcbafe2805f09e1cf",
-    "scope": "Constructed offline example; scope in verification.json"
+    "scope": "Constructed offline example; scope in verification.json",
+    "published_sha256": "d21dca66533088dec0b7fc1b4cca05dfd91782a3b4acbe4bcbafe2805f09e1cf"
   },
   {
     "origin": "report/figures/vision_dual_follow/data/dms1_trailer.csv",
     "copy": "data/dms1_trailer.csv",
     "sha256": "e4fcff41f4e43bbbfe76de9927711407ecb923bf82bb85b404a4373eb565fb63",
-    "scope": "Constructed offline example; scope in verification.json"
+    "scope": "Constructed offline example; scope in verification.json",
+    "published_sha256": "e4fcff41f4e43bbbfe76de9927711407ecb923bf82bb85b404a4373eb565fb63"
   },
   {
     "origin": "report/figures/vision_dual_follow/data/osd_registers.csv",
     "copy": "data/osd_registers.csv",
     "sha256": "91ddb17e8ef9504b920b50b75a73cc003e370998d499d4303652615dee551358",
-    "scope": "Constructed offline example; scope in verification.json"
+    "scope": "Constructed offline example; scope in verification.json",
+    "published_sha256": "91ddb17e8ef9504b920b50b75a73cc003e370998d499d4303652615dee551358"
   },
   {
     "origin": "report/figures/vision_dual_follow/data/rules.csv",
     "copy": "data/rules.csv",
     "sha256": "6d6863b8ef56dce2ed8f4099f9766a6173975bb712398b70d754c7e382c36175",
-    "scope": "Constructed offline example; scope in verification.json"
+    "scope": "Constructed offline example; scope in verification.json",
+    "published_sha256": "6d6863b8ef56dce2ed8f4099f9766a6173975bb712398b70d754c7e382c36175"
   },
   {
     "origin": "report/figures/vision_dual_follow/data/verification.json",
     "copy": "data/verification.json",
     "sha256": "14f5653fed96091576ee70cbee48d51f49688c8dcdc533733f1d782070f1347c",
-    "scope": "Constructed offline example; scope in verification.json"
+    "scope": "Constructed offline example; scope in verification.json",
+    "published_sha256": "14f5653fed96091576ee70cbee48d51f49688c8dcdc533733f1d782070f1347c"
   },
   {
     "origin": "report/figures/vision_dual_follow/data/vote_trace.csv",
     "copy": "data/vote_trace.csv",
     "sha256": "67dd6eae7a24ea1c32839784cc863bfba016131309ee6df708c40208bf226a5f",
-    "scope": "Constructed offline example; scope in verification.json"
+    "scope": "Constructed offline example; scope in verification.json",
+    "published_sha256": "67dd6eae7a24ea1c32839784cc863bfba016131309ee6df708c40208bf226a5f"
   },
   {
     "origin": "board/runtime/board/pynq_z2/scripts/vision_async_runtime.py",
     "copy": "reference_only/vision_async_runtime.py",
     "sha256": "90a4a5d7fb12932a5b4e46b75bc90cd17f9c910beeb74f8337ed48340f19a405",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "90a4a5d7fb12932a5b4e46b75bc90cd17f9c910beeb74f8337ed48340f19a405"
   },
   {
     "origin": "board/runtime/board/pynq_z2/dual_mask_packet.py",
     "copy": "reference_only/dual_mask_packet.py",
     "sha256": "15f9691bde670cd8c14a3e49736cc1fdb7a88968a9a75019f5ed9c5bdce0a693",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "15f9691bde670cd8c14a3e49736cc1fdb7a88968a9a75019f5ed9c5bdce0a693"
   },
   {
     "origin": "board/runtime/board/pynq_z2/vision_latest_capture.py",
     "copy": "reference_only/vision_latest_capture.py",
     "sha256": "7852b8a7b55df9fc0c9158aad635396caa4f3a46ace603cf213e2d655ee69033",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "7852b8a7b55df9fc0c9158aad635396caa4f3a46ace603cf213e2d655ee69033"
   },
   {
     "origin": "board/runtime/board/pynq_z2/vision_dma_pool.py",
     "copy": "reference_only/vision_dma_pool.py",
     "sha256": "29813a2a8b22cfeda5f7bbd2d6d7a0957b79bfc69f7fc6b5ec25378044588a3c",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "29813a2a8b22cfeda5f7bbd2d6d7a0957b79bfc69f7fc6b5ec25378044588a3c"
   },
   {
     "origin": "board/runtime/board/pynq_z2/vision_capture_control.py",
     "copy": "reference_only/vision_capture_control.py",
     "sha256": "af7c4c81d4cd6d8e46b0562922cc01be5e9a35c0481ed85bcb542ac294b74b64",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "af7c4c81d4cd6d8e46b0562922cc01be5e9a35c0481ed85bcb542ac294b74b64"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/pl_button_factory.py",
     "copy": "reference_only/pl_button_factory.py",
     "sha256": "e96110a08e6b61244884b692ac1ff4b194940d6fcf9b783cf655717c2eed534f",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "e96110a08e6b61244884b692ac1ff4b194940d6fcf9b783cf655717c2eed534f"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/button_osd.py",
     "copy": "reference_only/button_osd.py",
     "sha256": "7d0a87ba31ff8654e25dccb350679481f8ac4150193829196aa4a6414dcbbede",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "7d0a87ba31ff8654e25dccb350679481f8ac4150193829196aa4a6414dcbbede"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/vision_input.py",
     "copy": "reference_only/vision_input.py",
     "sha256": "c89b3e5b5d54b157a9f12759cdb779dfccdf719a764c9468739cf52e2c6cb25d",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "c89b3e5b5d54b157a9f12759cdb779dfccdf719a764c9468739cf52e2c6cb25d"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/hand_serial_session.py",
     "copy": "reference_only/hand_serial_session.py",
     "sha256": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/hand_shadow_bridge.py",
     "copy": "reference_only/hand_shadow_bridge.py",
     "sha256": "1543a5af70211c85f31588373d75d8f10b9a5d11f3b3e91cf434d866f4b0689a",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "1543a5af70211c85f31588373d75d8f10b9a5d11f3b3e91cf434d866f4b0689a"
   },
   {
     "origin": "board/runtime/python/pynq_multimodal_game/agent/button_osd_backend.py",
     "copy": "reference_only/button_osd_backend.py",
     "sha256": "fa423712ea75d10c1851ae234e50a80b8bfc729d2880d00a08ee2b9ae4a96dac",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "fa423712ea75d10c1851ae234e50a80b8bfc729d2880d00a08ee2b9ae4a96dac"
   },
   {
     "origin": "board/runtime/hand-runtime/src/pynq_usb_hand/gesture_consumer.py",
     "copy": "reference_only/gesture_consumer.py",
     "sha256": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90"
   },
   {
     "origin": "board/runtime/handoffs/gesture_vision_v61/runtime/gesture_control.py",
     "copy": "reference_only/gesture_control.py",
     "sha256": "57a82fa61bcaceef905e6d25c6e9e4f5c6bafc60e305ff0b9aa6192cc470a9ba",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "57a82fa61bcaceef905e6d25c6e9e4f5c6bafc60e305ff0b9aa6192cc470a9ba"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/axis_area2x2.sv",
     "copy": "reference_only/axis_area2x2.sv",
     "sha256": "8bc7e557ef8ef2e69089f33e8318c5d426d139628a96f18673228a1b1510bcb0",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "8bc7e557ef8ef2e69089f33e8318c5d426d139628a96f18673228a1b1510bcb0"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/axis_rgb_dual_mask_capture.sv",
     "copy": "reference_only/axis_rgb_dual_mask_capture.sv",
     "sha256": "3edc3b9383741c9f2795ccc1414ac3175b61b4bed82e7353427012eab67620c4",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "3edc3b9383741c9f2795ccc1414ac3175b61b4bed82e7353427012eab67620c4"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/axis_binary_mask_pair.sv",
     "copy": "reference_only/axis_binary_mask_pair.sv",
     "sha256": "3f1767d22a033c95f5d171bdce2ce5ffd6408c484ba21abb89becd82eaafbfe7",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "3f1767d22a033c95f5d171bdce2ce5ffd6408c484ba21abb89becd82eaafbfe7"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/axis_binary_gaussian5.sv",
     "copy": "reference_only/axis_binary_gaussian5.sv",
     "sha256": "ad138b615485e7ab0937cea5e9a58410c67394b7039ce26468f9794e625f4cb5",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "ad138b615485e7ab0937cea5e9a58410c67394b7039ce26468f9794e625f4cb5"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/axis_dual_mask_packet.sv",
     "copy": "reference_only/axis_dual_mask_packet.sv",
     "sha256": "9a20ebde01f0eb50f8c268dc6de83390b6cea68b8610a6415ed54acf30b5aff4",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "9a20ebde01f0eb50f8c268dc6de83390b6cea68b8610a6415ed54acf30b5aff4"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/axis_bgr_hsv_skin.sv",
     "copy": "reference_only/axis_bgr_hsv_skin.sv",
     "sha256": "ee4cdea7dbcb22817613c0df98da69e708d2443912304b04605ad7458855e0c5",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "ee4cdea7dbcb22817613c0df98da69e708d2443912304b04605ad7458855e0c5"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/hsv_reciprocal.svh",
     "copy": "reference_only/hsv_reciprocal.svh",
     "sha256": "213a330f8aa05f684999724602cc84b59692c8375538a294beed14fe79b398c9",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "213a330f8aa05f684999724602cc84b59692c8375538a294beed14fe79b398c9"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_ctrl.sv",
     "copy": "reference_only/input_osd_ctrl.sv",
     "sha256": "3fec20de498fcfe7a53996864cf114084095648945ab68def0d4149d6e921a44",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "3fec20de498fcfe7a53996864cf114084095648945ab68def0d4149d6e921a44"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv",
     "copy": "reference_only/input_osd_pixels.sv",
     "sha256": "95ff52b4eab19d9aabdfd369d02168ffc7729d0ca15faf440a193eb644ccb131",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "95ff52b4eab19d9aabdfd369d02168ffc7729d0ca15faf440a193eb644ccb131"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_top.sv",
     "copy": "reference_only/input_osd_top.sv",
     "sha256": "4323f9d0cb0d180f5e61f0efe3e2fe45450ccca590836c9056ab82f57089ef69",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "4323f9d0cb0d180f5e61f0efe3e2fe45450ccca590836c9056ab82f57089ef69"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/voice-view-game/subprojects/hdmi_input_osd/latency_rtl/axis_rgb_mask_frontend.sv",
     "copy": "reference_only/axis_rgb_mask_frontend.sv",
     "sha256": "43e6676736b5d13d438b2ac5e7cac7c44752297339b1d25921eead724318aa50",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "43e6676736b5d13d438b2ac5e7cac7c44752297339b1d25921eead724318aa50"
   },
   {
     "origin": "build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/voice-view-game/subprojects/hdmi_input_osd/latency_rtl/axis_binary_dilate9.sv",
     "copy": "reference_only/axis_binary_dilate9.sv",
     "sha256": "c2a60d3490c616762bd76493087ea593fa550a251a170372feb4a5f1f06771a6",
-    "scope": "Frozen implementation reference; not a complete deployment project"
+    "scope": "Frozen implementation reference; not a complete deployment project",
+    "published_sha256": "c2a60d3490c616762bd76493087ea593fa550a251a170372feb4a5f1f06771a6"
   },
   {
     "origin": "board/runtime/handoffs/gesture_vision_v61/runtime/PROJECT1_LICENSE.txt",
     "copy": "reference_only/PROJECT1_LICENSE.txt",
     "sha256": "e818b8cf5c9cde70d8effa13aa006e895ed138dd8ff5ecb7d76f07b33fdb4427",
-    "scope": "Original MIT attribution from vision source"
+    "scope": "Original MIT attribution from vision source",
+    "published_sha256": "e818b8cf5c9cde70d8effa13aa006e895ed138dd8ff5ecb7d76f07b33fdb4427"
   },
   {
     "origin": "tools/render_vision_diagram.py",
     "copy": "scripts/render_scene.py",
     "sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b",
-    "scope": "Editable scene renderer"
+    "scope": "Editable scene renderer",
+    "published_sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b"
   },
   {
     "origin": "tools/verify_vision_figure.py",
     "copy": "scripts/verify_vision_figure.py",
     "sha256": "5ac8b5c927086b3fc81e8966703613e98f09c3858f8f027b6c98df54849f6f9e",
-    "scope": "Production decoder / isolated rules / memory MMIO example verification"
+    "scope": "Production decoder / isolated rules / memory MMIO example verification",
+    "published_sha256": "5ac8b5c927086b3fc81e8966703613e98f09c3858f8f027b6c98df54849f6f9e"
   }
 ]

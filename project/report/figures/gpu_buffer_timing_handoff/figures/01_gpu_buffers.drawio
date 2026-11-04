@@ -96,7 +96,7 @@
         <mxCell id="subtitle" value="命令缓冲、图像缓冲和资源缓冲分别管理；双帧缓冲把绘制与 HDMI 扫描分开。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
         </mxCell>
-        <mxCell id="footer" value="GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="footer" value="GESTURE PLAY · BUILD_ID 0xC0061000 · 当前源码机制" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="1649" width="2080" height="33" />
         </mxCell>
         <mxCell id="owner" value="菜单 / 游戏 / 视频 / 画布&#10;页面切换时交接提交权" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">

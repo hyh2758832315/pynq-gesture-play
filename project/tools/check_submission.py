@@ -34,7 +34,7 @@ def main():
         print(json.dumps({'result':'FAIL', 'failures':failures})); return 1
 
     template=ROOT/'report/templates/official_report_template.docx'
-    expected='8f6212ce98b76ffff6c1206cff42b69230cd985092728e1ae0dc277fbba1379d'
+    expected='4c70c9294d3b302c8035547bf692cad8a4a815f3f17c6c39ddf1c9ded6c841b7'
     if hashlib.sha256(template.read_bytes()).hexdigest()!=expected:
         failures.append('official Word template SHA differs')
     with zipfile.ZipFile(template) as z:

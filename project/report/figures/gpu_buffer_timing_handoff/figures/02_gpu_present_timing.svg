@@ -21,7 +21,7 @@
 <text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  GPU 缓冲与呈现时序  /  02  呈现时序</text>
 <text x="1100.0" y="129.98" text-anchor="middle" font-size="47" font-weight="600">渲染完成 ≠ 已呈现：换页发生在垂直消隐起点</text>
 <text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">render_done 发起跨时钟请求；像素域换页后回 ACK，写侧才获得可复用的后台。</text>
-<text x="1100.0" y="1841.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制</text>
+<text x="1100.0" y="1841.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY · BUILD_ID 0xC0061000 · 当前源码机制</text>
 <text x="580.0" y="346.0" text-anchor="middle" font-size="25" font-weight="600">上传 + 包接受</text>
 <text x="960.0" y="346.0" text-anchor="middle" font-size="25" font-weight="600">绘制后台 B</text>
 <text x="1365.0" y="346.0" text-anchor="middle" font-size="25" font-weight="600">等待消隐边界</text>

@@ -119,7 +119,7 @@
         <mxCell id="subtitle" value="位置驱动 HDMI 手圈；类别驱动实体手。两路都读取最新状态，互不消费对方的输入。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
         </mxCell>
-        <mxCell id="footer" value="GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="footer" value="GESTURE PLAY  ·  BUILD_ID 0xC0061000  ·  源码机制示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="1629" width="2080" height="33" />
         </mxCell>
         <mxCell id="camera" value="OV5640 / DVP&#10;1280 × 720" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;" vertex="1" parent="1">

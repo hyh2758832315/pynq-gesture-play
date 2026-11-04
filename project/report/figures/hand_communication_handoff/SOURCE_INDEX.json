@@ -3,330 +3,385 @@
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\01_logic.png",
     "copy": "figures/01_logic.png",
     "sha256": "29c08e3416ba7ecf9ceed737a968fbd2c7657e48e19310e7be1b02749c69c2d0",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "2e8a274eb39b1b9a338e8b1ccb635b79903085b39786d6022e96345b9617d41b"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\01_logic.svg",
     "copy": "figures/01_logic.svg",
     "sha256": "a4e3fb260e28886a639e0a5585f5b621686be0a1e834d6613c927bac20c46e15",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "5a22d0e3ae2a0c1c50bc04b1ce0ee0dd7ac50a7163329e330a9cc13e14d615d2"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\01_logic.pdf",
     "copy": "figures/01_logic.pdf",
     "sha256": "7cf4154c30c31c42b6e252dc9e40eac713241c1ec8966f0ced73617619dd008f",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "65e593892c120a91e4ba4038145771bbb3894b5acdb88cd9c74071a29ee198b9"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\01_logic.drawio",
     "copy": "figures/01_logic.drawio",
     "sha256": "d8009e5243068216ecc61631c8e467a87a8f077fff2cde5f3be7d3f6ed632dcb",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "e0908f6e27a9e7bd8bb51471b20c32fa9994f2a1ee50f7bcda3bf09b473febcb"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\01_logic.json",
     "copy": "figures/01_logic.json",
     "sha256": "8ca18d2e484287f9b9ad496f4c4f9a56192079542808babf77d674c0fc91d989",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "a5d1f7ddfc73976fb6077011fa120f54889d4fefc77647777946be37937d8d6e"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\01_logic_preview.png",
     "copy": "figures/01_logic_preview.png",
     "sha256": "9e9205688c38008c329d42ea6f22534d7441f221f6fe7c4777a119147cc59f9b",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "9d41354de62975112a5ecea09467250023f8a1d2951a25b2c8aba7cc0c05f46b"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\02_sequence.png",
     "copy": "figures/02_sequence.png",
     "sha256": "d0046afdbd4571489a5a8795c358b7862c7cece4660df777653e52f3396241dc",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "ed8c88ceb309e5ed664273b683ac54877db2725f75c40c2fd0520f9bdc61f3ce"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\02_sequence.svg",
     "copy": "figures/02_sequence.svg",
     "sha256": "660aff7fb1b77d3aca321a24ae9e0ad1b117c4de22aeb76e9322d0bed3022e6e",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "4a046f007357540d624bd317a76fb238709f099fa140d5ec6b875e0453e35c8d"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\02_sequence.pdf",
     "copy": "figures/02_sequence.pdf",
     "sha256": "a488de57db839992e544b6e047f65b50131a0f5d538459e0b1a26bfda3c2baa7",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "4e0c0c1f421facd6214bb1d5abb09124c4d0c40e73d3b71b918aff6dacd52f5e"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\02_sequence.drawio",
     "copy": "figures/02_sequence.drawio",
     "sha256": "b3557b57c9bf2a0ca0a04fb492ca1fd93e8a0a6996a9638e48fd37ed89cea99a",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "2563bad728b7b2f4753b735b5e1fe1c6a050bce37695d731f21a3cc9bdfa1198"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\02_sequence.json",
     "copy": "figures/02_sequence.json",
     "sha256": "9aa39ba1b51e2c74c49309a1ea92139d64a08e709bbb6b0db7ea3c1996974037",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "8ce8c56ef7440e0919996b717b8380a38924ba2fe212106797de02580728e9e7"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\02_sequence_preview.png",
     "copy": "figures/02_sequence_preview.png",
     "sha256": "45f2e9ffb612aa43a0f796c27b1b436ab70dcdd717870929f81c36ed1a45c9d2",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "796bfa6143579778f234c8b4c192afcfa6a898d120171e52335153a7fbed1d27"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\03_packet.png",
     "copy": "figures/03_packet.png",
     "sha256": "1eb5973e0a50b91354de39a427e991f28695834281e357740dcf918a6b06e18a",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "2a7e2fa457f87ecd3e045562a5d81ecd53ddf0986fde4d2a3f149c8f9d5895c7"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\03_packet.svg",
     "copy": "figures/03_packet.svg",
     "sha256": "77d9d84fe121f65057c7864f7dba665627c0486216dd009941eaf78d73bea5a0",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "445c7248d718d56d3056c5f108c97e8ba931e0ddb539d66b60302b44050dbae8"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\03_packet.pdf",
     "copy": "figures/03_packet.pdf",
     "sha256": "f685c5f9d36921772339c4758f53822d9c933b501ec1fdef362c54e11437013e",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "b3eca0e61b37c94b95c7a49c551a3cc4df80ac9b460bcc73f6bfaa371b9c794e"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\03_packet.drawio",
     "copy": "figures/03_packet.drawio",
     "sha256": "67cea3c4d6578f9e36cf2735d74c92d562c536f8686a6ab9807a1e339848b6e3",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "b2436fd38938aea57e77a7d7e2ded2c4342f4686bc68cbb8a064641da301b96f"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\03_packet.json",
     "copy": "figures/03_packet.json",
     "sha256": "16594ff265031e6072fed0b74e0f03d33c01b43bc8756ecdc959071a5d41c178",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "00e9c3a29f8a958595ac050d380aea85411a86b3db5ce72c156fd41bca8da2fc"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\03_packet_preview.png",
     "copy": "figures/03_packet_preview.png",
     "sha256": "af4974de2ff499f138a928becacbbac437a672e2a943f4962ce2725cdfd6b75f",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "e9bb3f6be2b67621591da586b76379f43afc0b6a03cf4bf02a259d5c2278fc55"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\04_comparison.png",
     "copy": "figures/04_comparison.png",
     "sha256": "4eb8b1cea8418bab20e8de167de02f9934c70aaec426bc91ac5d40135020e61c",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "4eb8b1cea8418bab20e8de167de02f9934c70aaec426bc91ac5d40135020e61c"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\04_comparison.svg",
     "copy": "figures/04_comparison.svg",
     "sha256": "1de42fe1dc3a0db4f3d39bc192c21a8b81db133035ac092ce9e5392211d6d5c0",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "1de42fe1dc3a0db4f3d39bc192c21a8b81db133035ac092ce9e5392211d6d5c0"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\04_comparison.pdf",
     "copy": "figures/04_comparison.pdf",
     "sha256": "3977147c185603c67d55878ce49ed90a1d641a0c2b100cd3d6a08e3c0cfa07a4",
-    "scope": "Editable figure / export"
+    "scope": "Editable figure / export",
+    "published_sha256": "3977147c185603c67d55878ce49ed90a1d641a0c2b100cd3d6a08e3c0cfa07a4"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\04_comparison_preview.png",
     "copy": "figures/04_comparison_preview.png",
     "sha256": "53ca4196aa3ac406280089192a60d329bb143ee5baa9897f41189575c9096d45",
-    "scope": "Reading preview"
+    "scope": "Reading preview",
+    "published_sha256": "53ca4196aa3ac406280089192a60d329bb143ee5baa9897f41189575c9096d45"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\hand_communication_all.pdf",
     "copy": "figures/hand_communication_all.pdf",
     "sha256": "10124513606f891ab1458a9d61cfd0b13cfb54998d7e72d4a764a24d757a2696",
-    "scope": "Four-page overview"
+    "scope": "Four-page overview",
+    "published_sha256": "aecb4f55a923ab8666d816b68622529494d45331e4056a0e6060835ec68ed8bc"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\comparison_data\\h143-buttons-cpu-analysis.json",
     "copy": "data/raw/h143-buttons-cpu-analysis.json",
     "sha256": "c897fd620da1523cd6fa7f4e9868ae680a0f86a3e8590149357aee01d0f84cb8",
-    "scope": "Archived board/offline measurement; scope retained"
+    "scope": "Archived board/offline measurement; scope retained",
+    "published_sha256": "c897fd620da1523cd6fa7f4e9868ae680a0f86a3e8590149357aee01d0f84cb8"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\comparison_data\\h150-minimal-analysis.json",
     "copy": "data/raw/h150-minimal-analysis.json",
     "sha256": "58f563e48ee99cca12d48304d446261a7009f5359462cf4a6efed6d1b5c794bd",
-    "scope": "Archived board/offline measurement; scope retained"
+    "scope": "Archived board/offline measurement; scope retained",
+    "published_sha256": "58f563e48ee99cca12d48304d446261a7009f5359462cf4a6efed6d1b5c794bd"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\comparison_data\\h164-lean-analysis.json",
     "copy": "data/raw/h164-lean-analysis.json",
     "sha256": "dd916b8c078095a12d3f3946e27c12529777e8bd01de1d0e93068e6ec9dcf985",
-    "scope": "Archived board/offline measurement; scope retained"
+    "scope": "Archived board/offline measurement; scope retained",
+    "published_sha256": "dd916b8c078095a12d3f3946e27c12529777e8bd01de1d0e93068e6ec9dcf985"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\comparison_data\\verification-final.json",
     "copy": "data/raw/verification-final.json",
     "sha256": "a68d937f712ff667404a7d8572dc771003ad14fa51398e03adc0e3b8de400513",
-    "scope": "Archived board/offline measurement; scope retained"
+    "scope": "Archived board/offline measurement; scope retained",
+    "published_sha256": "a68d937f712ff667404a7d8572dc771003ad14fa51398e03adc0e3b8de400513"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\comparison_data.json",
     "copy": "data/comparison_data.json",
     "sha256": "69235c4d6b68529bb109c4a49bb9ec6e883ac74e188a86aed79ec6dc2f37d134",
-    "scope": "Figure data and evidence"
+    "scope": "Figure data and evidence",
+    "published_sha256": "69235c4d6b68529bb109c4a49bb9ec6e883ac74e188a86aed79ec6dc2f37d134"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\comparison_metrics.csv",
     "copy": "data/comparison_metrics.csv",
     "sha256": "4b3e655795eb4edb5e26a772e28ff2ef2801c00da52ce75fad7d4b1d6d7c41e6",
-    "scope": "Figure data and evidence"
+    "scope": "Figure data and evidence",
+    "published_sha256": "4b3e655795eb4edb5e26a772e28ff2ef2801c00da52ce75fad7d4b1d6d7c41e6"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\packet_check.json",
     "copy": "data/packet_check.json",
     "sha256": "2ef00e5538ae9adb95d3b2301a67a441b0fac9e7a36185ba66420c7151bb2cf4",
-    "scope": "Figure data and evidence"
+    "scope": "Figure data and evidence",
+    "published_sha256": "2ef00e5538ae9adb95d3b2301a67a441b0fac9e7a36185ba66420c7151bb2cf4"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\report\\figures\\hand_communication\\evidence.json",
     "copy": "data/mechanism_evidence.json",
     "sha256": "ba1d43268ff2771f7a899730ebc0fb8c0e599196d28d7ca82d2182625a2faa1a",
-    "scope": "Figure data and evidence"
+    "scope": "Figure data and evidence",
+    "published_sha256": "ba1d43268ff2771f7a899730ebc0fb8c0e599196d28d7ca82d2182625a2faa1a"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\tools\\render_system_diagram.py",
     "copy": "scripts/render_scene.py",
     "sha256": "edd3b20b945a2628e0ddafea1201d590924bae363934853d7e0905d8ef4c5f0c",
-    "scope": "PySide6 scene renderer"
+    "scope": "PySide6 scene renderer",
+    "published_sha256": "edd3b20b945a2628e0ddafea1201d590924bae363934853d7e0905d8ef4c5f0c"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\tools\\plot_hand_comparison.py",
     "copy": "scripts/plot_comparison.py",
     "sha256": "8827b26927fb1dd1f0769f52628cbc390982f914a4dd0edfbfee5ac82f91d5cc",
-    "scope": "Matplotlib data-figure renderer"
+    "scope": "Matplotlib data-figure renderer",
+    "published_sha256": "8827b26927fb1dd1f0769f52628cbc390982f914a4dd0edfbfee5ac82f91d5cc"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\assets\\config.yaml",
     "copy": "reference_only/runtime/config.yaml",
     "sha256": "4815b1ea1ca0e68dd2dab070f8e9112a00525db8d297a8bfa7173f945fb5ec3b",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "4815b1ea1ca0e68dd2dab070f8e9112a00525db8d297a8bfa7173f945fb5ec3b"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\src\\pynq_usb_hand\\gesture_consumer.py",
     "copy": "reference_only/runtime/gesture_consumer.py",
     "sha256": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\src\\pynq_usb_hand\\controller.py",
     "copy": "reference_only/runtime/controller.py",
     "sha256": "ab82a26b123173183cfd1b05ee754dd02a4840862ce654c8bbd79a633b4084e5",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "ab82a26b123173183cfd1b05ee754dd02a4840862ce654c8bbd79a633b4084e5"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\src\\pynq_usb_hand\\motion.py",
     "copy": "reference_only/runtime/motion.py",
     "sha256": "5c5a7f127e78819a63a47d862dcf863920aad8c02aecf4272e977588ccd71c23",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "5c5a7f127e78819a63a47d862dcf863920aad8c02aecf4272e977588ccd71c23"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\src\\pynq_usb_hand\\orca_backend.py",
     "copy": "reference_only/runtime/orca_backend.py",
     "sha256": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\src\\pynq_usb_hand\\transport.py",
     "copy": "reference_only/runtime/transport.py",
     "sha256": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\src\\pynq_usb_hand\\actuator_owner.py",
     "copy": "reference_only/runtime/actuator_owner.py",
     "sha256": "068b6569787cc666e1932faecd1c9fe0195e560343adf977aebb9f4e860794f7",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "068b6569787cc666e1932faecd1c9fe0195e560343adf977aebb9f4e860794f7"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\tools\\verify_offline.py",
     "copy": "reference_only/runtime/verify_offline.py",
     "sha256": "012607615f5113bcb9ddc96f1eda40664a5d96c48f94bf0645c6e3e8a57d5e05",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "012607615f5113bcb9ddc96f1eda40664a5d96c48f94bf0645c6e3e8a57d5e05"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\vendor\\orca\\orca_core\\hardware\\scs225_client.py",
     "copy": "reference_only/runtime/scs225_client.py",
     "sha256": "e1c4387d98c182216f2956ba47afb2025c41d89283d45097861c0705c144e56d",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "e1c4387d98c182216f2956ba47afb2025c41d89283d45097861c0705c144e56d"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand_child\\serial_motion_receiver.py",
     "copy": "reference_only/runtime/serial_motion_receiver.py",
     "sha256": "2cb1d3dfafb526054ef2a810886f8c38f9e2631f58f7db3270dda856071e8092",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "2cb1d3dfafb526054ef2a810886f8c38f9e2631f58f7db3270dda856071e8092"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\python\\pynq_multimodal_game\\hand_serial_session.py",
     "copy": "reference_only/runtime/hand_serial_session.py",
     "sha256": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9",
-    "scope": "Source reference only; not a deployable runtime"
+    "scope": "Source reference only; not a deployable runtime",
+    "published_sha256": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\group_sync_read.py",
     "copy": "reference_only/sdk/group_sync_read.py",
     "sha256": "45a66cdd9fff3b5aac29a5fefe49b06c89ee179c3139cce759db6230455eb422",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "45a66cdd9fff3b5aac29a5fefe49b06c89ee179c3139cce759db6230455eb422"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\group_sync_write.py",
     "copy": "reference_only/sdk/group_sync_write.py",
     "sha256": "129a6cdc898dbaf91155323e3de3c4d2c4d1f0b991b6925efc98852ee3aa0751",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "129a6cdc898dbaf91155323e3de3c4d2c4d1f0b991b6925efc98852ee3aa0751"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\port_handler.py",
     "copy": "reference_only/sdk/port_handler.py",
     "sha256": "b0ad5264061959a025c6e90019fbc2f2da52b96829be45c99ee104ba95641865",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "b0ad5264061959a025c6e90019fbc2f2da52b96829be45c99ee104ba95641865"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\protocol_packet_handler.py",
     "copy": "reference_only/sdk/protocol_packet_handler.py",
     "sha256": "60a110bc0a198fafcd1fd3007be85c0ad0947f2a022f8bcc1857f14902d81475",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "60a110bc0a198fafcd1fd3007be85c0ad0947f2a022f8bcc1857f14902d81475"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\scscl.py",
     "copy": "reference_only/sdk/scscl.py",
     "sha256": "377be2a1579cc01677938988e4a14a0719148c51487b2950c586bcb1fce2806c",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "377be2a1579cc01677938988e4a14a0719148c51487b2950c586bcb1fce2806c"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\scservo_def.py",
     "copy": "reference_only/sdk/scservo_def.py",
     "sha256": "3e728287823fd76a240001d303ca5b9b3a50665a205deb5fe4f7c80e21a049b1",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "3e728287823fd76a240001d303ca5b9b3a50665a205deb5fe4f7c80e21a049b1"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\sms_sts.py",
     "copy": "reference_only/sdk/sms_sts.py",
     "sha256": "614abd42e331f510e9d0486e90bdaf5ece053e227f60e19f618e702b65b48101",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "614abd42e331f510e9d0486e90bdaf5ece053e227f60e19f618e702b65b48101"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk\\__init__.py",
     "copy": "reference_only/sdk/__init__.py",
     "sha256": "18ff13519d45b0d5b0afd7e69fe50dafecaf02dfc69418f3c24589024d92d816",
-    "scope": "Local SDK used for memory-port encoding check"
+    "scope": "Local SDK used for memory-port encoding check",
+    "published_sha256": "18ff13519d45b0d5b0afd7e69fe50dafecaf02dfc69418f3c24589024d92d816"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\ftservo_python_sdk-2.0.0.dist-info\\METADATA",
     "copy": "reference_only/sdk/METADATA",
     "sha256": "499030f9e6b646e37f35fd3dff99c3046ddcddae75ee2141f201e4e2cf8a5690",
-    "scope": "SDK distribution metadata"
+    "scope": "SDK distribution metadata",
+    "published_sha256": "499030f9e6b646e37f35fd3dff99c3046ddcddae75ee2141f201e4e2cf8a5690"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\ftservo_python_sdk-2.0.0.dist-info\\licenses\\LICENSE",
     "copy": "reference_only/sdk/LICENSE",
     "sha256": "ee4cd7c3e0e8b98176553379ca41b9cfd78ec684a7d48f484c9d0d155b05bf2f",
-    "scope": "Original SDK MIT license"
+    "scope": "Original SDK MIT license",
+    "published_sha256": "ee4cd7c3e0e8b98176553379ca41b9cfd78ec684a7d48f484c9d0d155b05bf2f"
   },
   {
     "origin": "E:\\projects\\fpga\\voice-view-game\\contest_v3\\board\\runtime\\hand-runtime\\vendor\\orca\\LICENSE",
     "copy": "reference_only/licenses/ORCA_LICENSE",
     "sha256": "83f5a0cec97fd08f8f7f916846066e7f6c66a400fc0b189d36ee112f3d60dc9b",
-    "scope": "Original Orca license"
+    "scope": "Original Orca license",
+    "published_sha256": "83f5a0cec97fd08f8f7f916846066e7f6c66a400fc0b189d36ee112f3d60dc9b"
   }
 ]

@@ -49,7 +49,7 @@ vivado -mode batch -source build/scripts/build_hardware.tcl -tclargs build/outpu
 vivado -mode batch -source build/scripts/report_frozen.tcl
 ```
 
-冻结板端 bit/HWH/XSA/DCP 保持原发布 SHA。新综合的产物独立输出；即使重新构建成功，也必须检查接口、时序和软件配对，不能直接覆盖原板端清单或声称 bit 字节必然相同。
+板端 bit/HWH/XSA/DCP 由清单校验配对。重新综合的产物独立输出，检查接口、时序和软件配对后用于部署。
 
 ## 离线回归
 

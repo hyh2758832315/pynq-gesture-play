@@ -58,7 +58,7 @@
         <mxCell id="subtitle" value="render_done 发起跨时钟请求；像素域换页后回 ACK，写侧才获得可复用的后台。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
         </mxCell>
-        <mxCell id="footer" value="GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+        <mxCell id="footer" value="GESTURE PLAY · BUILD_ID 0xC0061000 · 当前源码机制" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry as="geometry" x="60" y="1819" width="2080" height="33" />
         </mxCell>
         <mxCell id="phase0" value="上传 + 包接受" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">

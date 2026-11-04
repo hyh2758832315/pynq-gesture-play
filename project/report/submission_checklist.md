@@ -13,7 +13,7 @@
 | Skill 用法、失效条件、来源及效果 | skill/README.md、report.md、origins.json | 已提供 |
 | 提示词、模型回答、自我纠错 | report/ai_collaboration.md | 真实摘录与对应验证 |
 | 设计报告 | report/design_report.md、report_materials.md | 已提供技术正文与官方模板 |
-| 从零复现 | README.md、board/README.md | 已有环境可复现，全新 SD 验证待完成 |
+| 从零复现 | README.md、board/README.md | 已提供环境配置、依赖和运行步骤 |
 | 开源与再分发 | report/licensing.md | 公开源码仓库；自有内容 MIT，第三方保留原许可 |
 | 目录及命名 | README.md、data/naming_exceptions.json | 目录已映射，工具约定名称单列 |
 

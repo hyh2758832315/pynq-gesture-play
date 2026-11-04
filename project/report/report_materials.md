@@ -2,12 +2,12 @@
 
 署名：
 
-先用 [官方 Word 模板](templates/official_report_template.docx) 建立最终稿，以 [当前设计报告](design_report.md) 为主线，再按下面索引补充技术细节。当前输入为手势和板载按钮，正文不写声音功能。
+报告正文见 [系统设计](design_report.md)，下表提供接口、性能、数据和可编辑图稿。[官方 Word 模板](templates/official_report_template.docx)保留原版式，并清理个人文档属性。
 
 | 内容 | 材料 |
 | --- | --- |
-| 系统背景、PL/PS 分工及复现步骤 | [设计报告](design_report.md)、[19 页架构分稿](reference_v2_design/gesture_play_v2_junior.pdf) |
-| 综合资源、时序与优化方法 | [资源表](../data/resource_summary.csv)、[14 页性能报告](reference_v2_performance/performance_resource_report.pdf)、[9 页 GPU 专项报告](gpu_ai_preparation/gpu_optimization_report.pdf) |
+| 系统背景、PL/PS 分工及复现步骤 | [设计报告](design_report.md)、[系统架构报告](reference_v2_design/gesture_play_v2_junior.pdf) |
+| 综合资源、时序与优化方法 | [资源表](../data/resource_summary.csv)、[性能报告](reference_v2_performance/performance_resource_report.pdf)、[GPU 专项报告](gpu_ai_preparation/gpu_optimization_report.pdf) |
 | PL/PS 完整系统图 | [中英文可编辑母图](figures/pl_ps_v3/README.md) |
 | 灵巧手驱动与低负荷通信 | [时序、逐字节协议、对比数据、重绘源](figures/hand_communication_handoff/START_HERE.md) |
 | 视觉识别与双路跟随 | [算法、DMS1 包、OSD 与最新状态消费](figures/vision_dual_follow_handoff/START_HERE.md) |
@@ -17,4 +17,4 @@
 | 视频、报告、海报共用规划 | [录制及可视化规划](presentation_plan/README.md) |
 | 验证与协作过程 | [验证记录](validation.md)、[协作记录](ai_collaboration.md) |
 
-统一口径：板端 R15b、手部运行时 R16、PL R23b2 / BUILD_ID 0xC0061000；720p60 是 HDMI 配置刷新率；当前上传/渲染重叠关闭；17 是电机数量；灵巧手调度时序图统一使用 t。历史优化表保留原实验条件，不能换标为当前整机实测。
+统一口径：板端 R15b、手部运行时 R16、PL R23b2 / BUILD_ID 0xC0061000；720p60 是 HDMI 配置刷新率；当前上传/渲染重叠关闭；17 是电机数量；灵巧手调度时序图统一使用 t。各优化表按所列输入、配置和测量范围使用。

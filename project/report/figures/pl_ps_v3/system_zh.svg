@@ -57,7 +57,7 @@
 <path d="M2445,620 L2445,1015" fill="none" stroke="#287963" stroke-width="2.7" marker-end="url(#arrow1)"/>
 <path d="M2660,595 L2680,595 L2680,1260 L2570,1260 L2570,1300" fill="none" stroke="#287963" stroke-width="2.7" marker-end="url(#arrow1)"/>
 <path d="M2660,1345 L2810,1345" fill="none" stroke="#287963" stroke-width="2.7" marker-end="url(#arrow1)"/>
-<text x="1540.0" y="66.78" text-anchor="middle" font-size="42" font-weight="600">GESTURE PLAY v3.0  |  PL–PS 系统架构</text>
+<text x="1540.0" y="66.78" text-anchor="middle" font-size="42" font-weight="600">GESTURE PLAY  |  PL–PS 系统架构</text>
 <text x="2445.0" y="291.0" text-anchor="middle" font-size="25" font-weight="600">ARM Cortex-A9 · Linux / PYNQ</text>
 <rect x="350" y="815" width="1410" height="3" rx="6" fill="#526575" stroke="#526575" stroke-width="2"/>
 <text x="1055.0" y="825.68" text-anchor="middle" font-size="27" font-weight="600"></text>

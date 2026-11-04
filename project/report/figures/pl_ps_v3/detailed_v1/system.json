@@ -1,7 +1,7 @@
 {
   "width": 2400,
   "height": 1630,
-  "title": "GESTURE PLAY v3.0 PL–PS",
+  "title": "GESTURE PLAY PL–PS",
   "subtitle": "Frozen runtime architecture",
   "nodes": [
     {
@@ -10,7 +10,7 @@
       "y": 20,
       "w": 2320,
       "h": 62,
-      "lines": "GESTURE PLAY v3.0  |  PL–PS 系统架构",
+      "lines": "GESTURE PLAY  |  PL–PS 系统架构",
       "fill": "#ffffff",
       "stroke": "#64748b",
       "font_size": 40,

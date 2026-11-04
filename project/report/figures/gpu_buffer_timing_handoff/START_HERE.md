@@ -49,5 +49,3 @@ python scripts/verify_gpu_figure.py --source-root . --output regenerated_data
 ```
 
 预期：三个可编辑图组、重建的 CSV/BIN/JSON 与 PASS。下一步在 draw.io 或矢量编辑器润色，保留字段和时序含义，再排入报告/海报或分层制作视频。手工编辑 draw.io 不会回写 JSON，应选择一种母稿维护。
-
-本轮没有读取板卡或启动运行时，也没有修改部署文件和冻结清单。

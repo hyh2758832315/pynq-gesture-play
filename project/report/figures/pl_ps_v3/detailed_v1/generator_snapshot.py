@@ -25,7 +25,7 @@ def main():
         e=dict(source=s,target=t,points=points,color=color,dashed=dashed,both=both)
         if label:e.update(label=label,label_x=pos[0],label_y=pos[1])
         edges.append(e)
-    box('title',40,20,2320,62,'GESTURE PLAY v3.0  |  PL–PS 系统架构',size=40,kind='text')
+    box('title',40,20,2320,62,'GESTURE PLAY  |  PL–PS 系统架构',size=40,kind='text')
     box('subtitle',40,88,2320,38,'PYNQ-Z2 · Zynq-7020 · xc7z020clg400-1  /  冻结运行包 R15b · 手部运行时 R16 · BUILD_ID 0xC0061000',size=21,kind='text')
     box('soc',350,165,1700,1340,'Zynq-7000 SoC  ·  板内软硬件分工',fill='#ffffff',stroke='#344e61',size=27,kind='group')
     box('pl',375,230,1650,660,'PL  /  可编程逻辑',fill='#f7fafd',stroke='#7396ad',size=28,kind='group')
@@ -79,7 +79,7 @@ def main():
     edge('buttons','app',[[305,800],[345,800],[345,1090],[1210,1090],[1210,1115]],GRAY,'PL 按键同步 → PS 游戏输入',(1210,1083),True)
     box('note',400,1516,1600,28,'视觉与渲染分离：双掩膜送往 DDR / PS 识别，应用生成 Scene 后才进入 GPU；相机画面不直接作为 GPU 帧缓冲。',size=21,kind='text')
     box('legend',40,1565,2320,38,'蓝：视觉数据流    紫：渲染 / 显示流    绿：PS 语义与动作    灰虚线：控制 / 管理    ·    外设框内保留图片位置',size=22,kind='text')
-    scene=dict(width=2400,height=1630,title='GESTURE PLAY v3.0 PL–PS',subtitle='Frozen runtime architecture',nodes=nodes,edges=edges)
+    scene=dict(width=2400,height=1630,title='GESTURE PLAY PL–PS',subtitle='Frozen runtime architecture',nodes=nodes,edges=edges)
     (OUT/'system.json').write_text(json.dumps(scene,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     paths=['README.md','report/design_report.md','board/runtime/deployment_manifest.json',
            'board/runtime/overlay/c6v_candidate.hwh',
