@@ -28,8 +28,8 @@
       "bytes": 1056
     },
     "README.md": {
-      "sha256": "d4490f5222e080d96b1c5c774e0453fb19e3ee9dc6cca5dc0afbec1c04a77f8b",
-      "bytes": 6619
+      "sha256": "701421ed9d4af57a24e74288b1aebb64db2b51f93362826296c82e8dc3a855c6",
+      "bytes": 6561
     },
     "board/README.md": {
       "sha256": "328b3d6b47bdbb84edc6f30251d038d2e8d3c9840159b88478ccf55971401ca4",
@@ -20656,16 +20656,16 @@
       "bytes": 726
     },
     "data/source_origins.json": {
-      "sha256": "a7ae8a8676cfc4fb1bb9e64d3797e82cb8787f6e5e68b9da82ad012e6e1db490",
-      "bytes": 1224851
+      "sha256": "edb206a1d82a9cdf282519d6147aa711b4d2585163e19ba99fd7724191cbcd8b",
+      "bytes": 1224849
     },
     "report/ai_collaboration.md": {
-      "sha256": "8774ee9ff3e267fad8fe71416d3a68d824e4d69ad444ab51b7d2109f00aa48c8",
-      "bytes": 2433
+      "sha256": "57070cdded1bf52fb2ae702f3361a2c930fe26229dd8cfd4717a6d9323f722fd",
+      "bytes": 2411
     },
     "report/design_report.md": {
-      "sha256": "f6be3beada2dfa7a88eb2a8a2c98d65f0dd9195e10a5994a5fdd70b73028ffff",
-      "bytes": 11396
+      "sha256": "35017871bd70c9119450320fb61a8cf8d9301efd414a3cf50571d8211f04a78a",
+      "bytes": 11269
     },
     "report/figures/gpu_buffer_timing_handoff/FILE_MANIFEST.json": {
       "sha256": "5c7d590e9d4d134757951ddc7523a93b16b112708a3a8917db88eee68f378fc5",
@@ -20920,7 +20920,7 @@
       "bytes": 12473
     },
     "report/figures/hand_communication_handoff/FILE_MANIFEST.json": {
-      "sha256": "a79d41b20d9a7c5d605b74a4f80d17e1178421c8472c9d0547923c4ce279bc27",
+      "sha256": "cc46bd0a939196195b3cf9ae660e150b7ff31175538f9e8fb0f5ed1f7bd0a658",
       "bytes": 6742
     },
     "report/figures/hand_communication_handoff/SOURCE_INDEX.json": {
@@ -20928,12 +20928,12 @@
       "bytes": 17554
     },
     "report/figures/hand_communication_handoff/START_HERE.md": {
-      "sha256": "cff0a18fd4163f4894cb28949554efab6ea0c82436ad66856d36dae7d0a991ad",
-      "bytes": 3990
+      "sha256": "356d6d1e75862c8e974c8d38325d5597ff726433849012ba5944c85dd6707e06",
+      "bytes": 3977
     },
     "report/figures/hand_communication_handoff/TECHNICAL_NOTES.md": {
-      "sha256": "9b2bcd9346b2b2e10b1f9528f429d86d04c2a48062ad1180b352efd4ae21331d",
-      "bytes": 9295
+      "sha256": "f4e7723dc0df1200dee6be9052760919db5506c0671c75e25fbc4ab35225c5f8",
+      "bytes": 9292
     },
     "report/figures/hand_communication_handoff/THIRD_PARTY_NOTICES.md": {
       "sha256": "0bbd0e62a813253c1c2f37562fdb4f2e904d61cd18740c35dad4186a02565e7b",
@@ -21180,12 +21180,12 @@
       "bytes": 7922
     },
     "report/figures/pl_ps_v3/README.md": {
-      "sha256": "7914023db7b2aec2a25e1e8bd512e64e0da55842490a5647516cedb4d6878532",
-      "bytes": 6908
+      "sha256": "2b08dbb07c34eb8dadd16b5ebda7cafbce596c957187757571c862ab43345ea2",
+      "bytes": 6893
     },
     "report/figures/pl_ps_v3/concise_v2/README.md": {
-      "sha256": "98ea77fcb39e20cbf95a995fc2e3a4ac2e39ddddb9341f7141c22fae08914e0a",
-      "bytes": 5375
+      "sha256": "8e167068bdaa6c194d72bbda2a3d74020aca025dca0240f6c8f4ee5b137cccb0",
+      "bytes": 5360
     },
     "report/figures/pl_ps_v3/concise_v2/evidence.json": {
       "sha256": "e7104b408b618dc285ba2ab22e3bb382d8c40b74ca15ee9a0759630e56749839",
@@ -21272,8 +21272,8 @@
       "bytes": 321
     },
     "report/figures/pl_ps_v3/detailed_v1/README.md": {
-      "sha256": "0072cd0b51ebfa6041cf6a21069eb129de7e2d197c17c6058cc0894cf87a9b29",
-      "bytes": 4023
+      "sha256": "6c6473e32c04b431da307f625f4616f285070a0f2dec4ee01c17c3965e84f14c",
+      "bytes": 4013
     },
     "report/figures/pl_ps_v3/detailed_v1/evidence.json": {
       "sha256": "f9105fe0ef15483ada14e2082a13351fd3602458da5bd9fd45cb42d0e811ea59",
@@ -21892,8 +21892,8 @@
       "bytes": 1239
     },
     "report/presentation_plan/README.md": {
-      "sha256": "6b16a2261895c8a783c4bcb0b03e74f7659f85b53c5dc29d47a75ec618303154",
-      "bytes": 10658
+      "sha256": "b35076193f503a6bdd63dcfd7b674338465c0d5143f1ec6a0d781c41bede8393",
+      "bytes": 10632
     },
     "report/presentation_plan/sources.json": {
       "sha256": "6aef9301b8f2227b6009cd19f628d3ffb90a1138bec349c89a585d6bef00b5a5",
@@ -22432,8 +22432,8 @@
       "bytes": 88127
     },
     "report/validation.md": {
-      "sha256": "348e03d18c43ffceb1572661dee1002b2e77ea88aff7ec02752cfd1340c23ce3",
-      "bytes": 1817
+      "sha256": "5c085832c4b6e9238149850b31b34a331a901e68b7490802d2dee7022f885b52",
+      "bytes": 1811
     },
     "sim/evidence/export_pairing.json": {
       "sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee",
@@ -30236,12 +30236,12 @@
       "bytes": 743
     },
     "src/development/tools/release_v3/README.md": {
-      "sha256": "8b26cad29c8e18b329fd7b9fd68473dd61f96a3952afeb3c1b7234fc386993bc",
-      "bytes": 4467
+      "sha256": "fbdd7f773809a50ec9ca3afc81885d2f23c496def6b2ac3ec16bbe75c900e05a",
+      "bytes": 4479
     },
     "src/development/tools/release_v3/RELEASE_NOTES.md": {
-      "sha256": "b1236459d8b4994fafc9f74f966326af43f2d16e94995eab00437a2c0c43ae7e",
-      "bytes": 1422
+      "sha256": "7090b62b53e44a9172db3a936dfc5a0ef674dc25030ec41ad93155857fdd23f8",
+      "bytes": 1217
     },
     "src/development/tools/release_v3/restore_assets.py": {
       "sha256": "66a27913c56be1241fd0a674970e69b87ec681ff5118d589b1f1e51592848fe6",
@@ -30408,8 +30408,8 @@
       "bytes": 12162
     },
     "src/hand/README.md": {
-      "sha256": "98fc4715c5210b3aa34d3100af444ca13eca77b357d1725301ef8f65f5974a51",
-      "bytes": 16707
+      "sha256": "6ef053d2074dfa03d63cf985ae8a22d439a990d7f34f36e00d43418460cd33d4",
+      "bytes": 16657
     },
     "src/hand/approval_candidate.json": {
       "sha256": "9cba610f79419eec596e51408f289a74429f393df9b5859bbb07b5fd8a532e16",
@@ -31844,8 +31844,8 @@
       "bytes": 18363
     },
     "src/studio/readme.md": {
-      "sha256": "8d17eb9ac0cfea053e4c7c8c33b59f79b2d7d2680839cd24ba6b004ecb11bd55",
-      "bytes": 489
+      "sha256": "a11d4c4b039318889ec2b2b9074f3ad3d3f0423dcf013f14b624fc0a0e43806f",
+      "bytes": 481
     },
     "tools/build_gpu_handoff.py": {
       "sha256": "9261d32073ed9d4d8db5475408a0ab3b743ec4097cdb8b702e93a103af4efdf0",

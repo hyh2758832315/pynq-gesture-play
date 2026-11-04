@@ -1,4 +1,4 @@
-# v3.0 PL–PS 系统框图
+# PL–PS 系统框图
 
 绘制日期：2026-11-01。唯一项目基线为独立目录 `contest_v3`：PYNQ-Z2 / xc7z020clg400-1，Vivado 2026.1，冻结 R15b 系统运行包及 R16 手部运行时，BUILD_ID `0xC0061000`。未混用当前开发树中的 HDMI 标识候选包或历史音频设计。
 
@@ -39,4 +39,4 @@ python -B tools/render_system_diagram.py report/figures/pl_ps_v3/system.json --o
 
 ## 建议图题
 
-GESTURE PLAY v3.0 的 PL–PS 协同架构。PL 视觉前端通过共享 DDR 将双掩膜帧交给 PS 完成手势识别；PS 交互逻辑生成 Scene 命令，由独立 Scene2D GPU 渲染并叠加 OSD 后输出 HDMI。最新视觉状态同时供交互和灵巧手调度消费，上位机通过以太网完成内容管理与按需观察。
+GESTURE PLAY 的 PL–PS 协同架构。PL 视觉前端通过共享 DDR 将双掩膜帧交给 PS 完成手势识别；PS 交互逻辑生成 Scene 命令，由独立 Scene2D GPU 渲染并叠加 OSD 后输出 HDMI。最新视觉状态同时供交互和灵巧手调度消费，上位机通过以太网完成内容管理与按需观察。

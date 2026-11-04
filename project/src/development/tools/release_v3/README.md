@@ -1,4 +1,4 @@
-# 完整版 v3.0
+# Studio–PYNQ 发布工具
 
 PYNQ-Z2 / xc7z020clg400-1 · Vivado 2026.1 · BUILD_ID `0xC0061000`。
 

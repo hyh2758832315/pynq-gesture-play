@@ -4982,7 +4982,7 @@
   "src/hand/README.md": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\hand\\README.md",
     "sha256": "f9407e324467405e68cae4445df9589968b73fc46223d47555f214b12a91f7fc",
-    "current_sha256": "98fc4715c5210b3aa34d3100af444ca13eca77b357d1725301ef8f65f5974a51",
+    "current_sha256": "6ef053d2074dfa03d63cf985ae8a22d439a990d7f34f36e00d43418460cd33d4",
     "changed": true
   },
   "src/hand/requirements-host.txt": {
@@ -16568,14 +16568,14 @@
   "src/development/tools/release_v3/README.md": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\tools\\release_v3\\README.md",
     "sha256": "8b26cad29c8e18b329fd7b9fd68473dd61f96a3952afeb3c1b7234fc386993bc",
-    "current_sha256": "8b26cad29c8e18b329fd7b9fd68473dd61f96a3952afeb3c1b7234fc386993bc",
-    "changed": false
+    "current_sha256": "fbdd7f773809a50ec9ca3afc81885d2f23c496def6b2ac3ec16bbe75c900e05a",
+    "changed": true
   },
   "src/development/tools/release_v3/RELEASE_NOTES.md": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\tools\\release_v3\\RELEASE_NOTES.md",
     "sha256": "b1236459d8b4994fafc9f74f966326af43f2d16e94995eab00437a2c0c43ae7e",
-    "current_sha256": "b1236459d8b4994fafc9f74f966326af43f2d16e94995eab00437a2c0c43ae7e",
-    "changed": false
+    "current_sha256": "7090b62b53e44a9172db3a936dfc5a0ef674dc25030ec41ad93155857fdd23f8",
+    "changed": true
   },
   "src/development/tools/release_v3/restore_assets.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\tools\\release_v3\\restore_assets.py",

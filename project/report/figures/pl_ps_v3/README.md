@@ -1,4 +1,4 @@
-# v3.0 PL–PS 系统图：横向展开中英文版
+# PL–PS 系统图：横向展开中英文版
 
 基线是独立项目 `contest_v3`，PYNQ-Z2 / Zynq-7020，冻结运行包 R15b 与手部运行时 R16，BUILD_ID `0xC0061000`。本次调整图的布局和表达，不改变系统实现。
 
@@ -61,6 +61,6 @@ python -B tools/render_system_diagram.py report/figures/pl_ps_v3/system_en.json 
 
 ## 建议图题
 
-中文：GESTURE PLAY v3.0 的 PL–PS 协同架构。PL 视觉前端经共享 DDR 向 PS 提供 RGB 与双掩膜数据，PS 完成手势识别和交互处理，并生成 Scene 命令，由独立 Scene2D GPU 渲染后输出 HDMI；最新视觉状态同时驱动灵巧手调度。
+中文：GESTURE PLAY 的 PL–PS 协同架构。PL 视觉前端经共享 DDR 向 PS 提供 RGB 与双掩膜数据，PS 完成手势识别和交互处理，并生成 Scene 命令，由独立 Scene2D GPU 渲染后输出 HDMI；最新视觉状态同时驱动灵巧手调度。
 
-English: PL–PS architecture of GESTURE PLAY v3.0. The PL vision front end transfers RGB frames and dual masks through shared DDR for gesture recognition and interaction processing on the PS. Scene commands are then rendered by an independent Scene2D GPU and displayed through HDMI, while the latest visual state also feeds robotic hand control.
+English: PL–PS architecture of GESTURE PLAY. The PL vision front end transfers RGB frames and dual masks through shared DDR for gesture recognition and interaction processing on the PS. Scene commands are then rendered by an independent Scene2D GPU and displayed through HDMI, while the latest visual state also feeds robotic hand control.

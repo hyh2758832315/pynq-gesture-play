@@ -1,6 +1,6 @@
-# GESTURE PLAY v3.0：PYNQ 手势交互与内容创作系统
+# GESTURE PLAY：PYNQ 手势交互与内容创作系统
 
-版本：v3.0，PYNQ-Z2 / Vivado 2026.1。使用说明见 [工程入口](../README.md)，发布检查见 [检查清单](submission_checklist.md)。
+平台：PYNQ-Z2 / Vivado 2026.1。使用说明见 [工程入口](../README.md)，发布检查见 [检查清单](submission_checklist.md)。
 
 ## 1. 选题、已有工作与工程贡献
 
@@ -8,20 +8,19 @@
 
 PYNQ 已提供 Python Overlay、MMIO 和 DMA 基础设施；AMD 视频输入、AXI DMA、时钟与互连 IP 提供底层接口。本项目在这些组件上实现双掩膜视觉流水线、帧拥有权管理、Scene2D 命令式二维绘制、独立 OSD、统一交互状态机与 Studio 部署协议。第三方来源及许可随源码保留，许可说明见 [licensing.md](licensing.md)。相关平台及图像处理依据见本章末尾引用。
 
-工程贡献在于：将有边界的硬件帧生命周期与软件最新状态消费结合；分离 HDMI 扫描、手位置覆盖与应用更新；以独占权限交接组织视频、回传、跟随和示范；让安装、启动、初始化和可回传状态在 Studio 中分别可见。v3.0 主要完善启动与恢复链路，硬件仍为 R23b2。
+工程贡献在于：将有边界的硬件帧生命周期与软件最新状态消费结合；分离 HDMI 扫描、手位置覆盖与应用更新；以独占权限交接组织视频、回传、跟随和示范；让安装、启动、初始化和可回传状态在 Studio 中分别可见。系统通过统一初始化、状态检测与恢复流程管理各模块运行。
 
 ## 2. 固定配置与目录
 
-| 项目 | 本候选基线 |
+| 项目 | 系统配置 |
 | --- | --- |
 | 板卡 / FPGA | PYNQ-Z2 / xc7z020clg400-1 |
 | 硬件工具 / ID | Vivado 2026.1 / 0xC0061000 |
-| 发布版本 | v3.0，Git c1412d1b1e24f0998a575ac6e0fb7fa778cc5dec |
-| 板端 / 灵巧手 | R15b / R16；Python 3.10、PYNQ 3.1 |
+| 板端运行环境 | Python 3.10、PYNQ 3.1 |
 | PC 验证环境 | Windows、Python 3.13、PySide6 |
 | 图像 / 显示 | 640×360 双掩膜；320×180 逻辑图形放大到 1280×720 HDMI |
 
-源码、报告和验证位置由 [README](../README.md) 对照官方推荐目录。`board/runtime` 为 SHA 绑定的已验收运行包；`src/studio` 为配套 PC；`build/hardware/c6_latency` 是从实际 R23b2 工程恢复的完整集成 XPR。历史开发脚本不作为当前复现入口。
+源码、报告和验证位置由 [README](../README.md) 对照官方推荐目录。`board/runtime` 为 SHA 绑定的已验收运行包；`src/studio` 为配套 PC；`build/hardware/c6_latency` 包含完整集成 XPR。历史开发脚本不作为当前复现入口。
 
 ## 3. 功能框图与划分依据
 
@@ -47,7 +46,7 @@ flowchart LR
 
 三槽帧拥有权以授予数 G、释放数 R 维持 0≤G−R≤3；CPU 领取必须等 RGB、掩膜与状态三路完成，释放需匹配 epoch/frame_id。源关闭先在帧边界结束接入，再联合流水线和 DMA 排空，不能把进程退出等同于硬件已释放。
 
-Scene2D 将清屏、矩形、贴图和图块命令编译为 PL 绘制工作。双逻辑帧缓冲约 115,200 B；前后台在消隐期交接，完成序号区分命令接收、渲染与呈现。OSD 单独读取最新手位置，游戏未更新不等于覆盖圈停止。详细硬件原理和五张设计图见保留版本标识的 [v2 设计报告](reference_v2_design/gesture_play_v2_junior.pdf)；配套引用已移入 [本包证据索引](../data/reference_evidence_index.json)。
+Scene2D 将清屏、矩形、贴图和图块命令编译为 PL 绘制工作。双逻辑帧缓冲约 115,200 B；前后台在消隐期交接，完成序号区分命令接收、渲染与呈现。OSD 单独读取最新手位置，游戏未更新不等于覆盖圈停止。详细硬件原理和五张设计图见[详细设计报告](reference_v2_design/gesture_play_v2_junior.pdf)；配套引用已移入 [本包证据索引](../data/reference_evidence_index.json)。
 
 ## 4. 界面、机械动作与恢复
 
@@ -63,7 +62,7 @@ Studio 区分 SSH 可达、启动/初始化、Agent READY 与回传。统一“�
 
 以下资源由本次重新打开**发布包中的同一个 routed DCP**提取，不是开发中间版本。DCP SHA256：`0688c599283d48ce765ca098013aa79ecb46d350f04c76f6ca1dd7aeea6f44c2`。
 
-| 资源或时序 | 最终 R23b2 |
+| 资源或时序 | 实现结果 |
 | --- | ---: |
 | LUT | 32,570 / 53,200（61.22%） |
 | FF | 47,672 / 106,400（44.80%） |
