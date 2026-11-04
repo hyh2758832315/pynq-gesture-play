@@ -1,0 +1,30 @@
+{
+  "session": "4f34dff8aced499690e0f70837b2918b",
+  "producer_pid": 132180,
+  "actuator_constructed": false,
+  "child_restarted": false,
+  "command": [
+    "E:\\projects\\fpga\\voice-view-game\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b24-hand-source-r05\\tools\\shadow_receiver.py",
+    "--session",
+    "4f34dff8aced499690e0f70837b2918b",
+    "--game-run",
+    "shadow-verification",
+    "--peer-port",
+    "60305",
+    "--output-dir",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b26-r05-shadow-final",
+    "--seconds",
+    "8"
+  ],
+  "game_run": "shadow-verification",
+  "launch_pid": 126072,
+  "child_pid": 121096,
+  "child_exit": 0,
+  "error": null,
+  "feed_revoked": "pause",
+  "elapsed": 1.852528200019151,
+  "publisher_dropped": 0
+}

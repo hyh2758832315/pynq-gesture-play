@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-01",
+  "scope": "figure planning from existing sources; no new measurement",
+  "sources": {
+    "docs/v3_completion_and_video_plan.md": "304dfec7fa90de9d825a8f982b35531058c4a21ffd22544e1dc332dc7223aee1",
+    "contest_v3/report/design_report.md": "ec48406abf5ee285c351cf5c2a293450c062e3ff116a2362dbe9acea0f740ba3",
+    "contest_v3/report/figures/pl_ps_v3/README.md": "6fe6981d8e0c2e5cddcad52afb2b64879efe4910af3fe3adc672c588ea244d37",
+    "contest_v3/report/requirements/open_topic_guide.md": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
+    "contest_v3/report/reference_v2_performance/data/performance.csv": "148cbc375aa1cac9b6a6767611de934e59329bd54915260fc1c9526ec6bc8826",
+    "contest_v3/report/reference_v2_performance/data/v2_final_comparison.csv": "cf7d58e09842546acf4c60ae24c8e4dfc2c8388869ca69ee5bff4353307054ed",
+    "contest_v3/board/runtime/hand-runtime/src/pynq_usb_hand/motion.py": "5c5a7f127e78819a63a47d862dcf863920aad8c02aecf4272e977588ccd71c23",
+    "contest_v3/board/runtime/hand-runtime/src/pynq_usb_hand/controller.py": "ab82a26b123173183cfd1b05ee754dd02a4840862ce654c8bbd79a633b4084e5",
+    "contest_v3/report/gpu_ai_preparation/evidence/docs/scene2d_gpu_architecture.md": "fbd0f95942061dabbc5fb2f1fdfbc943b9f937f056efc78e96dcb595b7096580"
+  }
+}

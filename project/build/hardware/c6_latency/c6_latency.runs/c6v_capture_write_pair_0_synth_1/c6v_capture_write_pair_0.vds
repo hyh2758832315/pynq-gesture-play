@@ -1,0 +1,1136 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 24-nov-2026.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 22:04:36 2026
+# Process ID         : 150348
+# Current directory  : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_write_pair_0_synth_1
+# Command line       : vivado.exe -log c6v_capture_write_pair_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_capture_write_pair_0.tcl
+# Log file           : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_write_pair_0_synth_1/c6v_capture_write_pair_0.vds
+# Journal file       : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_write_pair_0_synth_1\vivado.jou
+# Running On         : DESKTOP-JBJOBKD
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33599 MB
+# Swap memory        : 51539 MB
+# Total Virtual      : 85138 MB
+# Available Virtual  : 26417 MB
+#-----------------------------------------------------------
+ERROR: [Common 17-1257] Failed to create directory 'C'.
+source c6v_capture_write_pair_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 602.742 ; gain = 265.883
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.ipdefs/rgb2dvi_v1_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2026.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.cache/ip 
+Command: synth_design -top c6v_capture_write_pair_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 145276
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1417.484 ; gain = 575.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_write_pair_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_write_pair_0/synth/c6v_capture_write_pair_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'vision_dma_write_pair' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_dma_write_pair.sv:1]
+	Parameter DATA_BYTES bound to: 8 - type: integer 
+	Parameter RGB_BYTES bound to: 64'b0000000000000000000000000000000000000000001010100011000000000000 
+	Parameter PACKET_BYTES bound to: 64'b0000000000000000000000000000000000000000000001110000100001000000 
+	Parameter CONTINUOUS bound to: 1 - type: integer 
+	Parameter TRACK_FRAME_COMPLETIONS bound to: 1 - type: integer 
+	Parameter SG_STATUS bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vision_axi_write_drain' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:1]
+	Parameter DATA_BYTES bound to: 4 - type: integer 
+	Parameter EXPECTED_BYTES bound to: 64'b0000000000000000000000000000000000000000000000000000000000000100 
+	Parameter CONTINUOUS bound to: 1 - type: integer 
+	Parameter TRACK_FRAME_COMPLETIONS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vision_axi_write_drain' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'vision_axi_write_drain__parameterized0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:1]
+	Parameter DATA_BYTES bound to: 8 - type: integer 
+	Parameter EXPECTED_BYTES bound to: 64'b0000000000000000000000000000000000000000001010100011000000000000 
+	Parameter CONTINUOUS bound to: 1 - type: integer 
+	Parameter TRACK_FRAME_COMPLETIONS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vision_axi_write_drain__parameterized0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'vision_axi_write_drain__parameterized1' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:1]
+	Parameter DATA_BYTES bound to: 8 - type: integer 
+	Parameter EXPECTED_BYTES bound to: 64'b0000000000000000000000000000000000000000000001110000100001000000 
+	Parameter CONTINUOUS bound to: 1 - type: integer 
+	Parameter TRACK_FRAME_COMPLETIONS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vision_axi_write_drain__parameterized1' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'vision_dma_write_pair' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_dma_write_pair.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_write_pair_0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_write_pair_0/synth/c6v_capture_write_pair_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element frame_completion.frame_bytes_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/rtl/vision_axi_write_drain.sv:66]
+INFO: [Synth 8-7129] Port rgb_address[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[63] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[62] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[61] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[60] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[59] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[58] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[57] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[56] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[55] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[54] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[53] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[52] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[51] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[50] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[49] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[48] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[47] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[46] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[45] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[44] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[43] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[42] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[41] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[40] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[39] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[38] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[37] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[36] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[35] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[34] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[33] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[32] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[63] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[62] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[61] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[60] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[59] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[58] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[57] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[56] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[55] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[54] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[53] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[52] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[51] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[50] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[49] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[48] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[47] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[46] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[45] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[44] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[43] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[42] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[41] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[40] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[39] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[38] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[37] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[36] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[35] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[34] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[33] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[32] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_size[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_size[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_size[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_burst[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_burst[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_protection[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_protection[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_protection[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_size[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_size[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_size[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_burst[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_burst[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_protection[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_protection[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_protection[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_valid in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_ready in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[31] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[30] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[29] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[28] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[27] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[26] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[25] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[24] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[23] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[22] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[21] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[20] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[19] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[18] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[17] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[16] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[15] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[14] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[13] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[12] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[11] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[10] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[9] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[8] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[7] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[6] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[5] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[4] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[3] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[2] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_response[1] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_response[0] in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_last in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_valid in module vision_dma_write_pair is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_ready in module vision_dma_write_pair is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1554.938 ; gain = 713.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1554.938 ; gain = 713.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1554.938 ; gain = 713.379
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1554.938 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1622.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1622.184 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1622.184 ; gain = 780.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1622.184 ; gain = 780.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1622.184 ; gain = 780.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1622.184 ; gain = 780.625
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   65 Bit       Adders := 3     
+	   5 Input   65 Bit       Adders := 1     
+	   9 Input   65 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 9     
++---Registers : 
+	               64 Bit    Registers := 9     
+	               54 Bit    Registers := 1     
+	               51 Bit    Registers := 1     
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 10    
++---Multipliers : 
+	              22x32  Multipliers := 1     
+	              19x32  Multipliers := 1     
++---RAMs : 
+	              128 Bit	(16 X 8 bit)          RAMs := 3     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP inst/rgb_closed_bytes0, operation Mode is: (A:0x2a3000)*B.
+DSP Report: operator inst/rgb_closed_bytes0 is absorbed into DSP inst/rgb_closed_bytes0.
+DSP Report: operator inst/rgb_closed_bytes0 is absorbed into DSP inst/rgb_closed_bytes0.
+DSP Report: Generating DSP inst/rgb_closed_bytes_reg, operation Mode is: (PCIN>>17)+(A:0x2a3000)*B.
+DSP Report: register inst/rgb_closed_bytes_reg is absorbed into DSP inst/rgb_closed_bytes_reg.
+DSP Report: operator inst/rgb_closed_bytes0 is absorbed into DSP inst/rgb_closed_bytes_reg.
+DSP Report: operator inst/rgb_closed_bytes0 is absorbed into DSP inst/rgb_closed_bytes_reg.
+DSP Report: Generating DSP inst/packet_closed_bytes0, operation Mode is: (A:0x70840)*B.
+DSP Report: operator inst/packet_closed_bytes0 is absorbed into DSP inst/packet_closed_bytes0.
+DSP Report: operator inst/packet_closed_bytes0 is absorbed into DSP inst/packet_closed_bytes0.
+DSP Report: Generating DSP inst/packet_closed_bytes_reg, operation Mode is: (PCIN>>17)+(A:0x70840)*B.
+DSP Report: register inst/packet_closed_bytes_reg is absorbed into DSP inst/packet_closed_bytes_reg.
+DSP Report: operator inst/packet_closed_bytes0 is absorbed into DSP inst/packet_closed_bytes_reg.
+DSP Report: operator inst/packet_closed_bytes0 is absorbed into DSP inst/packet_closed_bytes_reg.
+INFO: [Synth 8-7129] Port rgb_address[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_address[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[63] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[62] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[61] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[60] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[59] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[58] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[57] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[56] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[55] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[54] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[53] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[52] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[51] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[50] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[49] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[48] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[47] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[46] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[45] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[44] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[43] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[42] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[41] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[40] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[39] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[38] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[37] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[36] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[35] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[34] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[33] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[32] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port rgb_write_data[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_address[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[63] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[62] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[61] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[60] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[59] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[58] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[57] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[56] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[55] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[54] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[53] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[52] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[51] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[50] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[49] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[48] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[47] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[46] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[45] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[44] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[43] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[42] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[41] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[40] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[39] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[38] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[37] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[36] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[35] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[34] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[33] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[32] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port packet_write_data[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_size[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_size[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_size[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_burst[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_burst[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_protection[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_protection[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_protection[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_address_cache[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_write_data[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_length[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_size[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_size[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_size[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_burst[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_burst[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_protection[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_protection[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_protection[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_cache[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_valid in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_address_ready in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[31] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[30] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[29] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[28] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[27] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[26] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[25] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[24] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[23] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[22] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[21] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[20] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[19] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[18] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[17] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[16] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[15] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[14] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[13] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[12] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[11] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[10] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[9] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[8] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[7] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[6] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[5] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[4] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[3] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[2] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_data[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_response[1] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_response[0] in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_last in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_valid in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port status_read_ready in module c6v_capture_write_pair_0 is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[47]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[46]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[45]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[44]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[43]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[42]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[41]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[40]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[39]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[38]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[37]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[36]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[35]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[34]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[33]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[32]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[31]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[30]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[29]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[28]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[27]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[26]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[25]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[24]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[23]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[22]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[21]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[20]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[19]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[18]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/rgb_closed_bytes_reg[17]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[47]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[46]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[45]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[44]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[43]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[42]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[41]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[40]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[39]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[38]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[37]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[36]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[35]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[34]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[33]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[32]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[31]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[30]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[29]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[28]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[27]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[26]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[25]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[24]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[23]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[22]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[21]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[20]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[19]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[18]) is unused and will be removed from module c6v_capture_write_pair_0.
+INFO: [Synth 8-3332] Sequential element (inst/packet_closed_bytes_reg[17]) is unused and will be removed from module c6v_capture_write_pair_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1678.531 ; gain = 836.973
+---------------------------------------------------------------------------------
+ Sort Area is  inst/packet_closed_bytes0_3 : 0 0 : 1441 2951 : Used 1 time 0
+ Sort Area is  inst/packet_closed_bytes0_3 : 0 1 : 1510 2951 : Used 1 time 0
+ Sort Area is  inst/rgb_closed_bytes0_0 : 0 0 : 1367 2807 : Used 1 time 0
+ Sort Area is  inst/rgb_closed_bytes0_0 : 0 1 : 1440 2807 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------------------------+--------------------------------------+-----------+----------------------+-------------+
+|Module Name                     | RTL Object                           | Inference | Size (Depth x Width) | Primitives  | 
++--------------------------------+--------------------------------------+-----------+----------------------+-------------+
+|\inst/descriptor_status.status  | frame_completion.pending_lengths_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|\inst/rgb                       | frame_completion.pending_lengths_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|\inst/packet                    | frame_completion.pending_lengths_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++--------------------------------+--------------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping               | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|c6v_capture_write_pair_0 | (A:0x2a3000)*B            | 23     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c6v_capture_write_pair_0 | (PCIN>>17)+(A:0x2a3000)*B | 23     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|c6v_capture_write_pair_0 | (A:0x70840)*B             | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c6v_capture_write_pair_0 | (PCIN>>17)+(A:0x70840)*B  | 20     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-------------------------+---------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1678.531 ; gain = 836.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++--------------------------------+--------------------------------------+-----------+----------------------+-------------+
+|Module Name                     | RTL Object                           | Inference | Size (Depth x Width) | Primitives  | 
++--------------------------------+--------------------------------------+-----------+----------------------+-------------+
+|\inst/descriptor_status.status  | frame_completion.pending_lengths_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|\inst/rgb                       | frame_completion.pending_lengths_reg | Implied   | 16 x 8               | RAM32M x 2  | 
+|\inst/packet                    | frame_completion.pending_lengths_reg | Implied   | 16 x 8               | RAM32M x 2  | 
++--------------------------------+--------------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1678.531 ; gain = 836.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|c6v_capture_write_pair_0 | A*B             | 22     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c6v_capture_write_pair_0 | (PCIN>>17+A*B)' | 0      | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|c6v_capture_write_pair_0 | A*B             | 19     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|c6v_capture_write_pair_0 | (PCIN>>17+A*B)' | 0      | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   644|
+|2     |DSP48E1  |     4|
+|3     |LUT1     |    39|
+|4     |LUT2     |   169|
+|5     |LUT3     |   166|
+|6     |LUT4     |  1010|
+|7     |LUT5     |   110|
+|8     |LUT6     |   470|
+|9     |RAM32M   |     3|
+|10    |RAM32X1D |     6|
+|11    |FDRE     |  1558|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1899.895 ; gain = 1058.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 1899.895 ; gain = 991.090
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 1901.883 ; gain = 1058.336
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1913.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 657 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2007.602 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 3 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 6 instances
+
+Synth Design complete | Checksum: f5ec2e73
+INFO: [Common 17-83] Releasing license: Synthesis
+810 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:54 . Memory (MB): peak = 2008.625 ; gain = 1387.047
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2008.625 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_write_pair_0_synth_1/c6v_capture_write_pair_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file c6v_capture_write_pair_0_utilization_synth.rpt -pb c6v_capture_write_pair_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 22:05:41 2026...

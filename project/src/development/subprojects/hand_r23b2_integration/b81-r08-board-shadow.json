@@ -1,0 +1,106 @@
+﻿{
+  "status": "SHADOW_OBSERVED",
+  "pid": 854,
+  "session": "22d5e275088845a4b9aed0d153a8e025",
+  "game_run": "a5c7d69b470646099fa07f4faa224916",
+  "stop_reason": "producer_revoked",
+  "frames": 1949,
+  "invalid_frames": 1947,
+  "gestures": {
+    "None": 1949
+  },
+  "events": [
+    {
+      "frame": 3046,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3048,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3050,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3053,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3055,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3058,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3060,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3063,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3064,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3067,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3069,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3071,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3073,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3076,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3078,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 3079,
+      "gesture": null,
+      "valid": false
+    }
+  ],
+  "max_source_age_seconds": 0.3338394389999735,
+  "wall_seconds": 215.767449291,
+  "freshness_budget_seconds": 1.0,
+  "max_interarrival_seconds": 0.23224968599998874,
+  "stale_packets_dropped": 0,
+  "max_stale_packet_age_seconds": 0.0,
+  "age_at_stop_seconds": 0.23955508300002748,
+  "cpu_seconds": 4.909262584,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

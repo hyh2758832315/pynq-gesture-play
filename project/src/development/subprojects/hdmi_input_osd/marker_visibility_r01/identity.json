@@ -1,0 +1,26 @@
+{
+  "stage": "MARKER_VISIBILITY_SOURCE_READY",
+  "board_access": false,
+  "target": "xc7z020clg400-1",
+  "vivado": "2026.1",
+  "original_pixel_sha256": "7bfbd474e50af40b4cf688f24607c968cdcf0ee5cc310cbae0adb8b83997ab20",
+  "outer_radius_px": {
+    "normal": 48,
+    "fist": 32
+  },
+  "line_width_px": 6,
+  "center_dot_px": 9,
+  "colors": {
+    "normal": "#00FF00",
+    "fist": "#FF0000"
+  },
+  "volume_meter_unchanged": true,
+  "sources": {
+    "rtl/input_osd_axi.sv": "117d55254bafee03f107719bc980587e60a8acd40f9f3b1253045ea91df4af98",
+    "rtl/input_osd_ctrl.sv": "e9ab49b97ae095d1ece80894ef2a187dbbffb6cad79adbacc636c70dc5b3d867",
+    "rtl/input_osd_pixels.sv": "bcf8d0e2bbe6714657fe9ea65841b44bcd3f249b9f25199177fe9f10af931c00",
+    "rtl/input_osd_top.sv": "2aa323324cdb33c2369f031a76e33e2c27c0ce2d644503b6505d10ce30be7030",
+    "sim/tb_input_osd.sv": "1f5f457cdf6a6d09244718d46191bf19c4ec2ae2d2e4a5e49b86c9752fc44670",
+    "constraints/osd_cdc.tcl": "78744f594ad94251d47dad57ad2185c0ff1386832f607e489ba47f9ea4e69e23"
+  }
+}

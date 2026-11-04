@@ -1,0 +1,14 @@
+{
+  "stage": "PAIRED_PREFLIGHT_READY",
+  "profile": "C6I_VISION_BUTTON_V1",
+  "target_build_id": "0xC0061000",
+  "release_ready": false,
+  "board_pending": true,
+  "bit_sha256": "8F8CE2B979528E9E7B1F1DF16A9B9920EEADD05B2F7AEB79DD4D8040E21C691D",
+  "audio_sampling": false,
+  "button_mapping": {
+    "BTN0": "LOW",
+    "BTN1": "HIGH"
+  },
+  "board_operations": false
+}

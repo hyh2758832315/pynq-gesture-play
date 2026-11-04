@@ -1,0 +1,89 @@
+{
+  "assertions": [
+    {
+      "expected": 0,
+      "field": "values.world_x",
+      "message": "",
+      "operator": "gt",
+      "tick": 59
+    },
+    {
+      "expected": 0,
+      "field": "values.z",
+      "message": "",
+      "operator": "gt",
+      "tick": 61
+    },
+    {
+      "expected": 0,
+      "field": "values.attacks_fired",
+      "message": "",
+      "operator": "eq",
+      "tick": 180
+    },
+    {
+      "expected": false,
+      "field": "values.shield_active",
+      "message": "",
+      "operator": "eq",
+      "tick": 180
+    }
+  ],
+  "events": [
+    {
+      "duration_ms": null,
+      "event_id": "step-0",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 0,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-60",
+      "frequency_hz": null,
+      "gesture": "fist",
+      "kind": "gesture",
+      "tick": 60,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-90",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 90,
+      "x": 160,
+      "y": 0
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-120",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 120,
+      "x": 0,
+      "y": 90
+    },
+    {
+      "duration_ms": null,
+      "event_id": "step-150",
+      "frequency_hz": null,
+      "gesture": "paper",
+      "kind": "gesture",
+      "tick": 150,
+      "x": 160,
+      "y": 179
+    }
+  ],
+  "max_ticks": 180,
+  "name": "PC示例：移动、握拳跳跃与松开",
+  "schema_version": 2,
+  "seed": 17,
+  "test_id": "00-pc-example"
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 2,
+  "test_id": "pc-example-game4",
+  "name": "PC示例：指向转弯、握拳加速与松开",
+  "seed": 17,
+  "max_ticks": 300,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "step-0",
+      "x": 310,
+      "y": 80,
+      "gesture": "fist"
+    },
+    {
+      "tick": 151,
+      "kind": "gesture",
+      "event_id": "step-151",
+      "x": 310,
+      "y": 80,
+      "gesture": "paper"
+    },
+    {
+      "tick": 180,
+      "kind": "gesture",
+      "event_id": "step-180",
+      "x": 310,
+      "y": 175,
+      "gesture": "paper"
+    },
+    {
+      "tick": 240,
+      "kind": "gesture",
+      "event_id": "step-240",
+      "x": 0,
+      "y": 175,
+      "gesture": "fist"
+    },
+    {
+      "tick": 299,
+      "kind": "gesture",
+      "event_id": "step-299",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 119,
+      "field": "values.moves",
+      "operator": "eq",
+      "expected": 0
+    },
+    {
+      "tick": 149,
+      "field": "values.moves",
+      "operator": "eq",
+      "expected": 6
+    },
+    {
+      "tick": 155,
+      "field": "values.boosted",
+      "operator": "eq",
+      "expected": false
+    },
+    {
+      "tick": 200,
+      "field": "values.moves",
+      "operator": "gt",
+      "expected": 6
+    }
+  ]
+}

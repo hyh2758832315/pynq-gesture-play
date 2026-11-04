@@ -1,0 +1,21 @@
+{
+  "source_sha256": "7432be4aaf4f46015ba1b508bb8cffc08b16f235b8c0bff39828ee75ecb30b37",
+  "command": [
+    "ssh",
+    "-b",
+    "192.168.2.1",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=8",
+    "pynq-z2",
+    "sudo -n /usr/local/share/pynq-venv/bin/python -u -B -"
+  ],
+  "started_unix": 1792848646.186789,
+  "returncode": 255,
+  "stdout": "",
+  "stderr": "ssh: connect to host 192.168.2.99 port 22: Connection timed out\n",
+  "finished_unix": 1792848654.2281644
+}

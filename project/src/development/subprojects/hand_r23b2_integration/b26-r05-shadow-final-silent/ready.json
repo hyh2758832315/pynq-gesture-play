@@ -1,0 +1,10 @@
+{
+  "pid": 123892,
+  "parent_pid": 118548,
+  "session": "a76c49dc98064e1c9222b19b7ab4bfad",
+  "game_run": "silent-game",
+  "address": [
+    "127.0.0.1",
+    60308
+  ]
+}

@@ -1,0 +1,668 @@
+
+*** Running vivado
+    with args -log c6v_input_osd_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_input_osd_0_0.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 24-nov-2026.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 22:02:54 2026
+# Process ID         : 140784
+# Current directory  : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_input_osd_0_0_synth_1
+# Command line       : vivado.exe -log c6v_input_osd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_input_osd_0_0.tcl
+# Log file           : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_input_osd_0_0_synth_1/c6v_input_osd_0_0.vds
+# Journal file       : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_input_osd_0_0_synth_1\vivado.jou
+# Running On         : DESKTOP-JBJOBKD
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33599 MB
+# Swap memory        : 51539 MB
+# Total Virtual      : 85138 MB
+# Available Virtual  : 34171 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 22:02:54 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source c6v_input_osd_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 602.629 ; gain = 265.594
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.ipdefs/rgb2dvi_v1_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2026.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.cache/ip 
+Command: synth_design -top c6v_input_osd_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1414.508 ; gain = 574.043
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'c6v_input_osd_0_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_input_osd_0_0/synth/c6v_input_osd_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'input_osd_axi' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_axi.sv:2]
+	Parameter WIDTH bound to: 1280 - type: integer 
+	Parameter HEIGHT bound to: 720 - type: integer 
+	Parameter RGB_PACKED bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'input_osd_top' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_top.sv:1]
+	Parameter WIDTH bound to: 1280 - type: integer 
+	Parameter HEIGHT bound to: 720 - type: integer 
+	Parameter RGB_PACKED bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'input_osd_ctrl' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_ctrl.sv:3]
+	Parameter HAND_MAX_FRAMES bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'input_osd_ctrl' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'input_osd_pixels' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:4]
+	Parameter WIDTH bound to: 1280 - type: integer 
+	Parameter HEIGHT bound to: 720 - type: integer 
+	Parameter RGB_PACKED bound to: 0 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:29]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:80]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:125]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:160]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'input_osd_pixels' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'input_osd_top' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_top.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'input_osd_axi' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_axi.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_input_osd_0_0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_input_osd_0_0/synth/c6v_input_osd_0_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element x1_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:197]
+WARNING: [Synth 8-6014] Unused sequential element y1_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:197]
+WARNING: [Synth 8-6014] Unused sequential element outer_extent_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element inner_extent_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:217]
+WARNING: [Synth 8-6014] Unused sequential element de1_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:196]
+WARNING: [Synth 8-6014] Unused sequential element vs1_reg was removed.  [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/imports/input_osd_pixels.sv:196]
+INFO: [Synth 8-7129] Port cfg[191] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[190] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[189] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[188] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[187] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[186] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[185] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[184] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[183] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[182] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[181] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[180] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[179] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[178] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[177] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[176] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[175] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[174] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[173] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[172] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[171] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[170] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[169] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[168] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[167] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[166] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[165] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[164] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[163] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[162] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[161] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[160] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[159] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[158] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[157] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[156] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[155] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[154] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[153] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[152] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[151] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[150] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[149] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[148] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[147] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[146] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[145] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[144] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[143] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[142] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[141] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[140] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[139] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[138] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[137] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[136] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[135] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[134] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[133] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[132] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[131] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[130] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[129] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[128] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[127] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[126] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[125] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[124] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[123] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[122] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[121] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[120] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[119] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[118] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[117] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[116] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[115] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[114] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[113] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[112] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[111] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[110] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[109] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[108] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[107] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[106] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[105] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[104] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[103] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[102] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[101] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[100] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[99] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[98] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[97] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[96] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[95] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[94] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[93] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[92] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[91] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[90] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[89] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[88] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[87] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[86] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[85] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[84] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[83] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[82] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[81] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[80] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[79] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[78] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[77] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[76] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[75] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[74] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[73] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[72] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[71] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[70] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[69] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[68] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[67] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[66] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[65] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[64] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[63] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[62] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[61] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[60] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[59] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[58] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[47] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[46] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[45] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[44] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[43] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[31] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[30] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[29] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[28] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[27] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[26] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[25] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[24] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[23] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[22] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[21] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[20] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[19] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[18] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[17] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[16] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[15] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[14] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[13] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[12] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[11] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[10] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[9] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[8] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[7] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[6] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[5] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[4] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[3] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[1] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awprot[2] in module input_osd_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awprot[1] in module input_osd_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awprot[0] in module input_osd_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arprot[2] in module input_osd_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arprot[1] in module input_osd_axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arprot[0] in module input_osd_axi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1552.723 ; gain = 712.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1552.723 ; gain = 712.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1552.723 ; gain = 712.258
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1552.723 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1587.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1587.586 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1587.586 ; gain = 747.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1587.586 ; gain = 747.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1587.586 ; gain = 747.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1587.586 ; gain = 747.121
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
++---Registers : 
+	              192 Bit    Registers := 3     
+	               32 Bit    Registers := 8     
+	               24 Bit    Registers := 4     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 19    
+	   2 Input   24 Bit        Muxes := 3     
+	   4 Input   24 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 26    
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port cfg[191] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[190] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[189] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[188] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[187] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[186] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[185] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[184] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[183] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[182] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[181] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[180] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[179] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[178] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[177] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[176] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[175] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[174] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[173] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[172] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[171] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[170] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[169] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[168] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[167] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[166] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[165] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[164] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[163] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[162] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[161] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[160] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[159] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[158] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[157] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[156] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[155] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[154] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[153] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[152] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[151] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[150] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[149] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[148] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[147] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[146] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[145] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[144] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[143] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[142] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[141] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[140] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[139] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[138] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[137] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[136] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[135] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[134] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[133] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[132] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[131] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[130] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[129] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[128] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[127] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[126] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[125] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[124] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[123] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[122] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[121] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[120] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[119] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[118] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[117] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[116] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[115] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[114] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[113] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[112] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[111] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[110] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[109] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[108] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[107] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[106] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[105] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[104] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[103] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[102] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[101] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[100] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[99] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[98] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[97] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[96] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[95] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[94] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[93] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[92] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[91] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[90] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[89] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[88] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[87] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[86] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[85] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[84] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[83] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[82] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[81] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[80] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[79] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[78] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[77] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[76] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[75] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[74] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[73] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[72] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[71] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[70] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[69] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[68] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[67] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[66] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[65] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[64] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[63] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[62] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[61] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[60] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[59] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[58] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[47] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[46] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[45] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[44] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[43] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[31] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[30] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[29] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[28] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[27] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[26] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[25] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[24] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[23] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[22] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[21] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[20] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[19] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[18] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[17] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[16] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[15] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[14] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[13] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[12] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[11] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[10] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[9] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[8] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[7] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[6] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[5] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[4] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[3] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port cfg[1] in module input_osd_pixels is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awprot[2] in module c6v_input_osd_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awprot[1] in module c6v_input_osd_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awprot[0] in module c6v_input_osd_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arprot[2] in module c6v_input_osd_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arprot[1] in module c6v_input_osd_0_0 is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arprot[0] in module c6v_input_osd_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.707 ; gain = 788.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|input_osd_pixels | extent     | 64x7          | LUT            | 
+|input_osd_pixels | extent     | 64x7          | LUT            | 
+|input_osd_pixels | extent     | 32x6          | LUT            | 
++-----------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.707 ; gain = 788.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1628.707 ; gain = 788.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    17|
+|2     |LUT1   |     6|
+|3     |LUT2   |    61|
+|4     |LUT3   |    61|
+|5     |LUT4   |    82|
+|6     |LUT5   |    61|
+|7     |LUT6   |   125|
+|8     |FDCE   |     8|
+|9     |FDRE   |   601|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.922 ; gain = 1040.457
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 1880.922 ; gain = 1005.594
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1880.957 ; gain = 1040.457
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1892.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1991.441 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3dc4690e
+INFO: [Common 17-83] Releasing license: Synthesis
+385 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:40 . Memory (MB): peak = 1991.445 ; gain = 1369.738
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1991.445 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_input_osd_0_0_synth_1/c6v_input_osd_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file c6v_input_osd_0_0_utilization_synth.rpt -pb c6v_input_osd_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 22:03:43 2026...

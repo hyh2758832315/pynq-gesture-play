@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="494.28pt" height="141.912pt" viewBox="0 0 494.28 141.912" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-26T14:15:01.110255</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 141.912 
+L 494.28 141.912 
+L 494.28 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="text_1">
+    <g id="patch_2">
+     <path d="M 33.188 71.73557 
+L 77.188 71.73557 
+Q 83.788 71.73557 83.788 65.13557 
+L 83.788 41.07307 
+Q 83.788 34.47307 77.188 34.47307 
+L 33.188 34.47307 
+Q 26.588 34.47307 26.588 41.07307 
+L 26.588 65.13557 
+Q 26.588 71.73557 33.188 71.73557 
+z
+" style="fill: #eff5f8; stroke: #a8bfcd; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(35.969797 50.297709)">P0 基线</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(33.188 62.323802)">串行处理</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 97.500974 53.10432 
+Q 105.33819 53.10432 112.057371 53.10432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+    <path d="M 107.057371 50.60432 
+L 112.057371 53.10432 
+L 107.057371 55.60432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <g id="patch_4">
+     <path d="M 123.664 71.745882 
+L 178.664 71.745882 
+Q 185.264 71.745882 185.264 65.145882 
+L 185.264 41.062757 
+Q 185.264 34.462757 178.664 34.462757 
+L 123.664 34.462757 
+Q 117.064 34.462757 117.064 41.062757 
+L 117.064 65.145882 
+Q 117.064 71.745882 123.664 71.745882 
+z
+" style="fill: #eff5f8; stroke: #a8bfcd; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(131.945797 50.297709)">P1 缓存</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(123.664 62.334115)">描述符复用</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 193.476974 53.10432 
+Q 201.31419 53.10432 208.033371 53.10432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+    <path d="M 203.033371 50.60432 
+L 208.033371 53.10432 
+L 203.033371 55.60432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <g id="patch_6">
+     <path d="M 214.14 71.805179 
+L 280.14 71.805179 
+Q 286.74 71.805179 286.74 65.205179 
+L 286.74 41.003461 
+Q 286.74 34.403461 280.14 34.403461 
+L 214.14 34.403461 
+Q 207.54 34.403461 207.54 41.003461 
+L 207.54 65.205179 
+Q 207.54 71.805179 214.14 71.805179 
+z
+" style="fill: #eff5f8; stroke: #a8bfcd; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(227.921797 50.346693)">P2 流水</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(214.14 62.393412)">像素连续执行</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 289.452974 53.10432 
+Q 297.29019 53.10432 304.009371 53.10432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+    <path d="M 299.009371 50.60432 
+L 304.009371 53.10432 
+L 299.009371 55.60432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <g id="patch_8">
+     <path d="M 315.616 71.714086 
+L 370.616 71.714086 
+Q 377.216 71.714086 377.216 65.114086 
+L 377.216 41.094554 
+Q 377.216 34.494554 370.616 34.494554 
+L 315.616 34.494554 
+Q 309.016 34.494554 309.016 41.094554 
+L 309.016 65.114086 
+Q 309.016 71.714086 315.616 71.714086 
+z
+" style="fill: #eff5f8; stroke: #a8bfcd; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(318.397797 50.308881)">P3 双像素</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(315.616 62.302318)">条件性双写</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 385.428974 53.10432 
+Q 393.26619 53.10432 399.985371 53.10432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+    <path d="M 394.985371 50.60432 
+L 399.985371 53.10432 
+L 394.985371 55.60432 
+" style="fill: none; stroke: #727b85; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <g id="patch_10">
+     <path d="M 411.592 71.558431 
+L 466.592 71.558431 
+Q 473.192 71.558431 473.192 64.958431 
+L 473.192 41.250209 
+Q 473.192 34.650209 466.592 34.650209 
+L 411.592 34.650209 
+Q 404.992 34.650209 404.992 41.250209 
+L 404.992 64.958431 
+Q 404.992 71.558431 411.592 71.558431 
+z
+" style="fill: #eff5f8; stroke: #a8bfcd; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(419.873797 50.206507)">P4 重叠</text>
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #263746" transform="translate(411.592 62.146664)">预上传场景</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #263746" x="247.14" y="116.86032" transform="rotate(-0 247.14 116.86032)">提出假设  →  局部改写  →  黄金回归  →  资源与时序检查  →  保留可复验证据</text>
+   </g>
+  </g>
+ </g>
+</svg>

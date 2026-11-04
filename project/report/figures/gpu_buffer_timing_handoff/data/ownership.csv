@@ -1,0 +1,5 @@
+﻿phase,display_bank,write_bank,writes
+rendering,A,B,allowed: B
+waiting_vblank,A,B,disabled
+swapped_waiting_ack,B,B,disabled
+ack_returned,B,A,next render may write A

@@ -1,0 +1,14 @@
+{
+  "original_r23b2_dcp": {
+    "source": "D:\\vvg_button_only_r23b\\timing_audit\\c6v_wrapper_timing_closed.dcp",
+    "sha256": "0688c599283d48ce765ca098013aa79ecb46d350f04c76f6ca1dd7aeea6f44c2"
+  },
+  "frozen_v3_dcp": {
+    "source": "contest_v3\\board\\runtime\\overlay\\candidate.dcp",
+    "sha256": "0688c599283d48ce765ca098013aa79ecb46d350f04c76f6ca1dd7aeea6f44c2"
+  },
+  "source_archive": {
+    "source": "build\\contest-v3-work\\r23_sources.zip",
+    "sha256": "5ea13293c105cadb8199d195b44ce6eb371fc31baca815719b09696b392ac6c0"
+  }
+}

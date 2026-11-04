@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_button_r23" LaunchPart="xc7z020clg400-1" LaunchTime="1793368971">
+  <File Type="PA-TCL" Name="c6v_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="c6v_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="c6v_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="c6v_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="c6v_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="c6v_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="c6v_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="c6v_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="c6v_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/axis_demux.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../third_party/verilog-axis/rtl/axis_demux.v"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_asset_bundle_store.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_asset_bundle_store.sv"/>
+        <Attr Name="ImportTime" Val="1792406577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_c4m3_core.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_c4m3_core.sv"/>
+        <Attr Name="ImportTime" Val="1791117969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_clear_fill_renderer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_clear_fill_renderer.sv"/>
+        <Attr Name="ImportTime" Val="1791117969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_command_upload.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_command_upload.sv"/>
+        <Attr Name="ImportTime" Val="1791117969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_draw_tile_layer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_draw_tile_layer.sv"/>
+        <Attr Name="ImportTime" Val="1792406577"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_frame_swap.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_frame_swap.sv"/>
+        <Attr Name="ImportTime" Val="1790421391"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_framebuffer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_framebuffer.sv"/>
+        <Attr Name="ImportTime" Val="1791117969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_index4_asset_blit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_index4_asset_blit.sv"/>
+        <Attr Name="ImportTime" Val="1791117969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_index4_atlas.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_index4_atlas.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_index4_blit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_index4_blit.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_packet_router.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_packet_router.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_palette_scanout.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_palette_scanout.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_palette_store.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_palette_store.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_resource_upload.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_resource_upload.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_tilemap_store.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_tilemap_store.sv"/>
+        <Attr Name="ImportTime" Val="1790478488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_upload_sink.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_upload_sink.sv"/>
+        <Attr Name="ImportTime" Val="1790421391"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_video_timing.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_video_timing.sv"/>
+        <Attr Name="ImportTime" Val="1790421391"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_c4m7_core.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_c4m7_core.sv"/>
+        <Attr Name="ImportTime" Val="1791117969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_return_source.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_return_source.sv"/>
+        <Attr Name="ImportTime" Val="1790755203"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/input_osd_ctrl.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/hdmi_input_osd/rtl/input_osd_ctrl.sv"/>
+        <Attr Name="ImportTime" Val="1792680485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/input_osd_pixels.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/hdmi_input_osd/rtl/input_osd_pixels.sv"/>
+        <Attr Name="ImportTime" Val="1792680924"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/input_osd_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/hdmi_input_osd/rtl/input_osd_top.sv"/>
+        <Attr Name="ImportTime" Val="1792680485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/input_osd_axi.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/hdmi_input_osd/rtl/input_osd_axi.sv"/>
+        <Attr Name="ImportTime" Val="1792681379"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_area2x2.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_area2x2.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hsv_reciprocal.svh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../handoffs/gesture_vision_v61/hardware/frontend/rtl/hsv_reciprocal.svh"/>
+        <Attr Name="ImportTime" Val="1791196959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis_bgr_hsv_skin.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../handoffs/gesture_vision_v61/hardware/frontend/rtl/axis_bgr_hsv_skin.sv"/>
+        <Attr Name="ImportTime" Val="1791196959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/voice-view-game/subprojects/hdmi_input_osd/latency_rtl/axis_binary_dilate9.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/hdmi_input_osd/latency_rtl/axis_binary_dilate9.sv"/>
+        <Attr Name="ImportTime" Val="1792730028"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_binary_gaussian5.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_binary_gaussian5.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_binary_mask_pair.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_binary_mask_pair.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_dual_mask_packet.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_dual_mask_packet.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_rgb_capture_tracked.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_rgb_capture_tracked.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_rgb_dual_mask_capture.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_rgb_dual_mask_capture.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_rgb_frame_fork.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_rgb_frame_fork.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/voice-view-game/subprojects/hdmi_input_osd/latency_rtl/axis_rgb_mask_frontend.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/hdmi_input_osd/latency_rtl/axis_rgb_mask_frontend.sv"/>
+        <Attr Name="ImportTime" Val="1792710604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_capture_drain.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_capture_drain.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axis_rgb_capture_bd.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axis_rgb_capture_bd.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axi_vision_capture_control.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axi_vision_capture_control.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_epoch_fence.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_epoch_fence.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_frame_owner.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_frame_owner.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/voice-view-game/build/hosd/c0e/admission-r01/source/vision_release_credit_cdc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../build/hosd/c0e/admission-r01/source/vision_release_credit_cdc.sv"/>
+        <Attr Name="ImportTime" Val="1792740293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/voice-view-game/build/hosd/c0e/admission-r01/source/vision_source_admission.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../build/hosd/c0e/admission-r01/source/vision_source_admission.sv"/>
+        <Attr Name="ImportTime" Val="1792740292"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_source_budget_cdc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_source_budget_cdc.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_source_fault_cdc.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_source_fault_cdc.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/voice-view-game/build/hosd/c0e/admission-r01/source/vision_capture_lifecycle.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../build/hosd/c0e/admission-r01/source/vision_capture_lifecycle.sv"/>
+        <Attr Name="ImportTime" Val="1792740293"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_axi_write_drain.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_axi_write_drain.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_dma_write_pair.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_dma_write_pair.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/axi_vision_capture_status.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/axi_vision_capture_status.v"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/vision_capture_status_inputs.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_capture_status_inputs.sv"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/voice-view-game/subprojects/button_only/rtl/button_sync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/button_only/rtl/button_sync.sv"/>
+        <Attr Name="ImportTime" Val="1792837411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/c6v/c6v.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/c6v/hdl/c6v_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/axis_mask_pack32.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../handoffs/gesture_vision_v61/hardware/frontend/rtl/axis_mask_pack32.sv"/>
+        <Attr Name="ImportTime" Val="1791196959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bgr_skin_dma.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../handoffs/gesture_vision_v61/hardware/frontend/rtl/bgr_skin_dma.sv"/>
+        <Attr Name="ImportTime" Val="1791196959"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/scene2d_c4m4_core.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../rtl/scene2d_gpu/scene2d_c4m4_core.sv"/>
+        <Attr Name="ImportTime" Val="1790478485"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="c6v_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/c3_hdmi_out.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../board/pynq_z2/constraints/c3_hdmi_out.xdc"/>
+        <Attr Name="ImportTime" Val="1790421391"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/camera_direct_plug_corrected.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../board/pynq_z2/constraints/camera_direct_plug_corrected.xdc"/>
+        <Attr Name="ImportTime" Val="1790868372"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/c6v_sync_cdc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../board/pynq_z2/constraints/c6v_sync_cdc.xdc"/>
+        <Attr Name="ImportTime" Val="1791250892"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="ProcessingOrder" Val="LATE"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/rtl/vision_capture_cdc.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="D:/vvg_button_only_r23b/latency-r02/rtl/vision_capture_cdc.xdc"/>
+        <Attr Name="ImportTime" Val="1792693393"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/constraints/button_only.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../subprojects/button_only/constraints/button_only.xdc"/>
+        <Attr Name="ImportTime" Val="1792837411"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/c6v_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/voice-view-game/build/hosd/c0d/c6_osd.srcs/utils_1/imports/synth_1/c6v_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../build/hosd/c0d/c6_osd.srcs/utils_1/imports/synth_1/c6v_wrapper.dcp"/>
+        <Attr Name="ImportTime" Val="1792682786"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/voice-view-game/build/hosd/c0e/prewarm-r01/incremental_reference.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../build/hosd/c0e/prewarm-r01/incremental_reference.dcp"/>
+        <Attr Name="ImportTime" Val="1792725566"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_prewarm_r01"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/utils_1/imports/voice-view-game/build/hosd/c0e/admission-r01/incremental_reference.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../build/hosd/c0e/admission-r01/incremental_reference.dcp"/>
+        <Attr Name="ImportTime" Val="1792733756"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_admission_r01"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/hooks/postopt_button_admission.tcl">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="UsedInSteps" Val="impl_button_r23;OPT_DESIGN;TCL.POST"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2026"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_ps7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_core_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_return_source_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_capture_control_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_moments_dma_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_input_osd_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_capture_status_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_packet_stream_width_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_capture_write_pair_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_capture_source_fault_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_capture_status_inputs_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_dual_mask_capture_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_capture_lifecycle_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_gp0_smc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_build_id_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="c6v_button_sync_0_0"/>
+</GenRun>

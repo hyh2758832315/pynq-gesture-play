@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="前台持续扫描，后台完成后换页" id="system">
+    <mxGraphModel dx="2200" dy="1700" grid="1" gridSize="10" page="1" pageWidth="2200" pageHeight="1700">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ps" value="PS / 当前页面产生 Scene，共用一个提交入口" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="240" width="2080" height="275" />
+        </mxCell>
+        <mxCell id="pl" value="PL / 上传与光栅化 · 100 MHz" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf5fb;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="560" width="2080" height="600" />
+        </mxCell>
+        <mxCell id="fb" value="两块独立 BRAM 帧缓冲" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1410" y="625" width="680" height="470" />
+        </mxCell>
+        <mxCell id="scan" value="像素时钟域 / 连续扫描 · 74.25 MHz" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1200" width="2080" height="345" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="owner" target="compiler">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="compiler" target="dma">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="dma" target="router">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2120" y="386" />
+              <mxPoint x="2120" y="535" />
+              <mxPoint x="40" y="535" />
+              <mxPoint x="40" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="router" target="commands">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="commands" target="raster">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#bf286e;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.7384615384615385;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="raster" target="back">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.10483870967741936;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="router" target="resources">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.8225806451612904;exitY=0.0;exitPerimeter=0;entryX=0.5;entryY=1.0;entryPerimeter=0;" edge="1" parent="1" source="resources" target="raster">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.4956521739130435;exitPerimeter=0;entryX=0.0;entryY=0.4956521739130435;entryPerimeter=0;" edge="1" parent="1" source="read" target="palette">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.4956521739130435;exitPerimeter=0;entryX=0.0;entryY=0.4956521739130435;entryPerimeter=0;" edge="1" parent="1" source="palette" target="osd">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.4956521739130435;exitPerimeter=0;entryX=0.0;entryY=0.4956521739130435;entryPerimeter=0;" edge="1" parent="1" source="osd" target="hdmi">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.4956521739130435;entryPerimeter=0;" edge="1" parent="1" source="front" target="read">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2120" y="956" />
+              <mxPoint x="2120" y="1180" />
+              <mxPoint x="40" y="1180" />
+              <mxPoint x="40" y="1367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kicker" value="PYNQ  /  GPU 缓冲与呈现时序  /  01  缓冲所有权" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=21;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="24" width="2080" height="36" />
+        </mxCell>
+        <mxCell id="title" value="前台持续扫描，后台完成后换页" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=47;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="74" width="2080" height="80" />
+        </mxCell>
+        <mxCell id="subtitle" value="命令缓冲、图像缓冲和资源缓冲分别管理；双帧缓冲把绘制与 HDMI 扫描分开。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1649" width="2080" height="33" />
+        </mxCell>
+        <mxCell id="owner" value="菜单 / 游戏 / 视频 / 画布&#10;页面切换时交接提交权" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="330" width="520" height="112" />
+        </mxCell>
+        <mxCell id="compiler" value="Scene 编译 / 视频包读取&#10;命令与资源 generation" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="330" width="520" height="112" />
+        </mxCell>
+        <mxCell id="dma" value="C6IVideoSink → PS DDR 暂存&#10;拷贝 + flush → 启动 MM2S DMA" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1260" y="330" width="830" height="112" />
+        </mxCell>
+        <mxCell id="ps_note" value="当前 submit_scene 等待呈现确认后返回；页面切换先停止旧生产者，再 drain 和恢复新资源。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=23;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="465" width="1990" height="30" />
+        </mxCell>
+        <mxCell id="router" value="DMA MM2S / HP0&#10;64 bit AXIS&#10;按 magic 分流" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="670" width="260" height="130" />
+        </mxCell>
+        <mxCell id="commands" value="命令 bank 0 / 1&#10;各 4 KiB · 上传完整后切换" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="420" y="670" width="410" height="130" />
+        </mxCell>
+        <mxCell id="raster" value="命令解码 → 光栅化&#10;CLEAR / BLIT / TILE / RECT" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="900" y="670" width="440" height="130" />
+        </mxCell>
+        <mxCell id="back" value="B / 后台：本轮写入目标&#10;320 × 180 × 8 bit = 56.25 KiB" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="710" width="600" height="112" />
+        </mxCell>
+        <mxCell id="front" value="A / 前台：持续被扫描&#10;完整保留上一幅 token 图像" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="900" width="600" height="112" />
+        </mxCell>
+        <mxCell id="fb_flip" value="vblank 换显示 bank → ACK 后换写 bank" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=23;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1460" y="838" width="580" height="44" />
+        </mxCell>
+        <mxCell id="resources" value="资源 bank：Atlas / Tilemap / Palette，各自提交&#10;光栅化启动前检查 Scene 所需 generation；上传资源时先 drain" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="890" width="1240" height="130" />
+        </mxCell>
+        <mxCell id="pl_note" value="帧缓冲保存索引 token；扫描期间不读取 PS 的 Scene 包。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1072" width="1240" height="42" />
+        </mxCell>
+        <mxCell id="read" value="读前台 BRAM&#10;x / 4，y / 4 → 逻辑像素" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1310" width="470" height="115" />
+        </mxCell>
+        <mxCell id="palette" value="token → RGB888&#10;16 组 × 16 色查表" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="630" y="1310" width="470" height="115" />
+        </mxCell>
+        <mxCell id="osd" value="独立 OSD 覆盖&#10;手圈继续同步" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1160" y="1310" width="410" height="115" />
+        </mxCell>
+        <mxCell id="hdmi" value="rgb2dvi → HDMI&#10;1280 × 720 @ 60 Hz" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1630" y="1310" width="460" height="115" />
+        </mxCell>
+        <mxCell id="scan_note" value="扫描路径使用片上存储，不等待 AXI / DDR；本轮尚未完成换页时，继续扫描当前前台。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1464" width="1990" height="44" />
+        </mxCell>
+        <mxCell id="current" value="当前 UPLOAD_RENDER_OVERLAP_ENABLE = 0：上传下一 Scene 与当前渲染串行；绘制与扫描可并行。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="80" y="1582" width="2040" height="54" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

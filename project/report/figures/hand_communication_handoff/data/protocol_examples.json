@@ -1,0 +1,82 @@
+{
+  "baudrate": 1000000,
+  "format": "8N1",
+  "field_endian": "big",
+  "checksum": "(~sum(ID through final parameter/data)) & 0xFF",
+  "examples": [
+    {
+      "name": "position_id1_raw2048_time0_speed500",
+      "kind": "instruction",
+      "id": 1,
+      "instruction_or_error": 3,
+      "parameters_or_data": [
+        42,
+        8,
+        0,
+        0,
+        0,
+        1,
+        244
+      ],
+      "hex": "FF FF 01 09 03 2A 08 00 00 00 01 F4 CB",
+      "length": 13
+    },
+    {
+      "name": "write_success_ack_id1",
+      "kind": "status",
+      "id": 1,
+      "instruction_or_error": 0,
+      "parameters_or_data": [],
+      "hex": "FF FF 01 02 00 FC",
+      "length": 6
+    },
+    {
+      "name": "read_register_block_id1",
+      "kind": "instruction",
+      "id": 1,
+      "instruction_or_error": 2,
+      "parameters_or_data": [
+        16,
+        48
+      ],
+      "hex": "FF FF 01 04 02 10 30 B8",
+      "length": 8
+    },
+    {
+      "name": "torque_off_id1",
+      "kind": "instruction",
+      "id": 1,
+      "instruction_or_error": 3,
+      "parameters_or_data": [
+        40,
+        0
+      ],
+      "hex": "FF FF 01 04 03 28 00 CF",
+      "length": 8
+    },
+    {
+      "name": "read_torque_id1",
+      "kind": "instruction",
+      "id": 1,
+      "instruction_or_error": 2,
+      "parameters_or_data": [
+        40,
+        1
+      ],
+      "hex": "FF FF 01 04 02 28 01 CF",
+      "length": 8
+    },
+    {
+      "name": "torque_off_readback_id1",
+      "kind": "status",
+      "id": 1,
+      "instruction_or_error": 0,
+      "parameters_or_data": [
+        0
+      ],
+      "hex": "FF FF 01 03 00 00 FB",
+      "length": 7
+    }
+  ],
+  "scope": "Constructed protocol examples; position TX/ACK additionally checked with actual SDK memory port"
+}

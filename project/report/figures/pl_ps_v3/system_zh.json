@@ -1,0 +1,1331 @@
+{
+  "width": 3080,
+  "height": 1640,
+  "title": "GESTURE PLAY v3.0 PL–PS",
+  "subtitle": "Expanded functional architecture of independent contest_v3",
+  "edge_font_size": 23,
+  "nodes": [
+    {
+      "id": "title",
+      "x": 30,
+      "y": 20,
+      "w": 3020,
+      "h": 65,
+      "lines": "GESTURE PLAY v3.0  |  PL–PS 系统架构",
+      "fill": "#ffffff",
+      "stroke": "#697887",
+      "font_size": 42,
+      "kind": "text"
+    },
+    {
+      "id": "soc",
+      "x": 290,
+      "y": 130,
+      "w": 2440,
+      "h": 1435,
+      "lines": "PYNQ-Z2 · Zynq-7020",
+      "fill": "#ffffff",
+      "stroke": "#3a5061",
+      "font_size": 29,
+      "kind": "group"
+    },
+    {
+      "id": "pl",
+      "x": 320,
+      "y": 205,
+      "w": 1660,
+      "h": 1325,
+      "lines": "PL / 可编程逻辑",
+      "fill": "#f8fafc",
+      "stroke": "#7893aa",
+      "font_size": 34,
+      "kind": "group"
+    },
+    {
+      "id": "ps",
+      "x": 2190,
+      "y": 205,
+      "w": 510,
+      "h": 1325,
+      "lines": "PS / 处理系统",
+      "fill": "#f1f7f3",
+      "stroke": "#287963",
+      "font_size": 34,
+      "kind": "group"
+    },
+    {
+      "id": "cpu",
+      "x": 2220,
+      "y": 260,
+      "w": 450,
+      "h": 45,
+      "lines": "ARM Cortex-A9 · Linux / PYNQ",
+      "fill": "#ffffff",
+      "stroke": "#697887",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "vision",
+      "x": 350,
+      "y": 285,
+      "w": 1410,
+      "h": 505,
+      "lines": "视觉处理",
+      "fill": "#eaf4fb",
+      "stroke": "#276c96",
+      "font_size": 30,
+      "kind": "group"
+    },
+    {
+      "id": "division",
+      "x": 350,
+      "y": 815,
+      "w": 1410,
+      "h": 3,
+      "lines": "",
+      "fill": "#526575",
+      "stroke": "#526575",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "graphics",
+      "x": 350,
+      "y": 850,
+      "w": 1410,
+      "h": 560,
+      "lines": "渲染 GPU",
+      "fill": "#f3eef8",
+      "stroke": "#77539a",
+      "font_size": 30,
+      "kind": "group"
+    },
+    {
+      "id": "camera_i2c",
+      "x": 390,
+      "y": 340,
+      "w": 210,
+      "h": 65,
+      "lines": "相机 I²C",
+      "fill": "#ffffff",
+      "stroke": "#697887",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "input",
+      "x": 390,
+      "y": 435,
+      "w": 210,
+      "h": 90,
+      "lines": "DVP / 去马赛克\nRGB 输出",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "hsv",
+      "x": 700,
+      "y": 435,
+      "w": 255,
+      "h": 90,
+      "lines": "缩减 / HSV\n肤色阈值",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "raw",
+      "x": 1065,
+      "y": 435,
+      "w": 255,
+      "h": 90,
+      "lines": "原始掩膜\n对齐 FIFO",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "filter",
+      "x": 1065,
+      "y": 575,
+      "w": 255,
+      "h": 90,
+      "lines": "形态 / 高斯滤波",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "packet",
+      "x": 1430,
+      "y": 575,
+      "w": 280,
+      "h": 90,
+      "lines": "双掩膜打包\n帧标识 / 状态",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "rgb_dma",
+      "x": 1450,
+      "y": 340,
+      "w": 260,
+      "h": 70,
+      "lines": "RGB VDMA",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "mask_dma",
+      "x": 1450,
+      "y": 710,
+      "w": 260,
+      "h": 65,
+      "lines": "掩膜 DMA（SG）",
+      "fill": "#ffffff",
+      "stroke": "#276c96",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "lifecycle",
+      "x": 390,
+      "y": 710,
+      "w": 550,
+      "h": 65,
+      "lines": "帧准入 / 三槽管理",
+      "fill": "#ffffff",
+      "stroke": "#697887",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "hp",
+      "x": 1820,
+      "y": 340,
+      "w": 115,
+      "h": 1005,
+      "lines": "AXI HP\n互连",
+      "fill": "#eef1f4",
+      "stroke": "#697887",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "upload",
+      "x": 1480,
+      "y": 950,
+      "w": 230,
+      "h": 70,
+      "lines": "上传 DMA",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "router",
+      "x": 1180,
+      "y": 950,
+      "w": 230,
+      "h": 70,
+      "lines": "包解析 / 分发",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "command",
+      "x": 880,
+      "y": 950,
+      "w": 230,
+      "h": 70,
+      "lines": "命令缓冲",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "assets",
+      "x": 1180,
+      "y": 1110,
+      "w": 230,
+      "h": 90,
+      "lines": "图集 / 图块\n资源存储",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "palette",
+      "x": 1480,
+      "y": 1110,
+      "w": 230,
+      "h": 90,
+      "lines": "调色板存储",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "raster",
+      "x": 670,
+      "y": 1075,
+      "w": 440,
+      "h": 130,
+      "lines": "Scene2D 绘制",
+      "fill": "#e9e0f2",
+      "stroke": "#77539a",
+      "font_size": 26,
+      "kind": "group"
+    },
+    {
+      "id": "fill",
+      "x": 690,
+      "y": 1135,
+      "w": 110,
+      "h": 50,
+      "lines": "填充",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "sprite",
+      "x": 830,
+      "y": 1135,
+      "w": 110,
+      "h": 50,
+      "lines": "精灵",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "tile",
+      "x": 970,
+      "y": 1135,
+      "w": 120,
+      "h": 50,
+      "lines": "图块",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "fb",
+      "x": 650,
+      "y": 1280,
+      "w": 460,
+      "h": 65,
+      "lines": "BRAM 双帧缓冲",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "swap",
+      "x": 1180,
+      "y": 1260,
+      "w": 230,
+      "h": 85,
+      "lines": "消隐期帧交换",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "scan",
+      "x": 390,
+      "y": 1280,
+      "w": 200,
+      "h": 65,
+      "lines": "调色 / 扫描\n4× 放大",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "osd",
+      "x": 390,
+      "y": 1110,
+      "w": 200,
+      "h": 90,
+      "lines": "独立 OSD\nHDMI 输出",
+      "fill": "#ffffff",
+      "stroke": "#77539a",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "control",
+      "x": 390,
+      "y": 1460,
+      "w": 1545,
+      "h": 45,
+      "lines": "AXI-Lite 控制 / 状态寄存器",
+      "fill": "#eef1f4",
+      "stroke": "#697887",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "agent",
+      "x": 2230,
+      "y": 345,
+      "w": 430,
+      "h": 80,
+      "lines": "Agent / 内容管理",
+      "fill": "#ffffff",
+      "stroke": "#287963",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "recognizer",
+      "x": 2230,
+      "y": 505,
+      "w": 430,
+      "h": 115,
+      "lines": "手势识别\nOpenCV",
+      "fill": "#ffffff",
+      "stroke": "#287963",
+      "font_size": 30,
+      "kind": "box"
+    },
+    {
+      "id": "app",
+      "x": 2230,
+      "y": 1015,
+      "w": 430,
+      "h": 115,
+      "lines": "交互应用\nScene 编译",
+      "fill": "#ffffff",
+      "stroke": "#287963",
+      "font_size": 30,
+      "kind": "box"
+    },
+    {
+      "id": "hand",
+      "x": 2230,
+      "y": 1300,
+      "w": 430,
+      "h": 90,
+      "lines": "灵巧手调度",
+      "fill": "#ffffff",
+      "stroke": "#287963",
+      "font_size": 30,
+      "kind": "box"
+    },
+    {
+      "id": "driver",
+      "x": 2230,
+      "y": 1450,
+      "w": 430,
+      "h": 65,
+      "lines": "MMIO / 设备驱动",
+      "fill": "#ffffff",
+      "stroke": "#287963",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "camera",
+      "x": 30,
+      "y": 390,
+      "w": 210,
+      "h": 230,
+      "lines": "OV5640\n\n照片预留",
+      "fill": "#fafafa",
+      "stroke": "#697887",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "monitor",
+      "x": 30,
+      "y": 1070,
+      "w": 210,
+      "h": 230,
+      "lines": "HDMI 显示器\n\n画面预留",
+      "fill": "#fafafa",
+      "stroke": "#697887",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "pc",
+      "x": 2810,
+      "y": 330,
+      "w": 230,
+      "h": 230,
+      "lines": "上位机 Studio\n\n界面预留",
+      "fill": "#fafafa",
+      "stroke": "#697887",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "hand_external",
+      "x": 2810,
+      "y": 1190,
+      "w": 230,
+      "h": 230,
+      "lines": "灵巧手\n\n照片预留",
+      "fill": "#fafafa",
+      "stroke": "#697887",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "note",
+      "x": 290,
+      "y": 1590,
+      "w": 2440,
+      "h": 35,
+      "lines": "蓝：视觉数据    紫：绘图数据    灰虚线：控制 / 状态    ·    图元按命令调度，共享帧缓冲",
+      "fill": "#ffffff",
+      "stroke": "#697887",
+      "font_size": 25,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "camera",
+      "target": "input",
+      "points": [
+        [
+          240,
+          480
+        ],
+        [
+          390,
+          480
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false,
+      "label": "DVP",
+      "label_x": 300,
+      "label_y": 459,
+      "label_background": "none"
+    },
+    {
+      "source": "camera_i2c",
+      "target": "camera",
+      "points": [
+        [
+          390,
+          372
+        ],
+        [
+          270,
+          372
+        ],
+        [
+          270,
+          420
+        ],
+        [
+          240,
+          420
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "input",
+      "target": "hsv",
+      "points": [
+        [
+          600,
+          480
+        ],
+        [
+          700,
+          480
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "input",
+      "target": "rgb_dma",
+      "points": [
+        [
+          600,
+          480
+        ],
+        [
+          645,
+          480
+        ],
+        [
+          645,
+          375
+        ],
+        [
+          1450,
+          375
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false,
+      "label": "RGB",
+      "label_x": 1240,
+      "label_y": 359,
+      "label_background": "none"
+    },
+    {
+      "source": "hsv",
+      "target": "raw",
+      "points": [
+        [
+          955,
+          480
+        ],
+        [
+          1065,
+          480
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "hsv",
+      "target": "filter",
+      "points": [
+        [
+          955,
+          480
+        ],
+        [
+          1015,
+          480
+        ],
+        [
+          1015,
+          620
+        ],
+        [
+          1065,
+          620
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "raw",
+      "target": "packet",
+      "points": [
+        [
+          1320,
+          480
+        ],
+        [
+          1380,
+          480
+        ],
+        [
+          1380,
+          595
+        ],
+        [
+          1430,
+          595
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "filter",
+      "target": "packet",
+      "points": [
+        [
+          1320,
+          635
+        ],
+        [
+          1430,
+          635
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "packet",
+      "target": "mask_dma",
+      "points": [
+        [
+          1580,
+          665
+        ],
+        [
+          1580,
+          710
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "rgb_dma",
+      "target": "hp",
+      "points": [
+        [
+          1710,
+          375
+        ],
+        [
+          1820,
+          375
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false,
+      "label": "HP1",
+      "label_x": 1765,
+      "label_y": 354,
+      "label_background": "none"
+    },
+    {
+      "source": "mask_dma",
+      "target": "hp",
+      "points": [
+        [
+          1710,
+          742
+        ],
+        [
+          1820,
+          742
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false,
+      "label": "HP3",
+      "label_x": 1765,
+      "label_y": 720,
+      "label_background": "none"
+    },
+    {
+      "source": "lifecycle",
+      "target": "input",
+      "points": [
+        [
+          495,
+          710
+        ],
+        [
+          495,
+          525
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "lifecycle",
+      "target": "packet",
+      "points": [
+        [
+          940,
+          742
+        ],
+        [
+          1360,
+          742
+        ],
+        [
+          1360,
+          655
+        ],
+        [
+          1430,
+          655
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "hp",
+      "target": "recognizer",
+      "points": [
+        [
+          1935,
+          550
+        ],
+        [
+          2230,
+          550
+        ]
+      ],
+      "color": "#276c96",
+      "dashed": false,
+      "both": false,
+      "label": "图像 / 掩膜 · DDR",
+      "label_x": 2080,
+      "label_y": 529,
+      "label_background": "none"
+    },
+    {
+      "source": "app",
+      "target": "hp",
+      "points": [
+        [
+          2230,
+          1070
+        ],
+        [
+          1935,
+          1070
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false,
+      "label": "命令 / 资源 · DDR",
+      "label_x": 2080,
+      "label_y": 1049,
+      "label_background": "none"
+    },
+    {
+      "source": "hp",
+      "target": "upload",
+      "points": [
+        [
+          1820,
+          985
+        ],
+        [
+          1710,
+          985
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false,
+      "label": "HP0",
+      "label_x": 1765,
+      "label_y": 964,
+      "label_background": "none"
+    },
+    {
+      "source": "upload",
+      "target": "router",
+      "points": [
+        [
+          1480,
+          985
+        ],
+        [
+          1410,
+          985
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "router",
+      "target": "command",
+      "points": [
+        [
+          1180,
+          985
+        ],
+        [
+          1110,
+          985
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "router",
+      "target": "assets",
+      "points": [
+        [
+          1295,
+          1020
+        ],
+        [
+          1295,
+          1110
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "router",
+      "target": "palette",
+      "points": [
+        [
+          1410,
+          1005
+        ],
+        [
+          1445,
+          1005
+        ],
+        [
+          1445,
+          1080
+        ],
+        [
+          1595,
+          1080
+        ],
+        [
+          1595,
+          1110
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "command",
+      "target": "raster",
+      "points": [
+        [
+          995,
+          1020
+        ],
+        [
+          995,
+          1075
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "assets",
+      "target": "raster",
+      "points": [
+        [
+          1180,
+          1155
+        ],
+        [
+          1110,
+          1155
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "fill",
+      "target": "fb",
+      "points": [
+        [
+          745,
+          1185
+        ],
+        [
+          745,
+          1280
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "sprite",
+      "target": "fb",
+      "points": [
+        [
+          885,
+          1185
+        ],
+        [
+          885,
+          1280
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "tile",
+      "target": "fb",
+      "points": [
+        [
+          1030,
+          1185
+        ],
+        [
+          1030,
+          1280
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "raster",
+      "target": "swap",
+      "points": [
+        [
+          1098,
+          1205
+        ],
+        [
+          1098,
+          1230
+        ],
+        [
+          1295,
+          1230
+        ],
+        [
+          1295,
+          1260
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "swap",
+      "target": "fb",
+      "points": [
+        [
+          1180,
+          1320
+        ],
+        [
+          1110,
+          1320
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "fb",
+      "target": "scan",
+      "points": [
+        [
+          650,
+          1312
+        ],
+        [
+          590,
+          1312
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "palette",
+      "target": "scan",
+      "points": [
+        [
+          1595,
+          1200
+        ],
+        [
+          1595,
+          1375
+        ],
+        [
+          490,
+          1375
+        ],
+        [
+          490,
+          1345
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "scan",
+      "target": "osd",
+      "points": [
+        [
+          490,
+          1280
+        ],
+        [
+          490,
+          1200
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "osd",
+      "target": "monitor",
+      "points": [
+        [
+          390,
+          1155
+        ],
+        [
+          240,
+          1155
+        ]
+      ],
+      "color": "#77539a",
+      "dashed": false,
+      "both": false,
+      "label": "HDMI",
+      "label_x": 300,
+      "label_y": 1134,
+      "label_background": "none"
+    },
+    {
+      "source": "driver",
+      "target": "control",
+      "points": [
+        [
+          2230,
+          1482
+        ],
+        [
+          1935,
+          1482
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": true,
+      "label": "AXI GP",
+      "label_x": 2080,
+      "label_y": 1461,
+      "label_background": "none"
+    },
+    {
+      "source": "control",
+      "target": "camera_i2c",
+      "points": [
+        [
+          390,
+          1482
+        ],
+        [
+          365,
+          1482
+        ],
+        [
+          365,
+          385
+        ],
+        [
+          390,
+          385
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "control",
+      "target": "lifecycle",
+      "points": [
+        [
+          390,
+          1482
+        ],
+        [
+          365,
+          1482
+        ],
+        [
+          365,
+          750
+        ],
+        [
+          390,
+          750
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "control",
+      "target": "osd",
+      "points": [
+        [
+          390,
+          1482
+        ],
+        [
+          365,
+          1482
+        ],
+        [
+          365,
+          1180
+        ],
+        [
+          390,
+          1180
+        ]
+      ],
+      "color": "#697887",
+      "dashed": true,
+      "both": false
+    },
+    {
+      "source": "pc",
+      "target": "agent",
+      "points": [
+        [
+          2810,
+          385
+        ],
+        [
+          2660,
+          385
+        ]
+      ],
+      "color": "#697887",
+      "dashed": false,
+      "both": true,
+      "label": "Ethernet",
+      "label_x": 2735,
+      "label_y": 364,
+      "label_background": "none"
+    },
+    {
+      "source": "recognizer",
+      "target": "app",
+      "points": [
+        [
+          2445,
+          620
+        ],
+        [
+          2445,
+          1015
+        ]
+      ],
+      "color": "#287963",
+      "dashed": false,
+      "both": false,
+      "label": "手势 / 位置",
+      "label_x": 2445,
+      "label_y": 815,
+      "label_background": "#f1f7f3"
+    },
+    {
+      "source": "recognizer",
+      "target": "hand",
+      "points": [
+        [
+          2660,
+          595
+        ],
+        [
+          2680,
+          595
+        ],
+        [
+          2680,
+          1260
+        ],
+        [
+          2570,
+          1260
+        ],
+        [
+          2570,
+          1300
+        ]
+      ],
+      "color": "#287963",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "hand",
+      "target": "hand_external",
+      "points": [
+        [
+          2660,
+          1345
+        ],
+        [
+          2810,
+          1345
+        ]
+      ],
+      "color": "#287963",
+      "dashed": false,
+      "both": false,
+      "label": "USB",
+      "label_x": 2735,
+      "label_y": 1324,
+      "label_background": "none"
+    }
+  ],
+  "language": "zh"
+}

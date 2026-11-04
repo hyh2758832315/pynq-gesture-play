@@ -1,0 +1,32 @@
+{
+  "baseline": "contest_v3 / R15b / R16",
+  "sources": {
+    "board/runtime/hand-runtime/assets/config.yaml": "4815b1ea1ca0e68dd2dab070f8e9112a00525db8d297a8bfa7173f945fb5ec3b",
+    "board/runtime/hand_child/serial_motion_receiver.py": "2cb1d3dfafb526054ef2a810886f8c38f9e2631f58f7db3270dda856071e8092",
+    "board/runtime/python/pynq_multimodal_game/hand_serial_session.py": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9",
+    "board/runtime/hand-runtime/src/pynq_usb_hand/gesture_consumer.py": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90",
+    "board/runtime/hand-runtime/src/pynq_usb_hand/controller.py": "ab82a26b123173183cfd1b05ee754dd02a4840862ce654c8bbd79a633b4084e5",
+    "board/runtime/hand-runtime/src/pynq_usb_hand/motion.py": "5c5a7f127e78819a63a47d862dcf863920aad8c02aecf4272e977588ccd71c23",
+    "board/runtime/hand-runtime/src/pynq_usb_hand/orca_backend.py": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9",
+    "board/runtime/hand-runtime/src/pynq_usb_hand/transport.py": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16",
+    "board/runtime/hand-runtime/src/pynq_usb_hand/actuator_owner.py": "068b6569787cc666e1932faecd1c9fe0195e560343adf977aebb9f4e860794f7"
+  },
+  "local_sdk": {
+    "path": "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Lib\\site-packages\\scservo_sdk",
+    "sha256": {
+      "scscl.py": "377be2a1579cc01677938988e4a14a0719148c51487b2950c586bcb1fce2806c",
+      "protocol_packet_handler.py": "60a110bc0a198fafcd1fd3007be85c0ad0947f2a022f8bcc1857f14902d81475",
+      "port_handler.py": "b0ad5264061959a025c6e90019fbc2f2da52b96829be45c99ee104ba95641865",
+      "scservo_def.py": "3e728287823fd76a240001d303ca5b9b3a50665a205deb5fe4f7c80e21a049b1"
+    },
+    "scope": "Local SDK used for the offline packet check; not a live-board SDK capture."
+  },
+  "packet_test": "packet_check.json",
+  "notes": [
+    "Timeline input times are illustrative, not measured latency.",
+    "Normal playback uses per-ID WritePos with status replies, not broadcast SyncWrite.",
+    "Startup row summarizes checks and arm; shutdown row summarizes writes and readback.",
+    "Packet example verified with local scservo_sdk and memory transport; no device opened.",
+    "No CPU percentage, physical arrival time, mechanical degree-of-freedom claim."
+  ]
+}

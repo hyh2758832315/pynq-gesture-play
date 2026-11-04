@@ -1,0 +1,950 @@
+
+*** Running vivado
+    with args -log c6v_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_wrapper.tcl
+
+
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 24-nov-2026.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 22:10:43 2026
+# Process ID         : 139084
+# Current directory  : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23
+# Command line       : vivado.exe -log c6v_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source c6v_wrapper.tcl
+# Log file           : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/c6v_wrapper.vds
+# Journal file       : E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23\vivado.jou
+# Running On         : DESKTOP-JBJOBKD
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33599 MB
+# Swap memory        : 51539 MB
+# Total Virtual      : 85138 MB
+# Available Virtual  : 34989 MB
+#-----------------------------------------------------------
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Oct 30 22:10:43 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source c6v_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.ipdefs/rgb2dvi_v1_2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2026.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.cache/ip 
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/sources_1/bd/c6v/c6v.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ c6v_build_id_constant_0
+c6v_overlap_release_constant_0
+c6v_irq_concat_0
+c6v_skin_reset_and_0
+c6v_volume_zero_0
+add_files: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 824.008 ; gain = 216.777
+Command: synth_design -top c6v_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Synthesis license expires in 25 day(s)
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 147040
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1624.715 ; gain = 575.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'c6v_wrapper' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/hdl/c6v_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [D:/Xilinx/Vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:87508]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [D:/Xilinx/Vivado/2026.1/Vivado/scripts/rt/data/unisim_comp.v:87508]
+INFO: [Synth 8-6157] synthesizing module 'c6v' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:13]
+INFO: [Synth 8-6157] synthesizing module 'c6v_asset_generation_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_asset_generation_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_asset_generation_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_asset_generation_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_asset_packet_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_asset_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_asset_packet_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_asset_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_asset_state_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_asset_state_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_asset_state_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_asset_state_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_axi_dma_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_axi_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_axi_dma_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_axi_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'c6v_axi_dma_0' is unconnected for instance 'axi_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1282]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'c6v_axi_dma_0' is unconnected for instance 'axi_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1282]
+WARNING: [Synth 8-7023] instance 'axi_dma' of module 'c6v_axi_dma_0' has 40 connections declared, but only 38 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1282]
+INFO: [Synth 8-6157] synthesizing module 'c6v_build_id_constant_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_build_id_constant_0/synth/c6v_build_id_constant_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_11_xlconstant' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ipshared/ff42/hdl/xlconstant_v1_1_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_11_xlconstant' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ipshared/ff42/hdl/xlconstant_v1_1_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_build_id_constant_0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_build_id_constant_0/synth/c6v_build_id_constant_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'c6v_build_id_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_build_id_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_build_id_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_build_id_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_button_sync_0_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_button_sync_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_button_sync_0_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_button_sync_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_camera_hp1_smc_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_camera_hp1_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_camera_hp1_smc_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_camera_hp1_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_camera_iic_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_camera_iic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_camera_iic_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_camera_iic_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'iic2intc_irpt' of module 'c6v_camera_iic_0' is unconnected for instance 'camera_iic' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1389]
+WARNING: [Synth 8-7071] port 'gpo' of module 'c6v_camera_iic_0' is unconnected for instance 'camera_iic' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1389]
+WARNING: [Synth 8-7023] instance 'camera_iic' of module 'c6v_camera_iic_0' has 27 connections declared, but only 25 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1389]
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_control_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_control_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_control_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_control_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_lifecycle_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_lifecycle_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_lifecycle_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_lifecycle_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'source_quiescent' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'budget_fault' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'boundary_fault' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'admitted_frames' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'admitted_pixels' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'closed_pixel_count' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'grant_frame_id' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'grant_slot' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7071] port 'barrier_complete' of module 'c6v_capture_lifecycle_0' is unconnected for instance 'capture_lifecycle' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+WARNING: [Synth 8-7023] instance 'capture_lifecycle' of module 'c6v_capture_lifecycle_0' has 55 connections declared, but only 46 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1458]
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_source_fault_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_source_fault_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_source_fault_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_source_fault_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'capture_aresetn' of module 'c6v_capture_source_fault_0' is unconnected for instance 'capture_source_fault' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1505]
+WARNING: [Synth 8-7071] port 'source_fault' of module 'c6v_capture_source_fault_0' is unconnected for instance 'capture_source_fault' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1505]
+WARNING: [Synth 8-7023] instance 'capture_source_fault' of module 'c6v_capture_source_fault_0' has 8 connections declared, but only 6 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1505]
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_status_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_status_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_status_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_status_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_status_inputs_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_status_inputs_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_status_inputs_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_status_inputs_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fault_causes' of module 'c6v_capture_status_inputs_0' is unconnected for instance 'capture_status_inputs' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1537]
+WARNING: [Synth 8-7023] instance 'capture_status_inputs' of module 'c6v_capture_status_inputs_0' has 5 connections declared, but only 4 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1537]
+INFO: [Synth 8-6157] synthesizing module 'c6v_capture_write_pair_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_write_pair_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_capture_write_pair_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_capture_write_pair_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'rgb_writes_drained' of module 'c6v_capture_write_pair_0' is unconnected for instance 'capture_write_pair' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1542]
+WARNING: [Synth 8-7071] port 'packet_writes_drained' of module 'c6v_capture_write_pair_0' is unconnected for instance 'capture_write_pair' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1542]
+WARNING: [Synth 8-7071] port 'status_writes_drained' of module 'c6v_capture_write_pair_0' is unconnected for instance 'capture_write_pair' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1542]
+WARNING: [Synth 8-7023] instance 'capture_write_pair' of module 'c6v_capture_write_pair_0' has 66 connections declared, but only 63 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1542]
+INFO: [Synth 8-6157] synthesizing module 'c6v_command_read_address_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_command_read_address_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_command_read_address_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_command_read_address_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_command_read_data_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_command_read_data_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_command_read_data_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_command_read_data_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_command_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_command_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_command_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_command_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_core_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_core_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_core_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_core_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'overlap_status' of module 'c6v_core_0' is unconnected for instance 'core' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1671]
+WARNING: [Synth 8-7023] instance 'core' of module 'c6v_core_0' has 53 connections declared, but only 52 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1671]
+INFO: [Synth 8-6157] synthesizing module 'c6v_demosaic_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_demosaic_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_demosaic_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_demosaic_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'c6v_demosaic_0' is unconnected for instance 'demosaic' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1724]
+WARNING: [Synth 8-7071] port 'm_axis_video_TSTRB' of module 'c6v_demosaic_0' is unconnected for instance 'demosaic' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1724]
+WARNING: [Synth 8-7071] port 'm_axis_video_TID' of module 'c6v_demosaic_0' is unconnected for instance 'demosaic' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1724]
+WARNING: [Synth 8-7071] port 'm_axis_video_TDEST' of module 'c6v_demosaic_0' is unconnected for instance 'demosaic' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1724]
+WARNING: [Synth 8-7023] instance 'demosaic' of module 'c6v_demosaic_0' has 38 connections declared, but only 34 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1724]
+INFO: [Synth 8-6157] synthesizing module 'c6v_dual_mask_capture_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_dual_mask_capture_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_dual_mask_capture_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_dual_mask_capture_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_error_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_error_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_error_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_error_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_frame_dma_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_frame_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_frame_dma_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_frame_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'c6v_frame_dma_0' is unconnected for instance 'frame_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1810]
+WARNING: [Synth 8-7023] instance 'frame_dma' of module 'c6v_frame_dma_0' has 45 connections declared, but only 44 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1810]
+INFO: [Synth 8-6157] synthesizing module 'c6v_framebuffer_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_framebuffer_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_framebuffer_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_framebuffer_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_gp0_smc_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_gp0_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_gp0_smc_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_gp0_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M00_AXI_wstrb' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M05_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M05_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M06_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M06_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M07_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M07_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M08_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M08_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M09_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M09_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M10_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M10_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M11_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M11_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M12_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M12_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M13_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M13_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M14_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M14_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M15_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M15_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M16_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M16_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M17_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M17_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M18_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M18_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M19_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M19_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M20_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M20_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M21_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M21_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M22_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M22_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M23_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M23_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M24_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M24_AXI_wstrb' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M24_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M25_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M25_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M26_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M26_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M27_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M27_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M28_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M28_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_awaddr' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_awprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_awvalid' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_wdata' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_wstrb' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_wvalid' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_bready' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_araddr' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_arprot' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_arvalid' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7071] port 'M30_AXI_rready' of module 'c6v_gp0_smc_0' is unconnected for instance 'gp0_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+WARNING: [Synth 8-7023] instance 'gp0_smc' of module 'c6v_gp0_smc_0' has 651 connections declared, but only 580 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:1876]
+INFO: [Synth 8-6157] synthesizing module 'c6v_hp0_smc_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_hp0_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_hp0_smc_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_hp0_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_hp2_smc_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_hp2_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_hp2_smc_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_hp2_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_input_osd_0_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_input_osd_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_input_osd_0_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_input_osd_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_irq_concat_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_irq_concat_0/synth/c6v_irq_concat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ipshared/9c1a/hdl/xlconcat_v2_1_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ipshared/9c1a/hdl/xlconcat_v2_1_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_irq_concat_0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_irq_concat_0/synth/c6v_irq_concat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'c6v_moments_dma_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_moments_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_moments_dma_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_moments_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'c6v_moments_dma_0' is unconnected for instance 'moments_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2568]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'c6v_moments_dma_0' is unconnected for instance 'moments_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2568]
+WARNING: [Synth 8-7023] instance 'moments_dma' of module 'c6v_moments_dma_0' has 73 connections declared, but only 71 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2568]
+INFO: [Synth 8-6157] synthesizing module 'c6v_moments_reset_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_moments_reset_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_moments_reset_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_moments_reset_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_overlap_release_constant_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_overlap_release_constant_0/synth/c6v_overlap_release_constant_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_11_xlconstant__parameterized0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ipshared/ff42/hdl/xlconstant_v1_1_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_11_xlconstant__parameterized0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ipshared/ff42/hdl/xlconstant_v1_1_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_overlap_release_constant_0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_overlap_release_constant_0/synth/c6v_overlap_release_constant_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'c6v_packet_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_packet_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_packet_stream_width_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_packet_stream_width_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_packet_stream_width_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_packet_stream_width_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_palette_generation_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_palette_generation_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_palette_generation_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_palette_generation_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_palette_packet_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_palette_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_palette_packet_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_palette_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_palette_state_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_palette_state_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_palette_state_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_palette_state_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_pixel_clock_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_pixel_clock_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_pixel_clock_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_pixel_clock_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_present_completion_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_present_completion_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_present_completion_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_present_completion_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_ps7_0_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_ps7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_ps7_0_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_ps7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_AWREADY' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BVALID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WREADY' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BRESP' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_BID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_RACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_WACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARREADY' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RLAST' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RVALID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RRESP' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_BID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RDATA' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_RACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_WACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARREADY' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RLAST' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RVALID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RRESP' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_BID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RDATA' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_RACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_WACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_BID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_RID' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_RCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_WCOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_RACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_WACOUNT' of module 'c6v_ps7_0_0' is unconnected for instance 'ps7_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+WARNING: [Synth 8-7023] instance 'ps7_0' of module 'c6v_ps7_0_0' has 253 connections declared, but only 213 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:2790]
+INFO: [Synth 8-6157] synthesizing module 'c6v_render_completion_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_completion_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_render_completion_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_completion_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_render_cycles_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_cycles_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_render_cycles_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_cycles_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_render_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_render_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_render_trace_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_trace_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_render_trace_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_render_trace_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_return_control_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_control_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_return_control_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_control_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_return_dma_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_dma_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_return_dma_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_dma_0_stub.v:6]
+WARNING: [Synth 8-7071] port 's2mm_prmry_reset_out_n' of module 'c6v_return_dma_0' is unconnected for instance 'return_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3113]
+WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'c6v_return_dma_0' is unconnected for instance 'return_dma' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3113]
+WARNING: [Synth 8-7023] instance 'return_dma' of module 'c6v_return_dma_0' has 43 connections declared, but only 41 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3113]
+INFO: [Synth 8-6157] synthesizing module 'c6v_return_source_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_source_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_return_source_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_source_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_return_start_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_start_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_return_start_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_start_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_return_state_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_state_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_return_state_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_state_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_return_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_return_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_return_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_rgb2dvi_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_rgb2dvi_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_router_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_router_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_router_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_router_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_rst_fclk0_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_rst_fclk0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_rst_fclk0_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_rst_fclk0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'c6v_rst_fclk0_0' is unconnected for instance 'rst_fclk0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3268]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'c6v_rst_fclk0_0' is unconnected for instance 'rst_fclk0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3268]
+WARNING: [Synth 8-7023] instance 'rst_fclk0' of module 'c6v_rst_fclk0_0' has 10 connections declared, but only 8 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3268]
+INFO: [Synth 8-6157] synthesizing module 'c6v_rst_pixel_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_rst_pixel_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_rst_pixel_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_rst_pixel_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'c6v_rst_pixel_0' is unconnected for instance 'rst_pixel' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3277]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'c6v_rst_pixel_0' is unconnected for instance 'rst_pixel' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3277]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'c6v_rst_pixel_0' is unconnected for instance 'rst_pixel' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3277]
+WARNING: [Synth 8-7023] instance 'rst_pixel' of module 'c6v_rst_pixel_0' has 10 connections declared, but only 7 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3277]
+INFO: [Synth 8-6157] synthesizing module 'c6v_skin_hp3_smc_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_skin_hp3_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_skin_hp3_smc_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_skin_hp3_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_skin_reset_and_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_skin_reset_and_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_skin_reset_and_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_skin_reset_and_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_tilemap_generation_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_tilemap_generation_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_tilemap_generation_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_tilemap_generation_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_tilemap_packet_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_tilemap_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_tilemap_packet_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_tilemap_packet_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_tilemap_state_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_tilemap_state_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_tilemap_state_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_tilemap_state_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_upload_status_gpio_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_upload_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_upload_status_gpio_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_upload_status_gpio_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_video_in_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_video_in_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_video_in_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_video_in_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'fid' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7071] port 'vtd_active_video' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7071] port 'vtd_vblank' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7071] port 'vtd_hblank' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7071] port 'vtd_vsync' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7071] port 'vtd_hsync' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7071] port 'vtd_field_id' of module 'c6v_video_in_0' is unconnected for instance 'video_in' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+WARNING: [Synth 8-7023] instance 'video_in' of module 'c6v_video_in_0' has 28 connections declared, but only 21 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3463]
+INFO: [Synth 8-6157] synthesizing module 'c6v_vision_control_smc_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_vision_control_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_vision_control_smc_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_vision_control_smc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M02_AXI_wstrb' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M03_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M03_AXI_wstrb' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M03_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M04_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M04_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M06_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M06_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M07_AXI_awprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7071] port 'M07_AXI_arprot' of module 'c6v_vision_control_smc_0' is unconnected for instance 'vision_control_smc' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+WARNING: [Synth 8-7023] instance 'vision_control_smc' of module 'c6v_vision_control_smc_0' has 195 connections declared, but only 179 given [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:3485]
+INFO: [Synth 8-6157] synthesizing module 'c6v_vision_gp0_slice_0' [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_vision_gp0_slice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_vision_gp0_slice_0' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/Vivado-139084-DESKTOP-JBJOBKD/realtime/c6v_vision_gp0_slice_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'c6v_volume_zero_0' [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_volume_zero_0/synth/c6v_volume_zero_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_volume_zero_0' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_volume_zero_0/synth/c6v_volume_zero_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'c6v' (0#1) [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/synth/c6v.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'c6v_wrapper' (0#1) [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/hdl/c6v_wrapper.v:13]
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In104[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In105[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In106[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In107[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In108[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In109[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In110[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In111[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In112[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In113[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In114[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In115[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In116[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In117[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In118[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In119[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In120[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In121[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In122[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In123[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In124[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In125[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In126[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In127[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1781.160 ; gain = 731.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1781.160 ; gain = 731.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1781.160 ; gain = 731.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1781.160 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_ps7_0_0/c6v_ps7_0_0/c6v_ps7_0_0_in_context.xdc] for cell 'c6v_i/ps7_0'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_ps7_0_0/c6v_ps7_0_0/c6v_ps7_0_0_in_context.xdc] for cell 'c6v_i/ps7_0'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_gp0_smc_0/c6v_gp0_smc_0/c6v_gp0_smc_0_in_context.xdc] for cell 'c6v_i/gp0_smc'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_gp0_smc_0/c6v_gp0_smc_0/c6v_gp0_smc_0_in_context.xdc] for cell 'c6v_i/gp0_smc'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_hp0_smc_0/c6v_hp0_smc_0/c6v_hp0_smc_0_in_context.xdc] for cell 'c6v_i/hp0_smc'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_hp0_smc_0/c6v_hp0_smc_0/c6v_hp0_smc_0_in_context.xdc] for cell 'c6v_i/hp0_smc'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_axi_dma_0/c6v_axi_dma_0/c6v_axi_dma_0_in_context.xdc] for cell 'c6v_i/axi_dma'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_axi_dma_0/c6v_axi_dma_0/c6v_axi_dma_0_in_context.xdc] for cell 'c6v_i/axi_dma'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_hp2_smc_0/c6v_hp2_smc_0/c6v_hp2_smc_0_in_context.xdc] for cell 'c6v_i/hp2_smc'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_hp2_smc_0/c6v_hp2_smc_0/c6v_hp2_smc_0_in_context.xdc] for cell 'c6v_i/hp2_smc'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_dma_0/c6v_return_dma_0/c6v_return_dma_0_in_context.xdc] for cell 'c6v_i/return_dma'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_dma_0/c6v_return_dma_0/c6v_return_dma_0_in_context.xdc] for cell 'c6v_i/return_dma'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_build_id_gpio_0/c6v_build_id_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/build_id_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_build_id_gpio_0/c6v_build_id_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/build_id_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_upload_status_gpio_0/c6v_upload_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/upload_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_upload_status_gpio_0/c6v_upload_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/upload_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_packet_status_gpio_0/c6v_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/packet_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_packet_status_gpio_0/c6v_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/packet_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_command_status_gpio_0/c6v_command_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/command_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_command_status_gpio_0/c6v_command_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/command_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_error_status_gpio_0/c6v_error_status_gpio_0/c6v_error_status_gpio_0_in_context.xdc] for cell 'c6v_i/error_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_error_status_gpio_0/c6v_error_status_gpio_0/c6v_error_status_gpio_0_in_context.xdc] for cell 'c6v_i/error_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_command_read_address_gpio_0/c6v_command_read_address_gpio_0/c6v_command_read_address_gpio_0_in_context.xdc] for cell 'c6v_i/command_read_address_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_command_read_address_gpio_0/c6v_command_read_address_gpio_0/c6v_command_read_address_gpio_0_in_context.xdc] for cell 'c6v_i/command_read_address_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_command_read_data_gpio_0/c6v_command_read_data_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/command_read_data_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_command_read_data_gpio_0/c6v_command_read_data_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/command_read_data_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_completion_gpio_0/c6v_render_completion_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/render_completion_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_completion_gpio_0/c6v_render_completion_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/render_completion_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_trace_gpio_0/c6v_render_trace_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/render_trace_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_trace_gpio_0/c6v_render_trace_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/render_trace_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_cycles_gpio_0/c6v_render_cycles_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/render_cycles_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_cycles_gpio_0/c6v_render_cycles_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/render_cycles_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_status_gpio_0/c6v_render_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/render_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_render_status_gpio_0/c6v_render_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/render_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_present_completion_gpio_0/c6v_present_completion_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/present_completion_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_present_completion_gpio_0/c6v_present_completion_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/present_completion_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_framebuffer_status_gpio_0/c6v_framebuffer_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/framebuffer_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_framebuffer_status_gpio_0/c6v_framebuffer_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/framebuffer_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_router_status_gpio_0/c6v_router_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/router_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_router_status_gpio_0/c6v_router_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/router_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_palette_packet_status_gpio_0/c6v_palette_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/palette_packet_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_palette_packet_status_gpio_0/c6v_palette_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/palette_packet_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_palette_generation_status_gpio_0/c6v_palette_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0_in_context.xdc] for cell 'c6v_i/palette_generation_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_palette_generation_status_gpio_0/c6v_palette_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0_in_context.xdc] for cell 'c6v_i/palette_generation_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_palette_state_status_gpio_0/c6v_palette_state_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/palette_state_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_palette_state_status_gpio_0/c6v_palette_state_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/palette_state_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_asset_packet_status_gpio_0/c6v_asset_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/asset_packet_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_asset_packet_status_gpio_0/c6v_asset_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/asset_packet_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_asset_generation_status_gpio_0/c6v_asset_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0_in_context.xdc] for cell 'c6v_i/asset_generation_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_asset_generation_status_gpio_0/c6v_asset_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0_in_context.xdc] for cell 'c6v_i/asset_generation_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_asset_state_status_gpio_0/c6v_asset_state_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/asset_state_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_asset_state_status_gpio_0/c6v_asset_state_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/asset_state_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_tilemap_packet_status_gpio_0/c6v_tilemap_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/tilemap_packet_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_tilemap_packet_status_gpio_0/c6v_tilemap_packet_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/tilemap_packet_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_tilemap_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0_in_context.xdc] for cell 'c6v_i/tilemap_generation_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_tilemap_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0/c6v_tilemap_generation_status_gpio_0_in_context.xdc] for cell 'c6v_i/tilemap_generation_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_tilemap_state_status_gpio_0/c6v_tilemap_state_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/tilemap_state_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_tilemap_state_status_gpio_0/c6v_tilemap_state_status_gpio_0/c6v_build_id_gpio_0_in_context.xdc] for cell 'c6v_i/tilemap_state_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_control_gpio_0/c6v_return_control_gpio_0/c6v_return_control_gpio_0_in_context.xdc] for cell 'c6v_i/return_control_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_control_gpio_0/c6v_return_control_gpio_0/c6v_return_control_gpio_0_in_context.xdc] for cell 'c6v_i/return_control_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_start_gpio_0/c6v_return_start_gpio_0/c6v_return_start_gpio_0_in_context.xdc] for cell 'c6v_i/return_start_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_start_gpio_0/c6v_return_start_gpio_0/c6v_return_start_gpio_0_in_context.xdc] for cell 'c6v_i/return_start_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_status_gpio_0/c6v_return_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/return_status_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_status_gpio_0/c6v_return_status_gpio_0/c6v_packet_status_gpio_0_in_context.xdc] for cell 'c6v_i/return_status_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_state_gpio_0/c6v_return_state_gpio_0/c6v_return_state_gpio_0_in_context.xdc] for cell 'c6v_i/return_state_gpio'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_state_gpio_0/c6v_return_state_gpio_0/c6v_return_state_gpio_0_in_context.xdc] for cell 'c6v_i/return_state_gpio'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_core_0/c6v_core_0/c6v_core_0_in_context.xdc] for cell 'c6v_i/core'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_core_0/c6v_core_0/c6v_core_0_in_context.xdc] for cell 'c6v_i/core'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_rst_fclk0_0/c6v_rst_fclk0_0/c6v_rst_fclk0_0_in_context.xdc] for cell 'c6v_i/rst_fclk0'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_rst_fclk0_0/c6v_rst_fclk0_0/c6v_rst_fclk0_0_in_context.xdc] for cell 'c6v_i/rst_fclk0'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_pixel_clock_0/c6v_pixel_clock_0/c6v_pixel_clock_0_in_context.xdc] for cell 'c6v_i/pixel_clock'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_pixel_clock_0/c6v_pixel_clock_0/c6v_pixel_clock_0_in_context.xdc] for cell 'c6v_i/pixel_clock'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_rst_pixel_0/c6v_rst_pixel_0/c6v_rst_pixel_0_in_context.xdc] for cell 'c6v_i/rst_pixel'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_rst_pixel_0/c6v_rst_pixel_0/c6v_rst_pixel_0_in_context.xdc] for cell 'c6v_i/rst_pixel'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_rgb2dvi_0/c6v_rgb2dvi_0/c6v_rgb2dvi_0_in_context.xdc] for cell 'c6v_i/rgb2dvi'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_rgb2dvi_0/c6v_rgb2dvi_0/c6v_rgb2dvi_0_in_context.xdc] for cell 'c6v_i/rgb2dvi'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_source_0/c6v_return_source_0/c6v_return_source_0_in_context.xdc] for cell 'c6v_i/return_source'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_return_source_0/c6v_return_source_0/c6v_return_source_0_in_context.xdc] for cell 'c6v_i/return_source'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_vision_gp0_slice_0/c6v_vision_gp0_slice_0/c6v_vision_gp0_slice_0_in_context.xdc] for cell 'c6v_i/vision_gp0_slice'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_vision_gp0_slice_0/c6v_vision_gp0_slice_0/c6v_vision_gp0_slice_0_in_context.xdc] for cell 'c6v_i/vision_gp0_slice'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_vision_control_smc_0/c6v_vision_control_smc_0/c6v_vision_control_smc_0_in_context.xdc] for cell 'c6v_i/vision_control_smc'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_vision_control_smc_0/c6v_vision_control_smc_0/c6v_vision_control_smc_0_in_context.xdc] for cell 'c6v_i/vision_control_smc'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_camera_hp1_smc_0/c6v_camera_hp1_smc_0/c6v_camera_hp1_smc_0_in_context.xdc] for cell 'c6v_i/camera_hp1_smc'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_camera_hp1_smc_0/c6v_camera_hp1_smc_0/c6v_camera_hp1_smc_0_in_context.xdc] for cell 'c6v_i/camera_hp1_smc'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_skin_hp3_smc_0/c6v_skin_hp3_smc_0/c6v_skin_hp3_smc_0_in_context.xdc] for cell 'c6v_i/skin_hp3_smc'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_skin_hp3_smc_0/c6v_skin_hp3_smc_0/c6v_skin_hp3_smc_0_in_context.xdc] for cell 'c6v_i/skin_hp3_smc'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_camera_iic_0/c6v_camera_iic_0/c6v_camera_iic_0_in_context.xdc] for cell 'c6v_i/camera_iic'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_camera_iic_0/c6v_camera_iic_0/c6v_camera_iic_0_in_context.xdc] for cell 'c6v_i/camera_iic'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_video_in_0/c6v_video_in_0/c6v_video_in_0_in_context.xdc] for cell 'c6v_i/video_in'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_video_in_0/c6v_video_in_0/c6v_video_in_0_in_context.xdc] for cell 'c6v_i/video_in'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_demosaic_0/c6v_demosaic_0/c6v_demosaic_0_in_context.xdc] for cell 'c6v_i/demosaic'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_demosaic_0/c6v_demosaic_0/c6v_demosaic_0_in_context.xdc] for cell 'c6v_i/demosaic'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_frame_dma_0/c6v_frame_dma_0/c6v_frame_dma_0_in_context.xdc] for cell 'c6v_i/frame_dma'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_frame_dma_0/c6v_frame_dma_0/c6v_frame_dma_0_in_context.xdc] for cell 'c6v_i/frame_dma'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_moments_dma_0/c6v_moments_dma_0/c6v_moments_dma_0_in_context.xdc] for cell 'c6v_i/moments_dma'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_moments_dma_0/c6v_moments_dma_0/c6v_moments_dma_0_in_context.xdc] for cell 'c6v_i/moments_dma'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_moments_reset_0/c6v_moments_reset_0/c6v_return_start_gpio_0_in_context.xdc] for cell 'c6v_i/moments_reset'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_moments_reset_0/c6v_moments_reset_0/c6v_return_start_gpio_0_in_context.xdc] for cell 'c6v_i/moments_reset'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_skin_reset_and_0/c6v_skin_reset_and_0/c6v_skin_reset_and_0_in_context.xdc] for cell 'c6v_i/skin_reset_and'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_skin_reset_and_0/c6v_skin_reset_and_0/c6v_skin_reset_and_0_in_context.xdc] for cell 'c6v_i/skin_reset_and'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_input_osd_0_0/c6v_input_osd_0_0/c6v_input_osd_0_0_in_context.xdc] for cell 'c6v_i/input_osd_0'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_input_osd_0_0/c6v_input_osd_0_0/c6v_input_osd_0_0_in_context.xdc] for cell 'c6v_i/input_osd_0'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_dual_mask_capture_0/c6v_dual_mask_capture_0/c6v_dual_mask_capture_0_in_context.xdc] for cell 'c6v_i/dual_mask_capture'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_dual_mask_capture_0/c6v_dual_mask_capture_0/c6v_dual_mask_capture_0_in_context.xdc] for cell 'c6v_i/dual_mask_capture'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_control_0/c6v_capture_control_0/c6v_capture_control_0_in_context.xdc] for cell 'c6v_i/capture_control'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_control_0/c6v_capture_control_0/c6v_capture_control_0_in_context.xdc] for cell 'c6v_i/capture_control'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_lifecycle_0/c6v_capture_lifecycle_0/c6v_capture_lifecycle_0_in_context.xdc] for cell 'c6v_i/capture_lifecycle'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_lifecycle_0/c6v_capture_lifecycle_0/c6v_capture_lifecycle_0_in_context.xdc] for cell 'c6v_i/capture_lifecycle'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_write_pair_0/c6v_capture_write_pair_0/c6v_capture_write_pair_0_in_context.xdc] for cell 'c6v_i/capture_write_pair'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_write_pair_0/c6v_capture_write_pair_0/c6v_capture_write_pair_0_in_context.xdc] for cell 'c6v_i/capture_write_pair'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_status_0/c6v_capture_status_0/c6v_capture_status_0_in_context.xdc] for cell 'c6v_i/capture_status'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_status_0/c6v_capture_status_0/c6v_capture_status_0_in_context.xdc] for cell 'c6v_i/capture_status'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_source_fault_0/c6v_capture_source_fault_0/c6v_capture_source_fault_0_in_context.xdc] for cell 'c6v_i/capture_source_fault'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_source_fault_0/c6v_capture_source_fault_0/c6v_capture_source_fault_0_in_context.xdc] for cell 'c6v_i/capture_source_fault'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_status_inputs_0/c6v_capture_status_inputs_0/c6v_capture_status_inputs_0_in_context.xdc] for cell 'c6v_i/capture_status_inputs'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_capture_status_inputs_0/c6v_capture_status_inputs_0/c6v_capture_status_inputs_0_in_context.xdc] for cell 'c6v_i/capture_status_inputs'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_packet_stream_width_0/c6v_packet_stream_width_0/c6v_packet_stream_width_0_in_context.xdc] for cell 'c6v_i/packet_stream_width'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_packet_stream_width_0/c6v_packet_stream_width_0/c6v_packet_stream_width_0_in_context.xdc] for cell 'c6v_i/packet_stream_width'
+Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_button_sync_0_0/c6v_button_sync_0_0/c6v_button_sync_0_0_in_context.xdc] for cell 'c6v_i/button_sync_0'
+Finished Parsing XDC File [e:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.gen/sources_1/bd/c6v/ip/c6v_button_sync_0_0/c6v_button_sync_0_0/c6v_button_sync_0_0_in_context.xdc] for cell 'c6v_i/button_sync_0'
+Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/c3_hdmi_out.xdc]
+Finished Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/c3_hdmi_out.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/c3_hdmi_out.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/c6v_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/c6v_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/camera_direct_plug_corrected.xdc]
+Finished Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/camera_direct_plug_corrected.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/camera_direct_plug_corrected.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/c6v_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/c6v_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/constraints/button_only.xdc]
+WARNING: [Vivado 12-507] No nets matched 'vid_pclk_IBUF'. [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/constraints/button_only.xdc:12]
+Finished Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/constraints/button_only.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/constraints/button_only.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/c6v_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.srcs/constrs_1/imports/constraints/button_only.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/c6v_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/c6v_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/dont_touch.xdc]
+Finished Parsing XDC File [E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1804.250 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1804.316 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '13.468' specified during out-of-context synthesis of instance 'c6v_i/video_in' at clock pin 'vid_io_in_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.324 ; gain = 755.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.324 ; gain = 755.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1804.324 ; gain = 755.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1804.324 ; gain = 755.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1804.324 ; gain = 755.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1978.062 ; gain = 928.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1982.102 ; gain = 932.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1994.234 ; gain = 945.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------------------+----------+
+|      |BlackBox name                        |Instances |
++------+-------------------------------------+----------+
+|1     |c6v_asset_generation_status_gpio_0   |         1|
+|2     |c6v_asset_packet_status_gpio_0       |         1|
+|3     |c6v_asset_state_status_gpio_0        |         1|
+|4     |c6v_axi_dma_0                        |         1|
+|5     |c6v_build_id_gpio_0                  |         1|
+|6     |c6v_button_sync_0_0                  |         1|
+|7     |c6v_camera_hp1_smc_0                 |         1|
+|8     |c6v_camera_iic_0                     |         1|
+|9     |c6v_capture_control_0                |         1|
+|10    |c6v_capture_lifecycle_0              |         1|
+|11    |c6v_capture_source_fault_0           |         1|
+|12    |c6v_capture_status_0                 |         1|
+|13    |c6v_capture_status_inputs_0          |         1|
+|14    |c6v_capture_write_pair_0             |         1|
+|15    |c6v_command_read_address_gpio_0      |         1|
+|16    |c6v_command_read_data_gpio_0         |         1|
+|17    |c6v_command_status_gpio_0            |         1|
+|18    |c6v_core_0                           |         1|
+|19    |c6v_demosaic_0                       |         1|
+|20    |c6v_dual_mask_capture_0              |         1|
+|21    |c6v_error_status_gpio_0              |         1|
+|22    |c6v_frame_dma_0                      |         1|
+|23    |c6v_framebuffer_status_gpio_0        |         1|
+|24    |c6v_gp0_smc_0                        |         1|
+|25    |c6v_hp0_smc_0                        |         1|
+|26    |c6v_hp2_smc_0                        |         1|
+|27    |c6v_input_osd_0_0                    |         1|
+|28    |c6v_moments_dma_0                    |         1|
+|29    |c6v_moments_reset_0                  |         1|
+|30    |c6v_packet_status_gpio_0             |         1|
+|31    |c6v_packet_stream_width_0            |         1|
+|32    |c6v_palette_generation_status_gpio_0 |         1|
+|33    |c6v_palette_packet_status_gpio_0     |         1|
+|34    |c6v_palette_state_status_gpio_0      |         1|
+|35    |c6v_pixel_clock_0                    |         1|
+|36    |c6v_present_completion_gpio_0        |         1|
+|37    |c6v_ps7_0_0                          |         1|
+|38    |c6v_render_completion_gpio_0         |         1|
+|39    |c6v_render_cycles_gpio_0             |         1|
+|40    |c6v_render_status_gpio_0             |         1|
+|41    |c6v_render_trace_gpio_0              |         1|
+|42    |c6v_return_control_gpio_0            |         1|
+|43    |c6v_return_dma_0                     |         1|
+|44    |c6v_return_source_0                  |         1|
+|45    |c6v_return_start_gpio_0              |         1|
+|46    |c6v_return_state_gpio_0              |         1|
+|47    |c6v_return_status_gpio_0             |         1|
+|48    |c6v_rgb2dvi_0                        |         1|
+|49    |c6v_router_status_gpio_0             |         1|
+|50    |c6v_rst_fclk0_0                      |         1|
+|51    |c6v_rst_pixel_0                      |         1|
+|52    |c6v_skin_hp3_smc_0                   |         1|
+|53    |c6v_skin_reset_and_0                 |         1|
+|54    |c6v_tilemap_generation_status_gpio_0 |         1|
+|55    |c6v_tilemap_packet_status_gpio_0     |         1|
+|56    |c6v_tilemap_state_status_gpio_0      |         1|
+|57    |c6v_upload_status_gpio_0             |         1|
+|58    |c6v_video_in_0                       |         1|
+|59    |c6v_vision_control_smc_0             |         1|
+|60    |c6v_vision_gp0_slice_0               |         1|
++------+-------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |c6v_asset_generation_status_gpio   |     1|
+|2     |c6v_asset_packet_status_gpio       |     1|
+|3     |c6v_asset_state_status_gpio        |     1|
+|4     |c6v_axi_dma                        |     1|
+|5     |c6v_build_id_gpio                  |     1|
+|6     |c6v_button_sync_0                  |     1|
+|7     |c6v_camera_hp1_smc                 |     1|
+|8     |c6v_camera_iic                     |     1|
+|9     |c6v_capture_control                |     1|
+|10    |c6v_capture_lifecycle              |     1|
+|11    |c6v_capture_source_fault           |     1|
+|12    |c6v_capture_status                 |     1|
+|13    |c6v_capture_status_inputs          |     1|
+|14    |c6v_capture_write_pair             |     1|
+|15    |c6v_command_read_address_gpio      |     1|
+|16    |c6v_command_read_data_gpio         |     1|
+|17    |c6v_command_status_gpio            |     1|
+|18    |c6v_core                           |     1|
+|19    |c6v_demosaic                       |     1|
+|20    |c6v_dual_mask_capture              |     1|
+|21    |c6v_error_status_gpio              |     1|
+|22    |c6v_frame_dma                      |     1|
+|23    |c6v_framebuffer_status_gpio        |     1|
+|24    |c6v_gp0_smc                        |     1|
+|25    |c6v_hp0_smc                        |     1|
+|26    |c6v_hp2_smc                        |     1|
+|27    |c6v_input_osd_0                    |     1|
+|28    |c6v_moments_dma                    |     1|
+|29    |c6v_moments_reset                  |     1|
+|30    |c6v_packet_status_gpio             |     1|
+|31    |c6v_packet_stream_width            |     1|
+|32    |c6v_palette_generation_status_gpio |     1|
+|33    |c6v_palette_packet_status_gpio     |     1|
+|34    |c6v_palette_state_status_gpio      |     1|
+|35    |c6v_pixel_clock                    |     1|
+|36    |c6v_present_completion_gpio        |     1|
+|37    |c6v_ps7_0                          |     1|
+|38    |c6v_render_completion_gpio         |     1|
+|39    |c6v_render_cycles_gpio             |     1|
+|40    |c6v_render_status_gpio             |     1|
+|41    |c6v_render_trace_gpio              |     1|
+|42    |c6v_return_control_gpio            |     1|
+|43    |c6v_return_dma                     |     1|
+|44    |c6v_return_source                  |     1|
+|45    |c6v_return_start_gpio              |     1|
+|46    |c6v_return_state_gpio              |     1|
+|47    |c6v_return_status_gpio             |     1|
+|48    |c6v_rgb2dvi                        |     1|
+|49    |c6v_router_status_gpio             |     1|
+|50    |c6v_rst_fclk0                      |     1|
+|51    |c6v_rst_pixel                      |     1|
+|52    |c6v_skin_hp3_smc                   |     1|
+|53    |c6v_skin_reset_and                 |     1|
+|54    |c6v_tilemap_generation_status_gpio |     1|
+|55    |c6v_tilemap_packet_status_gpio     |     1|
+|56    |c6v_tilemap_state_status_gpio      |     1|
+|57    |c6v_upload_status_gpio             |     1|
+|58    |c6v_video_in                       |     1|
+|59    |c6v_vision_control_smc             |     1|
+|60    |c6v_vision_gp0_slice               |     1|
+|61    |IBUF                               |    13|
+|62    |IOBUF                              |     4|
+|63    |OBUF                               |     1|
++------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 2267.102 ; gain = 1194.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2267.102 ; gain = 1217.906
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2267.102 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2279.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+Synth Design complete | Checksum: a6eff322
+INFO: [Common 17-83] Releasing license: Synthesis
+165 Infos, 312 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2279.891 ; gain = 1455.883
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2279.891 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/c6v_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file c6v_wrapper_utilization_synth.rpt -pb c6v_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 22:11:47 2026...

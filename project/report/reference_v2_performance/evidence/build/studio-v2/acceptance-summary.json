@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "version": "2.0",
+  "manifest_sha256": "5f53d85d5bcdb8c871d387683cbf7b6b12c899b380b9370642c9bd2ff41e9d56",
+  "system_receipt": "E:\\projects\\fpga\\voice-view-game\\games_gesture\\.loads\\6deaf90426b441b7b3986c5302ff8904\\receipt.json",
+  "games_pc_pynq_cases": 16,
+  "gpu_creative_checks": 60,
+  "physical_protocol_checks": 18,
+  "restart_and_17_off_confirmed": true,
+  "studio_reconnect": true,
+  "normal_service": true,
+  "validation_input_removed": true,
+  "preview": false,
+  "mechanical_verified": false,
+  "limits": [
+    "This revision has protocol/SDK serial evidence; no new human posture observation.",
+    "No fresh SD-image installation or unbounded-duration reliability claim."
+  ]
+}

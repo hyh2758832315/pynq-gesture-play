@@ -1,0 +1,30 @@
+{
+  "session": "59bb29d6b6ef40cc8f5b3c6e48f178cb",
+  "producer_pid": 118892,
+  "actuator_constructed": false,
+  "child_restarted": false,
+  "command": [
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b37-hand-source-r06\\tools\\shadow_receiver.py",
+    "--session",
+    "59bb29d6b6ef40cc8f5b3c6e48f178cb",
+    "--game-run",
+    "silent-game",
+    "--peer-port",
+    "61169",
+    "--output-dir",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b40-r06-shadow-offline-silent",
+    "--seconds",
+    "5"
+  ],
+  "game_run": "silent-game",
+  "launch_pid": 134452,
+  "child_pid": 130764,
+  "child_exit": 0,
+  "error": null,
+  "feed_revoked": "shadow_finished",
+  "elapsed": 1.1071890000021085,
+  "publisher_dropped": 0
+}

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "d932b436843d64f9acfa80ec8766f2d3f7e07889af7aeac7a50b88fea0dcf2e4",
+  "command": [
+    "ssh",
+    "-b",
+    "192.168.2.1",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=8",
+    "pynq-z2",
+    "sudo -n /usr/local/share/pynq-venv/bin/python -u -B -"
+  ],
+  "started_unix": 1792851500.5948215,
+  "returncode": 0,
+  "stdout": "{\"pid\": 820, \"returncode_after_5s\": null, \"boot_id\": \"356f354c-207a-40b3-b8d8-44097140ee5d\", \"shadow_directory\": \"/home/xilinx/voice-view-game/hand-shadow-r23b2-r08-20261024/b74-shadow-live\", \"log\": \"/home/xilinx/voice-view-game/hand-shadow-r23b2-r08-20261024/b74-agent.log\", \"log_tail\": \"\"}\n",
+  "stderr": "",
+  "finished_unix": 1792851506.84837
+}

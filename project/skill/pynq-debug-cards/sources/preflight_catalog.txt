@@ -1,0 +1,64 @@
+{
+  "evidence_catalog": [
+    {
+      "id": "E01",
+      "observation": "Stage changed after synth; id52 SKIPPED duplicate/code0/elapsed0; id53 actually executed for 124.293 seconds.",
+      "rule_id": "R01"
+    },
+    {
+      "id": "E02",
+      "observation": "error_count included critical warnings; simulation Fatal was a command failure, not transport failure; running was a timed handoff.",
+      "rule_id": "R02"
+    },
+    {
+      "id": "E03",
+      "observation": "Updating global returned no plan found after the plan had been bound to a real session.",
+      "rule_id": "R03"
+    },
+    {
+      "id": "E04",
+      "observation": "list_property_values was absent; legacy -O option failed in XSim 2026.1. Independent GPIO microproject rejected unprefixed zero with IP_Flow 19-3478.",
+      "rule_id": "R04"
+    },
+    {
+      "id": "E05",
+      "observation": "filemgmt 56-591: existing include header not registered in candidate project.",
+      "rule_id": "R05"
+    },
+    {
+      "id": "E06",
+      "observation": "Generation returned up-to-date after address edit; HWH retained old address; configuration also changed after propagation.",
+      "rule_id": "R06"
+    },
+    {
+      "id": "E07",
+      "observation": "Installed PYNQ 3.1 selected XSA branch due to adjacent same-stem XSA but passed bit path to Metadata; parsing failed before download.",
+      "rule_id": "R07"
+    },
+    {
+      "id": "E08",
+      "observation": "Native HWH parser had IRQs; copy-on-read Overlay/IPMap views remained empty after nested update; r6 no-download check failed.",
+      "rule_id": "R08"
+    },
+    {
+      "id": "E09",
+      "observation": "Old startup limit was 5 seconds; same-function hardware-free spawn reached READY in 8.618630578 seconds.",
+      "rule_id": "R09"
+    },
+    {
+      "id": "E10",
+      "observation": "Runtime collision missing; tomli_w was a PC packaging dependency, not required by deployed check-only entry.",
+      "rule_id": "R10"
+    },
+    {
+      "id": "E11",
+      "observation": "Poisoned sink retained owner; recovery required exact stopped instance, completed tickets and verified DMA halt.",
+      "rule_id": "R11"
+    },
+    {
+      "id": "E12",
+      "observation": "Default launch entry differed from verified entry; r8 real HTTP frames and live GPU receipts obtained.",
+      "rule_id": "R12"
+    }
+  ]
+}

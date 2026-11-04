@@ -1,0 +1,15 @@
+{
+  "schema_version": 2, "test_id": "rps-lose", "name": "RPS - Lose", "seed": 0, "max_ticks": 958,
+  "events": [
+    {"tick": 0, "kind": "gesture", "event_id": "round-1-paper", "x": 160, "y": 90, "gesture": "paper"},
+    {"tick": 658, "kind": "gesture", "event_id": "round-3-scissors", "x": 160, "y": 90, "gesture": "scissors"}
+  ],
+  "assertions": [
+    {"tick": 209, "field": "values.outcome", "operator": "eq", "expected": "LOSE"},
+    {"tick": 628, "field": "status", "operator": "eq", "expected": "RUNNING"},
+    {"tick": 958, "field": "status", "operator": "eq", "expected": "LOST"},
+    {"tick": 958, "field": "values.human_wins", "operator": "eq", "expected": 0},
+    {"tick": 958, "field": "values.robot_wins", "operator": "eq", "expected": 3},
+    {"tick": 958, "field": "values.rounds_completed", "operator": "eq", "expected": 3}
+  ]
+}

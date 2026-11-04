@@ -1,0 +1,103 @@
+{
+  "status": "SHADOW_OBSERVED",
+  "pid": 132048,
+  "session": "48ca9ab0243c4d2cb36e13e17a252520",
+  "game_run": "shadow-verification",
+  "stop_reason": "producer_revoked",
+  "frames": 15,
+  "invalid_frames": 0,
+  "gestures": {
+    "paper": 4,
+    "fist": 6,
+    "scissors": 5
+  },
+  "events": [
+    {
+      "frame": 5,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 7,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 9,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 11,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 14,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 16,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 18,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 20,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 22,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 24,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 27,
+      "gesture": "scissors",
+      "valid": true
+    },
+    {
+      "frame": 29,
+      "gesture": "scissors",
+      "valid": true
+    },
+    {
+      "frame": 31,
+      "gesture": "scissors",
+      "valid": true
+    },
+    {
+      "frame": 33,
+      "gesture": "scissors",
+      "valid": true
+    },
+    {
+      "frame": 35,
+      "gesture": "scissors",
+      "valid": true
+    }
+  ],
+  "max_source_age_seconds": 0.06782080006087199,
+  "wall_seconds": 1.6591093000024557,
+  "freshness_budget_seconds": 1.0,
+  "max_interarrival_seconds": 0.12314300000434741,
+  "stale_packets_dropped": 0,
+  "max_stale_packet_age_seconds": 0.0,
+  "age_at_stop_seconds": 0.16918809997150674,
+  "cpu_seconds": 0.0,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

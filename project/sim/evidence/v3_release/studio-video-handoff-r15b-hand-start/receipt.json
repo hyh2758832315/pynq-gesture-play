@@ -1,0 +1,75 @@
+{
+  "schema": "studio-system-start-v1",
+  "transaction": "2d9f56174fe74290b3432866dd101f1b",
+  "result": "PASS",
+  "hand_enabled": true,
+  "steps": [
+    {
+      "name": "started",
+      "result": {
+        "root": "/home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13",
+        "boot_id": "ed0081e3-6a85-4045-ad1a-b60a474006c4",
+        "pid": 15357,
+        "start_ticks": "1290885",
+        "started": 1791967036.226498,
+        "manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+        "hand_enabled": true,
+        "command": [
+          "/usr/local/share/pynq-venv/bin/python",
+          "-B",
+          "-u",
+          "/home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/start_board_test.py",
+          "--hand-readonly-root",
+          "/home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/hand-runtime",
+          "--hand-readonly-python",
+          "/home/xilinx/pynq-usb-hand/board-20261023-r01/venv/bin/python",
+          "--hand-readonly-port",
+          "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B79030971-if00",
+          "--hand-serial-actions",
+          "--hand-stage-waits",
+          "3",
+          "3",
+          "3",
+          "--hand-approval-seconds",
+          "3"
+        ],
+        "transaction": "2d9f56174fe74290b3432866dd101f1b"
+      }
+    },
+    {
+      "name": "running",
+      "result": {
+        "boot_id": "ed0081e3-6a85-4045-ad1a-b60a474006c4",
+        "running": true,
+        "owners": [
+          {
+            "pid": 15357,
+            "command": "/usr/local/share/pynq-venv/bin/python -B -u /home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/start_board_test.py --hand-readonly-root /home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/hand-runtime --hand-readonly-python /home/xilinx/pynq-usb-hand/board-20261023-r01/venv/bin/python --hand-readonly-port /dev/serial/by-id/usb-1a86_USB_Single_Serial_5B79030971-if00 --hand-serial-actions --hand-stage-waits 3 3 3 --hand-approval-seconds 3 "
+          },
+          {
+            "pid": 16292,
+            "command": "/home/xilinx/pynq-usb-hand/board-20261023-r01/venv/bin/python -I -B /home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/hand_child/serial_motion_receiver.py --hand-root /home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/hand-runtime --session a339771fc70d4f4b819fee6dc6369c1d --game-run vision-88b60c08483ff355ace1104a --peer-port 36050 --output-dir /home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/var/vision/hand-serial-f3f05761ae164c3a8c0b27a322c490e6 --port /dev/serial/by-id/usb-1a86_USB_Single_Serial_5B79030971-if00 --enable-motion --stage-waits 3.0 3.0 3.0 --approval-seconds 3.0 --preview-interlock --page-control "
+          }
+        ],
+        "console": [
+          "DEPLOYED_DEPENDENCY collision 1.2.2 /home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/python/collision/__init__.py",
+          "DEPENDENCY pynq 3.1",
+          "DEPENDENCY cv2 4.5.4",
+          "DEPENDENCY numpy 1.21.5",
+          "DEPENDENCY collision 1.0.0",
+          "DEPENDENCY tomli 2.0.1",
+          "C6I_VISION_BOARD_TEST: candidate acceptance only; release_ready=false",
+          "BUNDLED_GAMES ",
+          "BUNDLED_VIDEOS ",
+          "CAMERA_IIC_ID_REGISTER=0x300A",
+          "CAMERA_IIC_ID_REGISTER=0x300B",
+          "CAMERA_IIC_CHIP_ID=0x5640",
+          "CAMERA_IIC_CHIP_ID_STATUS=PASS",
+          "UI_SESSION_READY {\"album_empty\": true, \"canvas_empty\": true}",
+          "voice-view-agent listening on 192.168.2.99:8765"
+        ]
+      }
+    }
+  ],
+  "manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b"
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "test_id": "snake-self-collision",
+  "name": "Snake self collision and terminal freeze",
+  "seed": 17,
+  "max_ticks": 155,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "east",
+      "x": 319,
+      "y": 84,
+      "gesture": "paper"
+    },
+    {
+      "tick": 128,
+      "kind": "gesture",
+      "event_id": "south",
+      "x": 160,
+      "y": 179,
+      "gesture": "paper"
+    },
+    {
+      "tick": 135,
+      "kind": "gesture",
+      "event_id": "west",
+      "x": 0,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 143,
+      "kind": "gesture",
+      "event_id": "north",
+      "x": 160,
+      "y": 0,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 148,
+      "field": "status",
+      "operator": "eq",
+      "expected": "RUNNING"
+    },
+    {
+      "tick": 149,
+      "field": "status",
+      "operator": "eq",
+      "expected": "LOST"
+    },
+    {
+      "tick": 155,
+      "field": "values.reason",
+      "operator": "eq",
+      "expected": "PLAYER COLLISION"
+    },
+    {
+      "tick": 155,
+      "field": "values.moves",
+      "operator": "eq",
+      "expected": 3
+    }
+  ]
+}

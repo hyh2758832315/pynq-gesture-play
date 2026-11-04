@@ -1,0 +1,53 @@
+﻿step,component,action,value
+0,DDR buffer,flush,
+1,DMA,transfer,4160
+2,DMA,idle,False
+3,DMA,idle,True
+4,fixture,accepted / present_seq already latched,7
+5,DMA,wait returned,
+6,packet_status_gpio,read 0x00,1
+7,packet_status_gpio,read 0x00,1
+8,packet_status_gpio,read 0x08,1
+9,render_completion_gpio,read 0x08,0
+10,render_completion_gpio,read 0x08,1
+11,render_completion_gpio,read 0x00,7
+12,present_completion_gpio,read 0x08,0
+13,present_completion_gpio,read 0x08,0
+14,present_completion_gpio,read 0x08,1
+15,present_completion_gpio,read 0x00,7
+16,packet_status_gpio,read 0x00,1
+17,packet_status_gpio,read 0x08,1
+18,render_status_gpio,read 0x00,0
+19,render_cycles_gpio,read 0x00,0
+20,palette_packet_status_gpio,read 0x00,0
+21,palette_packet_status_gpio,read 0x08,0
+22,DDR buffer,flush,
+23,DMA,transfer,1088
+24,DMA,idle,False
+25,DMA,idle,True
+26,DMA,wait returned,
+27,palette_packet_status_gpio,read 0x00,1
+28,palette_generation_status_gpio,read 0x00,0
+29,palette_generation_status_gpio,read 0x00,1
+30,palette_packet_status_gpio,read 0x08,0
+31,DDR buffer,flush,
+32,DMA,transfer,4160
+33,DMA,idle,False
+34,DMA,idle,True
+35,fixture,accepted / present_seq already latched,8
+36,DMA,wait returned,
+37,packet_status_gpio,read 0x00,2
+38,packet_status_gpio,read 0x00,2
+39,packet_status_gpio,read 0x08,2
+40,render_completion_gpio,read 0x08,1
+41,render_completion_gpio,read 0x08,2
+42,render_completion_gpio,read 0x00,8
+43,present_completion_gpio,read 0x08,1
+44,present_completion_gpio,read 0x08,1
+45,present_completion_gpio,read 0x08,2
+46,present_completion_gpio,read 0x00,8
+47,packet_status_gpio,read 0x00,2
+48,packet_status_gpio,read 0x08,2
+49,render_status_gpio,read 0x00,0
+50,render_cycles_gpio,read 0x00,0
+51,DDR buffer,free,

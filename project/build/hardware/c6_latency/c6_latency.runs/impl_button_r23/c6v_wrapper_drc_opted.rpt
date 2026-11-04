@@ -1,0 +1,596 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Oct 30 22:15:08 2026
+| Host         : DESKTOP-JBJOBKD running 64-bit major release  (build 9200)
+| Command      : report_drc -file c6v_wrapper_drc_opted.rpt -pb c6v_wrapper_drc_opted.pb -rpx c6v_wrapper_drc_opted.rpx
+| Design       : c6v_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 109
++-----------+----------+----------------------------+--------+
+| Rule      | Severity | Description                | Checks |
++-----------+----------+----------------------------+--------+
+| CHECK-3   | Warning  | Report rule limit reached  | 2      |
+| DPIP-1    | Warning  | Input pipelining           | 16     |
+| DPOP-1    | Warning  | PREG Output pipelining     | 9      |
+| DPOP-2    | Warning  | MREG Output pipelining     | 16     |
+| DPOR-1    | Warning  | Asynchronous load check    | 17     |
+| PLCK-12   | Warning  | Clock Placer Checks        | 1      |
+| REQP-1839 | Warning  | RAMB36 async control check | 20     |
+| REQP-1840 | Warning  | RAMB18 async control check | 20     |
+| REQP-165  | Advisory | writefirst                 | 4      |
+| REQP-181  | Advisory | writefirst                 | 4      |
++-----------+----------+----------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 input c6v_i/capture_lifecycle/inst/budget/expected_pixels0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0__0 input c6v_i/capture_lifecycle/inst/budget/expected_pixels0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP c6v_i/capture_write_pair/inst/packet_closed_bytes0 input c6v_i/capture_write_pair/inst/packet_closed_bytes0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP c6v_i/capture_write_pair/inst/packet_closed_bytes_reg input c6v_i/capture_write_pair/inst/packet_closed_bytes_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP c6v_i/capture_write_pair/inst/rgb_closed_bytes0 input c6v_i/capture_write_pair/inst/rgb_closed_bytes0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP c6v_i/capture_write_pair/inst/rgb_closed_bytes_reg input c6v_i/capture_write_pair/inst/rgb_closed_bytes_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP c6v_i/core/inst/core/renderer/runtime_blit/asset_read_address_reg input c6v_i/core/inst/core/renderer/runtime_blit/asset_read_address_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP c6v_i/core/inst/core/renderer/runtime_blit/asset_read_address_reg input c6v_i/core/inst/core/renderer/runtime_blit/asset_read_address_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP c6v_i/core/inst/core/renderer/runtime_blit/write_address_reg input c6v_i/core/inst/core/renderer/runtime_blit/write_address_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP c6v_i/core/inst/core/renderer/runtime_blit/write_address_reg input c6v_i/core/inst/core/renderer/runtime_blit/write_address_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mac_muladd_12s_10ns_22s_23_4_1_U68/c6v_demosaic_0_mac_muladd_12s_10ns_22s_23_4_1_DSP48_0_U/p_reg_reg input c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mac_muladd_12s_10ns_22s_23_4_1_U68/c6v_demosaic_0_mac_muladd_12s_10ns_22s_23_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mac_muladd_12s_10ns_22s_23_4_1_U69/c6v_demosaic_0_mac_muladd_12s_10ns_22s_23_4_1_DSP48_0_U/p_reg_reg input c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mac_muladd_12s_10ns_22s_23_4_1_U69/c6v_demosaic_0_mac_muladd_12s_10ns_22s_23_4_1_DSP48_0_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/capture/frontend/hsv/hq0 input c6v_i/dual_mask_capture/inst/capture/capture/frontend/hsv/hq0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/capture/frontend/hsv/sq0 input c6v_i/dual_mask_capture/inst/capture/capture/frontend/hsv/sq0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels0 input c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels_reg input c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output c6v_i/capture_lifecycle/inst/budget/expected_pixels0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP c6v_i/capture_write_pair/inst/packet_closed_bytes0 output c6v_i/capture_write_pair/inst/packet_closed_bytes0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP c6v_i/capture_write_pair/inst/rgb_closed_bytes0 output c6v_i/capture_write_pair/inst/rgb_closed_bytes0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U63/tmp_product output c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U63/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U64/tmp_product output c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U64/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U62/tmp_product output c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U62/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U65/tmp_product output c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U65/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/capture/frontend/hsv/hq0 output c6v_i/dual_mask_capture/inst/capture/capture/frontend/hsv/hq0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels0 output c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 multiplier stage c6v_i/capture_lifecycle/inst/budget/expected_pixels0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0__0 multiplier stage c6v_i/capture_lifecycle/inst/budget/expected_pixels0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP c6v_i/capture_write_pair/inst/packet_closed_bytes0 multiplier stage c6v_i/capture_write_pair/inst/packet_closed_bytes0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP c6v_i/capture_write_pair/inst/packet_closed_bytes_reg multiplier stage c6v_i/capture_write_pair/inst/packet_closed_bytes_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP c6v_i/capture_write_pair/inst/rgb_closed_bytes0 multiplier stage c6v_i/capture_write_pair/inst/rgb_closed_bytes0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP c6v_i/capture_write_pair/inst/rgb_closed_bytes_reg multiplier stage c6v_i/capture_write_pair/inst/rgb_closed_bytes_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP c6v_i/core/inst/core/renderer/runtime_blit/asset_read_address_reg multiplier stage c6v_i/core/inst/core/renderer/runtime_blit/asset_read_address_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP c6v_i/core/inst/core/renderer/runtime_blit/write_address_reg multiplier stage c6v_i/core/inst/core/renderer/runtime_blit/write_address_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U63/tmp_product multiplier stage c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U63/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U64/tmp_product multiplier stage c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_8ns_18_1_1_U64/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U62/tmp_product multiplier stage c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U62/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U65/tmp_product multiplier stage c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_18s_9ns_18_1_1_U65/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_ln590_1_reg_5687_reg multiplier stage c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_ln590_1_reg_5687_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_ln590_3_reg_5692_reg multiplier stage c6v_i/demosaic/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_212/mul_ln590_3_reg_5692_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels0 multiplier stage c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels_reg multiplier stage c6v_i/dual_mask_capture/inst/capture/drain/final_source_pixels_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOR-1#1 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#2 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#3 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#4 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#5 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#6 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#7 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#8 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#9 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#10 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#11 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#12 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#13 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#14 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#15 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#16 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOR-1#17 Warning
+Asynchronous load check  
+DSP c6v_i/capture_lifecycle/inst/budget/expected_pixels0 output is connected to registers with an asynchronous reset (c6v_i/capture_lifecycle/inst/budget/expected_pixels_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	vid_pclk_IBUF_inst (IBUF.O) is locked to Y19
+	vid_pclk_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_held_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/processing_reset/arststages_ff_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/fault_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/overflow_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENARDEN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/underflow_latched_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_held_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/processing_reset/arststages_ff_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/fault_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/overflow_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/area/row_sums_reg_i_2_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/underflow_latched_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg_i_1_n_0) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_held_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg has an input control pin c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg/ENBWREN (net: c6v_i/dual_mask_capture/inst/capture/capture/frontend/pair/gaussian/line_store_reg_i_1_n_0) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/processing_reset/arststages_ff_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[10] (net: c6v_i/dual_mask_capture/inst_n_5) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[10] (net: c6v_i/dual_mask_capture/inst_n_5) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[11] (net: c6v_i/dual_mask_capture/inst_n_4) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[11] (net: c6v_i/dual_mask_capture/inst_n_4) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[4] (net: c6v_i/dual_mask_capture/inst_n_11) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[4] (net: c6v_i/dual_mask_capture/inst_n_11) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[5] (net: c6v_i/dual_mask_capture/inst_n_10) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[5] (net: c6v_i/dual_mask_capture/inst_n_10) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[6] (net: c6v_i/dual_mask_capture/inst_n_9) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[6] (net: c6v_i/dual_mask_capture/inst_n_9) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[7] (net: c6v_i/dual_mask_capture/inst_n_8) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[7] (net: c6v_i/dual_mask_capture/inst_n_8) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[8] (net: c6v_i/dual_mask_capture/inst_n_7) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[8] (net: c6v_i/dual_mask_capture/inst_n_7) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[9] (net: c6v_i/dual_mask_capture/inst_n_6) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ADDRARDADDR[9] (net: c6v_i/dual_mask_capture/inst_n_6) which is driven by a register (c6v_i/capture_lifecycle/inst/fence/monitor/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ENARDEN (net: c6v_i/dual_mask_capture/inst_n_3) which is driven by a register (c6v_i/capture_control/inst/capture_aresetn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ENARDEN (net: c6v_i/dual_mask_capture/inst_n_3) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_held_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ENARDEN (net: c6v_i/dual_mask_capture/inst_n_3) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/fault_sync_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 c6v_i/dual_mask_capture/d0_reg_rep has an input control pin c6v_i/dual_mask_capture/d0_reg_rep/ENARDEN (net: c6v_i/dual_mask_capture/inst_n_3) which is driven by a register (c6v_i/capture_lifecycle/inst/budget/processing_reset/arststages_ff_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/axi_dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/frame_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/moments_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/return_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/axi_dma/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/frame_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/moments_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (c6v_i/return_dma/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

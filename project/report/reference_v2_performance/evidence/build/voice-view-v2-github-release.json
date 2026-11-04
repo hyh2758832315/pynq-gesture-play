@@ -1,0 +1,28 @@
+{
+  "result": "PASS",
+  "tag": "v2.0",
+  "commit": "bd6858bbe4ded19caf1f91322850150c97cab21e",
+  "url": "https://github.com/HH-bit-dev/pynq-audiovisual-diagnostics/releases/tag/v2.0",
+  "assets": [
+    {
+      "name": "voice-view-full-v2.0.zip",
+      "size": 158800930,
+      "sha256": "76fa0604cd0aaa4e2ec038b26ec6fd1545b6370a55a1e0cd08dbd1e00776d7fe",
+      "remote_digest": "sha256:76fa0604cd0aaa4e2ec038b26ec6fd1545b6370a55a1e0cd08dbd1e00776d7fe",
+      "url": "https://github.com/HH-bit-dev/pynq-audiovisual-diagnostics/releases/download/v2.0/voice-view-full-v2.0.zip"
+    },
+    {
+      "name": "voice-view-full-v2.0.sha256",
+      "size": 92,
+      "sha256": "af41c62b98ab07bb85e715b65ba4ccdd74114a64f437d821f04e4ce53a040b79",
+      "remote_digest": "sha256:af41c62b98ab07bb85e715b65ba4ccdd74114a64f437d821f04e4ce53a040b79",
+      "url": "https://github.com/HH-bit-dev/pynq-audiovisual-diagnostics/releases/download/v2.0/voice-view-full-v2.0.sha256"
+    }
+  ],
+  "published_at": "2026-10-28T17:06:55Z",
+  "draft": false,
+  "prerelease": false,
+  "latest": true,
+  "v1_preserved": true,
+  "private": true
+}

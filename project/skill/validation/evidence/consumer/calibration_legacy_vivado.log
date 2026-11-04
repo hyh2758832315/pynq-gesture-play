@@ -1,0 +1,93 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 24-nov-2026.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Sun Nov  1 11:08:42 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {E:\projects\fpga\voice-view-game\b\preserve_consumer_r01\workspace\runs\run_01\calibration_legacy\run.tcl}
+# create_project legacy_packet {E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation} -part xc7z020clg400-1
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation'
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 602.168 ; gain = 267.434
+# add_files [list {E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/original.sv} {E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/tb.sv}]
+# add_files -fileset sim_1 {E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/guard.sv}
+# set_property top legacy_guard [get_filesets sim_1]
+# set_property target_simulator XSim [current_project]
+# set_property xsim.simulate.runtime all [get_filesets sim_1]
+# update_compile_order -fileset sim_1
+# launch_simulation -simset sim_1 -mode behavioral
+Command: launch_simulation  -simset sim_1 -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Sun Nov  1 11:08:52 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'legacy_guard'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation/legacy_packet.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx/Vivado/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'legacy_guard' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation/legacy_packet.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj legacy_guard_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/original.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scene2d_upload_sink
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_scene2d_upload_sink
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/guard.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module legacy_guard
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation/legacy_packet.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation/legacy_packet.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot legacy_guard_behav xil_defaultlib.legacy_guard xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot legacy_guard_behav xil_defaultlib.legacy_guard xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.scene2d_upload_sink
+Compiling module xil_defaultlib.tb_scene2d_upload_sink
+Compiling module xil_defaultlib.legacy_guard
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot legacy_guard_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/calibration_legacy/simulation/legacy_packet.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "legacy_guard_behav -key {Behavioral:sim_1:Functional:legacy_guard} -tclbatch {legacy_guard.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source legacy_guard.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+WARNING: [Simtcl 6-168] No object found for the given pattern.
+WARNING: [Add_Wave-1] No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console.
+## run all
+SCENE2D_UPLOAD_SINK=PASS crc=cbf43926 bytes=9 packets=1
+$finish called at time : 105001 ps : File "E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/tb.sv" Line 77
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'legacy_guard_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 625.879 ; gain = 23.711
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 11:08:59 2026...

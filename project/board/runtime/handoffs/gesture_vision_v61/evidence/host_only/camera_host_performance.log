@@ -1,0 +1,35 @@
+PACKAGE_PASS: paired hashes/address map; NOT board validated
+PROJECT1_RESULTS=/home/xilinx/jupyter_notebooks/camera_host_v61_test/results/project1_results_20260926_140253
+PROJECT1_VERSION=pl_skin_v61_optional_host_preview
+PROJECT1_OUTPUT_MODE=HOST_ONLY; HDMI_ENABLED=0
+PROJECT1_LATENCY_MODE=EARLY_CONTROL; browser preview/control preserved
+PROJECT1_CAPTURE_ORDER=bgr
+PROJECT1_ACCEPTANCE=NOT_YET_BOARD_VALIDATED; RPS labels are heuristic candidates
+PROJECT1_PL_SKIN=COMPACT_BGR_DMA mode=performance; morphology/contours/RPS remain PS
+CAMERA_IIC_ID_REGISTER=0x300A
+CAMERA_IIC_ID_REGISTER=0x300B
+CAMERA_IIC_CHIP_ID=0x5640
+CAMERA_IIC_CHIP_ID_STATUS=PASS
+CAMERA_VDMA_INTERRUPTS_RECOVERED_FROM_HWH=PASS
+/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py:713: UserWarning: Interrupt s2mm_introut not created: Could not find UIO device for interrupt pin for IRQ number 62
+  warnings.warn("Interrupt {} not created: {}".format(interrupt, str(e)))
+CAMERA_VDMA_S2MM_POLL_FALLBACK=PASS
+PROJECT1_HDMI_SKIPPED=MM2S_not_started; no_output_buffers; browser_OSD=PS
+PROJECT1_READY=http://192.168.2.99:8088/camera.mjpg duration=60.0
+PROJECT1_DASHBOARD=http://192.168.2.99:8088/ debug_view=True
+PROJECT1_FRAME=1 loop_fps=1.11 raw=NO_HAND stable=NO_HAND RPS_CANDIDATE=UNKNOWN
+PROJECT1_FRAME=25 loop_fps=4.81 raw=NO_HAND stable=NO_HAND RPS_CANDIDATE=UNKNOWN
+PROJECT1_FRAME=50 loop_fps=5.11 raw=5 stable=5 RPS_CANDIDATE=PAPER
+PROJECT1_FRAME=75 loop_fps=5.13 raw=5 stable=5 RPS_CANDIDATE=PAPER
+PROJECT1_FRAME=100 loop_fps=5.19 raw=5 stable=5 RPS_CANDIDATE=PAPER
+PROJECT1_FRAME=125 loop_fps=5.20 raw=0 stable=0 RPS_CANDIDATE=ROCK
+PROJECT1_FRAME=150 loop_fps=5.20 raw=REPOSITION stable=PENDING RPS_CANDIDATE=UNKNOWN
+PROJECT1_FRAME=175 loop_fps=5.20 raw=2 stable=2 RPS_CANDIDATE=SCISSORS
+PROJECT1_FRAME=200 loop_fps=5.19 raw=2 stable=2 RPS_CANDIDATE=SCISSORS
+PROJECT1_FRAME=225 loop_fps=5.19 raw=5 stable=PENDING RPS_CANDIDATE=UNKNOWN
+PROJECT1_FRAME=250 loop_fps=5.21 raw=5 stable=5 RPS_CANDIDATE=PAPER
+PROJECT1_FRAME=275 loop_fps=5.21 raw=5 stable=5 RPS_CANDIDATE=PAPER
+PROJECT1_FRAME=300 loop_fps=5.20 raw=0 stable=0 RPS_CANDIDATE=ROCK
+PROJECT1_STOPPED=single-owner cleanup completed
+ACCEL_GUARD_SKIP: new overlay not loaded; no unsafe MMIO probe
+ACCEL_CHILD_EXIT=0 elapsed=91.412

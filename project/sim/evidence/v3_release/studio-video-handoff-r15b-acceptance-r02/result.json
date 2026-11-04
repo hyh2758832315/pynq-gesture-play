@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "synthetic_input": false,
+  "steps": [
+    "before",
+    "catalog",
+    "play",
+    "playing",
+    "preview",
+    "restored",
+    "menu",
+    "menu-ready"
+  ]
+}

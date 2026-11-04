@@ -1,0 +1,249 @@
+[
+  {
+    "id": "E01",
+    "path": "tools/release_v2/RELEASE_NOTES.md",
+    "sha256": "0bd3717abdf95d9b25db7307aea1cc5913f474b7bf23d2379d74a7b5f5136357",
+    "bytes": 1658
+  },
+  {
+    "id": "E02",
+    "path": "build/v2-release-repo/releases/v2.0/verification/acceptance-summary.json",
+    "sha256": "a734f52b278b92f3add786fff23f472d93f2ddc987e115aab85516e9dfc6779d",
+    "bytes": 741
+  },
+  {
+    "id": "E03",
+    "path": "docs/bringup/2026-10-29_v2_release.md",
+    "sha256": "bf3aea27e787a42aa0c53bfa49c36f04086b4dd8d90e903f19ef1911359585f2",
+    "bytes": 4679
+  },
+  {
+    "id": "E04",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/board/pynq_z2/dual_mask_packet.py",
+    "sha256": "15f9691bde670cd8c14a3e49736cc1fdb7a88968a9a75019f5ed9c5bdce0a693",
+    "bytes": 6501
+  },
+  {
+    "id": "E05",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/board/pynq_z2/scripts/vision_async_runtime.py",
+    "sha256": "ae9ca52b225a3147d85c4b6fe3164630ca5f1b45bef197008df9a2b054450625",
+    "bytes": 109532
+  },
+  {
+    "id": "E06",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/board/pynq_z2/vision_latest_capture.py",
+    "sha256": "7852b8a7b55df9fc0c9158aad635396caa4f3a46ace603cf213e2d655ee69033",
+    "bytes": 8846
+  },
+  {
+    "id": "E07",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/gpu_abi.py",
+    "sha256": "0f87227ede298bfd9f05ead74a189e64442e311ce284f77461a544ea65fe4810",
+    "bytes": 18276
+  },
+  {
+    "id": "E07",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/scene.py",
+    "sha256": "31872dec6b4a940843031a43efd252cc441a94b0a89bd054f143ea5ae05dfd21",
+    "bytes": 4304
+  },
+  {
+    "id": "E08",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/agent/c6i_video.py",
+    "sha256": "36c96c9be57613e52db41d2f9637599d985c3bb90fa56f2ec58d6f544d241c32",
+    "bytes": 16583
+  },
+  {
+    "id": "E08",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/agent/c6i_backend.py",
+    "sha256": "7290001214184f441c1bdc9a0c351d439c9edbd012e59e17c2b7c40b48582409",
+    "bytes": 23316
+  },
+  {
+    "id": "E09",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/protocol.py",
+    "sha256": "6af1ec6085857cb1586d8bd5340acfbea2c66fe7a145c1bb339a84c7a3c481a1",
+    "bytes": 5640
+  },
+  {
+    "id": "E09",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/agent/transport.py",
+    "sha256": "df62c7cf377b7c73e0b7fba2f5b2361d07adc2051afbb4d99bd5350899e5e4e0",
+    "bytes": 24033
+  },
+  {
+    "id": "E10",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/hand_shadow_bridge.py",
+    "sha256": "ddf947901d54904099760598fe18ebc3f17bd411cda2ad40218a5c7f4ab67ab0",
+    "bytes": 7339
+  },
+  {
+    "id": "E10",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/hand_serial_session.py",
+    "sha256": "9ba64bf78cf3cc11f904b7af42e7d6d8d5cd7dae8adcc568952628d327b10e62",
+    "bytes": 29204
+  },
+  {
+    "id": "E10",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/hand_child/serial_motion_receiver.py",
+    "sha256": "2cb1d3dfafb526054ef2a810886f8c38f9e2631f58f7db3270dda856071e8092",
+    "bytes": 8888
+  },
+  {
+    "id": "E10",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/hand-runtime/src/pynq_usb_hand/game_bridge.py",
+    "sha256": "d72e8c59fb2e57f325e09217f9428ad6981a46d6d4fbd5879a4bdc6d61742f2d",
+    "bytes": 12149
+  },
+  {
+    "id": "E11",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/hand-runtime/src/pynq_usb_hand/orca_backend.py",
+    "sha256": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9",
+    "bytes": 14861
+  },
+  {
+    "id": "E11",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/hand-runtime/assets/config.yaml",
+    "sha256": "4815b1ea1ca0e68dd2dab070f8e9112a00525db8d297a8bfa7173f945fb5ec3b",
+    "bytes": 2954
+  },
+  {
+    "id": "E12",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/button_osd.py",
+    "sha256": "7d0a87ba31ff8654e25dccb350679481f8ac4150193829196aa4a6414dcbbede",
+    "bytes": 6846
+  },
+  {
+    "id": "E13",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/game_sdk.py",
+    "sha256": "1dc0b74f58cc9f60815c9671c6f221ce69b7668cd3d232ca44296e3b11ffa510",
+    "bytes": 10152
+  },
+  {
+    "id": "E13",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/creative_pages.py",
+    "sha256": "877a36db8eba11b3003ca5276da154aaf14469041703deb65a45203c33f6181d",
+    "bytes": 24822
+  },
+  {
+    "id": "E14",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/overlay/c6v_candidate.hwh",
+    "sha256": "e2ce377e5fb94ba2eb277eb2defeb642e2e9359c6aa2aa0b6013bb9a4d8b49dd",
+    "bytes": 1822853
+  },
+  {
+    "id": "E14",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/overlay/board_test_manifest.json",
+    "sha256": "e546fa5bd9c8d60bb5e069fa6023036f585c43bac18d5bc4bb6cb1f851889fa7",
+    "bytes": 765
+  },
+  {
+    "id": "E15",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/docs/HANDOFF.md",
+    "sha256": "4c69d3067205aa661ae6c053425bb79e75bde2da35e39dce463c3c82886dbef8",
+    "bytes": 8618
+  },
+  {
+    "id": "E16",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/board/pynq_z2/vision_capture_control.py",
+    "sha256": "af7c4c81d4cd6d8e46b0562922cc01be5e9a35c0481ed85bcb542ac294b74b64",
+    "bytes": 9995
+  },
+  {
+    "id": "E17",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/python/pynq_multimodal_game/button_input.py",
+    "sha256": "dd1ad600926e004007701466f61d3e8b893134b1410c69ef3f202e19c3f4f1d7",
+    "bytes": 6397
+  },
+  {
+    "id": "E18",
+    "path": "docs/scene2d_gpu_architecture.md",
+    "sha256": "fbd0f95942061dabbc5fb2f1fdfbc943b9f937f056efc78e96dcb595b7096580",
+    "bytes": 12180
+  },
+  {
+    "id": "E19",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/vision_streaming/axis_rgb_mask_frontend.sv",
+    "sha256": "6ceae5a9e58f86ccc3f0cfd7dde6ca1ceb5697059b66b299893f94bfdf81811e",
+    "bytes": 5667
+  },
+  {
+    "id": "E19",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/vision_streaming/axis_binary_mask_pair.sv",
+    "sha256": "3f1767d22a033c95f5d171bdce2ce5ffd6408c484ba21abb89becd82eaafbfe7",
+    "bytes": 4373
+  },
+  {
+    "id": "E20",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/vision_streaming/vision_source_admission.sv",
+    "sha256": "9cfb2b73b643264f1fea4fb3b52f7bca8778dc0375ce0d08828065ebc474176d",
+    "bytes": 3395
+  },
+  {
+    "id": "E20",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/vision_streaming/vision_capture_lifecycle.sv",
+    "sha256": "47c072e7ed5c286a43229d8433ff37d63dcd7cec600a9bf74594aff2f38466fb",
+    "bytes": 5808
+  },
+  {
+    "id": "E21",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/vision_streaming/vision_frame_owner.sv",
+    "sha256": "98d6a1b3686776d1ec34b607e62c3a5edfcb9ca8913608b340d4cd936bc31fe0",
+    "bytes": 6739
+  },
+  {
+    "id": "E22",
+    "path": "build/v2-release-repo/releases/v2.0/source/subprojects/button_only/constraints/button_only.xdc",
+    "sha256": "8d87d48a8dd0b312901fabf73b4555282ad8afbe48d8155a1451eb4166c14de9",
+    "bytes": 785
+  },
+  {
+    "id": "E22",
+    "path": "build/v2-release-repo/releases/v2.0/source/subprojects/button_only/constraints/button_osd_cdc.tcl",
+    "sha256": "c323313c0e3ca84a8c050581d59f82760e1c31ccce5e36479f4ae69db289ca8c",
+    "bytes": 1432
+  },
+  {
+    "id": "E24",
+    "path": "build/v2-release-repo/releases/v2.0/source/tests/rtl/tb_vision_frame_owner.sv",
+    "sha256": "47fc73e4cb913cf4aa062e468e86d95c75df3827542727afc27a6da6e20fc48e",
+    "bytes": 6205
+  },
+  {
+    "id": "E24",
+    "path": "build/v2-release-repo/releases/v2.0/source/tests/rtl/tb_axis_rgb_mask_frontend.sv",
+    "sha256": "fee852ff9a4d5dc83aec08182f5d8a1c0b7c8f409d9b08a407f540b6235b9de5",
+    "bytes": 18023
+  },
+  {
+    "id": "E25",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/scene2d_gpu/scene2d_c4m7_core.sv",
+    "sha256": "5c6c3044ea52b6808ca3781b7c2c00cf371f9a0f72ec692d7615463568ae442b",
+    "bytes": 12192
+  },
+  {
+    "id": "E25",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/scene2d_gpu/scene2d_c4m3_core.sv",
+    "sha256": "a245921fe8f41100629b799d963f4ce87d3f4e0e0a4a25caab180fcbdf89d0fa",
+    "bytes": 15564
+  },
+  {
+    "id": "E25",
+    "path": "build/v2-release-repo/releases/v2.0/source/rtl/scene2d_gpu/scene2d_frame_swap.sv",
+    "sha256": "2da55288eda7fe7ad7978ecc719d40880c1ffd9630161be261e53393da317de0",
+    "bytes": 2480
+  },
+  {
+    "id": "E23",
+    "path": "build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt",
+    "sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172",
+    "bytes": 223767
+  },
+  {
+    "id": "R01",
+    "path": "sources/open_topic_guide.md",
+    "sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
+    "url": "https://gitee.com/Vickyiii/fpgachina26-amd/blob/master/tracks/open-topic/GUIDE.md",
+    "accessed": "2026-10-30"
+  }
+]

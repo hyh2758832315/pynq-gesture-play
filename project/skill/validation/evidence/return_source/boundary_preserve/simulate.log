@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+RETURN_BOUNDARIES=PASS cycles=14381 accepts=11224 stalls=2625 idle=475 busy_start=843 reset_busy=36 partial=66 last_start=1
+PRESERVE_FINAL_PASS instance=0 checks=28761 reset=57 active=14324
+$finish called at time : 143808 ns : File "E:/projects/fpga/voice-view-game/b/return_guarded_r01/workspace/tests/tb_return_boundaries.sv" Line 110

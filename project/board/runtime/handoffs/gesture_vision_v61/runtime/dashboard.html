@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>手势处理与虚拟手柄</title>
+<style>
+body{background:#111820;color:#e9edf3;font:16px system-ui;margin:20px}main{max-width:1100px;margin:auto}
+img{width:100%;display:block;background:#202c38}section{margin:18px 0}canvas{display:block;width:100%;max-width:700px;box-sizing:border-box;background:#202c38;border:1px solid #536476}
+button{padding:10px;margin:8px 8px 8px 0;font:inherit}#state{font-size:20px}p{line-height:1.6}small{color:#bcc9d8}
+</style>
+<main><h1>处理过程与虚拟手柄</h1>
+<p>PS 调试画面；HDMI 仍由 PL 绘制框和十字。这里不会发送键盘按键或操作外部游戏。</p>
+<section><h2>同帧六宫格（最多 1 Hz）</h2><img id="debug" alt="等待六宫格；启动时需添加 --debug-view"><small>每格标有帧号。白十字为原始质心，绿菱形为平滑质心；色彩只用于辅助展示。手机上可<a href="/debug.jpg" target="_blank" style="color:#4fc3f7">单独打开原尺寸画面</a>查看细节。</small></section>
+<section><h2>实时预览</h2><img src="/camera.mjpg" alt="实时处理预览"></section>
+<section><h2>控制练习场</h2><p id="state" role="status">等待有效控制数据</p>
+<button id="enable">启用练习场移动</button><button id="reset">方块回中心</button>
+<canvas id="field" width="700" height="300" aria-label="手势方向控制方块练习场"></canvas>
+<p>将手放在画面中心停止，偏向左右上下移动；有效的张手→握拳事件使方块短暂闪亮。手碰画面边缘、丢手或数据超过 1.2 秒未更新会停止。首次连接和重新连接不补发旧事件。</p>
+<small>事件使用启发式手形识别，不代表已经完成准确率验收。</small></section></main>
+<script>
+const state=document.getElementById('state'), field=document.getElementById('field'),ctx=field.getContext('2d');
+let enabled=false,x=350,y=150,lastFrame=0,lastRun='',lastFresh=-Infinity,seq=null,direction='IDLE',flash=0,lastTick=performance.now();
+document.getElementById('enable').onclick=()=>{enabled=!enabled;document.getElementById('enable').textContent=enabled?'暂停练习场移动':'启用练习场移动';};
+document.getElementById('reset').onclick=()=>{x=350;y=150;};
+async function poll(){
+ const abort=new AbortController(),timer=setTimeout(()=>abort.abort(),800);
+ try{
+  const response=await fetch('/result.json',{cache:'no-store',signal:abort.signal});
+  if(!response.ok)throw Error('HTTP');const sample=await response.json(),c=sample.control;
+  if(!c||!Number.isFinite(c.frame_id))throw Error('waiting');
+  if(!Number.isFinite(sample.server_age_ms)||sample.server_age_ms>1200)throw Error('stale');
+  const now=performance.now(),reconnect=now-lastFresh>1200||sample.run_id!==lastRun;
+  if(sample.run_id!==lastRun){lastFrame=0;lastRun=sample.run_id;seq=null;}
+  if(c.frame_id>lastFrame){
+   if(!reconnect&&seq!==null&&c.valid&&c.action_event_seq>seq)flash=now+250;
+   seq=c.action_event_seq;lastFrame=c.frame_id;lastFresh=now;
+   direction=c.valid?c.direction:'IDLE';
+   state.textContent=`frame ${c.frame_id} | raw ${c.raw_direction} → ${direction} | ${c.reason} | event ${seq}`;
+  }
+ }catch(error){direction='IDLE';seq=null;state.textContent='无连接／等待数据：控制已释放';}
+ finally{clearTimeout(timer);setTimeout(poll,50);}
+}
+function tick(now){
+ const dt=Math.min((now-lastTick)/1000,.05);lastTick=now;
+ if(now-lastFresh>1200){direction='IDLE';seq=null;state.textContent='数据过期：控制已释放';}
+ if(enabled){if(direction==='LEFT')x-=130*dt;if(direction==='RIGHT')x+=130*dt;if(direction==='UP')y-=130*dt;if(direction==='DOWN')y+=130*dt;}
+ x=Math.max(12,Math.min(688,x));y=Math.max(12,Math.min(288,y));
+ ctx.clearRect(0,0,700,300);ctx.strokeStyle='#71869a';ctx.beginPath();ctx.moveTo(350,0);ctx.lineTo(350,300);ctx.moveTo(0,150);ctx.lineTo(700,150);ctx.stroke();
+ ctx.fillStyle=now<flash?'#ffd166':'#4fc3f7';ctx.fillRect(x-12,y-12,24,24);requestAnimationFrame(tick);
+}
+async function refreshDebug(){
+ try{const r=await fetch('/debug.jpg',{cache:'no-store'});if(r.ok){const blob=await r.blob(),img=document.getElementById('debug'),old=img.dataset.objectUrl,url=URL.createObjectURL(blob);img.src=url;img.dataset.objectUrl=url;if(old)URL.revokeObjectURL(old);}}
+ catch(error){} finally{setTimeout(refreshDebug,1100);}
+}
+poll();refreshDebug();requestAnimationFrame(tick);
+</script></html>

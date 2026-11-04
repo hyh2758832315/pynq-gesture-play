@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "E:\projects\fpga\voice-view-game\b\preserve_consumer_r01\package\pynq-pl-preserve\scripts\preserve.py", line 276, in <module>
+    main()
+  File "E:\projects\fpga\voice-view-game\b\preserve_consumer_r01\package\pynq-pl-preserve\scripts\preserve.py", line 273, in main
+    else: verify(args.out)
+          ^^^^^^^^^^^^^^^^
+  File "E:\projects\fpga\voice-view-game\b\preserve_consumer_r01\package\pynq-pl-preserve\scripts\preserve.py", line 253, in verify
+    require(re.search(r'\b(?:fatal|error)\s*:',body,re.I) is None,'Runtime error/fatal in actual transcript')
+  File "E:\projects\fpga\voice-view-game\b\preserve_consumer_r01\package\pynq-pl-preserve\scripts\preserve.py", line 25, in require
+    raise ValueError(message)
+ValueError: Runtime error/fatal in actual transcript

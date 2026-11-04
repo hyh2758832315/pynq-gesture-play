@@ -1,0 +1,552 @@
+diff --git a/orca_core/constants.py b/orca_core/constants.py
+index 637bf1b..65e18eb 100644
+--- a/orca_core/constants.py
++++ b/orca_core/constants.py
+@@ -17,7 +17,8 @@ MOTOR_TO_JOINT_RATIOS_DICT = "motor_to_joint_ratios"
+ 
+ DYNAMIXEL = "dynamixel"
+ FEETECH = "feetech"
+-SUPPORTED_MOTOR_TYPES = [DYNAMIXEL, FEETECH]
++SCS225 = "scs225"
++SUPPORTED_MOTOR_TYPES = [DYNAMIXEL, FEETECH, SCS225]
+ 
+ JOINT_TO_MOTOR_RATIOS = "joint_to_motor_ratios"
+ JOINT_ENCODER_CALIBRATION = "joint_encoder_calibration"
+diff --git a/orca_core/hand_factory.py b/orca_core/hand_factory.py
+index 266f2cd..a0409ca 100644
+--- a/orca_core/hand_factory.py
++++ b/orca_core/hand_factory.py
+@@ -421,6 +421,7 @@ def load_hand(
+     mock: bool = False,
+     engage_feedback: bool = True,
+     engage_sensors: bool = True,
++    port: str | None = None,
+ ) -> OrcaHand:
+     """Construct the hand class that matches a model's declared capabilities.
+ 
+@@ -451,6 +452,8 @@ def load_hand(
+     Returns:
+         A constructed (not yet connected) hand instance.
+     """
++    if port is not None and (not isinstance(port, str) or not port.strip()):
++        raise ValueError('port must be a non-empty string.')
+     detection = None
+     if config_path is None and model_name is None and model_version is None and not mock:
+         detection = detect_hand()
+@@ -484,6 +487,12 @@ def load_hand(
+     if detection is not None:
+         config = _pin_detected_ports(config, detection)
+ 
++    if port is not None:
++        from dataclasses import replace
++
++        logger.warning('Runtime port override %r replaces configured port %r.', port, config.port)
++        config = replace(config, port=port)
++
+     feedback = engage_feedback and config.joint_feedback_enabled
+     if feedback and config.type not in JOINT_ENCODER_POLARITY_BY_SIDE:
+         logger.warning(
+diff --git a/orca_core/hardware/dual_scs225_client.py b/orca_core/hardware/dual_scs225_client.py
+index 70d4b05..802ccff 100644
+--- a/orca_core/hardware/dual_scs225_client.py
++++ b/orca_core/hardware/dual_scs225_client.py
+@@ -3,19 +3,13 @@ from typing import Sequence
+ 
+ import numpy as np
+ 
+-from ..constants import POSITION, CURRENT_BASED_POSITION
++from ..constants import POSITION, CURRENT_BASED_POSITION, FEETECH, KNOWN_VIDS
+ from .motor_client import MotorClient, MotorRead
+ from .scs225_client import SCS225Client
+ 
+ 
+-DEFAULT_BUS_A_PORT = (
+-    "/dev/serial/by-id/"
+-    "usb-1a86_USB_Single_Serial_5AE6023878-if00"
+-)
+-DEFAULT_BUS_B_PORT = (
+-    "/dev/serial/by-id/"
+-    "usb-1a86_USB_Single_Serial_5B79030957-if00"
+-)
++DEFAULT_BUS_A_PORT = None
++DEFAULT_BUS_B_PORT = None
+ 
+ DEFAULT_BUS_A_IDS = (2, 3, 4, 5, 6, 7, 8, 9)
+ DEFAULT_BUS_B_IDS = (1, 10, 11, 12, 13, 14, 15, 16, 17)
+@@ -26,6 +20,7 @@ class DualSCS225Client(MotorClient):
+     waits_for_motion = True
+     supports_multi_turn = False
+     supported_modes = frozenset({POSITION, CURRENT_BASED_POSITION})
++    hardware_error_bits = SCS225Client.hardware_error_bits
+ 
+     position_range_rad = SCS225Client.position_range_rad
+     current_scale_ma = SCS225Client.current_scale_ma
+@@ -39,8 +34,8 @@ class DualSCS225Client(MotorClient):
+         port: str = "dual",
+         baudrate: int = 1_000_000,
+         *,
+-        bus_a_port: str = DEFAULT_BUS_A_PORT,
+-        bus_b_port: str = DEFAULT_BUS_B_PORT,
++        bus_a_port: str | None = DEFAULT_BUS_A_PORT,
++        bus_b_port: str | None = DEFAULT_BUS_B_PORT,
+         bus_a_ids: Sequence[int] = DEFAULT_BUS_A_IDS,
+         bus_b_ids: Sequence[int] = DEFAULT_BUS_B_IDS,
+     ):
+@@ -69,10 +64,86 @@ class DualSCS225Client(MotorClient):
+         active_a = [mid for mid in self.motor_ids if mid in set_a]
+         active_b = [mid for mid in self.motor_ids if mid in set_b]
+ 
+-        self.bus_a = SCS225Client(active_a, bus_a_port, baudrate)
+-        self.bus_b = SCS225Client(active_b, bus_b_port, baudrate)
++        self._auto_bus_a = bus_a_port is None
++        self._auto_bus_b = bus_b_port is None
++        self.bus_a = SCS225Client(active_a, bus_a_port or "auto", baudrate)
++        self.bus_b = SCS225Client(active_b, bus_b_port or "auto", baudrate)
+         self._connected = False
+ 
++    @staticmethod
++    def _discover_ports(motor_ids, baudrate, bus_a_ids, bus_b_ids):
++        from serial.tools import list_ports
++        from scservo_sdk import COMM_SUCCESS, PortHandler, scscl
++
++        groups = (set(motor_ids) & set(bus_a_ids), set(motor_ids) & set(bus_b_ids))
++        if not all(groups):
++            raise ValueError("Dual SCS225 transport requires motors on both buses")
++        ports = sorted({
++            info.device for info in list_ports.comports()
++            if info.vid in KNOWN_VIDS.get(FEETECH, [])
++        })
++        locations = {motor_id: [] for motor_id in motor_ids}
++        failures = []
++        for port in ports:
++            handler = PortHandler(port)
++            opened = False
++            try:
++                opened = handler.openPort()
++                if not opened or not handler.setBaudRate(baudrate):
++                    failures.append(f"{port}: could not open or set baudrate")
++                    continue
++                servo = scscl(handler)
++                for motor_id in locations:
++                    _, result, _ = servo.ReadPos(motor_id)
++                    if result == COMM_SUCCESS:
++                        locations[motor_id].append(port)
++            except OSError as exc:
++                failures.append(f"{port}: {exc}")
++            finally:
++                if opened:
++                    handler.closePort()
++
++        missing = sorted(mid for mid, found in locations.items() if not found)
++        duplicates = sorted(mid for mid, found in locations.items() if len(found) > 1)
++        if missing or duplicates:
++            raise OSError(
++                f"Dual SCS225 discovery failed: missing IDs={missing}; "
++                f"IDs on multiple ports={duplicates}; port errors={failures}"
++            )
++        resolved = [{locations[mid][0] for mid in group} for group in groups]
++        if any(len(ports_for_bus) != 1 for ports_for_bus in resolved):
++            raise OSError("Configured SCS225 bus groups span multiple ports")
++        port_a, port_b = (next(iter(ports_for_bus)) for ports_for_bus in resolved)
++        if port_a == port_b:
++            raise OSError("Dual SCS225 transport requires two distinct serial ports")
++        return port_a, port_b
++
++    @classmethod
++    def probe(cls, port: str, baudrate: int, motor_ids: Sequence[int]) -> bool:
++        if port != "dual":
++            return False
++        cls._discover_ports(motor_ids, baudrate, DEFAULT_BUS_A_IDS, DEFAULT_BUS_B_IDS)
++        return True
++
++    def _resolve_ports(self):
++        if not (self._auto_bus_a or self._auto_bus_b):
++            return
++        port_a, port_b = self._discover_ports(
++            self.motor_ids, self.baudrate, self.bus_a_ids, self.bus_b_ids
++        )
++        for bus, found_port, automatic in (
++            (self.bus_a, port_a, self._auto_bus_a),
++            (self.bus_b, port_b, self._auto_bus_b),
++        ):
++            if not automatic and bus.port_name != found_port:
++                raise OSError(
++                    f"Pinned SCS225 port {bus.port_name} conflicts with detected {found_port}"
++                )
++        if self._auto_bus_a:
++            self.bus_a = SCS225Client(self.bus_a.motor_ids, port_a, self.baudrate)
++        if self._auto_bus_b:
++            self.bus_b = SCS225Client(self.bus_b.motor_ids, port_b, self.baudrate)
++
+     @property
+     def is_connected(self) -> bool:
+         return (
+@@ -93,6 +164,7 @@ class DualSCS225Client(MotorClient):
+         if self._connected:
+             raise RuntimeError("DualSCS225Client is already connected")
+ 
++        self._resolve_ports()
+         try:
+             self.bus_a.connect()
+             self.bus_b.connect()
+@@ -100,9 +172,13 @@ class DualSCS225Client(MotorClient):
+         except Exception:
+             for bus in (self.bus_a, self.bus_b):
+                 try:
+-                    bus.disconnect()
++                    if bus.is_connected:
++                        bus.port_handler.closePort()
+                 except Exception:
+                     pass
++                finally:
++                    bus._connected = False
++                    bus.servo = None
+             self._connected = False
+             raise
+ 
+@@ -200,6 +276,12 @@ class DualSCS225Client(MotorClient):
+             current=np.asarray([by_id[mid][2] for mid in self.motor_ids], dtype=float),
+         )
+ 
++    def read_hardware_error(self, motor_id: int) -> int | None:
++        self.check_connected()
++        ids_a, ids_b = self._split_ids([motor_id])
++        bus = self.bus_a if ids_a else self.bus_b
++        return bus.read_hardware_error(motor_id)
++
+     def read_temperature(self) -> np.ndarray:
+         self.check_connected()
+         temp_a = self.bus_a.read_temperature()
+diff --git a/orca_core/hardware/motor_factory.py b/orca_core/hardware/motor_factory.py
+index e70d5e2..f2d8d77 100644
+--- a/orca_core/hardware/motor_factory.py
++++ b/orca_core/hardware/motor_factory.py
+@@ -19,7 +19,7 @@ from __future__ import annotations
+ 
+ from typing import Sequence
+ 
+-from ..constants import DYNAMIXEL, FEETECH, SUPPORTED_MOTOR_TYPES
++from ..constants import DYNAMIXEL, FEETECH, SCS225, SUPPORTED_MOTOR_TYPES
+ from .motor_client import MotorClient
+ 
+ 
+@@ -35,6 +35,11 @@ def motor_client_class(motor_type: str) -> type[MotorClient]:
+ 
+         return FeetechClient
+ 
++    if motor_type == SCS225:
++        from .scs225_client import SCS225Client
++
++        return SCS225Client
++
+     raise ValueError(
+         f"Unknown motor_type: {motor_type}. "
+         f"Expected one of [{', '.join(SUPPORTED_MOTOR_TYPES)}]."
+@@ -48,6 +53,10 @@ def create_motor_client(
+     baudrate: int,
+ ) -> MotorClient:
+     """Construct (but do not connect) the client for ``motor_type``."""
++    if motor_type == SCS225 and port == "dual":
++        from .dual_scs225_client import DualSCS225Client
++
++        return DualSCS225Client(motor_ids, port, baudrate)
+     return motor_client_class(motor_type)(motor_ids, port, baudrate)
+ 
+ 
+diff --git a/orca_core/hardware/scs225_client.py b/orca_core/hardware/scs225_client.py
+index 07a731b..e56360d 100644
+--- a/orca_core/hardware/scs225_client.py
++++ b/orca_core/hardware/scs225_client.py
+@@ -18,7 +18,7 @@ ADDR_TORQUE_ENABLE = 0x28
+ ADDR_PRESENT_TEMPERATURE = 0x3F
+ ADDR_MOVING = 0x42
+ ADDR_PRESENT_CURRENT = 0x45
+-ADDR_TORQUE_LIMIT = 0x30
++ADDR_TORQUE_LIMIT = 0x10
+ 
+ DEFAULT_MOVE_SPEED = 50
+ DEFAULT_NORMAL_TORQUE_LIMIT = 500
+@@ -31,6 +31,13 @@ class SCS225Client(MotorClient):
+     waits_for_motion = True
+     supports_multi_turn = False
+     supported_modes = frozenset({POSITION, CURRENT_BASED_POSITION})
++    hardware_error_bits = (
++        (0x01, "input_voltage"),
++        (0x02, "angle_sensor"),
++        (0x04, "overheating"),
++        (0x08, "over_electrical"),
++        (0x20, "overload"),
++    )
+ 
+     position_range_rad = (0.0, 2.0 * np.pi)
+     current_scale_ma = CURRENT_SCALE_MA
+@@ -71,6 +78,28 @@ class SCS225Client(MotorClient):
+         if not self._connected or self.servo is None:
+             raise OSError("Must call connect() first.")
+ 
++    @staticmethod
++    def probe(port: str, baudrate: int, motor_ids: Sequence[int]) -> bool:
++        if port == "dual":
++            from .dual_scs225_client import DualSCS225Client
++
++            return DualSCS225Client.probe(port, baudrate, motor_ids)
++        handler = PortHandler(port)
++        opened = False
++        try:
++            opened = handler.openPort()
++            if not opened or not handler.setBaudRate(baudrate):
++                return False
++            servo = scscl(handler)
++            for motor_id in motor_ids:
++                _, result, _ = servo.ReadPos(motor_id)
++                if result == COMM_SUCCESS:
++                    return True
++            return False
++        finally:
++            if opened:
++                handler.closePort()
++
+     def connect(self) -> None:
+         if self._connected:
+             raise RuntimeError("SCS225Client is already connected")
+@@ -195,6 +224,13 @@ class SCS225Client(MotorClient):
+             current=np.asarray(currents, dtype=float),
+         )
+ 
++    def read_hardware_error(self, motor_id: int) -> int | None:
++        self.check_connected()
++        if motor_id not in self.motor_ids:
++            raise ValueError(f"Unknown SCS225 motor ID {motor_id}")
++        _, result, error = self.servo.ReadPos(motor_id)
++        return int(error) if result == COMM_SUCCESS else None
++
+     def read_temperature(self) -> np.ndarray:
+         self.check_connected()
+ 
+@@ -246,18 +282,7 @@ class SCS225Client(MotorClient):
+         motor_ids: Sequence[int],
+         currents: np.ndarray,
+     ) -> None:
+-        """
+-        Orca compatibility adapter.
+-
+-        Orca Core expresses calibration force through its goal-current API.
+-        SCS225 does not use that control model, so values are interpreted as
+-        native SCS torque-limit units and written to SRAM address 0x30.
+-
+-        On this branch:
+-          200 = calibration torque
+-          500 = normal operating torque
+-          1000 = native maximum
+-        """
++        """Accept limits already satisfied by the EEPROM torque ceiling."""
+         self.check_connected()
+ 
+         if len(motor_ids) != len(currents):
+@@ -271,24 +296,63 @@ class SCS225Client(MotorClient):
+             if not np.isfinite(value) or value < 0:
+                 raise ValueError("SCS225 torque limit must be finite and non-negative")
+ 
+-            raw = int(np.clip(round(value), 0, MAX_TORQUE_LIMIT))
+-
+-            result, error = self.servo.write2ByteTxRx(
+-                motor_id,
+-                ADDR_TORQUE_LIMIT,
+-                raw,
+-            )
++        limits = self.read_current_limits() if len(motor_ids) else {}
++        for motor_id, requested in zip(motor_ids, currents):
++            actual = limits[motor_id]
++            if actual is None or actual > min(float(requested), MAX_TORQUE_LIMIT):
++                raise NotImplementedError(
++                    f"SCS225 ID {motor_id} EEPROM torque limit={actual}, requested={requested}. "
++                    "Use explicit torque-disabled EEPROM setup and readback first; "
++                    "runtime commands do not change persistent limits."
++                )
+ 
++    def configure_torque_limit(self, motor_id: int, value: int) -> None:
++        """Explicitly persist a native torque ceiling while the motor is disabled."""
++        self.check_connected()
++        if motor_id not in self.motor_ids:
++            raise ValueError(f"Unknown SCS225 motor ID {motor_id}")
++        if not np.isfinite(value) or not 0 <= value <= MAX_TORQUE_LIMIT or int(value) != value:
++            raise ValueError("SCS225 torque limit must be an integer from 0 to 1000")
++        torque, result, error = self.servo.read1ByteTxRx(motor_id, ADDR_TORQUE_ENABLE)
++        if result != COMM_SUCCESS or error != 0 or torque != 0:
++            raise OSError("Disable SCS225 torque and verify status before EEPROM setup")
++        lock, result, error = self.servo.read1ByteTxRx(motor_id, 48)
++        if result != COMM_SUCCESS or error != 0 or lock not in (0, 1):
++            raise OSError("Cannot read SCS225 EEPROM lock state")
++        existing = self.read_current_limits()[motor_id]
++        if existing is None:
++            raise OSError("Cannot read SCS225 EEPROM torque limit")
++        if existing == value:
++            return
++        try:
++            result, error = self.servo.write1ByteTxRx(motor_id, 48, 0)
+             if result != COMM_SUCCESS or error != 0:
+-                raise OSError(
+-                    f"Torque-limit write failed for ID {motor_id}: "
+-                    f"result={result} error={error}"
+-                )
++                raise OSError("Cannot unlock SCS225 EEPROM")
++            result, error = self.servo.write2ByteTxRx(motor_id, ADDR_TORQUE_LIMIT, int(value))
++            if result != COMM_SUCCESS or error != 0:
++                raise OSError("SCS225 EEPROM torque-limit write failed")
++            if self.read_current_limits()[motor_id] != value:
++                raise OSError("SCS225 EEPROM torque-limit readback mismatch")
++        finally:
++            result, error = self.servo.write1ByteTxRx(motor_id, 48, lock)
++            if result != COMM_SUCCESS or error != 0:
++                raise OSError("Cannot restore SCS225 EEPROM lock state")
++        restored, result, error = self.servo.read1ByteTxRx(motor_id, 48)
++        if result != COMM_SUCCESS or error != 0 or restored != lock:
++            raise OSError("SCS225 EEPROM lock readback mismatch")
+ 
+     def read_current_limits(self) -> dict[int, float | None]:
+-        # Compatibility with Orca's current-limit API. The returned number is
+-        # the native SCS torque-limit ceiling, not milliamps.
+-        return {motor_id: float(MAX_TORQUE_LIMIT) for motor_id in self.motor_ids}
++        """Read the EEPROM torque ceiling in native units, not milliamps."""
++        self.check_connected()
++        limits = {}
++        for motor_id in self.motor_ids:
++            value, result, error = self.servo.read2ByteTxRx(motor_id, ADDR_TORQUE_LIMIT)
++            limits[motor_id] = (
++                float(value)
++                if result == COMM_SUCCESS and error == 0 and 0 <= value <= MAX_TORQUE_LIMIT
++                else None
++            )
++        return limits
+ 
+     def write_profile_velocity(
+         self,
+diff --git a/orca_core/models/v2/orcahand-scs225-right/config.yaml b/orca_core/models/v2/orcahand-scs225-right/config.yaml
+index d98c907..37d19c3 100644
+--- a/orca_core/models/v2/orcahand-scs225-right/config.yaml
++++ b/orca_core/models/v2/orcahand-scs225-right/config.yaml
+@@ -3,7 +3,7 @@ port: dual
+ baudrate: 1000000
+ motor_type: scs225
+ 
+-max_current: default
++max_current: 1000
+ type: right
+ control_mode: position
+ motor_ids:
+diff --git a/orca_core/utils/cli.py b/orca_core/utils/cli.py
+index 3f8a1c9..6d299ed 100644
+--- a/orca_core/utils/cli.py
++++ b/orca_core/utils/cli.py
+@@ -14,7 +14,8 @@ from orca_core import BaseHand, load_hand
+ 
+ 
+ def add_hand_arguments(
+-    parser: ArgumentParser, *, mock_default: bool = False, feedback_flag: bool = True
++    parser: ArgumentParser, *, mock_default: bool = False, feedback_flag: bool = True,
++    motor_port_flag: bool = False,
+ ) -> None:
+     """Add the shared hand-selection arguments.
+ 
+@@ -39,6 +40,9 @@ def add_hand_arguments(
+         default=None,
+         help="Bundled model to load (e.g. orcahand-full-left) instead of autodetecting.",
+     )
++    if motor_port_flag:
++        parser.add_argument('--port', dest='motor_port', default=None,
++                            help='Runtime motor-port override; does not change config.yaml.')
+     if feedback_flag:
+         parser.add_argument(
+             "--no-engage-feedback",
+@@ -56,6 +60,7 @@ def create_hand(
+     model_name: str | None = None,
+     engage_feedback: bool = True,
+     engage_sensors: bool = True,
++    port: str | None = None,
+ ) -> BaseHand:
+     """Build the hand class matching the selected — or detected — model.
+ 
+@@ -69,6 +74,7 @@ def create_hand(
+         model_name=model_name,
+         engage_feedback=engage_feedback,
+         engage_sensors=engage_sensors,
++        **({'port': port} if port is not None else {}),
+     )
+     print(f"Loaded {type(hand).__name__} from {hand.config.config_path}")
+     return hand
+@@ -89,6 +95,8 @@ def create_hand_from_args(args: Namespace, **overrides) -> BaseHand:
+         "engage_feedback": getattr(args, "engage_feedback", True),
+     }
+     options.update(overrides)
++    if getattr(args, 'motor_port', None) is not None:
++        options['port'] = args.motor_port
+     return create_hand(args.config_path, **options)
+ 
+ 
+diff --git a/pyproject.toml b/pyproject.toml
+index bb9b2b9..6d96f38 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -18,6 +18,7 @@ dependencies = [
+     "fastapi (>=0.115.12,<1.0.0)",
+     "uvicorn (>=0.34.2,<0.35.0)",
+     "numpy (>=2.2.6,<3.0.0)",
++    "ftservo-python-sdk==2.0.0",
+ ]
+ 
+ [dependency-groups]
+diff --git a/uv.lock b/uv.lock
+index 4f24c40..85e7129 100644
+--- a/uv.lock
++++ b/uv.lock
+@@ -1,5 +1,5 @@
+ version = 1
+-revision = 3
++revision = 5
+ requires-python = ">=3.10"
+ resolution-markers = [
+     "python_full_version >= '3.12'",
+@@ -264,7 +264,7 @@ name = "exceptiongroup"
+ version = "1.3.1"
+ source = { registry = "https://pypi.org/simple" }
+ dependencies = [
+-    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
++    { name = "typing-extensions" },
+ ]
+ sdist = { url = "https://files.pythonhosted.org/packages/50/79/66800aadf48771f6b62f7eb014e352e5d06856655206165d775e675a02c9/exceptiongroup-1.3.1.tar.gz", hash = "sha256:8b412432c6055b0b7d14c310000ae93352ed6754f70fa8f7c34141f91c4e3219", size = 30371, upload-time = "2025-11-21T23:01:54.787Z" }
+ wheels = [
+@@ -296,6 +296,18 @@ wheels = [
+     { url = "https://files.pythonhosted.org/packages/cb/03/10388a42375ee7e4ac9b94eb2c5c569c8b5795e377e701c9ac3ad63de890/fastapi-0.141.1-py3-none-any.whl", hash = "sha256:bfb91aa2d334c61cb35ba9a116fc123b3d3df31640b801cf57a7a78ec3f603b3", size = 131954, upload-time = "2026-07-29T17:18:04.364Z" },
+ ]
+ 
++[[package]]
++name = "ftservo-python-sdk"
++version = "2.0.0"
++source = { registry = "https://pypi.org/simple" }
++dependencies = [
++    { name = "pyserial" },
++]
++sdist = { url = "https://files.pythonhosted.org/packages/fe/da/d3f07d88136d338d075df06eaee4e4ada90da03f37dbdea63d339b3341d0/ftservo_python_sdk-2.0.0.tar.gz", hash = "sha256:4ffad15e4d31ecd386fe941abcb8bb23b9f50f2825e5681786c5170c34dc9a5f", size = 13354, upload-time = "2025-04-17T12:31:07.401Z" }
++wheels = [
++    { url = "https://files.pythonhosted.org/packages/a2/a5/a7dad40ae9ae48180c7c595b4af62df63fcf0ce83c097bf4307f4ebfaa16/ftservo_python_sdk-2.0.0-py3-none-any.whl", hash = "sha256:c8303df01b2c772f3e1dffbb3b789e2d39545f6fb187ec45032c7737356be2a4", size = 12172, upload-time = "2025-04-17T12:31:05.78Z" },
++]
++
+ [[package]]
+ name = "ghp-import"
+ version = "2.1.0"
+@@ -881,6 +893,7 @@ source = { editable = "." }
+ dependencies = [
+     { name = "dynamixel-sdk" },
+     { name = "fastapi" },
++    { name = "ftservo-python-sdk" },
+     { name = "numpy", version = "2.2.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version == '3.11.*'" },
+     { name = "numpy", version = "2.5.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
+@@ -911,6 +924,7 @@ docs = [
+ requires-dist = [
+     { name = "dynamixel-sdk", specifier = ">=3.7.31,<4.0.0" },
+     { name = "fastapi", specifier = ">=0.115.12,<1.0.0" },
++    { name = "ftservo-python-sdk", specifier = "==2.0.0" },
+     { name = "numpy", specifier = ">=2.2.6,<3.0.0" },
+     { name = "pyserial", specifier = ">=3.5,<4.0" },
+     { name = "pyyaml", specifier = ">=6.0.2,<7.0.0" },

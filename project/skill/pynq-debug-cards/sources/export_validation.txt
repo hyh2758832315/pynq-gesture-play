@@ -1,0 +1,7 @@
+# 从最终检查点导出配对产物
+
+观察：在工程 open_run 上下文导出 XSA，内嵌 bit 对应收敛前 run，而最终 routed DCP 已完成时序修复。
+
+修正：关闭工程，独立打开最终 routed DCP，再导出 bit/XSA；从同一 XSA 提取 bit/HWH。
+
+验证：分别检查配置负载、HWH 接口与文件摘要。修复后的配置负载与冻结运行版本逐字节相同；容器时间戳不用于判断电路变化。配对数据见 export_pairing.txt。

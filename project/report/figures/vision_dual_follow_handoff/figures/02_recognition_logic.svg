@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1690" viewBox="0 0 2200 1690">
+<rect x="0" y="0" width="2200" height="1690" fill="#ffffff"/>
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#197b71"/></marker>
+</defs><g font-family="Microsoft YaHei" fill="#172b3a">
+<rect x="60" y="240" width="2080" height="355" rx="0" fill="#edf8f5" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="278.0" text-anchor="start" font-size="27" font-weight="600">从双掩膜得到几何特征</text>
+<rect x="60" y="635" width="1010" height="490" rx="0" fill="#edf5fb" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="673.0" text-anchor="start" font-size="27" font-weight="600">三态启发式规则</text>
+<rect x="1130" y="635" width="1010" height="490" rx="0" fill="#fff0f6" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="1152" y="673.0" text-anchor="start" font-size="27" font-weight="600">最近 5 帧内计票，当前帧必须同类</text>
+<rect x="60" y="1170" width="2080" height="390" rx="0" fill="#ffffff" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="1208.0" text-anchor="start" font-size="27" font-weight="600">同帧观察的两种用途</text>
+<path d="M540,381 L620,381" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1060,381 L1140,381" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1580,381 L1660,381" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  视觉识别与双路跟随  /  02  识别逻辑</text>
+<text x="1100.0" y="129.98" text-anchor="middle" font-size="47" font-weight="600">位置可先跟随，类别经过多帧确认</text>
+<text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">确定手在哪里，与确定是握拳 / 剪刀 / 张手，使用不同特征与有效性条件。</text>
+<text x="1100.0" y="1661.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意</text>
+<rect x="100" y="325" width="440" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="320.0" y="373.25" text-anchor="middle" font-size="25" font-weight="600">滤波掩膜 → 外轮廓</text>
+<text x="320.0" y="405.75" text-anchor="middle" font-size="25" font-weight="400">候选面积 ≥ 2000 px²</text>
+<rect x="620" y="325" width="440" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="840.0" y="373.25" text-anchor="middle" font-size="25" font-weight="600">选取当前目标</text>
+<text x="840.0" y="405.75" text-anchor="middle" font-size="25" font-weight="400">面积 + 重叠 + 距离连续性</text>
+<rect x="1140" y="325" width="440" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1360.0" y="373.25" text-anchor="middle" font-size="25" font-weight="600">轮廓 / 凸包 / 凸缺陷</text>
+<text x="1360.0" y="405.75" text-anchor="middle" font-size="25" font-weight="400">提取 A、Aₕ、n</text>
+<rect x="1660" y="325" width="440" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1880.0" y="373.25" text-anchor="middle" font-size="25" font-weight="600">原掩膜 ∩ 选中轮廓</text>
+<text x="1880.0" y="405.75" text-anchor="middle" font-size="25" font-weight="400">像素矩得到位置质心</text>
+<text x="595.0" y="506.56" text-anchor="middle" font-size="24" font-weight="600">候选按面积保留至多 8 个</text>
+<text x="595.0" y="537.76" text-anchor="middle" font-size="24" font-weight="400">评分 = A/Amax + 2·IoU + max(0, 1−3d)</text>
+<text x="1625.0" y="506.56" text-anchor="middle" font-size="24" font-weight="600">cx = Σx / N，cy = Σy / N</text>
+<text x="1625.0" y="537.76" text-anchor="middle" font-size="24" font-weight="400">仅统计原掩膜选中像素，排除膨胀新增区域</text>
+<text x="565.0" y="739.13" text-anchor="middle" font-size="27" font-weight="600">r = (Aₕ − A) / A × 100%</text>
+<text x="565.0" y="774.23" text-anchor="middle" font-size="27" font-weight="400">n = 合格凸缺陷数 + 1（形状特征）</text>
+<rect x="95" y="814" width="245" height="62" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="217.5" y="853.5" text-anchor="middle" font-size="25" font-weight="600">握拳 / 0</text>
+<text x="690.0" y="853.5" text-anchor="middle" font-size="25" font-weight="600">n = 1 且 r &lt; 15%</text>
+<rect x="95" y="890" width="245" height="62" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="217.5" y="929.5" text-anchor="middle" font-size="25" font-weight="600">剪刀 / 2</text>
+<text x="690.0" y="929.5" text-anchor="middle" font-size="25" font-weight="600">n = 2 且 r ≥ 15%</text>
+<rect x="95" y="966" width="245" height="62" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="217.5" y="1005.5" text-anchor="middle" font-size="25" font-weight="600">张手 / 5</text>
+<text x="690.0" y="1005.5" text-anchor="middle" font-size="25" font-weight="600">3 ≤ n ≤ 5 且 18% ≤ r ≤ 55%</text>
+<text x="565.0" y="1077.98" text-anchor="middle" font-size="22" font-weight="600">凸缺陷条件：夹角 ≤ 90°，深度 &gt; 随手尺寸缩放的阈值</text>
+<text x="1635.0" y="738.0" text-anchor="middle" font-size="25" font-weight="600">同类出现 ≥ 3 次 → 确认；否则 PENDING</text>
+<text x="1225.0" y="818.82" text-anchor="middle" font-size="23" font-weight="600">F1</text>
+<rect x="1168" y="843" width="114" height="56" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1225.0" y="879.5" text-anchor="middle" font-size="25" font-weight="600">0</text>
+<text x="1225.0" y="943.98" text-anchor="middle" font-size="22" font-weight="600">待定</text>
+<ellipse cx="1225.0" cy="1000.0" rx="25.0" ry="25.0" fill="#ffffff" stroke="#00b73b" stroke-width="3"/>
+<text x="1225.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<ellipse cx="1225.0" cy="1000.0" rx="5.0" ry="5.0" fill="#00b73b" stroke="#00b73b" stroke-width="3"/>
+<text x="1225.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1370.0" y="818.82" text-anchor="middle" font-size="23" font-weight="600">F2</text>
+<rect x="1313" y="843" width="114" height="56" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1370.0" y="879.5" text-anchor="middle" font-size="25" font-weight="600">0</text>
+<text x="1370.0" y="943.98" text-anchor="middle" font-size="22" font-weight="600">待定</text>
+<ellipse cx="1370.0" cy="1000.0" rx="25.0" ry="25.0" fill="#ffffff" stroke="#00b73b" stroke-width="3"/>
+<text x="1370.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<ellipse cx="1370.0" cy="1000.0" rx="5.0" ry="5.0" fill="#00b73b" stroke="#00b73b" stroke-width="3"/>
+<text x="1370.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1515.0" y="818.82" text-anchor="middle" font-size="23" font-weight="600">F3</text>
+<rect x="1458" y="843" width="114" height="56" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1515.0" y="879.5" text-anchor="middle" font-size="25" font-weight="600">0</text>
+<text x="1515.0" y="943.98" text-anchor="middle" font-size="22" font-weight="600">握拳</text>
+<ellipse cx="1515.0" cy="1000.0" rx="17.0" ry="17.0" fill="#ffffff" stroke="#ff0000" stroke-width="3"/>
+<text x="1515.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<ellipse cx="1515.0" cy="1000.0" rx="5.0" ry="5.0" fill="#ff0000" stroke="#ff0000" stroke-width="3"/>
+<text x="1515.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1660.0" y="818.82" text-anchor="middle" font-size="23" font-weight="600">F4</text>
+<rect x="1603" y="843" width="114" height="56" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1660.0" y="879.5" text-anchor="middle" font-size="25" font-weight="600">2</text>
+<text x="1660.0" y="943.98" text-anchor="middle" font-size="22" font-weight="600">待定</text>
+<ellipse cx="1660.0" cy="1000.0" rx="25.0" ry="25.0" fill="#ffffff" stroke="#00b73b" stroke-width="3"/>
+<text x="1660.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<ellipse cx="1660.0" cy="1000.0" rx="5.0" ry="5.0" fill="#00b73b" stroke="#00b73b" stroke-width="3"/>
+<text x="1660.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1805.0" y="818.82" text-anchor="middle" font-size="23" font-weight="600">F5</text>
+<rect x="1748" y="843" width="114" height="56" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1805.0" y="879.5" text-anchor="middle" font-size="25" font-weight="600">2</text>
+<text x="1805.0" y="943.98" text-anchor="middle" font-size="22" font-weight="600">待定</text>
+<ellipse cx="1805.0" cy="1000.0" rx="25.0" ry="25.0" fill="#ffffff" stroke="#00b73b" stroke-width="3"/>
+<text x="1805.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<ellipse cx="1805.0" cy="1000.0" rx="5.0" ry="5.0" fill="#00b73b" stroke="#00b73b" stroke-width="3"/>
+<text x="1805.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1950.0" y="818.82" text-anchor="middle" font-size="23" font-weight="600">F6</text>
+<rect x="1893" y="843" width="114" height="56" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1950.0" y="879.5" text-anchor="middle" font-size="25" font-weight="600">2</text>
+<text x="1950.0" y="943.98" text-anchor="middle" font-size="22" font-weight="600">剪刀</text>
+<ellipse cx="1950.0" cy="1000.0" rx="25.0" ry="25.0" fill="#ffffff" stroke="#00b73b" stroke-width="3"/>
+<text x="1950.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<ellipse cx="1950.0" cy="1000.0" rx="5.0" ry="5.0" fill="#00b73b" stroke="#00b73b" stroke-width="3"/>
+<text x="1950.0" y="1000.34" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1635.0" y="1082.3" text-anchor="middle" font-size="20" font-weight="600">构造序列示例；位置均有效。圆圈示意不按像素比例。</text>
+<text x="390.0" y="1261.84" text-anchor="middle" font-size="26" font-weight="600">观察状态</text>
+<text x="1050.0" y="1261.84" text-anchor="middle" font-size="26" font-weight="600">HDMI 手圈</text>
+<text x="1760.0" y="1261.84" text-anchor="middle" font-size="26" font-weight="600">灵巧手</text>
+<rect x="100" y="1297" width="580" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="390.0" y="1334.66" text-anchor="middle" font-size="24" font-weight="600">位置有效 / 类别待定</text>
+<rect x="730" y="1297" width="640" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1050.0" y="1334.66" text-anchor="middle" font-size="24" font-weight="600">绿圈继续跟随当前质心</text>
+<rect x="1420" y="1297" width="680" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1760.0" y="1334.66" text-anchor="middle" font-size="24" font-weight="600">保持已批准姿态</text>
+<rect x="100" y="1372" width="580" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="390.0" y="1409.66" text-anchor="middle" font-size="24" font-weight="600">稳定确认握拳</text>
+<rect x="730" y="1372" width="640" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1050.0" y="1409.66" text-anchor="middle" font-size="24" font-weight="600">红圈缩小，仍跟随当前质心</text>
+<rect x="1420" y="1372" width="680" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1760.0" y="1409.66" text-anchor="middle" font-size="24" font-weight="600">在可执行边界采用握拳</text>
+<rect x="100" y="1447" width="580" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="390.0" y="1484.66" text-anchor="middle" font-size="24" font-weight="600">明确无手 / 来源过期</text>
+<rect x="730" y="1447" width="640" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1050.0" y="1484.66" text-anchor="middle" font-size="24" font-weight="600">无有效新鲜位置 → 隐藏</text>
+<rect x="1420" y="1447" width="680" height="59" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1760.0" y="1484.66" text-anchor="middle" font-size="24" font-weight="600">无手 → default；过期 → 恢复等待</text>
+<text x="1100.0" y="1617.82" text-anchor="middle" font-size="23" font-weight="600">当前分类依据为肤色与几何规则；多帧确认次数表示时序稳定性。</text>
+</g></svg>

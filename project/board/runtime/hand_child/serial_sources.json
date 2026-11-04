@@ -1,0 +1,29 @@
+{
+  "schema": "hand-serial-source-v1",
+  "sha256": {
+    "frozen_manifest.json": "8d14e83d5493653d73525c5820cc779eadfea324be5ced2c7fc8bb0301984c9b",
+    "src/pynq_usb_hand/__init__.py": "3c6f4a858fe730ce1185288680ae07a2679d25a1e5a672b75189c7f3a0256c90",
+    "src/pynq_usb_hand/assets.py": "6f9242f7354746e51ff2ffe019b0c51189cdf2b4111113f9ecc0199041fec9a7",
+    "src/pynq_usb_hand/buttons.py": "36aea178026d3da8b7e829972acf02c473d91037406d0c5e7f2d331abb5fd125",
+    "src/pynq_usb_hand/controller.py": "ab82a26b123173183cfd1b05ee754dd02a4840862ce654c8bbd79a633b4084e5",
+    "src/pynq_usb_hand/motion.py": "5c5a7f127e78819a63a47d862dcf863920aad8c02aecf4272e977588ccd71c23",
+    "src/pynq_usb_hand/orca_backend.py": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9",
+    "src/pynq_usb_hand/transport.py": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16",
+    "src/pynq_usb_hand/gesture_consumer.py": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90",
+    "src/pynq_usb_hand/game_bridge.py": "a218a45afdac51be5de52f78da10ad34499f26b88a375c0730b97265813b3af4",
+    "src/pynq_usb_hand/actuator_owner.py": "068b6569787cc666e1932faecd1c9fe0195e560343adf977aebb9f4e860794f7",
+    "src/pynq_usb_hand/page_playback.py": "2001fea09377dd77515d54e7173f55e6d053086f3311eebd904c2bf0ef0f5918",
+    "assets/demo/0.txt": "cb31fd2989b459f06b88ae716d33982a64b7620c0907cb41792730880c35f162",
+    "assets/demo/1.txt": "c31bdfa9089a214e9bd33fa8daf6427f374b6ea0be834d3393fb0e9298ee8f0b",
+    "assets/demo/2.txt": "840340c2d59709c1b196645a8d2b6ebbd8a7903a511071d9b1ab0f25594d883e",
+    "assets/demo/3.txt": "313310462520471150a1661fe3fd9016ea4ac6b970861f054fb2e9f5252ae6d6",
+    "assets/demo/4.txt": "9caf83a828b5ecb926c83043e571f0a79c01807ff72655b0c0adfc8cb6c668e1",
+    "assets/demo/5.txt": "d4e80516812e2f5d92c10cc5ce3dee2405e2f54094be8cc2296dc39bb6650390",
+    "assets/demo/6.txt": "e99abfba9c06aec4664f29d82aeb033d17e8c7febdab6e49ad7ab6f36fee239e",
+    "assets/demo/7.txt": "cfd0d40b4bcf8f36a826f89846f98b57958226367a99bd1d4b27bcd8e73961e7",
+    "assets/demo/8.txt": "2c6a28e15d2575db06e2c509d4228f1d45bec883ebd97be1bf00905d5dff5dfb",
+    "assets/demo/9.txt": "6ea25b80e68e4ec08e849549666517a688c8167f2c6b2fd69b53a174b89c8a9c",
+    "assets/demo/default.txt": "95eb9e2397bf5a2b509adc4ab9880b47749c1cfab84bd32850093f5276c6fe8f",
+    "assets/demo/heart.txt": "7b07a1b052370523727a143f38df01a9921fd59be1ac0d76998ed85bbcd3b4f0"
+  }
+}

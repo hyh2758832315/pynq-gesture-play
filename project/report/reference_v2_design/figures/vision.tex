@@ -1,0 +1,15 @@
+\begin{tikzpicture}[node distance=8mm and 10mm]
+\node[box] (rgb) {RGB 图像流\\1280×720};
+\node[box,right=of rgb] (area) {2×2 区域处理\\640×360};
+\node[box,right=of area] (hsv) {HSV 阈值判定\\原始二值掩膜};
+\node[soft,below=10mm of area] (raw) {原始掩膜 FIFO\\数据 / 帧标志};
+\node[box,below=10mm of hsv] (filter) {9×9 膨胀\\5×5 高斯滤波};
+\node[box,below=10mm of raw] (pair) {双路对齐与配对\\16 bit / 像素};
+\node[box,left=of pair] (dma) {DMS1 + DMA\\身份 / 阈值 / CRC};
+\node[soft,below=10mm of dma] (cpu) {PS 轮廓与形状判断\\质心 / 手势 / 事件};
+\draw[arr] (rgb)--(area);\draw[arr] (area)--(hsv);
+\draw[arr] (hsv)--(filter);\draw[arr] (hsv.south west)--(raw.north east);
+\draw[arr] (raw)--(pair);\draw[arr] (filter.south)|-(pair.east);
+\draw[arr] (pair)--(dma);\draw[arr] (dma)--(cpu);
+\node[lab,below=10mm of pair,text width=63mm,anchor=north west,xshift=-15mm] {上下文 FIFO 随帧传递\\epoch / config\_id / frame\_id / 阈值};
+\end{tikzpicture}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 2, "test_id": "snake-startup", "name": "Snake startup and neutral hand",
+  "seed": 17, "max_ticks": 119,
+  "events": [{"tick":0,"kind":"gesture","event_id":"point","x":300,"y":70,"gesture":"paper"}],
+  "assertions": [
+    {"tick":0,"field":"status","operator":"eq","expected":"RUNNING"},
+    {"tick":119,"field":"values.moves","operator":"eq","expected":0},
+    {"tick":119,"field":"values.player_length","operator":"eq","expected":6}
+  ]
+}

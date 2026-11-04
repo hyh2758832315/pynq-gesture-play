@@ -1,0 +1,4 @@
+PART=xc7z020clg400-1
+MISSING=
+EXTERNAL=
+SYNTH=Not started

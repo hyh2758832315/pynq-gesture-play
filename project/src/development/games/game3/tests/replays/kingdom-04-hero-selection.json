@@ -1,0 +1,23 @@
+{
+  "schema_version": 2, "test_id": "kingdom-hero-selection", "name": "Hero Selection and Confirmation", "seed": 0, "max_ticks": 120,
+  "events": [
+    {"tick": 0, "kind": "gesture", "event_id": "female", "x": 319, "y": 90, "gesture": "paper"},
+    {"tick": 10, "kind": "gesture", "event_id": "male", "x": 0, "y": 90, "gesture": "scissors"},
+    {"tick": 20, "kind": "gesture", "event_id": "female-again", "x": 319, "y": 90, "gesture": "paper"},
+    {"tick": 30, "kind": "gesture", "event_id": "confirm", "x": 160, "y": 90, "gesture": "fist"},
+    {"tick": 31, "kind": "gesture", "event_id": "run", "x": 319, "y": 90, "gesture": "paper"},
+    {"tick": 60, "kind": "gesture", "event_id": "jump", "x": 160, "y": 90, "gesture": "fist"},
+    {"tick": 61, "kind": "gesture", "event_id": "release", "x": 160, "y": 90, "gesture": "paper"},
+    {"tick": 90, "kind": "gesture", "event_id": "run-left", "x": 0, "y": 90, "gesture": "scissors"}
+  ],
+  "assertions": [
+    {"tick": 0, "field": "status", "operator": "eq", "expected": "SELECT"},
+    {"tick": 0, "field": "values.character", "operator": "eq", "expected": "female"},
+    {"tick": 10, "field": "values.character", "operator": "eq", "expected": "male"},
+    {"tick": 20, "field": "values.character", "operator": "eq", "expected": "female"},
+    {"tick": 30, "field": "status", "operator": "eq", "expected": "RUNNING"},
+    {"tick": 30, "field": "values.vy", "operator": "eq", "expected": 0},
+    {"tick": 60, "field": "values.vy", "operator": "lt", "expected": 0},
+    {"tick": 120, "field": "values.character", "operator": "eq", "expected": "female"}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "scope": "offline SDK encoding with memory port; no serial device opened",
+  "input": {
+    "id": 1,
+    "raw": 2048,
+    "time": 0,
+    "speed": 500
+  },
+  "tx_hex": "FF FF 01 09 03 2A 08 00 00 00 01 F4 CB",
+  "ack_hex": "FF FF 01 02 00 FC",
+  "tx_bytes": 13,
+  "ack_bytes": 6,
+  "communication": 0,
+  "device_error": 0,
+  "scs_end": 1,
+  "wire_time_us_1mbaud_8n1_ideal": 190
+}

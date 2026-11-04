@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Fatal: PRESERVE_OUTPUT_MISMATCH instance=0 port=completed_crc32 checks=1
+Time: 5001 ps  Iteration: 0  Process: /tb_pl_preserve_generated/monitor_0.compare_outputs  Scope: tb_pl_preserve_generated.monitor_0.compare_outputs  File: E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/variant_b/monitor.sv Line: 17
+$finish called at time : 5001 ps
+Error: PRESERVE_INCOMPLETE instance=0 checks=1 reset=1 active=0
+Time: 5001 ps  Iteration: 0  Process: /tb_pl_preserve_generated/Always26_9  Scope: tb_pl_preserve_generated  File: E:/projects/fpga/voice-view-game/b/preserve_consumer_r01/workspace/runs/run_01/variant_b/monitor.sv Line: 28

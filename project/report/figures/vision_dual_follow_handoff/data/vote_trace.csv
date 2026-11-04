@@ -1,0 +1,7 @@
+﻿frame,raw_code,stable,rps,position_valid,marker
+F1,0,PENDING,UNKNOWN,True,green
+F2,0,PENDING,UNKNOWN,True,green
+F3,0,0,ROCK,True,red_small
+F4,2,PENDING,UNKNOWN,True,green
+F5,2,PENDING,UNKNOWN,True,green
+F6,2,2,SCISSORS,True,green

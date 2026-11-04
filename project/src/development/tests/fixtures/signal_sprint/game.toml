@@ -1,0 +1,19 @@
+[package]
+schema_version = 1
+id = "game2"
+display_name = "Game 2 - Signal Sprint"
+version = "1.0.0"
+entrypoint = "src.main:create_game"
+
+[runtime]
+sdk_major = 1
+sdk_minor = 1
+tick_hz = 60
+render_hz = 60
+logical_width = 320
+logical_height = 180
+
+[target]
+build_id = 3221620480
+abi_major = 1
+abi_minor = 0

@@ -1,0 +1,92 @@
+# ==============================================================================
+# Copyright (c) 2025 ORCA
+#
+# This file is part of ORCA and is licensed under the MIT License.
+# You may use, copy, modify, and distribute this file under the terms of the MIT License.
+# See the LICENSE file at the root of this repository for full license information.
+# ==============================================================================
+
+"""Resolve a motor family name to its :class:`MotorClient` implementation.
+
+The single place that maps ``motor_type`` to a concrete client. Everything else
+works through :class:`MotorClient` and its class attributes, so supporting a new
+motor family means adding a client and one entry here.
+
+Clients are imported lazily: a hand running Dynamixel motors never imports the
+Feetech SDK.
+"""
+from __future__ import annotations
+
+from typing import Sequence
+
+from ..constants import DYNAMIXEL, FEETECH, SCS225, SUPPORTED_MOTOR_TYPES
+from .motor_client import MotorClient
+
+
+def motor_client_class(motor_type: str) -> type[MotorClient]:
+    """Return the :class:`MotorClient` subclass driving ``motor_type``."""
+    if motor_type == DYNAMIXEL:
+        from .dynamixel_client import DynamixelClient
+
+        return DynamixelClient
+
+    if motor_type == FEETECH:
+        from .feetech_client import FeetechClient
+
+        return FeetechClient
+
+    if motor_type == SCS225:
+        from .scs225_client import SCS225Client
+
+        return SCS225Client
+
+    raise ValueError(
+        f"Unknown motor_type: {motor_type}. "
+        f"Expected one of [{', '.join(SUPPORTED_MOTOR_TYPES)}]."
+    )
+
+
+def create_motor_client(
+    motor_type: str,
+    motor_ids: Sequence[int],
+    port: str,
+    baudrate: int,
+) -> MotorClient:
+    """Construct (but do not connect) the client for ``motor_type``."""
+    if motor_type == SCS225 and port == "dual":
+        from .dual_scs225_client import DualSCS225Client
+
+        return DualSCS225Client(motor_ids, port, baudrate)
+    return motor_client_class(motor_type)(motor_ids, port, baudrate)
+
+
+def mock_motor_client_class(motor_type: str) -> type[MotorClient]:
+    """Return the in-memory stand-in for ``motor_type``'s client.
+
+    Mocks carry their family's capability attributes, so a mock hand behaves
+    like the family it stands in for.
+    """
+    if motor_type == DYNAMIXEL:
+        from .mock_dynamixel_client import MockDynamixelClient
+
+        return MockDynamixelClient
+
+    if motor_type == FEETECH:
+        from .mock_feetech_client import MockFeetechClient
+
+        return MockFeetechClient
+
+    raise ValueError(
+        f"Unknown motor_type: {motor_type}. "
+        f"Expected one of [{', '.join(SUPPORTED_MOTOR_TYPES)}]."
+    )
+
+
+def create_mock_motor_client(
+    motor_type: str,
+    motor_ids: Sequence[int],
+    port: str,
+    baudrate: int,
+) -> MotorClient:
+    """Construct (but do not connect) the mock client for ``motor_type``."""
+    return mock_motor_client_class(motor_type)(motor_ids, port, baudrate)

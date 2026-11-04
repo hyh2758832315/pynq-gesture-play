@@ -1,0 +1,6 @@
+﻿stage,p50_ms,p95_ms,p99_ms,source,scope
+输入准备,19.87,25.7,27.04,docs/vision_latency_acceleration_plan_20261023.md,"R1, 300 distinct NO_HAND frames, 60.101 s HTTP sample"
+颜色掩码与CPU参考,66.94,74.39,79.48,docs/vision_latency_acceleration_plan_20261023.md,"R1, 300 distinct NO_HAND frames, 60.101 s HTTP sample"
+PS形态学,32.23,36.43,38.7,docs/vision_latency_acceleration_plan_20261023.md,"R1, 300 distinct NO_HAND frames, 60.101 s HTTP sample"
+轮廓选择,4.52,8.7,9.56,docs/vision_latency_acceleration_plan_20261023.md,"R1, 300 distinct NO_HAND frames, 60.101 s HTTP sample"
+形状统计,0.029,0.033,0.036,docs/vision_latency_acceleration_plan_20261023.md,"R1, 300 distinct NO_HAND frames, 60.101 s HTTP sample"

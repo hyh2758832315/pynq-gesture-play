@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "test_id": "hand-no-mechanisms",
+  "name": "手势选角且不触发机关",
+  "seed": 0,
+  "max_ticks": 20,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "choose",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1,
+      "kind": "gesture",
+      "event_id": "scissors",
+      "x": 160,
+      "y": 90,
+      "gesture": "scissors"
+    },
+    {
+      "tick": 10,
+      "kind": "gesture",
+      "event_id": "paper",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 0,
+      "field": "values.character",
+      "operator": "eq",
+      "expected": "female"
+    },
+    {
+      "tick": 20,
+      "field": "values.note_hits",
+      "operator": "eq",
+      "expected": 0
+    },
+    {
+      "tick": 20,
+      "field": "values.lift_phase",
+      "operator": "eq",
+      "expected": "IDLE"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿byte_index,hex,field,meaning
+0,FF,HEADER0,帧头
+1,FF,HEADER1,帧头
+2,01,ID,电机1
+3,09,LENGTH,7参数+2
+4,03,WRITE,写指令
+5,2A,ADDRESS,起始寄存器0x2A
+6,08,POS_H,位置2048高字节
+7,00,POS_L,位置2048低字节
+8,00,TIME_H,时间0高字节
+9,00,TIME_L,时间0低字节
+10,01,SPEED_H,速度500高字节
+11,F4,SPEED_L,速度500低字节
+12,CB,CHECKSUM,取反和校验

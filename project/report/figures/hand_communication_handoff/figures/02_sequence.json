@@ -1,0 +1,889 @@
+{
+  "width": 2200,
+  "height": 1600,
+  "title": "按阶段通信，等待期间不轮询位置",
+  "subtitle": "PYNQ PS 独立动作进程 → USB 串口 / SDK → 17 个电机；每次写入仍检查状态应答",
+  "edge_font_size": 24,
+  "nodes": [
+    {
+      "id": "kicker",
+      "x": 60,
+      "y": 24,
+      "w": 2080,
+      "h": 36,
+      "lines": "PYNQ  /  灵巧手驱动与低负荷通信  /  02  通信时序",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "title",
+      "x": 60,
+      "y": 74,
+      "w": 2080,
+      "h": 80,
+      "lines": "按阶段通信，等待期间不轮询位置",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 49,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 60,
+      "y": 164,
+      "w": 2080,
+      "h": 48,
+      "lines": "PYNQ PS 独立动作进程 → USB 串口 / SDK → 17 个电机；每次写入仍检查状态应答",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "footer",
+      "x": 60,
+      "y": 1548,
+      "w": 2080,
+      "h": 34,
+      "lines": "GESTURE PLAY  ·  v3.0 / 手部运行时 R16  ·  按已交付源码绘制  ·  技术示意",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 18,
+      "kind": "text"
+    },
+    {
+      "id": "startup",
+      "x": 60,
+      "y": 340,
+      "w": 2080,
+      "h": 280,
+      "lines": "启动检查",
+      "fill": "#edf8f5",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "playback",
+      "x": 60,
+      "y": 650,
+      "w": 2080,
+      "h": 480,
+      "lines": "正常播放",
+      "fill": "#fff0f6",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "exit",
+      "x": 60,
+      "y": 1160,
+      "w": 2080,
+      "h": 345,
+      "lines": "退出 / 卸力",
+      "fill": "#fff7e9",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "ps",
+      "x": 385,
+      "y": 245,
+      "w": 390,
+      "h": 70,
+      "lines": "PS 动作调度",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "ps_end",
+      "x": 580,
+      "y": 1480,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "sdk",
+      "x": 945,
+      "y": 245,
+      "w": 390,
+      "h": 70,
+      "lines": "SDK / 有界串口事务",
+      "fill": "#edf5fb",
+      "stroke": "#25638d",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "sdk_end",
+      "x": 1140,
+      "y": 1480,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "motor",
+      "x": 1645,
+      "y": 245,
+      "w": 390,
+      "h": 70,
+      "lines": "电机 ID i",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "motor_end",
+      "x": 1840,
+      "y": 1480,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "startnote",
+      "x": 86,
+      "y": 430,
+      "w": 270,
+      "h": 100,
+      "lines": "载入模型与标定\n检查后受控使能",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "connecta",
+      "x": 580,
+      "y": 405,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "connectb",
+      "x": 1140,
+      "y": 405,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "reada",
+      "x": 1140,
+      "y": 465,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "readb",
+      "x": 1840,
+      "y": 465,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "feedbacka",
+      "x": 1840,
+      "y": 520,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "feedbackb",
+      "x": 1140,
+      "y": 520,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "checkeda",
+      "x": 1140,
+      "y": 580,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "checkedb",
+      "x": 580,
+      "y": 580,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "playnote",
+      "x": 86,
+      "y": 780,
+      "w": 270,
+      "h": 155,
+      "lines": "每个阶段\n仅写需要变化的目标\n各 ID 顺序执行",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "stagea",
+      "x": 580,
+      "y": 730,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "stageb",
+      "x": 1140,
+      "y": 730,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "writea",
+      "x": 1140,
+      "y": 790,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "writeb",
+      "x": 1840,
+      "y": 790,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "acka",
+      "x": 1840,
+      "y": 850,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "ackb",
+      "x": 1140,
+      "y": 850,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "returna",
+      "x": 1140,
+      "y": 910,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "returnb",
+      "x": 580,
+      "y": 910,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "wait",
+      "x": 420,
+      "y": 952,
+      "w": 520,
+      "h": 74,
+      "lines": "Event.wait(阶段剩余时间)",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "quiet",
+      "x": 1050,
+      "y": 951,
+      "w": 980,
+      "h": 82,
+      "lines": "等待时不循环 READ 位置\n相同 (raw, speed) 命中缓存则跳过写入",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "nextstage",
+      "x": 450,
+      "y": 1050,
+      "w": 1580,
+      "h": 45,
+      "lines": "下一阶段复用同一串口 owner；有界事务等待，保留取消 / 超时检查。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 23,
+      "kind": "text"
+    },
+    {
+      "id": "stopnote",
+      "x": 86,
+      "y": 1300,
+      "w": 270,
+      "h": 95,
+      "lines": "逐电机确认 OFF\n再关闭串口",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "offa",
+      "x": 580,
+      "y": 1225,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offb",
+      "x": 1140,
+      "y": 1225,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offwritea",
+      "x": 1140,
+      "y": 1270,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offwriteb",
+      "x": 1840,
+      "y": 1270,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offacka",
+      "x": 1840,
+      "y": 1315,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offackb",
+      "x": 1140,
+      "y": 1315,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offchecka",
+      "x": 1140,
+      "y": 1360,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offcheckb",
+      "x": 1840,
+      "y": 1360,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offresulta",
+      "x": 1840,
+      "y": 1405,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "offresultb",
+      "x": 1140,
+      "y": 1405,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "closeda",
+      "x": 1140,
+      "y": 1460,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "closedb",
+      "x": 580,
+      "y": 1460,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ps",
+      "target": "ps_end",
+      "points": [
+        [
+          580,
+          315
+        ],
+        [
+          580,
+          1480
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "sdk",
+      "target": "sdk_end",
+      "points": [
+        [
+          1140,
+          315
+        ],
+        [
+          1140,
+          1480
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "motor",
+      "target": "motor_end",
+      "points": [
+        [
+          1840,
+          315
+        ],
+        [
+          1840,
+          1480
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "connecta",
+      "target": "connectb",
+      "points": [
+        [
+          580,
+          405
+        ],
+        [
+          1140,
+          405
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false,
+      "label": "连接并启动检查",
+      "label_x": 860.0,
+      "label_y": 391
+    },
+    {
+      "source": "reada",
+      "target": "readb",
+      "points": [
+        [
+          1140,
+          465
+        ],
+        [
+          1840,
+          465
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false,
+      "label": "逐 ID：READ(0x10, 48 B)",
+      "label_x": 1490.0,
+      "label_y": 451
+    },
+    {
+      "source": "feedbacka",
+      "target": "feedbackb",
+      "points": [
+        [
+          1840,
+          520
+        ],
+        [
+          1140,
+          520
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "反馈块 + 状态，检查通信 / error",
+      "label_x": 1490.0,
+      "label_y": 506
+    },
+    {
+      "source": "checkeda",
+      "target": "checkedb",
+      "points": [
+        [
+          1140,
+          580
+        ],
+        [
+          580,
+          580
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "完成检查后进入 READY_IDLE",
+      "label_x": 860.0,
+      "label_y": 566
+    },
+    {
+      "source": "stagea",
+      "target": "stageb",
+      "points": [
+        [
+          580,
+          730
+        ],
+        [
+          1140,
+          730
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false,
+      "label": "预编译目标 (ID, raw, speed)",
+      "label_x": 860.0,
+      "label_y": 716
+    },
+    {
+      "source": "writea",
+      "target": "writeb",
+      "points": [
+        [
+          1140,
+          790
+        ],
+        [
+          1840,
+          790
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false,
+      "label": "WritePos：13 B 指令",
+      "label_x": 1490.0,
+      "label_y": 776
+    },
+    {
+      "source": "acka",
+      "target": "ackb",
+      "points": [
+        [
+          1840,
+          850
+        ],
+        [
+          1140,
+          850
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "6 B 状态应答（非位置到位反馈）",
+      "label_x": 1490.0,
+      "label_y": 836
+    },
+    {
+      "source": "returna",
+      "target": "returnb",
+      "points": [
+        [
+          1140,
+          910
+        ],
+        [
+          580,
+          910
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "通信成功且 error = 0",
+      "label_x": 860.0,
+      "label_y": 896
+    },
+    {
+      "source": "offa",
+      "target": "offb",
+      "points": [
+        [
+          580,
+          1225
+        ],
+        [
+          1140,
+          1225
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false,
+      "label": "退出请求",
+      "label_x": 860.0,
+      "label_y": 1211
+    },
+    {
+      "source": "offwritea",
+      "target": "offwriteb",
+      "points": [
+        [
+          1140,
+          1270
+        ],
+        [
+          1840,
+          1270
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false,
+      "label": "WRITE torque(0x28) = 0",
+      "label_x": 1490.0,
+      "label_y": 1256
+    },
+    {
+      "source": "offacka",
+      "target": "offackb",
+      "points": [
+        [
+          1840,
+          1315
+        ],
+        [
+          1140,
+          1315
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "写入状态应答",
+      "label_x": 1490.0,
+      "label_y": 1301
+    },
+    {
+      "source": "offchecka",
+      "target": "offcheckb",
+      "points": [
+        [
+          1140,
+          1360
+        ],
+        [
+          1840,
+          1360
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false,
+      "label": "READ torque(0x28)",
+      "label_x": 1490.0,
+      "label_y": 1346
+    },
+    {
+      "source": "offresulta",
+      "target": "offresultb",
+      "points": [
+        [
+          1840,
+          1405
+        ],
+        [
+          1140,
+          1405
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "读回值 = 0，确认 OFF",
+      "label_x": 1490.0,
+      "label_y": 1391
+    },
+    {
+      "source": "closeda",
+      "target": "closedb",
+      "points": [
+        [
+          1140,
+          1460
+        ],
+        [
+          580,
+          1460
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "全部确认后释放 / 关闭",
+      "label_x": 860.0,
+      "label_y": 1446
+    }
+  ]
+}

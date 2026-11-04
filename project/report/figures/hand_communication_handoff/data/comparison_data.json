@@ -1,0 +1,70 @@
+{
+  "board_runs": [
+    {
+      "label": "插值写入\nH143",
+      "source": "h143-buttons-cpu-analysis.json",
+      "wall_seconds": 6.6002831659998265,
+      "cpu_seconds": 3.654565627,
+      "single_core_percent": 55.36983088582985
+    },
+    {
+      "label": "阶段目标\nH150",
+      "source": "h150-minimal-analysis.json",
+      "wall_seconds": 9.148883425999884,
+      "cpu_seconds": 1.6555580020000003,
+      "single_core_percent": 18.095738298458688
+    },
+    {
+      "label": "阶段目标＋轻量审计\nH164",
+      "source": "h164-lean-analysis.json",
+      "wall_seconds": 9.038365844000054,
+      "cpu_seconds": 1.4407427679999998,
+      "single_core_percent": 15.940301519841766
+    }
+  ],
+  "offline": {
+    "poses": [
+      "default",
+      "paper",
+      "scissors",
+      "rock"
+    ],
+    "writes_all": [
+      34,
+      102,
+      68,
+      102
+    ],
+    "writes_cached": [
+      17,
+      44,
+      65,
+      75
+    ],
+    "total_writes": [
+      306,
+      201
+    ],
+    "total_tx_ack_bytes": [
+      5814,
+      3819
+    ],
+    "ideal_wire_ms": [
+      58.14,
+      38.190000000000005
+    ],
+    "saved_percent": 34.31372549019608
+  },
+  "source_sha256": {
+    "h143-buttons-cpu-analysis.json": "c897fd620da1523cd6fa7f4e9868ae680a0f86a3e8590149357aee01d0f84cb8",
+    "h150-minimal-analysis.json": "58f563e48ee99cca12d48304d446261a7009f5359462cf4a6efed6d1b5c794bd",
+    "h164-lean-analysis.json": "dd916b8c078095a12d3f3946e27c12529777e8bd01de1d0e93068e6ec9dcf985",
+    "verification-final.json": "a68d937f712ff667404a7d8572dc771003ad14fa51398e03adc0e3b8de400513"
+  },
+  "method": {
+    "board": "Unpaired historical PYNQ process observations, not v3.0 whole-system measurement",
+    "offline": "Same-case SDK memory transport; communication counts only",
+    "formula": "cpu_pct=cpu_s/wall_s*100; wire_B=write_count*19; ideal_ms=wire_B*10/1e6*1000",
+    "omitted": "No paired RSS/memory or final v3.0 CPU comparison available in these records"
+  }
+}

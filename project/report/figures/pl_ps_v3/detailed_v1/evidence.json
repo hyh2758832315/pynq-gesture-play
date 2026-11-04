@@ -1,0 +1,68 @@
+{
+  "source": "contest_v3",
+  "runtime_manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+  "sha256": {
+    "README.md": "8e21fa648866d991f641af89d75caf9ee70a65fcfe01cd79f18cfdb0d13f4a37",
+    "report/design_report.md": "5105b0f85067f0bcc15791bbd7273227fe24cc8a45afa7721c147997f8597089",
+    "board/runtime/deployment_manifest.json": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+    "board/runtime/overlay/c6v_candidate.hwh": "e2ce377e5fb94ba2eb277eb2defeb642e2e9359c6aa2aa0b6013bb9a4d8b49dd",
+    "build/hardware/c6_latency/c6_latency.srcs/sources_1/bd/c6v/c6v.bd": "74ff2746b88245cc56ed9bf218d328a66f85855e74e1a6371b8e0e6878591a4e",
+    "board/runtime/board/pynq_z2/scripts/vision_async_runtime.py": "90a4a5d7fb12932a5b4e46b75bc90cd17f9c910beeb74f8337ed48340f19a405",
+    "board/runtime/python/pynq_multimodal_game/agent/c6i_video.py": "10ff1fd126546e2b0836788d9fea4449aba80381a8e0af5c30c6787e5c4e1725",
+    "board/runtime/python/pynq_multimodal_game/agent/c6i_shell.py": "5b02590e8060931400b47e321bbb39824494e54d65407b2c40018a80e86fd0f1"
+  },
+  "verified_modules": {
+    "core": "scene2d_c4m7_core",
+    "dual_mask_capture": "axis_rgb_capture_bd",
+    "frame_dma": "axi_vdma",
+    "moments_dma": "axi_dma",
+    "axi_dma": "axi_dma",
+    "input_osd_0": "input_osd_axi"
+  },
+  "verified_bus_nets": {
+    "axi_dma_M_AXI_MM2S": {
+      "interface_ports": [
+        "axi_dma/M_AXI_MM2S",
+        "hp0_smc/S00_AXI"
+      ]
+    },
+    "camera_hp1_smc_M00_AXI": {
+      "interface_ports": [
+        "camera_hp1_smc/M00_AXI",
+        "ps7_0/S_AXI_HP1"
+      ]
+    },
+    "frame_dma_M_AXI_S2MM": {
+      "interface_ports": [
+        "frame_dma/M_AXI_S2MM",
+        "camera_hp1_smc/S00_AXI",
+        "capture_write_pair/MON_RGB"
+      ]
+    },
+    "hp0_smc_M00_AXI": {
+      "interface_ports": [
+        "hp0_smc/M00_AXI",
+        "ps7_0/S_AXI_HP0"
+      ]
+    },
+    "hp2_smc_M00_AXI": {
+      "interface_ports": [
+        "hp2_smc/M00_AXI",
+        "ps7_0/S_AXI_HP2"
+      ]
+    },
+    "moments_dma_M_AXI_S2MM": {
+      "interface_ports": [
+        "moments_dma/M_AXI_S2MM",
+        "skin_hp3_smc/S00_AXI",
+        "capture_write_pair/MON_PACKET"
+      ]
+    },
+    "skin_hp3_smc_M00_AXI": {
+      "interface_ports": [
+        "skin_hp3_smc/M00_AXI",
+        "ps7_0/S_AXI_HP3"
+      ]
+    }
+  }
+}

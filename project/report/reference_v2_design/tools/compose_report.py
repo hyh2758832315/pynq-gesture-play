@@ -1,0 +1,383 @@
+"""Compose editable LaTeX from report prose and frozen interface tables.
+
+Run from repository root with Python 3: python report/v2_architecture_junior/tools/compose_report.py
+Outputs: report.md, sections/design.tex, evidence_index.json. Then compile main.tex.
+"""
+from pathlib import Path
+import re, json, hashlib
+
+ROOT = Path(__file__).resolve().parents[3]
+OUT = Path(__file__).resolve().parents[1]
+old = (ROOT / 'report/v2_architecture/report.md').read_text(encoding='utf-8-sig')
+
+def tables(section):
+    block = old.split('### '+section, 1)[1].split('\n### ', 1)[0].split('\n## ', 1)[0]
+    return re.findall(r'(?:^\|.*\n)+', block, re.M)
+
+def table(section, n=0):
+    return tables(section)[n].strip()
+
+body = r'''## 设计概述与初级组要求对应
+
+GESTURE PLAY v2.0 是面向手势交互与创作体验的 Zynq 系统。作品以 PYNQ-Z2 为核心，将摄像头视觉输入、自研 Scene2D 二维图形处理器、四款游戏、画布相册、视频与灵巧手协同组织为一个完整应用。用户通过手的位置、握拳和板载按键完成选择与操作，系统给出 HDMI 图形反馈，并通过独立的实体手通道执行姿态与演示动作。
+
+v2.0 已完成从输入采集、手势识别、应用决策到图形呈现的板端运行链路；PC Studio 提供内容创作、部署、测试与状态观测。发布验收结果为 PASS：四游戏 16 条 PC/PYNQ 对照用例、真实 GPU 60 项检查、真实串口协议 18 项检查，并完成设备关闭回执、正常服务与 Studio 重连验证。[E01–E03]
+
+### 作品构成与实现基线
+
+作品采用 PYNQ-Z2（xc7z020clg400-1），以 Vivado 2026.1 构建 R23b2 硬件，BUILD_ID 为 0xC0061000。板端使用 Python 3.10 / PYNQ 3.1 和 R09 灵巧手运行时，发布基线于 2026-10-29 封存。
+
+视觉端输出 640×360 双掩膜；显示端以 320×180 逻辑画面驱动 1280×720 / 60 Hz HDMI。四游戏、两段默认视频、手势菜单、画布相册及实体手/像素手演示共享这一底座，Studio 通过统一 SDK 与 Agent 管理应用。
+
+### 与初级组考察重点的对应
+
+官方自主选题指南将初级组的重点列为逻辑设计、状态机、时序约束及接口协议，并推荐采用 PYNQ 组织 PS 软件与 PL Overlay。本作品以这些基本能力贯穿完整应用：像素流在 PL 中完成规则化处理，软件通过明确接口组合各模块，最终在真实板卡上形成可操作、可观察、可验证的作品。[R01]
+
+| 考察重点 | 本作品的具体实现 | 本报告展开内容 |
+| --- | --- | --- |
+| 逻辑设计 | 双掩膜流水线、命令光栅化、双缓冲显示、独立 OSD | 数据通路、存储结构、流水对齐 |
+| 状态机 | 帧边界启停、三槽缓冲拥有权、显示提交与模式交接 | 状态转移、完成条件、计数不变量 |
+| 时序约束 | 100 MHz 控制域、74.25 MHz 像素域、跨域握手 | 时钟划分、同步器、数据路径约束与实现结果 |
+| 接口协议 | AXI、DMS1、Scene2D ABI、VVGP、灵巧手观察通道 | 格式、握手、校验与回执 |
+| 作品完整性 | 四游戏和创作功能共享运行底座；服务重启与 Studio 重连 | 功能矩阵、完整事务和实板验收 |
+
+## 设计原理与功能框图
+
+### 系统总体结构
+
+![系统功能框图](figures/system.tex)
+
+系统由视觉输入、应用运行、图形输出、实体动作和开发管理五部分组成。OV5640 图像进入 PL 后完成预处理与双掩膜生成，经 DMA 送入 DDR；PS 从掩膜提取轮廓、质心及手势状态，并将结果分发给应用、OSD 与灵巧手观察通道。游戏和界面在 PS 中生成 Scene，经 DMA 提交到 PL 的 Scene2D 处理器，最后由独立扫描电路输出 HDMI。[E04–E13]
+
+在数据组织上，像素与命令使用批量通路，配置和状态使用 AXI-Lite 寄存器通路。前者关注吞吐、帧边界及缓冲生命周期，后者关注配置一致性、身份和完成回执。这一划分使高速数据处理与灵活的应用状态管理相互配合。
+
+交互闭环由“用户动作—采集识别—应用响应—屏幕或实体反馈—用户继续操作”组成。系统同时建立软件层面的完成反馈：视觉包携带帧身份，图形提交区分接收、渲染和呈现，实体通道在模式交接时提供关闭读回与会话回执。这些反馈使一次交互既有可见结果，也有可追溯的执行记录。
+
+### 视觉流水线与手势识别
+
+![视觉流水线与双掩膜配对](figures/vision.tex)
+
+PL 视觉前端以 24 bit 图像流为输入，先由 axis_area2x2 完成 2×2 区域处理，将 1280×720 图像缩减为 640×360。随后进行颜色字节顺序适配和 HSV 肤色判定。六个 HSV 阈值在一帧的首个有效输入处锁存，同帧像素采用相同配置。[E19]
+
+原始二值掩膜分成两支：一支保留原始判定并进入同步 BRAM FIFO；另一支经过 9×9 膨胀及 5×5 高斯滤波。配对模块在两路数据和帧标志都对应时输出一个 16 bit 像素，其中低字节为原始掩膜，高字节为滤波结果。FIFO 为两条处理延迟不同的通路提供对齐空间，控制逻辑共同推进数据与 tuser/tlast 标志。溢出、下溢和帧标志失配均进入可读故障状态。
+
+视觉前端还设置深度为 4 的上下文 FIFO，每项 144 bit，保存 epoch、config_id、frame_id 与六个阈值字节。输入首像素入队、输出帧尾出队，使像素数据与产生它的配置一同穿过流水线。这样，PS 收到的数据不仅包含“哪里是手”，也明确标识“哪一帧、哪一组阈值、哪次采集”。
+
+PS 使用 DualMaskFullFrameTracker 在滤波掩膜上提取轮廓、选取目标，并计算面积、凸包、凸缺陷和边界框。通过缺陷夹角、深度及形状指标识别握拳、剪刀和张开等状态；结合选中轮廓内的原始掩膜统计得到目标质心。分类稳定性处理再生成 hand_valid、位置、手势类别和事件序列。[E05]
+
+视觉输入按“连续状态”处理：采集侧逐帧核验身份，识别侧消费最新待处理帧，避免业务负载变化时累积历史位置。掩膜复制到 CPU 自有不可变内存后交付，DMA 缓冲可以按拥有权协议继续流转。位置用于方向与悬停；新的握拳事件用于确认；保持握拳用于画布连续创作。状态与事件的分离使菜单、游戏和画布获得一致的操作语义。[E06、E13]
+
+### 帧边界启停状态机
+
+视觉采集由 vision_source_admission 控制源接入。该模块在视频时钟域实现四状态 FSM，将软件的打开、关闭请求转换为以帧边界为单位的动作。同步后的关闭请求优先处理；RUNNING 与 CLOSING 均保持 axis_enable，使停止请求可以等待当前帧完整结束。[E20]
+
+![采集源四状态机](figures/admission.tex)
+
+| 当前状态 | 转移条件 | 下一状态与作用 |
+| --- | --- | --- |
+| WAIT_START | 打开请求且到达有效帧边界 | RUNNING；开始接纳图像流 |
+| WAIT_START | 关闭请求 | CLOSED；完成尚未开始的取消 |
+| RUNNING | 关闭请求且当前为有效帧边界 | CLOSED；在边界直接关闭 |
+| RUNNING | 关闭请求且尚未到边界 | CLOSING；继续接纳当前帧 |
+| CLOSING | 到达有效帧边界 | CLOSED；停止后续帧接入 |
+| CLOSED | 复位 | WAIT_START；为下一次采集初始化 |
+
+有效帧边界定义为 vid_vsync 上升沿且 vid_active_video 为低。若边界与有效像素同时出现，逻辑记录 boundary_fault。关闭后还需等待延迟的像素与帧计数事件结清，source_quiescent 才成立。采集生命周期进一步结合流水线排空、DMA 排空及缓冲拥有者状态，形成从源端到内存端的完整停止确认。
+
+### 三槽缓冲与帧拥有权
+
+vision_frame_owner 以三个循环槽连接硬件生产与 CPU 消费。设累计授予帧数为 G，累计释放帧数为 R，正常运行保持 0 ≤ G−R ≤ 3。仅当 G−R < 3 时允许授予新槽，从而防止生产者覆盖仍被 CPU 使用的帧。[E21]
+
+CPU 可领取一帧的条件是：存在已授予未释放帧、当前未持有其他槽，且 RGB、掩膜包、状态三路完成计数均已越过当前消费位置。领取和释放使用 epoch 与 frame_id 组成的令牌；释放成功后推进消费者槽与 R。完成计数负责数据就绪，令牌负责身份匹配，二者共同维护同一帧的生命周期。
+
+| 阶段 | 生产者/消费者行为 | 硬件保证 |
+| --- | --- | --- |
+| 授予 | 硬件取得空槽并开始本帧写入 | 在途帧数最多为 3 |
+| 就绪 | RGB、掩膜、状态三路完成 | 完成前不向 CPU 开放领取 |
+| 领取 | CPU 提交本帧令牌，持有消费槽 | 同一时刻最多一个 CPU 持有槽 |
+| 释放 | CPU 完成复制并提交匹配令牌 | 释放后槽才可再次分配 |
+| 排空 | 源帧数固定，各完成计数与授予/释放数一致 | 与 DMA 排空联合确认生命周期结束 |
+
+RTL 对重复领取、重复释放、令牌不符、计数倒退和配置中途改变设置粘滞故障。相应 testbench 包含连续七帧、CPU 持有 64 周期、三路完成、令牌检查和计数边界等场景。设计把缓冲生命周期落实为可验证的状态与计数，而不是依赖软件对时间先后的估计。[E24]
+
+### Scene2D 图形处理与 HDMI 输出
+
+![命令式图形处理与双缓冲呈现](figures/graphics.tex)
+
+Scene2D 是 PL 中的命令式二维绘图处理器。PS 将应用状态编译成清屏、图块层、索引色贴图、矩形和结束帧命令；AXI DMA 从 DDR 取出命令包，PL 完成解码、裁剪、资源读取和像素写入。菜单、四游戏、画布与演示页面共用这一绘制接口。[E07–E08]
+
+逻辑分辨率为 320×180。源图像使用 4 bit 调色板索引，索引 0 表示透明；帧缓冲采用 8 bit token，高 4 bit 选择调色板组，低 4 bit 选择组内颜色。显示端查表得到 RGB888，再按 4 倍最近邻放大到 1280×720。双逻辑帧缓冲的有效像素容量为 115,200 B。
+
+渲染写入后台缓冲，像素扫描读取前台缓冲。跨时钟握手将就绪帧交给显示域，在垂直消隐起点交换前后台身份。RGB、同步信号和有效信号保持匹配的流水延迟，输出端以 74.25 MHz 像素时钟生成 60 Hz HDMI 时序。扫描读取片上存储，使显示节奏独立于 PS 业务调度。[E25]
+
+软件为每次提交分配 submit_seq，并依次核对包接收、渲染完成与呈现完成。render_cycles 提供渲染周期，render_status 提供执行状态，present_completed_seq/count 表示显示端已接纳目标帧。这些寄存器使图形接口具备从命令到显示的明确完成语义。
+
+静态背景、字体与模板可驻留复用。页面悬停只追加四条边框矩形命令；应用更新普通场景时传输的是紧凑命令，而无需每次重新组织整幅 RGB 图像。内容更新保留在 PS，像素处理保留在 PL，兼顾了功能扩展与固定时序输出。
+
+### 已完成的应用功能
+
+{{FUNCTIONS}}
+
+四游戏共享 GameInput、GamePlugin 生命周期与场景编译器。统一输入既能来自板端真实设备，也能用于 PC/PYNQ 相同序列的逐 tick 对照。Game1 使用 BTN0 触发盾、BTN1 触发攻击；菜单用悬停与新握拳确认，返回采用公共停留控件。[E01、E13]
+
+画布将绘制结果合并到固定 46,080 B 的像素存储中，持续创作保持有界内存。落笔采用与界面一致的握拳判定；限频时保留最新输入，在真正处理后推进消费身份。相册保存最近一次作品，完整初始化或重启后清空。公共加载、暂停和结果页统一各应用的进入、退出及继续流程。
+
+### 灵巧手协同与模式管理
+
+![灵巧手观察链路与模式交接](figures/hand.tex)
+
+灵巧手由观察发布器、同机数据报接口、独立解释器进程、动作拥有者、ORCA 适配层与 USB 串口链路组成。实体端使用 scs225、1 Mbaud 串口与 ID 1–17 的电机。视觉发布器给出最新手势快照，动作进程完成来源检查、姿态编译、标定映射和目标下发。[E10–E11]
+
+HOME、GAMES、VIDEOS 列表共享 live 拥有者；画布与相册暂停动作；示范独占播放 0–9 与爱心的实体手/像素手对应内容；视频与预览交接先完成全部 17 个电机 OFF。返回 live 时重新建立新鲜观察来源。动作执行期间保存最新目标，当前阶段结束后选择最新观察，使动作链跟随当前交互意图。
+
+使能前读取电机状态，检查位置范围、电压、温度与扭矩状态，并设置速度和当前目标；执行时检查通信返回，跳过未变化的目标；退出时逐个写入扭矩关闭并读回确认。v2.0 的串口验证已覆盖 18 项协议检查及两次 17OFF/CLOSED 会话回执，形成可进入、可运行、可退出的设备生命周期。[E02]
+
+## 软硬件划分依据与接口设计
+
+### 划分依据与模块职责
+
+划分围绕四个判断展开：数据规模、计算规律、修改频率和实时性。逐像素重复运算与扫描时序放在 PL；不规则轮廓处理、手势语义和应用状态放在 PS；内容编辑与测试观测放在 PC。系统选择双掩膜、场景命令、手势观察作为稳定的模块边界，使各端通过紧凑协议协作。
+
+{{PARTITION}}
+
+视觉前端将局部像素操作流水化，减少 PS 对每个像素重复执行的工作；Scene2D 将规则绘图与扫描留在硬件，PS 专注页面和游戏决策。轮廓长度与数量具有变化性，保留在 Python 侧便于调整规则。灵巧手独立进程则复用既有串口与标定依赖，并集中管理唯一动作来源。
+
+这一分工支持作品持续扩展：增加游戏或调整菜单主要修改 PS 插件与资源；改变图像阈值通过寄存器配置；绘图和视频时序由同一 Overlay 提供。公共 SDK 连接内容开发和硬件能力，使多个应用共享一套已验证底座。
+
+### 总线结构与寄存器映射
+
+PS 通过 GP0 访问 AXI-Lite 配置及状态外设。场景和资源上传由 axi_dma 的 MM2S 经 HP0 读取 DDR；RGB 捕获由 frame_dma 的 S2MM 经 HP1 写入 DDR；双掩膜通过 moments_dma 的 S2MM/SG 经 HP3 回写 DDR。批量数据与控制寄存器的分离使 CPU 可以用少量读写管理整帧事务。[E14]
+
+{{ADDRESSES}}
+
+驱动根据配对的 bit/HWH、运行清单与 BUILD_ID 建立 Overlay 会话，视觉、OSD 和图形模块在该会话中借用硬件。R23b2 将 BTN0/BTN1 接入 BUILD_ID GPIO 的第二输入通道，复用已有 AXI 从设备，使按键扩展保持简洁。[E15]
+
+### AXI 流握手与背压设计
+
+AXI-Stream 在时钟上升沿同时满足 TVALID 与 TREADY 时传输一拍，记 take = TVALID ∧ TREADY。发送端在 TVALID=1、TREADY=0 时保持数据及附属标志；接收端在空间不足时拉低 TREADY。视觉流水线用这一规则连接局部运算、FIFO 和输出配对，保持数据与身份一致。[E19、E24]
+
+| 时钟拍示例 | TVALID | TREADY | 数据与动作 |
+| --- | --- | --- | --- |
+| k | 1 | 1 | A 被接收；发送端可推进到 B |
+| k+1 | 1 | 0 | B 保持；像素计数不推进 |
+| k+2 | 1 | 0 | B 与其帧标志继续保持 |
+| k+3 | 1 | 1 | B 被接收；数据和帧标志同时推进 |
+| k+4 | 0 | 1 | 无有效数据；不发生传输 |
+
+双掩膜配对要求原始与滤波两路同时有效，且下游可以接纳新结果。上下文 FIFO 在首个被接收的输入像素入队，在最终被接收的输出帧尾出队。本文所述双掩膜内部帧尾 tlast 按该模块定义使用；视频接入接口的行、帧标志由各自适配模块转换。
+
+AXI-Lite 则承担离散寄存器事务。软件先写完整参数，再写提交寄存器，并通过 busy、状态或回读核对结果。OSD 使用“参数—提交—忙闲”结构，采集使用“参数—回读—ARM—完成/排空”结构，避免半更新配置被数据通路读取。
+
+### 双掩膜 DMS1 数据接口
+
+DMS1 为小端格式。每个像素依次携带原始掩膜与滤波掩膜两个字节，随后追加 16 个 uint32 组成的 64 B 尾部。640×360 的像素负载为 460,800 B，完整包为 460,864 B；一般长度为 ceil(width×height/2)×4+64，奇数像素按零填充对齐。[E04]
+
+{{DMS}}
+
+软件联合校验长度、CRC、几何、阈值、frame_id、config_id 和 epoch。原始掩膜为 0/255 二值，滤波结果允许灰度值。通过后生成 CPU 自有不可变快照，交给识别线程。该格式把两种图像结果和配置身份封装成一次完整交付。
+
+采集控制上下文写入 capture_control 的 +0x20、+0x24、+0x28、+0x2C、+0x30，内容包含六个 HSV 阈值、帧号、配置号、epoch 及对齐字段。软件回读参数后发出 ARM，使用非零 epoch 标识本次会话。capture_status 的 +0x00 为 0x31545356，+0x04 为 ABI 0x00010000，+0x08 为 ready/sealed/fault，+0x0C 为原因码，+0x10 为 epoch；读取状态前后核对 epoch，以形成一致状态快照。[E16]
+
+### Scene2D 场景、资源与完成接口
+
+场景包采用小端 uint32，固定为 64 B 头和 4,096 B 命令区，总计 4,160 B。每条命令 8 字、32 B，最多 128 条，command_count 指定有效条数。[E07–E08]
+
+{{GPUHEADER}}
+
+{{GPUCOMMANDS}}
+
+资源包由 64 B 头与实际负载组成，采用 S2DA/S2DT/S2DP/S2DF 魔数区分类别。W1 为 ABI，W2 为类型，W3 为 slot，W4 为 generation，W5 为负载字节数，W6 为负载 CRC32，W7 为 flags，W8–W15 保留。资源包 CRC 覆盖负载，DMS1 CRC 则覆盖 CRC 字之前的整个包，两者按各自协议计算。
+
+资源代数 generation 将命令与其所需图集、调色板和 tilemap 对应起来。PS 完成资源上传并等待代数可见，再提交使用该代数的 Scene。图集 bundle 使用三个 16 B 描述符，分别描述 sprite、tile、font，共享数据容量为 32,768 B。FRAME8 接口提供 57,600 B 完整 token 帧传输，普通游戏场景采用命令式绘制。
+
+提交按接收、渲染、呈现三个阶段确认。接收计数说明包已被硬件接受；渲染序号和状态说明命令已执行；呈现序号说明显示端已切换到该结果。超时或状态异常时，驱动结束当前 sink 的使用并按会话清理流程恢复，使后续提交保持清晰的序号关系。
+
+### 独立手势 OSD 与板载按键
+
+OSD 将输入反馈从应用场景中独立出来：PS 按 30 Hz 目标发布周期提供位置与握拳状态，PL 将标记叠加到 60 Hz HDMI 输出。识别视图为 640×360，写入寄存器前映射为 1280×720 像素坐标。[E12]
+
+{{OSD}}
+
+观察年龄小于 250 ms 时参与有效性判断，TTL 按剩余时间换算为显示帧并限制至最多 15。忙时跳过本次发布并统计，待空闲后提交最新观察。这样，即使应用场景没有变化，用户仍能看到独立更新的手势标记。
+
+BTN0/BTN1 位于 build_id_gpio +0x08 的低两位。PL 同步外部引脚，PS 按 4 ms 目标周期采样，连续三个相同采样确认稳定状态，仅在上升沿产生带 sequence 的 ButtonSignal。按键事件进入容量 64 的有界队列，连续位置则采用最新值策略，分别适配离散事件和连续状态。[E17]
+
+### GamePlugin 与 Studio 网络协议
+
+GamePlugin 通过 reset(context)、step(game_input)、snapshot() 组织生命周期。GameInput 提供 tick_id、timestamp_ns、hand_valid、[-1,1] 范围的 hand_x/hand_y、握拳事件与序列、手势类别与变化序列，以及 actions 和 button。持续状态描述当前输入，事件序列保证一次确认或技能只消费一次。[E13]
+
+Studio 与板端 Agent 通过 TCP 通信，默认端口 8765。VVGP 1.0 使用大端序 48 B 头，布局为 >4sHHHHIIQQIII，最大负载 8 MiB。[E09]
+
+{{VVGP}}
+
+协议包含 HELLO/HELLO_ACK、COMMAND/COMMAND_RESULT、SUBSCRIBE、DATA、TELEMETRY、PING/PONG 与 ERROR。接收器在 TCP 字节流中累积完整消息，再按长度和 CRC 解码；握手交换 SDK 与输入 schema 能力。Studio 因而能够统一组织部署、订阅、测试和状态回传，板端继续承担应用实际运行。
+
+### 灵巧手观察、动作与释放接口
+
+主进程通过 127.0.0.1 UDP 向独立手进程发送 JSON，schema 为 hand-passive-v1，最大包长 2,048 B。外层包含 schema、session、sequence、revoked、value；value 携带视觉或游戏来源与观察。发送采用非阻塞模式，接收端检查会话、递增序列、来源与默认 0.5 s 新鲜度。[E10]
+
+run_id 与 config_epoch 标识视觉来源，frame_id 标识新观察。ORCA 适配层将姿态映射为电机位置，检查 0–4095 编码范围，并通过 SCS225 客户端下发目标和速度。冻结参数 speed=500 按驱动单位使用。释放时向电机寄存器 40 写 0 并读回，汇总各 ID 状态。[E11]
+
+| 阶段 | 接口回执 | 系统用途 |
+| --- | --- | --- |
+| 观察接收 | 格式、会话、序列与新鲜度校验 | 选择本次有效输入 |
+| 姿态编译 | 生成通过范围检查的电机目标 | 把手势语义转换为设备参数 |
+| 动作下发 | 串口 SDK 通信返回 | 确认命令传输过程 |
+| 阶段结束 | 当前动作流程结束，选择最新目标 | 衔接后续动作 |
+| 17OFF | ID 1–17 扭矩关闭写入和读回 | 完成设备释放检查 |
+| CLOSED | 会话关闭回执 | 完成业务模式交接 |
+
+独立解释器隔离 PYNQ 图像链路与 ORCA 的依赖，窄观察协议连接两端。业务模式切换通过同一动作拥有者协调，因此菜单跟随、创作暂停、演示独占与视频释放具有统一的控制入口。
+
+### 时钟、复位与跨域约束
+
+工程按采集、控制/渲染与显示划分时钟域。源接入把打开、关闭请求同步到视频域，图形端把帧就绪与切换确认在渲染域和像素域之间握手传递；OSD 使用邮箱结构提交完整参数。各通路在跨域处明确数据保持、请求同步及完成确认条件。[E20、E22–E23]
+
+| 时钟/信号域 | 实现报告中的约束 | 对应职责 |
+| --- | --- | --- |
+| clk_fpga_0 | 100 MHz；10 ns | AXI 控制与主数据处理/渲染 |
+| 像素时钟 | 74.250 MHz；13.468 ns | 720p 扫描 |
+| SerialClkIO | 371.250 MHz；2.694 ns | HDMI 串行化相关时钟 |
+| clk_fpga_1 | 23.810 MHz；41.999 ns | PS 输出的另一时钟 |
+| vid_pclk | 100 MHz；10 ns 的输入约束 | 摄像头输入时钟分析 |
+
+源启停请求使用三级同步器，寄存器标记 ASYNC_REG 并禁止移位寄存器抽取；视频复位通过 XPM 复位同步结构处理。这样，异步控制先进入稳定的本地时钟状态，再参与帧边界 FSM。
+
+OSD 邮箱跨域采用两类约束配合：请求与确认同步器入口设置定点 false_path；64 bit 数据邮箱设置 10 ns 的 max_delay -datapath_only 和 10 ns 的 bus_skew。载荷在握手期间保持稳定，同步后的请求通知接收端取用完整数据。约束脚本检查源、目的端点数量，确保约束落实到预期寄存器，避免层次变化后静默失效。[E22]
+
+板级 XDC 将 BTN0/BTN1 约束到 D19/D20，I/O 标准为 LVCMOS33；摄像头 IIC 使用 U9/T9 与上拉。vid_pclk 网络采用 CLOCK_DEDICATED_ROUTE FALSE 处理板级时钟接入布线需求，时序仍由相应时钟与路径约束分析。
+
+R23b2 路由后报告给出 WNS +0.011 ns、TNS 0、WHS +0.050 ns、THS 0，setup/hold 违例端点均为 0。该结果对应本次发布的实际硬件基线，表明已施加约束下的建立与保持检查收敛。完整报告同时保留外部 I/O 延迟覆盖检查，相关说明集中列于附录。[E23]
+
+### 完整交互事务与容量设计
+
+“进入游戏并释放技能”贯穿了各层接口：双掩膜包通过身份与 CRC 校验；PS 识别手位置并更新菜单悬停；新握拳触发进入游戏与资源初始化；插件在 tick 内更新状态并生成 Scene；DMA 上传后由硬件渲染并给出呈现回执；BTN0 的消抖上升沿形成独立序列事件，Game1 更新盾技能状态并生成下一帧反馈。
+
+“画布落笔并保存”复用同一视觉与显示链路：界面握拳判定成立，创作页在频率预算内消费最新观察，将图形合并到固定画布；形状和大小选择通过悬停边框反馈；保存后生成最近一次相册内容。两个例子说明，稳定接口可以组合出不同的应用体验，而硬件核心保持复用。
+
+{{BUDGET}}
+
+表中容量由已定义接口直接计算，带帧率条件的行用于系统预算。双缓冲使绘制和扫描并行，命令式上传减小普通场景的主机传输量，最新帧策略控制输入积压，有界画布控制长期内存增长。这些设计分别对应显示连续性、数据搬运、输入响应和创作运行四个实际需求。
+
+### 分层验证与作品完成度
+
+v2.0 采用“RTL 验证点—软件合同—真实设备—完整业务流程”的分层验证方式。底层 testbench 针对握手保持、帧身份与缓冲拥有权设置场景；应用以同输入逐 tick 比对验证 PC/PYNQ 一致性；真实 GPU 和串口检查则验证设备路径；最后通过服务与 Studio 重连确认运行入口。[E02、E24]
+
+| 层次 | 已有成果 | 与系统设计的对应关系 |
+| --- | --- | --- |
+| RTL 验证设计 | 流背压/配置上下文测试；frame_owner 14 类场景 | 数据、标志、令牌与缓冲生命周期 |
+| 四游戏对照 | 16 条 PC/PYNQ 用例 PASS | 统一输入合同与插件状态一致性 |
+| 图形与创作 | 真实 GPU 60 项检查 PASS | 创作、示范、暂停/结果和重启路径 |
+| 真实串口接口 | 18 项协议检查 PASS | 菜单跟随与业务模式交接 |
+| 设备释放 | 两次会话完成 17OFF/CLOSED | 动作进程的关闭与资源回收 |
+| 服务运行 | 默认服务、测试注入移除、Studio 重连通过 | 日常运行与开发管理入口 |
+| 硬件实现 | R23b2 建立/保持检查无违例 | 当前发布 Overlay 的实现收敛 |
+
+作品已形成从 FPGA 逻辑到用户功能的连续实现：双掩膜提供统一视觉入口，Scene2D 提供统一图形出口，GamePlugin 连接四游戏及创作场景，独立动作通道连接实体手，Studio 连接开发与验证。功能扩展、状态管理、设备交接和回执检查都建立在同一 v2.0 基线上。
+
+## 附录：版本、证据与测试口径
+
+### 发布身份与数据分类
+
+发布提交为 bd6858bbe4ded19caf1f91322850150c97cab21e，运行清单 SHA-256 为 5f53d85d5bcdb8c871d387683cbf7b6b12c899b380b9370642c9bd2ff41e9d56。正文中的格式、尺寸与容量来自源码；WNS/WHS 来自实现报告；16/60/18 与关闭回执来自 v2.0 验收。RTL testbench 的场景列表来自冻结测试源文件。
+
+v2.0 正式技能输入为板载按钮；兼容代码中的 Voice View 名称与 tone/volume 字段保留历史接口。实体手本轮证据为协议与 SDK 验证，acceptance-summary 中 mechanical_verified 为 false；真人姿态测量、摄像头到屏幕统一时延及全新 SD 安装属于独立验证项目。本文交互闭环描述用户操作和系统反馈，电机位置误差控制由执行器层处理。
+
+时序报告 check_timing 记录 4 个 no_input_delay 和 6 个 no_output_delay。正文的建立/保持结果针对已约束路径；外部 I/O 时序覆盖应结合完整约束清单阅读。vid_pclk 表项为输入时钟约束值。带宽预算、OSD 发布目标与消抖采样周期分别属于设计值，不作为识别吞吐或整机实测时延。
+
+冻结候选 manifest 中的 release_ready=false、board_pending=true 保留生成时的阶段记录；本报告功能验收采用其后的 v2.0 acceptance-summary。视觉运行时注明改编自 KPTKleist/Pynq_Gesture_Detect（MIT），灵巧手适配使用 ORCA 代码与配置；相应版权与许可随工程保留。
+
+### 来源定位
+
+下表以 B 表示 build/v2-release-repo/releases/v2.0/board_runtime/，S 表示同版本 source/，V 表示 verification/，P 表示 B/python/pynq_multimodal_game/。完整路径、文件大小与 SHA-256 见随附 evidence_index.json。
+
+{{EVIDENCE}}
+
+### 官方指南与总报告衔接
+
+R01 为用户指定的官方仓库自主选题指南，读取日期 2026-10-30。原文保存在 sources/open_topic_guide.md，SHA-256 为 bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678。原文地址见下方链接。指南注明，完整指南与大赛官方公告具有最终解释优先级。
+
+https://gitee.com/Vickyiii/fpgachina26-amd/blob/master/tracks/open-topic/GUIDE.md
+
+本报告对应总报告的系统设计两章；其余章节衔接创新点、优化对比、AI 协作、Skill 与复现说明，工程提交附开源许可及目录对照。
+'''
+
+replacements = {
+    'FUNCTIONS': table('1.5'), 'PARTITION': table('2.1').replace('代价及边界','配套设计要求'),
+    'ADDRESSES': table('2.2'), 'DMS': table('2.3'), 'GPUHEADER': table('2.4'),
+    'GPUCOMMANDS': table('2.4',1), 'OSD': table('2.5').replace('历史声音字段不启用','兼容字段置零'),
+    'VVGP': table('2.6'), 'BUDGET': table('2.9').replace('结论与适用范围','设计用途').replace('理论命令负载，非实测持续吞吐','命令传输预算').replace('预算示例，未宣称实测识别帧率','给定帧率条件下的带宽预算').replace('时钟预算，不等于每帧可全部用于绘制','绘制与控制共用的时钟周期预算'),
+}
+evidence = json.loads((ROOT/'report/v2_architecture/evidence_index.json').read_text(encoding='utf-8-sig'))
+extras = {
+'E19': ['rtl/vision_streaming/axis_rgb_mask_frontend.sv','rtl/vision_streaming/axis_binary_mask_pair.sv'],
+'E20': ['rtl/vision_streaming/vision_source_admission.sv','rtl/vision_streaming/vision_capture_lifecycle.sv'],
+'E21': ['rtl/vision_streaming/vision_frame_owner.sv'],
+'E22': ['subprojects/button_only/constraints/button_only.xdc','subprojects/button_only/constraints/button_osd_cdc.tcl'],
+'E24': ['tests/rtl/tb_vision_frame_owner.sv','tests/rtl/tb_axis_rgb_mask_frontend.sv'],
+'E25': ['rtl/scene2d_gpu/scene2d_c4m7_core.sv','rtl/scene2d_gpu/scene2d_c4m3_core.sv','rtl/scene2d_gpu/scene2d_frame_swap.sv'],
+}
+for eid, paths in extras.items():
+    for path in paths:
+        rel = 'build/v2-release-repo/releases/v2.0/source/'+path
+        data = (ROOT/rel).read_bytes()
+        evidence.append(dict(id=eid,path=rel,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data)))
+rel='build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt'
+data=(ROOT/rel).read_bytes()
+evidence.append(dict(id='E23',path=rel,sha256=hashlib.sha256(data).hexdigest(),bytes=len(data)))
+evidence.append(dict(id='R01',path='sources/open_topic_guide.md',sha256=hashlib.sha256((OUT/'sources/open_topic_guide.md').read_bytes()).hexdigest(),url='https://gitee.com/Vickyiii/fpgachina26-amd/blob/master/tracks/open-topic/GUIDE.md',accessed='2026-10-30'))
+old_ev = re.findall(r'(?:^\|.*\n)+',old.split('## 附录 证据定位与引用')[1],re.M)[0].strip()
+replacements['EVIDENCE']=old_ev+'''
+| E19 | S/rtl/vision_streaming/axis_rgb_mask_frontend.sv、axis_binary_mask_pair.sv；视觉数据通路 |
+| E20 | S/rtl/vision_streaming/vision_source_admission.sv、vision_capture_lifecycle.sv；启停 FSM |
+| E21 | S/rtl/vision_streaming/vision_frame_owner.sv；三槽拥有权 |
+| E22 | S/subprojects/button_only/constraints/button_only.xdc、button_osd_cdc.tcl；引脚与 CDC 约束 |
+| E23 | B/overlay/timing.rpt；R23b2 路由后时序 |
+| E24 | S/tests/rtl/tb_vision_frame_owner.sv、tb_axis_rgb_mask_frontend.sv；测试场景定义 |
+| E25 | S/rtl/scene2d_gpu/scene2d_c4m7_core.sv、scene2d_c4m3_core.sv、scene2d_frame_swap.sv；图形核心与帧交换 |
+'''
+for key,value in replacements.items():
+    body=body.replace('{{'+key+'}}',value)
+assert '{{' not in body
+(OUT/'report.md').write_text('# GESTURE PLAY v2.0 初级组系统设计报告\n\n'+body,encoding='utf-8')
+(OUT/'evidence_index.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2),encoding='utf-8')
+
+def esc(s):
+    # Break long ASCII identifiers/paths without altering their visible contents.
+    parts = re.split(r'([A-Za-z0-9_./:+>\-]{16,})',s)
+    def normal(v):
+        return ''.join({'&':r'\&','%':r'\%','$':r'\$','#':r'\#','_':r'\_','{':r'\{','}':r'\}','\\':r'\textbackslash{}','~':r'\textasciitilde{}','^':r'\textasciicircum{}','≤':r'$\leq$','−':'-','∧':r'$\land$','≈':r'$\approx$'}.get(c,c) for c in v)
+    return ''.join(r'\nolinkurl{'+p+'}' if i%2 else normal(p) for i,p in enumerate(parts))
+
+lines=body.strip().splitlines(); tex=[];i=0; fig=0
+while i<len(lines):
+    line=lines[i].strip()
+    if line.startswith('## '):
+        if tex: tex.append(r'\clearpage')
+        tex.append(r'\section{'+esc(line[3:])+'}')
+    elif line.startswith('### '): tex.append(r'\subsection{'+esc(line[4:])+'}')
+    elif line.startswith('!['):
+        m=re.match(r'!\[(.*?)\]\((.*?)\)',line)
+        fig+=1
+        tex.append(r'\begin{figure}[htbp]\centering\input{'+m[2]+r'}\caption{'+esc(m[1])+r'}\label{fig:'+str(fig)+r'}\end{figure}')
+    elif line.startswith('|'):
+        rows=[]
+        while i<len(lines) and lines[i].strip().startswith('|'):
+            cells=[c.strip() for c in lines[i].strip().strip('|').split('|')]
+            if not all(re.fullmatch(r'[-: ]+',c) for c in cells): rows.append(cells)
+            i+=1
+        n=len(rows[0]); widths={2:[.29,.66],3:[.24,.35,.34],4:[.20,.14,.14,.43]}.get(n,[.92/n]*n)
+        # Partition table needs room for prose, not the handshake's narrow bit columns.
+        if n==4 and rows[0][0]=='模块': widths=[.20,.15,.29,.27]
+        if n==4 and rows[0][0]=='时钟拍示例': widths=[.20,.14,.14,.43]
+        spec='@{}'+''.join(r'>{\raggedright\arraybackslash}p{'+str(w)+r'\linewidth}' for w in widths)+'@{}'
+        head=' & '.join(r'\bfseries '+esc(c) for c in rows[0])+r'\\\midrule'
+        tex += [r'{\small\renewcommand{\arraystretch}{1.28}',r'\begin{longtable}{'+spec+'}',r'\toprule',head,r'\endfirsthead',r'\toprule',head,r'\endhead',r'\bottomrule\endfoot']
+        tex += [' & '.join(esc(c) for c in row)+r'\\' for row in rows[1:]]
+        tex += [r'\end{longtable}}']
+        continue
+    elif line.startswith('https://'):tex.append(r'\url{'+line+'}')
+    elif line:tex.append(esc(line)+'\n')
+    i+=1
+(OUT/'sections/design.tex').write_text('\n'.join(tex)+'\n',encoding='utf-8')
+print(f'Composed {len(body)} characters; {fig} vector figures; {len(evidence)} evidence records.')

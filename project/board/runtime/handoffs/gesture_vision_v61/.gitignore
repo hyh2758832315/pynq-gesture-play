@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+.Xil/
+*.cache/
+*.runs/
+hardware/frontend/golden/*.hex
+hardware/frontend/sim/
+hardware/frontend/synth/
+runtime/results/
+runtime/project1_recordings/
+runtime/*.log
+*.lic
+*.key
+.env

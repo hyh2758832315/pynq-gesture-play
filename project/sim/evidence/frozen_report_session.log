@@ -1,0 +1,91 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite ENTERPRISE license has been detected. Your current license is active and will expire on 24-nov-2026.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 22:03:52 2026
+# Process ID         : 140208
+# Current directory  : E:/projects/fpga/voice-view-game
+# Command line       : vivado.exe -mode batch -nojournal -log build/contest-v3-work/frozen-report.log -source contest_v3/build/scripts/report_frozen.tcl
+# Log file           : E:/projects/fpga/voice-view-game/build/contest-v3-work/frozen-report.log
+# Journal file       : 
+# Running On         : DESKTOP-JBJOBKD
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33599 MB
+# Swap memory        : 51539 MB
+# Total Virtual      : 85138 MB
+# Available Virtual  : 31285 MB
+#-----------------------------------------------------------
+source contest_v3/build/scripts/report_frozen.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne {2026.1}} {error {Vivado 2026.1 required}}
+# set out [file join $root build reports]
+# file mkdir $out
+# open_checkpoint [file join $root board runtime overlay candidate.dcp]
+Command: open_checkpoint E:/projects/fpga/voice-view-game/contest_v3/board/runtime/overlay/candidate.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 346.477 ; gain = 4.539
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1134.055 ; gain = 2.152
+INFO: [Netlist 29-17] Analyzing 3528 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.144 . Memory (MB): peak = 1307.473 ; gain = 16.160
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.914 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2107.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 2150.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 259 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 231 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 22 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2026.1 (64-bit) build 6511674
+open_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:39 . Memory (MB): peak = 2157.859 ; gain = 1823.062
+# if {[get_property PART [current_design]] ne {xc7z020clg400-1}} {error {wrong part}}
+# report_utilization -file $out/frozen_utilization.rpt
+# report_timing_summary -delay_type min_max -report_unconstrained -file $out/frozen_timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:38 ; elapsed = 00:00:24 . Memory (MB): peak = 2408.492 ; gain = 250.633
+# report_clocks -file $out/frozen_clocks.rpt
+# report_drc -file $out/frozen_drc.rpt
+Command: report_drc -file E:/projects/fpga/voice-view-game/contest_v3/build/reports/frozen_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2026.1/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/projects/fpga/voice-view-game/contest_v3/build/reports/frozen_drc.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 2534.879 ; gain = 126.387
+# report_route_status -file $out/frozen_route.rpt
+# close_design
+# puts FROZEN_REPORTS_COMPLETE
+FROZEN_REPORTS_COMPLETE
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 22:05:15 2026...

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1680" viewBox="0 0 2200 1680">
+<rect x="0" y="0" width="2200" height="1680" fill="#ffffff"/>
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#197b71"/></marker>
+<marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25638d"/></marker>
+<marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bf286e"/></marker>
+</defs><g font-family="Microsoft YaHei" fill="#172b3a">
+<rect x="60" y="240" width="2080" height="430" rx="0" fill="#edf5fb" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="278.0" text-anchor="start" font-size="27" font-weight="600">PL / 逐像素处理与双掩膜</text>
+<rect x="60" y="710" width="2080" height="270" rx="0" fill="#edf8f5" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="748.0" text-anchor="start" font-size="27" font-weight="600">PS / 完成帧快照、最新帧槽与识别</text>
+<rect x="60" y="1060" width="1000" height="465" rx="0" fill="#fff0f6" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="1098.0" text-anchor="start" font-size="27" font-weight="600">A / HDMI 位置跟随</text>
+<rect x="1140" y="1060" width="1000" height="465" rx="0" fill="#edf8f5" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="1162" y="1098.0" text-anchor="start" font-size="27" font-weight="600">B / 灵巧手类别跟随</text>
+<path d="M370,387 L410,387" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M720,387 L760,387" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1090,387 L1140,387 L1140,355 L1190,355" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1090,387 L1140,387 L1140,517 L1190,517" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1510,355 L1560,355 L1560,410 L1620,410" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1510,517 L1560,517 L1560,455 L1620,455" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M505,854 L575,854" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M980,854 L1050,854" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1455,854 L1525,854" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1855,490 L2115,490 L2115,690 L40,690 L40,854 L100,854" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1807,908 L1807,1020 L560,1020 L560,1060" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow2)"/>
+<path d="M1807,908 L1807,1020 L1640,1020 L1640,1060" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M520,1215 L580,1215" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow2)"/>
+<path d="M1600,1215 L1660,1215" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  视觉识别与双路跟随  /  01  总览</text>
+<text x="1100.0" y="129.98" text-anchor="middle" font-size="47" font-weight="600">一帧观察，位置与类别分别跟随</text>
+<text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">位置驱动 HDMI 手圈；类别驱动实体手。两路都读取最新状态，互不消费对方的输入。</text>
+<text x="1100.0" y="1651.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意</text>
+<rect x="100" y="335" width="270" height="105" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="235.0" y="379.13" text-anchor="middle" font-size="27" font-weight="600">OV5640 / DVP</text>
+<text x="235.0" y="414.23" text-anchor="middle" font-size="27" font-weight="400">1280 × 720</text>
+<rect x="410" y="335" width="310" height="105" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="565.0" y="379.13" text-anchor="middle" font-size="27" font-weight="600">2 × 2 区域缩减</text>
+<text x="565.0" y="414.23" text-anchor="middle" font-size="27" font-weight="400">640 × 360</text>
+<rect x="760" y="335" width="330" height="105" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="925.0" y="379.13" text-anchor="middle" font-size="27" font-weight="600">BGR → HSV</text>
+<text x="925.0" y="414.23" text-anchor="middle" font-size="27" font-weight="400">肤色阈值判定</text>
+<rect x="1190" y="310" width="320" height="90" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1350.0" y="347.25" text-anchor="middle" font-size="25" font-weight="600">原掩膜 + 对齐 FIFO</text>
+<text x="1350.0" y="379.75" text-anchor="middle" font-size="25" font-weight="400">raw：0 或 255</text>
+<rect x="1190" y="465" width="320" height="105" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1350.0" y="509.75" text-anchor="middle" font-size="25" font-weight="600">9 × 9 膨胀</text>
+<text x="1350.0" y="542.25" text-anchor="middle" font-size="25" font-weight="400">5 × 5 固定权重平滑</text>
+<rect x="1620" y="375" width="470" height="115" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="1855.0" y="424.44" text-anchor="middle" font-size="26" font-weight="600">逐像素配对 → DMS1</text>
+<text x="1855.0" y="458.24" text-anchor="middle" font-size="26" font-weight="400">raw + filtered + 帧身份</text>
+<text x="595.0" y="512.25" text-anchor="middle" font-size="25" font-weight="600">当前配置：H 0–20 / S 20–255 / V 70–255</text>
+<text x="595.0" y="544.75" text-anchor="middle" font-size="25" font-weight="400">缩减逐通道计算：(四像素之和 + 2) &gt;&gt; 2</text>
+<text x="1095.0" y="634.16" text-anchor="middle" font-size="24" font-weight="600">RGB 同时由 VDMA 写入 DDR；PS 仅在预览需要时复制 RGB。识别使用双掩膜。</text>
+<rect x="100" y="800" width="405" height="108" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="302.5" y="846.25" text-anchor="middle" font-size="25" font-weight="600">DMA 完成 / DMS1 校验</text>
+<text x="302.5" y="878.75" text-anchor="middle" font-size="25" font-weight="400">复制完成后释放 DMA token</text>
+<rect x="575" y="800" width="405" height="108" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="777.5" y="846.25" text-anchor="middle" font-size="25" font-weight="600">采集线程持续读取</text>
+<text x="777.5" y="878.75" text-anchor="middle" font-size="25" font-weight="400">最新帧槽容量 = 1</text>
+<rect x="1050" y="800" width="405" height="108" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1252.5" y="846.25" text-anchor="middle" font-size="25" font-weight="600">轮廓 / 凸包 / 凸缺陷</text>
+<text x="1252.5" y="878.75" text-anchor="middle" font-size="25" font-weight="400">位置质心 + 三态确认</text>
+<rect x="1525" y="800" width="565" height="108" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1807.5" y="846.25" text-anchor="middle" font-size="25" font-weight="600">发布同帧观察</text>
+<text x="1807.5" y="878.75" text-anchor="middle" font-size="25" font-weight="400">位置、类别、帧号、原始来源时间</text>
+<text x="1090.0" y="953.82" text-anchor="middle" font-size="23" font-weight="600">新帧覆盖待处理旧帧；识别只取最新可用快照。CPU 快照的 ready 时间保留到结果消费者。</text>
+<rect x="100" y="1160" width="420" height="110" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="310.0" y="1207.25" text-anchor="middle" font-size="25" font-weight="600">ObservationHub 最新快照</text>
+<text x="310.0" y="1239.75" text-anchor="middle" font-size="25" font-weight="400">位置有效性与分类分离</text>
+<rect x="580" y="1160" width="440" height="110" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="800.0" y="1207.25" text-anchor="middle" font-size="25" font-weight="600">独立 OSD 线程 → MMIO</text>
+<text x="800.0" y="1239.75" text-anchor="middle" font-size="25" font-weight="400">PL 在帧边界切换覆盖参数</text>
+<rect x="1180" y="1160" width="420" height="110" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1390.0" y="1207.25" text-anchor="middle" font-size="25" font-weight="600">分类快照 peek</text>
+<text x="1390.0" y="1239.75" text-anchor="middle" font-size="25" font-weight="400">不消费游戏 / 菜单事件</text>
+<rect x="1660" y="1160" width="440" height="110" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1880.0" y="1207.25" text-anchor="middle" font-size="25" font-weight="600">独立动作 owner → USB SDK</text>
+<text x="1880.0" y="1239.75" text-anchor="middle" font-size="25" font-weight="400">按 t 窗口执行最新类别</text>
+<text x="560.0" y="1354.25" text-anchor="middle" font-size="25" font-weight="600">有效位置：显示亮绿圈；确认握拳：红圈缩小</text>
+<text x="560.0" y="1386.75" text-anchor="middle" font-size="25" font-weight="400">应用画面暂停时，独立覆盖通路仍可更新</text>
+<text x="1640.0" y="1354.25" text-anchor="middle" font-size="25" font-weight="600">类别待定：保持已批准姿态；明确无手：default</text>
+<text x="1640.0" y="1386.75" text-anchor="middle" font-size="25" font-weight="400">动作忙时只更新最新状态，后续不补播旧动作</text>
+<text x="560.0" y="1468.98" text-anchor="middle" font-size="22" font-weight="600">最终扫描上叠加 · 常量查表画圈 · 3 像素周期流水</text>
+<text x="1640.0" y="1468.98" text-anchor="middle" font-size="22" font-weight="600">页面授权 / 暂停交接仍由 owner 管理</text>
+<text x="1100.0" y="1582.16" text-anchor="middle" font-size="24" font-weight="600">PC 回传是按需观察分支：先发布识别结果，再处理 RGB 转换 / 标注 / 编码。</text>
+</g></svg>

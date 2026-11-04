@@ -1,0 +1,27 @@
+Time resolution is 1 ps
+BLIT_CASE=PASS name=original off=76 on=20 writes=8
+BLIT_CASE=PASS name=odd_source_flip_0 off=106 on=26 writes=21
+BLIT_CASE=PASS name=odd_source_flip_1 off=106 on=26 writes=21
+BLIT_CASE=PASS name=odd_source_flip_2 off=106 on=26 writes=21
+BLIT_CASE=PASS name=odd_source_flip_3 off=106 on=26 writes=21
+BLIT_CASE=PASS name=padded_stride_module_only off=106 on=26 writes=21
+BLIT_CASE=PASS name=negative_xy off=106 on=26 writes=8
+BLIT_CASE=PASS name=right_bottom_clip off=106 on=25 writes=2
+BLIT_CASE=PASS name=fully_clipped off=106 on=25 writes=0
+BLIT_CASE=PASS name=all_transparent off=106 on=25 writes=0
+BLIT_CASE=PASS name=last_transparent off=106 on=25 writes=19
+BLIT_CASE=PASS name=single_opaque off=6 on=6 writes=1
+BLIT_CASE=PASS name=single_transparent off=6 on=5 writes=0
+BLIT_CASE=PASS name=zero_width off=1 on=1 writes=0
+BLIT_CASE=PASS name=zero_height off=1 on=1 writes=0
+BLIT_CASE=PASS name=missing_asset off=1 on=1 writes=0
+BLIT_CASE=PASS name=source_x_out_of_bounds off=1 on=1 writes=0
+BLIT_CASE=PASS name=source_y_out_of_bounds off=1 on=1 writes=0
+BLIT_CASE=PASS name=busy_start_ignored off=106 on=26 writes=21
+BLIT_CASE=PASS name=same_address_asset_before off=6 on=6 writes=1
+BLIT_CASE=PASS name=same_address_asset_after off=6 on=6 writes=1
+BLIT_CASE=PASS name=new_palette off=6 on=6 writes=1
+BLIT_CASE=PASS name=long_opaque off=1281 on=261 writes=256
+BLIT_CASE=PASS name=after_reset off=106 on=26 writes=21
+SCENE2D_INDEX4_ASSET_BLIT=PASS cases=24 pipeline_II=1
+$finish called at time : 27990 ns : File "E:/projects/fpga/voice-view-game/sim/scene2d_gpu/tb_scene2d_index4_asset_blit.sv" Line 216

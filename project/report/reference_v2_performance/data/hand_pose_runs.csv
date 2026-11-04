@@ -1,0 +1,13 @@
+﻿version,state,wall_s,cpu_s,one_core_pct,position_write_attempts,source
+插值基线,default,1.0761039680000977,0.6346129769999997,58.97320294984194,311,subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json
+插值基线,paper,1.3878645019999567,0.710293332,51.17886731568138,222,subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json
+插值基线,scissors,1.5931182379999882,0.8942035489999993,56.129138922079555,457,subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json
+插值基线,rock,2.543196457999784,1.4211287170000002,55.87962788048681,523,subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json
+阶段目标,default,1.3098345210000844,0.2666016339999997,20.353840865061652,17,subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json
+阶段目标,paper,2.4349991290000617,0.41904958099999945,17.209434533641218,51,subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json
+阶段目标,scissors,2.08559821200015,0.3794509100000001,18.193864370266002,33,subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json
+阶段目标,rock,3.318451563999588,0.5920227489999998,17.84033117802871,48,subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json
+轻量驱动,default,1.2871533950000185,0.2295014310000001,17.830153879988547,not collected in lean,subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json
+轻量驱动,paper,2.392425811999999,0.3641393080000004,15.220505738298753,not collected in lean,subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json
+轻量驱动,scissors,2.059419313000035,0.3317689579999996,16.10983037333466,not collected in lean,subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json
+轻量驱动,rock,3.299367324000002,0.515117353,15.612610007166321,not collected in lean,subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json

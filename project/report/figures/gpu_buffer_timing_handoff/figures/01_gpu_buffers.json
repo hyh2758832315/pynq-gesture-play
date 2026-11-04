@@ -1,0 +1,547 @@
+{
+  "width": 2200,
+  "height": 1700,
+  "title": "前台持续扫描，后台完成后换页",
+  "subtitle": "命令缓冲、图像缓冲和资源缓冲分别管理；双帧缓冲把绘制与 HDMI 扫描分开。",
+  "edge_font_size": 23,
+  "nodes": [
+    {
+      "id": "kicker",
+      "x": 60,
+      "y": 24,
+      "w": 2080,
+      "h": 36,
+      "lines": "PYNQ  /  GPU 缓冲与呈现时序  /  01  缓冲所有权",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "title",
+      "x": 60,
+      "y": 74,
+      "w": 2080,
+      "h": 80,
+      "lines": "前台持续扫描，后台完成后换页",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 47,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 60,
+      "y": 164,
+      "w": 2080,
+      "h": 48,
+      "lines": "命令缓冲、图像缓冲和资源缓冲分别管理；双帧缓冲把绘制与 HDMI 扫描分开。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "footer",
+      "x": 60,
+      "y": 1649,
+      "w": 2080,
+      "h": 33,
+      "lines": "GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 18,
+      "kind": "text"
+    },
+    {
+      "id": "ps",
+      "x": 60,
+      "y": 240,
+      "w": 2080,
+      "h": 275,
+      "lines": "PS / 当前页面产生 Scene，共用一个提交入口",
+      "fill": "#edf8f5",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "owner",
+      "x": 100,
+      "y": 330,
+      "w": 520,
+      "h": 112,
+      "lines": "菜单 / 游戏 / 视频 / 画布\n页面切换时交接提交权",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "compiler",
+      "x": 680,
+      "y": 330,
+      "w": 520,
+      "h": 112,
+      "lines": "Scene 编译 / 视频包读取\n命令与资源 generation",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "dma",
+      "x": 1260,
+      "y": 330,
+      "w": 830,
+      "h": 112,
+      "lines": "C6IVideoSink → PS DDR 暂存\n拷贝 + flush → 启动 MM2S DMA",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "ps_note",
+      "x": 100,
+      "y": 465,
+      "w": 1990,
+      "h": 30,
+      "lines": "当前 submit_scene 等待呈现确认后返回；页面切换先停止旧生产者，再 drain 和恢复新资源。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 23,
+      "kind": "text"
+    },
+    {
+      "id": "pl",
+      "x": 60,
+      "y": 560,
+      "w": 2080,
+      "h": 600,
+      "lines": "PL / 上传与光栅化 · 100 MHz",
+      "fill": "#edf5fb",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "router",
+      "x": 100,
+      "y": 670,
+      "w": 260,
+      "h": 130,
+      "lines": "DMA MM2S / HP0\n64 bit AXIS\n按 magic 分流",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "commands",
+      "x": 420,
+      "y": 670,
+      "w": 410,
+      "h": 130,
+      "lines": "命令 bank 0 / 1\n各 4 KiB · 上传完整后切换",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "raster",
+      "x": 900,
+      "y": 670,
+      "w": 440,
+      "h": 130,
+      "lines": "命令解码 → 光栅化\nCLEAR / BLIT / TILE / RECT",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "fb",
+      "x": 1410,
+      "y": 625,
+      "w": 680,
+      "h": 470,
+      "lines": "两块独立 BRAM 帧缓冲",
+      "fill": "#fff0f6",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "back",
+      "x": 1450,
+      "y": 710,
+      "w": 600,
+      "h": 112,
+      "lines": "B / 后台：本轮写入目标\n320 × 180 × 8 bit = 56.25 KiB",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "front",
+      "x": 1450,
+      "y": 900,
+      "w": 600,
+      "h": 112,
+      "lines": "A / 前台：持续被扫描\n完整保留上一幅 token 图像",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "fb_flip",
+      "x": 1460,
+      "y": 838,
+      "w": 580,
+      "h": 44,
+      "lines": "vblank 换显示 bank → ACK 后换写 bank",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 23,
+      "kind": "text"
+    },
+    {
+      "id": "resources",
+      "x": 100,
+      "y": 890,
+      "w": 1240,
+      "h": 130,
+      "lines": "资源 bank：Atlas / Tilemap / Palette，各自提交\n光栅化启动前检查 Scene 所需 generation；上传资源时先 drain",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "pl_note",
+      "x": 100,
+      "y": 1072,
+      "w": 1240,
+      "h": 42,
+      "lines": "帧缓冲保存索引 token；扫描期间不读取 PS 的 Scene 包。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "scan",
+      "x": 60,
+      "y": 1200,
+      "w": 2080,
+      "h": 345,
+      "lines": "像素时钟域 / 连续扫描 · 74.25 MHz",
+      "fill": "#edf8f5",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "read",
+      "x": 100,
+      "y": 1310,
+      "w": 470,
+      "h": 115,
+      "lines": "读前台 BRAM\nx / 4，y / 4 → 逻辑像素",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "palette",
+      "x": 630,
+      "y": 1310,
+      "w": 470,
+      "h": 115,
+      "lines": "token → RGB888\n16 组 × 16 色查表",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "osd",
+      "x": 1160,
+      "y": 1310,
+      "w": 410,
+      "h": 115,
+      "lines": "独立 OSD 覆盖\n手圈继续同步",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "hdmi",
+      "x": 1630,
+      "y": 1310,
+      "w": 460,
+      "h": 115,
+      "lines": "rgb2dvi → HDMI\n1280 × 720 @ 60 Hz",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "scan_note",
+      "x": 100,
+      "y": 1464,
+      "w": 1990,
+      "h": 44,
+      "lines": "扫描路径使用片上存储，不等待 AXI / DDR；本轮尚未完成换页时，继续扫描当前前台。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "current",
+      "x": 80,
+      "y": 1582,
+      "w": 2040,
+      "h": 54,
+      "lines": "当前 UPLOAD_RENDER_OVERLAP_ENABLE = 0：上传下一 Scene 与当前渲染串行；绘制与扫描可并行。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "owner",
+      "target": "compiler",
+      "points": [
+        [
+          620,
+          386
+        ],
+        [
+          680,
+          386
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "compiler",
+      "target": "dma",
+      "points": [
+        [
+          1200,
+          386
+        ],
+        [
+          1260,
+          386
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "dma",
+      "target": "router",
+      "points": [
+        [
+          2090,
+          386
+        ],
+        [
+          2120,
+          386
+        ],
+        [
+          2120,
+          535
+        ],
+        [
+          40,
+          535
+        ],
+        [
+          40,
+          735
+        ],
+        [
+          100,
+          735
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "router",
+      "target": "commands",
+      "points": [
+        [
+          360,
+          735
+        ],
+        [
+          420,
+          735
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "commands",
+      "target": "raster",
+      "points": [
+        [
+          830,
+          735
+        ],
+        [
+          900,
+          735
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "raster",
+      "target": "back",
+      "points": [
+        [
+          1340,
+          766
+        ],
+        [
+          1450,
+          766
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false
+    },
+    {
+      "source": "router",
+      "target": "resources",
+      "points": [
+        [
+          230,
+          800
+        ],
+        [
+          230,
+          890
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "resources",
+      "target": "raster",
+      "points": [
+        [
+          1120,
+          890
+        ],
+        [
+          1120,
+          800
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "read",
+      "target": "palette",
+      "points": [
+        [
+          570,
+          1367
+        ],
+        [
+          630,
+          1367
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "palette",
+      "target": "osd",
+      "points": [
+        [
+          1100,
+          1367
+        ],
+        [
+          1160,
+          1367
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "osd",
+      "target": "hdmi",
+      "points": [
+        [
+          1570,
+          1367
+        ],
+        [
+          1630,
+          1367
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "front",
+      "target": "read",
+      "points": [
+        [
+          2050,
+          956
+        ],
+        [
+          2120,
+          956
+        ],
+        [
+          2120,
+          1180
+        ],
+        [
+          40,
+          1180
+        ],
+        [
+          40,
+          1367
+        ],
+        [
+          100,
+          1367
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    }
+  ]
+}

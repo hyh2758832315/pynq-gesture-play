@@ -1,0 +1,14 @@
+{
+  "schema_version": 2, "test_id": "snake-boost", "name": "Snake held fist and release",
+  "seed": 17, "max_ticks": 155,
+  "events": [
+    {"tick":0,"kind":"gesture","event_id":"boost","x":310,"y":80,"gesture":"fist"},
+    {"tick":151,"kind":"gesture","event_id":"release","x":310,"y":80,"gesture":"paper"}
+  ],
+  "assertions": [
+    {"tick":119,"field":"values.moves","operator":"eq","expected":0},
+    {"tick":149,"field":"values.moves","operator":"eq","expected":6},
+    {"tick":149,"field":"values.boosted","operator":"eq","expected":true},
+    {"tick":155,"field":"values.boosted","operator":"eq","expected":false}
+  ]
+}

@@ -1,0 +1,12 @@
+\begin{tikzpicture}[node distance=10mm and 10mm]
+\node[soft] (scene) {PS 应用状态\\Scene 编译};
+\node[box,right=of scene] (dma) {DDR + AXI DMA\\命令 / 资源};
+\node[box,right=of dma] (render) {PL 命令执行\\裁剪 / 光栅化};
+\node[box,below=12mm of render] (back) {后台缓冲\\320×180 token};
+\node[box,left=of back] (front) {前台缓冲\\320×180 token};
+\node[box,left=of front] (scan) {调色板 + 4× 放大\\HDMI 720p60};
+\draw[arr] (scene)--(dma);\draw[arr] (dma)--(render);\draw[arr] (render)--(back);
+\draw[arr,<->] (back)--node[lab,above=5mm]{帧边界交换}(front);\draw[arr] (front)--(scan);
+\node[soft,below=12mm of front,text width=73mm] (done) {提交序号与完成计数\\接收 → 渲染 → 呈现};
+\draw[ctl] (back.south)|-(done.east);\draw[ctl] (scan.south)|-(done.west);
+\end{tikzpicture}

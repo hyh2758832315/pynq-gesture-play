@@ -1,0 +1,35 @@
+{
+  "scope": "PC CPU only; same interpreter; no GPU/network",
+  "R60": {
+    "hover": {
+      "median_elapsed_ms": 1.8973499999999999,
+      "max_elapsed_ms": 13.3892,
+      "total_cpu_ms": 187.5,
+      "uploads": 120,
+      "frames": 120
+    },
+    "paint": {
+      "median_elapsed_ms": 1.86595,
+      "max_elapsed_ms": 2.6571,
+      "total_cpu_ms": 218.75,
+      "uploads": 120,
+      "frames": 120
+    }
+  },
+  "v2": {
+    "hover": {
+      "median_elapsed_ms": 0.0802,
+      "max_elapsed_ms": 10.6777,
+      "total_cpu_ms": 31.25,
+      "uploads": 1,
+      "frames": 120
+    },
+    "paint": {
+      "median_elapsed_ms": 1.56735,
+      "max_elapsed_ms": 2.5881,
+      "total_cpu_ms": 171.875,
+      "uploads": 120,
+      "frames": 120
+    }
+  }
+}

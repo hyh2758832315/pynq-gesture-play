@@ -1,0 +1,24 @@
+﻿panel,case,metric,value,unit,source,scope
+board_historical,插值写入 / H143,cpu_seconds,3.654565627,s,h143-buttons-cpu-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,插值写入 / H143,wall_seconds,6.6002831659998265,s,h143-buttons-cpu-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,插值写入 / H143,single_core_percent,55.36983088582985,% of one core,h143-buttons-cpu-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,阶段目标 / H150,cpu_seconds,1.6555580020000003,s,h150-minimal-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,阶段目标 / H150,wall_seconds,9.148883425999884,s,h150-minimal-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,阶段目标 / H150,single_core_percent,18.095738298458688,% of one core,h150-minimal-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,阶段目标＋轻量审计 / H164,cpu_seconds,1.4407427679999998,s,h164-lean-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,阶段目标＋轻量审计 / H164,wall_seconds,9.038365844000054,s,h164-lean-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+board_historical,阶段目标＋轻量审计 / H164,single_core_percent,15.940301519841766,% of one core,h164-lean-analysis.json,Motion segment; four poses once per run; unmatched historical starts/configuration
+offline_paired,default,write_packets_dedup_False,34,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,default,write_packets_dedup_True,17,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,paper,write_packets_dedup_False,102,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,paper,write_packets_dedup_True,44,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,scissors,write_packets_dedup_False,68,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,scissors,write_packets_dedup_True,65,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,rock,write_packets_dedup_False,102,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_paired,rock,write_packets_dedup_True,75,packets,verification-final.json,Fresh default-start case; two Motion.run calls; startup/arm/release excluded
+offline_aggregate,all_stage_targets,write_packets,306,packets,verification-final.json,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK
+offline_aggregate,skip_unchanged,write_packets,201,packets,verification-final.json,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK
+offline_aggregate,all_stage_targets,tx_plus_ack_bytes,5814,B,verification-final.json,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK
+offline_aggregate,skip_unchanged,tx_plus_ack_bytes,3819,B,verification-final.json,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK
+offline_aggregate,all_stage_targets,ideal_wire_time,58.14,ms,verification-final.json,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK
+offline_aggregate,skip_unchanged,ideal_wire_time,38.190000000000005,ms,verification-final.json,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK

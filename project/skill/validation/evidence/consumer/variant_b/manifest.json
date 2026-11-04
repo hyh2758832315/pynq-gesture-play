@@ -1,0 +1,103 @@
+{
+  "scope": "Finite strict all-output preservation under existing stimulus only; not correctness, formal equivalence or board signoff",
+  "reference_path": "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\original.sv",
+  "reference_sha256": "4e44160291a28fa3d0e443870fed336d3495be6bf9e345fad44b1b2f6c908a5a",
+  "config": {
+    "reference": "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\original.sv",
+    "sources": [
+      "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\variant_b.sv",
+      "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\tb.sv"
+    ],
+    "legacy_top": "tb_scene2d_upload_sink",
+    "instances": [
+      {
+        "path": "dut",
+        "parameters": {}
+      }
+    ],
+    "clock": "aclk",
+    "reset": "aresetn",
+    "reset_active": 0,
+    "min_checks": 20,
+    "watchdog_ns": 1000,
+    "legacy_marker": "SCENE2D_UPLOAD_SINK=PASS crc=cbf43926 bytes=9 packets=1",
+    "part": "xc7z020clg400-1"
+  },
+  "config_path": "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\runs\\run_01\\variant_b.json",
+  "config_sha256": "bda0829a3d5914316967997eae5749a6e162f8649057fff216c084df5b1ebcef",
+  "sources": {
+    "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\variant_b.sv": "91ab838785a1ba0743edf0a1067d937d26ec002d2035ca1bc9fc053680757ce8",
+    "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\tb.sv": "960873725497f3b9002cbc2feb03ff86cdf891b28ac338574e7ecc9159e45c48"
+  },
+  "ports": [
+    {
+      "direction": "input",
+      "signed": "",
+      "width": "",
+      "name": "aclk"
+    },
+    {
+      "direction": "input",
+      "signed": "",
+      "width": "",
+      "name": "aresetn"
+    },
+    {
+      "direction": "input",
+      "signed": "",
+      "width": "[63:0]",
+      "name": "s_axis_tdata"
+    },
+    {
+      "direction": "input",
+      "signed": "",
+      "width": "[7:0]",
+      "name": "s_axis_tkeep"
+    },
+    {
+      "direction": "input",
+      "signed": "",
+      "width": "",
+      "name": "s_axis_tlast"
+    },
+    {
+      "direction": "input",
+      "signed": "",
+      "width": "",
+      "name": "s_axis_tvalid"
+    },
+    {
+      "direction": "output",
+      "signed": "",
+      "width": "",
+      "name": "s_axis_tready"
+    },
+    {
+      "direction": "output",
+      "signed": "",
+      "width": "[31:0]",
+      "name": "completed_crc32"
+    },
+    {
+      "direction": "output",
+      "signed": "",
+      "width": "[31:0]",
+      "name": "completed_byte_count"
+    },
+    {
+      "direction": "output",
+      "signed": "",
+      "width": "[31:0]",
+      "name": "completed_packet_count"
+    }
+  ],
+  "parameter_names": [],
+  "actual_dut_interface_checked": true,
+  "actual_dut_source": "E:\\projects\\fpga\\voice-view-game\\b\\preserve_consumer_r01\\workspace\\variant_b.sv",
+  "self_contained_source_units_required": true,
+  "generated": {
+    "frozen_reference.sv": "5ece756181b44a613f0bcb91a7cc9451ccc8b35a057e2383344da0770c6ab725",
+    "monitor.sv": "fd8c5f8df09e7e26e5549dac1d394c36d817a8d5af9adce4ab3dd05331b3d74e",
+    "run.tcl": "65d1f9ab1381189540a105f0dd768fb633a3a9947c022d7334e77fabd0024c6c"
+  }
+}

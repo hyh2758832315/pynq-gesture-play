@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "test_id": "pc-example-game3",
+  "name": "PC示例：选角、移动与跳跃",
+  "seed": 17,
+  "max_ticks": 149,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "step-0",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1,
+      "kind": "gesture",
+      "event_id": "step-1",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 30,
+      "kind": "gesture",
+      "event_id": "step-30",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 60,
+      "kind": "gesture",
+      "event_id": "step-60",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 100,
+      "kind": "gesture",
+      "event_id": "step-100",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 130,
+      "kind": "gesture",
+      "event_id": "step-130",
+      "x": 0,
+      "y": 90,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 0,
+      "field": "values.character",
+      "operator": "eq",
+      "expected": "female"
+    },
+    {
+      "tick": 59,
+      "field": "values.world_x",
+      "operator": "gt",
+      "expected": 60
+    },
+    {
+      "tick": 61,
+      "field": "values.world_y",
+      "operator": "lt",
+      "expected": 124
+    },
+    {
+      "tick": 149,
+      "field": "values.note_hits",
+      "operator": "eq",
+      "expected": 0
+    }
+  ]
+}

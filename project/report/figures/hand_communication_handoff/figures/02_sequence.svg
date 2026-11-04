@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1600" viewBox="0 0 2200 1600">
+<rect x="0" y="0" width="2200" height="1600" fill="#ffffff"/>
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#197b71"/></marker>
+<marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25638d"/></marker>
+<marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bf286e"/></marker>
+<marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d8dfe7"/></marker>
+</defs><g font-family="Microsoft YaHei" fill="#172b3a">
+<rect x="60" y="340" width="2080" height="280" rx="0" fill="#edf8f5" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="378.0" text-anchor="start" font-size="27" font-weight="600">启动检查</text>
+<rect x="60" y="650" width="2080" height="480" rx="0" fill="#fff0f6" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="688.0" text-anchor="start" font-size="27" font-weight="600">正常播放</text>
+<rect x="60" y="1160" width="2080" height="345" rx="0" fill="#fff7e9" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="1198.0" text-anchor="start" font-size="27" font-weight="600">退出 / 卸力</text>
+<path d="M580,315 L580,1480" fill="none" stroke="#d8dfe7" stroke-width="2.7" marker-end="url(#arrow3)" stroke-dasharray="9 6"/>
+<path d="M1140,315 L1140,1480" fill="none" stroke="#d8dfe7" stroke-width="2.7" marker-end="url(#arrow3)" stroke-dasharray="9 6"/>
+<path d="M1840,315 L1840,1480" fill="none" stroke="#d8dfe7" stroke-width="2.7" marker-end="url(#arrow3)" stroke-dasharray="9 6"/>
+<path d="M580,405 L1140,405" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow2)"/>
+<path d="M1140,465 L1840,465" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1840,520 L1140,520" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1140,580 L580,580" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M580,730 L1140,730" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow2)"/>
+<path d="M1140,790 L1840,790" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1840,850 L1140,850" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1140,910 L580,910" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M580,1225 L1140,1225" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow2)"/>
+<path d="M1140,1270 L1840,1270" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1840,1315 L1140,1315" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1140,1360 L1840,1360" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1840,1405 L1140,1405" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1140,1460 L580,1460" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  灵巧手驱动与低负荷通信  /  02  通信时序</text>
+<text x="1100.0" y="130.66" text-anchor="middle" font-size="49" font-weight="600">按阶段通信，等待期间不轮询位置</text>
+<text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">PYNQ PS 独立动作进程 → USB 串口 / SDK → 17 个电机；每次写入仍检查状态应答</text>
+<text x="1100.0" y="1571.12" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / 手部运行时 R16  ·  按已交付源码绘制  ·  技术示意</text>
+<rect x="385" y="245" width="390" height="70" rx="6" fill="#fff0f6" stroke="#bf286e" stroke-width="2"/>
+<text x="580.0" y="288.84" text-anchor="middle" font-size="26" font-weight="600">PS 动作调度</text>
+<text x="580.5" y="1480.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<rect x="945" y="245" width="390" height="70" rx="6" fill="#edf5fb" stroke="#25638d" stroke-width="2"/>
+<text x="1140.0" y="288.84" text-anchor="middle" font-size="26" font-weight="600">SDK / 有界串口事务</text>
+<text x="1140.5" y="1480.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<rect x="1645" y="245" width="390" height="70" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1840.0" y="288.84" text-anchor="middle" font-size="26" font-weight="600">电机 ID i</text>
+<text x="1840.5" y="1480.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="221.0" y="472.56" text-anchor="middle" font-size="24" font-weight="600">载入模型与标定</text>
+<text x="221.0" y="503.76" text-anchor="middle" font-size="24" font-weight="400">检查后受控使能</text>
+<text x="580.5" y="405.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="405.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="465.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="465.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="520.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="520.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="580.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="580.5" y="580.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="221.0" y="834.4599999999999" text-anchor="middle" font-size="24" font-weight="600">每个阶段</text>
+<text x="221.0" y="865.66" text-anchor="middle" font-size="24" font-weight="400">仅写需要变化的目标</text>
+<text x="221.0" y="896.8599999999999" text-anchor="middle" font-size="24" font-weight="400">各 ID 顺序执行</text>
+<text x="580.5" y="730.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="730.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="790.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="790.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="850.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="850.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="910.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="580.5" y="910.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<rect x="420" y="952" width="520" height="74" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="680.0" y="997.5" text-anchor="middle" font-size="25" font-weight="600">Event.wait(阶段剩余时间)</text>
+<text x="1540.0" y="984.25" text-anchor="middle" font-size="25" font-weight="600">等待时不循环 READ 位置</text>
+<text x="1540.0" y="1016.75" text-anchor="middle" font-size="25" font-weight="400">相同 (raw, speed) 命中缓存则跳过写入</text>
+<text x="1240.0" y="1080.32" text-anchor="middle" font-size="23" font-weight="600">下一阶段复用同一串口 owner；有界事务等待，保留取消 / 超时检查。</text>
+<text x="221.0" y="1339.75" text-anchor="middle" font-size="25" font-weight="600">逐电机确认 OFF</text>
+<text x="221.0" y="1372.25" text-anchor="middle" font-size="25" font-weight="400">再关闭串口</text>
+<text x="580.5" y="1225.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="1225.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="1270.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="1270.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="1315.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="1315.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="1360.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="1360.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1840.5" y="1405.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="1405.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="1140.5" y="1460.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<text x="580.5" y="1460.84" text-anchor="middle" font-size="1" font-weight="600"></text>
+<rect x="767.0" y="365" width="186.0" height="33" fill="#ffffff"/>
+<text x="860.0" y="391" font-size="24" text-anchor="middle" fill="#bf286e">连接并启动检查</text>
+<rect x="1341.9765625" y="425" width="296.046875" height="33" fill="#ffffff"/>
+<text x="1490.0" y="451" font-size="24" text-anchor="middle" fill="#25638d">逐 ID：READ(0x10, 48 B)</text>
+<rect x="1304.796875" y="480" width="370.40625" height="33" fill="#ffffff"/>
+<text x="1490.0" y="506" font-size="24" text-anchor="middle" fill="#197b71">反馈块 + 状态，检查通信 / error</text>
+<rect x="693.359375" y="540" width="333.28125" height="33" fill="#ffffff"/>
+<text x="860.0" y="566" font-size="24" text-anchor="middle" fill="#197b71">完成检查后进入 READY_IDLE</text>
+<rect x="700.1171875" y="690" width="319.765625" height="33" fill="#ffffff"/>
+<text x="860.0" y="716" font-size="24" text-anchor="middle" fill="#bf286e">预编译目标 (ID, raw, speed)</text>
+<rect x="1365.1328125" y="750" width="249.734375" height="33" fill="#ffffff"/>
+<text x="1490.0" y="776" font-size="24" text-anchor="middle" fill="#25638d">WritePos：13 B 指令</text>
+<rect x="1303.3515625" y="810" width="373.296875" height="33" fill="#ffffff"/>
+<text x="1490.0" y="836" font-size="24" text-anchor="middle" fill="#197b71">6 B 状态应答（非位置到位反馈）</text>
+<rect x="736.4375" y="870" width="247.125" height="33" fill="#ffffff"/>
+<text x="860.0" y="896" font-size="24" text-anchor="middle" fill="#197b71">通信成功且 error = 0</text>
+<rect x="803.0" y="1185" width="114.0" height="33" fill="#ffffff"/>
+<text x="860.0" y="1211" font-size="24" text-anchor="middle" fill="#bf286e">退出请求</text>
+<rect x="1343.9453125" y="1230" width="292.109375" height="33" fill="#ffffff"/>
+<text x="1490.0" y="1256" font-size="24" text-anchor="middle" fill="#25638d">WRITE torque(0x28) = 0</text>
+<rect x="1409.0" y="1275" width="162.0" height="33" fill="#ffffff"/>
+<text x="1490.0" y="1301" font-size="24" text-anchor="middle" fill="#197b71">写入状态应答</text>
+<rect x="1371.9375" y="1320" width="236.125" height="33" fill="#ffffff"/>
+<text x="1490.0" y="1346" font-size="24" text-anchor="middle" fill="#25638d">READ torque(0x28)</text>
+<rect x="1359.90625" y="1365" width="260.1875" height="33" fill="#ffffff"/>
+<text x="1490.0" y="1391" font-size="24" text-anchor="middle" fill="#197b71">读回值 = 0，确认 OFF</text>
+<rect x="730.78125" y="1420" width="258.4375" height="33" fill="#ffffff"/>
+<text x="860.0" y="1446" font-size="24" text-anchor="middle" fill="#197b71">全部确认后释放 / 关闭</text>
+</g></svg>

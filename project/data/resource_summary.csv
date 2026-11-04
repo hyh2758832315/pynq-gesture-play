@@ -1,0 +1,11 @@
+metric,used,available,unit,scope,evidence
+lut,32570,53200,count,frozen_r23b2,build/reports/frozen_utilization.rpt
+ff,47672,106400,count,frozen_r23b2,build/reports/frozen_utilization.rpt
+slice,13136,13300,count,frozen_r23b2,build/reports/frozen_utilization.rpt
+bram,89.5,140,36k_equivalent,frozen_r23b2,build/reports/frozen_utilization.rpt
+dsp,20,220,count,frozen_r23b2,build/reports/frozen_utilization.rpt
+wns,0.011,,ns,frozen_r23b2,build/reports/frozen_timing.rpt
+whs,0.050,,ns,frozen_r23b2,build/reports/frozen_timing.rpt
+wpws,0.538,,ns,frozen_r23b2,build/reports/frozen_timing.rpt
+control_clock,100,,mhz,constraint,build/reports/frozen_clocks.rpt
+hdmi_pixel_clock,74.25,,mhz,generated_clock,build/reports/frozen_clocks.rpt

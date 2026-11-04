@@ -1,0 +1,20 @@
+{
+  "schema": "hand-approval-candidate-v1",
+  "changed_sha256": {
+    "src/pynq_usb_hand/motion.py": "eecd1d5c383756045967ff48124c3481529a4e4ae57ba7bcb74fec0b0f010273",
+    "src/pynq_usb_hand/controller.py": "cd30a7f9efa0af4c11ea9ed58e3fbccfd16bf5c9bec308856ef07afb0b4e3d6d",
+    "src/pynq_usb_hand/actuator_owner.py": "7d6ee88e695da5543fe7c6a49a555e5fa0816aead8256a04a1f6249e76ce71cd",
+    "src/pynq_usb_hand/gesture_consumer.py": "e23a2138fad29f29f53ab6701bba9238ecc280017b0beea4407c8129d0c82406",
+    "src/pynq_usb_hand/game_bridge.py": "d72e8c59fb2e57f325e09217f9428ad6981a46d6d4fbd5879a4bdc6d61742f2d"
+  },
+  "timing": "single window starts when Controller.submit accepts; no following cooldown",
+  "frozen_files": 117,
+  "hardware_tested": false,
+  "release_ready": false,
+  "source_recovery": true,
+  "source_off_grace_seconds": 1.0,
+  "source_freshness_seconds": 0.5,
+  "state_writes": "transition only; existing owner loop; no added thread or playback READ",
+  "baseline": "E:\\projects\\fpga\\voice-view-game\\build\\hand-r28-source-wait-20261026-r04",
+  "default_stability_seconds": 0.1
+}

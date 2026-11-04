@@ -1,0 +1,19 @@
+{
+  "h_active": 1280,
+  "h_front": 110,
+  "h_sync": 40,
+  "h_back": 220,
+  "v_active": 720,
+  "v_front": 5,
+  "v_sync": 5,
+  "v_back": 20,
+  "h_total": 1650,
+  "v_total": 750,
+  "pixel_clock_Hz": 74250000,
+  "render_clock_Hz": 100000000,
+  "frame_period_ms": 16.666666666666668,
+  "refresh_Hz": 60.0,
+  "vblank_ms": 0.6666666666666666,
+  "scale": 4,
+  "scope": "Configuration-derived; not a measured render/interaction latency"
+}

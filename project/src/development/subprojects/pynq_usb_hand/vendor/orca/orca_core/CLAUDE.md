@@ -1,0 +1,281 @@
+# Claude Code Instructions
+
+## Project: ORCA Core
+
+Control package for the ORCA Hand - a dexterous open-source robotic hand. Provides hardware abstraction, calibration tools, and high-level joint-space control.
+
+## Project Structure
+
+```
+orca_core/
+├── api/                          # FastAPI app exposing OrcaHand over HTTP (early/incomplete)
+├── maintenance/                  # Interaction-free hardware routines (callback-driven)
+│   ├── motor_chain.py               # Assign motor IDs/baud; progress + prompt callbacks
+│   ├── calibration_routine.py       # run_calibration(): hardstop-drive + encoder-anchor pass
+│   └── tensioning.py                # run_tension()/run_jitter(): tendon tensioning + seating
+├── data/                         # Packaged content (demo_poses.yaml)
+├── control/                      # Closed-loop joint control
+│   ├── joint_loop.py                # JointLoopThread: PI loop + encoder-freshness watchdog
+│   ├── joint_controller.py          # Per-joint PI controller
+│   └── constants.py                 # Loop rate, watchdog tiers, PI defaults
+├── hardware/                      # Hardware interfaces
+│   ├── motor_client.py               # MotorClient base interface
+│   ├── motor_factory.py              # motor_type → MotorClient class (lazy per-family imports)
+│   ├── motor_resolution.py           # Connect-time driver probing + yaml persistence
+│   ├── dynamixel_client.py           # Dynamixel motor control (bus-locked, thread-safe)
+│   ├── feetech_client.py             # Feetech motor control
+│   ├── feetech/                      # Vendored Feetech servo SDK (used by feetech_client)
+│   ├── mock_dynamixel_client.py      # In-memory motor client for tests/dev
+│   ├── hand_serial_link.py           # Framed serial link to the connector board (encoders/tactile)
+│   ├── mock_hand_serial_link.py      # In-memory stand-in for HandSerialLink
+│   ├── joint_encoder_client.py       # Joint-angle encoder stream client + anchor sampling
+│   ├── tactile_client.py             # Tactile sensor register client
+│   └── sensing/                      # Wire protocol, framing, port auto-discovery, sensor health checks
+├── kinematics/                    # Rigid transforms, frames, forward kinematics
+├── utils/                         # Shared utilities
+│   ├── utils.py                      # Model-path resolution, YAML I/O (atomic writes), interpolation
+│   └── cli.py                        # Shared argparse/lifecycle helpers for scripts and examples
+├── models/                        # Hand configurations (YAML), versioned v1/ and v2/
+├── base_hand.py                   # BaseHand: shared joint-space interface (ABC)
+├── hardware_hand.py                # OrcaHand: the motor-only hand (+ MockOrcaHand)
+├── hardware_hand_sensing.py        # Sensing variants: OrcaHandTouch / OrcaHandJointFeedback / OrcaHandFull (+ mocks)
+├── hand_factory.py                 # load_hand()/detect_hand(): autodetect the hand, pick class + model
+├── hand_config.py                  # Config dataclasses (BaseHandConfig, OrcaHandConfig, ...)
+├── calibration.py                  # Calibration result types + YAML (de)serialization
+├── joint_position.py               # OrcaJointPositions: typed joint-position container
+├── demo_poses.py                   # load_demo_poses(): packaged demo pose data
+├── version.py                      # LATEST_VERSION: default hand model version
+└── constants.py                    # Control modes, protocol constants
+
+scripts/              # Thin CLI front-ends. argparse + print + input(); no logic.
+examples/             # Demo and record/replay scripts built on the public API
+tools/                # Maintainer-only tools (regenerate packaged data)
+tests/                # Unit tests
+docs/                 # MkDocs site sources (docs/pages/) - partially stale, verify against code
+```
+
+Only `orca_core/` ships in the wheel. Anything both a script and an external
+front-end (e.g. orca_ui) needs must live in the package: operations report
+progress via `progress_callback` and request human action via `prompt_callback`,
+so a terminal and a GUI drive the identical routine.
+
+### Key Files
+
+- [orca_core/hardware_hand.py](orca_core/hardware_hand.py) - `OrcaHand`: the main motor-only hand API
+- [orca_core/hardware_hand_sensing.py](orca_core/hardware_hand_sensing.py) - `OrcaHandTouch` / `OrcaHandJointFeedback` / `OrcaHandFull`: the sensing-equipped variants
+- [orca_core/hand_factory.py](orca_core/hand_factory.py) - `load_hand()`, the recommended entry point (picks the right class from `config.yaml`)
+- [orca_core/base_hand.py](orca_core/base_hand.py) - Shared joint-space interface all hand backends implement
+- [orca_core/hardware/dynamixel_client.py](orca_core/hardware/dynamixel_client.py) - Dynamixel motor control interface
+- [orca_core/hardware/sensing/serial_discovery.py](orca_core/hardware/sensing/serial_discovery.py) - Auto-discovery of encoder/tactile serial ports
+- [orca_core/models/*/config.yaml](orca_core/models/) - Hand configuration files
+- [scripts/](scripts/) - Calibration, tensioning, and diagnostic scripts
+
+### Hardware Components
+
+| Component | Interface | Description |
+|-----------|-----------|--------------|
+| Dynamixel Motors | `dynamixel_client.py` | Servo motor control (typ. 17 motors), bus access is lock-serialized |
+| Feetech Motors | `feetech_client.py` | Alternate servo motor backend |
+| Joint Encoders | `joint_encoder_client.py` via `hand_serial_link.py` | Absolute joint-angle feedback, closed-loop control input |
+| Tactile Sensors | `tactile_client.py` via `hand_serial_link.py` | Per-fingertip tactile sensing (Paxini) |
+| Connector board link | `hand_serial_link.py`, `hardware/sensing/` | Framed serial protocol multiplexing encoder + tactile streams |
+| Hand Configuration | `config.yaml` | Joint mapping, ROMs, calibration, feedback/sensor enablement |
+
+---
+
+## Workflow
+
+### Git & PRs
+
+- Work on feature branches: `feature/description` or `fix/description`
+- Never push directly to `main`
+- Create PRs for all changes
+
+### Commit Guidelines
+
+- Use conventional commits: `Add feature`, `Fix bug`, `Update docs`
+- Keep messages concise and descriptive
+
+---
+
+## Code Style
+
+**Keep code clean and readable:**
+
+- Write concise, self-documenting code
+- Avoid excessive comments - prefer clear variable/function names
+- Only add comments for complex logic or non-obvious design decisions
+- Remove commented-out code before committing
+- Follow existing patterns in the codebase
+
+**Comment length and content:**
+
+- Max 1-2 lines per comment. Longer is only OK for headstrings on files, major classes, or major functions.
+- Comments describe the current state of the code, never its history. Don't reference previous versions, past bugs, prior approaches that didn't work, commits, or plans/tasks - if it's not true of the code as it stands, it doesn't belong in a comment.
+- Don't require hardware-specific insider knowledge to understand a comment. Refer to hardware generically rather than by internal codename.
+- Never put a real hand's identity in comments, docstrings, usage text, docs, or tests: no serial numbers, board IDs, USB descriptors, or adapter paths copied from a real device. Use obvious placeholders - `ser-0000` (`ser-0001`, `ser-0002`, ... when several hands are needed), `/dev/cu.usbmodemXXXX`, a patterned board ID like `0123456789ABCDEF`.
+
+---
+
+## Never hardcode what the package can resolve
+
+Every hand differs in motor family, serial ports, side, and which sensors it carries. All of that is
+discovered at runtime. Code that assumes any of it works on one bench and fails on the next, and the
+failure is usually silent - the wrong model loads, or a probe searches the wrong vendor IDs.
+
+**Motors.** Never import or instantiate a concrete client (`DynamixelClient`, `FeetechClient`). Go
+through `motor_factory.motor_client_class()` / `load_hand()`, and program against the `MotorClient`
+ABC in `hardware/motor_client.py`. Family differences belong behind a class attribute on the client
+(`supported_modes`, `supports_multi_turn`, `waits_for_motion`, `position_range_rad`,
+`baud_rate_map`, ...) - never behind an `if motor_type == ...` in generic code. Adding a capability
+means adding it to the ABC and implementing it on *every* client, mocks included. Control-mode
+values, current units, and position ranges are family-specific: read them from the client, don't
+assume Dynamixel's.
+
+**Ports and baud.** Never hardcode a device path or baud rate, and never default one. Use the
+auto-discovery in `hardware/sensing/serial_discovery.py` and `utils.auto_detect_port()`, with
+connect-time probing (`hardware/motor_resolution.py`) resolving the driver. A `--port` flag is an
+override for bring-up, not the normal path.
+
+**Hand identity.** Never assume a side, model directory, joint list, or that sensors exist.
+`detect_hand()` / `load_hand()` decide which class and model a connected hand gets; `config.yaml` is
+the source of truth for everything else.
+
+**Config beats detection, and says so.** The packaged configs ship every resolvable field on `auto`
+(or absent), so autodetection is what runs by default - never pin a real port, baud rate or motor
+family into one. A value a human writes into a config is a deliberate override and wins over what
+was detected. Whenever a pin displaces a detected value, log it at warning level naming the field,
+the pinned value and the detected one: a silent override is indistinguishable from broken
+autodetection. Detection results are never written back to any config - every connect re-probes what
+the yaml leaves unset.
+
+**Front-ends.** Scripts and examples carry no logic. Use the shared argparse and lifecycle helpers in
+`utils/cli.py`; a flag it advertises must actually be forwarded to `load_hand()`. If a front-end
+needs something new, add it to `utils/cli.py` so every front-end gets it.
+
+The test for any change here: would this still work on a Feetech left hand with no tactile sensors,
+plugged into a port nobody told it about? If not, it is hardcoding something the package can resolve.
+
+---
+
+## Development
+
+### Virtual Environment
+
+**IMPORTANT:** Use `uv` for Python commands and dependency management in this repo.
+
+```bash
+uv sync --group dev
+```
+
+This creates a local `.venv`. If you prefer an activated shell, use:
+
+```bash
+source .venv/bin/activate
+```
+
+Never install packages to the base/system Python environment.
+
+### Setup
+
+```bash
+uv sync --group dev
+```
+
+### Testing
+
+```bash
+uv run pytest tests/          # whole suite, fanned across cores (~3s)
+uv run pytest tests/ -n0      # serial: readable output when debugging a failure
+```
+
+`addopts = "-n auto"` in `pyproject.toml` makes the suite parallel by default.
+
+Mock backends must never wait on hardware. The settle waits real hands need
+(e.g. `_torque_disable_settle_s`) are class attributes the `Mock*` classes set
+to `0.0`, and routines that pace themselves against `time.time()` run on the virtual clock in `tests/conftest.py`
+— its `sleep` advances a per-thread counter that the thread's clock readings add
+back, so a routine observes the durations it asked for at no wall-clock cost.
+Assert on durations via the `virtual_clock` fixture, read on the thread that ran
+the routine, never on real elapsed time; to hold a background task mid-flight,
+block it on an event rather than sleeping and hoping.
+
+### Downstream consumers
+
+`orca_core` is published on PyPI and imported by sibling repos checked out beside it
+(`orca_ui`, `orca_teleop`, `orca_firmware`, `orca_stress_tests`, `orca_ros`). Their code is
+invisible to this test suite.
+
+**Never conclude a public symbol is unused from this repo alone.** A green suite here — and
+even a green downstream suite — does not prove it. Check first:
+
+```bash
+uv run python tools/check_downstream.py --symbol MockOrcaHand   # who references it?
+uv run python tools/check_downstream.py                          # do their imports resolve?
+uv run python tools/check_downstream.py --run-tests              # do their suites still pass?
+```
+
+Missing sibling checkouts are skipped and reported, so this works with only `orca_core` present.
+
+The public API surface is pinned in `tests/test_public_api_surface.py`. Changing it is a
+breaking change: update the sets deliberately and bump the minor version in `pyproject.toml`.
+Note that `release.yml` publishes to PyPI on every push to `main` carrying a new version.
+
+### Common Scripts
+
+Every script takes an optional positional `config_path` pointing at a model's `config.yaml` (omit it to autodetect the connected hand). Run `--help` on any script for its full flag list.
+
+```bash
+# What is plugged in? Run this first on a new or misbehaving hand (read-only).
+uv run python scripts/detect.py
+
+# Calibration workflow
+uv run python scripts/tension.py orca_core/models/v2/orcahand-right/config.yaml
+uv run python scripts/calibrate.py orca_core/models/v2/orcahand-right/config.yaml
+uv run python scripts/neutral.py orca_core/models/v2/orcahand-right/config.yaml
+
+# Manual control (sliders; --motor-space for per-motor tendon bring-up)
+uv run python scripts/manual_control.py orca_core/models/v2/orcahand-right/config.yaml
+
+# Sensor health check (config-driven; --port for board bring-up without a config)
+uv run python scripts/check_sensors.py orca_core/models/v2/orcahand-touch-right/config.yaml
+uv run python scripts/check_sensors.py --port /dev/cu.usbmodemXXXX
+
+# Live sensor data view (autodetects the port; --port to override, no config_path)
+uv run python scripts/monitor_sensors.py
+```
+
+### Configuration
+
+All hand-specific settings are in `config.yaml`:
+- Motor-to-joint mapping, joint ROMs (ranges of motion), neutral positions, calibration sequences
+- `max_current` / `calibration_current` / `wrist_calibration_current` - `default` (what the
+  packaged configs say) resolves to the connected motor family's own values, the
+  `default_max_current_ma` / `default_calibration_current_ma` class attributes on its client
+  (Dynamixel 300/300, Feetech 900/900). A number pins an override for one hand. Resolution
+  happens in `load_hand()` when the family is detected or pinned, otherwise at connect, so
+  read these fields after `connect()`.
+- `use_joint_feedback` + `joint_encoder_joints` + `encoder_serial_port` - enable the closed-loop joint-encoder controller (`load_hand` then returns `OrcaHandJointFeedback`/`OrcaHandFull`)
+- `joint_control_gains:` block - **overrides only** for the outer-loop PI gains. The defaults live in `control/constants.py`; `all:` overrides them for one hand, `joints:` overrides `all:` per joint. Never pin a gain here that just restates the constant - that shadows it and makes editing the default a silent no-op. Stiffly-coupled (fast-responding) joints have the least stability margin and want a lower `kp`.
+- `sensors:` block - enable tactile sensing (`load_hand` then returns `OrcaHandTouch`/`OrcaHandFull`)
+
+---
+
+## Technical Notes
+
+### Control Modes
+
+- `current_based_position` (recommended) - Position control with current feedback
+- `position` - Direct position control
+- `multi_turn_position` - Position control without a travel limit (used for the wrist)
+- `current` - Direct current control
+- `velocity` - Velocity control
+
+### Joint Naming Convention
+
+Format: `{finger}_{joint_type}`, except `wrist` which has no joint-type suffix.
+
+Fingers: `thumb`, `index`, `middle`, `ring`, `pinky`
+Joint types: `cmc`, `mcp`, `pip`, `dip`, `abd` (abduction)
+
+Example: `index_mcp`, `thumb_cmc`

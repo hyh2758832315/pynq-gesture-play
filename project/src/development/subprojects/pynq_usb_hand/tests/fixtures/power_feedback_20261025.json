@@ -1,0 +1,112 @@
+{
+  "schema": "hand-power-diagnostic-readonly-v1",
+  "result": "DIAGNOSTIC_COMPLETE",
+  "motion_authorized": false,
+  "startup_ready": false,
+  "release_ready": false,
+  "rows": [
+    {
+      "id": 1,
+      "field": "voltage_raw",
+      "address": 62,
+      "value": 36,
+      "communication": 0,
+      "device_error": 1,
+      "request_hex": "ffff0104023e01b9",
+      "response_hex": "ffff01030124d6",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 1,
+      "field": "temperature_c",
+      "address": 63,
+      "value": 18,
+      "communication": 0,
+      "device_error": 1,
+      "request_hex": "ffff0104023f01b8",
+      "response_hex": "ffff01030112e8",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 1,
+      "field": "torque",
+      "address": 40,
+      "value": 0,
+      "communication": 0,
+      "device_error": 1,
+      "request_hex": "ffff0104022801cf",
+      "response_hex": "ffff01030100fa",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 9,
+      "field": "voltage_raw",
+      "address": 62,
+      "value": 51,
+      "communication": 0,
+      "device_error": 0,
+      "request_hex": "ffff0904023e01b1",
+      "response_hex": "ffff09030033c0",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 9,
+      "field": "temperature_c",
+      "address": 63,
+      "value": 20,
+      "communication": 0,
+      "device_error": 0,
+      "request_hex": "ffff0904023f01b0",
+      "response_hex": "ffff09030014df",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 9,
+      "field": "torque",
+      "address": 40,
+      "value": 0,
+      "communication": 0,
+      "device_error": 0,
+      "request_hex": "ffff0904022801c7",
+      "response_hex": "ffff09030000f3",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 17,
+      "field": "voltage_raw",
+      "address": 62,
+      "value": 36,
+      "communication": 0,
+      "device_error": 1,
+      "request_hex": "ffff1104023e01a9",
+      "response_hex": "ffff11030124c6",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 17,
+      "field": "temperature_c",
+      "address": 63,
+      "value": 18,
+      "communication": 0,
+      "device_error": 1,
+      "request_hex": "ffff1104023f01a8",
+      "response_hex": "ffff11030112d8",
+      "response_checksum_ok": true
+    },
+    {
+      "id": 17,
+      "field": "torque",
+      "address": 40,
+      "value": 0,
+      "communication": 0,
+      "device_error": 1,
+      "request_hex": "ffff1104022801bf",
+      "response_hex": "ffff11030100ea",
+      "response_checksum_ok": true
+    }
+  ],
+  "port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B79030971-if00",
+  "read_requests": 9,
+  "port_closed": true,
+  "elapsed_seconds": 0.9692139369999495
+}

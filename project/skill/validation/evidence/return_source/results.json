@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "LUT": 89.0,
+    "FF": 191.0,
+    "BRAM": 0.0,
+    "DSP": 0.0,
+    "internal_setup_WNS_ns": 3.612
+  },
+  "candidate": {
+    "LUT": 89.0,
+    "FF": 167.0,
+    "BRAM": 0.0,
+    "DSP": 0.0,
+    "internal_setup_WNS_ns": 3.612
+  },
+  "gates": {
+    "FF_at_most_90_percent": true,
+    "LUT_no_increase": true,
+    "BRAM_no_increase": true,
+    "DSP_no_increase": true,
+    "nonnegative_internal_WNS": true
+  },
+  "all_gates_pass": true,
+  "sha256": {
+    "rtl\\scene2d_return_source.sv": "382c684a343a4649069fe845452c6151b5d784ad2694d0107165d494732a886d",
+    "tests\\tb_return_boundaries.sv": "af7020ba4a5fc6a77f681242971a8be1acf1eabd04cadc8c347f6e17e15b2b57",
+    "tests\\tb_return_bounded.sv": "ad0a95c0a081d07d3223f270ffb7226b30681a68bec32c1e005daced47f483e6",
+    "tests\\tb_scene2d_return_source.sv": "e9ff2a9ff8db4ad9eac0aab122eb68f8f2444ba65b9d4b2875a186306542766b",
+    "reference\\scene2d_return_source.sv": "fa449535ad47c90e08db78c3e082ecde2796a289861f4019903bc486175b8e71",
+    "tools\\bridge_call.cjs": "28406f4dfb5f63e99cbb41df1dbe06e208143f3d24c429303feb23ef4c99080f",
+    "tools\\simulate.tcl": "1f6a145503928bb25c6b30ba15a60f0530bde0b67c4bc31d70010f817e1d47c3",
+    "tools\\synthesize.tcl": "42adce6757bf3cffa7a4b4f3e2339cc3246428153155b0550dc1c450c762cbc2"
+  },
+  "scope": "Behavioral finite all-output preservation; identical 10ns OOC post-synthesis internal timing. No routing, I/O constraints or board signoff."
+}

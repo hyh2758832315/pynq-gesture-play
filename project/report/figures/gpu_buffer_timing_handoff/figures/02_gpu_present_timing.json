@@ -1,0 +1,903 @@
+{
+  "width": 2200,
+  "height": 1870,
+  "title": "渲染完成 ≠ 已呈现：换页发生在垂直消隐起点",
+  "subtitle": "render_done 发起跨时钟请求；像素域换页后回 ACK，写侧才获得可复用的后台。",
+  "edge_font_size": 23,
+  "nodes": [
+    {
+      "id": "kicker",
+      "x": 60,
+      "y": 24,
+      "w": 2080,
+      "h": 36,
+      "lines": "PYNQ  /  GPU 缓冲与呈现时序  /  02  呈现时序",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "title",
+      "x": 60,
+      "y": 74,
+      "w": 2080,
+      "h": 80,
+      "lines": "渲染完成 ≠ 已呈现：换页发生在垂直消隐起点",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 47,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 60,
+      "y": 164,
+      "w": 2080,
+      "h": 48,
+      "lines": "render_done 发起跨时钟请求；像素域换页后回 ACK，写侧才获得可复用的后台。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "footer",
+      "x": 60,
+      "y": 1819,
+      "w": 2080,
+      "h": 33,
+      "lines": "GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 18,
+      "kind": "text"
+    },
+    {
+      "id": "timeline",
+      "x": 60,
+      "y": 240,
+      "w": 2080,
+      "h": 700,
+      "lines": "一帧成功提交的因果顺序 · 横轴不按实际耗时比例",
+      "fill": "#edf5fb",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "phase0",
+      "x": 400,
+      "y": 315,
+      "w": 360,
+      "h": 45,
+      "lines": "上传 + 包接受",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "phase1",
+      "x": 760,
+      "y": 315,
+      "w": 400,
+      "h": 45,
+      "lines": "绘制后台 B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "phase2",
+      "x": 1160,
+      "y": 315,
+      "w": 410,
+      "h": 45,
+      "lines": "等待消隐边界",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "phase3",
+      "x": 1570,
+      "y": 315,
+      "w": 230,
+      "h": 45,
+      "lines": "ACK 返回",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "phase4",
+      "x": 1800,
+      "y": 315,
+      "w": 290,
+      "h": 45,
+      "lines": "提交完成",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "t0",
+      "x": 400,
+      "y": 390,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "b0",
+      "x": 400,
+      "y": 868,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "t1",
+      "x": 760,
+      "y": 390,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "b1",
+      "x": 760,
+      "y": 868,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "t2",
+      "x": 1160,
+      "y": 390,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "b2",
+      "x": 1160,
+      "y": 868,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "t3",
+      "x": 1570,
+      "y": 390,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "b3",
+      "x": 1570,
+      "y": 868,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "t4",
+      "x": 1800,
+      "y": 390,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "b4",
+      "x": 1800,
+      "y": 868,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "row0",
+      "x": 85,
+      "y": 425,
+      "w": 285,
+      "h": 75,
+      "lines": "PS / DMA",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 26,
+      "kind": "text"
+    },
+    {
+      "id": "row1",
+      "x": 85,
+      "y": 545,
+      "w": 285,
+      "h": 75,
+      "lines": "PL / 后台",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 26,
+      "kind": "text"
+    },
+    {
+      "id": "row2",
+      "x": 85,
+      "y": 665,
+      "w": 285,
+      "h": 75,
+      "lines": "HDMI / 前台",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 26,
+      "kind": "text"
+    },
+    {
+      "id": "row3",
+      "x": 85,
+      "y": 785,
+      "w": 285,
+      "h": 75,
+      "lines": "完成收据",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 26,
+      "kind": "text"
+    },
+    {
+      "id": "dma_phase",
+      "x": 400,
+      "y": 425,
+      "w": 360,
+      "h": 75,
+      "lines": "拷贝 → flush → DMA",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "ps_wait",
+      "x": 760,
+      "y": 425,
+      "w": 1040,
+      "h": 75,
+      "lines": "等待 accepted / render / present 计数与序号",
+      "fill": "#f5f7fa",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "return",
+      "x": 1800,
+      "y": 425,
+      "w": 290,
+      "h": 75,
+      "lines": "submit_scene 返回",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "draw_b",
+      "x": 760,
+      "y": 545,
+      "w": 400,
+      "h": 75,
+      "lines": "写 B：生成新 token",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "frozen_b",
+      "x": 1160,
+      "y": 545,
+      "w": 640,
+      "h": 75,
+      "lines": "B 已完成；写入停止",
+      "fill": "#f5f7fa",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "next_a",
+      "x": 1800,
+      "y": 545,
+      "w": 290,
+      "h": 75,
+      "lines": "A 可供下一轮写",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "scan_a",
+      "x": 400,
+      "y": 665,
+      "w": 1170,
+      "h": 75,
+      "lines": "扫描 A / 上一幅图像",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "scan_b",
+      "x": 1570,
+      "y": 665,
+      "w": 520,
+      "h": 75,
+      "lines": "前台切为 B\n随后有效区显示新图像",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "accept",
+      "x": 400,
+      "y": 785,
+      "w": 360,
+      "h": 75,
+      "lines": "accepted 计数增加",
+      "fill": "#f5f7fa",
+      "stroke": "#25638d",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "done",
+      "x": 760,
+      "y": 785,
+      "w": 400,
+      "h": 75,
+      "lines": "render_done / count++",
+      "fill": "#f5f7fa",
+      "stroke": "#25638d",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "req",
+      "x": 1160,
+      "y": 785,
+      "w": 410,
+      "h": 75,
+      "lines": "req toggle 经 2FF 同步",
+      "fill": "#f5f7fa",
+      "stroke": "#25638d",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "ack",
+      "x": 1570,
+      "y": 785,
+      "w": 230,
+      "h": 75,
+      "lines": "ACK 经 2FF",
+      "fill": "#f5f7fa",
+      "stroke": "#25638d",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "present",
+      "x": 1800,
+      "y": 785,
+      "w": 290,
+      "h": 75,
+      "lines": "present count++",
+      "fill": "#f5f7fa",
+      "stroke": "#25638d",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "boundary",
+      "x": 1400,
+      "y": 881,
+      "w": 630,
+      "h": 35,
+      "lines": "换页边界：x = 0，y = 720（vblank_start）",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 23,
+      "kind": "text"
+    },
+    {
+      "id": "ownership",
+      "x": 60,
+      "y": 980,
+      "w": 2080,
+      "h": 390,
+      "lines": "读写所有权：ACK 交接窗口内也不能写前台",
+      "fill": "#fff0f6",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "h0",
+      "x": 100,
+      "y": 1050,
+      "w": 770,
+      "h": 48,
+      "lines": "阶段",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "h1",
+      "x": 900,
+      "y": 1050,
+      "w": 350,
+      "h": 48,
+      "lines": "display_bank",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "h2",
+      "x": 1280,
+      "y": 1050,
+      "w": 350,
+      "h": 48,
+      "lines": "write_bank",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "h3",
+      "x": 1660,
+      "y": 1050,
+      "w": 430,
+      "h": 48,
+      "lines": "允许写像素？",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "cell00",
+      "x": 100,
+      "y": 1110,
+      "w": 770,
+      "h": 45,
+      "lines": "正在渲染 B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell01",
+      "x": 900,
+      "y": 1110,
+      "w": 350,
+      "h": 45,
+      "lines": "A",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell02",
+      "x": 1280,
+      "y": 1110,
+      "w": 350,
+      "h": 45,
+      "lines": "B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell03",
+      "x": 1660,
+      "y": 1110,
+      "w": 430,
+      "h": 45,
+      "lines": "是，仅写 B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell10",
+      "x": 100,
+      "y": 1163,
+      "w": 770,
+      "h": 45,
+      "lines": "render_done，等待换页",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell11",
+      "x": 900,
+      "y": 1163,
+      "w": 350,
+      "h": 45,
+      "lines": "A",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell12",
+      "x": 1280,
+      "y": 1163,
+      "w": 350,
+      "h": 45,
+      "lines": "B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell13",
+      "x": 1660,
+      "y": 1163,
+      "w": 430,
+      "h": 45,
+      "lines": "否",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell20",
+      "x": 100,
+      "y": 1216,
+      "w": 770,
+      "h": 45,
+      "lines": "像素域已换页，ACK 尚未返回",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell21",
+      "x": 900,
+      "y": 1216,
+      "w": 350,
+      "h": 45,
+      "lines": "B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell22",
+      "x": 1280,
+      "y": 1216,
+      "w": 350,
+      "h": 45,
+      "lines": "B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell23",
+      "x": 1660,
+      "y": 1216,
+      "w": 430,
+      "h": 45,
+      "lines": "否：指针相同，但写端停用",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell30",
+      "x": 100,
+      "y": 1269,
+      "w": 770,
+      "h": 45,
+      "lines": "ACK 返回，交接完成",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell31",
+      "x": 900,
+      "y": 1269,
+      "w": 350,
+      "h": 45,
+      "lines": "B",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell32",
+      "x": 1280,
+      "y": 1269,
+      "w": 350,
+      "h": 45,
+      "lines": "A",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "cell33",
+      "x": 1660,
+      "y": 1269,
+      "w": 430,
+      "h": 45,
+      "lines": "下一轮可写 A",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "box"
+    },
+    {
+      "id": "late",
+      "x": 60,
+      "y": 1410,
+      "w": 2080,
+      "h": 310,
+      "lines": "未赶上本次消隐边界：保持旧前台，等待下一次边界",
+      "fill": "#edf8f5",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "v1",
+      "x": 100,
+      "y": 1500,
+      "w": 460,
+      "h": 80,
+      "lines": "V₁：同步请求尚不可见\n本次不换页",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "late_req",
+      "x": 680,
+      "y": 1500,
+      "w": 700,
+      "h": 80,
+      "lines": "V₁ 之后请求到达像素域\n前台保持，扫描不会等待渲染器",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "v2",
+      "x": 1500,
+      "y": 1500,
+      "w": 590,
+      "h": 80,
+      "lines": "V₂：请求可见 → 交换 A / B\n随后 ACK 允许写侧交接",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "cadence",
+      "x": 100,
+      "y": 1632,
+      "w": 1990,
+      "h": 45,
+      "lines": "720p 时序：1650 × 750 / 74.25 MHz = 16.67 ms / 帧；这是扫描周期，不是渲染耗时。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "proof",
+      "x": 90,
+      "y": 1755,
+      "w": 2020,
+      "h": 54,
+      "lines": "呈现须核对 count 与 seq。present_completed_seq 在启动渲染时已写入，单看 seq 不能证明换页完成。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "t0",
+      "target": "b0",
+      "points": [
+        [
+          400,
+          390
+        ],
+        [
+          400,
+          868
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "t1",
+      "target": "b1",
+      "points": [
+        [
+          760,
+          390
+        ],
+        [
+          760,
+          868
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "t2",
+      "target": "b2",
+      "points": [
+        [
+          1160,
+          390
+        ],
+        [
+          1160,
+          868
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "t3",
+      "target": "b3",
+      "points": [
+        [
+          1570,
+          390
+        ],
+        [
+          1570,
+          868
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": true
+    },
+    {
+      "source": "t4",
+      "target": "b4",
+      "points": [
+        [
+          1800,
+          390
+        ],
+        [
+          1800,
+          868
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "v1",
+      "target": "late_req",
+      "points": [
+        [
+          560,
+          1540
+        ],
+        [
+          680,
+          1540
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "late_req",
+      "target": "v2",
+      "points": [
+        [
+          1378,
+          1540
+        ],
+        [
+          1500,
+          1540
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    }
+  ]
+}

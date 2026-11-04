@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pynq-multimodal-game"
+version = "0.1.0"
+description = "Reference game engine and renderer model for the PYNQ multimodal game"
+requires-python = ">=3.10"
+dependencies = ["tomli>=2,<3; python_version < '3.11'", "tomli-w>=1.2,<2", "collision==1.2.2"]
+
+[project.optional-dependencies]
+studio = ["PySide6>=6.7,<7"]
+vision = ["numpy>=1.21,<3", "opencv-python-headless>=4.5,<5"]
+video = ["av>=14,<17", "numpy>=2.1,<3"]
+audio = ["numpy>=1.21,<3"]
+
+[project.scripts]
+voice-view-studio = "pynq_multimodal_game.studio.app:main"
+voice-view-agent = "pynq_multimodal_game.agent.cli:main"
+voice-view-video = "pynq_multimodal_game.video_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-data]
+pynq_multimodal_game = ["_vendor/voice_rule_cooperative_20261012/*.json", "_vendor/voice_rule_cooperative_20261012/*.npz", "_vendor/voice_rule_cooperative_20261012/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

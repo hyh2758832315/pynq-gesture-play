@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "physical_board": true,
+  "native_ui": true,
+  "hand_enabled": false,
+  "receipt": "E:\\projects\\fpga\\voice-view-game\\games_gesture\\.loads\\bc1817b604a94bbbadcef779e6326377\\receipt.json",
+  "closed": true,
+  "active_qthreads": []
+}

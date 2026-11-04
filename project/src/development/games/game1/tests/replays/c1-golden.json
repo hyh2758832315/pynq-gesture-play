@@ -1,0 +1,167 @@
+{
+  "assertions": [
+    {
+      "expected": "WON",
+      "field": "status",
+      "message": "",
+      "operator": "eq",
+      "tick": 329
+    },
+    {
+      "expected": 40,
+      "field": "score",
+      "message": "",
+      "operator": "eq",
+      "tick": 329
+    },
+    {
+      "expected": "af10ca2b7564ad16fb59b0ed8bc730335975e618dfc47b3c950de553ac2abd86",
+      "field": "values.state_sha256",
+      "message": "",
+      "operator": "eq",
+      "tick": 329
+    }
+  ],
+  "events": [
+    {
+      "duration_ms": null,
+      "event_id": "c1-hand-000",
+      "frequency_hz": null,
+      "kind": "hand",
+      "tick": 0,
+      "x": 160,
+      "y": 0
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-hand-014",
+      "frequency_hz": null,
+      "kind": "hand",
+      "tick": 14,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": 16,
+      "event_id": "c1-attack-030",
+      "frequency_hz": 1200.0,
+      "kind": "tone",
+      "tick": 30,
+      "x": null,
+      "y": null
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-hand-041",
+      "frequency_hz": null,
+      "kind": "hand",
+      "tick": 41,
+      "x": 160,
+      "y": 179
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-hand-049",
+      "frequency_hz": null,
+      "kind": "hand",
+      "tick": 49,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-fist-055",
+      "frequency_hz": null,
+      "kind": "fist",
+      "tick": 55,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": 16,
+      "event_id": "c1-attack-085",
+      "frequency_hz": 1200.0,
+      "kind": "tone",
+      "tick": 85,
+      "x": null,
+      "y": null
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-fist-120",
+      "frequency_hz": null,
+      "kind": "fist",
+      "tick": 120,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": 83,
+      "event_id": "c1-shield-145",
+      "frequency_hz": 220.0,
+      "kind": "tone",
+      "tick": 145,
+      "x": null,
+      "y": null
+    },
+    {
+      "duration_ms": 16,
+      "event_id": "c1-attack-150",
+      "frequency_hz": 1200.0,
+      "kind": "tone",
+      "tick": 150,
+      "x": null,
+      "y": null
+    },
+    {
+      "duration_ms": 150,
+      "event_id": "c1-shield-151",
+      "frequency_hz": 220.0,
+      "kind": "tone",
+      "tick": 151,
+      "x": null,
+      "y": null
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-fist-190",
+      "frequency_hz": null,
+      "kind": "fist",
+      "tick": 190,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": 16,
+      "event_id": "c1-attack-215",
+      "frequency_hz": 1200.0,
+      "kind": "tone",
+      "tick": 215,
+      "x": null,
+      "y": null
+    },
+    {
+      "duration_ms": null,
+      "event_id": "c1-fist-260",
+      "frequency_hz": null,
+      "kind": "fist",
+      "tick": 260,
+      "x": 319,
+      "y": 90
+    },
+    {
+      "duration_ms": 16,
+      "event_id": "c1-attack-280",
+      "frequency_hz": 1200.0,
+      "kind": "tone",
+      "tick": 280,
+      "x": null,
+      "y": null
+    }
+  ],
+  "max_ticks": 329,
+  "name": "C1 Golden Replay",
+  "schema_version": 1,
+  "seed": 0,
+  "test_id": "c1-golden"
+}

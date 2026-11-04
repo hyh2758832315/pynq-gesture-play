@@ -1,0 +1,99 @@
+{
+  "schema_version": 2,
+  "test_id": "rps-win",
+  "name": "RPS - Win",
+  "seed": 0,
+  "max_ticks": 958,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "round-1-rock",
+      "x": 160,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 658,
+      "kind": "gesture",
+      "event_id": "round-3-paper",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 28,
+      "field": "values.phase",
+      "operator": "eq",
+      "expected": "READY"
+    },
+    {
+      "tick": 29,
+      "field": "values.phase",
+      "operator": "eq",
+      "expected": "COUNTDOWN"
+    },
+    {
+      "tick": 208,
+      "field": "values.robot_locked",
+      "operator": "eq",
+      "expected": null
+    },
+    {
+      "tick": 209,
+      "field": "values.human_locked",
+      "operator": "eq",
+      "expected": "fist"
+    },
+    {
+      "tick": 209,
+      "field": "values.robot_locked",
+      "operator": "eq",
+      "expected": "scissors"
+    },
+    {
+      "tick": 329,
+      "field": "values.phase",
+      "operator": "eq",
+      "expected": "READY"
+    },
+    {
+      "tick": 358,
+      "field": "values.phase",
+      "operator": "eq",
+      "expected": "COUNTDOWN"
+    },
+    {
+      "tick": 628,
+      "field": "status",
+      "operator": "eq",
+      "expected": "RUNNING"
+    },
+    {
+      "tick": 628,
+      "field": "values.human_wins",
+      "operator": "eq",
+      "expected": 2
+    },
+    {
+      "tick": 957,
+      "field": "status",
+      "operator": "eq",
+      "expected": "WON"
+    },
+    {
+      "tick": 957,
+      "field": "score",
+      "operator": "eq",
+      "expected": 3
+    },
+    {
+      "tick": 958,
+      "field": "values.rounds_completed",
+      "operator": "eq",
+      "expected": 3
+    }
+  ]
+}

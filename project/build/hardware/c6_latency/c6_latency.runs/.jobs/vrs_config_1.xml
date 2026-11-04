@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="c6v_ps7_0_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_ps7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_core_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_core_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_return_source_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_return_source_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_input_osd_0_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_input_osd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_moments_dma_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_moments_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_capture_control_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_control_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_capture_status_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_status_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_packet_stream_width_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_packet_stream_width_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_capture_write_pair_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_write_pair_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_capture_source_fault_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_source_fault_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_capture_status_inputs_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_status_inputs_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_dual_mask_capture_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_dual_mask_capture_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_capture_lifecycle_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_capture_lifecycle_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_gp0_smc_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_gp0_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_build_id_gpio_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_build_id_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="c6v_button_sync_0_0_synth_1" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/c6v_button_sync_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_button_r23" LaunchDir="E:/projects/fpga/voice-view-game/contest_v3/build/hardware/c6_latency/c6_latency.runs/synth_button_r23" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="c6v_ps7_0_0_synth_1"/>
+		<Parent Id="c6v_core_0_synth_1"/>
+		<Parent Id="c6v_return_source_0_synth_1"/>
+		<Parent Id="c6v_input_osd_0_0_synth_1"/>
+		<Parent Id="c6v_moments_dma_0_synth_1"/>
+		<Parent Id="c6v_capture_control_0_synth_1"/>
+		<Parent Id="c6v_capture_status_0_synth_1"/>
+		<Parent Id="c6v_packet_stream_width_0_synth_1"/>
+		<Parent Id="c6v_capture_write_pair_0_synth_1"/>
+		<Parent Id="c6v_capture_source_fault_0_synth_1"/>
+		<Parent Id="c6v_capture_status_inputs_0_synth_1"/>
+		<Parent Id="c6v_dual_mask_capture_0_synth_1"/>
+		<Parent Id="c6v_capture_lifecycle_0_synth_1"/>
+		<Parent Id="c6v_gp0_smc_0_synth_1"/>
+		<Parent Id="c6v_build_id_gpio_0_synth_1"/>
+		<Parent Id="c6v_button_sync_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+		<Parameter Name="general.usePosixSpawnForFork" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

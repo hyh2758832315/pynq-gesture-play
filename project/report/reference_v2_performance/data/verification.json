@@ -1,0 +1,26 @@
+{
+  "source_files": 36,
+  "checks": [
+    "all resource reports parsed",
+    "all stage setup/hold margins nonnegative",
+    "TNS/THS zero",
+    "eight paired Tile cases same writes and zero error",
+    "Blit/pair/raster counts match archived results",
+    "P4 overlap counts, writes and CRC checked"
+  ],
+  "limits": [
+    "archival read-only verification; no new hardware measurement",
+    "single deterministic examples; no empirical uncertainty estimated",
+    "visual QA recorded separately"
+  ],
+  "revision": "v2 polished",
+  "pdf_pages": 9,
+  "figure_sets": 6,
+  "csv_tables": 5,
+  "source_copy_hash_checks": 36,
+  "visual_review": "Nine pages inspected after rendering. No clipped text, broken tables, missing glyphs or overlapping figure labels.",
+  "additional_checks": [
+    "archived RTL confirms cache/pipeline prerequisites for Tile pair",
+    "four raster opcode combinations have equal write count and CRC"
+  ]
+}

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="双掩膜编码与无阻塞 OSD 提交" id="system">
+    <mxGraphModel dx="2200" dy="1810" grid="1" gridSize="10" page="1" pageWidth="2200" pageHeight="1810">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="packet" value="DMS1 / 每帧 460,864 B：像素对 460,800 B + 尾部 64 B" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf5fb;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="240" width="2080" height="485" />
+        </mxCell>
+        <mxCell id="regs" value="OSD / 6 个 32 bit 影子寄存器 + COMMIT" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="765" width="2080" height="345" />
+        </mxCell>
+        <mxCell id="timing" value="跨时钟提交 / 控制线程与像素扫描解耦" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1150" width="2080" height="520" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#d8dfe7;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="ps" target="psend">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#d8dfe7;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="axi" target="axiend">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#d8dfe7;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="pix" target="pixend">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#bf286e;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.0;exitY=0.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="commita" target="commitb">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.0;exitY=0.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="pendinga" target="pendingb">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.0;exitY=0.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="acka" target="ackb">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#bf286e;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.0;exitY=0.0;exitPerimeter=0;entryX=0.0;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="readya" target="readyb">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kicker" value="PYNQ  /  视觉识别与双路跟随  /  03  编码与时序" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=21;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="24" width="2080" height="36" />
+        </mxCell>
+        <mxCell id="title" value="双掩膜编码与无阻塞 OSD 提交" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=47;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="74" width="2080" height="80" />
+        </mxCell>
+        <mxCell id="subtitle" value="DMS1 保证同帧数据完整；OSD 用冻结 mailbox 跨时钟，在 HDMI 帧边界更新。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1759" width="2080" height="33" />
+        </mxCell>
+        <mxCell id="byte0" value="raw[0]&#10;8 bit" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="335" width="225" height="91" />
+        </mxCell>
+        <mxCell id="byte1" value="filtered[0]&#10;8 bit" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="325" y="335" width="225" height="91" />
+        </mxCell>
+        <mxCell id="byte2" value="raw[1]&#10;8 bit" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="550" y="335" width="225" height="91" />
+        </mxCell>
+        <mxCell id="byte3" value="filtered[1]&#10;8 bit" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="775" y="335" width="225" height="91" />
+        </mxCell>
+        <mxCell id="rest" value="… 640 × 360 像素&#10;内存字节顺序" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1050" y="335" width="350" height="91" />
+        </mxCell>
+        <mxCell id="tail" value="16 × uint32 尾部&#10;小端布局；CRC32 覆盖此前全部字节" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1460" y="335" width="630" height="91" />
+        </mxCell>
+        <mxCell id="data_types" value="raw 仅为 0/255；filtered 为 0–255 平滑值。每个 32 bit 负载字打包两个像素对。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="453" width="1990" height="45" />
+        </mxCell>
+        <mxCell id="tailgroup0" value="身份&#10;MAGIC / ABI&#10;frame_id / config_id / epoch" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="535" width="460" height="125" />
+        </mxCell>
+        <mxCell id="tailgroup1" value="几何与长度&#10;width / height / pixels&#10;payload_bytes / status" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="610" y="535" width="460" height="125" />
+        </mxCell>
+        <mxCell id="tailgroup2" value="配置与格式&#10;6 个 HSV 阈值字节&#10;PAIR_FORMAT = 0x00010802" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1120" y="535" width="460" height="125" />
+        </mxCell>
+        <mxCell id="tailgroup3" value="末尾校验&#10;保留字为 0&#10;CRC32：多项式 0xEDB88320" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1630" y="535" width="460" height="125" />
+        </mxCell>
+        <mxCell id="reg0" value="0x10 / FLAGS&#10;enable · valid · fist" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="90" y="850" width="320" height="100" />
+        </mxCell>
+        <mxCell id="reg1" value="0x14 / XY&#10;X | (Y &lt;&lt; 16)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="850" width="320" height="100" />
+        </mxCell>
+        <mxCell id="reg2" value="0x18 / 保留&#10;0" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="850" width="320" height="100" />
+        </mxCell>
+        <mxCell id="reg3" value="0x1C / TTL&#10;剩余帧数 &lt;&lt; 16" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1110" y="850" width="320" height="100" />
+        </mxCell>
+        <mxCell id="reg4" value="0x20 / HAND_SEQ&#10;新观察序号" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1450" y="850" width="320" height="100" />
+        </mxCell>
+        <mxCell id="reg5" value="0x24 / 保留&#10;0" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1790" y="850" width="320" height="100" />
+        </mxCell>
+        <mxCell id="osd_rule" value="先读 BUSY：忙则跳过本次提交，不排队；空闲时写 6 个字，再写 0x08 = 1。&#10;重复帧不刷新原始来源时间；250 ms 新鲜度预算换算为剩余扫描帧，序号重复不续命。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="987" width="1990" height="80" />
+        </mxCell>
+        <mxCell id="ps" value="PS OSD 线程" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="220" y="1230" width="420" height="65" />
+        </mxCell>
+        <mxCell id="psend" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="1650" width="1" height="1" />
+        </mxCell>
+        <mxCell id="axi" value="AXI-Lite mailbox" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf5fb;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="880" y="1230" width="420" height="65" />
+        </mxCell>
+        <mxCell id="axiend" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090" y="1650" width="1" height="1" />
+        </mxCell>
+        <mxCell id="pix" value="像素时钟域" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1590" y="1230" width="420" height="65" />
+        </mxCell>
+        <mxCell id="pixend" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1800" y="1650" width="1" height="1" />
+        </mxCell>
+        <mxCell id="commita" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="1350" width="1" height="1" />
+        </mxCell>
+        <mxCell id="commitb" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090" y="1350" width="1" height="1" />
+        </mxCell>
+        <mxCell id="pendinga" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090" y="1415" width="1" height="1" />
+        </mxCell>
+        <mxCell id="pendingb" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1800" y="1415" width="1" height="1" />
+        </mxCell>
+        <mxCell id="boundary" value="帧边界：切换 active_cfg" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1545" y="1460" width="510" height="64" />
+        </mxCell>
+        <mxCell id="acka" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1800" y="1580" width="1" height="1" />
+        </mxCell>
+        <mxCell id="ackb" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090" y="1580" width="1" height="1" />
+        </mxCell>
+        <mxCell id="readya" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1090" y="1640" width="1" height="1" />
+        </mxCell>
+        <mxCell id="readyb" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=1;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="1640" width="1" height="1" />
+        </mxCell>
+        <mxCell id="rate_note" value="OSD 线程目标 30 Hz，HDMI 扫描 60 Hz；这些是配置节拍，不能替代实际识别 FPS 或端到端延迟。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=23;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="75" y="1700" width="2050" height="48" />
+        </mxCell>
+        <mxCell id="label3" value="COMMIT：冻结数据，翻转 req" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=23;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="588.1796875" y="1311" width="343.640625" height="32" />
+        </mxCell>
+        <mxCell id="label4" value="req 经 2FF；捕获 pending_cfg" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=23;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1274.6953125" y="1376" width="340.609375" height="32" />
+        </mxCell>
+        <mxCell id="label5" value="切换后 ACK 返回，经 2FF 同步" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=23;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1277.0390625" y="1541" width="335.921875" height="32" />
+        </mxCell>
+        <mxCell id="label6" value="BUSY 清除，可提交下一份观察" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=23;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="591.7421875" y="1601" width="336.515625" height="32" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

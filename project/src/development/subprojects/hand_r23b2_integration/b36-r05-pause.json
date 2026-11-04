@@ -1,0 +1,236 @@
+{
+  "action": "pause",
+  "unix_time": 1792849825.0037942,
+  "hello": {
+    "abi_major": 1,
+    "abi_minor": 0,
+    "agent": "voice-view-agent",
+    "build_id": 3221622784,
+    "game_sdk": {
+      "major": 1,
+      "minor": 3
+    },
+    "input_schema_version": 2,
+    "profile": "C6I_VISION_BUTTON_V1",
+    "state": "running",
+    "supported_action_schemas": [
+      "game-actions-v1"
+    ],
+    "test_case_schema_versions": [
+      1,
+      2,
+      3
+    ],
+    "vision_commands": [],
+    "voice_observation_schema": null
+  },
+  "response": {
+    "library_items": null,
+    "message": "ok",
+    "ok": true,
+    "replayed": false,
+    "request_id": "deb7c758caa849078b8e861e8903c8ac",
+    "snapshot": {
+      "abi_major": 1,
+      "abi_minor": 0,
+      "accepted_input_id": null,
+      "action_permit": null,
+      "active_sha256": null,
+      "assertions_failed": 0,
+      "assertions_passed": 0,
+      "audio_consumption": null,
+      "build_id": 3221622784,
+      "catalog_generation": 1,
+      "command_count": 15,
+      "completed_loops": 0,
+      "consumed_input_id": null,
+      "frame_count": null,
+      "frame_index": null,
+      "game_score": 1,
+      "game_status": "WON",
+      "game_test_report": null,
+      "game_tick": 1341,
+      "game_values": {
+        "countdown_remaining": 0,
+        "draws": 2,
+        "human_live": "fist",
+        "human_locked": "fist",
+        "human_wins": 1,
+        "outcome": "DRAW",
+        "phase": "DONE",
+        "robot_locked": "fist",
+        "robot_wins": 0,
+        "round_history": [
+          {
+            "human": "fist",
+            "locked_tick": 249,
+            "outcome": "WIN",
+            "robot": "scissors",
+            "round": 1
+          },
+          {
+            "human": "scissors",
+            "locked_tick": 638,
+            "outcome": "DRAW",
+            "robot": "scissors",
+            "round": 2
+          },
+          {
+            "human": "fist",
+            "locked_tick": 967,
+            "outcome": "DRAW",
+            "robot": "fist",
+            "round": 3
+          }
+        ],
+        "round_index": 3,
+        "rounds_completed": 3,
+        "stability_required": 30,
+        "stable_ticks": 30,
+        "state_sha256": "874161abc7f75e3004985fe779722b3af5297fe06f0bad3ead73ba45ff94dba6"
+      },
+      "generation": 0,
+      "last_error": null,
+      "predicted_cycles": 130890,
+      "presented_frames": 1342,
+      "profile": "C6I_VISION_BUTTON_V1",
+      "runtime_mode": "game",
+      "scene_sha256": "a57e0f516f058613b545b4f287bb59740fa11507f222f0a040656bf124172216",
+      "staged_sha256": null,
+      "state": "paused",
+      "test_complete": false,
+      "vision": {
+        "board_validated": false,
+        "buttons": {
+          "dropped": 0,
+          "error": null,
+          "pending": 0,
+          "sequence": 0
+        },
+        "capture": {
+          "captured": 1643,
+          "delivered": 1119,
+          "drained": 0,
+          "last_capture_id": 1643,
+          "pending": 1,
+          "replaced": 523,
+          "state": "RUNNING"
+        },
+        "cleanup_confirmed": false,
+        "diagnostic_error": null,
+        "frame_id": 1119,
+        "hdmi_osd": {
+          "busy_skips": 0,
+          "commits": 2707,
+          "cpu_ns": 990426888,
+          "cycles": 2707,
+          "disabled_confirmed": false,
+          "enabled": true,
+          "error": null,
+          "last_words": [
+            3,
+            20906709,
+            0,
+            131072,
+            1113,
+            0
+          ],
+          "max_cycle_ns": 3195194,
+          "schema": "hdmi-hand-osd-v1",
+          "thread_alive": true
+        },
+        "input_capabilities": {
+          "games": [
+            "game1",
+            "game2",
+            "game3"
+          ],
+          "mode": "games",
+          "schema": "local-game-vision-v1"
+        },
+        "last_error": null,
+        "owner_held": true,
+        "run_id": "25b1452d563b40cebcd581f10f3e7740",
+        "session_id": "25b1452d563b40cebcd581f10f3e7740",
+        "state": "RUNNING"
+      },
+      "vision_consumption": {
+        "action_consumed": false,
+        "button": null,
+        "button_input": "BTN0_LOW_BTN1_HIGH",
+        "config_epoch": "C6I_PL_VISION_BUTTON_OSD_V1-1-4188057088",
+        "consumed_action_seq": null,
+        "control_mapping": "RAW_GESTURE",
+        "fist_event": false,
+        "fist_sequence": 26,
+        "game_id": "game2",
+        "game_score": 1,
+        "game_status": "WON",
+        "game_values": {
+          "countdown_remaining": 0,
+          "draws": 2,
+          "human_live": "fist",
+          "human_locked": "fist",
+          "human_wins": 1,
+          "outcome": "DRAW",
+          "phase": "DONE",
+          "robot_locked": "fist",
+          "robot_wins": 0,
+          "round_history": [
+            {
+              "human": "fist",
+              "locked_tick": 249,
+              "outcome": "WIN",
+              "robot": "scissors",
+              "round": 1
+            },
+            {
+              "human": "scissors",
+              "locked_tick": 638,
+              "outcome": "DRAW",
+              "robot": "scissors",
+              "round": 2
+            },
+            {
+              "human": "fist",
+              "locked_tick": 967,
+              "outcome": "DRAW",
+              "robot": "fist",
+              "round": 3
+            }
+          ],
+          "round_index": 3,
+          "rounds_completed": 3,
+          "stability_required": 30,
+          "stable_ticks": 30,
+          "state_sha256": "874161abc7f75e3004985fe779722b3af5297fe06f0bad3ead73ba45ff94dba6"
+        },
+        "gesture_changed": false,
+        "gesture_sequence": 90,
+        "hand_gesture": null,
+        "hand_valid": false,
+        "hand_x": 0.0,
+        "hand_y": 0.0,
+        "local_age_ms": 2362.9502180000372,
+        "run_id": "25b1452d563b40cebcd581f10f3e7740",
+        "runtime_presented_frames": 1342,
+        "sample_tick": 1341,
+        "sample_timestamp_ns": 728810524134,
+        "scene_sha256": "a57e0f516f058613b545b4f287bb59740fa11507f222f0a040656bf124172216",
+        "scene_tick": 1341,
+        "server_age_ms": 100.324616,
+        "sink_completion": "confirmed",
+        "source_action_seq": null,
+        "source_direction": "IDLE",
+        "source_frame_id": 1118,
+        "source_hand_gesture": null,
+        "source_status": "INVALID"
+      },
+      "voice": null,
+      "volume": null,
+      "volume_consumption": null
+    },
+    "state": "paused",
+    "transfer": null
+  }
+}

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="一帧观察，位置与类别分别跟随" id="system">
+    <mxGraphModel dx="2200" dy="1680" grid="1" gridSize="10" page="1" pageWidth="2200" pageHeight="1680">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pl" value="PL / 逐像素处理与双掩膜" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf5fb;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="240" width="2080" height="430" />
+        </mxCell>
+        <mxCell id="ps" value="PS / 完成帧快照、最新帧槽与识别" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="710" width="2080" height="270" />
+        </mxCell>
+        <mxCell id="display" value="A / HDMI 位置跟随" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff0f6;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1060" width="1000" height="465" />
+        </mxCell>
+        <mxCell id="hand" value="B / 灵巧手类别跟随" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf8f5;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1140" y="1060" width="1000" height="465" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.49523809523809526;exitPerimeter=0;entryX=0.0;entryY=0.49523809523809526;entryPerimeter=0;" edge="1" parent="1" source="camera" target="area">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.49523809523809526;exitPerimeter=0;entryX=0.0;entryY=0.49523809523809526;entryPerimeter=0;" edge="1" parent="1" source="area" target="hsv">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.49523809523809526;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="hsv" target="raw">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1140" y="387" />
+              <mxPoint x="1140" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.49523809523809526;exitPerimeter=0;entryX=0.0;entryY=0.49523809523809526;entryPerimeter=0;" edge="1" parent="1" source="hsv" target="filtered">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1140" y="387" />
+              <mxPoint x="1140" y="517" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.30434782608695654;entryPerimeter=0;" edge="1" parent="1" source="raw" target="dms">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1560" y="355" />
+              <mxPoint x="1560" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.49523809523809526;exitPerimeter=0;entryX=0.0;entryY=0.6956521739130435;entryPerimeter=0;" edge="1" parent="1" source="filtered" target="dms">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1560" y="517" />
+              <mxPoint x="1560" y="455" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="decode" target="latest">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="latest" target="analysis">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="analysis" target="publish">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#25638d;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="dms" target="decode">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2115" y="490" />
+              <mxPoint x="2115" y="690" />
+              <mxPoint x="40" y="690" />
+              <mxPoint x="40" y="854" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#bf286e;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.49911504424778763;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="publish" target="display">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1807" y="1020" />
+              <mxPoint x="560" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.49911504424778763;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="publish" target="hand">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1807" y="1020" />
+              <mxPoint x="1640" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#bf286e;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="position_slot" target="osd">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge13" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#197b71;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="hand_slot" target="owner">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kicker" value="PYNQ  /  视觉识别与双路跟随  /  01  总览" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=21;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="24" width="2080" height="36" />
+        </mxCell>
+        <mxCell id="title" value="一帧观察，位置与类别分别跟随" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=47;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="74" width="2080" height="80" />
+        </mxCell>
+        <mxCell id="subtitle" value="位置驱动 HDMI 手圈；类别驱动实体手。两路都读取最新状态，互不消费对方的输入。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="164" width="2080" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=18;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="60" y="1629" width="2080" height="33" />
+        </mxCell>
+        <mxCell id="camera" value="OV5640 / DVP&#10;1280 × 720" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="335" width="270" height="105" />
+        </mxCell>
+        <mxCell id="area" value="2 × 2 区域缩减&#10;640 × 360" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="410" y="335" width="310" height="105" />
+        </mxCell>
+        <mxCell id="hsv" value="BGR → HSV&#10;肤色阈值判定" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="760" y="335" width="330" height="105" />
+        </mxCell>
+        <mxCell id="raw" value="原掩膜 + 对齐 FIFO&#10;raw：0 或 255" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="310" width="320" height="90" />
+        </mxCell>
+        <mxCell id="filtered" value="9 × 9 膨胀&#10;5 × 5 固定权重平滑" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="465" width="320" height="105" />
+        </mxCell>
+        <mxCell id="dms" value="逐像素配对 → DMS1&#10;raw + filtered + 帧身份" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#25638d;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1620" y="375" width="470" height="115" />
+        </mxCell>
+        <mxCell id="thresholds" value="当前配置：H 0–20 / S 20–255 / V 70–255&#10;缩减逐通道计算：(四像素之和 + 2) &gt;&gt; 2" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="474" width="990" height="92" />
+        </mxCell>
+        <mxCell id="pl_note" value="RGB 同时由 VDMA 写入 DDR；PS 仅在预览需要时复制 RGB。识别使用双掩膜。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="606" width="1990" height="40" />
+        </mxCell>
+        <mxCell id="decode" value="DMA 完成 / DMS1 校验&#10;复制完成后释放 DMA token" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="800" width="405" height="108" />
+        </mxCell>
+        <mxCell id="latest" value="采集线程持续读取&#10;最新帧槽容量 = 1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="575" y="800" width="405" height="108" />
+        </mxCell>
+        <mxCell id="analysis" value="轮廓 / 凸包 / 凸缺陷&#10;位置质心 + 三态确认" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1050" y="800" width="405" height="108" />
+        </mxCell>
+        <mxCell id="publish" value="发布同帧观察&#10;位置、类别、帧号、原始来源时间" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1525" y="800" width="565" height="108" />
+        </mxCell>
+        <mxCell id="mailbox_note" value="新帧覆盖待处理旧帧；识别只取最新可用快照。CPU 快照的 ready 时间保留到结果消费者。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=23;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="120" y="928" width="1940" height="36" />
+        </mxCell>
+        <mxCell id="position_slot" value="ObservationHub 最新快照&#10;位置有效性与分类分离" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1160" width="420" height="110" />
+        </mxCell>
+        <mxCell id="osd" value="独立 OSD 线程 → MMIO&#10;PL 在帧边界切换覆盖参数" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#bf286e;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="580" y="1160" width="440" height="110" />
+        </mxCell>
+        <mxCell id="hand_slot" value="分类快照 peek&#10;不消费游戏 / 菜单事件" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1180" y="1160" width="420" height="110" />
+        </mxCell>
+        <mxCell id="owner" value="独立动作 owner → USB SDK&#10;按 t 窗口执行最新类别" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#197b71;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1660" y="1160" width="440" height="110" />
+        </mxCell>
+        <mxCell id="display_rules" value="有效位置：显示亮绿圈；确认握拳：红圈缩小&#10;应用画面暂停时，独立覆盖通路仍可更新" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="110" y="1315" width="900" height="94" />
+        </mxCell>
+        <mxCell id="hand_rules" value="类别待定：保持已批准姿态；明确无手：default&#10;动作忙时只更新最新状态，后续不补播旧动作" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="1315" width="900" height="94" />
+        </mxCell>
+        <mxCell id="display_impl" value="最终扫描上叠加 · 常量查表画圈 · 3 像素周期流水" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=22;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="110" y="1440" width="900" height="43" />
+        </mxCell>
+        <mxCell id="hand_impl" value="页面授权 / 暂停交接仍由 owner 管理" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=22;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1190" y="1440" width="900" height="43" />
+        </mxCell>
+        <mxCell id="preview_note" value="PC 回传是按需观察分支：先发布识别结果，再处理 RGB 转换 / 标注 / 编码。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#d8dfe7;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1550" width="2060" height="48" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

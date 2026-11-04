@@ -1,0 +1,870 @@
+{
+  "width": 2400,
+  "height": 1630,
+  "title": "GESTURE PLAY v3.0 PL–PS",
+  "subtitle": "Frozen runtime architecture",
+  "nodes": [
+    {
+      "id": "title",
+      "x": 40,
+      "y": 20,
+      "w": 2320,
+      "h": 62,
+      "lines": "GESTURE PLAY v3.0  |  PL–PS 系统架构",
+      "fill": "#ffffff",
+      "stroke": "#64748b",
+      "font_size": 40,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 40,
+      "y": 88,
+      "w": 2320,
+      "h": 38,
+      "lines": "PYNQ-Z2 · Zynq-7020 · xc7z020clg400-1  /  冻结运行包 R15b · 手部运行时 R16 · BUILD_ID 0xC0061000",
+      "fill": "#ffffff",
+      "stroke": "#64748b",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "soc",
+      "x": 350,
+      "y": 165,
+      "w": 1700,
+      "h": 1340,
+      "lines": "Zynq-7000 SoC  ·  板内软硬件分工",
+      "fill": "#ffffff",
+      "stroke": "#344e61",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "pl",
+      "x": 375,
+      "y": 230,
+      "w": 1650,
+      "h": 660,
+      "lines": "PL  /  可编程逻辑",
+      "fill": "#f7fafd",
+      "stroke": "#7396ad",
+      "font_size": 28,
+      "kind": "group"
+    },
+    {
+      "id": "vision",
+      "x": 395,
+      "y": 295,
+      "w": 720,
+      "h": 570,
+      "lines": "视觉前端  /  Vision pipeline",
+      "fill": "#edf6fb",
+      "stroke": "#286b95",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "graphics",
+      "x": 1200,
+      "y": 295,
+      "w": 800,
+      "h": 570,
+      "lines": "渲染 GPU  /  Scene2D graphics",
+      "fill": "#f3eff9",
+      "stroke": "#78549b",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "division",
+      "x": 1155,
+      "y": 295,
+      "w": 3,
+      "h": 570,
+      "lines": "",
+      "fill": "#536577",
+      "stroke": "#536577",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "camera",
+      "x": 35,
+      "y": 320,
+      "w": 270,
+      "h": 245,
+      "lines": "OV5640\n摄像头\n\n[ 实物照片预留 ]",
+      "fill": "#fafafa",
+      "stroke": "#64748b",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "monitor",
+      "x": 2095,
+      "y": 625,
+      "w": 270,
+      "h": 235,
+      "lines": "HDMI 显示器\n\n[ 屏幕 / 实物图预留 ]",
+      "fill": "#fafafa",
+      "stroke": "#64748b",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "pc",
+      "x": 35,
+      "y": 1195,
+      "w": 270,
+      "h": 240,
+      "lines": "上位机 PC\nPYNQ Studio\n\n[ 界面截图预留 ]",
+      "fill": "#fafafa",
+      "stroke": "#64748b",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "hand_external",
+      "x": 2095,
+      "y": 1225,
+      "w": 270,
+      "h": 220,
+      "lines": "灵巧手\nUSB · 17 电机\n\n[ 实物照片预留 ]",
+      "fill": "#fafafa",
+      "stroke": "#64748b",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "ddr_external",
+      "x": 35,
+      "y": 950,
+      "w": 270,
+      "h": 125,
+      "lines": "板载 DDR3\n共享图像 / 命令缓冲",
+      "fill": "#fff9ed",
+      "stroke": "#af8844",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "buttons",
+      "x": 35,
+      "y": 745,
+      "w": 270,
+      "h": 100,
+      "lines": "BTN0 / BTN1\n游戏技能输入",
+      "fill": "#fafafa",
+      "stroke": "#64748b",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "input",
+      "x": 435,
+      "y": 375,
+      "w": 640,
+      "h": 92,
+      "lines": "DVP 接入 → Video In → Demosaic\n1280×720 Bayer → RGB",
+      "fill": "#ffffff",
+      "stroke": "#286b95",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "filter",
+      "x": 435,
+      "y": 510,
+      "w": 640,
+      "h": 110,
+      "lines": "2×2 区域缩减 → HSV 肤色阈值\n9×9 膨胀 → 5×5 高斯处理\n原始 / 滤波双掩膜 · 640×360",
+      "fill": "#ffffff",
+      "stroke": "#286b95",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "capture",
+      "x": 435,
+      "y": 680,
+      "w": 640,
+      "h": 130,
+      "lines": "三槽帧拥有权 / 生命周期控制\nRGB：frame_dma (VDMA)\n双掩膜包 / 状态：moments_dma (SG)",
+      "fill": "#ffffff",
+      "stroke": "#286b95",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "upload",
+      "x": 1240,
+      "y": 375,
+      "w": 720,
+      "h": 92,
+      "lines": "axi_dma (MM2S) → 包解析 / 分派\nScene 命令 · Palette · Atlas · Tilemap",
+      "fill": "#ffffff",
+      "stroke": "#78549b",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "raster",
+      "x": 1240,
+      "y": 510,
+      "w": 720,
+      "h": 110,
+      "lines": "Scene2D 命令式 2D 光栅化\nClear / Fill · Sprite blit · Tile layer\nINDEX4 资源与调色板",
+      "fill": "#ffffff",
+      "stroke": "#78549b",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "fb",
+      "x": 1240,
+      "y": 670,
+      "w": 320,
+      "h": 125,
+      "lines": "BRAM 双帧缓冲\n320×180 × 2\n消隐期交换",
+      "fill": "#ffffff",
+      "stroke": "#78549b",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "scan",
+      "x": 1640,
+      "y": 670,
+      "w": 320,
+      "h": 125,
+      "lines": "4× 扫描放大\n独立 OSD 叠加\nrgb2dvi / TMDS",
+      "fill": "#ffffff",
+      "stroke": "#78549b",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "ps",
+      "x": 375,
+      "y": 920,
+      "w": 1650,
+      "h": 555,
+      "lines": "PS  /  双核 ARM Cortex-A9 · Linux / PYNQ",
+      "fill": "#f3f8f5",
+      "stroke": "#247663",
+      "font_size": 28,
+      "kind": "group"
+    },
+    {
+      "id": "memory",
+      "x": 430,
+      "y": 985,
+      "w": 1510,
+      "h": 70,
+      "lines": "PS DDR 控制器 / AXI HP 端口  ·  RGB / 掩膜 / 状态帧缓冲  ·  命令与资源上传缓冲",
+      "fill": "#fff9ed",
+      "stroke": "#af8844",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "recognizer",
+      "x": 430,
+      "y": 1115,
+      "w": 420,
+      "h": 110,
+      "lines": "OpenCV 轮廓 / 凸包 / 凸缺陷\n质心、方向、握拳 / 剪刀 / 布\nPS 本地识别与有效期检查",
+      "fill": "#ffffff",
+      "stroke": "#247663",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "app",
+      "x": 1000,
+      "y": 1115,
+      "w": 420,
+      "h": 110,
+      "lines": "菜单 / 游戏 / 画布 / 视频\n本地输入映射与交互状态机\nScene 构建与编译",
+      "fill": "#ffffff",
+      "stroke": "#247663",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "sink",
+      "x": 1560,
+      "y": 1115,
+      "w": 380,
+      "h": 110,
+      "lines": "共享 Overlay / GPU sink\n命令与资源打包 / DMA\n接收、渲染、呈现回执",
+      "fill": "#ffffff",
+      "stroke": "#247663",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "agent",
+      "x": 430,
+      "y": 1310,
+      "w": 420,
+      "h": 110,
+      "lines": "SSH 安装 / Agent 管理\nVVGP 内容与控制 · SHA 回读\nHTTP 按需图像 / 结果回传",
+      "fill": "#ffffff",
+      "stroke": "#247663",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "latest",
+      "x": 1000,
+      "y": 1310,
+      "w": 420,
+      "h": 110,
+      "lines": "最新视觉状态 / 事件\nrun · epoch · frame_id\n多消费者读取，不回放积压队列",
+      "fill": "#ffffff",
+      "stroke": "#247663",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "hand",
+      "x": 1560,
+      "y": 1310,
+      "w": 380,
+      "h": 110,
+      "lines": "灵巧手独占权限 / 调度\n跟随、示范、超时与正常释放\n独立动作进程 → USB SDK",
+      "fill": "#ffffff",
+      "stroke": "#247663",
+      "font_size": 23,
+      "kind": "box"
+    },
+    {
+      "id": "ctl",
+      "x": 400,
+      "y": 1440,
+      "w": 1590,
+      "h": 27,
+      "lines": "控制面：PS M_AXI_GP0 → AXI-Lite / MMIO → 采集配置、相机 I²C、GPU 状态与 OSD 位置寄存器",
+      "fill": "#ffffff",
+      "stroke": "#64748b",
+      "font_size": 19,
+      "kind": "text"
+    },
+    {
+      "id": "note",
+      "x": 400,
+      "y": 1516,
+      "w": 1600,
+      "h": 28,
+      "lines": "视觉与渲染分离：双掩膜送往 DDR / PS 识别，应用生成 Scene 后才进入 GPU；相机画面不直接作为 GPU 帧缓冲。",
+      "fill": "#ffffff",
+      "stroke": "#64748b",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "legend",
+      "x": 40,
+      "y": 1565,
+      "w": 2320,
+      "h": 38,
+      "lines": "蓝：视觉数据流    紫：渲染 / 显示流    绿：PS 语义与动作    灰虚线：控制 / 管理    ·    外设框内保留图片位置",
+      "fill": "#ffffff",
+      "stroke": "#64748b",
+      "font_size": 22,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "camera",
+      "target": "input",
+      "points": [
+        [
+          305,
+          420
+        ],
+        [
+          435,
+          420
+        ]
+      ],
+      "color": "#286b95",
+      "dashed": false,
+      "both": false,
+      "label": "DVP 像素流",
+      "label_x": 365,
+      "label_y": 397
+    },
+    {
+      "source": "recognizer",
+      "target": "camera",
+      "points": [
+        [
+          430,
+          1150
+        ],
+        [
+          330,
+          1150
+        ],
+        [
+          330,
+          530
+        ],
+        [
+          305,
+          530
+        ]
+      ],
+      "color": "#64748b",
+      "dashed": true,
+      "both": false,
+      "label": "I²C / SCCB 配置",
+      "label_x": 323,
+      "label_y": 655
+    },
+    {
+      "source": "input",
+      "target": "filter",
+      "points": [
+        [
+          755,
+          467
+        ],
+        [
+          755,
+          510
+        ]
+      ],
+      "color": "#286b95",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "filter",
+      "target": "capture",
+      "points": [
+        [
+          755,
+          620
+        ],
+        [
+          755,
+          680
+        ]
+      ],
+      "color": "#286b95",
+      "dashed": false,
+      "both": false,
+      "label": "RGB 旁路 + 双掩膜",
+      "label_x": 755,
+      "label_y": 654
+    },
+    {
+      "source": "capture",
+      "target": "memory",
+      "points": [
+        [
+          900,
+          810
+        ],
+        [
+          900,
+          905
+        ],
+        [
+          1910,
+          905
+        ],
+        [
+          1910,
+          985
+        ]
+      ],
+      "color": "#286b95",
+      "dashed": false,
+      "both": false,
+      "label": "HP1：RGB / HP3：掩膜与状态",
+      "label_x": 1460,
+      "label_y": 905
+    },
+    {
+      "source": "memory",
+      "target": "recognizer",
+      "points": [
+        [
+          640,
+          1055
+        ],
+        [
+          640,
+          1115
+        ]
+      ],
+      "color": "#286b95",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "recognizer",
+      "target": "latest",
+      "points": [
+        [
+          640,
+          1225
+        ],
+        [
+          640,
+          1265
+        ],
+        [
+          1210,
+          1265
+        ],
+        [
+          1210,
+          1310
+        ]
+      ],
+      "color": "#247663",
+      "dashed": false,
+      "both": false,
+      "label": "位置 / 分类 / 帧身份",
+      "label_x": 855,
+      "label_y": 1258
+    },
+    {
+      "source": "latest",
+      "target": "app",
+      "points": [
+        [
+          1100,
+          1310
+        ],
+        [
+          1100,
+          1225
+        ]
+      ],
+      "color": "#247663",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "app",
+      "target": "sink",
+      "points": [
+        [
+          1420,
+          1170
+        ],
+        [
+          1560,
+          1170
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false,
+      "label": "Scene",
+      "label_x": 1490,
+      "label_y": 1153
+    },
+    {
+      "source": "sink",
+      "target": "memory",
+      "points": [
+        [
+          1780,
+          1115
+        ],
+        [
+          1780,
+          1055
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "memory",
+      "target": "upload",
+      "points": [
+        [
+          1940,
+          1020
+        ],
+        [
+          2040,
+          1020
+        ],
+        [
+          2040,
+          350
+        ],
+        [
+          1600,
+          350
+        ],
+        [
+          1600,
+          375
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false,
+      "label": "HP0：命令 / 资源读取",
+      "label_x": 1930,
+      "label_y": 340
+    },
+    {
+      "source": "upload",
+      "target": "raster",
+      "points": [
+        [
+          1600,
+          467
+        ],
+        [
+          1600,
+          510
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "raster",
+      "target": "fb",
+      "points": [
+        [
+          1400,
+          620
+        ],
+        [
+          1400,
+          670
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "fb",
+      "target": "scan",
+      "points": [
+        [
+          1560,
+          732
+        ],
+        [
+          1640,
+          732
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "scan",
+      "target": "monitor",
+      "points": [
+        [
+          1960,
+          740
+        ],
+        [
+          2095,
+          740
+        ]
+      ],
+      "color": "#78549b",
+      "dashed": false,
+      "both": false,
+      "label": "HDMI 720p",
+      "label_x": 2034,
+      "label_y": 718
+    },
+    {
+      "source": "latest",
+      "target": "scan",
+      "points": [
+        [
+          1310,
+          1420
+        ],
+        [
+          1310,
+          1432
+        ],
+        [
+          1990,
+          1432
+        ],
+        [
+          1990,
+          835
+        ],
+        [
+          1800,
+          835
+        ],
+        [
+          1800,
+          795
+        ]
+      ],
+      "color": "#64748b",
+      "dashed": true,
+      "both": false,
+      "label": "最新手位置 → OSD（MMIO）",
+      "label_x": 1800,
+      "label_y": 835
+    },
+    {
+      "source": "latest",
+      "target": "hand",
+      "points": [
+        [
+          1420,
+          1350
+        ],
+        [
+          1560,
+          1350
+        ]
+      ],
+      "color": "#247663",
+      "dashed": false,
+      "both": false
+    },
+    {
+      "source": "hand",
+      "target": "hand_external",
+      "points": [
+        [
+          1940,
+          1350
+        ],
+        [
+          2095,
+          1350
+        ]
+      ],
+      "color": "#247663",
+      "dashed": false,
+      "both": false,
+      "label": "USB 串口 / SDK",
+      "label_x": 2018,
+      "label_y": 1328
+    },
+    {
+      "source": "pc",
+      "target": "agent",
+      "points": [
+        [
+          305,
+          1360
+        ],
+        [
+          430,
+          1360
+        ]
+      ],
+      "color": "#64748b",
+      "dashed": true,
+      "both": true,
+      "label": "Ethernet",
+      "label_x": 364,
+      "label_y": 1338
+    },
+    {
+      "source": "agent",
+      "target": "app",
+      "points": [
+        [
+          850,
+          1335
+        ],
+        [
+          920,
+          1335
+        ],
+        [
+          920,
+          1190
+        ],
+        [
+          1000,
+          1190
+        ]
+      ],
+      "color": "#64748b",
+      "dashed": true,
+      "both": true,
+      "label": "管理 / 内容",
+      "label_x": 923,
+      "label_y": 1288
+    },
+    {
+      "source": "ddr_external",
+      "target": "memory",
+      "points": [
+        [
+          305,
+          1020
+        ],
+        [
+          430,
+          1020
+        ]
+      ],
+      "color": "#af8844",
+      "dashed": false,
+      "both": true,
+      "label": "DDR 总线",
+      "label_x": 365,
+      "label_y": 999
+    },
+    {
+      "source": "buttons",
+      "target": "app",
+      "points": [
+        [
+          305,
+          800
+        ],
+        [
+          345,
+          800
+        ],
+        [
+          345,
+          1090
+        ],
+        [
+          1210,
+          1090
+        ],
+        [
+          1210,
+          1115
+        ]
+      ],
+      "color": "#64748b",
+      "dashed": true,
+      "both": false,
+      "label": "PL 按键同步 → PS 游戏输入",
+      "label_x": 1210,
+      "label_y": 1083
+    }
+  ]
+}

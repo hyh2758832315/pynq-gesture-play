@@ -1,0 +1,18 @@
+{
+  "opencv": "5.0.0",
+  "exhaustive_model_colors": 16777216,
+  "rtl_pixels": 1381676,
+  "rtl_frames": 8,
+  "target": "xc7z020clg400-1",
+  "rtl_count_by_frame": [
+    229632,
+    230400,
+    921600,
+    1,
+    2,
+    3,
+    7,
+    31
+  ],
+  "status": "model_only_until_xsim_and_board_tests"
+}

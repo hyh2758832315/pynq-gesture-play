@@ -1,0 +1,126 @@
+{
+  "unix_time": 1792851557.5795822,
+  "hello": {
+    "abi_major": 1,
+    "abi_minor": 0,
+    "agent": "voice-view-agent",
+    "build_id": 3221622784,
+    "game_sdk": {
+      "major": 1,
+      "minor": 3
+    },
+    "input_schema_version": 2,
+    "profile": "C6I_VISION_BUTTON_V1",
+    "state": "idle",
+    "supported_action_schemas": [
+      "game-actions-v1"
+    ],
+    "test_case_schema_versions": [
+      1,
+      2,
+      3
+    ],
+    "vision_commands": [],
+    "voice_observation_schema": null
+  },
+  "result": {
+    "library_items": null,
+    "message": "ok",
+    "ok": true,
+    "replayed": false,
+    "request_id": "r23b2-probe-a608bbca91504f3a94851f3e6332eb48",
+    "snapshot": {
+      "abi_major": 1,
+      "abi_minor": 0,
+      "accepted_input_id": null,
+      "action_permit": null,
+      "active_sha256": null,
+      "assertions_failed": null,
+      "assertions_passed": null,
+      "audio_consumption": null,
+      "build_id": 3221622784,
+      "catalog_generation": 1,
+      "command_count": null,
+      "completed_loops": 0,
+      "consumed_input_id": null,
+      "frame_count": null,
+      "frame_index": null,
+      "game_score": null,
+      "game_status": null,
+      "game_test_report": null,
+      "game_tick": null,
+      "game_values": null,
+      "generation": 0,
+      "last_error": null,
+      "predicted_cycles": null,
+      "presented_frames": 0,
+      "profile": "C6I_VISION_BUTTON_V1",
+      "runtime_mode": "menu",
+      "scene_sha256": null,
+      "staged_sha256": null,
+      "state": "idle",
+      "test_complete": null,
+      "vision": {
+        "board_validated": false,
+        "buttons": {
+          "dropped": 0,
+          "error": null,
+          "pending": 0,
+          "sequence": 0
+        },
+        "capture": {
+          "captured": 0,
+          "delivered": 0,
+          "drained": 0,
+          "last_capture_id": 0,
+          "pending": 0,
+          "replaced": 0,
+          "state": "IDLE"
+        },
+        "cleanup_confirmed": false,
+        "diagnostic_error": null,
+        "frame_id": 0,
+        "hdmi_osd": {
+          "busy_skips": 0,
+          "commits": 21,
+          "cpu_ns": 6387778,
+          "cycles": 21,
+          "disabled_confirmed": false,
+          "enabled": true,
+          "error": null,
+          "last_words": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "max_cycle_ns": 511625,
+          "schema": "hdmi-hand-osd-v1",
+          "thread_alive": true
+        },
+        "input_capabilities": {
+          "games": [
+            "game1",
+            "game2",
+            "game3"
+          ],
+          "mode": "games",
+          "schema": "local-game-vision-v1"
+        },
+        "last_error": null,
+        "owner_held": true,
+        "run_id": "49409fed5b1f4d0784d7600dcd970d85",
+        "session_id": "49409fed5b1f4d0784d7600dcd970d85",
+        "state": "STARTING"
+      },
+      "vision_consumption": null,
+      "voice": null,
+      "volume": null,
+      "volume_consumption": null
+    },
+    "state": "idle",
+    "transfer": null
+  }
+}

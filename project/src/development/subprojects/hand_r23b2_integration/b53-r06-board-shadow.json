@@ -1,0 +1,108 @@
+﻿{
+  "status": "SHADOW_OBSERVED",
+  "pid": 1039,
+  "session": "8578f1da22fa4d23a43b7ab4d769b8d7",
+  "game_run": "cfa43bd85a65482cb874c090b87b1e94",
+  "stop_reason": "stale_source",
+  "frames": 1743,
+  "invalid_frames": 1618,
+  "gestures": {
+    "None": 1627,
+    "paper": 57,
+    "scissors": 40,
+    "fist": 19
+  },
+  "events": [
+    {
+      "frame": 2707,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2708,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2709,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2710,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 2711,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2712,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 2713,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2714,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2716,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2717,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2718,
+      "gesture": null,
+      "valid": true
+    },
+    {
+      "frame": 2719,
+      "gesture": null,
+      "valid": true
+    },
+    {
+      "frame": 2721,
+      "gesture": null,
+      "valid": true
+    },
+    {
+      "frame": 2722,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2723,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 2724,
+      "gesture": null,
+      "valid": false
+    }
+  ],
+  "max_source_age_seconds": 0.3443719200000146,
+  "wall_seconds": 195.56670295199996,
+  "max_interarrival_seconds": 0.24832697199997256,
+  "stale_packets_dropped": 0,
+  "max_stale_packet_age_seconds": 0.0,
+  "age_at_stop_seconds": 0.5054522449999581,
+  "cpu_seconds": 4.087077712,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

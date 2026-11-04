@@ -1,0 +1,4 @@
+﻿version,wall_s,cpu_s,one_core_pct,source,comparison
+插值基线,6.6002831659998265,3.654565627,55.36983088582985,subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json,non-paired historical runs
+阶段目标,9.148883425999884,1.6555580020000003,18.095738298458688,subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json,non-paired historical runs
+轻量驱动,9.038365844000054,1.4407427679999998,15.940301519841766,subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json,non-paired historical runs

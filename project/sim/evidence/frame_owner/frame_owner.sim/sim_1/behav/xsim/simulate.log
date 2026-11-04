@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+TEST_PASS VISION_FRAME_OWNER scenarios=14 checks=184 SLOTS3 CONTINUOUS7 CPU_HOLD64 THREE_B_ACK TOKEN_EPOCH FRAME_ID NO_REUSE NO_WRAP STICKY RESET
+$finish called at time : 3280 ns : File "E:/projects/fpga/voice-view-game/contest_v3/src/development/tests/rtl/tb_vision_frame_owner.sv" Line 93

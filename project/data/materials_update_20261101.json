@@ -1,0 +1,2760 @@
+{
+  "date": "2026-11-01",
+  "baseline_commit": "85e43d0558ea3cb7d256d300bface5bae999834c",
+  "runtime_changed": false,
+  "hardware_changed": false,
+  "records": [
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/ai_collaboration.md",
+      "path": "report/ai_collaboration.md",
+      "sha256": "97f8620023b6564f726bf9bb3dfd817dd48f16d22be9e4e4c5d24a36f4e2ce78"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/design_report.md",
+      "path": "report/design_report.md",
+      "sha256": "ec48406abf5ee285c351cf5c2a293450c062e3ff116a2362dbe9acea0f740ba3"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/commands.csv",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/commands.csv",
+      "sha256": "e0afc40663f93f180c4c11fa84f56ebb9368647f8c6216baeb1165b5ceffbc09"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/driver_trace.csv",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/driver_trace.csv",
+      "sha256": "af28281e4854edec96edb254a7433b81294d65e0d35caace713067ee1ace483c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/evidence.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/evidence.json",
+      "sha256": "ddaae29a3b38e75adc484e476afb46364089b25312cb71afec17b067181548e4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/ownership.csv",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/ownership.csv",
+      "sha256": "2c8dc184f58d423ecfe411d082a81109e532d7f981ffb59513708c84a29afed4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/palette_example.bin",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/palette_example.bin",
+      "sha256": "8cf01ac5233f60f60a72a310ec3f178a1ea379ec715a07403a546fc45703a7ea"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/scene_example.bin",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/scene_example.bin",
+      "sha256": "5dc2c68ff829ab6ca56fdfa62dedff5a124a461bc2c1f87d39e9e349a32912a6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/scene_header.csv",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/scene_header.csv",
+      "sha256": "190f9be2856ebecd32632e01c8b8693e4a251606a1cde3855f6a34523b881c6a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/storage.csv",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/storage.csv",
+      "sha256": "4220ccdf3d7328a3848701df9c045f797c5e03975c7d8a48f74825c4bc0de919"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/timing.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/timing.json",
+      "sha256": "8c9096832c7d0c63620d3a3929b6c87ec39a2a59848b041345ee83e7a373b68f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/data/verification.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/data/verification.json",
+      "sha256": "49ad44e664e3ff239674ae6380ec8856d2141bf39007e8aac1a7b99cb3ca35bf"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.drawio",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.drawio",
+      "sha256": "30cb91302e8279e0ca161ee852ad993c2c28c5ccfe0fdd4ca7e63a03c219d711"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.json",
+      "sha256": "071f1138d1c7f1a93efd551cb94a0afddc2ad9dc6d7f417125f3f5a095b2eacb"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.pdf",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.pdf",
+      "sha256": "a0937d99e7479c8f7baa0f1147b97eb76a85e8036936e6fe276d50a355bf034f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.png",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.png",
+      "sha256": "8c556b6738b3facbf269a861cd186b2f43f1219693d6f78f456f51c6705aca44"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.svg",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers.svg",
+      "sha256": "e968d78c36e0d0bac9cbeb3b89001c58e83a234042f85ef704bee16c3bfffd1b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers_preview.png",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/01_gpu_buffers_preview.png",
+      "sha256": "d8e017c91a63a01a6c9952cdb496ef36b150eab68838e8f01a41e1e4011ea22f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.drawio",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.drawio",
+      "sha256": "3a0e76382d23089fc00759acece154c08f1715dd924b9eedc5cf9fba0928c386"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.json",
+      "sha256": "9d7f068dd8644ffa7e8234540fbf9d606914d69165da13d81369cb3e6fab401f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.pdf",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.pdf",
+      "sha256": "d30dc57f44b595f5fe96b34404088dd5ff920119a71003d42ec20e9dc81c179b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.png",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.png",
+      "sha256": "d151285abb0c548f701750765afb835d72e92d0f65f1f53c411d755f9d6ccf06"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.svg",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing.svg",
+      "sha256": "97af7d7254e7b43011064aaebe67fb6a23be747d5fb3be4d4057460e9b3884ea"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing_preview.png",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/02_gpu_present_timing_preview.png",
+      "sha256": "67546d96004933df1528e91ad623be343d8dcec36f8239f29c5b3ff91e3c4af9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.drawio",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.drawio",
+      "sha256": "677a5ca3034de0aed741b9cd4fcaf5023d2332c7c144d3fbc791c52d4f9aede8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.json",
+      "sha256": "7656623f1fc41935359a6c9bfb6dce16abb82abaa451d6f58149c4ad640978ae"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.pdf",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.pdf",
+      "sha256": "83427735e865fe1b0ad698b0d9a49729d85be658fa46fe04d2ecd5e0c4a91081"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.png",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.png",
+      "sha256": "388c5989321faf07a9c73babcaeede1abfeddda6b570783ed87a59952ef85e07"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.svg",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage.svg",
+      "sha256": "470a87478d66a9d84e7278874389e961bd7c07e89710586488a7f80c23cda606"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage_preview.png",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/03_gpu_encoding_storage_preview.png",
+      "sha256": "1c1fb806a40fc630cd8d2dfacad772311fccda305e7c91a5fd9a72e6851ed87d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/figures/gpu_buffer_timing_all.pdf",
+      "path": "report/figures/gpu_buffer_timing_handoff/figures/gpu_buffer_timing_all.pdf",
+      "sha256": "2871e1ba30886dc47514859e9fa4927bd839be4f16fa33365e51b96ad26b72c7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/FILE_MANIFEST.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/FILE_MANIFEST.json",
+      "sha256": "f75c344c117ecfd48125b98380355c60018b545c0a90c9a746878bad27f74f11"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/c6i_backend.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/c6i_backend.py",
+      "sha256": "7290001214184f441c1bdc9a0c351d439c9edbd012e59e17c2b7c40b48582409"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/c6i_shell.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/c6i_shell.py",
+      "sha256": "5b02590e8060931400b47e321bbb39824494e54d65407b2c40018a80e86fd0f1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/c6i_video.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/c6i_video.py",
+      "sha256": "10ff1fd126546e2b0836788d9fea4449aba80381a8e0af5c30c6787e5c4e1725"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/c6v.bd",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/c6v.bd",
+      "sha256": "74ff2746b88245cc56ed9bf218d328a66f85855e74e1a6371b8e0e6878591a4e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/game_runtime.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/game_runtime.py",
+      "sha256": "1308024e2a96dfcbd2a3908d6ea7fb5cd4fe16e7b3ab8a5b8ec8cc4b276c73e8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/gpu_abi.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/gpu_abi.py",
+      "sha256": "0f87227ede298bfd9f05ead74a189e64442e311ce284f77461a544ea65fe4810"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/input_osd_top.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/input_osd_top.sv",
+      "sha256": "4323f9d0cb0d180f5e61f0efe3e2fe45450ccca590836c9056ab82f57089ef69"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene.py",
+      "sha256": "31872dec6b4a940843031a43efd252cc441a94b0a89bd054f143ea5ae05dfd21"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_asset_bundle_store.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_asset_bundle_store.sv",
+      "sha256": "2021d35c3d44b55badfe8b248a5727e9c955b35383b0915fd66b6e3cc5422717"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_c4m3_core.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_c4m3_core.sv",
+      "sha256": "a245921fe8f41100629b799d963f4ce87d3f4e0e0a4a25caab180fcbdf89d0fa"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_c4m7_core.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_c4m7_core.sv",
+      "sha256": "5c6c3044ea52b6808ca3781b7c2c00cf371f9a0f72ec692d7615463568ae442b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_clear_fill_renderer.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_clear_fill_renderer.sv",
+      "sha256": "0d4f4998dd7e7312777b2b29efb1fbaceae9b68fd4e44631d43cfe8bd4c92599"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_command_upload.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_command_upload.sv",
+      "sha256": "339ca98a837b92e3be8a9f93c0930761ec1cb1f66d78291cbb02bb83862715d8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_frame_swap.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_frame_swap.sv",
+      "sha256": "2da55288eda7fe7ad7978ecc719d40880c1ffd9630161be261e53393da317de0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_framebuffer.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_framebuffer.sv",
+      "sha256": "06e74be9f61d03da0fccb9f53c7eb16d4b643cd7aa73468fde0dcafa28286a74"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_packet_router.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_packet_router.sv",
+      "sha256": "6cabbcebb25494eb2152ee8f2a60ccc3d5a1afef9fdc64c4534228b018894016"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_palette_scanout.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_palette_scanout.sv",
+      "sha256": "ce24d42562e2550088e9c5c1f0a982aefa4b1a558a4352955b93706f41fb9802"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_palette_store.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_palette_store.sv",
+      "sha256": "1696f9cab0cb4521f10e62b01bda8deaa945fff61045a6fd22cb18cfdcff621c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_resource_upload.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_resource_upload.sv",
+      "sha256": "9ba76af93a14dcc94bd5260001abbbf824113a0fd805f4cea42868bf9157367a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_tilemap_store.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_tilemap_store.sv",
+      "sha256": "8e7b4fd92013b87276695490a23c4b3df52e4e54c70047ac64cc83f510691d6f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_video_timing.sv",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene2d_video_timing.sv",
+      "sha256": "7946aaade4b51d2ea89f4d64136992bf7d88b494721c63bed3ec09937b074cea"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/scene_compiler.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/scene_compiler.py",
+      "sha256": "fa31b8e254bcd04f7f4e321ef82f6dc044b694f309029ff0e44ec0b23699efb9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/video_codec.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/video_codec.py",
+      "sha256": "1471ac5c63b0c0d1f6d0e225828fa851277019830b41671584796ddbb4e626b7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/reference_only/video_runtime.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/reference_only/video_runtime.py",
+      "sha256": "eabf6b7025ee4aae4747ce5875d77c65df947bd3c961e71f22defacdd52ca288"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/scripts/check_package.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/scripts/check_package.py",
+      "sha256": "1f51f37eecc4ea5ff2370f6b451f561b75de658889d2e307492a55cb45e2f81a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/scripts/redraw.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/scripts/redraw.py",
+      "sha256": "6037a4373cf035cda2d1ee39acd4ff80feb0bda1811191f3bdf52c462e7bbb87"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/scripts/render_scene.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/scripts/render_scene.py",
+      "sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/scripts/verify_gpu_figure.py",
+      "path": "report/figures/gpu_buffer_timing_handoff/scripts/verify_gpu_figure.py",
+      "sha256": "454febbc6b7c93bbb56733727c2b1a442f7584470a8f8cb17d094c976bb2df2f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/SOURCE_INDEX.json",
+      "path": "report/figures/gpu_buffer_timing_handoff/SOURCE_INDEX.json",
+      "sha256": "6b1470844cc39a999865097a965d48094a1f6ed8af676b84a4745fa71adb5ef4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/START_HERE.md",
+      "path": "report/figures/gpu_buffer_timing_handoff/START_HERE.md",
+      "sha256": "28c74212b938d4499cd6bf237df3ecf1a79053b1f540ab497fe6e4b0836d1615"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/TECHNICAL_NOTES.md",
+      "path": "report/figures/gpu_buffer_timing_handoff/TECHNICAL_NOTES.md",
+      "sha256": "fb4c0bc3711a85deaf8ede0af9f8512b01a7a27539ab35655d65b925c2b5844f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/THIRD_PARTY_NOTICES.md",
+      "path": "report/figures/gpu_buffer_timing_handoff/THIRD_PARTY_NOTICES.md",
+      "sha256": "d0f9b8f14a7c1a16726593bd2f5086ae2dc8f02754dd90b3f9a196397cec29c0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/gpu_buffer_timing_handoff/VALIDATION.md",
+      "path": "report/figures/gpu_buffer_timing_handoff/VALIDATION.md",
+      "sha256": "2461f0b810d6cf294b828e4ac34ca1a2d5bef7e6ff24adb374db627e8a914092"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/comparison_data.json",
+      "path": "report/figures/hand_communication_handoff/data/comparison_data.json",
+      "sha256": "69235c4d6b68529bb109c4a49bb9ec6e883ac74e188a86aed79ec6dc2f37d134"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/comparison_metrics.csv",
+      "path": "report/figures/hand_communication_handoff/data/comparison_metrics.csv",
+      "sha256": "4b3e655795eb4edb5e26a772e28ff2ef2801c00da52ce75fad7d4b1d6d7c41e6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/mechanism_evidence.json",
+      "path": "report/figures/hand_communication_handoff/data/mechanism_evidence.json",
+      "sha256": "ba1d43268ff2771f7a899730ebc0fb8c0e599196d28d7ca82d2182625a2faa1a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/packet_check.json",
+      "path": "report/figures/hand_communication_handoff/data/packet_check.json",
+      "sha256": "2ef00e5538ae9adb95d3b2301a67a441b0fac9e7a36185ba66420c7151bb2cf4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/packet_fields.csv",
+      "path": "report/figures/hand_communication_handoff/data/packet_fields.csv",
+      "sha256": "373cc83420154c09914cc22468d4fec31db9040d052aef59bb9d333085010fc8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/protocol_examples.json",
+      "path": "report/figures/hand_communication_handoff/data/protocol_examples.json",
+      "sha256": "c38ecf4197cacdc5ffcef827247c5385ee966c17db9d698fd54d3cbda623a75d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/raw/h143-buttons-cpu-analysis.json",
+      "path": "report/figures/hand_communication_handoff/data/raw/h143-buttons-cpu-analysis.json",
+      "sha256": "c897fd620da1523cd6fa7f4e9868ae680a0f86a3e8590149357aee01d0f84cb8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/raw/h150-minimal-analysis.json",
+      "path": "report/figures/hand_communication_handoff/data/raw/h150-minimal-analysis.json",
+      "sha256": "58f563e48ee99cca12d48304d446261a7009f5359462cf4a6efed6d1b5c794bd"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/raw/h164-lean-analysis.json",
+      "path": "report/figures/hand_communication_handoff/data/raw/h164-lean-analysis.json",
+      "sha256": "dd916b8c078095a12d3f3946e27c12529777e8bd01de1d0e93068e6ec9dcf985"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/data/raw/verification-final.json",
+      "path": "report/figures/hand_communication_handoff/data/raw/verification-final.json",
+      "sha256": "a68d937f712ff667404a7d8572dc771003ad14fa51398e03adc0e3b8de400513"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/01_logic.drawio",
+      "path": "report/figures/hand_communication_handoff/figures/01_logic.drawio",
+      "sha256": "d8009e5243068216ecc61631c8e467a87a8f077fff2cde5f3be7d3f6ed632dcb"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/01_logic.json",
+      "path": "report/figures/hand_communication_handoff/figures/01_logic.json",
+      "sha256": "8ca18d2e484287f9b9ad496f4c4f9a56192079542808babf77d674c0fc91d989"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/01_logic.pdf",
+      "path": "report/figures/hand_communication_handoff/figures/01_logic.pdf",
+      "sha256": "7cf4154c30c31c42b6e252dc9e40eac713241c1ec8966f0ced73617619dd008f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/01_logic.png",
+      "path": "report/figures/hand_communication_handoff/figures/01_logic.png",
+      "sha256": "29c08e3416ba7ecf9ceed737a968fbd2c7657e48e19310e7be1b02749c69c2d0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/01_logic.svg",
+      "path": "report/figures/hand_communication_handoff/figures/01_logic.svg",
+      "sha256": "a4e3fb260e28886a639e0a5585f5b621686be0a1e834d6613c927bac20c46e15"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/01_logic_preview.png",
+      "path": "report/figures/hand_communication_handoff/figures/01_logic_preview.png",
+      "sha256": "9e9205688c38008c329d42ea6f22534d7441f221f6fe7c4777a119147cc59f9b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/02_sequence.drawio",
+      "path": "report/figures/hand_communication_handoff/figures/02_sequence.drawio",
+      "sha256": "b3557b57c9bf2a0ca0a04fb492ca1fd93e8a0a6996a9638e48fd37ed89cea99a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/02_sequence.json",
+      "path": "report/figures/hand_communication_handoff/figures/02_sequence.json",
+      "sha256": "9aa39ba1b51e2c74c49309a1ea92139d64a08e709bbb6b0db7ea3c1996974037"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/02_sequence.pdf",
+      "path": "report/figures/hand_communication_handoff/figures/02_sequence.pdf",
+      "sha256": "a488de57db839992e544b6e047f65b50131a0f5d538459e0b1a26bfda3c2baa7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/02_sequence.png",
+      "path": "report/figures/hand_communication_handoff/figures/02_sequence.png",
+      "sha256": "d0046afdbd4571489a5a8795c358b7862c7cece4660df777653e52f3396241dc"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/02_sequence.svg",
+      "path": "report/figures/hand_communication_handoff/figures/02_sequence.svg",
+      "sha256": "660aff7fb1b77d3aca321a24ae9e0ad1b117c4de22aeb76e9322d0bed3022e6e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/02_sequence_preview.png",
+      "path": "report/figures/hand_communication_handoff/figures/02_sequence_preview.png",
+      "sha256": "45f2e9ffb612aa43a0f796c27b1b436ab70dcdd717870929f81c36ed1a45c9d2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/03_packet.drawio",
+      "path": "report/figures/hand_communication_handoff/figures/03_packet.drawio",
+      "sha256": "67cea3c4d6578f9e36cf2735d74c92d562c536f8686a6ab9807a1e339848b6e3"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/03_packet.json",
+      "path": "report/figures/hand_communication_handoff/figures/03_packet.json",
+      "sha256": "16594ff265031e6072fed0b74e0f03d33c01b43bc8756ecdc959071a5d41c178"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/03_packet.pdf",
+      "path": "report/figures/hand_communication_handoff/figures/03_packet.pdf",
+      "sha256": "f685c5f9d36921772339c4758f53822d9c933b501ec1fdef362c54e11437013e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/03_packet.png",
+      "path": "report/figures/hand_communication_handoff/figures/03_packet.png",
+      "sha256": "1eb5973e0a50b91354de39a427e991f28695834281e357740dcf918a6b06e18a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/03_packet.svg",
+      "path": "report/figures/hand_communication_handoff/figures/03_packet.svg",
+      "sha256": "77d9d84fe121f65057c7864f7dba665627c0486216dd009941eaf78d73bea5a0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/03_packet_preview.png",
+      "path": "report/figures/hand_communication_handoff/figures/03_packet_preview.png",
+      "sha256": "af4974de2ff499f138a928becacbbac437a672e2a943f4962ce2725cdfd6b75f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/04_comparison.pdf",
+      "path": "report/figures/hand_communication_handoff/figures/04_comparison.pdf",
+      "sha256": "3977147c185603c67d55878ce49ed90a1d641a0c2b100cd3d6a08e3c0cfa07a4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/04_comparison.png",
+      "path": "report/figures/hand_communication_handoff/figures/04_comparison.png",
+      "sha256": "4eb8b1cea8418bab20e8de167de02f9934c70aaec426bc91ac5d40135020e61c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/04_comparison.svg",
+      "path": "report/figures/hand_communication_handoff/figures/04_comparison.svg",
+      "sha256": "1de42fe1dc3a0db4f3d39bc192c21a8b81db133035ac092ce9e5392211d6d5c0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/04_comparison_preview.png",
+      "path": "report/figures/hand_communication_handoff/figures/04_comparison_preview.png",
+      "sha256": "53ca4196aa3ac406280089192a60d329bb143ee5baa9897f41189575c9096d45"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/figures/hand_communication_all.pdf",
+      "path": "report/figures/hand_communication_handoff/figures/hand_communication_all.pdf",
+      "sha256": "10124513606f891ab1458a9d61cfd0b13cfb54998d7e72d4a764a24d757a2696"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/FILE_MANIFEST.json",
+      "path": "report/figures/hand_communication_handoff/FILE_MANIFEST.json",
+      "sha256": "ccad9d1222351928e1ace1a87d634093ef52fdb35bb50c787da1ba480565e826"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/licenses/ORCA_LICENSE",
+      "path": "report/figures/hand_communication_handoff/reference_only/licenses/ORCA_LICENSE",
+      "sha256": "83f5a0cec97fd08f8f7f916846066e7f6c66a400fc0b189d36ee112f3d60dc9b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/actuator_owner.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/actuator_owner.py",
+      "sha256": "068b6569787cc666e1932faecd1c9fe0195e560343adf977aebb9f4e860794f7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/config.yaml",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/config.yaml",
+      "sha256": "4815b1ea1ca0e68dd2dab070f8e9112a00525db8d297a8bfa7173f945fb5ec3b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/controller.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/controller.py",
+      "sha256": "ab82a26b123173183cfd1b05ee754dd02a4840862ce654c8bbd79a633b4084e5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/gesture_consumer.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/gesture_consumer.py",
+      "sha256": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/hand_serial_session.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/hand_serial_session.py",
+      "sha256": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/motion.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/motion.py",
+      "sha256": "5c5a7f127e78819a63a47d862dcf863920aad8c02aecf4272e977588ccd71c23"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/orca_backend.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/orca_backend.py",
+      "sha256": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/scs225_client.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/scs225_client.py",
+      "sha256": "e1c4387d98c182216f2956ba47afb2025c41d89283d45097861c0705c144e56d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/serial_motion_receiver.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/serial_motion_receiver.py",
+      "sha256": "2cb1d3dfafb526054ef2a810886f8c38f9e2631f58f7db3270dda856071e8092"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/transport.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/transport.py",
+      "sha256": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/runtime/verify_offline.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/runtime/verify_offline.py",
+      "sha256": "012607615f5113bcb9ddc96f1eda40664a5d96c48f94bf0645c6e3e8a57d5e05"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/__init__.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/__init__.py",
+      "sha256": "18ff13519d45b0d5b0afd7e69fe50dafecaf02dfc69418f3c24589024d92d816"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/group_sync_read.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/group_sync_read.py",
+      "sha256": "45a66cdd9fff3b5aac29a5fefe49b06c89ee179c3139cce759db6230455eb422"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/group_sync_write.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/group_sync_write.py",
+      "sha256": "129a6cdc898dbaf91155323e3de3c4d2c4d1f0b991b6925efc98852ee3aa0751"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/LICENSE",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/LICENSE",
+      "sha256": "ee4cd7c3e0e8b98176553379ca41b9cfd78ec684a7d48f484c9d0d155b05bf2f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/METADATA",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/METADATA",
+      "sha256": "499030f9e6b646e37f35fd3dff99c3046ddcddae75ee2141f201e4e2cf8a5690"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/port_handler.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/port_handler.py",
+      "sha256": "b0ad5264061959a025c6e90019fbc2f2da52b96829be45c99ee104ba95641865"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/protocol_packet_handler.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/protocol_packet_handler.py",
+      "sha256": "60a110bc0a198fafcd1fd3007be85c0ad0947f2a022f8bcc1857f14902d81475"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/scscl.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/scscl.py",
+      "sha256": "377be2a1579cc01677938988e4a14a0719148c51487b2950c586bcb1fce2806c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/scservo_def.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/scservo_def.py",
+      "sha256": "3e728287823fd76a240001d303ca5b9b3a50665a205deb5fe4f7c80e21a049b1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/reference_only/sdk/sms_sts.py",
+      "path": "report/figures/hand_communication_handoff/reference_only/sdk/sms_sts.py",
+      "sha256": "614abd42e331f510e9d0486e90bdaf5ece053e227f60e19f618e702b65b48101"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/scripts/check_data.py",
+      "path": "report/figures/hand_communication_handoff/scripts/check_data.py",
+      "sha256": "03ef29df9b8437b1493a1f50524a8f69e27d3f7d4ee864b1065285e6e73f93ca"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/scripts/plot_comparison.py",
+      "path": "report/figures/hand_communication_handoff/scripts/plot_comparison.py",
+      "sha256": "8827b26927fb1dd1f0769f52628cbc390982f914a4dd0edfbfee5ac82f91d5cc"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/scripts/redraw_scenes.py",
+      "path": "report/figures/hand_communication_handoff/scripts/redraw_scenes.py",
+      "sha256": "6a0a857f56307d25f17c6732547a511181408ac99b2fd4f9942c0bf1e7ff70b5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/scripts/render_scene.py",
+      "path": "report/figures/hand_communication_handoff/scripts/render_scene.py",
+      "sha256": "edd3b20b945a2628e0ddafea1201d590924bae363934853d7e0905d8ef4c5f0c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/SOURCE_INDEX.json",
+      "path": "report/figures/hand_communication_handoff/SOURCE_INDEX.json",
+      "sha256": "64dbc44d06b52177a1c9b69a79d5c364f5b24613569fd2a335d6b8f71be0390f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/START_HERE.md",
+      "path": "report/figures/hand_communication_handoff/START_HERE.md",
+      "sha256": "cff0a18fd4163f4894cb28949554efab6ea0c82436ad66856d36dae7d0a991ad"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/TECHNICAL_NOTES.md",
+      "path": "report/figures/hand_communication_handoff/TECHNICAL_NOTES.md",
+      "sha256": "9b2bcd9346b2b2e10b1f9528f429d86d04c2a48062ad1180b352efd4ae21331d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/THIRD_PARTY_NOTICES.md",
+      "path": "report/figures/hand_communication_handoff/THIRD_PARTY_NOTICES.md",
+      "sha256": "0bbd0e62a813253c1c2f37562fdb4f2e904d61cd18740c35dad4186a02565e7b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/hand_communication_handoff/VALIDATION.md",
+      "path": "report/figures/hand_communication_handoff/VALIDATION.md",
+      "sha256": "7f8b26f7db19f90c2177bb57e81d421666b06d3e79f9ab080eb808ca42d97e8a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/evidence.json",
+      "path": "report/figures/pl_ps_v3/concise_v2/evidence.json",
+      "sha256": "e7104b408b618dc285ba2ab22e3bb382d8c40b74ca15ee9a0759630e56749839"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/generator_snapshot.py",
+      "path": "report/figures/pl_ps_v3/concise_v2/generator_snapshot.py",
+      "sha256": "686b1da52a30d26c871655ad875a102b7ed06e9fff09f3a03a4181a138e84ee3"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/pdf_check.png",
+      "path": "report/figures/pl_ps_v3/concise_v2/pdf_check.png",
+      "sha256": "62ac12ebd510ba3b5dc7a1ca61a73e9c39d30930f26b3d4d06e67fdf83e5f21c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/preview_en.png",
+      "path": "report/figures/pl_ps_v3/concise_v2/preview_en.png",
+      "sha256": "db14c04049780cfbad375d507229ac4118931844d4b097f38a0194de463980d7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/preview_zh.png",
+      "path": "report/figures/pl_ps_v3/concise_v2/preview_zh.png",
+      "sha256": "62ac12ebd510ba3b5dc7a1ca61a73e9c39d30930f26b3d4d06e67fdf83e5f21c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/README.md",
+      "path": "report/figures/pl_ps_v3/concise_v2/README.md",
+      "sha256": "d1685afa9f783f258e35860c5704704c87824527f0869fab5cacb3052431941f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system.drawio",
+      "path": "report/figures/pl_ps_v3/concise_v2/system.drawio",
+      "sha256": "e2bc3d86569b18a7c017c1523d6d02e254ffe40499e7d27fc02ff177c3d3a580"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system.json",
+      "path": "report/figures/pl_ps_v3/concise_v2/system.json",
+      "sha256": "c95ab1a5ba3db39d6fc6b7ecfb20d0310235632279e40d148281e0dd56f7bbf6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system.pdf",
+      "path": "report/figures/pl_ps_v3/concise_v2/system.pdf",
+      "sha256": "48627b0c90600761e846b5714c66633b1d65ca2fa6c874e557f0e09b0c917e33"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system.png",
+      "path": "report/figures/pl_ps_v3/concise_v2/system.png",
+      "sha256": "4b0dc1a7a016d343e032e93641260c9a8e9c443d18a9ee86718416e9d88c3f2e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system.svg",
+      "path": "report/figures/pl_ps_v3/concise_v2/system.svg",
+      "sha256": "51e9273a5bf931d591bce33ab82a5215d54bc4dbf4e8919b59c8556395e22b7e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_en.drawio",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_en.drawio",
+      "sha256": "fbe3183ae6d5c4283940d6a2326ebb1ac96dbf88aa8e789bfa49abbca27c922b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_en.json",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_en.json",
+      "sha256": "f8062a18aa9df8cd129e4868d7487717f9f2836e9a0c2ad9c0cbf5054b8babff"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_en.pdf",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_en.pdf",
+      "sha256": "478dae8656c5d92a2cd46a2e520df168a7ec28f9526732595c215740fde8b34d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_en.png",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_en.png",
+      "sha256": "fd2459d7a4e7b205cbcac4e28ddb34710a5f829d4a068095220378780335af62"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_en.svg",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_en.svg",
+      "sha256": "eb3e49c2cd2b44953e1e5ce025e6d289153fcd5c8ad86f1e6e7f92c9205fb9bc"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_zh.drawio",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_zh.drawio",
+      "sha256": "e2bc3d86569b18a7c017c1523d6d02e254ffe40499e7d27fc02ff177c3d3a580"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_zh.json",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_zh.json",
+      "sha256": "c95ab1a5ba3db39d6fc6b7ecfb20d0310235632279e40d148281e0dd56f7bbf6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_zh.pdf",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_zh.pdf",
+      "sha256": "48627b0c90600761e846b5714c66633b1d65ca2fa6c874e557f0e09b0c917e33"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_zh.png",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_zh.png",
+      "sha256": "4b0dc1a7a016d343e032e93641260c9a8e9c443d18a9ee86718416e9d88c3f2e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/system_zh.svg",
+      "path": "report/figures/pl_ps_v3/concise_v2/system_zh.svg",
+      "sha256": "51e9273a5bf931d591bce33ab82a5215d54bc4dbf4e8919b59c8556395e22b7e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/concise_v2/validation.json",
+      "path": "report/figures/pl_ps_v3/concise_v2/validation.json",
+      "sha256": "faec5acab5bd46b344f3e3b7d4cc7ac895d7cc4a27c09ded7fa3baef9cfe13ea"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/evidence.json",
+      "path": "report/figures/pl_ps_v3/detailed_v1/evidence.json",
+      "sha256": "f9105fe0ef15483ada14e2082a13351fd3602458da5bd9fd45cb42d0e811ea59"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/generator_snapshot.py",
+      "path": "report/figures/pl_ps_v3/detailed_v1/generator_snapshot.py",
+      "sha256": "05eeac39bd7cec42f20ad3b30edd5be05e8937233c088b464fa295ccf3cb5675"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/pdf_check.png",
+      "path": "report/figures/pl_ps_v3/detailed_v1/pdf_check.png",
+      "sha256": "8d7ea190f6829eb7460b616c9661140767060263e975615ea913bb1aca722053"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/README.md",
+      "path": "report/figures/pl_ps_v3/detailed_v1/README.md",
+      "sha256": "6fe6981d8e0c2e5cddcad52afb2b64879efe4910af3fe3adc672c588ea244d37"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/system.drawio",
+      "path": "report/figures/pl_ps_v3/detailed_v1/system.drawio",
+      "sha256": "d3ec98d1620ed97fcfd2b7390ca92994fa53b697cd3ac94f2049353087d0fe17"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/system.json",
+      "path": "report/figures/pl_ps_v3/detailed_v1/system.json",
+      "sha256": "fafe541dce8cd5cc7fde7ed97974fc328b9ecc7b04149302d14a41121560dd12"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/system.pdf",
+      "path": "report/figures/pl_ps_v3/detailed_v1/system.pdf",
+      "sha256": "edf285088a822fa1d823c68d8b1f295ad5d0b7110d1c61563252ab1dcb7f294a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/system.png",
+      "path": "report/figures/pl_ps_v3/detailed_v1/system.png",
+      "sha256": "602dcfdfdee0e6734a2fc814b8290e296d3b41c151b17735c6fd93a19f347700"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/detailed_v1/system.svg",
+      "path": "report/figures/pl_ps_v3/detailed_v1/system.svg",
+      "sha256": "e5fb61e8bfe4d98902d5e35b59dd173c17c7786e267f62fbe3fccfa2ba2697a4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/evidence.json",
+      "path": "report/figures/pl_ps_v3/evidence.json",
+      "sha256": "4e9c432a8c755a96538c4b5fde7a1d1d4e316492eb0e22a722074668721fa8b1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/pdf_check.png",
+      "path": "report/figures/pl_ps_v3/pdf_check.png",
+      "sha256": "63ded8a44e7f1cf127d8d17fcc0f1b827b873b1af2c59f1d3b102d1baca54d5e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/preview_en.png",
+      "path": "report/figures/pl_ps_v3/preview_en.png",
+      "sha256": "f2a217fe17c224a1bfd16db4baa48df6dc2bd625bda3c84fcaa7bfe9fee54924"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/preview_zh.png",
+      "path": "report/figures/pl_ps_v3/preview_zh.png",
+      "sha256": "63ded8a44e7f1cf127d8d17fcc0f1b827b873b1af2c59f1d3b102d1baca54d5e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/README.md",
+      "path": "report/figures/pl_ps_v3/README.md",
+      "sha256": "87373725bfddacfe641a5218036dbcd0eafe78fddc1015ded432a8237cb54fab"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system.drawio",
+      "path": "report/figures/pl_ps_v3/system.drawio",
+      "sha256": "7bbddb98f6ffd56c08cbeb0d4edc5dc87bb3799b86845b951af676450f244acf"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system.json",
+      "path": "report/figures/pl_ps_v3/system.json",
+      "sha256": "2a12d3721580e5fbb582a9f390ebaa30b31cb4be0f3e89f9d88d8afb174bb9e1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system.pdf",
+      "path": "report/figures/pl_ps_v3/system.pdf",
+      "sha256": "85bae5c8e28a29de1db8a033bde569a9831add3618e198a39fe489680b3c735b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system.png",
+      "path": "report/figures/pl_ps_v3/system.png",
+      "sha256": "79fc7fe7aa9f49f9633183bff68e6af1b48ce93d3ef1ac4c73e9fa616d9fb0e8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system.svg",
+      "path": "report/figures/pl_ps_v3/system.svg",
+      "sha256": "45fee2a0fdd79a6ab96bbb0ab36297cb54aca8f543063f1b607e03cc5c27906b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_en.drawio",
+      "path": "report/figures/pl_ps_v3/system_en.drawio",
+      "sha256": "79a9bef54ca419eb6209f96a510564b00ba1b85513c0f65f8ea3e3767a3418ad"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_en.json",
+      "path": "report/figures/pl_ps_v3/system_en.json",
+      "sha256": "d03fd2fa31f74791793883a36c3c616b0ca5ad6d1db67f0558ae807ceb484f2d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_en.pdf",
+      "path": "report/figures/pl_ps_v3/system_en.pdf",
+      "sha256": "98a2c24cc74678f87fa39ec305c76119956729e1e02638654678444f3e1696d8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_en.png",
+      "path": "report/figures/pl_ps_v3/system_en.png",
+      "sha256": "3efeb4e0d0e2b251458ebedb18052119f7136f89dba67bfe68dc5af01e40efa5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_en.svg",
+      "path": "report/figures/pl_ps_v3/system_en.svg",
+      "sha256": "e5e0c1e304e96ead58312d5889b26e6361b9025a217b40de3341c86c0eac7361"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_zh.drawio",
+      "path": "report/figures/pl_ps_v3/system_zh.drawio",
+      "sha256": "7bbddb98f6ffd56c08cbeb0d4edc5dc87bb3799b86845b951af676450f244acf"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_zh.json",
+      "path": "report/figures/pl_ps_v3/system_zh.json",
+      "sha256": "2a12d3721580e5fbb582a9f390ebaa30b31cb4be0f3e89f9d88d8afb174bb9e1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_zh.pdf",
+      "path": "report/figures/pl_ps_v3/system_zh.pdf",
+      "sha256": "85bae5c8e28a29de1db8a033bde569a9831add3618e198a39fe489680b3c735b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_zh.png",
+      "path": "report/figures/pl_ps_v3/system_zh.png",
+      "sha256": "79fc7fe7aa9f49f9633183bff68e6af1b48ce93d3ef1ac4c73e9fa616d9fb0e8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/system_zh.svg",
+      "path": "report/figures/pl_ps_v3/system_zh.svg",
+      "sha256": "45fee2a0fdd79a6ab96bbb0ab36297cb54aca8f543063f1b607e03cc5c27906b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/pl_ps_v3/validation.json",
+      "path": "report/figures/pl_ps_v3/validation.json",
+      "sha256": "afae6a71e46a8193fe55c55a5251bc6381f15245fdb42c23ebf03d8d7eb2d3c7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/dms1_example.bin",
+      "path": "report/figures/vision_dual_follow_handoff/data/dms1_example.bin",
+      "sha256": "d21dca66533088dec0b7fc1b4cca05dfd91782a3b4acbe4bcbafe2805f09e1cf"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/dms1_trailer.csv",
+      "path": "report/figures/vision_dual_follow_handoff/data/dms1_trailer.csv",
+      "sha256": "e4fcff41f4e43bbbfe76de9927711407ecb923bf82bb85b404a4373eb565fb63"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/formats.csv",
+      "path": "report/figures/vision_dual_follow_handoff/data/formats.csv",
+      "sha256": "43e241c7b7fe412570ae1dc3bb2fd84ec59131b649336c72d32483937f0eddd6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/osd_registers.csv",
+      "path": "report/figures/vision_dual_follow_handoff/data/osd_registers.csv",
+      "sha256": "91ddb17e8ef9504b920b50b75a73cc003e370998d499d4303652615dee551358"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/rules.csv",
+      "path": "report/figures/vision_dual_follow_handoff/data/rules.csv",
+      "sha256": "6d6863b8ef56dce2ed8f4099f9766a6173975bb712398b70d754c7e382c36175"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/runtime_identity.json",
+      "path": "report/figures/vision_dual_follow_handoff/data/runtime_identity.json",
+      "sha256": "cbb0274a41b41cfaf09d04e2a051c4419820f8a1767902f316fc16d682edecc2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/verification.json",
+      "path": "report/figures/vision_dual_follow_handoff/data/verification.json",
+      "sha256": "14f5653fed96091576ee70cbee48d51f49688c8dcdc533733f1d782070f1347c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/data/vote_trace.csv",
+      "path": "report/figures/vision_dual_follow_handoff/data/vote_trace.csv",
+      "sha256": "67dd6eae7a24ea1c32839784cc863bfba016131309ee6df708c40208bf226a5f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.drawio",
+      "path": "report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.drawio",
+      "sha256": "522086d8df352f9df13c02b965ed7c0dee3b950891a6810278bbb70595b6e7a2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.json",
+      "path": "report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.json",
+      "sha256": "24deafc29a72508f91d402b2f0b20d12696ef16f43206c8072f3e4b8264e921b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.pdf",
+      "path": "report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.pdf",
+      "sha256": "2f9a5ba195a6fe1c755c4d45c71b85ae48deecbbdd1b29112d39d652422b17c0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.png",
+      "path": "report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.png",
+      "sha256": "e670cf1e63aaadf7280f73a7c748c77ddca40065dd9c645cc542d02e9de1f0f2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.svg",
+      "path": "report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow.svg",
+      "sha256": "a18c37b480da43e1206197914464c297d0088f8750b6b16f3a367bb0ba4b53a8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow_preview.png",
+      "path": "report/figures/vision_dual_follow_handoff/figures/01_vision_dual_follow_preview.png",
+      "sha256": "17ed6fa9949d3b9d5efd1b0e81d6bf2d36dc49edc6e546e4246b2108606701f9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.drawio",
+      "path": "report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.drawio",
+      "sha256": "c222c173691b22875e630d868aab95c60637eaf786101c4e72f044dbd979a442"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.json",
+      "path": "report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.json",
+      "sha256": "f7781e3366b85540020673841c40371d162684afb2f5a92b1985e1f27a147cf2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.pdf",
+      "path": "report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.pdf",
+      "sha256": "68400076cc97efb68a2b5def94c347a9cfa5735aac6a50925ec580dada80a604"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.png",
+      "path": "report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.png",
+      "sha256": "a40f3c7690cc2a7f30b5b0afcf595d9b79ce57af149c06df5e3b1b6d97bf6039"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.svg",
+      "path": "report/figures/vision_dual_follow_handoff/figures/02_recognition_logic.svg",
+      "sha256": "d9b8fadf7df0ffcec3055a00dea0cf2c1d1851ba2f782988672ea6d38ec16bcf"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/02_recognition_logic_preview.png",
+      "path": "report/figures/vision_dual_follow_handoff/figures/02_recognition_logic_preview.png",
+      "sha256": "74f69ed2839d68dcf99fb25b838cedac640ace4ae5c31b79ea4281c1d6250bbc"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.drawio",
+      "path": "report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.drawio",
+      "sha256": "f1ccf98dbc368d85f5ed8da4b389a0501cffa614ffab83e27be44ebcb3490b84"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.json",
+      "path": "report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.json",
+      "sha256": "340eae5ec2c7f2a66d719c45029e964acaabdcb597c79f1845104f3a909f876e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.pdf",
+      "path": "report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.pdf",
+      "sha256": "ac722459c9b287e8b610ef61120879efc414c8f6700a8b7e693a3d9653b18b15"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.png",
+      "path": "report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.png",
+      "sha256": "e438dc8a3576a08755eb43112ae61bf89e6c24ee63afd63cf319b6567ae2a2c5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.svg",
+      "path": "report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing.svg",
+      "sha256": "58d19676a06e4869de950d5da6dd7a8171ed7d0fcb6f5c31d9b2289228d4e2a8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing_preview.png",
+      "path": "report/figures/vision_dual_follow_handoff/figures/03_dms1_osd_timing_preview.png",
+      "sha256": "002b556b6d2587545a7897ca788c7707fca5b0b87891351e33c42d19ccf3823a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/figures/vision_dual_follow_all.pdf",
+      "path": "report/figures/vision_dual_follow_handoff/figures/vision_dual_follow_all.pdf",
+      "sha256": "c27e8e730a8f6e43bcc427143071c09d15864ab7038e728ac0837f4da5bfdc48"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/FILE_MANIFEST.json",
+      "path": "report/figures/vision_dual_follow_handoff/FILE_MANIFEST.json",
+      "sha256": "0a6bf2f17d20401e116afd45c0240ee2c1e9acef7c740003c56183b15a8a5c45"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_area2x2.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_area2x2.sv",
+      "sha256": "8bc7e557ef8ef2e69089f33e8318c5d426d139628a96f18673228a1b1510bcb0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_bgr_hsv_skin.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_bgr_hsv_skin.sv",
+      "sha256": "ee4cdea7dbcb22817613c0df98da69e708d2443912304b04605ad7458855e0c5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_binary_dilate9.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_binary_dilate9.sv",
+      "sha256": "c2a60d3490c616762bd76493087ea593fa550a251a170372feb4a5f1f06771a6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_binary_gaussian5.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_binary_gaussian5.sv",
+      "sha256": "ad138b615485e7ab0937cea5e9a58410c67394b7039ce26468f9794e625f4cb5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_binary_mask_pair.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_binary_mask_pair.sv",
+      "sha256": "3f1767d22a033c95f5d171bdce2ce5ffd6408c484ba21abb89becd82eaafbfe7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_dual_mask_packet.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_dual_mask_packet.sv",
+      "sha256": "9a20ebde01f0eb50f8c268dc6de83390b6cea68b8610a6415ed54acf30b5aff4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_rgb_dual_mask_capture.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_rgb_dual_mask_capture.sv",
+      "sha256": "3edc3b9383741c9f2795ccc1414ac3175b61b4bed82e7353427012eab67620c4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/axis_rgb_mask_frontend.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/axis_rgb_mask_frontend.sv",
+      "sha256": "43e6676736b5d13d438b2ac5e7cac7c44752297339b1d25921eead724318aa50"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/button_osd.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/button_osd.py",
+      "sha256": "7d0a87ba31ff8654e25dccb350679481f8ac4150193829196aa4a6414dcbbede"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/button_osd_backend.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/button_osd_backend.py",
+      "sha256": "fa423712ea75d10c1851ae234e50a80b8bfc729d2880d00a08ee2b9ae4a96dac"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/dual_mask_packet.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/dual_mask_packet.py",
+      "sha256": "15f9691bde670cd8c14a3e49736cc1fdb7a88968a9a75019f5ed9c5bdce0a693"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/gesture_consumer.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/gesture_consumer.py",
+      "sha256": "81c696b30c6b923665aa1c8df652f3558f7a097ff8116e36dd4f7d06c8bddc90"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/gesture_control.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/gesture_control.py",
+      "sha256": "57a82fa61bcaceef905e6d25c6e9e4f5c6bafc60e305ff0b9aa6192cc470a9ba"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/hand_serial_session.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/hand_serial_session.py",
+      "sha256": "14b6b8ffcd63d933a54a932a79ece868ee09759e8301e99e24545383afb954d9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/hand_shadow_bridge.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/hand_shadow_bridge.py",
+      "sha256": "1543a5af70211c85f31588373d75d8f10b9a5d11f3b3e91cf434d866f4b0689a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/hsv_reciprocal.svh",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/hsv_reciprocal.svh",
+      "sha256": "213a330f8aa05f684999724602cc84b59692c8375538a294beed14fe79b398c9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/input_osd_ctrl.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/input_osd_ctrl.sv",
+      "sha256": "3fec20de498fcfe7a53996864cf114084095648945ab68def0d4149d6e921a44"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/input_osd_pixels.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/input_osd_pixels.sv",
+      "sha256": "95ff52b4eab19d9aabdfd369d02168ffc7729d0ca15faf440a193eb644ccb131"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/input_osd_top.sv",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/input_osd_top.sv",
+      "sha256": "4323f9d0cb0d180f5e61f0efe3e2fe45450ccca590836c9056ab82f57089ef69"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/pl_button_factory.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/pl_button_factory.py",
+      "sha256": "e96110a08e6b61244884b692ac1ff4b194940d6fcf9b783cf655717c2eed534f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/PROJECT1_LICENSE.txt",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/PROJECT1_LICENSE.txt",
+      "sha256": "e818b8cf5c9cde70d8effa13aa006e895ed138dd8ff5ecb7d76f07b33fdb4427"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/vision_async_runtime.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/vision_async_runtime.py",
+      "sha256": "90a4a5d7fb12932a5b4e46b75bc90cd17f9c910beeb74f8337ed48340f19a405"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/vision_capture_control.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/vision_capture_control.py",
+      "sha256": "af7c4c81d4cd6d8e46b0562922cc01be5e9a35c0481ed85bcb542ac294b74b64"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/vision_dma_pool.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/vision_dma_pool.py",
+      "sha256": "29813a2a8b22cfeda5f7bbd2d6d7a0957b79bfc69f7fc6b5ec25378044588a3c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/vision_input.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/vision_input.py",
+      "sha256": "c89b3e5b5d54b157a9f12759cdb779dfccdf719a764c9468739cf52e2c6cb25d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/reference_only/vision_latest_capture.py",
+      "path": "report/figures/vision_dual_follow_handoff/reference_only/vision_latest_capture.py",
+      "sha256": "7852b8a7b55df9fc0c9158aad635396caa4f3a46ace603cf213e2d655ee69033"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/scripts/check_package.py",
+      "path": "report/figures/vision_dual_follow_handoff/scripts/check_package.py",
+      "sha256": "cdb1358c49e65c17f465d24ec5fdfabe08e980eb9239bce22497067f8f5e317e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/scripts/redraw.py",
+      "path": "report/figures/vision_dual_follow_handoff/scripts/redraw.py",
+      "sha256": "2416aad16d45625e60a88cfe5cfe6e7711a9bc1c7d9343022ef83cd0adbb9430"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/scripts/render_scene.py",
+      "path": "report/figures/vision_dual_follow_handoff/scripts/render_scene.py",
+      "sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/scripts/verify_vision_figure.py",
+      "path": "report/figures/vision_dual_follow_handoff/scripts/verify_vision_figure.py",
+      "sha256": "5ac8b5c927086b3fc81e8966703613e98f09c3858f8f027b6c98df54849f6f9e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/SOURCE_INDEX.json",
+      "path": "report/figures/vision_dual_follow_handoff/SOURCE_INDEX.json",
+      "sha256": "4979f4d2a5ec84dcf47cb00d6368c3c917c406f3201d0deaac82b487fe79ed99"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/START_HERE.md",
+      "path": "report/figures/vision_dual_follow_handoff/START_HERE.md",
+      "sha256": "9e1aff57a04a332d9ecc3fa263165d3ef0d9528680cb710da6a4dff817903374"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/TECHNICAL_NOTES.md",
+      "path": "report/figures/vision_dual_follow_handoff/TECHNICAL_NOTES.md",
+      "sha256": "af822c18e54283171f6e8abe0b97ddeec7b75169d4116a8404c47f4c27c077a6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/THIRD_PARTY_NOTICES.md",
+      "path": "report/figures/vision_dual_follow_handoff/THIRD_PARTY_NOTICES.md",
+      "sha256": "1cea83aef8a296096bb17f57b3f2c7f1279d5a813380e191b4e17fce42ebf521"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/figures/vision_dual_follow_handoff/VALIDATION.md",
+      "path": "report/figures/vision_dual_follow_handoff/VALIDATION.md",
+      "sha256": "129356d8143048f45d565c875bb1f6b18a8195a1ec3249bfef0d8957d387b21c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/chapter.html",
+      "path": "report/gpu_ai_preparation/chapter.html",
+      "sha256": "e509d606eddbb9144b41f3360722841b13375d2d6615c855d03886e4881b3776"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/overlap.csv",
+      "path": "report/gpu_ai_preparation/data/overlap.csv",
+      "sha256": "ed2388e20cde6a37c096f01dbaf084b9cc77e694e639cf6690088d2e245e8bde"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/performance.csv",
+      "path": "report/gpu_ai_preparation/data/performance.csv",
+      "sha256": "148cbc375aa1cac9b6a6767611de934e59329bd54915260fc1c9526ec6bc8826"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/raster_ablation.csv",
+      "path": "report/gpu_ai_preparation/data/raster_ablation.csv",
+      "sha256": "d0b9efea18c6df16af771f4bc8236ba6f6b5b98a78aa25b6f79c2eec393514bc"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/resources.csv",
+      "path": "report/gpu_ai_preparation/data/resources.csv",
+      "sha256": "b872d48dcc77c6a18e10a65882d544f7bd0955c104b363f0fa9223519d4b9481"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/source_manifest.json",
+      "path": "report/gpu_ai_preparation/data/source_manifest.json",
+      "sha256": "133d340ea848c1fac4b7ee7d25734017d26371fd398c3c2f90d5bc02bd35b6bb"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/tile_ablation.csv",
+      "path": "report/gpu_ai_preparation/data/tile_ablation.csv",
+      "sha256": "f3200ae5fd84d51ce4391f322dceb218d7bd53431dbc4fda1e35fd29d78f0a9b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/data/verification.json",
+      "path": "report/gpu_ai_preparation/data/verification.json",
+      "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
+      "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
+      "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
+      "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
+      "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
+      "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
+      "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
+      "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
+      "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
+      "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
+      "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
+      "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
+      "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
+      "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
+      "path": "report/gpu_ai_preparation/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
+      "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+      "path": "report/gpu_ai_preparation/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+      "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
+      "path": "report/gpu_ai_preparation/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
+      "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
+      "path": "report/gpu_ai_preparation/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
+      "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/docs/scene2d_gpu_architecture.md",
+      "path": "report/gpu_ai_preparation/evidence/docs/scene2d_gpu_architecture.md",
+      "sha256": "fbd0f95942061dabbc5fb2f1fdfbc943b9f937f056efc78e96dcb595b7096580"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log",
+      "sha256": "9c6fb98497dd1d2190c2ab09b953bf769206badf570f80b7443cfd22ffcd4541"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-p3a-board-budget-fail-1791026983004/scene2d_draw_tile_layer.sv",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-p3a-board-budget-fail-1791026983004/scene2d_draw_tile_layer.sv",
+      "sha256": "d6d0d6a8c00bebf21b073254f2e86aee0cf31dced335f5b2894f44a650fb96b8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_0.log",
+      "sha256": "15462237aa3d6fc239a30d4b65b4c49ef9c9eda986edf54784ffe6c00ad4548e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_1.log",
+      "sha256": "c5cd86b903ea1a1036b37cf110eab6ac48b18fe6550da8df02154c544b336533"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_0.log",
+      "sha256": "5679c556eed4e482e5c3b26e78f99d2caad3b2c0d14b84a1785064feb905622e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_1.log",
+      "sha256": "822d53e1299c40eefa4af0a98171ad692d8a9a99198db8e763e7a190b91328c6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_0.log",
+      "sha256": "985f71e7c99c03b1fe0b05bbdf33663cffd8defca010a65f2f47db0f08cdf45c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_1.log",
+      "sha256": "b76e6896af5d6fd7675ed97833ee879794d7f8fe575d911f69831ba7a5787bc0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_0.log",
+      "sha256": "a3b52f859eedcb3047c9250e72e360457e03babb9675a1afb1b103324769c2d0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_1.log",
+      "sha256": "ec8db83815394343417c1ec2b71441ef315aa452708d6d41e81f9beb4675be87"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log",
+      "sha256": "a954dc1291f58c7ff071a22070c72784f5d775fe045b4b6913c9b1eef359b470"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_1.log",
+      "sha256": "677d831c8a785c397c984accb1e0fd39be257efbb9b490fc6f33292eb08e8c04"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_0.log",
+      "sha256": "c4aece41808f088a30e1f43e4670a8125ac7f7e24d262facdc4d055f4624f147"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_1.log",
+      "sha256": "647cfe8d67e95f331c39dd829e86345674b904627d7b50ffab716fd4bce80a13"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log",
+      "sha256": "0e62c02647e679cbeab3e024248161ec4e4d44787b50ced5304c50bf6226596c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_1.log",
+      "sha256": "5bc631eadc90cde4f417c5328d5a6b9fd7ef0fca5904e54f3352d67d9c5c7b61"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log",
+      "sha256": "981d9bd95e2ba4c3b095099c3e8135ee579650f1c1d90fad2720997c68af8c6c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_1.log",
+      "path": "report/gpu_ai_preparation/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_1.log",
+      "sha256": "67c8eef44f3d5ace3d2df08d17472cd65c137139fc632e694930e62476ac9abb"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/01_optimization_route.png",
+      "path": "report/gpu_ai_preparation/figures/01_optimization_route.png",
+      "sha256": "38a0e646f25da2d62228d87ed732cc999979515a5f8c6b7c4fb669c6523b4a6e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/01_optimization_route.svg",
+      "path": "report/gpu_ai_preparation/figures/01_optimization_route.svg",
+      "sha256": "50437d57cc7276794cc3f0e468e7d9cf627837de196f626377663619b11157b0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/02_tile_ablation.png",
+      "path": "report/gpu_ai_preparation/figures/02_tile_ablation.png",
+      "sha256": "e8fb85ecf0d0f3e77bfc700a0c74fa6a7ae99f8e69437c3d758083ab7e48d962"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/02_tile_ablation.svg",
+      "path": "report/gpu_ai_preparation/figures/02_tile_ablation.svg",
+      "sha256": "a82663e7bd055caa598d75267892e9bdcc30ab96fcffb85081237893246329f4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/03_workload_comparisons.png",
+      "path": "report/gpu_ai_preparation/figures/03_workload_comparisons.png",
+      "sha256": "23f78b43e63ac3eb5eecb0a8fa9bca4ebe3acc09d3309707e0089d32067838e2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/03_workload_comparisons.svg",
+      "path": "report/gpu_ai_preparation/figures/03_workload_comparisons.svg",
+      "sha256": "d5787593d912cf5253c5c8b0e3136ac1f1e53f188f9e01a4e4ecd5044d73aa9c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/04_resource_tradeoff.png",
+      "path": "report/gpu_ai_preparation/figures/04_resource_tradeoff.png",
+      "sha256": "472afa91a752be2b62219f17fc166894e55bacdb28fbb920116ebe89481d57c0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/04_resource_tradeoff.svg",
+      "path": "report/gpu_ai_preparation/figures/04_resource_tradeoff.svg",
+      "sha256": "2021e9c4bfa4912054b378a0b0ada401f8a23c89ec6d65eac18b6cbe3e4ecf06"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/05_timing_margin.png",
+      "path": "report/gpu_ai_preparation/figures/05_timing_margin.png",
+      "sha256": "ba03c41328084881323a139e4ee9cec9287d1c590fe364c98e0d7209f0792360"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/05_timing_margin.svg",
+      "path": "report/gpu_ai_preparation/figures/05_timing_margin.svg",
+      "sha256": "7287b1561574b6375127152f367b58d61bde85b836da2752fff44e67b6689f1e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/06_overlap_correctness.png",
+      "path": "report/gpu_ai_preparation/figures/06_overlap_correctness.png",
+      "sha256": "c0a7f91c2c4163cfb5ad416449807b7ca23de9c88e788f84fcabb30b76496f6e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/figures/06_overlap_correctness.svg",
+      "path": "report/gpu_ai_preparation/figures/06_overlap_correctness.svg",
+      "sha256": "ed9988ee5b1a69a889278e91582d2ac48644795dbd4180380981b9a88d88c21b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/gpu_optimization_report.pdf",
+      "path": "report/gpu_ai_preparation/gpu_optimization_report.pdf",
+      "sha256": "bd929e67e3b1d7fc4e9417bf2e06854c26bda9ec5499e3d1a7b5b84644e41273"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/README.txt",
+      "path": "report/gpu_ai_preparation/README.txt",
+      "sha256": "a64101811ba0adc562150e225d959cc2d70fe77b48dbaacba58f8627a502a977"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/tools/build_report.py",
+      "path": "report/gpu_ai_preparation/tools/build_report.py",
+      "sha256": "4acc550dee0b473236a788ecdc52eb34127b99ef10b8cad79b626387436c92b2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/gpu_ai_preparation/tools/plot_figures.py",
+      "path": "report/gpu_ai_preparation/tools/plot_figures.py",
+      "sha256": "44900fdcc0caf17a6f3a246b4c7bad0bf1a592d31877860e45bbfee47ff9f3e9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/licensing.md",
+      "path": "report/licensing.md",
+      "sha256": "c303bf08309d17c93db265d03001bda55e0fcbbeba48d37b990158e985e16b28"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/missing_items.md",
+      "path": "report/missing_items.md",
+      "sha256": "a852ea6094570a611a25f57b46c172ce4d68a82d7bc8400e92241fd9b8ea7a19"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/evidence_index.json",
+      "path": "report/reference_v2_design/evidence_index.json",
+      "sha256": "95f62e40d7db4a6e4c54f5f4eb2ae251e6d8232887881519f89211cb8a8fab37"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/figures/admission.tex",
+      "path": "report/reference_v2_design/figures/admission.tex",
+      "sha256": "e9ac2bde7a8b3be0e9391cb019368ba989106b9046b99a00ae2a93a3143cca80"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/figures/graphics.tex",
+      "path": "report/reference_v2_design/figures/graphics.tex",
+      "sha256": "b0e612c37245c9007a2bf2444527f8749148962ac704e89330e1d2e5a9b2b99e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/figures/hand.tex",
+      "path": "report/reference_v2_design/figures/hand.tex",
+      "sha256": "9f9695b7b520892c1ab870901d489948e9697cd3011428225c259eb67c800b41"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/figures/system.tex",
+      "path": "report/reference_v2_design/figures/system.tex",
+      "sha256": "c4f38ee9528cb5a8f4303fbe22dcdf81898097aa50d3975578a2cb60a30480b5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/figures/vision.tex",
+      "path": "report/reference_v2_design/figures/vision.tex",
+      "sha256": "096d849c9603ab8bfa9f7914274fc4012157ff48c6b5e1c244a53150af21909a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/gesture_play_v2_junior.pdf",
+      "path": "report/reference_v2_design/gesture_play_v2_junior.pdf",
+      "sha256": "889e75298aaf0468d2589a4a6fd10a2911f6106287b27da3064d66ce72a78cf4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/main.log",
+      "path": "report/reference_v2_design/main.log",
+      "sha256": "418a9237b0361605c6a8f4f7082dfbacda5dbea1f6dfd7fc4a80e65b2ceaeb00"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/main.pdf",
+      "path": "report/reference_v2_design/main.pdf",
+      "sha256": "35454b0d4fe1614e59f508ab0056aa236a433e82b0a10fff13dd20ed5f21301d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/main.tex",
+      "path": "report/reference_v2_design/main.tex",
+      "sha256": "2dc3faabf8440ae2ac2a700aa69428711863e3876b4431db0861a1ef019ee38e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/readme.md",
+      "path": "report/reference_v2_design/readme.md",
+      "sha256": "fbfd885d2a451af41e0c7d011352e1ff924d1a79e868f0b7b5c5db03538891b7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/report.md",
+      "path": "report/reference_v2_design/report.md",
+      "sha256": "9cb2008007107631bb09042efa5d3d9e02f158d4b7ed95adf8c4cff48a4c7c18"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/sections/design.tex",
+      "path": "report/reference_v2_design/sections/design.tex",
+      "sha256": "4369e0d250493284a04153249e466999386e208b308a9ae7da7d167d5716d3df"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/sources/open_topic_guide.md",
+      "path": "report/reference_v2_design/sources/open_topic_guide.md",
+      "sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/tools/compose_report.py",
+      "path": "report/reference_v2_design/tools/compose_report.py",
+      "sha256": "2002fe649d8552deff0fca87fd4138e8000d25a99282bdb73a489d4e751bc0d6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/tools/package_report.py",
+      "path": "report/reference_v2_design/tools/package_report.py",
+      "sha256": "42d149280f1b52c6fb619b9258af28c1e4f68102cbc6a1c9690670bb8b2eeaad"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/tools/repair_pdf_unicode.py",
+      "path": "report/reference_v2_design/tools/repair_pdf_unicode.py",
+      "sha256": "9ee266181bd04b4197051cf581480fe6544d13620f3560c344e4e0434013079c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_design/tools/review_pdf.py",
+      "path": "report/reference_v2_design/tools/review_pdf.py",
+      "sha256": "1ef8bebc7916a7aad4ae9dd40de55054f7446489581fd3f43828efd0e67bef4d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/chapter.html",
+      "path": "report/reference_v2_performance/chapter.html",
+      "sha256": "ca41f0acf763a618dc2baa23bee1b7bd57292fbd2e147b8022f97c3d451e6b2b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/expanded_verification.json",
+      "path": "report/reference_v2_performance/data/expanded_verification.json",
+      "sha256": "0de4b4840721e3c7e40003da63528597ca5e507a1130094d8e0667a51be7d1d1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/hand_motion_runs.csv",
+      "path": "report/reference_v2_performance/data/hand_motion_runs.csv",
+      "sha256": "25be4ff745dbc88989a0b1040b8032878ce9f927f5c2b076a2319ed847352f59"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/hand_pose_runs.csv",
+      "path": "report/reference_v2_performance/data/hand_pose_runs.csv",
+      "sha256": "692147112a2668f877e68b33c214b06812047a1916d5aff287f0f1183f852dce"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/overlap.csv",
+      "path": "report/reference_v2_performance/data/overlap.csv",
+      "sha256": "ed2388e20cde6a37c096f01dbaf084b9cc77e694e639cf6690088d2e245e8bde"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/performance.csv",
+      "path": "report/reference_v2_performance/data/performance.csv",
+      "sha256": "148cbc375aa1cac9b6a6767611de934e59329bd54915260fc1c9526ec6bc8826"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/preview_idle.csv",
+      "path": "report/reference_v2_performance/data/preview_idle.csv",
+      "sha256": "d33f529c4a0f5212c6fca30aee2e3dd8f24add088fcb820b80f4bec9f56583a1"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/raster_ablation.csv",
+      "path": "report/reference_v2_performance/data/raster_ablation.csv",
+      "sha256": "d0b9efea18c6df16af771f4bc8236ba6f6b5b98a78aa25b6f79c2eec393514bc"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/resources.csv",
+      "path": "report/reference_v2_performance/data/resources.csv",
+      "sha256": "b872d48dcc77c6a18e10a65882d544f7bd0955c104b363f0fa9223519d4b9481"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/source_manifest.json",
+      "path": "report/reference_v2_performance/data/source_manifest.json",
+      "sha256": "e81f55fab8b98b60bd8468aab51618c532df2703f1687b947148df0c924cbf3c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/tile_ablation.csv",
+      "path": "report/reference_v2_performance/data/tile_ablation.csv",
+      "sha256": "f3200ae5fd84d51ce4391f322dceb218d7bd53431dbc4fda1e35fd29d78f0a9b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/v2_final_comparison.csv",
+      "path": "report/reference_v2_performance/data/v2_final_comparison.csv",
+      "sha256": "cf7d58e09842546acf4c60ae24c8e4dfc2c8388869ca69ee5bff4353307054ed"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/verification.json",
+      "path": "report/reference_v2_performance/data/verification.json",
+      "sha256": "547ceda54bea32de08280c6b5bfc3bf11006c4e5440eaa31d6494ff1d1103e65"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/vision_resources.csv",
+      "path": "report/reference_v2_performance/data/vision_resources.csv",
+      "sha256": "1a34e8f68ea71248ee9d720565cbd5d85777aef6ae32b37c825cb37867152f08"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/data/vision_stage_profile.csv",
+      "path": "report/reference_v2_performance/data/vision_stage_profile.csv",
+      "sha256": "eddbab3d4326602079c8ae93c13e9e72d17ef7a20ca83faa88488bc9dfeca897"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt",
+      "sha256": "acdd20ccf869716c7026267c34080f5efb53eaf4d50b5c050eb0eca4246ce282"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt",
+      "sha256": "4e6c307a0179052fa15bec0e2c7d3dded9c5a76338a532e61fc422c86aa39f2e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt",
+      "sha256": "0722a3f8948003b61ff6baff37d615fb3df5bc4c87ed505d43a153e7dc04e1b9"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt",
+      "sha256": "131e6f831b5099f796d962996010b99a5f4a02ad3ff76e60db0dfdd7346cc58b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt",
+      "sha256": "44b2a6714c7f32df93719d9cc1081740d6320bab3a23d771148ac5139a8f05b4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt",
+      "sha256": "53216bff316380f32062167b4b37b7e9590ca33e2f16d4d677b145ec512f9e4a"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt",
+      "sha256": "1cefb2f22e56becdd2d39eae4d21c1e55ffe44ef12522891ab4fba3d9c1f071b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt",
+      "sha256": "1abe1b50cafde5adb507da7baf4f43f2d1752564d69c02ad0b079b00092eee51"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt",
+      "sha256": "0d6d7b033b26f73be8b2d0612ead310f57f038b682dc3e641f5380dec087a459"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt",
+      "sha256": "b85a9a413ec7d63cc2060b3759e76051a7550ddb6a94c3041c668fe68a047b71"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt",
+      "sha256": "e23aefa4970a9f621ba874f8dd14a661ac78e0e54f2bc0238fd49dda7f2946e2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt",
+      "sha256": "a84834c08db0526ac648a01a3743cea0d4cc21603315c1fe1b374e8260c1bb08"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/timing_summary.rpt",
+      "sha256": "fb2c25779535601eaf86e5c782f59563f8313ba5c1342380da1e3a79ceac4cc8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
+      "path": "report/reference_v2_performance/evidence/board/pynq_z2/output/reports/c6i/utilization.rpt",
+      "sha256": "77f771d80d8953067b6867b1665d48abfc555e25f510d6e73c47a270d8c7d431"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/r30-arm-idle-r19.json",
+      "path": "report/reference_v2_performance/evidence/build/r30-arm-idle-r19.json",
+      "sha256": "729685d6aec0f927eb07ab16143e58243eda8b81d726c94ec8ea9508174c735e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/r30-arm-idle-r20.json",
+      "path": "report/reference_v2_performance/evidence/build/r30-arm-idle-r20.json",
+      "sha256": "42e23920ab164345f30cde777f59290b106e9760246efe2d2abcc3f2dca5a68b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/studio-v2/acceptance-summary.json",
+      "path": "report/reference_v2_performance/evidence/build/studio-v2/acceptance-summary.json",
+      "sha256": "a734f52b278b92f3add786fff23f472d93f2ddc987e115aab85516e9dfc6779d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/studio-v2/canvas-benchmark.json",
+      "path": "report/reference_v2_performance/evidence/build/studio-v2/canvas-benchmark.json",
+      "sha256": "7f2d0ff15a6d63965add3d426c52ed2f4e31b03573f9c445537e2313136a4bb7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/board_test_manifest.json",
+      "path": "report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/board_test_manifest.json",
+      "sha256": "e546fa5bd9c8d60bb5e069fa6023036f585c43bac18d5bc4bb6cb1f851889fa7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/c6v_candidate.hwh",
+      "path": "report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/c6v_candidate.hwh",
+      "sha256": "e2ce377e5fb94ba2eb277eb2defeb642e2e9359c6aa2aa0b6013bb9a4d8b49dd"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt",
+      "path": "report/reference_v2_performance/evidence/build/v2-release-repo/releases/v2.0/board_runtime/overlay/timing.rpt",
+      "sha256": "abd6edb3b215365b2310c5e34d5cf9d996dd6d81b38cef79e5f9fef972dfe172"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/build/voice-view-v2-github-release.json",
+      "path": "report/reference_v2_performance/evidence/build/voice-view-v2-github-release.json",
+      "sha256": "d2da4649a84bba4d63c950ea29f43c9bd6c1e847cea7398dce37b661c577cf6d"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-03_pynq-z2_gpu_parallel_optimization.md",
+      "sha256": "31a5813dcc5f267cbcb7b87edf6845fb1fde09030decfba102fa65efa5e0885f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-04_pynq-z2_gpu_upload_overlap_p4.md",
+      "sha256": "cf1f37f2100ecee213c23b2a616330f17d27d6da06bf905011a284c46613eab4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_pl_timing_repair.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_pl_timing_repair.md",
+      "sha256": "9f723fd8b59892f359880e83f4f8792a8812ddf733ab131e653dbbd3d6b89514"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_r20_board_test.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq-z2_r20_board_test.md",
+      "sha256": "b659d9be35656db1ee0aa56584c6186f437f91841f146cc7496bfcdccd67fdfa"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq_usb_hand_board.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-23_pynq_usb_hand_board.md",
+      "sha256": "437d1877d27d8666ebcd00fe19906080c69ff0daec1d1ac2a606e767cb494880"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_continuous_owner.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_continuous_owner.md",
+      "sha256": "391651a27f582d36ace103eca92b804d7343a433623ce36537093d3bba3cac1f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_source_clock_audit.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-25_hand_source_clock_audit.md",
+      "sha256": "daa028f57d36bd5d27a24deaf90bd8a05b2e0ba669f2adfa9b687982916899a4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_preview_demand_board.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-25_preview_demand_board.md",
+      "sha256": "64628d72daa62d25ea12fb7d6cc38597fef46cda9d75bc8ec12a648335cefd04"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-25_serial_hand_owner_offline.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-25_serial_hand_owner_offline.md",
+      "sha256": "f4d3ea329dccc6db9a4e233a31d7f81039e31091ff3f04a3c29f537dc551a574"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-26_r30_preview_idle.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-26_r30_preview_idle.md",
+      "sha256": "276f8b66ae4ebae6099668568a4cf0333d54f56883c25ed8effa81d17a7d4dfa"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-28_r60_pure_live.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-28_r60_pure_live.md",
+      "sha256": "551bf35ba9db549efd7dd4c0f1aa58cd8b06734cbe47a5eb1e3fe294875b0437"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-28_v2_canvas_menu.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-28_v2_canvas_menu.md",
+      "sha256": "4fcbf4efbb1d89a13db4bf1783ccf941eb457e7cc8a8ea92d573fe56d26cf4f4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/bringup/2026-10-29_v2_release.md",
+      "path": "report/reference_v2_performance/evidence/docs/bringup/2026-10-29_v2_release.md",
+      "sha256": "bf3aea27e787a42aa0c53bfa49c36f04086b4dd8d90e903f19ef1911359585f2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
+      "path": "report/reference_v2_performance/evidence/docs/gpu_ai_optimization_p0_p4_summary.md",
+      "sha256": "b4db39fe3e7bbefe357ce4ac3f57a30302c0aedda9a8b575370caf8b55c12587"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/scene2d_gpu_architecture.md",
+      "path": "report/reference_v2_performance/evidence/docs/scene2d_gpu_architecture.md",
+      "sha256": "fbd0f95942061dabbc5fb2f1fdfbc943b9f937f056efc78e96dcb595b7096580"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/docs/vision_latency_acceleration_plan_20261023.md",
+      "path": "report/reference_v2_performance/evidence/docs/vision_latency_acceleration_plan_20261023.md",
+      "sha256": "e93ec69e9b0d2920633bc36265dfcf9b1d8d822e191dd14d8e95b33f2da6bd94"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log",
+      "sha256": "9c6fb98497dd1d2190c2ab09b953bf769206badf570f80b7443cfd22ffcd4541"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-p3a-board-budget-fail-1791026983004/scene2d_draw_tile_layer.sv",
+      "path": "report/reference_v2_performance/evidence/results/gpu-p3a-board-budget-fail-1791026983004/scene2d_draw_tile_layer.sv",
+      "sha256": "d6d0d6a8c00bebf21b073254f2e86aee0cf31dced335f5b2894f44a650fb96b8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_0.log",
+      "sha256": "15462237aa3d6fc239a30d4b65b4c49ef9c9eda986edf54784ffe6c00ad4548e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_1.log",
+      "sha256": "c5cd86b903ea1a1036b37cf110eab6ac48b18fe6550da8df02154c544b336533"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_0.log",
+      "sha256": "5679c556eed4e482e5c3b26e78f99d2caad3b2c0d14b84a1785064feb905622e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_1.log",
+      "sha256": "822d53e1299c40eefa4af0a98171ad692d8a9a99198db8e763e7a190b91328c6"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_0.log",
+      "sha256": "985f71e7c99c03b1fe0b05bbdf33663cffd8defca010a65f2f47db0f08cdf45c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-stage4-verify-1791042086109/upload_overlap_1.log",
+      "sha256": "b76e6896af5d6fd7675ed97833ee879794d7f8fe575d911f69831ba7a5787bc0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_0.log",
+      "sha256": "a3b52f859eedcb3047c9250e72e360457e03babb9675a1afb1b103324769c2d0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/core_pair_1.log",
+      "sha256": "ec8db83815394343417c1ec2b71441ef315aa452708d6d41e81f9beb4675be87"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log",
+      "sha256": "a954dc1291f58c7ff071a22070c72784f5d775fe045b4b6913c9b1eef359b470"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_1.log",
+      "sha256": "677d831c8a785c397c984accb1e0fd39be257efbb9b490fc6f33292eb08e8c04"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_0.log",
+      "sha256": "c4aece41808f088a30e1f43e4670a8125ac7f7e24d262facdc4d055f4624f147"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_1.log",
+      "sha256": "647cfe8d67e95f331c39dd829e86345674b904627d7b50ffab716fd4bce80a13"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log",
+      "sha256": "0e62c02647e679cbeab3e024248161ec4e4d44787b50ced5304c50bf6226596c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_1.log",
+      "sha256": "5bc631eadc90cde4f417c5328d5a6b9fd7ef0fca5904e54f3352d67d9c5c7b61"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log",
+      "sha256": "981d9bd95e2ba4c3b095099c3e8135ee579650f1c1d90fad2720997c68af8c6c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_1.log",
+      "path": "report/reference_v2_performance/evidence/results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_1.log",
+      "sha256": "67c8eef44f3d5ace3d2df08d17472cd65c137139fc632e694930e62476ac9abb"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json",
+      "path": "report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h143-buttons-cpu-analysis.json",
+      "sha256": "c897fd620da1523cd6fa7f4e9868ae680a0f86a3e8590149357aee01d0f84cb8"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json",
+      "path": "report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h150-minimal-analysis.json",
+      "sha256": "58f563e48ee99cca12d48304d446261a7009f5359462cf4a6efed6d1b5c794bd"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json",
+      "path": "report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h164-lean-analysis.json",
+      "sha256": "dd916b8c078095a12d3f3946e27c12529777e8bd01de1d0e93068e6ec9dcf985"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h165b-lean-peaks.json",
+      "path": "report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h165b-lean-peaks.json",
+      "sha256": "a82a868a53a5a41f14bb7d8557edf4bff9f3fce35fb8e2bbac8cbe5cd7ac95c5"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h170-fixed-playback-pc-offline.json",
+      "path": "report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/board-20261023/h170-fixed-playback-pc-offline.json",
+      "sha256": "b13298aab24e98f9facd44fcd6ffcbcc052ffd099848279a8f489694d90461fa"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/continuous-owner-offline-20261025.json",
+      "path": "report/reference_v2_performance/evidence/subprojects/pynq_usb_hand/build/continuous-owner-offline-20261025.json",
+      "sha256": "65707fc0c2c9982a6d402ab406d514ab250063f33ebb3d17f8a07ee872690a08"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/01_optimization_route.png",
+      "path": "report/reference_v2_performance/figures/01_optimization_route.png",
+      "sha256": "38a0e646f25da2d62228d87ed732cc999979515a5f8c6b7c4fb669c6523b4a6e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/01_optimization_route.svg",
+      "path": "report/reference_v2_performance/figures/01_optimization_route.svg",
+      "sha256": "50437d57cc7276794cc3f0e468e7d9cf627837de196f626377663619b11157b0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/02_tile_ablation.png",
+      "path": "report/reference_v2_performance/figures/02_tile_ablation.png",
+      "sha256": "e8fb85ecf0d0f3e77bfc700a0c74fa6a7ae99f8e69437c3d758083ab7e48d962"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/02_tile_ablation.svg",
+      "path": "report/reference_v2_performance/figures/02_tile_ablation.svg",
+      "sha256": "a82663e7bd055caa598d75267892e9bdcc30ab96fcffb85081237893246329f4"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/03_workload_comparisons.png",
+      "path": "report/reference_v2_performance/figures/03_workload_comparisons.png",
+      "sha256": "23f78b43e63ac3eb5eecb0a8fa9bca4ebe3acc09d3309707e0089d32067838e2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/03_workload_comparisons.svg",
+      "path": "report/reference_v2_performance/figures/03_workload_comparisons.svg",
+      "sha256": "d5787593d912cf5253c5c8b0e3136ac1f1e53f188f9e01a4e4ecd5044d73aa9c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/04_resource_tradeoff.png",
+      "path": "report/reference_v2_performance/figures/04_resource_tradeoff.png",
+      "sha256": "472afa91a752be2b62219f17fc166894e55bacdb28fbb920116ebe89481d57c0"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/04_resource_tradeoff.svg",
+      "path": "report/reference_v2_performance/figures/04_resource_tradeoff.svg",
+      "sha256": "2021e9c4bfa4912054b378a0b0ada401f8a23c89ec6d65eac18b6cbe3e4ecf06"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/05_timing_margin.png",
+      "path": "report/reference_v2_performance/figures/05_timing_margin.png",
+      "sha256": "ba03c41328084881323a139e4ee9cec9287d1c590fe364c98e0d7209f0792360"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/05_timing_margin.svg",
+      "path": "report/reference_v2_performance/figures/05_timing_margin.svg",
+      "sha256": "7287b1561574b6375127152f367b58d61bde85b836da2752fff44e67b6689f1e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/06_overlap_correctness.png",
+      "path": "report/reference_v2_performance/figures/06_overlap_correctness.png",
+      "sha256": "c0a7f91c2c4163cfb5ad416449807b7ca23de9c88e788f84fcabb30b76496f6e"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/06_overlap_correctness.svg",
+      "path": "report/reference_v2_performance/figures/06_overlap_correctness.svg",
+      "sha256": "ed9988ee5b1a69a889278e91582d2ac48644795dbd4180380981b9a88d88c21b"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/07_vision_profile.png",
+      "path": "report/reference_v2_performance/figures/07_vision_profile.png",
+      "sha256": "7c1dcf5c075b3654e364cbc71a00fa210541dee2910727bcbe891284866b9189"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/07_vision_profile.svg",
+      "path": "report/reference_v2_performance/figures/07_vision_profile.svg",
+      "sha256": "f268e5ce533311bff4cbcd463fd4a91a30078d09d4c3e500342d486ac6a6f8d2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/08_vision_resource_budget.png",
+      "path": "report/reference_v2_performance/figures/08_vision_resource_budget.png",
+      "sha256": "af4adacd0d42786597dc8dc6b86bdcfcc7fef1bef65fe97d93d45a8e332626e2"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/08_vision_resource_budget.svg",
+      "path": "report/reference_v2_performance/figures/08_vision_resource_budget.svg",
+      "sha256": "c56da498be02b878353843ec621f59cda4a42f7d351f2aeb1c6ba16ddb4d46d3"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/09_hand_resource_observations.png",
+      "path": "report/reference_v2_performance/figures/09_hand_resource_observations.png",
+      "sha256": "4e0a429a0a823956297090d8e57fdbf11e65782eb43ab38425324eafbdc7519c"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/09_hand_resource_observations.svg",
+      "path": "report/reference_v2_performance/figures/09_hand_resource_observations.svg",
+      "sha256": "6dfa45c5486bf9de2d0ded9640b34fdf2cde40aadaa824ede2aa76c61d97deae"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/10_preview_idle_wakeups.png",
+      "path": "report/reference_v2_performance/figures/10_preview_idle_wakeups.png",
+      "sha256": "6bc37b99f8b2cd374e20385c9316744eae48b5c88158450e73be635390d62769"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/10_preview_idle_wakeups.svg",
+      "path": "report/reference_v2_performance/figures/10_preview_idle_wakeups.svg",
+      "sha256": "832fa36164f3c33c2df77a4f50707bab1d27afbca9b9fab3f2a32293dc164132"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/11_v2_final_comparison.png",
+      "path": "report/reference_v2_performance/figures/11_v2_final_comparison.png",
+      "sha256": "19ed278875bfeee77612cd4bab1d057aea0b7e0b008393e23d63d6e364b63d53"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/figures/11_v2_final_comparison.svg",
+      "path": "report/reference_v2_performance/figures/11_v2_final_comparison.svg",
+      "sha256": "2e18134038f486fce159cc06224572d094ac104d758557a4bc6a2f0d1c2d0ce7"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/performance_resource_report.pdf",
+      "path": "report/reference_v2_performance/performance_resource_report.pdf",
+      "sha256": "6082b058c9c3d1199bce0cebdc173c7d5cf1013a59d4f149a46cce1c197ef47f"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/README.txt",
+      "path": "report/reference_v2_performance/README.txt",
+      "sha256": "f656b2da2dde12285dad162a8b93177991e3c61768ffad72864c4b018e386c23"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/reference_v2_performance/tools/build_report.py",
+      "path": "report/reference_v2_performance/tools/build_report.py",
+      "sha256": "b51bff0d5e3608c2a5332548d05744ffc532481df0deaef268d7cf2f9ca91109"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/requirements/open_topic_guide.md",
+      "path": "report/requirements/open_topic_guide.md",
+      "sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/requirements/track_guide_2026.md",
+      "path": "report/requirements/track_guide_2026.md",
+      "sha256": "aa8c1880538663e106ed88d8a70fc864e6faa68a652f907d9b86a034cdfd0753"
+    },
+    {
+      "source": "report/technical_report_handoff_v3_20261101/materials/contest_v3/report/validation.md",
+      "path": "report/validation.md",
+      "sha256": "9a5eb5a7b469976803de522a7842307844d401d39640fc2a43d8b976f326dd7c"
+    },
+    {
+      "source": "contest_v3/report/presentation_plan/README.md",
+      "path": "report/presentation_plan/README.md",
+      "sha256": "6b16a2261895c8a783c4bcb0b03e74f7659f85b53c5dc29d47a75ec618303154"
+    },
+    {
+      "source": "contest_v3/report/presentation_plan/sources.json",
+      "path": "report/presentation_plan/sources.json",
+      "sha256": "6aef9301b8f2227b6009cd19f628d3ffb90a1138bec349c89a585d6bef00b5a5"
+    },
+    {
+      "source": "contest_v3/skill/format_check.json",
+      "path": "skill/format_check.json",
+      "sha256": "fdfe77429ecc6dd8088197ac1d656ab12c0993b5137b4c217d8f39c5340d773b"
+    },
+    {
+      "source": "contest_v3/skill/inventory.json",
+      "path": "skill/inventory.json",
+      "sha256": "442ac005476202b138090aab02a2a07d60eef2ceb96ab726d693d1fa4ccf90c9"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/LICENSE",
+      "path": "skill/pynq-debug-cards/LICENSE",
+      "sha256": "1927183113d3e8d83ee1face9fa7f2027b274ee0677a0831410e5017fcbdbce8"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/origins.json",
+      "path": "skill/pynq-debug-cards/origins.json",
+      "sha256": "65baa413196ac98afc03aa3dce90922d4fe8772b746998d0f8a7e019ec44215d"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/README.md",
+      "path": "skill/pynq-debug-cards/README.md",
+      "sha256": "5e8c689e545bb8f4bcfd30c15865c1baf8a6455a15b3274ec0e7e3afc4417c16"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/references/artifacts.md",
+      "path": "skill/pynq-debug-cards/references/artifacts.md",
+      "sha256": "7c5649dd002bb293c3bf9507a236b8fb5570c56eb99bba49b6f9355f248f32a7"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/references/handoff.md",
+      "path": "skill/pynq-debug-cards/references/handoff.md",
+      "sha256": "574ca1d033a3ba94927d9ed02f1c6c730d298204f9fece6da372bb28b221cc56"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/references/input.md",
+      "path": "skill/pynq-debug-cards/references/input.md",
+      "sha256": "56f7b628fcfc9cc6857fcb6e9972d4d0a4e85425585a8a2c1d0eba14824e8b2a"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/references/startup.md",
+      "path": "skill/pynq-debug-cards/references/startup.md",
+      "sha256": "f0a1e840a815540c2ccdcab6c269752eda71d99906f4b8de4385a674f1a25331"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/references/tools.md",
+      "path": "skill/pynq-debug-cards/references/tools.md",
+      "sha256": "29d2a31f574dee903aec0f315ab42d7e998172d2ba232ffa4fd3051991edc8ca"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/SKILL.md",
+      "path": "skill/pynq-debug-cards/SKILL.md",
+      "sha256": "b7983aa9e438cdc1bbadf5fd86f4553e2b3fe88615767c3fe88257fe66a0b584"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/export_pairing.txt",
+      "path": "skill/pynq-debug-cards/sources/export_pairing.txt",
+      "sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/export_validation.txt",
+      "path": "skill/pynq-debug-cards/sources/export_validation.txt",
+      "sha256": "9a5eb5a7b469976803de522a7842307844d401d39640fc2a43d8b976f326dd7c"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/latest_input.txt",
+      "path": "skill/pynq-debug-cards/sources/latest_input.txt",
+      "sha256": "5f7a7660b512045ace4a64406de88fee76269d39206ffa2006d4426aed46845c"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/menu_recovery.txt",
+      "path": "skill/pynq-debug-cards/sources/menu_recovery.txt",
+      "sha256": "a3b9178699f31ae3ca6272321b9d2ffdbb8e5a474461f348e18dde79ead33a63"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/preflight_cards.txt",
+      "path": "skill/pynq-debug-cards/sources/preflight_cards.txt",
+      "sha256": "5681d54c79fbdf9eb765e8236d24d8794353ceb54ba9924cfe43bbb5c36342a9"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/preflight_catalog.txt",
+      "path": "skill/pynq-debug-cards/sources/preflight_catalog.txt",
+      "sha256": "5f1e3133ffd40934e4d4fd0361827e4807b0f674edd7bdd7212d342cf1e53c46"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/preview_owner.txt",
+      "path": "skill/pynq-debug-cards/sources/preview_owner.txt",
+      "sha256": "b7bc998436af5e10e5ee9759b8f4ccf1d96fa2c8666168cb6a56aaddf438e48b"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/repeat_mmio.txt",
+      "path": "skill/pynq-debug-cards/sources/repeat_mmio.txt",
+      "sha256": "90c7bfee3034adfbe79167ad8bfca097389fac58e3cfe11fe26041e4e6662347"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/studio_start.txt",
+      "path": "skill/pynq-debug-cards/sources/studio_start.txt",
+      "sha256": "110150f295e3f6be05102d717a23bf874cee2dd329360e79a9bab57518b008b1"
+    },
+    {
+      "source": "contest_v3/skill/pynq-debug-cards/sources/unified_start.txt",
+      "path": "skill/pynq-debug-cards/sources/unified_start.txt",
+      "sha256": "7d38e235e10590c477fad428d18e100764d93c399d6c8c5dcc8deba648eca131"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/examples/bad_reset.sv",
+      "path": "skill/pynq-pl-preserve/examples/bad_reset.sv",
+      "sha256": "3a1cbe599a41c08eb8126287f2f5329ae3571f982e917a190e078bedf753b285"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/examples/candidate.sv",
+      "path": "skill/pynq-pl-preserve/examples/candidate.sv",
+      "sha256": "f06dff6aca495b6da32ad37c9b202dffc3f96c55d3a79d5e5b2438b188198d68"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/examples/config.json",
+      "path": "skill/pynq-pl-preserve/examples/config.json",
+      "sha256": "1186c00f7e263804212e42d0333342a5d0d3076e5cc03f93b1474c71d9aa3a3a"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/examples/config_bad.json",
+      "path": "skill/pynq-pl-preserve/examples/config_bad.json",
+      "sha256": "70b175f226b4c30cd6356492fe87ac17008ec200a17eede2a1bf21f16b0d7171"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/examples/original.sv",
+      "path": "skill/pynq-pl-preserve/examples/original.sv",
+      "sha256": "8bda008ea42122ae74ef4e9037d6e78794936709452bcedf7d09c2a9c0adc530"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/examples/tb.sv",
+      "path": "skill/pynq-pl-preserve/examples/tb.sv",
+      "sha256": "9c704dcc5127f5a07a323ebe19d71fbb30e233ee455fa543600acaa146ff361d"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/LICENSE",
+      "path": "skill/pynq-pl-preserve/LICENSE",
+      "sha256": "1927183113d3e8d83ee1face9fa7f2027b274ee0677a0831410e5017fcbdbce8"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/README.md",
+      "path": "skill/pynq-pl-preserve/README.md",
+      "sha256": "dba174e5b190bb471048543f69d8ffb43a92db63eeacc6b80743d4a97301a979"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/references/configuration.md",
+      "path": "skill/pynq-pl-preserve/references/configuration.md",
+      "sha256": "eb96abb25ae214fbb5be3577c66bbeef3a0560d47f8b86dd7c2f6c05c61c6750"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/scripts/preserve.py",
+      "path": "skill/pynq-pl-preserve/scripts/preserve.py",
+      "sha256": "7c515456ec527ea103aeea0f0ebb628d6efcf59873122c88d4831b384928672c"
+    },
+    {
+      "source": "contest_v3/skill/pynq-pl-preserve/SKILL.md",
+      "path": "skill/pynq-pl-preserve/SKILL.md",
+      "sha256": "4231599b748b11017da31ca4e80535bedb78deefdd341c4338c85566123e4b79"
+    },
+    {
+      "source": "contest_v3/skill/README.md",
+      "path": "skill/README.md",
+      "sha256": "b9fea7d3a1a9a4c4bb4f012c1a9b605c385102b7a405bb36a32f35603b8fd627"
+    },
+    {
+      "source": "contest_v3/skill/report.md",
+      "path": "skill/report.md",
+      "sha256": "d42df8ac86dda4565370a41b01dcdfa6ab3a451f7308d29ad61d99cccc3daf43"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration/manifest.json",
+      "path": "skill/validation/evidence/consumer/calibration/manifest.json",
+      "sha256": "51ed3ed8c8aba5b3dccc407f2879fcf586d3b0f15fe0f766a75ddbe16bf08579"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration/simulate.log",
+      "path": "skill/validation/evidence/consumer/calibration/simulate.log",
+      "sha256": "c202545afefcffdc94064c93c8fb8b2b40b61c1fc5a872ec70bca518f696b256"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration/verified.json",
+      "path": "skill/validation/evidence/consumer/calibration/verified.json",
+      "sha256": "60aea183b730be2abb6e1da53727e56d519bfbec0876c1d4db0d092f4deb192a"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration_build.log",
+      "path": "skill/validation/evidence/consumer/calibration_build.log",
+      "sha256": "2e34c3f59050e6b0c9885e4287c25b1930a80628769d8eeb087af4387bfd7c5b"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration_legacy/packet_receipt.json",
+      "path": "skill/validation/evidence/consumer/calibration_legacy/packet_receipt.json",
+      "sha256": "9165db50df29305310f202a6e39e7259ef0205ea34bdd8b7f58be705190a4a11"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration_legacy/simulate.log",
+      "path": "skill/validation/evidence/consumer/calibration_legacy/simulate.log",
+      "sha256": "978ff58f12804c43908b1f2103fbcd22fd25950df317a7d242e05f123bb37b2d"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration_legacy_vivado.log",
+      "path": "skill/validation/evidence/consumer/calibration_legacy_vivado.log",
+      "sha256": "a5f1a027cccba055aee8fe628b326b9f9940ef9a402523aaa03e6a8bf5e900ab"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration_verify.log",
+      "path": "skill/validation/evidence/consumer/calibration_verify.log",
+      "sha256": "c36db97afb403797c2e6f7f75d19ca578ba1519e7d27dd4be8d94db057413cc1"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/calibration_vivado.log",
+      "path": "skill/validation/evidence/consumer/calibration_vivado.log",
+      "sha256": "e8c7eeed9f5726e4f79945cddff42f4f106f941b93a2d04bc5ba38d7b3b184de"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/receipts.json",
+      "path": "skill/validation/evidence/consumer/receipts.json",
+      "sha256": "530af5295de1cb03c455b24f895e4050e88a477edfa4fb4ba62fdf0840190d91"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a/manifest.json",
+      "path": "skill/validation/evidence/consumer/variant_a/manifest.json",
+      "sha256": "bfb442897cfcb7e9c019c32567e62f623fd887ad837f6fe6afa57de2f89f6ae7"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a/simulate.log",
+      "path": "skill/validation/evidence/consumer/variant_a/simulate.log",
+      "sha256": "c202545afefcffdc94064c93c8fb8b2b40b61c1fc5a872ec70bca518f696b256"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a/verified.json",
+      "path": "skill/validation/evidence/consumer/variant_a/verified.json",
+      "sha256": "48399e20ce0e10ec0a4e4058c29aaafbafb1c6e01596e543fde04b471340fd8f"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a_build.log",
+      "path": "skill/validation/evidence/consumer/variant_a_build.log",
+      "sha256": "fe55c3433cb947db6131f5fe8a77b95e961461c8bbae3fc3f0d095ebc6130ebc"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a_legacy/packet_receipt.json",
+      "path": "skill/validation/evidence/consumer/variant_a_legacy/packet_receipt.json",
+      "sha256": "39196085fbe0f804ac64410fa657cb3ba0d45009a68a35a832c12f0b4f0ed5d3"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a_legacy/simulate.log",
+      "path": "skill/validation/evidence/consumer/variant_a_legacy/simulate.log",
+      "sha256": "978ff58f12804c43908b1f2103fbcd22fd25950df317a7d242e05f123bb37b2d"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a_legacy_vivado.log",
+      "path": "skill/validation/evidence/consumer/variant_a_legacy_vivado.log",
+      "sha256": "4030eaf98b250c8a2bcbbb1e212d2067eb9a5d06a2f62ce2fcaf733660932507"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a_verify.log",
+      "path": "skill/validation/evidence/consumer/variant_a_verify.log",
+      "sha256": "cc009e55afe8174fa6cb381d7eea55013da0f577e0e93a259e7d045ad8edfe6d"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_a_vivado.log",
+      "path": "skill/validation/evidence/consumer/variant_a_vivado.log",
+      "sha256": "57115318d44674f1b6b820e4f78a2d2b99d54ad37aef47019fb424bc3d4eba77"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b/manifest.json",
+      "path": "skill/validation/evidence/consumer/variant_b/manifest.json",
+      "sha256": "3f71e9d0df9658625a416bf0e478f58e209852836e7cbd1291d750301cd13a89"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b/simulate.log",
+      "path": "skill/validation/evidence/consumer/variant_b/simulate.log",
+      "sha256": "6975dbcb65170f5a6fb775f559ea05f5b80ec4d59f669743ba99a35fd7b55b43"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b_build.log",
+      "path": "skill/validation/evidence/consumer/variant_b_build.log",
+      "sha256": "25d0c2d9e3fc8cdd99871267e10338bea32d7aa5a05243e0a92023f4f36b1a75"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b_legacy/packet_receipt.json",
+      "path": "skill/validation/evidence/consumer/variant_b_legacy/packet_receipt.json",
+      "sha256": "07932f831aa6ccedbc79d87e04e6dec94359f8e4377596ae54cc8c4cb9c622d4"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b_legacy/simulate.log",
+      "path": "skill/validation/evidence/consumer/variant_b_legacy/simulate.log",
+      "sha256": "978ff58f12804c43908b1f2103fbcd22fd25950df317a7d242e05f123bb37b2d"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b_legacy_vivado.log",
+      "path": "skill/validation/evidence/consumer/variant_b_legacy_vivado.log",
+      "sha256": "e120aebb9baf1e4d98f639e2f62965bf63c7362eae5e2ba17ad339f1793c24a4"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b_verify.log",
+      "path": "skill/validation/evidence/consumer/variant_b_verify.log",
+      "sha256": "cad725c2b00cf4074d9e953c265624497b17a15a9e7f2dde733787cf6443f011"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/consumer/variant_b_vivado.log",
+      "path": "skill/validation/evidence/consumer/variant_b_vivado.log",
+      "sha256": "d518d3c3c7296fd38f60a7f7a7e036a5ca510acbb0ab397a05ca36d266ba7a89"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/calibration_build.log",
+      "path": "skill/validation/evidence/delivery_replay/calibration_build.log",
+      "sha256": "9aa82c251dd1a1b85621f2cbe0bf5adf53a56921884baafa08da5478e535d246"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/calibration_legacy_simulate.log",
+      "path": "skill/validation/evidence/delivery_replay/calibration_legacy_simulate.log",
+      "sha256": "81117bf8d216fa88090fbe4bfd8978d9e44030e7e50370e4e38855b5374e768e"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/calibration_legacy_vivado.log",
+      "path": "skill/validation/evidence/delivery_replay/calibration_legacy_vivado.log",
+      "sha256": "4907b20eed15dbb84b1cca8f1d66f0b6015f66091172f34539c5564d7141a508"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/calibration_simulate.log",
+      "path": "skill/validation/evidence/delivery_replay/calibration_simulate.log",
+      "sha256": "8ab059c59818f10c31c149234d4f6ff8faa0b092c5575ae9916aedaed4c785ec"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/calibration_verify.log",
+      "path": "skill/validation/evidence/delivery_replay/calibration_verify.log",
+      "sha256": "35f11d6acd579240c1c9564239a5fa06cfe9ddd3fcdc01f17290957011f610bf"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/calibration_vivado.log",
+      "path": "skill/validation/evidence/delivery_replay/calibration_vivado.log",
+      "sha256": "a24b5d41292a929c4555de923d1c749520bbe83fe8aeaf44f122d4a9f5e60002"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/receipts.json",
+      "path": "skill/validation/evidence/delivery_replay/receipts.json",
+      "sha256": "20f625474fe0ac0195f22a89809b95596b8dd952870831f2741f5a0c05a2f9ed"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/result.json",
+      "path": "skill/validation/evidence/delivery_replay/result.json",
+      "sha256": "5c2ef1672321b3e1acd3f7a167a82d04de7825fce7394ce65419357d7da873de"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_a_build.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_a_build.log",
+      "sha256": "0ac1e43f8f5dc2f9fe15bb82ef7870764626707876cecb6a71588f647b714e18"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_a_legacy_simulate.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_a_legacy_simulate.log",
+      "sha256": "81117bf8d216fa88090fbe4bfd8978d9e44030e7e50370e4e38855b5374e768e"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_a_legacy_vivado.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_a_legacy_vivado.log",
+      "sha256": "49d95c3f97ea0fb31851450b5370b814b34315e9a265c5c7d45af2e1c33aec82"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_a_simulate.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_a_simulate.log",
+      "sha256": "8ab059c59818f10c31c149234d4f6ff8faa0b092c5575ae9916aedaed4c785ec"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_a_verify.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_a_verify.log",
+      "sha256": "b486669da44d3c4b37b085cb0480c5b8893d06284bcd860cc9b06cd1bf54ee86"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_a_vivado.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_a_vivado.log",
+      "sha256": "5fcefc74820e8d32575cf7f8370b6941927c434a71b6924b56c42231ccb3303f"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_b_build.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_b_build.log",
+      "sha256": "62f08dffe4b588759f29a31fd4a56fa7592e02dc8820c5dc595d90e0f4854f5d"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_b_legacy_simulate.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_b_legacy_simulate.log",
+      "sha256": "81117bf8d216fa88090fbe4bfd8978d9e44030e7e50370e4e38855b5374e768e"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_b_legacy_vivado.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_b_legacy_vivado.log",
+      "sha256": "8056a3e1ef1723b8dd6f4d5bda7111fb98d52e8d5b61b8d0cd7aff0c570b3f2e"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_b_simulate.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_b_simulate.log",
+      "sha256": "378299d9ad606021e3aa9711cfd0855c2571a4405b33a0e913adfc1fb042ef33"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_b_verify.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_b_verify.log",
+      "sha256": "965188d496a3658de94e966e7a0e33515d5e427e3c5eb98e5da5620c37119769"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/delivery_replay/variant_b_vivado.log",
+      "path": "skill/validation/evidence/delivery_replay/variant_b_vivado.log",
+      "sha256": "f38c83dd0c81cb04a0a8b3afe9f2830410d7f41b25339d4132c84df576755de5"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/official_source.json",
+      "path": "skill/validation/evidence/official_source.json",
+      "sha256": "1cc2fba3d94d714490e4f6dcc945134d5dce0da1486f4b30b81b7e19ac6c7c71"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/baseline_ooc/post_synth_timing.rpt",
+      "path": "skill/validation/evidence/return_source/baseline_ooc/post_synth_timing.rpt",
+      "sha256": "6bb562a624bc4b28d2a914bc56a7904a5eba8dfdbaa1e58d30145f4dbc0be3b3"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/baseline_ooc/utilization.rpt",
+      "path": "skill/validation/evidence/return_source/baseline_ooc/utilization.rpt",
+      "sha256": "5d72f1a01d085cca8c3534803612bc3183c0e6ea7739e8b9f9ede7489cce4db7"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/boundary_preserve/simulate.log",
+      "path": "skill/validation/evidence/return_source/boundary_preserve/simulate.log",
+      "sha256": "be924a582f790ddedd1e6417d080a0ffdfcf071df78083c479bfa364c180adf5"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/boundary_preserve/verified.json",
+      "path": "skill/validation/evidence/return_source/boundary_preserve/verified.json",
+      "sha256": "7c0734d7691e979df3b32e16c096dc890a72f96b921cf43061f3dd23253c5599"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/candidate_ooc/post_synth_timing.rpt",
+      "path": "skill/validation/evidence/return_source/candidate_ooc/post_synth_timing.rpt",
+      "sha256": "316982d5b46b6d3b174751ac461363c8f8960285b04253ec8754de09ef9e2a2a"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/candidate_ooc/utilization.rpt",
+      "path": "skill/validation/evidence/return_source/candidate_ooc/utilization.rpt",
+      "sha256": "56bd93f66775b4f0d847c7ccce68f321f8a6961b3a36220b11a7218dd53e463e"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/original_preserve/simulate.log",
+      "path": "skill/validation/evidence/return_source/original_preserve/simulate.log",
+      "sha256": "ca757ccae886b523f38f0165d5ed147760178548d7f5309b97c37cb8d5033416"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/original_preserve/verified.json",
+      "path": "skill/validation/evidence/return_source/original_preserve/verified.json",
+      "sha256": "b975b077440d6da748a5dd670b8e84b8ce74b1d775f92577b5109f7025c17f66"
+    },
+    {
+      "source": "contest_v3/skill/validation/evidence/return_source/results.json",
+      "path": "skill/validation/evidence/return_source/results.json",
+      "sha256": "e7149170073484256c9a17e38fea7d7832727a8983cfb8093e45cfb2e915906c"
+    },
+    {
+      "source": "contest_v3/skill/validation/inputs/original.sv",
+      "path": "skill/validation/inputs/original.sv",
+      "sha256": "4e44160291a28fa3d0e443870fed336d3495be6bf9e345fad44b1b2f6c908a5a"
+    },
+    {
+      "source": "contest_v3/skill/validation/inputs/tb.sv",
+      "path": "skill/validation/inputs/tb.sv",
+      "sha256": "960873725497f3b9002cbc2feb03ff86cdf891b28ac338574e7ecc9159e45c48"
+    },
+    {
+      "source": "contest_v3/skill/validation/inputs/variant_a.sv",
+      "path": "skill/validation/inputs/variant_a.sv",
+      "sha256": "512d04f0509c1dff70df25ec9b7ba32343143db6c6d0261cfd40944e48420016"
+    },
+    {
+      "source": "contest_v3/skill/validation/inputs/variant_b.sv",
+      "path": "skill/validation/inputs/variant_b.sv",
+      "sha256": "91ab838785a1ba0743edf0a1067d937d26ec002d2035ca1bc9fc053680757ce8"
+    },
+    {
+      "source": "contest_v3/skill/validation/provenance.json",
+      "path": "skill/validation/provenance.json",
+      "sha256": "e546004c1d845a1d1216cba79516324c22be6a0b814ed746366785ff5a3be39f"
+    },
+    {
+      "source": "contest_v3/skill/validation/README.md",
+      "path": "skill/validation/README.md",
+      "sha256": "45919ecf81bbf9d2f1198e09a16bd997714613077ef3edab41443ccb56ed8860"
+    },
+    {
+      "source": "contest_v3/skill/validation/run_validation.py",
+      "path": "skill/validation/run_validation.py",
+      "sha256": "772713efe77768a2559e02cc8f7de62284b3a13189ab1698897b2f19209a9a6f"
+    },
+    {
+      "source": "contest_v3/skill/validation/verify_files.py",
+      "path": "skill/validation/verify_files.py",
+      "sha256": "ad6678628acd70a7621babbb9b3ed556f44fb5e2b6e9149db5090f16cae38058"
+    },
+    {
+      "source": "contest_v3/tools/build_gpu_handoff.py",
+      "path": "tools/build_gpu_handoff.py",
+      "sha256": "9261d32073ed9d4d8db5475408a0ab3b743ec4097cdb8b702e93a103af4efdf0"
+    },
+    {
+      "source": "contest_v3/tools/build_hand_handoff.py",
+      "path": "tools/build_hand_handoff.py",
+      "sha256": "41c670cc11c1718aa5d368c19bad95a1a3eae9cc28e49f10a39f58dd881dd487"
+    },
+    {
+      "source": "contest_v3/tools/build_vision_handoff.py",
+      "path": "tools/build_vision_handoff.py",
+      "sha256": "a11d2bf88af926b3a1581de7b2dc0566d7420992b7098fe7d347caf10c3738ae"
+    },
+    {
+      "source": "contest_v3/tools/check_hardware.py",
+      "path": "tools/check_hardware.py",
+      "sha256": "10f73c693da4845e3be6c06d6b6746887e26a0d188fee315cb5c764a2de3f1bb"
+    },
+    {
+      "source": "contest_v3/tools/check_runtime.py",
+      "path": "tools/check_runtime.py",
+      "sha256": "7f1731cf86df39f0f8f43fea2b6226a219fee0c4394953fd09e59e28a511d292"
+    },
+    {
+      "source": "contest_v3/tools/draw_gpu_buffer_timing.py",
+      "path": "tools/draw_gpu_buffer_timing.py",
+      "sha256": "16d354ec5ca7b81694c936fbe82be6919c1d7d9078dc0d53892db8445b525dbc"
+    },
+    {
+      "source": "contest_v3/tools/draw_hand_communication.py",
+      "path": "tools/draw_hand_communication.py",
+      "sha256": "fafdd96b3f4f87a1672fe06d3f39555cda6228c8f6ab4975f89f4528b78cbc6c"
+    },
+    {
+      "source": "contest_v3/tools/draw_pl_ps_system.py",
+      "path": "tools/draw_pl_ps_system.py",
+      "sha256": "b0f791e9f129062085fce7a8723075b5d7b4fc84414159df689e892ec948c920"
+    },
+    {
+      "source": "contest_v3/tools/draw_vision_dual_follow.py",
+      "path": "tools/draw_vision_dual_follow.py",
+      "sha256": "3addc2997c141f172e526523a937b5b23a243ce70403b13402ae4c9784768aea"
+    },
+    {
+      "source": "contest_v3/tools/plot_hand_comparison.py",
+      "path": "tools/plot_hand_comparison.py",
+      "sha256": "8827b26927fb1dd1f0769f52628cbc390982f914a4dd0edfbfee5ac82f91d5cc"
+    },
+    {
+      "source": "contest_v3/tools/render_system_diagram.py",
+      "path": "tools/render_system_diagram.py",
+      "sha256": "edd3b20b945a2628e0ddafea1201d590924bae363934853d7e0905d8ef4c5f0c"
+    },
+    {
+      "source": "contest_v3/tools/render_vision_diagram.py",
+      "path": "tools/render_vision_diagram.py",
+      "sha256": "61f9c5a4ef82589fb3c52a8b96d7896050879227a350ca686acf5f91e409b32b"
+    },
+    {
+      "source": "contest_v3/tools/run_offline_tests.py",
+      "path": "tools/run_offline_tests.py",
+      "sha256": "8742ddef21cc2dcc257656bd00a5d872c47696d93e825ce57bfa364227633c96"
+    },
+    {
+      "source": "contest_v3/tools/start_studio.py",
+      "path": "tools/start_studio.py",
+      "sha256": "58a59af78f3bad6f3133fa43069a6e289fd565be01c5fe7dfd0300038efdadba"
+    },
+    {
+      "source": "contest_v3/tools/verify_gpu_figure.py",
+      "path": "tools/verify_gpu_figure.py",
+      "sha256": "454febbc6b7c93bbb56733727c2b1a442f7584470a8f8cb17d094c976bb2df2f"
+    },
+    {
+      "source": "contest_v3/tools/verify_package.py",
+      "path": "tools/verify_package.py",
+      "sha256": "24e9bd91d50d394b3c893ac6a5d43c072b6c3601d71bb13d7118f0de1eeb7009"
+    },
+    {
+      "source": "contest_v3/tools/verify_vision_figure.py",
+      "path": "tools/verify_vision_figure.py",
+      "sha256": "5ac8b5c927086b3fc81e8966703613e98f09c3858f8f027b6c98df54849f6f9e"
+    },
+    {
+      "source": "contest_v3/README.md",
+      "path": "README.md",
+      "sha256": "7899049eb9101aef753a7f4a4078e172f6236e623619d630c1b1c84b594fdb41"
+    },
+    {
+      "source": "报告模板.docx",
+      "path": "report/templates/official_report_template.docx",
+      "sha256": "8f6212ce98b76ffff6c1206cff42b69230cd985092728e1ae0dc277fbba1379d"
+    }
+  ],
+  "template_sha256": "8f6212ce98b76ffff6c1206cff42b69230cd985092728e1ae0dc277fbba1379d",
+  "note": "Copied source snapshot hashes; project-facing README/licensing/navigation are editorially updated afterward."
+}

@@ -1,0 +1,46 @@
+{
+  "status": "SHADOW_OBSERVED",
+  "pid": 130836,
+  "session": "96892361a4c146818175f87b92df0d27",
+  "game_run": "silent-game",
+  "stop_reason": "stale_source",
+  "frames": 4,
+  "invalid_frames": 0,
+  "gestures": {
+    "paper": 4
+  },
+  "events": [
+    {
+      "frame": 42,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 44,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 46,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 48,
+      "gesture": "paper",
+      "valid": true
+    }
+  ],
+  "max_source_age_seconds": 0.05220470001222566,
+  "wall_seconds": 1.3242622999823652,
+  "freshness_budget_seconds": 1.0,
+  "max_interarrival_seconds": 0.12197819998255,
+  "stale_packets_dropped": 0,
+  "max_stale_packet_age_seconds": 0.0,
+  "age_at_stop_seconds": 1.0098378999973647,
+  "cpu_seconds": 0.0,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

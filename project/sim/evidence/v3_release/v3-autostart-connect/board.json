@@ -1,0 +1,73 @@
+{
+  "ssh_ready": true,
+  "boot_id": "246a9fbd-566a-45fd-a371-8b2e36ad31fa",
+  "installed": {
+    "root": "/home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13",
+    "manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+    "files": 651,
+    "command": [
+      "/usr/local/share/pynq-venv/bin/python",
+      "-B",
+      "-u",
+      "/home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/start_board_test.py",
+      "--hand-readonly-root",
+      "/home/xilinx/voice-view-game/studio-system-a837b5d54ae94461a8861f64a63c0f13/hand-runtime",
+      "--hand-readonly-python",
+      "/home/xilinx/pynq-usb-hand/board-20261023-r01/venv/bin/python",
+      "--hand-readonly-port",
+      "/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B79030971-if00",
+      "--hand-serial-actions",
+      "--hand-stage-waits",
+      "3",
+      "3",
+      "3",
+      "--hand-approval-seconds",
+      "3"
+    ],
+    "hand_enabled": true,
+    "hand_requested": true,
+    "hand_note": null,
+    "transaction": "6823d3ff6b5f47daba8095c69ac6dc59",
+    "boot_id": "246a9fbd-566a-45fd-a371-8b2e36ad31fa",
+    "pid": 732,
+    "start_ticks": "14868",
+    "started": 1791969624.2956321,
+    "autostart": true,
+    "boot_readiness": {
+      "ready": true,
+      "units": [
+        {
+          "unit": "bootpy.service",
+          "MainPID": "0",
+          "Result": "success",
+          "LoadState": "loaded",
+          "ActiveState": "inactive"
+        },
+        {
+          "unit": "clear_pl_statefile.service",
+          "MainPID": "0",
+          "Result": "success",
+          "LoadState": "loaded",
+          "ActiveState": "inactive"
+        }
+      ]
+    }
+  },
+  "running": true,
+  "runtime_available": true,
+  "loader_busy": false,
+  "loader_pid": null,
+  "service": {
+    "MainPID": "732",
+    "Result": "success",
+    "ActiveState": "active",
+    "SubState": "running"
+  },
+  "hand_default": true,
+  "startup_stage": "\u8fde\u63a5 Agent",
+  "startup_error": null,
+  "hand_available": true,
+  "addresses": [
+    "192.168.2.99"
+  ]
+}

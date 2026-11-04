@@ -1,0 +1,206 @@
+[
+  {
+    "label": "calibration_build",
+    "argv": [
+      "E:\\Users\\developer\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\pynq-pl-preserve\\scripts\\preserve.py",
+      "build",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration.json",
+      "--out",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\validation",
+    "exit_code": 0,
+    "log": "calibration_build.log",
+    "log_sha256": "9aa82c251dd1a1b85621f2cbe0bf5adf53a56921884baafa08da5478e535d246"
+  },
+  {
+    "label": "calibration_vivado",
+    "argv": [
+      "D:/Xilinx/Vivado/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration\\vivado.log",
+      "-source",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration\\run.tcl"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration",
+    "exit_code": 0,
+    "log": "calibration_vivado.log",
+    "log_sha256": "a24b5d41292a929c4555de923d1c749520bbe83fe8aeaf44f122d4a9f5e60002"
+  },
+  {
+    "label": "calibration_verify",
+    "argv": [
+      "E:\\Users\\developer\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\pynq-pl-preserve\\scripts\\preserve.py",
+      "verify",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\validation",
+    "exit_code": 0,
+    "log": "calibration_verify.log",
+    "log_sha256": "35f11d6acd579240c1c9564239a5fa06cfe9ddd3fcdc01f17290957011f610bf"
+  },
+  {
+    "label": "calibration_legacy_vivado",
+    "argv": [
+      "D:/Xilinx/Vivado/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration_legacy\\vivado.log",
+      "-source",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration_legacy\\run.tcl"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\calibration_legacy",
+    "exit_code": 0,
+    "log": "calibration_legacy_vivado.log",
+    "log_sha256": "4907b20eed15dbb84b1cca8f1d66f0b6015f66091172f34539c5564d7141a508"
+  },
+  {
+    "label": "variant_a_build",
+    "argv": [
+      "E:\\Users\\developer\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\pynq-pl-preserve\\scripts\\preserve.py",
+      "build",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a.json",
+      "--out",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\validation",
+    "exit_code": 0,
+    "log": "variant_a_build.log",
+    "log_sha256": "0ac1e43f8f5dc2f9fe15bb82ef7870764626707876cecb6a71588f647b714e18"
+  },
+  {
+    "label": "variant_a_vivado",
+    "argv": [
+      "D:/Xilinx/Vivado/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a\\vivado.log",
+      "-source",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a\\run.tcl"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a",
+    "exit_code": 0,
+    "log": "variant_a_vivado.log",
+    "log_sha256": "5fcefc74820e8d32575cf7f8370b6941927c434a71b6924b56c42231ccb3303f"
+  },
+  {
+    "label": "variant_a_verify",
+    "argv": [
+      "E:\\Users\\developer\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\pynq-pl-preserve\\scripts\\preserve.py",
+      "verify",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\validation",
+    "exit_code": 0,
+    "log": "variant_a_verify.log",
+    "log_sha256": "b486669da44d3c4b37b085cb0480c5b8893d06284bcd860cc9b06cd1bf54ee86"
+  },
+  {
+    "label": "variant_a_legacy_vivado",
+    "argv": [
+      "D:/Xilinx/Vivado/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a_legacy\\vivado.log",
+      "-source",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a_legacy\\run.tcl"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_a_legacy",
+    "exit_code": 0,
+    "log": "variant_a_legacy_vivado.log",
+    "log_sha256": "49d95c3f97ea0fb31851450b5370b814b34315e9a265c5c7d45af2e1c33aec82"
+  },
+  {
+    "label": "variant_b_build",
+    "argv": [
+      "E:\\Users\\developer\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\pynq-pl-preserve\\scripts\\preserve.py",
+      "build",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b.json",
+      "--out",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\validation",
+    "exit_code": 0,
+    "log": "variant_b_build.log",
+    "log_sha256": "62f08dffe4b588759f29a31fd4a56fa7592e02dc8820c5dc595d90e0f4854f5d"
+  },
+  {
+    "label": "variant_b_vivado",
+    "argv": [
+      "D:/Xilinx/Vivado/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b\\vivado.log",
+      "-source",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b\\run.tcl"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b",
+    "exit_code": 0,
+    "log": "variant_b_vivado.log",
+    "log_sha256": "f38c83dd0c81cb04a0a8b3afe9f2830410d7f41b25339d4132c84df576755de5"
+  },
+  {
+    "label": "variant_b_verify",
+    "argv": [
+      "E:\\Users\\developer\\anaconda3\\python.exe",
+      "-X",
+      "utf8",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\pynq-pl-preserve\\scripts\\preserve.py",
+      "verify",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\skill\\validation",
+    "exit_code": 1,
+    "log": "variant_b_verify.log",
+    "log_sha256": "965188d496a3658de94e966e7a0e33515d5e427e3c5eb98e5da5620c37119769"
+  },
+  {
+    "label": "variant_b_legacy_vivado",
+    "argv": [
+      "D:/Xilinx/Vivado/2026.1/Vivado/bin/vivado.bat",
+      "-mode",
+      "batch",
+      "-nojournal",
+      "-log",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b_legacy\\vivado.log",
+      "-source",
+      "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b_legacy\\run.tcl"
+    ],
+    "cwd": "E:\\projects\\fpga\\voice-view-game\\b\\skill_delivery_r01\\run\\variant_b_legacy",
+    "exit_code": 0,
+    "log": "variant_b_legacy_vivado.log",
+    "log_sha256": "8056a3e1ef1723b8dd6f4d5bda7111fb98d52e8d5b61b8d0cd7aff0c570b3f2e"
+  }
+]

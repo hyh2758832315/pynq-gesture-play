@@ -1,0 +1,102 @@
+﻿{
+  "status": "SHADOW_OBSERVED",
+  "pid": 905,
+  "session": "1e290ae6a06b43c681c3242c507fc7fd",
+  "game_run": "772b22bdadcf40079f05f3f1ac4566bb",
+  "stop_reason": "stale_source",
+  "frames": 71,
+  "invalid_frames": 0,
+  "gestures": {
+    "None": 9,
+    "fist": 62
+  },
+  "events": [
+    {
+      "frame": 564,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 565,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 567,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 569,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 570,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 571,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 572,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 573,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 574,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 575,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 576,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 577,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 578,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 579,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 580,
+      "gesture": "fist",
+      "valid": true
+    },
+    {
+      "frame": 581,
+      "gesture": "fist",
+      "valid": true
+    }
+  ],
+  "max_source_age_seconds": 0.35046199500004604,
+  "wall_seconds": 8.40592501599997,
+  "cpu_seconds": 0.17330694300000005,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

@@ -1,0 +1,248 @@
+{
+  "date": "2026-11-04",
+  "attribution": "",
+  "sources": {
+    "preflight_cards": {
+      "project_path": "skill-atomic/provenance/source-0.6.6/references/evidence-cases.md",
+      "snapshot": "sources/preflight_cards.txt",
+      "sha256": "0d157d3225aa8e3e05bad7be5d09f2c79ebdac557c034e91453c90193ffdce78",
+      "bytes": 3846,
+      "original_sha256": "5681d54c79fbdf9eb765e8236d24d8794353ceb54ba9924cfe43bbb5c36342a9",
+      "representation": "technical_summary"
+    },
+    "preflight_catalog": {
+      "project_path": "skill-atomic/provenance/source-0.6.6/references/evidence_catalog.json",
+      "snapshot": "sources/preflight_catalog.txt",
+      "sha256": "f3f79d269f02a7869f31a36f6c654a937602e62b4251e6126300c83c92f5bf91",
+      "bytes": 2350,
+      "original_sha256": "5f1e3133ffd40934e4d4fd0361827e4807b0f674edd7bdd7212d342cf1e53c46",
+      "representation": "technical_summary"
+    },
+    "unified_start": {
+      "project_path": "docs/bringup/2026-10-30_v3_unified_start.md",
+      "snapshot": "sources/unified_start.txt",
+      "sha256": "1da3c2690db4856dcee06b4389260fecde43dc7a2bb63ff5f6fec9796cac42a6",
+      "bytes": 631,
+      "original_sha256": "7d38e235e10590c477fad428d18e100764d93c399d6c8c5dcc8deba648eca131",
+      "representation": "technical_summary"
+    },
+    "studio_start": {
+      "project_path": "docs/bringup/2026-10-30_studio_board_bootstrap.md",
+      "snapshot": "sources/studio_start.txt",
+      "sha256": "cca24a01fdf2ddbee16d30c83e1f3c0b00e66534ba835dfe785839cc4d24468a",
+      "bytes": 544,
+      "original_sha256": "110150f295e3f6be05102d717a23bf874cee2dd329360e79a9bab57518b008b1",
+      "representation": "technical_summary"
+    },
+    "menu_recovery": {
+      "project_path": "docs/bringup/2026-10-30_menu_video_recovery.md",
+      "snapshot": "sources/menu_recovery.txt",
+      "sha256": "9a31105b63e9ebd2b6b8534a30a8feb30b2bbe5b9965068dd727029e8294a021",
+      "bytes": 619,
+      "original_sha256": "a3b9178699f31ae3ca6272321b9d2ffdbb8e5a474461f348e18dde79ead33a63",
+      "representation": "technical_summary"
+    },
+    "preview_owner": {
+      "project_path": "docs/bringup/2026-10-30_preview_exclusive.md",
+      "snapshot": "sources/preview_owner.txt",
+      "sha256": "29d7c2d1b4f7be84580793a5a2e978d28c16a0b222376c01333f7e8765b0f825",
+      "bytes": 679,
+      "original_sha256": "b7bc998436af5e10e5ee9759b8f4ccf1d96fa2c8666168cb6a56aaddf438e48b",
+      "representation": "technical_summary"
+    },
+    "latest_input": {
+      "project_path": "docs/bringup/2026-10-30_hand_latest_boundary_simulation.md",
+      "snapshot": "sources/latest_input.txt",
+      "sha256": "43043dccf0d885eccbecf2f130c644f90217c27c7729a540c384c587a023d101",
+      "bytes": 1056,
+      "original_sha256": "5f7a7660b512045ace4a64406de88fee76269d39206ffa2006d4426aed46845c",
+      "representation": "technical_summary"
+    },
+    "repeat_mmio": {
+      "project_path": "docs/bringup/2026-10-24_r20_r22_second_mmio_comparison.md",
+      "snapshot": "sources/repeat_mmio.txt",
+      "sha256": "391257895887aefa3e758b51feabdd70a09d000b1fafd4e52634fc0aa0ed8efb",
+      "bytes": 498,
+      "original_sha256": "90c7bfee3034adfbe79167ad8bfca097389fac58e3cfe11fe26041e4e6662347",
+      "representation": "technical_summary"
+    },
+    "export_pairing": {
+      "project_path": "contest_v3/sim/evidence/export_pairing.json",
+      "snapshot": "sources/export_pairing.txt",
+      "sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee",
+      "bytes": 240,
+      "original_sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee",
+      "representation": "measurement_receipt"
+    },
+    "export_validation": {
+      "project_path": "contest_v3/report/validation.md",
+      "snapshot": "sources/export_validation.txt",
+      "sha256": "3196aa9d0c422f6ddde004c53caec5c01a0cbc7137b489624db36c7ec8e2b507",
+      "bytes": 489,
+      "original_sha256": "9a5eb5a7b469976803de522a7842307844d401d39640fc2a43d8b976f326dd7c",
+      "representation": "technical_summary"
+    }
+  },
+  "cards": [
+    {
+      "id": "E01",
+      "title": "阶段变了，命令却被判重",
+      "file": "references/tools.md",
+      "anchor": "e01",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E02",
+      "title": "工具成功，但仿真或实现仍失败",
+      "file": "references/tools.md",
+      "anchor": "e02",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E03",
+      "title": "有计划却找不到计划，或拿错会话",
+      "file": "references/tools.md",
+      "anchor": "e03",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E04",
+      "title": "命令或选项在当前版本被拒绝",
+      "file": "references/tools.md",
+      "anchor": "e04",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E05",
+      "title": "文件存在，但综合仍找不到 header",
+      "file": "references/artifacts.md",
+      "anchor": "e05",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E06",
+      "title": "BD 已改，HWH 还是旧地址",
+      "file": "references/artifacts.md",
+      "anchor": "e06",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E07",
+      "title": "下载前出现 UnknownInputFileExtension",
+      "file": "references/artifacts.md",
+      "anchor": "e07",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E08",
+      "title": "HWH 有 IRQ，运行对象却没有",
+      "file": "references/artifacts.md",
+      "anchor": "e08",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H20",
+      "title": "导出的 XSA 带了中间版本 bit",
+      "file": "references/artifacts.md",
+      "anchor": "h20",
+      "source": "export_validation",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E09",
+      "title": "初始化较慢，被当成运行失败",
+      "file": "references/startup.md",
+      "anchor": "e09",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E10",
+      "title": "PC 能运行，板端缺依赖",
+      "file": "references/startup.md",
+      "anchor": "e10",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E12",
+      "title": "测试入口通过，日常入口却不能用",
+      "file": "references/startup.md",
+      "anchor": "e12",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H13",
+      "title": "Errno 11、一直重连或重复启动",
+      "file": "references/startup.md",
+      "anchor": "h13",
+      "source": "unified_start",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H14",
+      "title": "点击启动后 GUI 冻住",
+      "file": "references/startup.md",
+      "anchor": "h14",
+      "source": "studio_start",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "E11",
+      "title": "退出超时、owner 保留或 DMA 仍占用",
+      "file": "references/handoff.md",
+      "anchor": "e11",
+      "source": "preflight_cards",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H15",
+      "title": "切页面后部分功能永久不响应",
+      "file": "references/handoff.md",
+      "anchor": "h15",
+      "source": "menu_recovery",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H16",
+      "title": "显示 accepted，却没有 rendered",
+      "file": "references/handoff.md",
+      "anchor": "h16",
+      "source": "preview_owner",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H19",
+      "title": "第二次 MMIO 读不返回",
+      "file": "references/handoff.md",
+      "anchor": "h19",
+      "source": "repeat_mmio",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H17",
+      "title": "忙时切了手势，空闲后却不执行",
+      "file": "references/input.md",
+      "anchor": "h17",
+      "source": "latest_input",
+      "basis": "documented engineering observation; see source technical summary"
+    },
+    {
+      "id": "H18",
+      "title": "边缘位置失效把可靠手势也清掉",
+      "file": "references/input.md",
+      "anchor": "h18",
+      "source": "latest_input",
+      "basis": "documented engineering observation; see source technical summary"
+    }
+  ]
+}

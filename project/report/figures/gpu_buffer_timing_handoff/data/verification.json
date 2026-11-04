@@ -1,0 +1,24 @@
+{
+  "result": "PASS",
+  "scope": "Production ABI and sink class with deterministic memory fixture; RTL/BD source assertions. No RTL simulation.",
+  "scene_packet_bytes": 4160,
+  "palette_packet_bytes": 1088,
+  "index4_hex": "2143",
+  "successful_scenes": 2,
+  "old_present_count_reads": 2,
+  "resource_crc_rejected_before_dma": true,
+  "command_overflow_rejected": true,
+  "driver_trace_rows": 52,
+  "hardware_access": false,
+  "source_sha256": {
+    "gpu_abi.py": "0f87227ede298bfd9f05ead74a189e64442e311ce284f77461a544ea65fe4810",
+    "scene.py": "31872dec6b4a940843031a43efd252cc441a94b0a89bd054f143ea5ae05dfd21",
+    "c6i_video.py": "10ff1fd126546e2b0836788d9fea4449aba80381a8e0af5c30c6787e5c4e1725",
+    "c6i_backend.py": "7290001214184f441c1bdc9a0c351d439c9edbd012e59e17c2b7c40b48582409",
+    "scene2d_c4m3_core.sv": "a245921fe8f41100629b799d963f4ce87d3f4e0e0a4a25caab180fcbdf89d0fa",
+    "scene2d_c4m7_core.sv": "5c6c3044ea52b6808ca3781b7c2c00cf371f9a0f72ec692d7615463568ae442b",
+    "scene2d_frame_swap.sv": "2da55288eda7fe7ad7978ecc719d40880c1ffd9630161be261e53393da317de0",
+    "scene2d_video_timing.sv": "7946aaade4b51d2ea89f4d64136992bf7d88b494721c63bed3ec09937b074cea",
+    "c6v.bd": "74ff2746b88245cc56ed9bf218d328a66f85855e74e1a6371b8e0e6878591a4e"
+  }
+}

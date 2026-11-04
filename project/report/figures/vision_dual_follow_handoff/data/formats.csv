@@ -1,0 +1,7 @@
+﻿format,width,height,bytes_per_pixel,bytes,scope
+Camera RGB storage,1280,720,3,2764800,Per-frame VDMA RGB storage; PS copy only on preview demand
+Raw mask,640,360,1,230400,0 or 255 per pixel
+Filtered mask,640,360,1,230400,0..255 per pixel
+DMS1 payload,640,360,2,460800,Interleaved raw and filtered
+DMS1 packet,640,360,2,460864,Payload plus 64 B trailer
+OSD mailbox,0,0,0,24,Six uint32 shadow words; commit transaction is separate

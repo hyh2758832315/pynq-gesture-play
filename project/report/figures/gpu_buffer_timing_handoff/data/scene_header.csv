@@ -1,0 +1,17 @@
+﻿word,offset,field,hex,value
+0,0,magic,0x47443253,1195651667
+1,4,version,0x00010000,65536
+2,8,frame_id,0x00000007,7
+3,12,submit_seq,0x00000007,7
+4,16,command_count,0x00000003,3
+5,20,camera_x,0x00000000,0
+6,24,camera_y,0x00000000,0
+7,28,background_rgb,0x00000000,0
+8,32,palette_generation,0x00000000,0
+9,36,predicted_cycles,0x00000000,0
+10,40,asset_generation,0x00000000,0
+11,44,tilemap_generation,0x00000000,0
+12,48,reserved12,0x00000000,0
+13,52,reserved13,0x00000000,0
+14,56,reserved14,0x00000000,0
+15,60,reserved15,0x00000000,0

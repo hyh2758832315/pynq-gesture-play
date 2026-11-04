@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "simulated": true,
+  "board_access": false,
+  "network_access": false,
+  "closed": true,
+  "active_qthreads": [],
+  "images": [
+    "simulated-checking-1440.png",
+    "simulated-loading-1440.png",
+    "simulated-failed-1440.png",
+    "simulated-stopped-1440.png",
+    "simulated-checking-1080.png",
+    "simulated-loading-1080.png",
+    "simulated-failed-1080.png",
+    "simulated-stopped-1080.png"
+  ]
+}

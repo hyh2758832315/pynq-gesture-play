@@ -1,0 +1,16 @@
+{
+  "schema": "hand-serial-source-v1",
+  "sha256": {
+    "frozen_manifest.json": "5bbe20b6f9ce099eda45026db7e9965defa700d466a83d21e34403bbbd136128",
+    "src/pynq_usb_hand/__init__.py": "3c6f4a858fe730ce1185288680ae07a2679d25a1e5a672b75189c7f3a0256c90",
+    "src/pynq_usb_hand/assets.py": "6f9242f7354746e51ff2ffe019b0c51189cdf2b4111113f9ecc0199041fec9a7",
+    "src/pynq_usb_hand/buttons.py": "36aea178026d3da8b7e829972acf02c473d91037406d0c5e7f2d331abb5fd125",
+    "src/pynq_usb_hand/controller.py": "cd30a7f9efa0af4c11ea9ed58e3fbccfd16bf5c9bec308856ef07afb0b4e3d6d",
+    "src/pynq_usb_hand/motion.py": "eecd1d5c383756045967ff48124c3481529a4e4ae57ba7bcb74fec0b0f010273",
+    "src/pynq_usb_hand/orca_backend.py": "74837e49bc9fbb063ed6610d6e90fcc4ec5b2ce223374bc27c78a49357facaa9",
+    "src/pynq_usb_hand/transport.py": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16",
+    "src/pynq_usb_hand/gesture_consumer.py": "e23a2138fad29f29f53ab6701bba9238ecc280017b0beea4407c8129d0c82406",
+    "src/pynq_usb_hand/game_bridge.py": "d72e8c59fb2e57f325e09217f9428ad6981a46d6d4fbd5879a4bdc6d61742f2d",
+    "src/pynq_usb_hand/actuator_owner.py": "7d6ee88e695da5543fe7c6a49a555e5fa0816aead8256a04a1f6249e76ce71cd"
+  }
+}

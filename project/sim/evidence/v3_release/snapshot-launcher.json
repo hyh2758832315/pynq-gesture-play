@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "source": "E:\\projects\\fpga\\voice-view-game\\build\\v3-release-repo\\releases\\v3.0\\studio\\python\\pynq_multimodal_game\\__init__.py",
+  "settings": "E:/projects/fpga/voice-view-game/build/studio-v3/snapshot-settings/Voice View Game/python.ini",
+  "candidate": "E:\\projects\\fpga\\voice-view-game\\build\\v3-release-repo\\releases\\v3.0\\board_runtime",
+  "physical_board": false
+}

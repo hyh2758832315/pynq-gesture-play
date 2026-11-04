@@ -1,0 +1,8 @@
+﻿item,copies,bytes_each,total_bytes,total_KiB,scope
+Framebuffer token8,2,57600,115200,112.5,Current logical payload
+Framebuffer RGB888 comparison,2,172800,345600,337.5,Same resolution comparison only
+Command banks,2,4096,8192,8.0,Headers stored separately
+Atlas banks,2,32768,65536,64.0,Excludes descriptors and metadata
+Tilemap banks,8,4096,32768,32.0,"4 slots, 2 banks per slot"
+Palette RGB storage,2,768,1536,1.5,Transport uses 256 uint32 = 1024 B per palette
+PS staging buffer,1,32880,32880,32.109375,One reusable NumPy/PYNQ DMA allocation

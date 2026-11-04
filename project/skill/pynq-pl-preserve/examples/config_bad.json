@@ -1,0 +1,13 @@
+{
+  "reference": "original.sv",
+  "sources": ["bad_reset.sv", "tb.sv"],
+  "legacy_top": "tb_counter_example",
+  "instances": [{"path": "dut", "parameters": {}}],
+  "clock": "aclk",
+  "reset": "aresetn",
+  "reset_active": 0,
+  "min_checks": 1000,
+  "watchdog_ns": 20000,
+  "legacy_marker": "COUNTER_EXAMPLE_DONE",
+  "part": "xc7z020clg400-1"
+}

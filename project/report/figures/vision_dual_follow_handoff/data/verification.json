@@ -1,0 +1,85 @@
+{
+  "result": "PASS",
+  "scope": "Constructed data and isolated production rules; no hardware or accuracy/FPS measurement",
+  "packet": {
+    "width": 640,
+    "height": 360,
+    "payload_bytes": 460800,
+    "trailer_bytes": 64,
+    "total_bytes": 460864,
+    "crc32": "0x5B04B719",
+    "example_first_bytes": "FF FF 00 40 FF 80 00 00",
+    "rejected": [
+      "crc",
+      "identity"
+    ]
+  },
+  "vote_trace": [
+    {
+      "frame": "F1",
+      "raw_code": "0",
+      "stable": "PENDING",
+      "rps": "UNKNOWN",
+      "position_valid": true,
+      "marker": "green"
+    },
+    {
+      "frame": "F2",
+      "raw_code": "0",
+      "stable": "PENDING",
+      "rps": "UNKNOWN",
+      "position_valid": true,
+      "marker": "green"
+    },
+    {
+      "frame": "F3",
+      "raw_code": "0",
+      "stable": "0",
+      "rps": "ROCK",
+      "position_valid": true,
+      "marker": "red_small"
+    },
+    {
+      "frame": "F4",
+      "raw_code": "2",
+      "stable": "PENDING",
+      "rps": "UNKNOWN",
+      "position_valid": true,
+      "marker": "green"
+    },
+    {
+      "frame": "F5",
+      "raw_code": "2",
+      "stable": "PENDING",
+      "rps": "UNKNOWN",
+      "position_valid": true,
+      "marker": "green"
+    },
+    {
+      "frame": "F6",
+      "raw_code": "2",
+      "stable": "2",
+      "rps": "SCISSORS",
+      "position_valid": true,
+      "marker": "green"
+    }
+  ],
+  "osd": {
+    "first_words": [
+      7,
+      23593600,
+      0,
+      983040,
+      1,
+      0
+    ],
+    "busy_skips_without_write": true,
+    "duplicate_keeps_source_age": true,
+    "expired_hidden": true
+  },
+  "source_sha256": {
+    "decoder": "15f9691bde670cd8c14a3e49736cc1fdb7a88968a9a75019f5ed9c5bdce0a693",
+    "osd": "7d0a87ba31ff8654e25dccb350679481f8ac4150193829196aa4a6414dcbbede",
+    "rules": "90a4a5d7fb12932a5b4e46b75bc90cd17f9c910beeb74f8337ed48340f19a405"
+  }
+}

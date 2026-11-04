@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T03:17:02Z",
+  "title": "Design System: PYNQ Gesture Play HDMI Shell",
+  "extensions": {
+    "colorMeta": {
+      "pynq-pink": {
+        "role": "primary",
+        "displayName": "PYNQ 玫粉（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.21676 1.94)",
+          "oklch(26.43% 0.21676 1.94)",
+          "oklch(37.86% 0.21676 1.94)",
+          "oklch(49.29% 0.21676 1.94)",
+          "oklch(60.71% 0.21676 1.94)",
+          "oklch(72.14% 0.21676 1.94)",
+          "oklch(83.57% 0.21676 1.94)",
+          "oklch(95.00% 0.21676 1.94)"
+        ]
+      },
+      "feedback-teal": {
+        "role": "secondary",
+        "displayName": "反馈青绿（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.07266 182.77)",
+          "oklch(26.43% 0.07266 182.77)",
+          "oklch(37.86% 0.07266 182.77)",
+          "oklch(49.29% 0.07266 182.77)",
+          "oklch(60.71% 0.07266 182.77)",
+          "oklch(72.14% 0.07266 182.77)",
+          "oklch(83.57% 0.07266 182.77)",
+          "oklch(95.00% 0.07266 182.77)"
+        ]
+      },
+      "shape-yellow": {
+        "role": "secondary",
+        "displayName": "形状黄（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.14170 85.73)",
+          "oklch(26.43% 0.14170 85.73)",
+          "oklch(37.86% 0.14170 85.73)",
+          "oklch(49.29% 0.14170 85.73)",
+          "oklch(60.71% 0.14170 85.73)",
+          "oklch(72.14% 0.14170 85.73)",
+          "oklch(83.57% 0.14170 85.73)",
+          "oklch(95.00% 0.14170 85.73)"
+        ]
+      },
+      "shape-blue": {
+        "role": "secondary",
+        "displayName": "形状蓝（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.15500 260.04)",
+          "oklch(26.43% 0.15500 260.04)",
+          "oklch(37.86% 0.15500 260.04)",
+          "oklch(49.29% 0.15500 260.04)",
+          "oklch(60.71% 0.15500 260.04)",
+          "oklch(72.14% 0.15500 260.04)",
+          "oklch(83.57% 0.15500 260.04)",
+          "oklch(95.00% 0.15500 260.04)"
+        ]
+      },
+      "shape-green": {
+        "role": "secondary",
+        "displayName": "形状绿（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.12131 158.39)",
+          "oklch(26.43% 0.12131 158.39)",
+          "oklch(37.86% 0.12131 158.39)",
+          "oklch(49.29% 0.12131 158.39)",
+          "oklch(60.71% 0.12131 158.39)",
+          "oklch(72.14% 0.12131 158.39)",
+          "oklch(83.57% 0.12131 158.39)",
+          "oklch(95.00% 0.12131 158.39)"
+        ]
+      },
+      "shape-coral": {
+        "role": "secondary",
+        "displayName": "形状珊瑚（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.17848 16.78)",
+          "oklch(26.43% 0.17848 16.78)",
+          "oklch(37.86% 0.17848 16.78)",
+          "oklch(49.29% 0.17848 16.78)",
+          "oklch(60.71% 0.17848 16.78)",
+          "oklch(72.14% 0.17848 16.78)",
+          "oklch(83.57% 0.17848 16.78)",
+          "oklch(95.00% 0.17848 16.78)"
+        ]
+      },
+      "warm-background": {
+        "role": "neutral",
+        "displayName": "暖白背景（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01288 353.13)",
+          "oklch(26.43% 0.01288 353.13)",
+          "oklch(37.86% 0.01288 353.13)",
+          "oklch(49.29% 0.01288 353.13)",
+          "oklch(60.71% 0.01288 353.13)",
+          "oklch(72.14% 0.01288 353.13)",
+          "oklch(83.57% 0.01288 353.13)",
+          "oklch(95.00% 0.01288 353.13)"
+        ]
+      },
+      "paper-white": {
+        "role": "neutral",
+        "displayName": "纸白（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "header-pink": {
+        "role": "neutral",
+        "displayName": "浅粉分区（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.03822 350.66)",
+          "oklch(26.43% 0.03822 350.66)",
+          "oklch(37.86% 0.03822 350.66)",
+          "oklch(49.29% 0.03822 350.66)",
+          "oklch(60.71% 0.03822 350.66)",
+          "oklch(72.14% 0.03822 350.66)",
+          "oklch(83.57% 0.03822 350.66)",
+          "oklch(95.00% 0.03822 350.66)"
+        ]
+      },
+      "edge-rose": {
+        "role": "neutral",
+        "displayName": "玫灰边线（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.05933 348.85)",
+          "oklch(26.43% 0.05933 348.85)",
+          "oklch(37.86% 0.05933 348.85)",
+          "oklch(49.29% 0.05933 348.85)",
+          "oklch(60.71% 0.05933 348.85)",
+          "oklch(72.14% 0.05933 348.85)",
+          "oklch(83.57% 0.05933 348.85)",
+          "oklch(95.00% 0.05933 348.85)"
+        ]
+      },
+      "ink-plum": {
+        "role": "neutral",
+        "displayName": "深梅墨色（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.04414 339.95)",
+          "oklch(26.43% 0.04414 339.95)",
+          "oklch(37.86% 0.04414 339.95)",
+          "oklch(49.29% 0.04414 339.95)",
+          "oklch(60.71% 0.04414 339.95)",
+          "oklch(72.14% 0.04414 339.95)",
+          "oklch(83.57% 0.04414 339.95)",
+          "oklch(95.00% 0.04414 339.95)"
+        ]
+      },
+      "caption-plum": {
+        "role": "neutral",
+        "displayName": "柔梅说明色（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.05693 344.23)",
+          "oklch(26.43% 0.05693 344.23)",
+          "oklch(37.86% 0.05693 344.23)",
+          "oklch(49.29% 0.05693 344.23)",
+          "oklch(60.71% 0.05693 344.23)",
+          "oklch(72.14% 0.05693 344.23)",
+          "oklch(83.57% 0.05693 344.23)",
+          "oklch(95.00% 0.05693 344.23)"
+        ]
+      },
+      "disabled-mist": {
+        "role": "neutral",
+        "displayName": "灰粉禁用底（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01173 334.09)",
+          "oklch(26.43% 0.01173 334.09)",
+          "oklch(37.86% 0.01173 334.09)",
+          "oklch(49.29% 0.01173 334.09)",
+          "oklch(60.71% 0.01173 334.09)",
+          "oklch(72.14% 0.01173 334.09)",
+          "oklch(83.57% 0.01173 334.09)",
+          "oklch(95.00% 0.01173 334.09)"
+        ]
+      },
+      "return-cyan": {
+        "role": "neutral",
+        "displayName": "返回青色（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.12272 207.10)",
+          "oklch(26.43% 0.12272 207.10)",
+          "oklch(37.86% 0.12272 207.10)",
+          "oklch(49.29% 0.12272 207.10)",
+          "oklch(60.71% 0.12272 207.10)",
+          "oklch(72.14% 0.12272 207.10)",
+          "oklch(83.57% 0.12272 207.10)",
+          "oklch(95.00% 0.12272 207.10)"
+        ]
+      },
+      "return-cream": {
+        "role": "neutral",
+        "displayName": "返回浅色（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.02284 95.96)",
+          "oklch(26.43% 0.02284 95.96)",
+          "oklch(37.86% 0.02284 95.96)",
+          "oklch(49.29% 0.02284 95.96)",
+          "oklch(60.71% 0.02284 95.96)",
+          "oklch(72.14% 0.02284 95.96)",
+          "oklch(83.57% 0.02284 95.96)",
+          "oklch(95.00% 0.02284 95.96)"
+        ]
+      },
+      "return-track": {
+        "role": "neutral",
+        "displayName": "返回环底（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01388 256.77)",
+          "oklch(26.43% 0.01388 256.77)",
+          "oklch(37.86% 0.01388 256.77)",
+          "oklch(49.29% 0.01388 256.77)",
+          "oklch(60.71% 0.01388 256.77)",
+          "oklch(72.14% 0.01388 256.77)",
+          "oklch(83.57% 0.01388 256.77)",
+          "oklch(95.00% 0.01388 256.77)"
+        ]
+      },
+      "return-progress": {
+        "role": "neutral",
+        "displayName": "返回环进度（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.16644 142.04)",
+          "oklch(26.43% 0.16644 142.04)",
+          "oklch(37.86% 0.16644 142.04)",
+          "oklch(49.29% 0.16644 142.04)",
+          "oklch(60.71% 0.16644 142.04)",
+          "oklch(72.14% 0.16644 142.04)",
+          "oklch(83.57% 0.16644 142.04)",
+          "oklch(95.00% 0.16644 142.04)"
+        ]
+      },
+      "return-label-bg": {
+        "role": "neutral",
+        "displayName": "返回标签底（色阶仅供文档，不是 GPU 调色板）",
+        "tonalRamp": [
+          "oklch(15.00% 0.01360 258.37)",
+          "oklch(26.43% 0.01360 258.37)",
+          "oklch(37.86% 0.01360 258.37)",
+          "oklch(49.29% 0.01360 258.37)",
+          "oklch(60.71% 0.01360 258.37)",
+          "oklch(72.14% 0.01360 258.37)",
+          "oklch(83.57% 0.01360 258.37)",
+          "oklch(95.00% 0.01360 258.37)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display · 3x5 × 4",
+        "purpose": "20 像素可见高度，加载与少量全屏状态标题；实际字体是 _MENU_GLYPHS。"
+      },
+      "headline": {
+        "displayName": "Headline · 3x5 × 3",
+        "purpose": "15 像素可见高度，页标题、暂停/结果。"
+      },
+      "title": {
+        "displayName": "Title · 3x5 × 2",
+        "purpose": "10 像素可见高度，主入口和列表。"
+      },
+      "label": {
+        "displayName": "Label · 3x5 × 1",
+        "purpose": "5 像素可见高度，短动作词与次级提示；不能替代主动作图标。"
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "return-dwell",
+        "value": "2s / 24 discrete steps",
+        "purpose": "固定返回环，约 83 ms 一个可见步骤；GPU 命令更新；失效或离开重置。"
+      },
+      {
+        "name": "action-dwell",
+        "value": "2s / 48px visible progress",
+        "purpose": "暂停和结果动作的进度条；切换目标重置，命令更新。"
+      },
+      {
+        "name": "creative-submit-limit",
+        "value": "15Hz maximum",
+        "purpose": "画布与手势演示 scene 提交上限；未变化的视图仍不提交。"
+      },
+      {
+        "name": "startup-dots",
+        "value": "2 steps/s",
+        "purpose": "缓存点状精灵变化；不触发硬件检测或授权启动完成。"
+      },
+      {
+        "name": "startup-glint",
+        "value": "24px/s",
+        "purpose": "缓存亮条沿模拟填充区域移动；不是实际进度。"
+      }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "PLAY",
+      "kind": "button",
+      "refersTo": "action-button",
+      "description": "暂停恢复动作；真实命中框 80×54，停留两秒触发。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-play\" aria-label=\"PLAY\"><svg viewBox=\"0 0 80 54\" width=\"80\" height=\"54\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H77V3H80V51H77V54H3V51H0V3H3Z\" fill=\"#FFFFFF\"/><rect x=\"32\" y=\"10\" width=\"1\" height=\"25\" fill=\"#3F2737\"/><rect x=\"33\" y=\"10\" width=\"1\" height=\"24\" fill=\"#3F2737\"/><rect x=\"34\" y=\"11\" width=\"1\" height=\"23\" fill=\"#3F2737\"/><rect x=\"35\" y=\"11\" width=\"1\" height=\"22\" fill=\"#3F2737\"/><rect x=\"36\" y=\"12\" width=\"1\" height=\"21\" fill=\"#3F2737\"/><rect x=\"37\" y=\"12\" width=\"1\" height=\"20\" fill=\"#3F2737\"/><rect x=\"38\" y=\"13\" width=\"1\" height=\"19\" fill=\"#3F2737\"/><rect x=\"39\" y=\"13\" width=\"1\" height=\"18\" fill=\"#3F2737\"/><rect x=\"40\" y=\"14\" width=\"1\" height=\"17\" fill=\"#3F2737\"/><rect x=\"41\" y=\"14\" width=\"1\" height=\"16\" fill=\"#3F2737\"/><rect x=\"42\" y=\"15\" width=\"1\" height=\"15\" fill=\"#3F2737\"/><rect x=\"43\" y=\"15\" width=\"1\" height=\"14\" fill=\"#3F2737\"/><rect x=\"44\" y=\"16\" width=\"1\" height=\"13\" fill=\"#3F2737\"/><rect x=\"45\" y=\"16\" width=\"1\" height=\"12\" fill=\"#3F2737\"/><rect x=\"46\" y=\"17\" width=\"1\" height=\"11\" fill=\"#3F2737\"/><rect x=\"47\" y=\"17\" width=\"1\" height=\"10\" fill=\"#3F2737\"/><rect x=\"48\" y=\"18\" width=\"1\" height=\"9\" fill=\"#3F2737\"/><rect x=\"49\" y=\"18\" width=\"1\" height=\"8\" fill=\"#3F2737\"/><rect x=\"50\" y=\"19\" width=\"1\" height=\"7\" fill=\"#3F2737\"/><rect x=\"51\" y=\"19\" width=\"1\" height=\"6\" fill=\"#3F2737\"/><rect x=\"52\" y=\"20\" width=\"1\" height=\"5\" fill=\"#3F2737\"/><rect x=\"53\" y=\"20\" width=\"1\" height=\"4\" fill=\"#3F2737\"/><rect x=\"32.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"33.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"33.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"37.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"38.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"41.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"41.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"45.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"45.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"45.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"74\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"52\" width=\"74\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"48\" fill=\"#E8377E\"/><rect x=\"78\" y=\"3\" width=\"2\" height=\"48\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-play{display:inline-block;width:80px;height:54px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-play svg{display:block;overflow:visible}.ds-play .ds-state-border{opacity:0}.ds-play:hover .ds-state-border,.ds-play:focus-visible .ds-state-border,.ds-play:active .ds-state-border{opacity:1}.ds-play:focus-visible{outline:none}"
+    },
+    {
+      "name": "RETRY",
+      "kind": "button",
+      "refersTo": "action-button",
+      "description": "暂停和结果页的环形重试动作。短标签置于大图标下方。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-retry\" aria-label=\"RETRY\"><svg viewBox=\"0 0 80 54\" width=\"80\" height=\"54\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H77V3H80V51H77V54H3V51H0V3H3Z\" fill=\"#FFFFFF\"/><rect x=\"40\" y=\"9\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"10\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"10\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"10\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"10\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"10\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"10\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"11\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"12\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"13\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"14\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"14\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"14\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"14\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"14\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"14\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"15\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"15\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"15\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"15\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"15\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"16\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"16\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"16\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"16\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"16\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"17\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"18\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"19\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"20\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"21\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"27\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"53\" y=\"22\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"23\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"24\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"25\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"26\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"28\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"52\" y=\"27\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"29\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"33\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"51\" y=\"28\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"33\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"34\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"29\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"30\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"33\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"34\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"35\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"50\" y=\"30\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"31\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"33\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"34\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"35\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"36\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"37\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"38\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"39\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"49\" y=\"31\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"32\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"33\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"34\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"35\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"36\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"37\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"38\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"39\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"47\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"48\" y=\"32\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"34\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"35\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"36\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"37\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"38\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"39\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"46\" y=\"33\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"35\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"36\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"37\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"38\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"39\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"41\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"42\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"43\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"44\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"45\" y=\"34\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"40\" y=\"35\" width=\"1\" height=\"1\" fill=\"#3F2737\"/><rect x=\"27\" y=\"7\" width=\"1\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"8\" width=\"2\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"9\" width=\"3\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"10\" width=\"4\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"11\" width=\"5\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"12\" width=\"6\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"13\" width=\"7\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"14\" width=\"8\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"15\" width=\"9\" height=\"1\" fill=\"#E8377E\"/><rect x=\"27\" y=\"16\" width=\"10\" height=\"1\" fill=\"#E8377E\"/><rect x=\"30.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"31.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"30.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"30.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"31.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"30.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"30.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"35.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"35.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"35.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"38.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"39.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"39.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"39.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"39.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"39.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"43.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"43.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"48.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"48.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"47.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"47.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"47.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"74\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"52\" width=\"74\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"48\" fill=\"#E8377E\"/><rect x=\"78\" y=\"3\" width=\"2\" height=\"48\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-retry{display:inline-block;width:80px;height:54px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-retry svg{display:block;overflow:visible}.ds-retry .ds-state-border{opacity:0}.ds-retry:hover .ds-state-border,.ds-retry:focus-visible .ds-state-border,.ds-retry:active .ds-state-border{opacity:1}.ds-retry:focus-visible{outline:none}"
+    },
+    {
+      "name": "MENU",
+      "kind": "button",
+      "refersTo": "action-button",
+      "description": "暂停和结果页回主菜单动作。进度条由页面级 GPU 命令绘制。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-menu\" aria-label=\"MENU\"><svg viewBox=\"0 0 80 54\" width=\"80\" height=\"54\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H77V3H80V51H77V54H3V51H0V3H3Z\" fill=\"#FFFFFF\"/><rect x=\"40\" y=\"8\" width=\"1\" height=\"2\" fill=\"#3F2737\"/><rect x=\"39\" y=\"9\" width=\"3\" height=\"2\" fill=\"#3F2737\"/><rect x=\"38\" y=\"10\" width=\"5\" height=\"2\" fill=\"#3F2737\"/><rect x=\"37\" y=\"11\" width=\"7\" height=\"2\" fill=\"#3F2737\"/><rect x=\"36\" y=\"12\" width=\"9\" height=\"2\" fill=\"#3F2737\"/><rect x=\"35\" y=\"13\" width=\"11\" height=\"2\" fill=\"#3F2737\"/><rect x=\"34\" y=\"14\" width=\"13\" height=\"2\" fill=\"#3F2737\"/><rect x=\"33\" y=\"15\" width=\"15\" height=\"2\" fill=\"#3F2737\"/><rect x=\"32\" y=\"16\" width=\"17\" height=\"2\" fill=\"#3F2737\"/><rect x=\"31\" y=\"17\" width=\"19\" height=\"2\" fill=\"#3F2737\"/><rect x=\"30\" y=\"18\" width=\"21\" height=\"2\" fill=\"#3F2737\"/><rect x=\"29\" y=\"19\" width=\"23\" height=\"2\" fill=\"#3F2737\"/><rect x=\"28\" y=\"20\" width=\"25\" height=\"2\" fill=\"#3F2737\"/><rect x=\"27\" y=\"21\" width=\"27\" height=\"2\" fill=\"#3F2737\"/><rect x=\"30\" y=\"21\" width=\"21\" height=\"14\" fill=\"#3F2737\"/><rect x=\"37\" y=\"26\" width=\"7\" height=\"9\" fill=\"#FFFFFF\"/><rect x=\"45\" y=\"12\" width=\"4\" height=\"7\" fill=\"#E8377E\"/><rect x=\"32.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"33.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"33.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"32.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"34.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"37.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"38.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"37.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"36.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"37.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"38.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"41.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"41.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"41.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"40.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"42.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"44\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"45\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"46\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"47\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"44.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"45.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><rect x=\"46.5\" y=\"48\" width=\"1\" height=\"1\" fill=\"#805B70\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"74\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"52\" width=\"74\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"48\" fill=\"#E8377E\"/><rect x=\"78\" y=\"3\" width=\"2\" height=\"48\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-menu{display:inline-block;width:80px;height:54px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-menu svg{display:block;overflow:visible}.ds-menu .ds-state-border{opacity:0}.ds-menu:hover .ds-state-border,.ds-menu:focus-visible .ds-state-border,.ds-menu:active .ds-state-border{opacity:1}.ds-menu:focus-visible{outline:none}"
+    },
+    {
+      "name": "GAME",
+      "kind": "nav",
+      "refersTo": "library-row",
+      "description": "宽列表行，使用编号、选项名和箭头。禁用行改为灰粉底并退出命中候选。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-library\" aria-label=\"GAME\"><svg viewBox=\"0 0 264 34\" width=\"264\" height=\"34\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H261V3H264V31H261V34H3V31H0V3H3Z\" fill=\"#FFFFFF\"/><g transform=\"translate(6 5)\"><path d=\"M3 0H21V3H24V21H21V24H3V21H0V3H3Z\" fill=\"#F7D8E5\"/></g><rect x=\"11\" y=\"12\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"13\" y=\"12\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"15\" y=\"12\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"11\" y=\"14\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"15\" y=\"14\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"11\" y=\"16\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"15\" y=\"16\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"11\" y=\"18\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"15\" y=\"18\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"11\" y=\"20\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"13\" y=\"20\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"15\" y=\"20\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"21\" y=\"12\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"19\" y=\"14\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"21\" y=\"14\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"21\" y=\"16\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"21\" y=\"18\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"19\" y=\"20\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"21\" y=\"20\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"23\" y=\"20\" width=\"2\" height=\"2\" fill=\"#E8377E\"/><rect x=\"39\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"41\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"43\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"39\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"39\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"43\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"39\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"43\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"39\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"41\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"43\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"49\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"47\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"51\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"47\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"49\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"51\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"47\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"51\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"47\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"51\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"59\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"57\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"59\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"57\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"59\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"59\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"59\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"67\" y=\"11\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"13\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"15\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"17\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"67\" y=\"19\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><path d=\"M249 13L253 17L249 21\" fill=\"none\" stroke=\"#E8377E\" stroke-width=\"2\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"258\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"32\" width=\"258\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"28\" fill=\"#E8377E\"/><rect x=\"262\" y=\"3\" width=\"2\" height=\"28\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-library{display:inline-block;width:264px;height:34px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-library svg{display:block;overflow:visible}.ds-library .ds-state-border{opacity:0}.ds-library:hover .ds-state-border,.ds-library:focus-visible .ds-state-border,.ds-library:active .ds-state-border{opacity:1}.ds-library:focus-visible{outline:none}"
+    },
+    {
+      "name": "GAME",
+      "kind": "card",
+      "refersTo": "home-entry",
+      "description": "主菜单入口的像素图形和标题；省略页面专有辅助句，防止把它作为每个新入口必加的装饰。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-home\" aria-label=\"GAME\"><svg viewBox=\"0 0 132 45\" width=\"132\" height=\"45\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H129V3H132V42H129V45H3V42H0V3H3Z\" fill=\"#FFFFFF\"/><g transform=\"translate(10 12)\"><path d=\"M3 0H24V3H27V15H24V18H3V15H0V3H3Z\" fill=\"#3F2737\"/></g><rect x=\"15\" y=\"17\" width=\"3\" height=\"8\" fill=\"#FFFFFF\"/><rect x=\"12\" y=\"20\" width=\"9\" height=\"2\" fill=\"#FFFFFF\"/><rect x=\"28\" y=\"17\" width=\"3\" height=\"3\" fill=\"#E8377E\"/><rect x=\"32\" y=\"21\" width=\"3\" height=\"3\" fill=\"#E8377E\"/><rect x=\"45\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"47\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"49\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"45\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"45\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"49\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"45\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"49\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"45\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"47\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"49\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"53\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"57\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"53\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"55\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"57\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"53\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"57\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"53\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"57\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"61\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"61\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"61\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"63\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"61\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"61\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"65\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"69\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"71\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"73\" y=\"10\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"69\" y=\"12\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"69\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"71\" y=\"14\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"69\" y=\"16\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"69\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"71\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><rect x=\"73\" y=\"18\" width=\"2\" height=\"2\" fill=\"#3F2737\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"126\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"43\" width=\"126\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"39\" fill=\"#E8377E\"/><rect x=\"130\" y=\"3\" width=\"2\" height=\"39\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-home{display:inline-block;width:132px;height:45px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-home svg{display:block;overflow:visible}.ds-home .ds-state-border{opacity:0}.ds-home:hover .ds-state-border,.ds-home:focus-visible .ds-state-border,.ds-home:active .ds-state-border{opacity:1}.ds-home:focus-visible{outline:none}"
+    },
+    {
+      "name": "Circle shape",
+      "kind": "button",
+      "refersTo": "shape-choice",
+      "description": "四个同尺寸形状选项之一；圆形固定为形状绿，当前选择采用粉色边框。真实形状边缘以 mask() 的整数栅格为准。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-shape\" aria-label=\"Circle shape\"><svg viewBox=\"0 0 52 28\" width=\"52\" height=\"28\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H49V3H52V25H49V28H3V25H0V3H3Z\" fill=\"#FFFFFF\"/><circle cx=\"26\" cy=\"14\" r=\"9\" fill=\"#399F6D\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"46\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"26\" width=\"46\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"22\" fill=\"#E8377E\"/><rect x=\"50\" y=\"3\" width=\"2\" height=\"22\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-shape{display:inline-block;width:52px;height:28px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-shape svg{display:block;overflow:visible}.ds-shape .ds-state-border{opacity:0}.ds-shape:hover .ds-state-border,.ds-shape:focus-visible .ds-state-border,.ds-shape:active .ds-state-border{opacity:1}.ds-shape:focus-visible{outline:none}"
+    },
+    {
+      "name": "Increase size",
+      "kind": "button",
+      "refersTo": "size-control",
+      "description": "大小控件的加号变体；减号复用尺寸，仅去掉竖线。 此 HTML/SVG 为设计文档中的原生像素几何预览；浏览器 hover/focus 只演示选中反馈，不改变板端手势与停留合同。",
+      "html": "<button class=\"ds-size\" aria-label=\"Increase size\"><svg viewBox=\"0 0 26 20\" width=\"26\" height=\"20\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><path d=\"M3 0H23V3H26V17H23V20H3V17H0V3H3Z\" fill=\"#FFFFFF\"/><rect x=\"7\" y=\"9\" width=\"12\" height=\"2\" fill=\"#3F2737\"/><rect x=\"12\" y=\"4\" width=\"2\" height=\"12\" fill=\"#3F2737\"/><g class=\"ds-state-border\" fill=\"#E8377E\"><rect x=\"3\" y=\"0\" width=\"20\" height=\"2\" fill=\"#E8377E\"/><rect x=\"3\" y=\"18\" width=\"20\" height=\"2\" fill=\"#E8377E\"/><rect x=\"0\" y=\"3\" width=\"2\" height=\"14\" fill=\"#E8377E\"/><rect x=\"24\" y=\"3\" width=\"2\" height=\"14\" fill=\"#E8377E\"/></g></svg></button>",
+      "css": ".ds-size{display:inline-block;width:26px;height:20px;padding:0;border:0;background:transparent;cursor:pointer;vertical-align:top}.ds-size svg{display:block;overflow:visible}.ds-size .ds-state-border{opacity:0}.ds-size:hover .ds-state-border,.ds-size:focus-visible .ds-state-border,.ds-size:active .ds-state-border{opacity:1}.ds-size:focus-visible{outline:none}"
+    },
+    {
+      "name": "Startup progress",
+      "kind": "custom",
+      "description": "启动条的固定框、填充及像素亮条。此文档样本为静态中间状态，不表示真实检查百分比；运行时通过缓存 sprite 改变宽度和亮条位置。",
+      "html": "<div class=\"ds-startup-progress\" role=\"img\" aria-label=\"Loading\"><svg viewBox=\"0 0 216 12\" width=\"216\" height=\"12\" aria-hidden=\"true\" shape-rendering=\"crispEdges\"><rect width=\"216\" height=\"12\" fill=\"#D6A9BE\"/><rect x=\"1\" y=\"1\" width=\"214\" height=\"10\" fill=\"#FFFFFF\"/><rect x=\"2\" y=\"2\" width=\"78\" height=\"8\" fill=\"#E8377E\"/><rect x=\"48\" y=\"2\" width=\"4\" height=\"8\" fill=\"#FFFFFF\"/></svg></div>",
+      "css": ".ds-startup-progress{display:inline-block;width:216px;height:12px}.ds-startup-progress svg{display:block}"
+    }
+  ],
+  "narrative": {
+    "northStar": "可玩、可创作的粉色 PYNQ 设备",
+    "overview": "此文档记录 `subprojects/ps_ui_r23b2` 已实现的 HDMI shell：玩家用手位置识别选项，用新的一次握拳确认，以连续停留返回。视觉世界来自 [PRODUCT.md](PRODUCT.md) 与 [方向合同](design/BOARD_UI_BRIEF.md)，实现证据优先于早期设想。暖白纸面、浅粉分区、深梅文字和粉色反馈保持小尺寸可辨认；像素图形让游戏、视频、手势演示和画布成为同一台设备的入口。\n\n品牌资产采用完整 AMD/PYNQ 组合标，保留官方字形与比例。AMD 深梅、PYNQ 粉色是用户指定的项目内颜色适配，并非官方发布的新配色。玩家界面名为 GESTURE PLAY；本项目没有声音玩法，不以 Voice、声音或音量描述功能。此文档的边界是板端 shell；仓库根 DESIGN.md 属于 PC PYNQ Studio，不受此文件覆盖。游戏内部、PL Overlay 与 ABI 也不在这次视觉系统的改版范围。",
+    "keyCharacteristics": [
+      "固定逻辑分辨率、像素字与有限调色板。",
+      "粉色指明当前选择，深梅承担主要文字和动作轮廓。",
+      "大动作图标配短标签，持续操作有可见进度。",
+      "静态资源复用；交互状态变化才提交，动态创作页限制频率。"
+    ],
+    "rules": [
+      {
+        "name": "The Fixed Palette Rule",
+        "body": "shell 光栅只使用 `shell_theme.PALETTE` 的 16 个既定索引；透明掩模值 0 不作为可见黑色品牌 token。未在本轮 shell 复用的槽位不建立新设计角色。sidecar 的色阶仅用于文档面板展示，不是运行时可用颜色。",
+        "section": "colors"
+      },
+      {
+        "name": "The Pixel Type Rule",
+        "body": "保持整数倍放大和像素对齐，不以抗锯齿字体近似替换运行时字形。5 像素辅助说明是现有约束下的次级文字，不作为未来主操作文字的尺寸标准。",
+        "section": "typography"
+      },
+      {
+        "name": "The Change Only Rule",
+        "body": "没有可见状态改变就不提交新页面；相同底图只更新必要命令。不得让轻量 hover、返回环或暂停进度重新上传整张光栅。",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** 以本子项目实际调色板、位图字库和逻辑坐标为准，保留 AMD/PYNQ 完整标识与资产来源。",
+      "**Do** 让大图标、短动作词、明确选择边框与停留进度一起传达操作。",
+      "**Do** 在换页后要求新有效确认，跟踪失效时重置悬停与停留。",
+      "**Do** 用真实打包器检查包含字体的资产预算，并保持静态缓存、命令增量和 15 Hz 创作页上限。",
+      "**Do** 将 PC 命令渲染证据、独立审查结论与实板验收分别记录。"
+    ],
+    "donts": [
+      "**Don't** 把项目粉色适配称为官方品牌配色，或裁剪、拉伸、字体重做组合标。",
+      "**Don't** 在玩家界面加入 Voice、声音玩法或音量能力的宣传。",
+      "**Don't** 为 hover、返回环或暂停进度反复上传不变的整屏资产。",
+      "**Don't** 用持续握拳、UNKNOWN、重复或过期观测触发跨页连点。",
+      "**Don't** 将 sidecar 色阶、浏览器演示焦点态或桌面字体当作板端新增运行时功能。",
+      "**Don't** 把预览 ship 结论扩展为实板、机械动作或 Studio 上板流程已通过。"
+    ]
+  }
+}

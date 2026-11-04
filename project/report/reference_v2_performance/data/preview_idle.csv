@@ -1,0 +1,3 @@
+﻿version,window_s,codec_switches,relay_switches,codec_cpu_ticks,relay_cpu_ticks,source
+周期轮询 R19,4.00782209299723,40,391,0,9,build/r30-arm-idle-r19.json
+事件通知 R20,4.007399520000035,0,4,0,0,build/r30-arm-idle-r20.json

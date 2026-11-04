@@ -1,0 +1,111 @@
+{
+  "result": "LEAN_BOARD_ANALYSIS_PASS",
+  "release_ready": false,
+  "hardware_tested": true,
+  "boot_id": "db5b70bc-7b6e-4af0-9f3a-6845e782b31c",
+  "audit": "lean",
+  "requests": [
+    {
+      "state": "default",
+      "wall_seconds": 1.2871533950000185,
+      "cpu_seconds": 0.2295014310000001,
+      "single_core_percent": 17.830153879988547,
+      "observed_motion_window_peak": {
+        "started": 486.137374796,
+        "finished": 486.238416962,
+        "seconds": 0.10104216599995652,
+        "single_core_percent": 29.69057492296128
+      },
+      "reached_to_off_seconds": 0.08167043699995702
+    },
+    {
+      "state": "paper",
+      "wall_seconds": 2.392425811999999,
+      "cpu_seconds": 0.3641393080000004,
+      "single_core_percent": 15.220505738298753,
+      "observed_motion_window_peak": {
+        "started": 487.956193218,
+        "finished": 488.057234935,
+        "seconds": 0.10104171699998687,
+        "single_core_percent": 39.587609145641494
+      },
+      "reached_to_off_seconds": 0.061215285999992375
+    },
+    {
+      "state": "scissors",
+      "wall_seconds": 2.059419313000035,
+      "cpu_seconds": 0.3317689579999996,
+      "single_core_percent": 16.10983037333466,
+      "observed_motion_window_peak": {
+        "started": 495.02574194,
+        "finished": 495.126780697,
+        "seconds": 0.10103875700002618,
+        "single_core_percent": 29.691576668933315
+      },
+      "reached_to_off_seconds": 0.06178366799997548
+    },
+    {
+      "state": "rock",
+      "wall_seconds": 3.299367324000002,
+      "cpu_seconds": 0.515117353,
+      "single_core_percent": 15.612610007166321,
+      "observed_motion_window_peak": {
+        "started": 499.975453557,
+        "finished": 500.076503225,
+        "seconds": 0.10104966800003012,
+        "single_core_percent": 39.58449423108256
+      },
+      "reached_to_off_seconds": 0.0611717790000057
+    }
+  ],
+  "phases": {
+    "idle_off": {
+      "wall_seconds": 16.92376050300004,
+      "cpu_seconds": 0.20437596699999894,
+      "single_core_percent": 1.2076273885096025
+    },
+    "arm": {
+      "wall_seconds": 0.6583334829999785,
+      "cpu_seconds": 0.3799086910000007,
+      "single_core_percent": 57.7076361464685
+    },
+    "motion": {
+      "wall_seconds": 9.038365844000054,
+      "cpu_seconds": 1.4407427679999998,
+      "single_core_percent": 15.940301519841766
+    },
+    "hold_release": {
+      "wall_seconds": 0.26584116999993057,
+      "cpu_seconds": 0.1339030069999998,
+      "single_core_percent": 50.36955224054828
+    }
+  },
+  "all_process_window_peak": {
+    "started": 477.959404556,
+    "finished": 478.060546291,
+    "seconds": 0.10114173499999879,
+    "single_core_percent": 108.75826877994659
+  },
+  "window_count": 320,
+  "window_seconds_median": 0.10098509250002508,
+  "observer_cpu_seconds": 0.32055380400000005,
+  "clock_ticks_per_second": 100,
+  "release_count": 6,
+  "cleanup_confirmed": true,
+  "raw_sha256": {
+    "h157-offline.log": "360eadf880054fd2ee0a2ac9bd2a7b70baea972047b7f3f9bdc0a7be8674ff38",
+    "h157-lean-arm-offline.log": "6ad3ea3080f2bb19f43114af572b569a2ed94c8ba2b670aa660de2aaf38ec7ba",
+    "h158-authorized-normal-reboot.json": "f91749af6209ef88b0732297276f1f4c74aed296aa3243011ec05a8e90c763b6",
+    "h160-lean-arm-offline.json": "6f490bff87946379639f8aa2b1364ca9c90c7799a195698a94a6519c478e5aa8",
+    "h160-lean-arm-offline.log": "59cf122cabecfb4759a60959ba04719c81f5a9c8aafdad240c30955572d752ec",
+    "h160-offline.log": "68ac6009f9072fc3dbfdf690e2541eff3d9987e2fa10a10c75c4c2e0f9e7bd3b",
+    "h160-entry.log": "85c6f7a993fc2ee0f98590842ba566d1adb72db9b1934abb66d5f093c19767cf",
+    "h160-lean-arm-deployment.json": "3140f3c97837598e0fba99e08bb9ffbb25afd089eb6835653c766dff2cf6601f",
+    "h161-buttons-powered-readonly.json": "6784a440ea78746cbeef0b0ab70f22d34540a0ee945b53c5f6b924bb05b98f94",
+    "h161-buttons-arm-release.json": "eecd22f36568e15e33de77ed935652a28c1925ef99a2db9111c295884a81d194",
+    "h162-buttons-live.json": "aee0676826b6b7baf277758c9cbf3751fcd46305aeaf6f1e7792a0b926bdebf7",
+    "h162-buttons-live-invocation.json": "7e90ba14b9cac3b7d94451f83bc7f7e51127919a07ec742fbbbc265b258bb57d",
+    "h162-process-cpu.json": "e335c72f6edcbf2043ccf5df9e713b62f68371771e763d0e5fd11368b4abae5f"
+  },
+  "limitations": "One pass, unmatched physical starts. 100ms target windows with tick quantization, not instantaneous peaks. Lean mode omits packet/frame audit; safety checks remain in controller."
+}

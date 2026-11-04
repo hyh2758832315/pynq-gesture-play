@@ -1,0 +1,18 @@
+{
+  "zh": {
+    "nodes": 25,
+    "edges": 15,
+    "pdf_pages": 1,
+    "preview": "1800x795",
+    "checks": "PASS"
+  },
+  "en": {
+    "nodes": 25,
+    "edges": 15,
+    "pdf_pages": 1,
+    "preview": "1800x795",
+    "checks": "PASS"
+  },
+  "bilingual_geometry": "IDENTICAL",
+  "PL_PS_width_ratio": 2.58
+}

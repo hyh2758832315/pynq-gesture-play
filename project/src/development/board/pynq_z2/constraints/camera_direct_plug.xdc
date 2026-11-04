@@ -1,0 +1,20 @@
+create_clock -name vid_pclk -period 10.000 [get_ports vid_pclk]
+
+set_property -dict {PACKAGE_PIN Y19 IOSTANDARD LVCMOS33} [get_ports vid_xclk]
+set_property -dict {PACKAGE_PIN Y16 IOSTANDARD LVCMOS33} [get_ports vid_vsync]
+set_property -dict {PACKAGE_PIN Y17 IOSTANDARD LVCMOS33} [get_ports vid_iic_sda_io]
+set_property -dict {PACKAGE_PIN U19 IOSTANDARD LVCMOS33} [get_ports vid_pclk]
+set_property -dict {PACKAGE_PIN W18 IOSTANDARD LVCMOS33} [get_ports vid_hsync]
+set_property -dict {PACKAGE_PIN W19 IOSTANDARD LVCMOS33} [get_ports vid_iic_scl_io]
+
+set_property -dict {PACKAGE_PIN T10 IOSTANDARD LVCMOS33} [get_ports {vid_data[0]}]
+set_property -dict {PACKAGE_PIN W13 IOSTANDARD LVCMOS33} [get_ports {vid_data[1]}]
+set_property -dict {PACKAGE_PIN T11 IOSTANDARD LVCMOS33} [get_ports {vid_data[2]}]
+set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports {vid_data[3]}]
+set_property -dict {PACKAGE_PIN Y14 IOSTANDARD LVCMOS33} [get_ports {vid_data[4]}]
+set_property -dict {PACKAGE_PIN W16 IOSTANDARD LVCMOS33} [get_ports {vid_data[5]}]
+set_property -dict {PACKAGE_PIN W14 IOSTANDARD LVCMOS33} [get_ports {vid_data[6]}]
+set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports {vid_data[7]}]
+
+set_input_delay -clock vid_pclk -max 4.000 [get_ports {vid_vsync vid_hsync vid_data[*]}]
+set_input_delay -clock vid_pclk -min 0.000 [get_ports {vid_vsync vid_hsync vid_data[*]}]

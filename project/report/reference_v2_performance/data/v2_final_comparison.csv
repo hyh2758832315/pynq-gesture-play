@@ -1,0 +1,4 @@
+﻿metric,before,v2,unit,scope
+120次悬停背景上传,120,1,次,PC CPU only; same interpreter; no GPU/network
+悬停单帧中位耗时,1.8973499999999999,0.0802,ms,PC CPU only; same interpreter; no GPU/network
+绘制单帧中位耗时,1.86595,1.56735,ms,PC CPU only; same interpreter; no GPU/network

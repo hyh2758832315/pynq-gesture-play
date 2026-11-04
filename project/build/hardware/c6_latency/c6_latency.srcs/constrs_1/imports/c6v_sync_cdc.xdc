@@ -1,0 +1,7 @@
+set c6v_write_clock [get_clocks clk_fpga_0]
+set c6v_pixel_clock [get_clocks -of_objects [get_pins c6v_i/pixel_clock/inst/mmcm_adv_inst/CLKOUT0]]
+set c6v_cdc_limit [expr {min([get_property PERIOD $c6v_write_clock], [get_property PERIOD $c6v_pixel_clock])}]
+set_max_delay -datapath_only $c6v_cdc_limit -from [get_pins c6v_i/core/inst/core/frame_swap/request_toggle_reg/C] -to [get_pins c6v_i/core/inst/core/frame_swap/request_sync_1_reg/D]
+set_max_delay -datapath_only $c6v_cdc_limit -from [get_pins c6v_i/core/inst/core/frame_swap/acknowledgement_toggle_reg/C] -to [get_pins c6v_i/core/inst/core/frame_swap/acknowledgement_sync_1_reg/D]
+set_max_delay -datapath_only $c6v_cdc_limit -from [get_pins c6v_i/core/inst/palette_store/request_toggle_reg/C] -to [get_pins c6v_i/core/inst/palette_store/request_sync_1_reg/D]
+set_max_delay -datapath_only $c6v_cdc_limit -from [get_pins c6v_i/core/inst/palette_store/acknowledgement_toggle_reg/C] -to [get_pins c6v_i/core/inst/palette_store/acknowledgement_sync_1_reg/D]

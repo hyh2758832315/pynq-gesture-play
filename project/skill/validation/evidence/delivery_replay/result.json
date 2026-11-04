@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": {
+    "calibration": true,
+    "calibration_legacy": true,
+    "variant_a": true,
+    "variant_a_legacy": true,
+    "variant_b": true,
+    "variant_b_legacy": true,
+    "inputs_unchanged": true
+  },
+  "inputs_sha256": {
+    "original.sv": "4e44160291a28fa3d0e443870fed336d3495be6bf9e345fad44b1b2f6c908a5a",
+    "tb.sv": "960873725497f3b9002cbc2feb03ff86cdf891b28ac338574e7ecc9159e45c48",
+    "variant_a.sv": "512d04f0509c1dff70df25ec9b7ba32343143db6c6d0261cfd40944e48420016",
+    "variant_b.sv": "91ab838785a1ba0743edf0a1067d937d26ec002d2035ca1bc9fc053680757ce8"
+  },
+  "skill_script_sha256": "7c515456ec527ea103aeea0f0ebb628d6efcf59873122c88d4831b384928672c",
+  "scope": "Finite preservation and deliberate defect detection under the supplied stimulus"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "SHADOW_OBSERVED",
+  "pid": 127436,
+  "session": "356477d717794da79df03cd8604e9155",
+  "game_run": "silent-game",
+  "stop_reason": "stale_source",
+  "frames": 4,
+  "invalid_frames": 0,
+  "gestures": {
+    "paper": 4
+  },
+  "events": [
+    {
+      "frame": 42,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 44,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 46,
+      "gesture": "paper",
+      "valid": true
+    },
+    {
+      "frame": 48,
+      "gesture": "paper",
+      "valid": true
+    }
+  ],
+  "max_source_age_seconds": 0.04489390004891902,
+  "wall_seconds": 0.8364115000003949,
+  "cpu_seconds": 0.015625,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

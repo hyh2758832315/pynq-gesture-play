@@ -1,0 +1,21 @@
+{
+  "source_sha256": "7432be4aaf4f46015ba1b508bb8cffc08b16f235b8c0bff39828ee75ecb30b37",
+  "command": [
+    "ssh",
+    "-b",
+    "192.168.2.1",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=8",
+    "pynq-z2",
+    "sudo -n /usr/local/share/pynq-venv/bin/python -u -B -"
+  ],
+  "started_unix": 1792852709.033133,
+  "returncode": 0,
+  "stdout": "{\"boot_id\": \"cb83aaf7-3145-4df9-a054-d7c36e25cf33\", \"owners\": [], \"business\": [], \"services\": {\"bootpy.service\": {\"returncode\": 0, \"stdout\": \"MainPID=0\\nResult=success\\nActiveState=inactive\\n\", \"stderr\": \"\"}, \"clear_pl_statefile.service\": {\"returncode\": 0, \"stdout\": \"MainPID=0\\nResult=success\\nActiveState=inactive\\n\", \"stderr\": \"\"}, \"voice-view-shell.service\": {\"returncode\": 0, \"stdout\": \"MainPID=0\\nResult=success\\nActiveState=inactive\\n\", \"stderr\": \"\"}}, \"locks\": {\"/var/lock/voice-view-c6i.lock\": null, \"/run/lock/voice_pcm_audio.lock\": null, \"/var/lock/voice-view-c6i-volume-owner.json\": null}, \"ports\": {\"returncode\": 0, \"stdout\": \"State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                   \\nLISTEN 0      50           0.0.0.0:445       0.0.0.0:*    users:((\\\"smbd\\\",pid=458,fd=47))           \\nLISTEN 0      128          0.0.0.0:9090      0.0.0.0:*    users:((\\\"jupyter-noteboo\\\",pid=510,fd=7)) \\nLISTEN 0      128          0.0.0.0:80        0.0.0.0:*    users:((\\\"python3\\\",pid=623,fd=3))         \\nLISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:((\\\"sshd\\\",pid=423,fd=3))            \\nLISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:((\\\"systemd-resolve\\\",pid=147,fd=14))\\nLISTEN 0      50           0.0.0.0:139       0.0.0.0:*    users:((\\\"smbd\\\",pid=458,fd=48))           \\nLISTEN 0      50              [::]:445          [::]:*    users:((\\\"smbd\\\",pid=458,fd=45))           \\nLISTEN 0      128             [::]:80           [::]:*    users:((\\\"python3\\\",pid=623,fd=4))         \\nLISTEN 0      128             [::]:22           [::]:*    users:((\\\"sshd\\\",pid=423,fd=4))            \\nLISTEN 0      50              [::]:139          [::]:*    users:((\\\"smbd\\\",pid=458,fd=46))           \\n\", \"stderr\": \"\"}, \"verdict\": \"READ_ONLY_IDLE_GATE_PASS\"}\n",
+  "stderr": "",
+  "finished_unix": 1792852710.6912901
+}

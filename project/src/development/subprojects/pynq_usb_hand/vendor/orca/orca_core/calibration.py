@@ -1,0 +1,158 @@
+# ==============================================================================
+# Copyright (c) 2025 ORCA
+#
+# This file is part of ORCA and is licensed under the MIT License.
+# You may use, copy, modify, and distribute this file under the terms of the MIT License.
+# See the LICENSE file at the root of this repository for full license information.
+# ==============================================================================
+
+import dataclasses
+from dataclasses import dataclass, field
+from typing import Dict, List
+
+from .utils.utils import read_yaml
+
+
+@dataclass(frozen=True)
+class JointEncoderCal:
+    """Per-joint absolute-encoder anchor.
+
+    ``joint_angle = polarity * Δenc_wrapped + anchor_angle_deg``, where
+    ``Δenc_wrapped`` is the wrap-corrected 14-bit encoder delta from
+    ``enc_at_anchor_count``, ``polarity`` comes from the hand side's polarity
+    table via :func:`joint_encoder_polarity_for_side` (hardware-fixed by
+    mounting + magnet orientation), and ``anchor_angle_deg`` is the joint's ROM upper from
+    :attr:`OrcaHandConfig.joint_roms_dict` (the pose the calibration sweep
+    stalls the motor at).
+    """
+
+    enc_at_anchor_count: int
+
+
+@dataclass(frozen=True)
+class CalibrationResult:
+    """Immutable snapshot of a hand's calibration state.
+
+    Produced by the calibration routine and stored on the hand instance.
+    Replacing the instance attribute is the only way to update calibration
+    state — the internals are never mutated in place.
+
+    Attributes:
+        motor_limits_dict: Maps motor ID → ``[lower, upper]`` motor-shaft
+            hard limits (motor radians). Values are ``None`` before the
+            corresponding joint is calibrated.
+        joint_to_motor_ratios_dict: Maps motor ID → motor-rad per joint-deg
+            gear ratio. Zero before calibration.
+        joint_encoder_calibration_dict: Maps joint name → :class:`JointEncoderCal`.
+            Empty for hands without joint encoders.
+        joint_roms_measured_dict: Maps joint name → ``[lower, upper]`` joint ROM
+            in degrees, with the span between the hardstops measured by the
+            joint encoders rather than taken from the config nominal. The upper
+            endpoint equals the config ROM upper — it is the anchor pose the
+            encoder frame is pinned to, so only the lower endpoint moves. Empty
+            for hands without joint encoders; config ROMs are the fallback.
+        motor_travel_measured_dict: Maps joint name → the motor-shaft travel,
+            in degrees, recorded between that joint's two hardstops. Keyed by
+            joint rather than by motor because the travel is set by the joint's
+            tendon spool. Compared against the ``joint_motor_travel`` baseline
+            in ``config.yaml`` to catch a joint that stalled short of its
+            hardstop; see :mod:`orca_core.maintenance.motor_travel`.
+        calibrated: ``True`` when all joints have been fully calibrated.
+        wrist_calibrated: ``True`` when the wrist joint has been calibrated.
+    """
+
+    motor_limits_dict: Dict[int, List]
+    joint_to_motor_ratios_dict: Dict[int, float]
+    calibrated: bool
+    wrist_calibrated: bool
+    joint_encoder_calibration_dict: Dict[str, JointEncoderCal] = field(default_factory=dict)
+    joint_roms_measured_dict: Dict[str, List[float]] = field(default_factory=dict)
+    motor_travel_measured_dict: Dict[str, float] = field(default_factory=dict)
+
+    @classmethod
+    def empty(cls, motor_ids: List[int]) -> "CalibrationResult":
+        """Return a blank (uncalibrated) result for the given motor IDs."""
+        return cls(
+            motor_limits_dict={mid: [None, None] for mid in motor_ids},
+            joint_to_motor_ratios_dict={mid: 0.0 for mid in motor_ids},
+            calibrated=False,
+            wrist_calibrated=False,
+            joint_encoder_calibration_dict={},
+            joint_roms_measured_dict={},
+            motor_travel_measured_dict={},
+        )
+
+    @classmethod
+    def from_calibration_path(
+        cls,
+        calibration_path: str,
+        motor_ids: List[int],
+    ) -> "CalibrationResult":
+        """Load calibration state from a ``calibration.yaml`` file.
+
+        Returns an :meth:`empty` result for any fields absent from the file.
+
+        Args:
+            calibration_path: Absolute path to ``calibration.yaml``.
+            motor_ids: Ordered list of motor IDs; used to build the dicts.
+        """
+        calibration = read_yaml(calibration_path) or {}
+
+        motor_limits_raw = calibration.get("motor_limits", {})
+        motor_limits_dict = {
+            mid: motor_limits_raw.get(mid, [None, None]) for mid in motor_ids
+        }
+
+        ratios_raw = calibration.get("joint_to_motor_ratios", {})
+        joint_to_motor_ratios_dict = {
+            mid: ratios_raw.get(mid, 0.0) for mid in motor_ids
+        }
+
+        encoder_raw = calibration.get("joint_encoder_calibration", {}) or {}
+        joint_encoder_calibration_dict = {
+            joint: JointEncoderCal(
+                enc_at_anchor_count=int(entry["enc_at_anchor_count"]),
+            )
+            for joint, entry in encoder_raw.items()
+        }
+
+        measured_raw = calibration.get("joint_roms_measured", {}) or {}
+        joint_roms_measured_dict = {}
+        for joint, rom in measured_raw.items():
+            if not isinstance(rom, (list, tuple)) or len(rom) != 2:
+                print(
+                    f"\033[93mWarning: dropping malformed joint_roms_measured "
+                    f"entry for {joint}: {rom!r}\033[0m"
+                )
+                continue
+            joint_roms_measured_dict[joint] = [float(rom[0]), float(rom[1])]
+
+        travel_raw = calibration.get("motor_travel_measured", {}) or {}
+        motor_travel_measured_dict = {}
+        for joint, travel in travel_raw.items():
+            try:
+                motor_travel_measured_dict[joint] = float(travel)
+            except (TypeError, ValueError):
+                print(
+                    f"\033[93mWarning: dropping malformed motor_travel_measured "
+                    f"entry for {joint}: {travel!r}\033[0m"
+                )
+
+        return cls(
+            motor_limits_dict=motor_limits_dict,
+            joint_to_motor_ratios_dict=joint_to_motor_ratios_dict,
+            calibrated=calibration.get("calibrated", False) or False,
+            wrist_calibrated=calibration.get("wrist_calibrated", False) or False,
+            joint_encoder_calibration_dict=joint_encoder_calibration_dict,
+            joint_roms_measured_dict=joint_roms_measured_dict,
+            motor_travel_measured_dict=motor_travel_measured_dict,
+        )
+
+
+def joint_encoder_calibration_to_yaml(
+    joint_encoder_calibration_dict: Dict[str, JointEncoderCal],
+) -> Dict[str, Dict]:
+    return {
+        joint: dataclasses.asdict(cal)
+        for joint, cal in joint_encoder_calibration_dict.items()
+    }

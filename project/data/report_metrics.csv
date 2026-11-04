@@ -1,0 +1,45 @@
+﻿id,category,metric,before,after,unit,scope,evidence
+hw_lut,current_hardware,lut,,32570 / 53200,count,frozen_r23b2,data/resource_summary.csv
+hw_ff,current_hardware,ff,,47672 / 106400,count,frozen_r23b2,data/resource_summary.csv
+hw_slice,current_hardware,slice,,13136 / 13300,count,frozen_r23b2,data/resource_summary.csv
+hw_bram,current_hardware,bram,,89.5 / 140,36k_equivalent,frozen_r23b2,data/resource_summary.csv
+hw_dsp,current_hardware,dsp,,20 / 220,count,frozen_r23b2,data/resource_summary.csv
+hw_wns,current_hardware,wns,,0.011,ns,frozen_r23b2,data/resource_summary.csv
+hw_whs,current_hardware,whs,,0.050,ns,frozen_r23b2,data/resource_summary.csv
+hw_wpws,current_hardware,wpws,,0.538,ns,frozen_r23b2,data/resource_summary.csv
+hw_control_clock,current_hardware,control_clock,,100,mhz,constraint,data/resource_summary.csv
+hw_hdmi_pixel_clock,current_hardware,hdmi_pixel_clock,,74.25,mhz,generated_clock,data/resource_summary.csv
+pc_0,paired_pc_v2,120次悬停背景上传,120,1,次,PC CPU only; same interpreter; no GPU/network,report/reference_v2_performance/data/v2_final_comparison.csv
+pc_1,paired_pc_v2,悬停单帧中位耗时,1.8973499999999999,0.0802,ms,PC CPU only; same interpreter; no GPU/network,report/reference_v2_performance/data/v2_final_comparison.csv
+pc_2,paired_pc_v2,绘制单帧中位耗时,1.86595,1.56735,ms,PC CPU only; same interpreter; no GPU/network,report/reference_v2_performance/data/v2_final_comparison.csv
+hand_2,board_historical,插值写入 / H143 / single_core_percent,,55.36983088582985,% of one core,Motion segment; four poses once per run; unmatched historical starts/configuration,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_5,board_historical,阶段目标 / H150 / single_core_percent,,18.095738298458688,% of one core,Motion segment; four poses once per run; unmatched historical starts/configuration,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_8,board_historical,阶段目标＋轻量审计 / H164 / single_core_percent,,15.940301519841766,% of one core,Motion segment; four poses once per run; unmatched historical starts/configuration,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_17,offline_aggregate,all_stage_targets / write_packets,,306,packets,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_18,offline_aggregate,skip_unchanged / write_packets,,201,packets,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_19,offline_aggregate,all_stage_targets / tx_plus_ack_bytes,,5814,B,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_20,offline_aggregate,skip_unchanged / tx_plus_ack_bytes,,3819,B,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_21,offline_aggregate,all_stage_targets / ideal_wire_time,,58.14,ms,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+hand_22,offline_aggregate,skip_unchanged / ideal_wire_time,,38.190000000000005,ms,Sum of four independent two-play cases; wire derived at 1 Mbaud 8N1; 13 B TX + 6 B ACK,report/figures/hand_communication_handoff/data/comparison_metrics.csv
+skill_FF,skill_supported_ooc_optimization,FF,191.0,167.0,count,"Behavioral finite all-output preservation; identical 10ns OOC post-synthesis internal timing. No routing, I/O constraints or board signoff.",skill/validation/evidence/return_source/results.json
+skill_LUT,skill_supported_ooc_optimization,LUT,89.0,89.0,count,"Behavioral finite all-output preservation; identical 10ns OOC post-synthesis internal timing. No routing, I/O constraints or board signoff.",skill/validation/evidence/return_source/results.json
+skill_BRAM,skill_supported_ooc_optimization,BRAM,0.0,0.0,blocks,"Behavioral finite all-output preservation; identical 10ns OOC post-synthesis internal timing. No routing, I/O constraints or board signoff.",skill/validation/evidence/return_source/results.json
+skill_DSP,skill_supported_ooc_optimization,DSP,0.0,0.0,count,"Behavioral finite all-output preservation; identical 10ns OOC post-synthesis internal timing. No routing, I/O constraints or board signoff.",skill/validation/evidence/return_source/results.json
+skill_internal_setup_WNS_ns,skill_supported_ooc_optimization,internal_setup_WNS_ns,3.612,3.612,ns,"Behavioral finite all-output preservation; identical 10ns OOC post-synthesis internal timing. No routing, I/O constraints or board signoff.",skill/validation/evidence/return_source/results.json
+skill_reset,validation_or_configuration,复位故障定位仿真时刻,,5.001,ns,"Fault injection; simulation timestamp, not tool wall-clock latency",skill/validation/evidence/consumer/variant_b/simulate.log
+skill_checks,validation_or_configuration,返回源全输出比较,,28761,comparisons,Finite supplied stimulus; not independent test cases,skill/validation/evidence/return_source/boundary_preserve/verified.json
+skill_replay,validation_or_configuration,搬迁复跑,,6,XSim runs,"Six expected outcomes, including intended defect rejection",skill/validation/evidence/delivery_replay/result.json
+studio_tests,validation_or_configuration,独立Studio离线回归,,169,tests,PC tests only,sim/evidence/normalized_studio.xml
+frame_scenarios,validation_or_configuration,帧owner RTL场景,,14,scenarios,One module RTL verification,sim/evidence/frame_owner_result.txt
+frame_checks,validation_or_configuration,帧owner RTL检查,,184,checks,One module RTL verification,sim/evidence/frame_owner_result.txt
+runtime_files,validation_or_configuration,冻结运行包身份文件,,651,files,"File identity, not functional tests",report/validation.md
+gpu_tokens,validation_or_configuration,当前双token图像容量,,112.5,KiB,2 x 320 x 180 x 1 B; logical capacity only,report/figures/gpu_buffer_timing_handoff/data/storage.csv
+gpu_rgb_compare,validation_or_configuration,同分辨率双RGB888容量对照,,337.5,KiB,Computed reference; not a previous deployed buffer,report/figures/gpu_buffer_timing_handoff/data/storage.csv
+hdmi_refresh,validation_or_configuration,HDMI配置刷新率,,60,Hz,"Configuration, not application FPS",report/figures/gpu_buffer_timing_handoff/data/timing.json
+hand_config,validation_or_configuration,配置电机数量,,17,motors,Motor count; independent mechanical DOF requires separate evidence,report/figures/hand_communication_handoff/TECHNICAL_NOTES.md
+gpu_exp_0,historical_gpu_experiment,P1 Tile 缓存,13860,9540,cycles,Tile 单元；缓存 off/on；流水及 pair 关闭,report/gpu_ai_preparation/data/performance.csv
+gpu_exp_1,historical_gpu_experiment,P2a Blit 流水,1281,261,cycles,Blit 单元；256 次不透明有效写入；流水 off/on,report/gpu_ai_preparation/data/performance.csv
+gpu_exp_2,historical_gpu_experiment,P2b Tile 流水,9540,2340,cycles,Tile 单元；缓存固定开启；流水 off/on,report/gpu_ai_preparation/data/performance.csv
+gpu_exp_3,historical_gpu_experiment,P1+P2b 累计,13860,2340,cycles,与 P1 同一 Tile 负载；不含 pair,report/gpu_ai_preparation/data/performance.csv
+gpu_exp_4,historical_gpu_experiment,P3a Tile 双像素,813,557,cycles,核心长 Tile；其余优化固定；pair off/on,report/gpu_ai_preparation/data/performance.csv
+gpu_exp_5,historical_gpu_experiment,P3b 栅格双像素,57909,28974,cycles,核心普通不透明帧；Tile/cache/pipeline 固定开启,report/gpu_ai_preparation/data/performance.csv

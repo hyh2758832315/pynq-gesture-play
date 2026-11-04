@@ -1,0 +1,38 @@
+{
+  "schema": "r30-arm-owned-preview-idle-v1",
+  "root": "/home/xilinx/voice-view-game/ps-ui-r30-preview-idle-20261026-board-candidate-r20",
+  "manifest_sha256": "6f8df0d66d816e25187f8a058a175e3b85bdf471417c012979ccffdecbed8034",
+  "result": "PASS",
+  "error": null,
+  "hardware_opened": false,
+  "idle_seconds": 4.007399520000035,
+  "codec_pid": 2365,
+  "relay_tid": 2366,
+  "idle_deltas": {
+    "codec": {
+      "voluntary_ctxt_switches": 0,
+      "nonvoluntary_ctxt_switches": 0,
+      "cpu_ticks": 0
+    },
+    "relay": {
+      "voluntary_ctxt_switches": 4,
+      "nonvoluntary_ctxt_switches": 0,
+      "cpu_ticks": 0
+    }
+  },
+  "received": [
+    {
+      "frame": 1,
+      "pid": 2365
+    },
+    {
+      "frame": 2,
+      "pid": 2365
+    },
+    {
+      "frame": 3,
+      "pid": 2365
+    }
+  ],
+  "cleanup": "CLEAN"
+}

@@ -1,0 +1,10 @@
+{
+  "session": "304a40370b3a49599da550d4d09706f1",
+  "producer_pid": 116520,
+  "actuator_constructed": false,
+  "child_restarted": false,
+  "error": null,
+  "feed_revoked": "shadow_closed",
+  "elapsed": 6.280001252889633e-05,
+  "publisher_dropped": null
+}

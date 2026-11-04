@@ -1,0 +1,36 @@
+PACKAGE_PASS: paired hashes/address map; NOT board validated
+PACKAGE_PASS: paired hashes/address map; NOT board validated
+PROJECT1_RESULTS=/home/xilinx/jupyter_notebooks/camera_skin_v6_test/results/project1_results_20260926_133257
+PROJECT1_VERSION=pl_skin_v6_compact_dma_hdmi_enabled
+PROJECT1_LATENCY_MODE=EARLY_CONTROL; HDMI remains enabled; native 640x360 PS preview with PL OSD
+PROJECT1_CAPTURE_ORDER=bgr
+PROJECT1_ACCEPTANCE=NOT_YET_BOARD_VALIDATED; RPS labels are heuristic candidates
+PROJECT1_PL_SKIN=COMPACT_BGR_DMA mode=validate; morphology/contours/RPS remain PS
+PROJECT1_PL_OSD_ID=PASS; HDMI geometry is PL, preview/recording geometry is PS
+CAMERA_IIC_ID_REGISTER=0x300A
+CAMERA_IIC_ID_REGISTER=0x300B
+CAMERA_IIC_CHIP_ID=0x5640
+CAMERA_IIC_CHIP_ID_STATUS=PASS
+CAMERA_VDMA_INTERRUPTS_RECOVERED_FROM_HWH=PASS
+/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py:713: UserWarning: Interrupt s2mm_introut not created: Could not find UIO device for interrupt pin for IRQ number 62
+  warnings.warn("Interrupt {} not created: {}".format(interrupt, str(e)))
+CAMERA_VDMA_S2MM_POLL_FALLBACK=PASS
+PROJECT1_READY=http://192.168.2.99:8088/camera.mjpg duration=60.0
+PROJECT1_DASHBOARD=http://192.168.2.99:8088/ debug_view=True
+PROJECT1_PL_OSD_APPLIED=1 metadata={'enable': 1, 'bbox_valid': 0, 'centroid_valid': 0, 'state': 0, 'x0': 0, 'y0': 0, 'x1': 0, 'y1': 0, 'cx': 0, 'cy': 0, 'result_frame_id': 1}
+PROJECT1_FRAME=1 loop_fps=0.95 raw=NO_HAND stable=NO_HAND RPS_CANDIDATE=UNKNOWN
+PROJECT1_PL_OSD_APPLIED=25 metadata={'enable': 1, 'bbox_valid': 0, 'centroid_valid': 0, 'state': 0, 'x0': 0, 'y0': 0, 'x1': 0, 'y1': 0, 'cx': 0, 'cy': 0, 'result_frame_id': 25}
+PROJECT1_FRAME=25 loop_fps=2.64 raw=NO_HAND stable=NO_HAND RPS_CANDIDATE=UNKNOWN
+PROJECT1_PL_OSD_APPLIED=50 metadata={'enable': 1, 'bbox_valid': 1, 'centroid_valid': 1, 'state': 2, 'x0': 136, 'y0': 128, 'x1': 636, 'y1': 580, 'cx': 425, 'cy': 391, 'result_frame_id': 50}
+PROJECT1_FRAME=50 loop_fps=2.78 raw=5 stable=5 RPS_CANDIDATE=PAPER
+PROJECT1_PL_OSD_APPLIED=75 metadata={'enable': 1, 'bbox_valid': 1, 'centroid_valid': 1, 'state': 3, 'x0': 142, 'y0': 252, 'x1': 648, 'y1': 510, 'cx': 442, 'cy': 386, 'result_frame_id': 75}
+PROJECT1_FRAME=75 loop_fps=2.77 raw=2 stable=2 RPS_CANDIDATE=SCISSORS
+PROJECT1_PL_OSD_APPLIED=100 metadata={'enable': 1, 'bbox_valid': 1, 'centroid_valid': 1, 'state': 1, 'x0': 468, 'y0': 196, 'x1': 664, 'y1': 362, 'cx': 572, 'cy': 276, 'result_frame_id': 100}
+PROJECT1_FRAME=100 loop_fps=2.77 raw=0 stable=0 RPS_CANDIDATE=ROCK
+PROJECT1_PL_OSD_APPLIED=125 metadata={'enable': 1, 'bbox_valid': 1, 'centroid_valid': 1, 'state': 0, 'x0': 702, 'y0': 290, 'x1': 1012, 'y1': 538, 'cx': 872, 'cy': 411, 'result_frame_id': 125}
+PROJECT1_FRAME=125 loop_fps=2.78 raw=REPOSITION stable=PENDING RPS_CANDIDATE=UNKNOWN
+PROJECT1_PL_OSD_APPLIED=150 metadata={'enable': 1, 'bbox_valid': 1, 'centroid_valid': 1, 'state': 0, 'x0': 288, 'y0': 246, 'x1': 596, 'y1': 540, 'cx': 464, 'cy': 403, 'result_frame_id': 150}
+PROJECT1_FRAME=150 loop_fps=2.78 raw=5 stable=PENDING RPS_CANDIDATE=UNKNOWN
+PROJECT1_STOPPED=single-owner cleanup completed
+ACCEL_GUARD_HALTED={'moments_dma': [4097, 4097], 'frame_dma': [69633, 69633]}
+ACCEL_CHILD_EXIT=0 elapsed=92.641

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "videos": [
+    {
+      "item_id": "test-pattern-1-f5ac49d4",
+      "display_name": "VIDEO 1 TEST PATTERN",
+      "path": "seed_videos/default-1.s2v",
+      "sha256": "f5ac49d41c3cd4c76ee4f05b7bd97d4dc39a9c4ef6916b9bf1d42507f2c4e7ee"
+    },
+    {
+      "item_id": "test-pattern-2-0e72b01a",
+      "display_name": "VIDEO 2 TEST PATTERN",
+      "path": "seed_videos/default-2.s2v",
+      "sha256": "0e72b01affcd52dcf8fbd1ba5dd821c09abf0f5c9d4b3e34b71b7d6599a2c525"
+    }
+  ]
+}

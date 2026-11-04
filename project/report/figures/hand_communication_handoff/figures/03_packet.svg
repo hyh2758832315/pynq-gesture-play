@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1450" viewBox="0 0 2200 1450">
+<rect x="0" y="0" width="2200" height="1450" fill="#ffffff"/>
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bf286e"/></marker>
+</defs><g font-family="Microsoft YaHei" fill="#172b3a">
+<rect x="60" y="915" width="1060" height="260" rx="0" fill="#ffffff" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="953.0" text-anchor="start" font-size="27" font-weight="600">成功状态应答 / 6 B</text>
+<path d="M510,300 L610,300" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1050,300 L1150,300" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1590,300 L1690,300" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  灵巧手驱动与低负荷通信  /  03  编码与校验</text>
+<text x="1100.0" y="130.66" text-anchor="middle" font-size="49" font-weight="600">从关节目标到串口字节流</text>
+<text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">SCSCL 单电机位置指令 · 1 Mbaud / 8N1 · 16 位字段高字节在前</text>
+<text x="1100.0" y="1421.12" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY  ·  v3.0 / 手部运行时 R16  ·  按已交付源码绘制  ·  技术示意</text>
+<rect x="70" y="245" width="440" height="110" rx="6" fill="#edf5fb" stroke="#25638d" stroke-width="2"/>
+<text x="290.0" y="292.25" text-anchor="middle" font-size="25" font-weight="600">关节目标 θ</text>
+<text x="290.0" y="324.75" text-anchor="middle" font-size="25" font-weight="400">结合标定与传动映射</text>
+<rect x="610" y="245" width="440" height="110" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="830.0" y="292.25" text-anchor="middle" font-size="25" font-weight="600">量化为 raw</text>
+<text x="830.0" y="324.75" text-anchor="middle" font-size="25" font-weight="400">round(电机角度 / POS_SCALE)</text>
+<rect x="1150" y="245" width="440" height="110" rx="6" fill="#fff0f6" stroke="#bf286e" stroke-width="2"/>
+<text x="1370.0" y="292.25" text-anchor="middle" font-size="25" font-weight="600">预编译目标元组</text>
+<text x="1370.0" y="324.75" text-anchor="middle" font-size="25" font-weight="400">(ID, raw, speed)</text>
+<rect x="1690" y="245" width="440" height="110" rx="6" fill="#fff0f6" stroke="#bf286e" stroke-width="2"/>
+<text x="1910.0" y="292.25" text-anchor="middle" font-size="25" font-weight="600">逐 ID 编码发送</text>
+<text x="1910.0" y="324.75" text-anchor="middle" font-size="25" font-weight="400">并检查每条状态应答</text>
+<text x="1100.0" y="430.52" text-anchor="middle" font-size="28" font-weight="600">编码示例  ·  ID = 1   /   raw = 2048 (0x0800)   /   time = 0   /   speed = 500 (0x01F4)</text>
+<text x="140.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 0</text>
+<rect x="60" y="513" width="160" height="78" rx="6" fill="#f5f7fa" stroke="#697586" stroke-width="2"/>
+<text x="140.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">FF</text>
+<text x="140.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">帧头</text>
+<text x="300.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 1</text>
+<rect x="220" y="513" width="160" height="78" rx="6" fill="#f5f7fa" stroke="#697586" stroke-width="2"/>
+<text x="300.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">FF</text>
+<text x="300.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">帧头</text>
+<text x="460.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 2</text>
+<rect x="380" y="513" width="160" height="78" rx="6" fill="#fff7e9" stroke="#a66c22" stroke-width="2"/>
+<text x="460.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">01</text>
+<text x="460.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">ID</text>
+<text x="620.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 3</text>
+<rect x="540" y="513" width="160" height="78" rx="6" fill="#f5f7fa" stroke="#697586" stroke-width="2"/>
+<text x="620.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">09</text>
+<text x="620.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">LENGTH</text>
+<text x="780.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 4</text>
+<rect x="700" y="513" width="160" height="78" rx="6" fill="#fff0f6" stroke="#bf286e" stroke-width="2"/>
+<text x="780.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">03</text>
+<text x="780.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">WRITE</text>
+<text x="940.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 5</text>
+<rect x="860" y="513" width="160" height="78" rx="6" fill="#edf5fb" stroke="#25638d" stroke-width="2"/>
+<text x="940.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">2A</text>
+<text x="940.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">起始地址</text>
+<text x="1100.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 6</text>
+<rect x="1020" y="513" width="160" height="78" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1100.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">08</text>
+<text x="1100.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">POS 高</text>
+<text x="1260.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 7</text>
+<rect x="1180" y="513" width="160" height="78" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1260.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">00</text>
+<text x="1260.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">POS 低</text>
+<text x="1420.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 8</text>
+<rect x="1340" y="513" width="160" height="78" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1420.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">00</text>
+<text x="1420.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">TIME 高</text>
+<text x="1580.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 9</text>
+<rect x="1500" y="513" width="160" height="78" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1580.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">00</text>
+<text x="1580.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">TIME 低</text>
+<text x="1740.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 10</text>
+<rect x="1660" y="513" width="160" height="78" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1740.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">01</text>
+<text x="1740.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">SPEED 高</text>
+<text x="1900.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 11</text>
+<rect x="1820" y="513" width="160" height="78" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="1900.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">F4</text>
+<text x="1900.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">SPEED 低</text>
+<text x="2060.0" y="489.12" text-anchor="middle" font-size="18" font-weight="600">byte 12</text>
+<rect x="1980" y="513" width="160" height="78" rx="6" fill="#fff7e9" stroke="#a66c22" stroke-width="2"/>
+<text x="2060.0" y="563.9" text-anchor="middle" font-size="35" font-weight="600">CB</text>
+<text x="2060.0" y="633.14" text-anchor="middle" font-size="21" font-weight="600">CHECKSUM</text>
+<text x="1100.0" y="696.5" text-anchor="middle" font-size="25" font-weight="600">LENGTH = 7 个参数字节 + 2 = 9    ｜    起始地址 0x2A    ｜    连续写入位置、时间、速度，共 6 B 数据</text>
+<rect x="60" y="750" width="1190" height="120" rx="6" fill="#fff7e9" stroke="#a66c22" stroke-width="2"/>
+<text x="655.0" y="801.63" text-anchor="middle" font-size="27" font-weight="600">校验和 = ~(ID + LENGTH + 指令 + 参数之和) &amp; 0xFF</text>
+<text x="655.0" y="836.73" text-anchor="middle" font-size="27" font-weight="400">示例：~0x0134 &amp; 0xFF = 0xCB</text>
+<rect x="1290" y="750" width="850" height="120" rx="6" fill="#edf5fb" stroke="#25638d" stroke-width="2"/>
+<text x="1715.0" y="801.63" text-anchor="middle" font-size="27" font-weight="600">高字节在前：2048 → 08 00</text>
+<text x="1715.0" y="836.73" text-anchor="middle" font-size="27" font-weight="400">当前 scscl 构造设置 scs_end = 1</text>
+<rect x="100" y="1000" width="145" height="66" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="172.5" y="1043.54" text-anchor="middle" font-size="31" font-weight="600">FF</text>
+<text x="172.5" y="1104.14" text-anchor="middle" font-size="21" font-weight="600">帧头</text>
+<rect x="260" y="1000" width="145" height="66" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="332.5" y="1043.54" text-anchor="middle" font-size="31" font-weight="600">FF</text>
+<text x="332.5" y="1104.14" text-anchor="middle" font-size="21" font-weight="600">帧头</text>
+<rect x="420" y="1000" width="145" height="66" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="492.5" y="1043.54" text-anchor="middle" font-size="31" font-weight="600">01</text>
+<text x="492.5" y="1104.14" text-anchor="middle" font-size="21" font-weight="600">ID</text>
+<rect x="580" y="1000" width="145" height="66" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="652.5" y="1043.54" text-anchor="middle" font-size="31" font-weight="600">02</text>
+<text x="652.5" y="1104.14" text-anchor="middle" font-size="21" font-weight="600">LENGTH</text>
+<rect x="740" y="1000" width="145" height="66" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="812.5" y="1043.54" text-anchor="middle" font-size="31" font-weight="600">00</text>
+<text x="812.5" y="1104.14" text-anchor="middle" font-size="21" font-weight="600">ERROR</text>
+<rect x="900" y="1000" width="145" height="66" rx="6" fill="#edf8f5" stroke="#197b71" stroke-width="2"/>
+<text x="972.5" y="1043.54" text-anchor="middle" font-size="31" font-weight="600">FC</text>
+<text x="972.5" y="1104.14" text-anchor="middle" font-size="21" font-weight="600">校验和</text>
+<rect x="1160" y="970" width="980" height="160" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1650.0" y="1024.08" text-anchor="middle" font-size="27" font-weight="600">接收检查：帧头、ID、长度、校验和、error</text>
+<text x="1650.0" y="1059.1799999999998" text-anchor="middle" font-size="27" font-weight="400">成功 → 记录本次目标缓存</text>
+<text x="1650.0" y="1094.28" text-anchor="middle" font-size="27" font-weight="400">错误 / 超时 → 清除缓存，交由 owner 处理</text>
+<rect x="60" y="1220" width="2080" height="116" rx="6" fill="#f5f7fa" stroke="#d8dfe7" stroke-width="2"/>
+<text x="1100.0" y="1270.25" text-anchor="middle" font-size="25" font-weight="600">单次成功写入往返：13 + 6 = 19 B；仅按 1 Mbaud / 8N1 计算的线速下限为 190 μs</text>
+<text x="1100.0" y="1302.75" text-anchor="middle" font-size="25" font-weight="400">以上为编码示例与理论线速，不含 USB、设备处理或调度耗时；示例未向实体电机发送。</text>
+</g></svg>

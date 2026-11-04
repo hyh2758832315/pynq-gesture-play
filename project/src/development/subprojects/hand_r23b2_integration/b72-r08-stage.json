@@ -1,0 +1,21 @@
+{
+  "source_sha256": "0bad97f6f29e4da213102da17ba39488446698d74f0abb94f2a675b064f33d35",
+  "command": [
+    "ssh",
+    "-b",
+    "192.168.2.1",
+    "-o",
+    "BatchMode=yes",
+    "-o",
+    "StrictHostKeyChecking=yes",
+    "-o",
+    "ConnectTimeout=8",
+    "pynq-z2",
+    "sudo -n /usr/local/share/pynq-venv/bin/python -u -B -"
+  ],
+  "started_unix": 1792851426.5077667,
+  "returncode": 0,
+  "stdout": "{\"result\": \"HAND_R08_BOARD_STAGE_PASS\", \"hand_root\": \"/home/xilinx/voice-view-game/hand-shadow-r23b2-r08-20261024\", \"archive_sha256\": \"821f1eef6253ae1aa1314cdaca3195bd1871bdd00110a6dc927a87f99ae2c6e7\", \"manifest_sha256\": \"c0cf78dc534b3968d942649464e43c3ae711e5ff8b54e26b39675d17579e6700\", \"files\": 173}\n",
+  "stderr": "",
+  "finished_unix": 1792851431.983851
+}

@@ -1,0 +1,7 @@
+﻿name,short_name,before,after,before_us,after_us,speedup,cycle_reduction_pct,scope,source
+P1 Tile 缓存,Tile 缓存,13860,9540,138.6,95.4,1.4528301886792452,31.16883116883117,Tile 单元；缓存 off/on；流水及 pair 关闭,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log;results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log
+P2a Blit 流水,Blit 流水,1281,261,12.81,2.61,4.908045977011494,79.62529274004683,Blit 单元；256 次不透明有效写入；流水 off/on,results/gpu-blit-pipeline-1791010899500/blit_unit_matrix.log
+P2b Tile 流水,Tile 流水,9540,2340,95.4,23.4,4.076923076923077,75.47169811320755,Tile 单元；缓存固定开启；流水 off/on,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log;results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log
+P1+P2b 累计,Tile 缓存与流水,13860,2340,138.6,23.4,5.923076923076923,83.11688311688312,与 P1 同一 Tile 负载；不含 pair,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log;results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log
+P3a Tile 双像素,Tile 双像素,813,557,8.13,5.57,1.459605026929982,31.488314883148828,核心长 Tile；其余优化固定；pair off/on,results/gpu-tile_pair-verify-1791023235581/core_pair_0.log;results/gpu-tile_pair-verify-1791023235581/core_pair_1.log
+P3b 栅格双像素,栅格双像素,57909,28974,579.09,289.74,1.998653965624353,49.96632647774957,核心普通不透明帧；Tile/cache/pipeline 固定开启,results/gpu-raster_core_unit-verify-1791031504609/core_raster_0_0.log;results/gpu-raster_core_unit-verify-1791031504609/core_raster_1_1.log

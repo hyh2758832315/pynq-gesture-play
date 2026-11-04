@@ -1,0 +1,9 @@
+{
+  "schema": "studio-system-start-v1",
+  "transaction": "c4e91d1deb044ab18f33b0607d1df409",
+  "result": "PASS",
+  "hand_enabled": true,
+  "steps": [],
+  "manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+  "already_running": true
+}

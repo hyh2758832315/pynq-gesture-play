@@ -1,0 +1,20 @@
+[package]
+schema_version = 1
+id = "game1-button-v1"
+display_name = "Game 1 - Buttons"
+version = "1.0.0"
+entrypoint = "src.button_main:create_game"
+
+[runtime]
+sdk_major = 1
+sdk_minor = 3
+tick_hz = 60
+render_hz = 60
+logical_width = 320
+logical_height = 180
+
+[target]
+build_id = 3221622528
+abi_major = 1
+abi_minor = 0
+

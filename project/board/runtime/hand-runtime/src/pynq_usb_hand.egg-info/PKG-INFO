@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: pynq-usb-hand
+Version: 0.1.0
+Summary: Standalone four-button ORCA SCS225 hand controller
+Requires-Python: >=3.10

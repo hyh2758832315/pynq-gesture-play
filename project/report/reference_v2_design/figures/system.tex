@@ -1,0 +1,15 @@
+\begin{tikzpicture}[node distance=9mm and 10mm]
+\node[box] (cam) {OV5640\\摄像头};
+\node[box,right=of cam] (vision) {PL 视觉前端\\双掩膜流水线};
+\node[box,right=of vision] (ps) {PS / PYNQ\\识别与应用};
+\node[box,below=13mm of vision] (gpu) {PL Scene2D\\渲染与扫描};
+\node[soft,left=of gpu] (screen) {HDMI\\图形反馈};
+\node[soft,below=13mm of ps] (hand) {独立动作进程\\USB 灵巧手};
+\node[soft,above=13mm of ps] (pc) {PC Studio\\创作 / 部署 / 测试};
+\draw[arr] (cam)--(vision);
+\draw[arr] (vision)--node[lab,above=5mm]{DMA / DDR}(ps);
+\draw[arr,<->] (ps.south west)--node[lab,above,sloped]{命令 / 回执}(gpu.north east);
+\draw[arr] (gpu)--(screen);
+\draw[arr] (ps)--node[lab,right]{观察}(hand);
+\draw[ctl,<->] (pc)--node[lab,right]{VVGP}(ps);
+\end{tikzpicture}

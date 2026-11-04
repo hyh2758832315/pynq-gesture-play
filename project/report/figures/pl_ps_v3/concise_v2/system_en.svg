@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1060" viewBox="0 0 2400 1060">
+<rect x="0" y="0" width="2400" height="1060" fill="#ffffff"/>
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#276c96"/></marker>
+<marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#287963"/></marker>
+<marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#697887"/></marker>
+<marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#77539a"/></marker>
+</defs><g font-family="Microsoft YaHei" fill="#172b3a">
+<rect x="305" y="135" width="1775" height="815" rx="0" fill="#ffffff" stroke="#3a5061" stroke-width="2.6"/>
+<text x="327" y="173.0" text-anchor="start" font-size="27" font-weight="600">PYNQ-Z2  ·  Zynq-7020</text>
+<rect x="335" y="205" width="1135" height="715" rx="0" fill="#f8fafc" stroke="#7893aa" stroke-width="2.6"/>
+<text x="357" y="243.0" text-anchor="start" font-size="32" font-weight="600">PL  /  Programmable Logic</text>
+<rect x="1610" y="205" width="440" height="715" rx="0" fill="#f1f7f3" stroke="#287963" stroke-width="2.6"/>
+<text x="1632" y="243.0" text-anchor="start" font-size="29" font-weight="600">PS  /  Processing System</text>
+<rect x="360" y="295" width="1085" height="240" rx="0" fill="#eaf4fb" stroke="#276c96" stroke-width="2.6"/>
+<text x="382" y="333.0" text-anchor="start" font-size="29" font-weight="600">Vision Processing</text>
+<rect x="360" y="595" width="1085" height="250" rx="0" fill="#f3eef8" stroke="#77539a" stroke-width="2.6"/>
+<text x="382" y="633.0" text-anchor="start" font-size="29" font-weight="600">Rendering GPU</text>
+<path d="M255,447 L400,447" fill="none" stroke="#276c96" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M635,447 L705,447" fill="none" stroke="#276c96" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M635,447 L665,447 L665,375 L1250,375 L1250,400" fill="none" stroke="#276c96" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1010,447 L1080,447" fill="none" stroke="#276c96" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1405,447 L1645,447" fill="none" stroke="#276c96" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1830,495 L1830,700" fill="none" stroke="#287963" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1645,747 L1405,747" fill="none" stroke="#77539a" stroke-width="2.7" marker-end="url(#arrow3)"/>
+<path d="M1240,747 L1175,747" fill="none" stroke="#77539a" stroke-width="2.7" marker-end="url(#arrow3)"/>
+<path d="M930,747 L875,747" fill="none" stroke="#77539a" stroke-width="2.7" marker-end="url(#arrow3)"/>
+<path d="M665,747 L610,747" fill="none" stroke="#77539a" stroke-width="2.7" marker-end="url(#arrow3)"/>
+<path d="M400,747 L255,747" fill="none" stroke="#77539a" stroke-width="2.7" marker-end="url(#arrow3)"/>
+<path d="M2160,342 L2015,342" fill="none" stroke="#697887" stroke-width="2.7" marker-end="url(#arrow2)" marker-start="url(#arrow2)"/>
+<path d="M2015,475 L2032,475 L2032,815 L1950,815 L1950,840" fill="none" stroke="#287963" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M2015,870 L2160,870" fill="none" stroke="#287963" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1645,778 L1575,778 L1575,885 L1405,885" fill="none" stroke="#697887" stroke-width="2.7" marker-end="url(#arrow2)" stroke-dasharray="9 6"/>
+<text x="1200.0" y="65.76" text-anchor="middle" font-size="39" font-weight="600">GESTURE PLAY v3.0  |  PL–PS System Architecture</text>
+<text x="1830.0" y="279.98" text-anchor="middle" font-size="22" font-weight="600">ARM Cortex-A9 · Linux / PYNQ</text>
+<rect x="360" y="565" width="1085" height="3" rx="6" fill="#526575" stroke="#526575" stroke-width="2"/>
+<text x="902.5" y="575.68" text-anchor="middle" font-size="27" font-weight="600"></text>
+<rect x="400" y="400" width="235" height="95" rx="6" fill="#ffffff" stroke="#276c96" stroke-width="2"/>
+<text x="517.5" y="439.13" text-anchor="middle" font-size="27" font-weight="600">DVP Input</text>
+<text x="517.5" y="474.23" text-anchor="middle" font-size="27" font-weight="400">Bayer → RGB</text>
+<rect x="705" y="400" width="305" height="95" rx="6" fill="#ffffff" stroke="#276c96" stroke-width="2"/>
+<text x="857.5" y="439.13" text-anchor="middle" font-size="27" font-weight="600">Skin Segmentation</text>
+<text x="857.5" y="474.23" text-anchor="middle" font-size="27" font-weight="400">Filter / Dual Masks</text>
+<rect x="1080" y="400" width="325" height="95" rx="6" fill="#ffffff" stroke="#276c96" stroke-width="2"/>
+<text x="1242.5" y="439.13" text-anchor="middle" font-size="27" font-weight="600">Frame Capture / DMA</text>
+<text x="1242.5" y="474.23" text-anchor="middle" font-size="27" font-weight="400">RGB / Dual Masks</text>
+<rect x="1240" y="700" width="165" height="95" rx="6" fill="#ffffff" stroke="#77539a" stroke-width="2"/>
+<text x="1322.5" y="740.99" text-anchor="middle" font-size="21" font-weight="600">DMA Upload</text>
+<text x="1322.5" y="768.29" text-anchor="middle" font-size="21" font-weight="400">Cmd / Assets</text>
+<rect x="930" y="700" width="245" height="95" rx="6" fill="#ffffff" stroke="#77539a" stroke-width="2"/>
+<text x="1052.5" y="739.44" text-anchor="middle" font-size="26" font-weight="600">Scene2D GPU</text>
+<text x="1052.5" y="773.24" text-anchor="middle" font-size="26" font-weight="400">2D Rasterization</text>
+<rect x="665" y="700" width="210" height="95" rx="6" fill="#ffffff" stroke="#77539a" stroke-width="2"/>
+<text x="770.0" y="739.44" text-anchor="middle" font-size="26" font-weight="600">Double Buffer</text>
+<text x="770.0" y="773.24" text-anchor="middle" font-size="26" font-weight="400">BRAM</text>
+<rect x="400" y="700" width="210" height="95" rx="6" fill="#ffffff" stroke="#77539a" stroke-width="2"/>
+<text x="505.0" y="739.13" text-anchor="middle" font-size="27" font-weight="600">OSD Overlay</text>
+<text x="505.0" y="774.23" text-anchor="middle" font-size="27" font-weight="400">HDMI Output</text>
+<rect x="400" y="865" width="1005" height="40" rx="6" fill="#eef1f4" stroke="#697887" stroke-width="2"/>
+<text x="902.5" y="892.82" text-anchor="middle" font-size="23" font-weight="600">AXI-Lite  /  Capture Configuration / GPU / OSD</text>
+<rect x="1645" y="310" width="370" height="65" rx="6" fill="#ffffff" stroke="#287963" stroke-width="2"/>
+<text x="1830.0" y="349.98" text-anchor="middle" font-size="22" font-weight="600">Agent / Content Management</text>
+<rect x="1645" y="400" width="370" height="95" rx="6" fill="#ffffff" stroke="#287963" stroke-width="2"/>
+<text x="1830.0" y="439.13" text-anchor="middle" font-size="27" font-weight="600">Gesture Recognition</text>
+<text x="1830.0" y="474.23" text-anchor="middle" font-size="27" font-weight="400">OpenCV</text>
+<rect x="1645" y="700" width="370" height="95" rx="6" fill="#ffffff" stroke="#287963" stroke-width="2"/>
+<text x="1830.0" y="739.13" text-anchor="middle" font-size="27" font-weight="600">Interaction Logic</text>
+<text x="1830.0" y="774.23" text-anchor="middle" font-size="27" font-weight="400">Scene Compiler</text>
+<rect x="1645" y="840" width="370" height="60" rx="6" fill="#ffffff" stroke="#287963" stroke-width="2"/>
+<text x="1830.0" y="878.84" text-anchor="middle" font-size="26" font-weight="600">Hand Control</text>
+<rect x="30" y="335" width="225" height="220" rx="6" fill="#fafafa" stroke="#697887" stroke-width="2"/>
+<text x="142.5" y="419.08" text-anchor="middle" font-size="27" font-weight="600">OV5640</text>
+<text x="142.5" y="454.18" text-anchor="middle" font-size="27" font-weight="400"></text>
+<text x="142.5" y="489.28" text-anchor="middle" font-size="27" font-weight="400">Photo Area</text>
+<rect x="30" y="655" width="225" height="220" rx="6" fill="#fafafa" stroke="#697887" stroke-width="2"/>
+<text x="142.5" y="740.0400000000001" text-anchor="middle" font-size="26" font-weight="600">HDMI Display</text>
+<text x="142.5" y="773.84" text-anchor="middle" font-size="26" font-weight="400"></text>
+<text x="142.5" y="807.6400000000001" text-anchor="middle" font-size="26" font-weight="400">Image Area</text>
+<rect x="2160" y="235" width="210" height="220" rx="6" fill="#fafafa" stroke="#697887" stroke-width="2"/>
+<text x="2265.0" y="321.0" text-anchor="middle" font-size="25" font-weight="600">Studio Host</text>
+<text x="2265.0" y="353.5" text-anchor="middle" font-size="25" font-weight="400"></text>
+<text x="2265.0" y="386.0" text-anchor="middle" font-size="25" font-weight="400">Screenshot</text>
+<rect x="2160" y="765" width="210" height="220" rx="6" fill="#fafafa" stroke="#697887" stroke-width="2"/>
+<text x="2265.0" y="849.0799999999999" text-anchor="middle" font-size="27" font-weight="600">Robotic Hand</text>
+<text x="2265.0" y="884.18" text-anchor="middle" font-size="27" font-weight="400"></text>
+<text x="2265.0" y="919.28" text-anchor="middle" font-size="27" font-weight="400">Photo Area</text>
+<text x="1192.5" y="1016.82" text-anchor="middle" font-size="23" font-weight="600">Blue: vision data    Purple: drawing data    Dashed: control    |    PL–PS data transfer via DDR</text>
+<rect x="294.4921875" y="402" width="61.015625" height="30" fill="none"/>
+<text x="325" y="425" font-size="21" text-anchor="middle" fill="#276c96">DVP</text>
+<rect x="1059.9140625" y="340" width="60.171875" height="30" fill="none"/>
+<text x="1090" y="363" font-size="21" text-anchor="middle" fill="#276c96">RGB</text>
+<rect x="1462.6015625" y="402" width="154.796875" height="30" fill="none"/>
+<text x="1540" y="425" font-size="21" text-anchor="middle" fill="#276c96">AXI HP / DDR</text>
+<rect x="1731.3515625" y="582" width="197.296875" height="30" fill="#f1f7f3"/>
+<text x="1830" y="605" font-size="21" text-anchor="middle" fill="#287963">Gesture / Position</text>
+<rect x="1462.6015625" y="702" width="154.796875" height="30" fill="none"/>
+<text x="1540" y="725" font-size="21" text-anchor="middle" fill="#77539a">AXI HP / DDR</text>
+<rect x="286.546875" y="702" width="76.90625" height="30" fill="none"/>
+<text x="325" y="725" font-size="21" text-anchor="middle" fill="#77539a">HDMI</text>
+<rect x="2038.6015625" y="297" width="102.796875" height="30" fill="none"/>
+<text x="2090" y="320" font-size="21" text-anchor="middle" fill="#697887">Ethernet</text>
+<rect x="2060.5234375" y="825" width="58.953125" height="30" fill="none"/>
+<text x="2090" y="848" font-size="21" text-anchor="middle" fill="#287963">USB</text>
+<rect x="1471.4375" y="840" width="87.125" height="30" fill="none"/>
+<text x="1515" y="863" font-size="21" text-anchor="middle" fill="#697887">AXI GP</text>
+</g></svg>

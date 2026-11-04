@@ -1,0 +1,19 @@
+{
+  "result": "PASS",
+  "timing": {
+    "wns": 0.011,
+    "tns": 0.0,
+    "whs": 0.05,
+    "ths": 0.0,
+    "wpws": 0.538,
+    "tpws": 0.0
+  },
+  "bus_skew_min_slack_ns": 7.412,
+  "software_memranges_equal": true,
+  "physical_test": false,
+  "sha256": {
+    "c6v_candidate.bit": "8f8ce2b979528e9e7b1f1df16a9b9920eeadd05b2f7aeb79dd4d8040e21c691d",
+    "c6v_candidate.hwh": "e2ce377e5fb94ba2eb277eb2defeb642e2e9359c6aa2aa0b6013bb9a4d8b49dd",
+    "c6v_candidate.xsa": "f8c91886e21946552289999c9e1e90e43d87225798c82db4bba8bb97c8986d4e"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-04",
+  "guide_url": "https://gitee.com/Vickyiii/fpgachina26-amd/blob/master/tracks/open-topic/GUIDE.md",
+  "guide_sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
+  "root_readme_present": true,
+  "components": [
+    "pynq-pl-preserve",
+    "pynq-debug-cards"
+  ],
+  "readme_covers": [
+    "scope",
+    "usage",
+    "failure_conditions",
+    "verified_effects",
+    "origins",
+    "reuse",
+    "directory_mapping"
+  ],
+  "layout": "skill/README.md plus capability subdirectories",
+  "unexpected_path_characters": [],
+  "standard_case_filenames": [
+    "README.md",
+    "pynq-debug-cards/LICENSE",
+    "pynq-debug-cards/README.md",
+    "pynq-debug-cards/SKILL.md",
+    "pynq-pl-preserve/LICENSE",
+    "pynq-pl-preserve/README.md",
+    "pynq-pl-preserve/SKILL.md",
+    "validation/README.md"
+  ],
+  "strict_all_lowercase": false,
+  "naming_note": "Guide states lowercase and uses README.md; README.md, SKILL.md and LICENSE conventions retained and listed",
+  "guide_commit": "e47e4a81c2a6a35dbd0b25dcaa4d2edef9daf643"
+}

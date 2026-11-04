@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1700" viewBox="0 0 2200 1700">
+<rect x="0" y="0" width="2200" height="1700" fill="#ffffff"/>
+<defs>
+<marker id="arrow0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#197b71"/></marker>
+<marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#25638d"/></marker>
+<marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#bf286e"/></marker>
+</defs><g font-family="Microsoft YaHei" fill="#172b3a">
+<rect x="60" y="240" width="2080" height="275" rx="0" fill="#edf8f5" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="278.0" text-anchor="start" font-size="27" font-weight="600">PS / 当前页面产生 Scene，共用一个提交入口</text>
+<rect x="60" y="560" width="2080" height="600" rx="0" fill="#edf5fb" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="598.0" text-anchor="start" font-size="27" font-weight="600">PL / 上传与光栅化 · 100 MHz</text>
+<rect x="1410" y="625" width="680" height="470" rx="0" fill="#fff0f6" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="1432" y="663.0" text-anchor="start" font-size="27" font-weight="600">两块独立 BRAM 帧缓冲</text>
+<rect x="60" y="1200" width="2080" height="345" rx="0" fill="#edf8f5" stroke="#d8dfe7" stroke-width="2.6"/>
+<text x="82" y="1238.0" text-anchor="start" font-size="27" font-weight="600">像素时钟域 / 连续扫描 · 74.25 MHz</text>
+<path d="M620,386 L680,386" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1200,386 L1260,386" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M2090,386 L2120,386 L2120,535 L40,535 L40,735 L100,735" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M360,735 L420,735" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M830,735 L900,735" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1340,766 L1450,766" fill="none" stroke="#bf286e" stroke-width="2.7" marker-end="url(#arrow2)"/>
+<path d="M230,800 L230,890" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M1120,890 L1120,800" fill="none" stroke="#25638d" stroke-width="2.7" marker-end="url(#arrow1)"/>
+<path d="M570,1367 L630,1367" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1100,1367 L1160,1367" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M1570,1367 L1630,1367" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<path d="M2050,956 L2120,956 L2120,1180 L40,1180 L40,1367 L100,1367" fill="none" stroke="#197b71" stroke-width="2.7" marker-end="url(#arrow0)"/>
+<text x="1100.0" y="49.14" text-anchor="middle" font-size="21" font-weight="600">PYNQ  /  GPU 缓冲与呈现时序  /  01  缓冲所有权</text>
+<text x="1100.0" y="129.98" text-anchor="middle" font-size="47" font-weight="600">前台持续扫描，后台完成后换页</text>
+<text x="1100.0" y="196.5" text-anchor="middle" font-size="25" font-weight="600">命令缓冲、图像缓冲和资源缓冲分别管理；双帧缓冲把绘制与 HDMI 扫描分开。</text>
+<text x="1100.0" y="1671.62" text-anchor="middle" font-size="18" font-weight="600">GESTURE PLAY · v3.0 / R15b · BUILD_ID 0xC0061000 · 当前源码机制</text>
+<rect x="100" y="330" width="520" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="360.0" y="377.94" text-anchor="middle" font-size="26" font-weight="600">菜单 / 游戏 / 视频 / 画布</text>
+<text x="360.0" y="411.74" text-anchor="middle" font-size="26" font-weight="400">页面切换时交接提交权</text>
+<rect x="680" y="330" width="520" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="940.0" y="377.94" text-anchor="middle" font-size="26" font-weight="600">Scene 编译 / 视频包读取</text>
+<text x="940.0" y="411.74" text-anchor="middle" font-size="26" font-weight="400">命令与资源 generation</text>
+<rect x="1260" y="330" width="830" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1675.0" y="377.94" text-anchor="middle" font-size="26" font-weight="600">C6IVideoSink → PS DDR 暂存</text>
+<text x="1675.0" y="411.74" text-anchor="middle" font-size="26" font-weight="400">拷贝 + flush → 启动 MM2S DMA</text>
+<text x="1095.0" y="487.82" text-anchor="middle" font-size="23" font-weight="600">当前 submit_scene 等待呈现确认后返回；页面切换先停止旧生产者，再 drain 和恢复新资源。</text>
+<rect x="100" y="670" width="260" height="130" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="230.0" y="711.9599999999999" text-anchor="middle" font-size="24" font-weight="600">DMA MM2S / HP0</text>
+<text x="230.0" y="743.16" text-anchor="middle" font-size="24" font-weight="400">64 bit AXIS</text>
+<text x="230.0" y="774.3599999999999" text-anchor="middle" font-size="24" font-weight="400">按 magic 分流</text>
+<rect x="420" y="670" width="410" height="130" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="625.0" y="727.25" text-anchor="middle" font-size="25" font-weight="600">命令 bank 0 / 1</text>
+<text x="625.0" y="759.75" text-anchor="middle" font-size="25" font-weight="400">各 4 KiB · 上传完整后切换</text>
+<rect x="900" y="670" width="440" height="130" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="1120.0" y="727.25" text-anchor="middle" font-size="25" font-weight="600">命令解码 → 光栅化</text>
+<text x="1120.0" y="759.75" text-anchor="middle" font-size="25" font-weight="400">CLEAR / BLIT / TILE / RECT</text>
+<rect x="1450" y="710" width="600" height="112" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1750.0" y="757.94" text-anchor="middle" font-size="26" font-weight="600">B / 后台：本轮写入目标</text>
+<text x="1750.0" y="791.74" text-anchor="middle" font-size="26" font-weight="400">320 × 180 × 8 bit = 56.25 KiB</text>
+<rect x="1450" y="900" width="600" height="112" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1750.0" y="947.94" text-anchor="middle" font-size="26" font-weight="600">A / 前台：持续被扫描</text>
+<text x="1750.0" y="981.74" text-anchor="middle" font-size="26" font-weight="400">完整保留上一幅 token 图像</text>
+<text x="1750.0" y="867.82" text-anchor="middle" font-size="23" font-weight="600">vblank 换显示 bank → ACK 后换写 bank</text>
+<rect x="100" y="890" width="1240" height="130" rx="6" fill="#ffffff" stroke="#25638d" stroke-width="2"/>
+<text x="720.0" y="946.94" text-anchor="middle" font-size="26" font-weight="600">资源 bank：Atlas / Tilemap / Palette，各自提交</text>
+<text x="720.0" y="980.74" text-anchor="middle" font-size="26" font-weight="400">光栅化启动前检查 Scene 所需 generation；上传资源时先 drain</text>
+<text x="720.0" y="1101.16" text-anchor="middle" font-size="24" font-weight="600">帧缓冲保存索引 token；扫描期间不读取 PS 的 Scene 包。</text>
+<rect x="100" y="1310" width="470" height="115" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="335.0" y="1359.4399999999998" text-anchor="middle" font-size="26" font-weight="600">读前台 BRAM</text>
+<text x="335.0" y="1393.2399999999998" text-anchor="middle" font-size="26" font-weight="400">x / 4，y / 4 → 逻辑像素</text>
+<rect x="630" y="1310" width="470" height="115" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="865.0" y="1359.4399999999998" text-anchor="middle" font-size="26" font-weight="600">token → RGB888</text>
+<text x="865.0" y="1393.2399999999998" text-anchor="middle" font-size="26" font-weight="400">16 组 × 16 色查表</text>
+<rect x="1160" y="1310" width="410" height="115" rx="6" fill="#ffffff" stroke="#bf286e" stroke-width="2"/>
+<text x="1365.0" y="1359.4399999999998" text-anchor="middle" font-size="26" font-weight="600">独立 OSD 覆盖</text>
+<text x="1365.0" y="1393.2399999999998" text-anchor="middle" font-size="26" font-weight="400">手圈继续同步</text>
+<rect x="1630" y="1310" width="460" height="115" rx="6" fill="#ffffff" stroke="#197b71" stroke-width="2"/>
+<text x="1860.0" y="1359.4399999999998" text-anchor="middle" font-size="26" font-weight="600">rgb2dvi → HDMI</text>
+<text x="1860.0" y="1393.2399999999998" text-anchor="middle" font-size="26" font-weight="400">1280 × 720 @ 60 Hz</text>
+<text x="1095.0" y="1494.5" text-anchor="middle" font-size="25" font-weight="600">扫描路径使用片上存储，不等待 AXI / DDR；本轮尚未完成换页时，继续扫描当前前台。</text>
+<text x="1100.0" y="1617.16" text-anchor="middle" font-size="24" font-weight="600">当前 UPLOAD_RENDER_OVERLAP_ENABLE = 0：上传下一 Scene 与当前渲染串行；绘制与扫描可并行。</text>
+</g></svg>

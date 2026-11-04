@@ -1,0 +1,9 @@
+﻿cache,pipeline,pair,cycles,time_us,writes,descriptor_fetches,speedup,cycle_reduction_pct,source
+0,0,0,13860,138.6,1440,1536,1.0,0.0,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_0.log
+0,0,1,13860,138.6,1440,1536,1.0,0.0,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_0_1.log
+0,1,0,13764,137.64,1440,1536,1.0069747166521361,0.6926406926406892,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_0.log
+0,1,1,13764,137.64,1440,1536,1.0069747166521361,0.6926406926406892,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_0_1_1.log
+1,0,0,9540,95.4,1440,96,1.4528301886792452,31.16883116883117,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_0.log
+1,0,1,9540,95.4,1440,96,1.4528301886792452,31.16883116883117,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_0_1.log
+1,1,0,2340,23.4,1440,96,5.923076923076923,83.11688311688312,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_0.log
+1,1,1,1572,15.72,1440,96,8.816793893129772,88.65800865800865,results/gpu-tile_pair-verify-1791023235581/tile_pair_matrix_1_1_1.log

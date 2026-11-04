@@ -1,0 +1,10 @@
+{
+  "source": "tools/generate_demo_media.py",
+  "kind": "original_procedural_animation",
+  "fps": 30,
+  "frames_per_video": 90,
+  "files": {
+    "test_pattern_1.mp4": "fbf3f054961d98cd068429b7019008d704d6b19fb7822b178bc18fc68d7f1aa8",
+    "test_pattern_2.mp4": "a54734c22d1dcdd2037e2bca08a8810428670ee07b9e10af1fcf4c39b6e6fb01"
+  }
+}

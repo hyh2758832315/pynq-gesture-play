@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "timing": {
+    "wns": 0.011,
+    "tns": 0.0,
+    "whs": 0.05,
+    "ths": 0.0,
+    "wpws": 0.538,
+    "tpws": 0.0
+  },
+  "bus_skew_min_slack_ns": 7.412,
+  "software_memranges_equal": true,
+  "physical_test": false,
+  "configuration_payload_equal": true,
+  "normalized_bit_header": true,
+  "standalone_bit_sha256": "6a98d4065ec320d5b9d39e587c3fb24313dfa2066b4db463447031b4d836c5de",
+  "sha256": {
+    "c6v_candidate.bit": "4597ed1e131c54171239c12f7b4fbf5078e588ccf14be11cff44e2ce3c5f8e86",
+    "c6v_candidate.hwh": "e2ce377e5fb94ba2eb277eb2defeb642e2e9359c6aa2aa0b6013bb9a4d8b49dd",
+    "c6v_candidate.xsa": "f7e8ea2fd475765ae9dd24a1c8d8e19f06bf38a99a3223674ebe2e4543e6b718",
+    "candidate.dcp": "65fa5e91b031fc4df15bce1525c7c19db84ef7853f6e26af043939a927ad13c8"
+  }
+}

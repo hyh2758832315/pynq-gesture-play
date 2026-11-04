@@ -1,0 +1,123 @@
+{
+  "result": "MINIMAL_INTERACTIONS_ANALYSIS_PASS",
+  "release_ready": false,
+  "requests": [
+    {
+      "state": "default",
+      "wall_seconds": 1.3098345210000844,
+      "cpu_seconds": 0.2666016339999997,
+      "single_core_percent": 20.353840865061652,
+      "position_write_attempts": 17,
+      "feedback_read_attempts": 119,
+      "reached_to_off_seconds": 0.06286246799936634,
+      "terminal_three_rom_errors": [
+        0.028806583786424637,
+        0.028806583786424637,
+        0.028806583786424637
+      ]
+    },
+    {
+      "state": "paper",
+      "wall_seconds": 2.4349991290000617,
+      "cpu_seconds": 0.41904958099999945,
+      "single_core_percent": 17.209434533641218,
+      "position_write_attempts": 51,
+      "feedback_read_attempts": 170,
+      "reached_to_off_seconds": 0.06291294799939351,
+      "terminal_three_rom_errors": [
+        0.038596491841456526,
+        0.024691357448975902,
+        0.024691357448975902
+      ]
+    },
+    {
+      "state": "scissors",
+      "wall_seconds": 2.08559821200015,
+      "cpu_seconds": 0.3794509100000001,
+      "single_core_percent": 18.193864370266002,
+      "position_write_attempts": 33,
+      "feedback_read_attempts": 170,
+      "reached_to_off_seconds": 0.06313718099954713,
+      "terminal_three_rom_errors": [
+        0.023983739837398387,
+        0.020781893004115093,
+        0.020781893004115093
+      ]
+    },
+    {
+      "state": "rock",
+      "wall_seconds": 3.318451563999588,
+      "cpu_seconds": 0.5920227489999998,
+      "single_core_percent": 17.84033117802871,
+      "position_write_attempts": 48,
+      "feedback_read_attempts": 272,
+      "reached_to_off_seconds": 0.06298801200046,
+      "terminal_three_rom_errors": [
+        0.02489711934156365,
+        0.02489711934156365,
+        0.02489711934156365
+      ]
+    }
+  ],
+  "phases": {
+    "idle_off": {
+      "wall_seconds": 12.733615537000333,
+      "cpu_seconds": 0.14719868299999828,
+      "single_core_percent": 1.1559849798533652
+    },
+    "arm": {
+      "wall_seconds": 0.7485666030006541,
+      "cpu_seconds": 0.42907069600000014,
+      "single_core_percent": 57.3189739269767
+    },
+    "motion": {
+      "wall_seconds": 9.148883425999884,
+      "cpu_seconds": 1.6555580020000003,
+      "single_core_percent": 18.095738298458688
+    },
+    "hold_release": {
+      "wall_seconds": 0.251900608998767,
+      "cpu_seconds": 0.1396970270000013,
+      "single_core_percent": 55.45720097909136
+    }
+  },
+  "policy": {
+    "temperature": 40,
+    "scan_age": 2,
+    "feedback_gap": 2,
+    "settle_delay": 0.4,
+    "max_reached_samples": 10,
+    "lease": 5,
+    "renew": 0.5,
+    "hold_before_release": 0,
+    "request_budget": 45,
+    "session_budget": 180.0,
+    "button_poll": 0.02,
+    "sample_interval": 0.15,
+    "native_trajectory_confirmed": true,
+    "stage_targets": true
+  },
+  "packet_counts": {
+    "connect:2:16": 17,
+    "arm:2:16": 136,
+    "arm:3:42": 68,
+    "arm:3:40": 68,
+    "motion:2:16": 731,
+    "motion:3:42": 149,
+    "release:3:40": 102,
+    "release:2:40": 102
+  },
+  "raw_sha256": {
+    "h148-buttons-live.json": "cd2f27e782d610e9a328241e18c96a6dc5c09404f41d4462eac1d2020b6cb1ee",
+    "h148-buttons-live-invocation.json": "3732b9bbef077d708f286cb6e8c46ebb966f071cfa541df2344ca2db98c0fab9",
+    "h147-resume-identity.json": "e71e7a45ad51a3a28a4ecc40939f16c011c3f993831eca980333b30ef3d42b93",
+    "h146-buttons-arm-offline.json": "2a211043466f443238876dc4112390735b13c0ea19b51f71d42f1627b6d79901",
+    "h147-minimal-powered-readonly.json": "e5690bb3331f150d3bf9c045fe2546a1aa9eda47e8d9de7fe5be69685d7750e7"
+  },
+  "cleanup_confirmed": true,
+  "release_count": 6,
+  "temperature_max": 25,
+  "voltage_min": 4.9,
+  "voltage_max": 5.3,
+  "limitations": "one pass with different physical starts; not a matched ABBA comparison"
+}

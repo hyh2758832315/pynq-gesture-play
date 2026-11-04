@@ -1,0 +1,48 @@
+{
+  "assertions": [
+    {
+      "expected": "WON",
+      "field": "status",
+      "message": "冲刺到达终点",
+      "operator": "eq",
+      "tick": 75
+    },
+    {
+      "expected": 30,
+      "field": "score",
+      "message": "收集全部三个信号点",
+      "operator": "eq",
+      "tick": 75
+    },
+    {
+      "expected": 0,
+      "field": "values.signals_remaining",
+      "message": "没有剩余信号点",
+      "operator": "eq",
+      "tick": 75
+    },
+    {
+      "expected": "5896e5681f5a38b5dfd426bf35284e18286a0b2b1c287c16cbb2e4de9d54dab0",
+      "field": "values.state_sha256",
+      "message": "状态哈希保持确定",
+      "operator": "eq",
+      "tick": 75
+    }
+  ],
+  "events": [
+    {
+      "duration_ms": null,
+      "event_id": "sprint-right",
+      "frequency_hz": null,
+      "kind": "hand",
+      "tick": 0,
+      "x": 319,
+      "y": 90
+    }
+  ],
+  "max_ticks": 75,
+  "name": "Signal Sprint Golden",
+  "schema_version": 1,
+  "seed": 0,
+  "test_id": "signal-sprint-golden"
+}

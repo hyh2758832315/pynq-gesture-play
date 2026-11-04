@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "test_id": "kingdom-pit-reselect",
+  "name": "Pit recovery costs one life",
+  "seed": 0,
+  "max_ticks": 205,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "start",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1,
+      "kind": "gesture",
+      "event_id": "walk",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 185,
+      "kind": "gesture",
+      "event_id": "stop",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 205,
+      "field": "status",
+      "operator": "eq",
+      "expected": "RUNNING"
+    },
+    {
+      "tick": 205,
+      "field": "values.falls",
+      "operator": "eq",
+      "expected": 1
+    },
+    {
+      "tick": 205,
+      "field": "values.health",
+      "operator": "eq",
+      "expected": 4
+    }
+  ]
+}

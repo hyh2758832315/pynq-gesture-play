@@ -1,0 +1,41 @@
+Time resolution is 1 ps
+TILE_CACHE_CASE=PASS name=original_golden writes=5 baseline=59 cached=43 fetches=4 error=0
+TILE_CACHE_CASE=PASS name=size_1_flip_xy_transparent writes=6 baseline=60 cached=60 fetches=6 error=0
+TILE_CACHE_CASE=PASS name=size_1_negative_xy writes=2 baseline=23 cached=23 fetches=2 error=0
+TILE_CACHE_CASE=PASS name=size_2_flip_xy_transparent writes=24 baseline=224 cached=116 fetches=12 error=0
+TILE_CACHE_CASE=PASS name=size_2_negative_xy writes=15 baseline=142 cached=94 fetches=9 error=0
+TILE_CACHE_CASE=PASS name=size_4_flip_xy_transparent writes=90 baseline=876 cached=252 fetches=24 error=0
+TILE_CACHE_CASE=PASS name=size_4_negative_xy writes=72 baseline=704 cached=256 fetches=21 error=0
+TILE_CACHE_CASE=PASS name=size_8_flip_xy_transparent writes=360 baseline=3476 cached=596 fetches=48 error=0
+TILE_CACHE_CASE=PASS name=size_8_negative_xy writes=321 baseline=3124 cached=724 fetches=45 error=0
+TILE_CACHE_CASE=PASS name=size_16_flip_xy_transparent writes=1440 baseline=13860 cached=1572 fetches=96 error=0
+TILE_CACHE_CASE=PASS name=size_16_negative_xy writes=1363 baseline=13148 cached=2236 fetches=93 error=0
+TILE_CACHE_CASE=PASS name=right_bottom_clip writes=63 baseline=577 cached=111 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=single_tile writes=15 baseline=151 cached=38 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=same_address_new_descriptor writes=15 baseline=151 cached=38 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=same_address_new_asset writes=16 baseline=151 cached=38 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=reserved_descriptor writes=0 baseline=8 cached=8 fetches=1 error=1
+TILE_CACHE_CASE=PASS name=source_out_of_bounds writes=0 baseline=12 cached=10 fetches=1 error=1
+TILE_CACHE_CASE=PASS name=malformed_after_partial_write writes=4 baseline=44 cached=18 fetches=2 error=1
+TILE_CACHE_CASE=PASS name=full_address_tag writes=4 baseline=44 cached=38 fetches=2 error=0
+TILE_CACHE_CASE=PASS name=missing_asset writes=0 baseline=3 cached=3 fetches=0 error=1
+TILE_CACHE_CASE=PASS name=shape_mismatch writes=0 baseline=3 cached=3 fetches=0 error=1
+TILE_CACHE_CASE=PASS name=fully_clipped writes=0 baseline=3 cached=3 fetches=0 error=1
+TILE_CACHE_CASE=PASS name=long_opaque_run writes=256 baseline=2323 cached=230 fetches=1 error=0
+TILE_WRITE_PIXELS_PER_CLOCK=2 writes=256 cycles=230
+TILE_CACHE_CASE=PASS name=busy_start_ignored writes=256 baseline=2323 cached=230 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=all_transparent writes=0 baseline=2323 cached=214 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=last_transparent writes=255 baseline=2323 cached=230 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=single_pixel writes=1 baseline=13 cached=13 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=single_transparent writes=0 baseline=13 cached=12 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=cross_descriptor_row_palette_flip writes=16 baseline=152 cached=80 fetches=8 error=0
+TILE_CACHE_CASE=PASS name=four_pair_masks writes=11 baseline=151 cached=38 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=four_pair_masks_flip_x writes=11 baseline=151 cached=37 fetches=1 error=0
+TILE_CACHE_CASE=PASS name=odd_destination_single_fallback writes=15 baseline=151 cached=46 fetches=1 error=0
+TILE_PAIR_MASKS=PASS zero=130 first=72 second=63 both=1317
+TILE_CACHE_CASE=PASS name=source_error_after_valid_rows writes=8 baseline=86 cached=26 fetches=1 error=1
+TILE_CACHE_CASE=PASS name=after_reset writes=15 baseline=151 cached=38 fetches=1 error=0
+SCENE2D_TILE_PIPELINE=PASS cache=1 pipeline=1 cases=34
+SCENE2D_TILE_PAIR=PASS cache=1 pipeline=1 pair=1 cases=34
+SCENE2D_DRAW_TILE_LAYER=PASS cases=34
+$finish called at time : 471610 ns : File "E:/projects/fpga/voice-view-game/sim/scene2d_gpu/tb_scene2d_draw_tile_layer.sv" Line 409

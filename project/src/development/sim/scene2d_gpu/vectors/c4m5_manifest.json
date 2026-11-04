@@ -1,0 +1,36 @@
+{
+  "frame_id": 3288662017,
+  "command_count": 5,
+  "write_count": 112162,
+  "trace_crc32": 1386166068,
+  "trace_crc32_hex": "0x529F3734",
+  "token_crc32": 3895891554,
+  "token_crc32_hex": "0xE8369662",
+  "payload_crc32": 2288052297,
+  "atlas_bytes": 1664,
+  "assets": [
+    {
+      "asset_id": 0,
+      "base_byte": 0,
+      "base_pixel": 0,
+      "width": 176,
+      "height": 16,
+      "stride_pixels": 176
+    },
+    {
+      "asset_id": 1,
+      "base_byte": 1408,
+      "base_pixel": 2816,
+      "width": 32,
+      "height": 16,
+      "stride_pixels": 32
+    }
+  ],
+  "tilemap": {
+    "tilemap_id": 0,
+    "width_tiles": 64,
+    "height_tiles": 11,
+    "tile_size": 16,
+    "descriptor_count": 704
+  }
+}

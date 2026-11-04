@@ -1,0 +1,16 @@
+{
+  "result": "FROZEN_GAME_HAND_BRIDGE_PASS",
+  "tests": 1,
+  "failures": 0,
+  "errors": 0,
+  "real_serial_opens": 0,
+  "hardware_tested": false,
+  "runtime_hook_installed_on_board": false,
+  "source_sha256": {
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b12-hand-source-r04\\src\\pynq_usb_hand\\game_bridge.py": "caee6ecef9814ac54370ff974e8fa91d9f147110c32d453d026eacb29eca593e",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b12-hand-source-r04\\src\\pynq_usb_hand\\gesture_consumer.py": "8cf490dd8f3931de3172dfe7752d71150d9cdefdfe90ed60391e8075f83df37b",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b12-hand-source-r04\\integration\\test_runtime_hand_bridge.py": "df96a1eefd826f9c9fd1370138ee055a54a65b3e3a41f4825a9a8ee52cda835a",
+    "E:\\projects\\fpga\\voice-view-game\\deliveries\\c6i-pl-vision-button-osd-r23b2-shared-id-boardtest-20261024\\python\\pynq_multimodal_game\\agent\\game_runtime.py": "f25fd7340fd427bcce4d9712d15727514f21a8789fb733219a0fdd59facf09d3",
+    "E:\\projects\\fpga\\voice-view-game\\deliveries\\c6i-pl-vision-button-osd-r23b2-shared-id-boardtest-20261024\\python\\pynq_multimodal_game\\vision_input.py": "f4e06634cc157ecf3b11fef4c0eec491535ef13fdb0a6e5a298c37e25f8e2975"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": 2,
+  "test_id": "kingdom-01-princess-win",
+  "name": "female - Extended switch and gesture lift",
+  "seed": 0,
+  "max_ticks": 1500,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "control-0",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1,
+      "kind": "gesture",
+      "event_id": "control-1",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 158,
+      "kind": "gesture",
+      "event_id": "control-158",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 159,
+      "kind": "gesture",
+      "event_id": "control-159",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 201,
+      "kind": "gesture",
+      "event_id": "control-201",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 202,
+      "kind": "gesture",
+      "event_id": "control-202",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 321,
+      "kind": "gesture",
+      "event_id": "control-321",
+      "x": 160,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 322,
+      "kind": "gesture",
+      "event_id": "control-322",
+      "x": 160,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 356,
+      "kind": "gesture",
+      "event_id": "control-356",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 479,
+      "kind": "gesture",
+      "event_id": "control-479",
+      "x": 160,
+      "y": 0,
+      "gesture": "paper"
+    },
+    {
+      "tick": 586,
+      "kind": "gesture",
+      "event_id": "control-586",
+      "x": 319,
+      "y": 0,
+      "gesture": "fist"
+    },
+    {
+      "tick": 587,
+      "kind": "gesture",
+      "event_id": "control-587",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 735,
+      "kind": "gesture",
+      "event_id": "control-735",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 736,
+      "kind": "gesture",
+      "event_id": "control-736",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 1113,
+      "kind": "gesture",
+      "event_id": "control-1113",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1114,
+      "kind": "gesture",
+      "event_id": "control-1114",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 1222,
+      "kind": "gesture",
+      "event_id": "control-1222",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1223,
+      "kind": "gesture",
+      "event_id": "control-1223",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 1305,
+      "kind": "gesture",
+      "event_id": "control-1305",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1306,
+      "kind": "gesture",
+      "event_id": "control-1306",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 1336,
+      "kind": "gesture",
+      "event_id": "control-1336",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1337,
+      "kind": "gesture",
+      "event_id": "control-1337",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    },
+    {
+      "tick": 1376,
+      "kind": "gesture",
+      "event_id": "control-1376",
+      "x": 319,
+      "y": 90,
+      "gesture": "fist"
+    },
+    {
+      "tick": 1377,
+      "kind": "gesture",
+      "event_id": "control-1377",
+      "x": 319,
+      "y": 90,
+      "gesture": "paper"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 0,
+      "field": "values.character",
+      "operator": "eq",
+      "expected": "female"
+    },
+    {
+      "tick": 1500,
+      "field": "status",
+      "operator": "eq",
+      "expected": "WON"
+    },
+    {
+      "tick": 1500,
+      "field": "values.note_hits",
+      "operator": "eq",
+      "expected": 1
+    },
+    {
+      "tick": 1500,
+      "field": "values.health",
+      "operator": "gt",
+      "expected": 0
+    },
+    {
+      "tick": 1500,
+      "field": "values.world_x",
+      "operator": "eq",
+      "expected": 2481
+    }
+  ]
+}

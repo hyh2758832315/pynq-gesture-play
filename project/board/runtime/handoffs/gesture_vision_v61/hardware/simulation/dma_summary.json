@@ -1,0 +1,109 @@
+{
+  "cases": [
+    {
+      "h": 1,
+      "w": 1,
+      "kind": "normal",
+      "fid": 1
+    },
+    {
+      "h": 1,
+      "w": 2,
+      "kind": "normal",
+      "fid": 2
+    },
+    {
+      "h": 1,
+      "w": 3,
+      "kind": "normal",
+      "fid": 3
+    },
+    {
+      "h": 1,
+      "w": 5,
+      "kind": "normal",
+      "fid": 4
+    },
+    {
+      "h": 1,
+      "w": 7,
+      "kind": "normal",
+      "fid": 5
+    },
+    {
+      "h": 48,
+      "w": 64,
+      "kind": "normal",
+      "fid": 6
+    },
+    {
+      "h": 360,
+      "w": 640,
+      "kind": "normal",
+      "fid": 7
+    },
+    {
+      "h": 720,
+      "w": 1280,
+      "kind": "normal",
+      "fid": 8
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "short",
+      "fid": 9
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "long",
+      "fid": 10
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "bad_keep",
+      "fid": 11
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "bad_magic",
+      "fid": 12
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "bad_dimensions",
+      "fid": 13
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "bad_threshold",
+      "fid": 14
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "bad_value_bounds",
+      "fid": 15
+    },
+    {
+      "h": 2,
+      "w": 4,
+      "kind": "early_header",
+      "fid": 16
+    },
+    {
+      "h": 3,
+      "w": 5,
+      "kind": "normal",
+      "fid": 17
+    }
+  ],
+  "input_words": 866456,
+  "output_words": 288921,
+  "opencv": "5.0.0"
+}

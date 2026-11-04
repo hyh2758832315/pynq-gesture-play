@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Fri Oct 30 21:49:28 2026
+# Process ID         : 149852
+# Current directory  : E:/projects/fpga/voice-view-game/build/contest-v3-work
+# Command line       : vivado.exe -mode tcl -log .vivado-ai\vivado_68166625_e074bbf4.log -journal .vivado-ai\vivado_68166625_e074bbf4.jou -notrace -source .vivado-ai\init_68166625_e074bbf4.tcl
+# Log file           : E:/projects/fpga/voice-view-game/build/contest-v3-work/.vivado-ai/vivado_68166625_e074bbf4.log
+# Journal file       : E:/projects/fpga/voice-view-game/build/contest-v3-work\.vivado-ai\vivado_68166625_e074bbf4.jou
+# Running On         : DESKTOP-JBJOBKD
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845H w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33599 MB
+# Swap memory        : 51539 MB
+# Total Virtual      : 85138 MB
+# Available Virtual  : 34623 MB
+#-----------------------------------------------------------
+source {.vivado-ai\init_68166625_e074bbf4.tcl} -notrace
+set_param -quiet messaging.defaultLimit 10000000
+puts "MCPPROBE:v6ngc4ibr9g6:[get_param messaging.defaultLimit]"
+set_param -quiet messaging.defaultLimit 10000000
+send_msg_id {MCP 00-100} INFO {===MCP_CMD_START:z317r8e67nwq===}
+puts "VSCSTART" ; set exitCode [catch {open_project -read_only D:/vvg_button_only_r23b/c6_latency.xpr} result] ; catch {flush stdout} ; catch {flush stderr} ; puts $result ; puts "VSCEND:$exitCode"
+send_msg_id {MCP 00-101} INFO "===MCP_CMD_END:z317r8e67nwq:$exitCode==="
+set_param -quiet messaging.defaultLimit 10000000
+send_msg_id {MCP 00-100} INFO {===MCP_CMD_START:hh0ysxph2rvo===}
+puts "VSCSTART" ; set exitCode [catch {version -short; help archive_project; report_ip_status -file E:/projects/fpga/voice-view-game/build/contest-v3-work/original_ip_status.rpt} result] ; catch {flush stdout} ; catch {flush stderr} ; puts $result ; puts "VSCEND:$exitCode"
+send_msg_id {MCP 00-101} INFO "===MCP_CMD_END:hh0ysxph2rvo:$exitCode==="
+set_param -quiet messaging.defaultLimit 10000000
+send_msg_id {MCP 00-100} INFO {===MCP_CMD_START:z1pfx8jk869d===}
+puts "VSCSTART" ; set exitCode [catch {archive_project -exclude_run_results -temp_dir E:/projects/fpga/voice-view-game/build/contest-v3-work/archive_temp E:/projects/fpga/voice-view-game/build/contest-v3-work/r23_sources.zip} result] ; catch {flush stdout} ; catch {flush stderr} ; puts $result ; puts "VSCEND:$exitCode"

@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram name="GESTURE PLAY v3.0 PL–PS" id="system">
+    <mxGraphModel dx="2400" dy="1630" grid="1" gridSize="10" page="1" pageWidth="2400" pageHeight="1630">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="soc" value="Zynq-7000 SoC  ·  板内软硬件分工" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#344e61;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="350" y="165" width="1700" height="1340" />
+        </mxCell>
+        <mxCell id="pl" value="PL  /  可编程逻辑" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f7fafd;strokeColor=#7396ad;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=28;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="375" y="230" width="1650" height="660" />
+        </mxCell>
+        <mxCell id="vision" value="视觉前端  /  Vision pipeline" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#edf6fb;strokeColor=#286b95;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="395" y="295" width="720" height="570" />
+        </mxCell>
+        <mxCell id="graphics" value="渲染 GPU  /  Scene2D graphics" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f3eff9;strokeColor=#78549b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1200" y="295" width="800" height="570" />
+        </mxCell>
+        <mxCell id="ps" value="PS  /  双核 ARM Cortex-A9 · Linux / PYNQ" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#f3f8f5;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=28;spacing=12;verticalAlign=top;align=left;spacingTop=12;spacingLeft=14;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="375" y="920" width="1650" height="555" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#286b95;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.40816326530612246;exitPerimeter=0;entryX=0.0;entryY=0.4891304347826087;entryPerimeter=0;" edge="1" parent="1" source="camera" target="input">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#64748b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;exitX=0.0;exitY=0.3181818181818182;exitPerimeter=0;entryX=1.0;entryY=0.8571428571428571;entryPerimeter=0;" edge="1" parent="1" source="recognizer" target="camera">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="330" y="1150" />
+              <mxPoint x="330" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#286b95;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="input" target="filter">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#286b95;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="filter" target="capture">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#286b95;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.7265625;exitY=1.0;exitPerimeter=0;entryX=0.9801324503311258;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="capture" target="memory">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="900" y="905" />
+              <mxPoint x="1910" y="905" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge5" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#286b95;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.1390728476821192;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="memory" target="recognizer">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge6" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#247663;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="recognizer" target="latest">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="640" y="1265" />
+              <mxPoint x="1210" y="1265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge7" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#247663;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.23809523809523808;exitY=0.0;exitPerimeter=0;entryX=0.23809523809523808;entryY=1.0;entryPerimeter=0;" edge="1" parent="1" source="latest" target="app">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="app" target="sink">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5789473684210527;exitY=0.0;exitPerimeter=0;entryX=0.8940397350993378;entryY=1.0;entryPerimeter=0;" edge="1" parent="1" source="sink" target="memory">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="memory" target="upload">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="2040" y="1020" />
+              <mxPoint x="2040" y="350" />
+              <mxPoint x="1600" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="upload" target="raster">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=0.2222222222222222;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="raster" target="fb">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge13" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.496;exitPerimeter=0;entryX=0.0;entryY=0.496;entryPerimeter=0;" edge="1" parent="1" source="fb" target="scan">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge14" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#78549b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.56;exitPerimeter=0;entryX=0.0;entryY=0.48936170212765956;entryPerimeter=0;" edge="1" parent="1" source="scan" target="monitor">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge15" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#64748b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;exitX=0.7380952380952381;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=1.0;entryPerimeter=0;" edge="1" parent="1" source="latest" target="scan">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="1310" y="1432" />
+              <mxPoint x="1990" y="1432" />
+              <mxPoint x="1990" y="835" />
+              <mxPoint x="1800" y="835" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge16" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#247663;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.36363636363636365;exitPerimeter=0;entryX=0.0;entryY=0.36363636363636365;entryPerimeter=0;" edge="1" parent="1" source="latest" target="hand">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge17" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#247663;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;exitX=1.0;exitY=0.36363636363636365;exitPerimeter=0;entryX=0.0;entryY=0.5681818181818182;entryPerimeter=0;" edge="1" parent="1" source="hand" target="hand_external">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge18" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#64748b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;startArrow=block;startFill=1;exitX=1.0;exitY=0.6875;exitPerimeter=0;entryX=0.0;entryY=0.45454545454545453;entryPerimeter=0;" edge="1" parent="1" source="pc" target="agent">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge19" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#64748b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;startArrow=block;startFill=1;exitX=1.0;exitY=0.22727272727272727;exitPerimeter=0;entryX=0.0;entryY=0.6818181818181818;entryPerimeter=0;" edge="1" parent="1" source="agent" target="app">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="920" y="1335" />
+              <mxPoint x="920" y="1190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge20" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#af8844;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;startArrow=block;startFill=1;exitX=1.0;exitY=0.56;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" edge="1" parent="1" source="ddr_external" target="memory">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge21" value="" style="edgeStyle=segmentEdgeStyle;rounded=0;html=0;strokeColor=#64748b;strokeWidth=2;endArrow=block;endFill=1;fontSize=19;fontFamily=Microsoft YaHei;labelBackgroundColor=#ffffff;dashed=1;exitX=1.0;exitY=0.55;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" edge="1" parent="1" source="buttons" target="app">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="345" y="800" />
+              <mxPoint x="345" y="1090" />
+              <mxPoint x="1210" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="title" value="GESTURE PLAY v3.0  |  PL–PS 系统架构" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=40;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="20" width="2320" height="62" />
+        </mxCell>
+        <mxCell id="subtitle" value="PYNQ-Z2 · Zynq-7020 · xc7z020clg400-1  /  冻结运行包 R15b · 手部运行时 R16 · BUILD_ID 0xC0061000" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=21;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="88" width="2320" height="38" />
+        </mxCell>
+        <mxCell id="division" value="" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#536577;strokeColor=#536577;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1155" y="295" width="3" height="570" />
+        </mxCell>
+        <mxCell id="camera" value="OV5640&#10;摄像头&#10;&#10;[ 实物照片预留 ]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fafafa;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=27;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="320" width="270" height="245" />
+        </mxCell>
+        <mxCell id="monitor" value="HDMI 显示器&#10;&#10;[ 屏幕 / 实物图预留 ]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fafafa;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2095" y="625" width="270" height="235" />
+        </mxCell>
+        <mxCell id="pc" value="上位机 PC&#10;PYNQ Studio&#10;&#10;[ 界面截图预留 ]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fafafa;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="1195" width="270" height="240" />
+        </mxCell>
+        <mxCell id="hand_external" value="灵巧手&#10;USB · 17 电机&#10;&#10;[ 实物照片预留 ]" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fafafa;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=26;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="2095" y="1225" width="270" height="220" />
+        </mxCell>
+        <mxCell id="ddr_external" value="板载 DDR3&#10;共享图像 / 命令缓冲" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff9ed;strokeColor=#af8844;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=23;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="950" width="270" height="125" />
+        </mxCell>
+        <mxCell id="buttons" value="BTN0 / BTN1&#10;游戏技能输入" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fafafa;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="35" y="745" width="270" height="100" />
+        </mxCell>
+        <mxCell id="input" value="DVP 接入 → Video In → Demosaic&#10;1280×720 Bayer → RGB" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#286b95;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="435" y="375" width="640" height="92" />
+        </mxCell>
+        <mxCell id="filter" value="2×2 区域缩减 → HSV 肤色阈值&#10;9×9 膨胀 → 5×5 高斯处理&#10;原始 / 滤波双掩膜 · 640×360" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#286b95;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="435" y="510" width="640" height="110" />
+        </mxCell>
+        <mxCell id="capture" value="三槽帧拥有权 / 生命周期控制&#10;RGB：frame_dma (VDMA)&#10;双掩膜包 / 状态：moments_dma (SG)" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#286b95;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="435" y="680" width="640" height="130" />
+        </mxCell>
+        <mxCell id="upload" value="axi_dma (MM2S) → 包解析 / 分派&#10;Scene 命令 · Palette · Atlas · Tilemap" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#78549b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="375" width="720" height="92" />
+        </mxCell>
+        <mxCell id="raster" value="Scene2D 命令式 2D 光栅化&#10;Clear / Fill · Sprite blit · Tile layer&#10;INDEX4 资源与调色板" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#78549b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=25;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="510" width="720" height="110" />
+        </mxCell>
+        <mxCell id="fb" value="BRAM 双帧缓冲&#10;320×180 × 2&#10;消隐期交换" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#78549b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1240" y="670" width="320" height="125" />
+        </mxCell>
+        <mxCell id="scan" value="4× 扫描放大&#10;独立 OSD 叠加&#10;rgb2dvi / TMDS" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#78549b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1640" y="670" width="320" height="125" />
+        </mxCell>
+        <mxCell id="memory" value="PS DDR 控制器 / AXI HP 端口  ·  RGB / 掩膜 / 状态帧缓冲  ·  命令与资源上传缓冲" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#fff9ed;strokeColor=#af8844;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="985" width="1510" height="70" />
+        </mxCell>
+        <mxCell id="recognizer" value="OpenCV 轮廓 / 凸包 / 凸缺陷&#10;质心、方向、握拳 / 剪刀 / 布&#10;PS 本地识别与有效期检查" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="1115" width="420" height="110" />
+        </mxCell>
+        <mxCell id="app" value="菜单 / 游戏 / 画布 / 视频&#10;本地输入映射与交互状态机&#10;Scene 构建与编译" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1115" width="420" height="110" />
+        </mxCell>
+        <mxCell id="sink" value="共享 Overlay / GPU sink&#10;命令与资源打包 / DMA&#10;接收、渲染、呈现回执" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1560" y="1115" width="380" height="110" />
+        </mxCell>
+        <mxCell id="agent" value="SSH 安装 / Agent 管理&#10;VVGP 内容与控制 · SHA 回读&#10;HTTP 按需图像 / 结果回传" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="430" y="1310" width="420" height="110" />
+        </mxCell>
+        <mxCell id="latest" value="最新视觉状态 / 事件&#10;run · epoch · frame_id&#10;多消费者读取，不回放积压队列" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=24;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1000" y="1310" width="420" height="110" />
+        </mxCell>
+        <mxCell id="hand" value="灵巧手独占权限 / 调度&#10;跟随、示范、超时与正常释放&#10;独立动作进程 → USB SDK" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#247663;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=23;spacing=12;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1560" y="1310" width="380" height="110" />
+        </mxCell>
+        <mxCell id="ctl" value="控制面：PS M_AXI_GP0 → AXI-Lite / MMIO → 采集配置、相机 I²C、GPU 状态与 OSD 位置寄存器" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=19;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400" y="1440" width="1590" height="27" />
+        </mxCell>
+        <mxCell id="note" value="视觉与渲染分离：双掩膜送往 DDR / PS 识别，应用生成 Scene 后才进入 GPU；相机画面不直接作为 GPU 帧缓冲。" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=21;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="400" y="1516" width="1600" height="28" />
+        </mxCell>
+        <mxCell id="legend" value="蓝：视觉数据流    紫：渲染 / 显示流    绿：PS 语义与动作    灰虚线：控制 / 管理    ·    外设框内保留图片位置" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#64748b;fontColor=#172b3a;fontFamily=Microsoft YaHei;fontSize=22;spacing=12;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="40" y="1565" width="2320" height="38" />
+        </mxCell>
+        <mxCell id="label0" value="DVP 像素流" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="307.90625" y="377" width="114.1875" height="27" />
+        </mxCell>
+        <mxCell id="label1" value="I²C / SCCB 配置" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="249.328125" y="635" width="147.34375" height="27" />
+        </mxCell>
+        <mxCell id="label3" value="RGB 旁路 + 双掩膜" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="668.2890625" y="634" width="173.421875" height="27" />
+        </mxCell>
+        <mxCell id="label4" value="HP1：RGB / HP3：掩膜与状态" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1325.3046875" y="885" width="269.390625" height="27" />
+        </mxCell>
+        <mxCell id="label6" value="位置 / 分类 / 帧身份" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="764.6875" y="1238" width="180.625" height="27" />
+        </mxCell>
+        <mxCell id="label8" value="Scene" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1455.5625" y="1133" width="68.875" height="27" />
+        </mxCell>
+        <mxCell id="label10" value="HP0：命令 / 资源读取" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1831.109375" y="320" width="197.78125" height="27" />
+        </mxCell>
+        <mxCell id="label14" value="HDMI 720p" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1975.5390625" y="698" width="116.921875" height="27" />
+        </mxCell>
+        <mxCell id="label15" value="最新手位置 → OSD（MMIO）" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1666.7734375" y="815" width="266.453125" height="27" />
+        </mxCell>
+        <mxCell id="label17" value="USB 串口 / SDK" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1943.890625" y="1308" width="148.21875" height="27" />
+        </mxCell>
+        <mxCell id="label18" value="Ethernet" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="318.65625" y="1318" width="90.6875" height="27" />
+        </mxCell>
+        <mxCell id="label19" value="管理 / 内容" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="868.84375" y="1268" width="108.3125" height="27" />
+        </mxCell>
+        <mxCell id="label20" value="DDR 总线" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="315.765625" y="979" width="98.46875" height="27" />
+        </mxCell>
+        <mxCell id="label21" value="PL 按键同步 → PS 游戏输入" style="text;html=0;whiteSpace=wrap;fillColor=#ffffff;strokeColor=none;fontSize=18;fontFamily=Microsoft YaHei;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="1088.5703125" y="1063" width="242.859375" height="27" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

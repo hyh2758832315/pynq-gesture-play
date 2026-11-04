@@ -1,0 +1,10 @@
+{
+  "build_id": "0xC0061000",
+  "runtime": "R15b",
+  "hand_runtime": "R16",
+  "source_sha256": {
+    "board/runtime/deployment_manifest.json": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+    "board/runtime/overlay/c6v_candidate.hwh": "e2ce377e5fb94ba2eb277eb2defeb642e2e9359c6aa2aa0b6013bb9a4d8b49dd"
+  },
+  "scope": "Local frozen files, no board read"
+}

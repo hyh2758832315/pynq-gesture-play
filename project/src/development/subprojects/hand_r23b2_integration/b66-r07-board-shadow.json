@@ -1,0 +1,106 @@
+﻿{
+  "status": "SHADOW_OBSERVED",
+  "pid": 892,
+  "session": "bcd7a7b089b14446b9360146f82b213c",
+  "game_run": "1dcdacec1c1f4578aac1caf2f25443c6",
+  "stop_reason": "future_source",
+  "frames": 345,
+  "invalid_frames": 345,
+  "gestures": {
+    "None": 345
+  },
+  "events": [
+    {
+      "frame": 920,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 922,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 923,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 925,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 926,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 927,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 928,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 929,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 931,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 932,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 934,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 935,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 936,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 937,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 938,
+      "gesture": null,
+      "valid": false
+    },
+    {
+      "frame": 939,
+      "gesture": null,
+      "valid": false
+    }
+  ],
+  "max_source_age_seconds": 0.252141599999959,
+  "wall_seconds": 38.11918306300004,
+  "freshness_budget_seconds": 1.0,
+  "max_interarrival_seconds": 0.2099997100000337,
+  "stale_packets_dropped": 0,
+  "max_stale_packet_age_seconds": 0.0,
+  "age_at_stop_seconds": 0.348774762000005,
+  "cpu_seconds": 0.8025294550000001,
+  "forbidden_modules": [],
+  "actuator_constructed": false,
+  "serial_opened": false,
+  "hardware_motion": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PRESERVATION_UNDER_SUPPLIED_STIMULUS_PASS",
+  "manifest_sha256": "0e25bb6c85ced853654a842a13549e736bbf6a71ddc98a754a4853862ab659b1",
+  "transcript_sha256": "be924a582f790ddedd1e6417d080a0ffdfcf071df78083c479bfa364c180adf5",
+  "instances": [
+    [
+      "0",
+      "28761",
+      "57",
+      "14324"
+    ]
+  ],
+  "scope": "Finite strict all-output preservation under existing stimulus only; not correctness, formal equivalence or board signoff"
+}

@@ -1,0 +1,627 @@
+{
+  "width": 2200,
+  "height": 1810,
+  "title": "双掩膜编码与无阻塞 OSD 提交",
+  "subtitle": "DMS1 保证同帧数据完整；OSD 用冻结 mailbox 跨时钟，在 HDMI 帧边界更新。",
+  "edge_font_size": 23,
+  "nodes": [
+    {
+      "id": "kicker",
+      "x": 60,
+      "y": 24,
+      "w": 2080,
+      "h": 36,
+      "lines": "PYNQ  /  视觉识别与双路跟随  /  03  编码与时序",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "title",
+      "x": 60,
+      "y": 74,
+      "w": 2080,
+      "h": 80,
+      "lines": "双掩膜编码与无阻塞 OSD 提交",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 47,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 60,
+      "y": 164,
+      "w": 2080,
+      "h": 48,
+      "lines": "DMS1 保证同帧数据完整；OSD 用冻结 mailbox 跨时钟，在 HDMI 帧边界更新。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "footer",
+      "x": 60,
+      "y": 1759,
+      "w": 2080,
+      "h": 33,
+      "lines": "GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 18,
+      "kind": "text"
+    },
+    {
+      "id": "packet",
+      "x": 60,
+      "y": 240,
+      "w": 2080,
+      "h": 485,
+      "lines": "DMS1 / 每帧 460,864 B：像素对 460,800 B + 尾部 64 B",
+      "fill": "#edf5fb",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "byte0",
+      "x": 100,
+      "y": 335,
+      "w": 225,
+      "h": 91,
+      "lines": "raw[0]\n8 bit",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "byte1",
+      "x": 325,
+      "y": 335,
+      "w": 225,
+      "h": 91,
+      "lines": "filtered[0]\n8 bit",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "byte2",
+      "x": 550,
+      "y": 335,
+      "w": 225,
+      "h": 91,
+      "lines": "raw[1]\n8 bit",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "byte3",
+      "x": 775,
+      "y": 335,
+      "w": 225,
+      "h": 91,
+      "lines": "filtered[1]\n8 bit",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "rest",
+      "x": 1050,
+      "y": 335,
+      "w": 350,
+      "h": 91,
+      "lines": "… 640 × 360 像素\n内存字节顺序",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "tail",
+      "x": 1460,
+      "y": 335,
+      "w": 630,
+      "h": 91,
+      "lines": "16 × uint32 尾部\n小端布局；CRC32 覆盖此前全部字节",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "data_types",
+      "x": 100,
+      "y": 453,
+      "w": 1990,
+      "h": 45,
+      "lines": "raw 仅为 0/255；filtered 为 0–255 平滑值。每个 32 bit 负载字打包两个像素对。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "tailgroup0",
+      "x": 100,
+      "y": 535,
+      "w": 460,
+      "h": 125,
+      "lines": "身份\nMAGIC / ABI\nframe_id / config_id / epoch",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "tailgroup1",
+      "x": 610,
+      "y": 535,
+      "w": 460,
+      "h": 125,
+      "lines": "几何与长度\nwidth / height / pixels\npayload_bytes / status",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "tailgroup2",
+      "x": 1120,
+      "y": 535,
+      "w": 460,
+      "h": 125,
+      "lines": "配置与格式\n6 个 HSV 阈值字节\nPAIR_FORMAT = 0x00010802",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "tailgroup3",
+      "x": 1630,
+      "y": 535,
+      "w": 460,
+      "h": 125,
+      "lines": "末尾校验\n保留字为 0\nCRC32：多项式 0xEDB88320",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "regs",
+      "x": 60,
+      "y": 765,
+      "w": 2080,
+      "h": 345,
+      "lines": "OSD / 6 个 32 bit 影子寄存器 + COMMIT",
+      "fill": "#fff0f6",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "reg0",
+      "x": 90,
+      "y": 850,
+      "w": 320,
+      "h": 100,
+      "lines": "0x10 / FLAGS\nenable · valid · fist",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "reg1",
+      "x": 430,
+      "y": 850,
+      "w": 320,
+      "h": 100,
+      "lines": "0x14 / XY\nX | (Y << 16)",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "reg2",
+      "x": 770,
+      "y": 850,
+      "w": 320,
+      "h": 100,
+      "lines": "0x18 / 保留\n0",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "reg3",
+      "x": 1110,
+      "y": 850,
+      "w": 320,
+      "h": 100,
+      "lines": "0x1C / TTL\n剩余帧数 << 16",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "reg4",
+      "x": 1450,
+      "y": 850,
+      "w": 320,
+      "h": 100,
+      "lines": "0x20 / HAND_SEQ\n新观察序号",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "reg5",
+      "x": 1790,
+      "y": 850,
+      "w": 320,
+      "h": 100,
+      "lines": "0x24 / 保留\n0",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "osd_rule",
+      "x": 100,
+      "y": 987,
+      "w": 1990,
+      "h": 80,
+      "lines": "先读 BUSY：忙则跳过本次提交，不排队；空闲时写 6 个字，再写 0x08 = 1。\n重复帧不刷新原始来源时间；250 ms 新鲜度预算换算为剩余扫描帧，序号重复不续命。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "timing",
+      "x": 60,
+      "y": 1150,
+      "w": 2080,
+      "h": 520,
+      "lines": "跨时钟提交 / 控制线程与像素扫描解耦",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "ps",
+      "x": 220,
+      "y": 1230,
+      "w": 420,
+      "h": 65,
+      "lines": "PS OSD 线程",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "psend",
+      "x": 430,
+      "y": 1650,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "axi",
+      "x": 880,
+      "y": 1230,
+      "w": 420,
+      "h": 65,
+      "lines": "AXI-Lite mailbox",
+      "fill": "#edf5fb",
+      "stroke": "#25638d",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "axiend",
+      "x": 1090,
+      "y": 1650,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "pix",
+      "x": 1590,
+      "y": 1230,
+      "w": 420,
+      "h": 65,
+      "lines": "像素时钟域",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "pixend",
+      "x": 1800,
+      "y": 1650,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "commita",
+      "x": 430,
+      "y": 1350,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "commitb",
+      "x": 1090,
+      "y": 1350,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "pendinga",
+      "x": 1090,
+      "y": 1415,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "pendingb",
+      "x": 1800,
+      "y": 1415,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "boundary",
+      "x": 1545,
+      "y": 1460,
+      "w": 510,
+      "h": 64,
+      "lines": "帧边界：切换 active_cfg",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 24,
+      "kind": "box"
+    },
+    {
+      "id": "acka",
+      "x": 1800,
+      "y": 1580,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "ackb",
+      "x": 1090,
+      "y": 1580,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "readya",
+      "x": 1090,
+      "y": 1640,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "readyb",
+      "x": 430,
+      "y": 1640,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "rate_note",
+      "x": 75,
+      "y": 1700,
+      "w": 2050,
+      "h": 48,
+      "lines": "OSD 线程目标 30 Hz，HDMI 扫描 60 Hz；这些是配置节拍，不能替代实际识别 FPS 或端到端延迟。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 23,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ps",
+      "target": "psend",
+      "points": [
+        [
+          430,
+          1295
+        ],
+        [
+          430,
+          1650
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "axi",
+      "target": "axiend",
+      "points": [
+        [
+          1090,
+          1295
+        ],
+        [
+          1090,
+          1650
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "pix",
+      "target": "pixend",
+      "points": [
+        [
+          1800,
+          1295
+        ],
+        [
+          1800,
+          1650
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "commita",
+      "target": "commitb",
+      "points": [
+        [
+          430,
+          1350
+        ],
+        [
+          1090,
+          1350
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false,
+      "label": "COMMIT：冻结数据，翻转 req",
+      "label_x": 760.0,
+      "label_y": 1336
+    },
+    {
+      "source": "pendinga",
+      "target": "pendingb",
+      "points": [
+        [
+          1090,
+          1415
+        ],
+        [
+          1800,
+          1415
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false,
+      "label": "req 经 2FF；捕获 pending_cfg",
+      "label_x": 1445.0,
+      "label_y": 1401
+    },
+    {
+      "source": "acka",
+      "target": "ackb",
+      "points": [
+        [
+          1800,
+          1580
+        ],
+        [
+          1090,
+          1580
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "切换后 ACK 返回，经 2FF 同步",
+      "label_x": 1445.0,
+      "label_y": 1566
+    },
+    {
+      "source": "readya",
+      "target": "readyb",
+      "points": [
+        [
+          1090,
+          1640
+        ],
+        [
+          430,
+          1640
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false,
+      "label": "BUSY 清除，可提交下一份观察",
+      "label_x": 760.0,
+      "label_y": 1626
+    }
+  ]
+}

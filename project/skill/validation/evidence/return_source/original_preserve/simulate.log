@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+SCENE2D_RETURN_SOURCE=PASS packets=6 rejected=2
+PRESERVE_FINAL_PASS instance=0 checks=88 reset=5 active=39
+$finish called at time : 445 ns : File "E:/projects/fpga/voice-view-game/b/return_guarded_r01/workspace/tests/tb_scene2d_return_source.sv" Line 206

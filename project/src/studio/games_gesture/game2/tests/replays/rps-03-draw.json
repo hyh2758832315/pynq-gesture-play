@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "test_id": "rps-draw",
+  "name": "RPS - Draw",
+  "seed": 0,
+  "max_ticks": 958,
+  "events": [
+    {
+      "tick": 0,
+      "kind": "gesture",
+      "event_id": "round-1-scissors",
+      "x": 160,
+      "y": 90,
+      "gesture": "scissors"
+    },
+    {
+      "tick": 658,
+      "kind": "gesture",
+      "event_id": "round-3-rock",
+      "x": 160,
+      "y": 90,
+      "gesture": "fist"
+    }
+  ],
+  "assertions": [
+    {
+      "tick": 209,
+      "field": "values.outcome",
+      "operator": "eq",
+      "expected": "DRAW"
+    },
+    {
+      "tick": 958,
+      "field": "status",
+      "operator": "eq",
+      "expected": "DRAW"
+    },
+    {
+      "tick": 958,
+      "field": "score",
+      "operator": "eq",
+      "expected": 0
+    },
+    {
+      "tick": 958,
+      "field": "values.draws",
+      "operator": "eq",
+      "expected": 3
+    },
+    {
+      "tick": 958,
+      "field": "values.rounds_completed",
+      "operator": "eq",
+      "expected": 3
+    }
+  ]
+}

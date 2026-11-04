@@ -1,0 +1,12 @@
+\begin{tikzpicture}[node distance=10mm and 10mm]
+\node[soft] (obs) {视觉 / 游戏观察\\来源与序列};
+\node[box,right=of obs] (owner) {独立手进程\\动作拥有者};
+\node[box,right=of owner] (motor) {ORCA / USB 串口\\17 个电机};
+\node[soft,below=14mm of obs] (live) {菜单 / 列表\\live 跟随};
+\node[soft,right=of live] (pause) {画布 / 相册\\暂停动作};
+\node[soft,right=of pause] (demo) {示范模式\\独占姿态序列};
+\node[box,below=10mm of pause,text width=65mm] (off) {视频 / 预览交接\\17OFF 读回 → CLOSED 回执};
+\draw[arr] (obs)--node[lab,above=6mm]{本机 UDP}(owner);\draw[arr] (owner)--node[lab,above=6mm]{1 Mbaud}(motor);
+\draw[ctl] (owner)--(pause);\draw[ctl] (owner.south west)--(live.north east);
+\draw[ctl] (owner.south east)--(demo.north west);\draw[ctl] (pause)--(off);
+\end{tikzpicture}

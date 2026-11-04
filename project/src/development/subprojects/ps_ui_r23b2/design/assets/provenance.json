@@ -1,0 +1,9 @@
+{
+  "pynq-official-logo.png": {
+    "width": 104,
+    "height": 50,
+    "source_url": "https://raw.githubusercontent.com/Xilinx/PYNQ/master/logo.png",
+    "source_sha256": "0e688b32953ca08f597254d21e563b5182b253b518192e5b5e1494fa6551aae1",
+    "adaptation": "Official AMD PYNQ lockup geometry; AMD dark plum and PYNQ pink per user request."
+  }
+}

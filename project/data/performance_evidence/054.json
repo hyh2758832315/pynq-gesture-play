@@ -1,0 +1,132 @@
+{
+  "result": "FOUR_BUTTONS_ANALYSIS_PASS",
+  "hardware_tested": true,
+  "release_ready": false,
+  "requests": [
+    {
+      "state": "default",
+      "request_id": 1,
+      "wall_seconds": 1.0761039680000977,
+      "cpu_seconds": 0.6346129769999997,
+      "single_core_percent": 58.97320294984194,
+      "position_write_attempts": 311,
+      "feedback_read_attempts": 119,
+      "terminal_three_rom_errors": [
+        0.058536585207616156,
+        0.029268292524689286,
+        0.028806583786424637
+      ]
+    },
+    {
+      "state": "paper",
+      "request_id": 2,
+      "wall_seconds": 1.3878645019999567,
+      "cpu_seconds": 0.710293332,
+      "single_core_percent": 51.17886731568138,
+      "position_write_attempts": 222,
+      "feedback_read_attempts": 204,
+      "terminal_three_rom_errors": [
+        0.07124681974369867,
+        0.03562341007448741,
+        0.028806583786424637
+      ]
+    },
+    {
+      "state": "scissors",
+      "request_id": 3,
+      "wall_seconds": 1.5931182379999882,
+      "cpu_seconds": 0.8942035489999993,
+      "single_core_percent": 56.129138922079555,
+      "position_write_attempts": 457,
+      "feedback_read_attempts": 170,
+      "terminal_three_rom_errors": [
+        0.07439024390243912,
+        0.03699186991869908,
+        0.02489711934156365
+      ]
+    },
+    {
+      "state": "rock",
+      "request_id": 4,
+      "wall_seconds": 2.543196457999784,
+      "cpu_seconds": 1.4211287170000002,
+      "single_core_percent": 55.87962788048681,
+      "position_write_attempts": 523,
+      "feedback_read_attempts": 425,
+      "terminal_three_rom_errors": [
+        0.07764227642276421,
+        0.0402439024390244,
+        0.02489711934156365
+      ]
+    }
+  ],
+  "phases": {
+    "idle_off": {
+      "wall_seconds": 51.31011799599992,
+      "cpu_seconds": 0.5446963450000011,
+      "single_core_percent": 1.0615768707498685
+    },
+    "arm": {
+      "wall_seconds": 0.7480517530007091,
+      "cpu_seconds": 0.41882291199999866,
+      "single_core_percent": 55.98849415430775
+    },
+    "motion": {
+      "wall_seconds": 6.6002831659998265,
+      "cpu_seconds": 3.654565627,
+      "single_core_percent": 55.36983088582985
+    },
+    "hold_release": {
+      "wall_seconds": 8.348834239999633,
+      "cpu_seconds": 0.4681432040000004,
+      "single_core_percent": 5.607288281723282
+    }
+  },
+  "health": {
+    "temperature_max": 25,
+    "voltage_min": 4.8,
+    "voltage_max": 5.3
+  },
+  "packet_counts": {
+    "connect:2:16": 17,
+    "arm:2:16": 136,
+    "arm:3:42": 68,
+    "arm:3:40": 68,
+    "motion:2:16": 1054,
+    "motion:3:42": 1513,
+    "release:3:40": 102,
+    "release:2:40": 102
+  },
+  "ignored_busy": [
+    {
+      "event": "ignored_busy",
+      "state": "paper",
+      "monotonic": 3371.471439924,
+      "cpu": 6.01439463,
+      "counts": {
+        "connect:2:16": 17,
+        "arm:2:16": 34,
+        "arm:3:42": 17,
+        "arm:3:40": 17,
+        "motion:2:16": 136,
+        "motion:3:42": 311
+      }
+    }
+  ],
+  "rss_max_kb": 23248,
+  "cleanup_confirmed": true,
+  "raw_sha256": {
+    "h141-buttons-live.json": "85c2d4cd437dfd8300bf15a253406f8e6ffda92bfef72838a56be2f8820b1e8a",
+    "h141-buttons-live-invocation.json": "fe3b3734026d02a86d159c8ce6d8d68818c9b49ae072e843deba56b219868d35",
+    "h139-resume-identity.json": "e71e7a45ad51a3a28a4ecc40939f16c011c3f993831eca980333b30ef3d42b93",
+    "h133-buttons-arm-offline.json": "3573013b61d5e70ff2cfb0145aedd47e5cd8cb80d5e1aea9f88f9192c5465498",
+    "h134-buttons-arm-release.json": "aabd20a46539b50e306aabc04866eacf2aed2d272ec05e50c214a92802b55f7b"
+  },
+  "receipt_sha256": "eb50d512b8707090246cb7ccea71c92c464143dd6e5612f7ec3bda85ff0e615d",
+  "measurement": "process CPU / monotonic wall; one core=100%; includes input and audit overhead",
+  "limitations": [
+    "one request per state; different physical start states",
+    "packet counters are asynchronous snapshots; phase boundaries can shift one packet",
+    "not a same-condition comparison with historic periodic-feedback baseline"
+  ]
+}

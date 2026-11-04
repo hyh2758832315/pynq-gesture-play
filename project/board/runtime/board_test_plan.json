@@ -1,0 +1,14 @@
+{
+  "schema": "button-only-board-plan-v1",
+  "board_pending": true,
+  "build_id": "0xC0061000",
+  "bit_sha256": "8F8CE2B979528E9E7B1F1DF16A9B9920EEADD05B2F7AEB79DD4D8040E21C691D",
+  "checks": [
+    "board gate",
+    "HWH/BUILD_ID",
+    "idle BTN GPIO",
+    "HDMI hand OSD",
+    "BTN0 and BTN1 physical press/game effects",
+    "video/game coexistence"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2, "test_id": "rps-boundaries", "name": "RPS - Stability and Lock", "seed": 0, "max_ticks": 450,
+  "events": [
+    {"tick": 0, "kind": "gesture", "event_id": "first-stable", "x": 160, "y": 90, "gesture": "fist"},
+    {"tick": 209, "kind": "gesture", "event_id": "unknown-at-deadline", "x": 160, "y": 90, "gesture": null},
+    {"tick": 220, "kind": "gesture", "event_id": "retry-stable", "x": 160, "y": 90, "gesture": "paper"},
+    {"tick": 428, "kind": "gesture", "event_id": "before-deadline", "x": 160, "y": 90, "gesture": "fist"},
+    {"tick": 429, "kind": "gesture", "event_id": "at-deadline", "x": 160, "y": 90, "gesture": "scissors"},
+    {"tick": 430, "kind": "gesture", "event_id": "after-deadline", "x": 160, "y": 90, "gesture": "paper"}
+  ],
+  "assertions": [
+    {"tick": 209, "field": "values.phase", "operator": "eq", "expected": "READY"},
+    {"tick": 209, "field": "values.rounds_completed", "operator": "eq", "expected": 0},
+    {"tick": 248, "field": "values.phase", "operator": "eq", "expected": "READY"},
+    {"tick": 249, "field": "values.phase", "operator": "eq", "expected": "COUNTDOWN"},
+    {"tick": 428, "field": "values.robot_locked", "operator": "eq", "expected": null},
+    {"tick": 429, "field": "values.human_locked", "operator": "eq", "expected": "scissors"},
+    {"tick": 429, "field": "values.robot_locked", "operator": "eq", "expected": "scissors"},
+    {"tick": 450, "field": "values.human_locked", "operator": "eq", "expected": "scissors"},
+    {"tick": 450, "field": "values.rounds_completed", "operator": "eq", "expected": 1}
+  ]
+}

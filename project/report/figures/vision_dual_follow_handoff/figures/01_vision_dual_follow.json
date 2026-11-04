@@ -1,0 +1,659 @@
+{
+  "width": 2200,
+  "height": 1680,
+  "title": "一帧观察，位置与类别分别跟随",
+  "subtitle": "位置驱动 HDMI 手圈；类别驱动实体手。两路都读取最新状态，互不消费对方的输入。",
+  "edge_font_size": 23,
+  "nodes": [
+    {
+      "id": "kicker",
+      "x": 60,
+      "y": 24,
+      "w": 2080,
+      "h": 36,
+      "lines": "PYNQ  /  视觉识别与双路跟随  /  01  总览",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "title",
+      "x": 60,
+      "y": 74,
+      "w": 2080,
+      "h": 80,
+      "lines": "一帧观察，位置与类别分别跟随",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 47,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 60,
+      "y": 164,
+      "w": 2080,
+      "h": 48,
+      "lines": "位置驱动 HDMI 手圈；类别驱动实体手。两路都读取最新状态，互不消费对方的输入。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "footer",
+      "x": 60,
+      "y": 1629,
+      "w": 2080,
+      "h": 33,
+      "lines": "GESTURE PLAY  ·  v3.0 / R15b / R16  ·  BUILD_ID 0xC0061000  ·  源码机制示意",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 18,
+      "kind": "text"
+    },
+    {
+      "id": "pl",
+      "x": 60,
+      "y": 240,
+      "w": 2080,
+      "h": 430,
+      "lines": "PL / 逐像素处理与双掩膜",
+      "fill": "#edf5fb",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "camera",
+      "x": 100,
+      "y": 335,
+      "w": 270,
+      "h": 105,
+      "lines": "OV5640 / DVP\n1280 × 720",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "area",
+      "x": 410,
+      "y": 335,
+      "w": 310,
+      "h": 105,
+      "lines": "2 × 2 区域缩减\n640 × 360",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "hsv",
+      "x": 760,
+      "y": 335,
+      "w": 330,
+      "h": 105,
+      "lines": "BGR → HSV\n肤色阈值判定",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "raw",
+      "x": 1190,
+      "y": 310,
+      "w": 320,
+      "h": 90,
+      "lines": "原掩膜 + 对齐 FIFO\nraw：0 或 255",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "filtered",
+      "x": 1190,
+      "y": 465,
+      "w": 320,
+      "h": 105,
+      "lines": "9 × 9 膨胀\n5 × 5 固定权重平滑",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "dms",
+      "x": 1620,
+      "y": 375,
+      "w": 470,
+      "h": 115,
+      "lines": "逐像素配对 → DMS1\nraw + filtered + 帧身份",
+      "fill": "#ffffff",
+      "stroke": "#25638d",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "thresholds",
+      "x": 100,
+      "y": 474,
+      "w": 990,
+      "h": 92,
+      "lines": "当前配置：H 0–20 / S 20–255 / V 70–255\n缩减逐通道计算：(四像素之和 + 2) >> 2",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "pl_note",
+      "x": 100,
+      "y": 606,
+      "w": 1990,
+      "h": 40,
+      "lines": "RGB 同时由 VDMA 写入 DDR；PS 仅在预览需要时复制 RGB。识别使用双掩膜。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "ps",
+      "x": 60,
+      "y": 710,
+      "w": 2080,
+      "h": 270,
+      "lines": "PS / 完成帧快照、最新帧槽与识别",
+      "fill": "#edf8f5",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "decode",
+      "x": 100,
+      "y": 800,
+      "w": 405,
+      "h": 108,
+      "lines": "DMA 完成 / DMS1 校验\n复制完成后释放 DMA token",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "latest",
+      "x": 575,
+      "y": 800,
+      "w": 405,
+      "h": 108,
+      "lines": "采集线程持续读取\n最新帧槽容量 = 1",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "analysis",
+      "x": 1050,
+      "y": 800,
+      "w": 405,
+      "h": 108,
+      "lines": "轮廓 / 凸包 / 凸缺陷\n位置质心 + 三态确认",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "publish",
+      "x": 1525,
+      "y": 800,
+      "w": 565,
+      "h": 108,
+      "lines": "发布同帧观察\n位置、类别、帧号、原始来源时间",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "mailbox_note",
+      "x": 120,
+      "y": 928,
+      "w": 1940,
+      "h": 36,
+      "lines": "新帧覆盖待处理旧帧；识别只取最新可用快照。CPU 快照的 ready 时间保留到结果消费者。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 23,
+      "kind": "text"
+    },
+    {
+      "id": "display",
+      "x": 60,
+      "y": 1060,
+      "w": 1000,
+      "h": 465,
+      "lines": "A / HDMI 位置跟随",
+      "fill": "#fff0f6",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "hand",
+      "x": 1140,
+      "y": 1060,
+      "w": 1000,
+      "h": 465,
+      "lines": "B / 灵巧手类别跟随",
+      "fill": "#edf8f5",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "position_slot",
+      "x": 100,
+      "y": 1160,
+      "w": 420,
+      "h": 110,
+      "lines": "ObservationHub 最新快照\n位置有效性与分类分离",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "osd",
+      "x": 580,
+      "y": 1160,
+      "w": 440,
+      "h": 110,
+      "lines": "独立 OSD 线程 → MMIO\nPL 在帧边界切换覆盖参数",
+      "fill": "#ffffff",
+      "stroke": "#bf286e",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "hand_slot",
+      "x": 1180,
+      "y": 1160,
+      "w": 420,
+      "h": 110,
+      "lines": "分类快照 peek\n不消费游戏 / 菜单事件",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "owner",
+      "x": 1660,
+      "y": 1160,
+      "w": 440,
+      "h": 110,
+      "lines": "独立动作 owner → USB SDK\n按 t 窗口执行最新类别",
+      "fill": "#ffffff",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "display_rules",
+      "x": 110,
+      "y": 1315,
+      "w": 900,
+      "h": 94,
+      "lines": "有效位置：显示亮绿圈；确认握拳：红圈缩小\n应用画面暂停时，独立覆盖通路仍可更新",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "hand_rules",
+      "x": 1190,
+      "y": 1315,
+      "w": 900,
+      "h": 94,
+      "lines": "类别待定：保持已批准姿态；明确无手：default\n动作忙时只更新最新状态，后续不补播旧动作",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "display_impl",
+      "x": 110,
+      "y": 1440,
+      "w": 900,
+      "h": 43,
+      "lines": "最终扫描上叠加 · 常量查表画圈 · 3 像素周期流水",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "hand_impl",
+      "x": 1190,
+      "y": 1440,
+      "w": 900,
+      "h": 43,
+      "lines": "页面授权 / 暂停交接仍由 owner 管理",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "preview_note",
+      "x": 70,
+      "y": 1550,
+      "w": 2060,
+      "h": 48,
+      "lines": "PC 回传是按需观察分支：先发布识别结果，再处理 RGB 转换 / 标注 / 编码。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    }
+  ],
+  "edges": [
+    {
+      "source": "camera",
+      "target": "area",
+      "points": [
+        [
+          370,
+          387
+        ],
+        [
+          410,
+          387
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "area",
+      "target": "hsv",
+      "points": [
+        [
+          720,
+          387
+        ],
+        [
+          760,
+          387
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "hsv",
+      "target": "raw",
+      "points": [
+        [
+          1090,
+          387
+        ],
+        [
+          1140,
+          387
+        ],
+        [
+          1140,
+          355
+        ],
+        [
+          1190,
+          355
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "hsv",
+      "target": "filtered",
+      "points": [
+        [
+          1090,
+          387
+        ],
+        [
+          1140,
+          387
+        ],
+        [
+          1140,
+          517
+        ],
+        [
+          1190,
+          517
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "raw",
+      "target": "dms",
+      "points": [
+        [
+          1510,
+          355
+        ],
+        [
+          1560,
+          355
+        ],
+        [
+          1560,
+          410
+        ],
+        [
+          1620,
+          410
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "filtered",
+      "target": "dms",
+      "points": [
+        [
+          1510,
+          517
+        ],
+        [
+          1560,
+          517
+        ],
+        [
+          1560,
+          455
+        ],
+        [
+          1620,
+          455
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "decode",
+      "target": "latest",
+      "points": [
+        [
+          505,
+          854
+        ],
+        [
+          575,
+          854
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "latest",
+      "target": "analysis",
+      "points": [
+        [
+          980,
+          854
+        ],
+        [
+          1050,
+          854
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "analysis",
+      "target": "publish",
+      "points": [
+        [
+          1455,
+          854
+        ],
+        [
+          1525,
+          854
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "dms",
+      "target": "decode",
+      "points": [
+        [
+          1855,
+          490
+        ],
+        [
+          2115,
+          490
+        ],
+        [
+          2115,
+          690
+        ],
+        [
+          40,
+          690
+        ],
+        [
+          40,
+          854
+        ],
+        [
+          100,
+          854
+        ]
+      ],
+      "color": "#25638d",
+      "dashed": false
+    },
+    {
+      "source": "publish",
+      "target": "display",
+      "points": [
+        [
+          1807,
+          908
+        ],
+        [
+          1807,
+          1020
+        ],
+        [
+          560,
+          1020
+        ],
+        [
+          560,
+          1060
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false
+    },
+    {
+      "source": "publish",
+      "target": "hand",
+      "points": [
+        [
+          1807,
+          908
+        ],
+        [
+          1807,
+          1020
+        ],
+        [
+          1640,
+          1020
+        ],
+        [
+          1640,
+          1060
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    },
+    {
+      "source": "position_slot",
+      "target": "osd",
+      "points": [
+        [
+          520,
+          1215
+        ],
+        [
+          580,
+          1215
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false
+    },
+    {
+      "source": "hand_slot",
+      "target": "owner",
+      "points": [
+        [
+          1600,
+          1215
+        ],
+        [
+          1660,
+          1215
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false
+    }
+  ]
+}

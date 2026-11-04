@@ -1,0 +1,638 @@
+{
+  "width": 2200,
+  "height": 1400,
+  "title": "只消费最新状态，动作不会排队",
+  "subtitle": "已观察 ≠ 已消费；动作获批时开始计时，空闲边界再读取当前有效状态",
+  "edge_font_size": 24,
+  "nodes": [
+    {
+      "id": "kicker",
+      "x": 60,
+      "y": 24,
+      "w": 2080,
+      "h": 36,
+      "lines": "PYNQ  /  灵巧手驱动与低负荷通信  /  01  消费逻辑",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 21,
+      "kind": "text"
+    },
+    {
+      "id": "title",
+      "x": 60,
+      "y": 74,
+      "w": 2080,
+      "h": 80,
+      "lines": "只消费最新状态，动作不会排队",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 49,
+      "kind": "text"
+    },
+    {
+      "id": "subtitle",
+      "x": 60,
+      "y": 164,
+      "w": 2080,
+      "h": 48,
+      "lines": "已观察 ≠ 已消费；动作获批时开始计时，空闲边界再读取当前有效状态",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "text"
+    },
+    {
+      "id": "footer",
+      "x": 60,
+      "y": 1348,
+      "w": 2080,
+      "h": 34,
+      "lines": "GESTURE PLAY  ·  v3.0 / 手部运行时 R16  ·  按已交付源码绘制  ·  技术示意",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 18,
+      "kind": "text"
+    },
+    {
+      "id": "flow",
+      "x": 60,
+      "y": 240,
+      "w": 2080,
+      "h": 360,
+      "lines": "01 / 从视觉状态到动作批准",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "input",
+      "x": 100,
+      "y": 333,
+      "w": 440,
+      "h": 105,
+      "lines": "读取最新状态\n手势 · 帧号 · 来源时间",
+      "fill": "#edf5fb",
+      "stroke": "#25638d",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "valid",
+      "x": 620,
+      "y": 333,
+      "w": 440,
+      "h": 105,
+      "lines": "身份与时效检查\n来源一致，输入仍新鲜",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "ready",
+      "x": 1140,
+      "y": 333,
+      "w": 440,
+      "h": 105,
+      "lines": "动作状态检查\nREADY_IDLE 才能提交",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "change",
+      "x": 1660,
+      "y": 333,
+      "w": 440,
+      "h": 105,
+      "lines": "姿态变化检查\n不同姿态 → 批准动作",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "n1",
+      "x": 100,
+      "y": 475,
+      "w": 440,
+      "h": 80,
+      "lines": "单个最新槽\n新帧覆盖旧帧",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "n2",
+      "x": 620,
+      "y": 475,
+      "w": 440,
+      "h": 80,
+      "lines": "过期输入进入来源恢复流程\n读取不刷新原始 source_at",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "n3",
+      "x": 1140,
+      "y": 475,
+      "w": 440,
+      "h": 80,
+      "lines": "MOVING：只更新最新状态\n保留空闲后消费的资格",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "n4",
+      "x": 1660,
+      "y": 475,
+      "w": 440,
+      "h": 80,
+      "lines": "相同姿态继续保持\n避免重复下发动作",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "timing",
+      "x": 60,
+      "y": 635,
+      "w": 2080,
+      "h": 490,
+      "lines": "02 / 忙时发生两次变化，下一次只执行最后的剪刀手势",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "group"
+    },
+    {
+      "id": "axislabel",
+      "x": 85,
+      "y": 737,
+      "w": 250,
+      "h": 55,
+      "lines": "示意时间",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 24,
+      "kind": "text"
+    },
+    {
+      "id": "tbegin",
+      "x": 390,
+      "y": 765,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "tend",
+      "x": 2070,
+      "y": 765,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "start",
+      "x": 285,
+      "y": 686,
+      "w": 210,
+      "h": 38,
+      "lines": "0 · 握拳获批",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "starttop",
+      "x": 390,
+      "y": 766,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "startbottom",
+      "x": 390,
+      "y": 1078,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "change1",
+      "x": 543.0,
+      "y": 686,
+      "w": 210,
+      "h": 38,
+      "lines": "t₁",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "change1top",
+      "x": 648.0,
+      "y": 766,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "change1bottom",
+      "x": 648.0,
+      "y": 1078,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "change2",
+      "x": 1446.0,
+      "y": 726,
+      "w": 210,
+      "h": 38,
+      "lines": "t₂",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "change2top",
+      "x": 1551.0,
+      "y": 766,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "change2bottom",
+      "x": 1551.0,
+      "y": 1078,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "window_end",
+      "x": 1575,
+      "y": 686,
+      "w": 210,
+      "h": 38,
+      "lines": "t",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "window_endtop",
+      "x": 1680,
+      "y": 766,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "window_endbottom",
+      "x": 1680,
+      "y": 1078,
+      "w": 1,
+      "h": 1,
+      "lines": "",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 1,
+      "kind": "text"
+    },
+    {
+      "id": "mailboxlabel",
+      "x": 85,
+      "y": 808,
+      "w": 250,
+      "h": 60,
+      "lines": "最新状态槽",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "text"
+    },
+    {
+      "id": "fist",
+      "x": 390,
+      "y": 812,
+      "w": 258.0,
+      "h": 62,
+      "lines": "握拳",
+      "fill": "#edf5fb",
+      "stroke": "#25638d",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "paper",
+      "x": 648.0,
+      "y": 812,
+      "w": 902.9999999999999,
+      "h": 62,
+      "lines": "张手（随后被剪刀覆盖）",
+      "fill": "#f5f7fa",
+      "stroke": "#697586",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "scissors",
+      "x": 1551.0,
+      "y": 812,
+      "w": 519.0,
+      "h": 62,
+      "lines": "剪刀",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "actionlabel",
+      "x": 85,
+      "y": 936,
+      "w": 250,
+      "h": 60,
+      "lines": "执行中的动作",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 27,
+      "kind": "text"
+    },
+    {
+      "id": "current",
+      "x": 390,
+      "y": 940,
+      "w": 1290,
+      "h": 78,
+      "lines": "当前握拳动作窗口 · 时长 t（从批准时起算）",
+      "fill": "#fff0f6",
+      "stroke": "#bf286e",
+      "font_size": 27,
+      "kind": "box"
+    },
+    {
+      "id": "next",
+      "x": 1680,
+      "y": 940,
+      "w": 390,
+      "h": 78,
+      "lines": "下一动作：剪刀",
+      "fill": "#edf8f5",
+      "stroke": "#197b71",
+      "font_size": 26,
+      "kind": "box"
+    },
+    {
+      "id": "timeline_note",
+      "x": 370,
+      "y": 1043,
+      "w": 1660,
+      "h": 44,
+      "lines": "0 < t₁ < t₂ < t；期间的张手不会补播。到点且当前动作完成后，才可批准下一动作。",
+      "fill": "#ffffff",
+      "stroke": "#d8dfe7",
+      "font_size": 22,
+      "kind": "text"
+    },
+    {
+      "id": "same",
+      "x": 60,
+      "y": 1160,
+      "w": 660,
+      "h": 112,
+      "lines": "同态 → 保持\n最新姿态未变，不重复播放",
+      "fill": "#f5f7fa",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "default",
+      "x": 770,
+      "y": 1160,
+      "w": 660,
+      "h": 112,
+      "lines": "default → 无需额外等待\n下发默认目标后即可接受后续状态",
+      "fill": "#f5f7fa",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "box"
+    },
+    {
+      "id": "scope",
+      "x": 1480,
+      "y": 1160,
+      "w": 660,
+      "h": 112,
+      "lines": "执行进度与物理到位分开\n正常播放不持续采集位置反馈",
+      "fill": "#f5f7fa",
+      "stroke": "#d8dfe7",
+      "font_size": 25,
+      "kind": "box"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input",
+      "target": "valid",
+      "points": [
+        [
+          540,
+          385
+        ],
+        [
+          620,
+          385
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false
+    },
+    {
+      "source": "valid",
+      "target": "ready",
+      "points": [
+        [
+          1060,
+          385
+        ],
+        [
+          1140,
+          385
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false
+    },
+    {
+      "source": "ready",
+      "target": "change",
+      "points": [
+        [
+          1580,
+          385
+        ],
+        [
+          1660,
+          385
+        ]
+      ],
+      "color": "#bf286e",
+      "dashed": false
+    },
+    {
+      "source": "tbegin",
+      "target": "tend",
+      "points": [
+        [
+          390,
+          765
+        ],
+        [
+          2070,
+          765
+        ]
+      ],
+      "color": "#697586",
+      "dashed": false
+    },
+    {
+      "source": "starttop",
+      "target": "startbottom",
+      "points": [
+        [
+          390,
+          766
+        ],
+        [
+          390,
+          1078
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "change1top",
+      "target": "change1bottom",
+      "points": [
+        [
+          648.0,
+          766
+        ],
+        [
+          648.0,
+          1078
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "change2top",
+      "target": "change2bottom",
+      "points": [
+        [
+          1551.0,
+          766
+        ],
+        [
+          1551.0,
+          1078
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "window_endtop",
+      "target": "window_endbottom",
+      "points": [
+        [
+          1680,
+          766
+        ],
+        [
+          1680,
+          1078
+        ]
+      ],
+      "color": "#d8dfe7",
+      "dashed": true
+    },
+    {
+      "source": "scissors",
+      "target": "next",
+      "points": [
+        [
+          1900,
+          874
+        ],
+        [
+          1900,
+          940
+        ]
+      ],
+      "color": "#197b71",
+      "dashed": false,
+      "label": "读取最新有效状态",
+      "label_x": 1900,
+      "label_y": 916
+    }
+  ]
+}

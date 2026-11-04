@@ -1,0 +1,13 @@
+\begin{tikzpicture}[node distance=23mm and 47mm]
+\node[box,text width=34mm] (wait) {WAIT\_START\\等待帧边界};
+\node[box,text width=34mm,right=of wait] (run) {RUNNING\\接纳图像};
+\node[box,text width=34mm,below=of run] (closing) {CLOSING\\等待当前帧结束};
+\node[box,text width=34mm,below=of wait] (closed) {CLOSED\\源端关闭};
+\draw[arr] (wait)--node[lab,above]{open + 有效边界}(run);
+\draw[arr] (run)--node[lab,right]{close\\尚未到边界}(closing);
+\draw[arr] (closing)--node[lab,below]{有效边界}(closed);
+\draw[arr] (wait)--node[lab,left]{close}(closed);
+\draw[arr] (run.south west)--node[lab,sloped,above]{close + 有效边界}(closed.north east);
+\draw[ctl] (closed.west)--++(-9mm,0)|-node[lab,near start,left]{复位}(wait.west);
+\node[font=\footnotesize,below=8mm of closed.south west,anchor=north west,text width=130mm] {有效边界：vid\_vsync 上升沿且 vid\_active\_video = 0。未满足转移条件时保持原状态。};
+\end{tikzpicture}

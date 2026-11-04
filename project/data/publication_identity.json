@@ -1,0 +1,13 @@
+{
+  "version": "v3.0-publication-review",
+  "date": "2026-11-04",
+  "runtime_manifest_sha256": "77e083bddf389581a3321c56af125aaf7690e37e95e7c34b97001e5c0d88d06a",
+  "historical_runtime_manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+  "changes": [
+    "personal local paths redacted",
+    "original procedural default media",
+    "publication documentation curated"
+  ],
+  "hardware_config_changed": false,
+  "physical_retest": false
+}

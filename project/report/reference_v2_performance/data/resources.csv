@@ -1,0 +1,8 @@
+﻿stage,build_id,LUT,FF,Slice,BRAM,DSP,MMCM,WNS,WHS,TNS,THS,setup_fail_endpoints,hold_fail_endpoints,resource_source,timing_source
+P0,C0060700,14025,22845,7262,62,2,2,0.057,0.05,0.0,0.0,0,0,board/pynq_z2/output/reports/c6i/utilization.rpt,board/pynq_z2/output/reports/c6i/timing_summary.rpt
+P1,C0060710,13982,22870,7250,62,2,2,0.029,0.014,0.0,0.0,0,0,board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/utilization.rpt,board/pynq_z2/output/gpu_cache_experiment/reports/c6i_tile_cache_p1/timing_summary.rpt
+P2a,C0060720,14005,22908,7229,62,2,2,0.045,0.053,0.0,0.0,0,0,board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/utilization.rpt,board/pynq_z2/output/gpu_blit_experiment/reports/c6i_blit_pipeline_p2a/timing_summary.rpt
+P2b,C0060730,14110,22968,7236,62,2,2,0.045,0.05,0.0,0.0,0,0,board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/utilization.rpt,board/pynq_z2/output/gpu_tile_pipeline_experiment/reports/c6i_tile_pipeline_p2b/timing_summary.rpt
+P3a,C0060740,14550,23005,7386,60,2,2,0.116,0.017,0.0,0.0,0,0,board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/utilization.rpt,board/pynq_z2/output/gpu_tile_pair_experiment/reports/c6i_tile_pair_p3a/timing_summary.rpt
+P3b,C0060750,14610,23044,7421,60,2,2,0.073,0.052,0.0,0.0,0,0,board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/utilization.rpt,board/pynq_z2/output/gpu_raster_pair_experiment/reports/c6i_raster_pair_p3b/timing_summary.rpt
+P4,C0060760,14966,23374,7538,60,2,2,0.029,0.052,0.0,0.0,0,0,board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/utilization.rpt,board/pynq_z2/output/gpu_upload_overlap_experiment/reports/c6i_upload_render_overlap_p4/timing_summary.rpt

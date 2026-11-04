@@ -1,0 +1,10 @@
+{
+  "command_count": 6,
+  "write_count": 57608,
+  "trace_crc32": 3056388458,
+  "trace_crc32_hex": "0xB62CC96A",
+  "token_crc32": 2444084886,
+  "token_crc32_hex": "0x91ADC696",
+  "payload_crc32": 3262630606,
+  "payload_crc32_hex": "0xC277CACE"
+}

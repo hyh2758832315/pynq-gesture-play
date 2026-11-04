@@ -1,0 +1,202 @@
+{
+  "status": "FROZEN_RUNTIME_TWO_PROCESS_SHADOW_PASS",
+  "hardware_motion": false,
+  "serial_opened": false,
+  "sampled_frames": 36,
+  "child": {
+    "status": "SHADOW_OBSERVED",
+    "pid": 132048,
+    "session": "48ca9ab0243c4d2cb36e13e17a252520",
+    "game_run": "shadow-verification",
+    "stop_reason": "producer_revoked",
+    "frames": 15,
+    "invalid_frames": 0,
+    "gestures": {
+      "paper": 4,
+      "fist": 6,
+      "scissors": 5
+    },
+    "events": [
+      {
+        "frame": 5,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 7,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 9,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 11,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 14,
+        "gesture": "fist",
+        "valid": true
+      },
+      {
+        "frame": 16,
+        "gesture": "fist",
+        "valid": true
+      },
+      {
+        "frame": 18,
+        "gesture": "fist",
+        "valid": true
+      },
+      {
+        "frame": 20,
+        "gesture": "fist",
+        "valid": true
+      },
+      {
+        "frame": 22,
+        "gesture": "fist",
+        "valid": true
+      },
+      {
+        "frame": 24,
+        "gesture": "fist",
+        "valid": true
+      },
+      {
+        "frame": 27,
+        "gesture": "scissors",
+        "valid": true
+      },
+      {
+        "frame": 29,
+        "gesture": "scissors",
+        "valid": true
+      },
+      {
+        "frame": 31,
+        "gesture": "scissors",
+        "valid": true
+      },
+      {
+        "frame": 33,
+        "gesture": "scissors",
+        "valid": true
+      },
+      {
+        "frame": 35,
+        "gesture": "scissors",
+        "valid": true
+      }
+    ],
+    "max_source_age_seconds": 0.06782080006087199,
+    "wall_seconds": 1.6591093000024557,
+    "freshness_budget_seconds": 1.0,
+    "max_interarrival_seconds": 0.12314300000434741,
+    "stale_packets_dropped": 0,
+    "max_stale_packet_age_seconds": 0.0,
+    "age_at_stop_seconds": 0.16918809997150674,
+    "cpu_seconds": 0.0,
+    "forbidden_modules": [],
+    "actuator_constructed": false,
+    "serial_opened": false,
+    "hardware_motion": false
+  },
+  "publisher": {
+    "session": "48ca9ab0243c4d2cb36e13e17a252520",
+    "producer_pid": 116520,
+    "actuator_constructed": false,
+    "child_restarted": false,
+    "command": [
+      "E:\\projects\\fpga\\voice-view-game\\subprojects\\pynq_usb_hand\\.venv\\Scripts\\python.exe",
+      "-I",
+      "-B",
+      "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b68-hand-source-r08\\tools\\shadow_receiver.py",
+      "--session",
+      "48ca9ab0243c4d2cb36e13e17a252520",
+      "--game-run",
+      "shadow-verification",
+      "--peer-port",
+      "55364",
+      "--output-dir",
+      "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b69-r08-shadow-offline",
+      "--seconds",
+      "8"
+    ],
+    "game_run": "shadow-verification",
+    "launch_pid": 134228,
+    "child_pid": 132048,
+    "child_exit": 0,
+    "error": null,
+    "feed_revoked": "pause",
+    "elapsed": 1.8975850999704562,
+    "publisher_dropped": 0
+  },
+  "source_silence": {
+    "status": "SHADOW_OBSERVED",
+    "pid": 122488,
+    "session": "9aeff11645764c6ab18a1a43d670449d",
+    "game_run": "silent-game",
+    "stop_reason": "stale_source",
+    "frames": 4,
+    "invalid_frames": 0,
+    "gestures": {
+      "paper": 4
+    },
+    "events": [
+      {
+        "frame": 42,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 44,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 46,
+        "gesture": "paper",
+        "valid": true
+      },
+      {
+        "frame": 48,
+        "gesture": "paper",
+        "valid": true
+      }
+    ],
+    "max_source_age_seconds": 0.06420989998150617,
+    "wall_seconds": 1.3058231999748386,
+    "freshness_budget_seconds": 1.0,
+    "max_interarrival_seconds": 0.12233939999714494,
+    "stale_packets_dropped": 0,
+    "max_stale_packet_age_seconds": 0.0,
+    "age_at_stop_seconds": 1.0020938999950886,
+    "cpu_seconds": 0.015625,
+    "forbidden_modules": [],
+    "actuator_constructed": false,
+    "serial_opened": false,
+    "hardware_motion": false
+  },
+  "close_before_game": {
+    "session": "304a40370b3a49599da550d4d09706f1",
+    "producer_pid": 116520,
+    "actuator_constructed": false,
+    "child_restarted": false,
+    "error": null,
+    "feed_revoked": "shadow_closed",
+    "elapsed": 6.280001252889633e-05,
+    "publisher_dropped": null
+  },
+  "source_sha256": {
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b68-hand-source-r08\\tools\\verify_shadow_session.py": "00fb0d88fa82911e158a9f7cd8eda7a93dfb4e93befd5f8d3e090d6bb29df26d",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b68-hand-source-r08\\src\\pynq_usb_hand\\game_bridge.py": "0ca99fa66b340ec69ac28a9c081d0a1d837396d43c6839b20f6136804d6757bb",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b68-hand-source-r08\\src\\pynq_usb_hand\\shadow_session.py": "b07a163819d8e6753d354190ea4201c835d11f6a49cb01c45df8f31595742e2f",
+    "E:\\projects\\fpga\\voice-view-game\\subprojects\\hand_r23b2_integration\\b68-hand-source-r08\\tools\\shadow_receiver.py": "ea88ccd8f23857e5c4c8a48e015071f382f0ea86a49d75a108d79f6ca5b10d2a",
+    "E:\\projects\\fpga\\voice-view-game\\deliveries\\c6i-pl-vision-button-osd-r23b2-shared-id-boardtest-20261024\\python\\pynq_multimodal_game\\agent\\game_runtime.py": "f25fd7340fd427bcce4d9712d15727514f21a8789fb733219a0fdd59facf09d3"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "result": "LEAN_CPU_WINDOWS_PASS",
+  "hardware_tested": true,
+  "release_ready": false,
+  "boot_id": "db5b70bc-7b6e-4af0-9f3a-6845e782b31c",
+  "phases": {
+    "idle_off": {
+      "complete_windows": 163,
+      "average": {
+        "wall_seconds": 16.92376050300004,
+        "cpu_seconds": 0.20437596699999894,
+        "single_core_percent": 1.2076273885096025
+      },
+      "observed_window_peak": {
+        "started": 481.593791898,
+        "finished": 481.69470644,
+        "seconds": 0.10091454199999816,
+        "single_core_percent": 9.909374607279277
+      }
+    },
+    "arm": {
+      "complete_windows": 3,
+      "average": {
+        "wall_seconds": 0.6583334829999785,
+        "cpu_seconds": 0.3799086910000007,
+        "single_core_percent": 57.7076361464685
+      },
+      "observed_window_peak": {
+        "started": 487.046751742,
+        "finished": 487.147833902,
+        "seconds": 0.10108215999997583,
+        "single_core_percent": 59.35765519851807
+      }
+    },
+    "motion": {
+      "complete_windows": 84,
+      "average": {
+        "wall_seconds": 9.038365844000054,
+        "cpu_seconds": 1.4407427679999998,
+        "single_core_percent": 15.940301519841766
+      },
+      "observed_window_peak": {
+        "started": 487.956193218,
+        "finished": 488.057234935,
+        "seconds": 0.10104171699998687,
+        "single_core_percent": 39.587609145641494
+      }
+    },
+    "hold_release": {
+      "complete_windows": 0,
+      "average": {
+        "wall_seconds": 0.26584116999993057,
+        "cpu_seconds": 0.1339030069999998,
+        "single_core_percent": 50.36955224054828
+      },
+      "observed_window_peak": null
+    }
+  },
+  "button_loop_started": 478.209139349,
+  "button_loop_finished": 505.095440349,
+  "before_button_loop_peak": {
+    "started": 477.959404556,
+    "finished": 478.060546291,
+    "seconds": 0.10114173499999879,
+    "single_core_percent": 108.75826877994659
+  },
+  "button_loop_peak_including_phase_boundaries": {
+    "started": 487.046751742,
+    "finished": 487.147833902,
+    "seconds": 0.10108215999997583,
+    "single_core_percent": 59.35765519851807
+  },
+  "button_loop_exit_boundary_peak": {
+    "started": 505.024871383,
+    "finished": 505.125959555,
+    "seconds": 0.1010881720000043,
+    "single_core_percent": 9.892354171761632
+  },
+  "after_button_loop_peak": {
+    "started": 505.429725315,
+    "finished": 505.531056429,
+    "seconds": 0.10133111400000416,
+    "single_core_percent": 108.55500907647722
+  },
+  "scope": "100ms target observed process windows, single-core equivalents; not instantaneous or matched old-version comparison"
+}

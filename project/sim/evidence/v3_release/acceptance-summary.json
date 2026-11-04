@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "version": "3.0",
+  "manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+  "tests": {
+    "studio-unified-start-final.xml": 156,
+    "v3-autostart.xml": 13
+  },
+  "board_runtime": "R15b",
+  "hand": "R16",
+  "autostart_connect": "v3-autostart-connect/receipt.json",
+  "autostart_identity": "v3-autostart-connect/board.json",
+  "hardware_video_restore": "studio-video-handoff-r15b-acceptance-r02/result.json",
+  "limits": [
+    "No new exhaustive human game/motor acceptance in this release step",
+    "Startup lock contention tested offline; running autostart attachment verified on real board",
+    "No fresh SD image installation validation"
+  ],
+  "no_repeated_board_start": true
+}

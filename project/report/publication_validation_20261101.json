@@ -1,0 +1,70 @@
+{
+  "result": "PASS",
+  "date": "2026-11-01",
+  "baseline_commit": "85e43d0558ea3cb7d256d300bface5bae999834c",
+  "protected_files_verified": 9013,
+  "runtime_and_hardware_changed": false,
+  "board_access": false,
+  "checks": [
+    {
+      "script": "tools/check_submission.py",
+      "result": {
+        "result": "PASS",
+        "metrics": 44,
+        "local_links_checked": 140,
+        "template_sha256": "8f6212ce98b76ffff6c1206cff42b69230cd985092728e1ae0dc277fbba1379d",
+        "hardware_access": false,
+        "nested_checks": [
+          {
+            "script": "skill/validation/verify_files.py",
+            "exit_code": 0,
+            "stdout": "{\"status\": \"PASS\", \"files\": 98, \"failures\": []}",
+            "stderr": ""
+          },
+          {
+            "script": "report/figures/hand_communication_handoff/scripts/check_data.py",
+            "exit_code": 0,
+            "stdout": "{\"result\": \"PASS\", \"hashed_files\": 64, \"packet_examples\": 6, \"board_runs\": 3, \"paired_pose_cases\": 4, \"hardware_access\": false}",
+            "stderr": ""
+          },
+          {
+            "script": "report/figures/vision_dual_follow_handoff/scripts/check_package.py",
+            "exit_code": 0,
+            "stdout": "{\"result\": \"PASS\", \"files\": 62, \"figures\": 3, \"packet_bytes\": 460864, \"hardware_access\": false}",
+            "stderr": ""
+          },
+          {
+            "script": "report/figures/gpu_buffer_timing_handoff/scripts/check_package.py",
+            "exit_code": 0,
+            "stdout": "{\"result\": \"PASS\", \"files\": 62, \"figures\": 3, \"scene_bytes\": 4160, \"hardware_access\": false}",
+            "stderr": ""
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "script": "tools/check_runtime.py",
+      "result": {
+        "result": "PASS",
+        "files": 651,
+        "manifest_sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
+        "board_access": false
+      }
+    }
+  ],
+  "skill_frontmatter_checks": [
+    {
+      "skill": "pynq-pl-preserve",
+      "exit_code": 0,
+      "result": "Skill is valid!"
+    },
+    {
+      "skill": "pynq-debug-cards",
+      "exit_code": 0,
+      "result": "Skill is valid!"
+    }
+  ],
+  "credential_signature_hits": [],
+  "scope": "Delivery integrity and entrypoint validation; historical XSim, performance and board results are preserved evidence, not rerun here."
+}
