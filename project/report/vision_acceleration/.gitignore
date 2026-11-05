@@ -1,0 +1,4 @@
+work/
+.Xil/
+*.jou
+/vivado*.log

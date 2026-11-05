@@ -1,0 +1,22 @@
+[
+  {
+    "archive_member": "c6i-pl-vision-volume-osd-r20-admission-r03-20261023/overlay/pl-vision-source/axis_bgr_hsv_skin.sv",
+    "sha256": "ee4cdea7dbcb22817613c0df98da69e708d2443912304b04605ad7458855e0c5"
+  },
+  {
+    "archive_member": "c6i-pl-vision-volume-osd-r20-admission-r03-20261023/overlay/pl-vision-source/hsv_reciprocal.svh",
+    "sha256": "213a330f8aa05f684999724602cc84b59692c8375538a294beed14fe79b398c9"
+  },
+  {
+    "archive_member": "c6i-pl-vision-volume-osd-r20-admission-r03-20261023/overlay/pl-vision-source/axis_binary_dilate9.sv",
+    "sha256": "c2a60d3490c616762bd76493087ea593fa550a251a170372feb4a5f1f06771a6"
+  },
+  {
+    "archive_member": "c6i-pl-vision-volume-osd-r20-admission-r03-20261023/overlay/pl-vision-source/axis_binary_gaussian5.sv",
+    "sha256": "ad138b615485e7ab0937cea5e9a58410c67394b7039ce26468f9794e625f4cb5"
+  },
+  {
+    "archive_member": "c6i-pl-vision-volume-osd-r20-admission-r03-20261023/overlay/pl-vision-source/axis_binary_mask_pair.sv",
+    "sha256": "3f1767d22a033c95f5d171bdce2ce5ffd6408c484ba21abb89becd82eaafbfe7"
+  }
+]

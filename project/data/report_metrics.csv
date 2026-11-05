@@ -43,3 +43,10 @@ gpu_exp_2,historical_gpu_experiment,P2b Tile 流水,9540,2340,cycles,Tile 单元
 gpu_exp_3,historical_gpu_experiment,P1+P2b 累计,13860,2340,cycles,与 P1 同一 Tile 负载；不含 pair,report/gpu_ai_preparation/data/performance.csv
 gpu_exp_4,historical_gpu_experiment,P3a Tile 双像素,813,557,cycles,核心长 Tile；其余优化固定；pair off/on,report/gpu_ai_preparation/data/performance.csv
 gpu_exp_5,historical_gpu_experiment,P3b 栅格双像素,57909,28974,cycles,核心普通不透明帧；Tile/cache/pipeline 固定开启,report/gpu_ai_preparation/data/performance.csv
+vision_color_baseline,board_stage_profile,原路径颜色掩码及同帧参考中位耗时,66.94,,ms,300 distinct NO_HAND frames; stage wall time including legacy PL transaction and same-frame reference,report/reference_v2_performance/data/vision_stage_profile.csv
+vision_morphology_baseline,board_stage_profile,原路径形态学中位耗时,32.23,,ms,300 distinct NO_HAND frames; PS stage wall time,report/reference_v2_performance/data/vision_stage_profile.csv
+vision_color_pl,rtl_kernel_timing,PL颜色核每帧处理跨度,,2.30403,ms,100 MHz; 640x360; 2 frames; saturated input/always-ready sink; first input to last output,report/vision_acceleration/kernel_timings.csv
+vision_morphology_pl,rtl_kernel_timing,PL形态学与双掩码对齐每帧处理跨度,,2.37161,ms,100 MHz; 640x360; 2 frames; saturated input/always-ready sink; includes internal stalls/drain,report/vision_acceleration/kernel_timings.csv
+vision_fps_baseline,board_historical,原路径菜单识别更新率,6.112420098249544,,fps,3669 new results / 600.2532452000014 s; historical independent window,report/vision_acceleration/recognition_fps.csv
+vision_fps_pl_observe,board_historical,下沉后菜单观察识别更新率,,18.268350159927692,fps,186 new results / 10.18154340001638 s; historical independent window,report/vision_acceleration/recognition_fps.csv
+vision_fps_pl_recheck,board_historical,下沉后菜单复验识别更新率,,21.182845378626737,fps,216 new results / 10.196930400008569 s; historical independent window,report/vision_acceleration/recognition_fps.csv

@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "tool": "Vivado/XSim 2026.1",
+  "board_access": false,
+  "rtl_version": "R20 frozen release",
+  "dimensions": [
+    640,
+    360
+  ],
+  "clock_hz": 100000000,
+  "frames_per_kernel": 2,
+  "measurement": "first input handshake to last output handshake",
+  "conditions": "saturated sources, always-ready sinks; includes internal stalls and drain; excludes camera/DMA/PS",
+  "stimulus": "constant BGR 128/128/128 -> zero skin mask; zero morphology mask",
+  "checks": "all output pixels, SOF/EOF markers, counts, no fault, watchdog",
+  "rows": [
+    {
+      "kernel": "color",
+      "frame": 0,
+      "first_in": 6020,
+      "last_in": 236419,
+      "first_out": 6024,
+      "last_out": 236423,
+      "elapsed_cycles": 230403,
+      "latency_cycles": 4,
+      "tail_cycles": 4,
+      "clock_hz": 100000000,
+      "elapsed_ms": 2.30403,
+      "first_output_latency_us": 0.04,
+      "last_input_to_last_output_us": 0.04
+    },
+    {
+      "kernel": "morphology",
+      "frame": 0,
+      "first_in": 6020,
+      "last_in": 239292,
+      "first_out": 9922,
+      "last_out": 243181,
+      "elapsed_cycles": 237161,
+      "latency_cycles": 3902,
+      "tail_cycles": 3889,
+      "clock_hz": 100000000,
+      "elapsed_ms": 2.37161,
+      "first_output_latency_us": 39.02,
+      "last_input_to_last_output_us": 38.89
+    },
+    {
+      "kernel": "color",
+      "frame": 1,
+      "first_in": 236420,
+      "last_in": 466819,
+      "first_out": 236424,
+      "last_out": 466823,
+      "elapsed_cycles": 230403,
+      "latency_cycles": 4,
+      "tail_cycles": 4,
+      "clock_hz": 100000000,
+      "elapsed_ms": 2.30403,
+      "first_output_latency_us": 0.04,
+      "last_input_to_last_output_us": 0.04
+    },
+    {
+      "kernel": "morphology",
+      "frame": 1,
+      "first_in": 244487,
+      "last_in": 477759,
+      "first_out": 248389,
+      "last_out": 481648,
+      "elapsed_cycles": 237161,
+      "latency_cycles": 3902,
+      "tail_cycles": 3889,
+      "clock_hz": 100000000,
+      "elapsed_ms": 2.37161,
+      "first_output_latency_us": 39.02,
+      "last_input_to_last_output_us": 38.89
+    }
+  ],
+  "simulate_log_sha256": "128592907ca6e7dc67a9e957fa7a49e366805f60609ee444a69bc88f5cede41e"
+}

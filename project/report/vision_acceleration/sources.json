@@ -1,0 +1,36 @@
+{
+  "representation": "Selected measured fields and verbatim TIMING/PASS lines; machine paths and unrelated runtime fields omitted.",
+  "kernel_recorded_on": "2026-11-02",
+  "board_windows_recorded_on": "2026-10-23",
+  "kernel_log_sha256": "128592907ca6e7dc67a9e957fa7a49e366805f60609ee444a69bc88f5cede41e",
+  "kernel_log_excerpt": "kernel_timing_excerpt.log",
+  "windows": [
+    {
+      "source": "vl33-r1-abba-soak10m.json",
+      "source_sha256": "16033062b3cc51d125633539e1600d49372df7179be785d2e1d883c0f749ef1b",
+      "summary_index": -1,
+      "seconds": 600.2532452000014,
+      "first_frame_id": 109764,
+      "last_frame_id": 113433,
+      "vision_fps": 6.112420098249544
+    },
+    {
+      "source": "r20-b16-final-menu-observe.json",
+      "source_sha256": "edbd51ba5994a1c27eb574e761873212e15bb3520aa41db0df9a617ff98e995a",
+      "summary_index": 0,
+      "seconds": 10.196930400008569,
+      "first_frame_id": 10551,
+      "last_frame_id": 10767,
+      "vision_fps": 21.182845378626737
+    },
+    {
+      "source": "r20-b09-menu-observe.json",
+      "source_sha256": "61f26dc1fc03884b090375d970746e5bf8c9a90f73935ffdd174085f67154359",
+      "summary_index": 0,
+      "seconds": 10.18154340001638,
+      "first_frame_id": 1247,
+      "last_frame_id": 1433,
+      "vision_fps": 18.268350159927692
+    }
+  ]
+}

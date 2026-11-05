@@ -1,0 +1,5 @@
+TIMING kernel=color frame=0 first_in=6020 last_in=236419 first_out=6024 last_out=236423 elapsed_cycles=230403 latency_cycles=4 tail_cycles=4
+TIMING kernel=morphology frame=0 first_in=6020 last_in=239292 first_out=9922 last_out=243181 elapsed_cycles=237161 latency_cycles=3902 tail_cycles=3889
+TIMING kernel=color frame=1 first_in=236420 last_in=466819 first_out=236424 last_out=466823 elapsed_cycles=230403 latency_cycles=4 tail_cycles=4
+TIMING kernel=morphology frame=1 first_in=244487 last_in=477759 first_out=248389 last_out=481648 elapsed_cycles=237161 latency_cycles=3902 tail_cycles=3889
+TEST_PASS PL_KERNEL_TIMING frames=2 pixels_per_frame=230400 color_out=460800 morphology_out=460800 source_stall_cycles=10940

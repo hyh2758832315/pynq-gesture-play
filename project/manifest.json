@@ -20767,8 +20767,8 @@
       "bytes": 756544
     },
     "data/report_metrics.csv": {
-      "sha256": "e5412c9f5301793ce6873e1d0e002195a90136c6eaa8465955874bd2c03425d5",
-      "bytes": 7856
+      "sha256": "86f793ab517c14f8b081d247754e097958f1299704318f0ff45da1989e171b6d",
+      "bytes": 9418
     },
     "data/resource_summary.csv": {
       "sha256": "5c22eaec7ee727ed081330df723eed31e7176421fcf437cc678f7a3ceea3dd1f",
@@ -22515,8 +22515,8 @@
       "bytes": 5578
     },
     "report/report_materials.md": {
-      "sha256": "76bb69177ee60eb1603dba056139c4eb712dea0e8cff055738eeba4f79f6a271",
-      "bytes": 2970
+      "sha256": "b68f5459ce0f48076c6cabd413f73f0687adcad84d2fe2e7d8c43d80ee5c43ef",
+      "bytes": 3146
     },
     "report/requirements/open_topic_guide.md": {
       "sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
@@ -22554,9 +22554,69 @@
       "sha256": "ff669fe826145ac7c61ea8d84d336d9d1eb1f51ba8b28a4ea7b9eb32ca1bc5ef",
       "bytes": 3441
     },
+    "report/vision_acceleration/.gitignore": {
+      "sha256": "abe3a26458e21f187e5b58aa2e5c794e74a134f5ea0b90ecff420a6c1b06666c",
+      "bytes": 31
+    },
+    "report/vision_acceleration/README.md": {
+      "sha256": "24fd18f6d86218fd9482b455a0a41db40cc10a55b80d14787fd2275649105d3a",
+      "bytes": 3587
+    },
+    "report/vision_acceleration/frozen_r20/axis_bgr_hsv_skin.sv": {
+      "sha256": "ee4cdea7dbcb22817613c0df98da69e708d2443912304b04605ad7458855e0c5",
+      "bytes": 3001
+    },
+    "report/vision_acceleration/frozen_r20/axis_binary_dilate9.sv": {
+      "sha256": "c2a60d3490c616762bd76493087ea593fa550a251a170372feb4a5f1f06771a6",
+      "bytes": 4705
+    },
+    "report/vision_acceleration/frozen_r20/axis_binary_gaussian5.sv": {
+      "sha256": "ad138b615485e7ab0937cea5e9a58410c67394b7039ce26468f9794e625f4cb5",
+      "bytes": 6903
+    },
+    "report/vision_acceleration/frozen_r20/axis_binary_mask_pair.sv": {
+      "sha256": "3f1767d22a033c95f5d171bdce2ce5ffd6408c484ba21abb89becd82eaafbfe7",
+      "bytes": 4373
+    },
+    "report/vision_acceleration/frozen_r20/hsv_reciprocal.svh": {
+      "sha256": "213a330f8aa05f684999724602cc84b59692c8375538a294beed14fe79b398c9",
+      "bytes": 16465
+    },
+    "report/vision_acceleration/kernel_timing_excerpt.log": {
+      "sha256": "8c6c52f70e85df2c3c57b3f98ce0feb6b547e97297e781cec82626ca5b1290fd",
+      "bytes": 719
+    },
+    "report/vision_acceleration/kernel_timings.csv": {
+      "sha256": "10b40414c660c1647c8eaf5f464d4156f38f005a4fcaf17d9956ad34ee6697c7",
+      "bytes": 490
+    },
+    "report/vision_acceleration/recognition_fps.csv": {
+      "sha256": "06f1cfbe092097578b60a7f3d0b2ad7eb670c6ec3f1afce53309a4646a355d22",
+      "bytes": 582
+    },
+    "report/vision_acceleration/result.json": {
+      "sha256": "8d2036c129c6e4bdb198d116bd85837625868ad1b6685081d50325d3f6e314a8",
+      "bytes": 2292
+    },
+    "report/vision_acceleration/rtl_manifest.json": {
+      "sha256": "427a559da71a2fbd4c03ca42702de3f0c4fb8962ee0e466eb92274291f6ba213",
+      "bytes": 1098
+    },
+    "report/vision_acceleration/run_kernel_timing.tcl": {
+      "sha256": "53a20e4d839998e49d1b228bd6f95bbe40edfe47a218861abb59ad604d860152",
+      "bytes": 1172
+    },
+    "report/vision_acceleration/sources.json": {
+      "sha256": "8e11b6c6449cbf92819008c967716a6ef296d8ca4790fc683b59535410067635",
+      "bytes": 1321
+    },
+    "report/vision_acceleration/tb_kernel_timing.sv": {
+      "sha256": "214e8efef565759c39acefb04f30ceacf838a9436c7b5b50f16cbb83ce9732f0",
+      "bytes": 3864
+    },
     "report/设计报告与大模型协作记录.md": {
-      "sha256": "e514fdbc8cc73ca7e73de67ab62955b21744ae9617022b4f01f8a4f47ef9fa32",
-      "bytes": 78112
+      "sha256": "79e30d851e2589a78caf2037ad444e9ff5f52f49f2aca1b480c010fc3cec84b8",
+      "bytes": 81018
     },
     "sim/evidence/export_pairing.json": {
       "sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee",
@@ -32119,8 +32179,8 @@
       "bytes": 3231
     },
     "tools/check_submission.py": {
-      "sha256": "27c3d1292a7ebf160944513ed5f7bf9cb6a3a37ee1fd2dc0f9992422d080ac8a",
-      "bytes": 4949
+      "sha256": "0855571318d916bc883f54a89565398b70576913527ad4cb478662c6070d56e3",
+      "bytes": 5406
     },
     "tools/draw_gpu_buffer_timing.py": {
       "sha256": "16d354ec5ca7b81694c936fbe82be6919c1d7d9078dc0d53892db8445b525dbc",

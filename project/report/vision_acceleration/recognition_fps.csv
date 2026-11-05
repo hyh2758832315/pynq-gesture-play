@@ -1,0 +1,4 @@
+﻿version,source,selected_for_chart,frame_start,frame_end,frame_delta,seconds,recognition_result_fps,scope
+before_R1,vl33-r1-abba-soak10m.json,True,109764,113433,3669,600.2532452000014,6.112420098249544,"historical independent observations, not paired A/B"
+after_R20,r20-b16-final-menu-observe.json,True,10551,10767,216,10.196930400008569,21.182845378626737,"historical independent observations, not paired A/B"
+after_R20_other_observation,r20-b09-menu-observe.json,False,1247,1433,186,10.18154340001638,18.268350159927692,"historical independent observations, not paired A/B"

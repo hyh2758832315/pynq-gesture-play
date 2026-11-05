@@ -37,6 +37,13 @@ def main():
         'build/scripts/apply_gpu_profile.tcl', 'tools/prepare_runtime.py',
         'data/gpu_optimization/measurements.csv', 'data/gpu_optimization/resources.csv',
         'sim/gpu_optimization/run_compare.tcl',
+        'report/vision_acceleration/README.md',
+        'report/vision_acceleration/kernel_timings.csv',
+        'report/vision_acceleration/recognition_fps.csv',
+        'report/vision_acceleration/sources.json',
+        'report/vision_acceleration/kernel_timing_excerpt.log',
+        'report/vision_acceleration/tb_kernel_timing.sv',
+        'report/vision_acceleration/run_kernel_timing.tcl',
     ]
     failures.extend('missing: '+name for name in required if not (ROOT/name).is_file())
     if failures:
@@ -63,6 +70,7 @@ def main():
                                      '设计报告与大模型协作记录.md','design_report.md',
                                      'ai_collaboration.md','gpu_optimization.md')]
     docs.append(ROOT/'board/README.md')
+    docs.append(ROOT/'report/vision_acceleration/README.md')
     links=0
     for doc in docs:
         for match in re.finditer(r'(?<!!)\[[^\]\n]+\]\(([^)\n]+)\)', doc.read_text('utf-8')):
