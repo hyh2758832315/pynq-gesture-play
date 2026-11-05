@@ -95,3 +95,9 @@ Python 3.11 与 Vivado/XSim 2026.1 为本次执行环境，器件为 xc7z020clg4
 
 入口见 [pynq-debug-cards/SKILL.md](pynq-debug-cards/SKILL.md)。前述 PL 仿真实验
 继续作为校验脚本的效果证据，经验卡片提供日常问题定位时可直接调用的知识。
+
+## ROSS 工具链中的复用
+
+项目实际使用 Vivado MCP 进行 Tcl 执行、综合/实现及日志观察。调用记录中的阶段判重、会话绑定、参数与测试台匹配，以及布线检查点选择等经验，归入工具与制品卡片。模型据此选择具体工具操作、复用在途任务并核对阶段产物；`pynq-pl-preserve` 则对适用修改提供独立的全输出比较和机器可读收据。
+
+[联合工作流](pynq-debug-cards/references/ross_workflow.md)给出执行前、运行中和验收步骤，以及独立会话运行生成 Tcl 的命令。卡片优化任务组织，校验脚本增加行为检查覆盖，ROSS/Vivado 负责执行与硬件报告；具体差异定位和迁移复跑结果见本报告前述实验。

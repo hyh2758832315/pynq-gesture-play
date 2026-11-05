@@ -1,9 +1,9 @@
 ---
 name: pynq-debug-cards
-description: Diagnose recurring PYNQ/Zynq project failures using symptom-based experience cards. Use for Vivado/MCP execution mismatches, stale bit/HWH exports, parser errors, startup and connection problems, shared-resource handoff, or latest-input consumption failures.
+description: Diagnose recurring PYNQ/Zynq project failures using symptom-based experience cards. Use for AMD ROSS/Vivado MCP workflows, execution mismatches, stale bit/HWH exports, parser errors, startup and connection problems, shared-resource handoff, or latest-input consumption failures.
 license: MIT
 metadata:
-  version: '0.1.0'
+  version: '0.1.1'
 ---
 
 # PYNQ 问题定位卡片
@@ -13,6 +13,7 @@ metadata:
 
 | 当前症状 | 按需读取 |
 | --- | --- |
+| 通过 ROSS/Vivado MCP 组织仿真、实现及结果检查 | [联合工作流](references/ross_workflow.md)：执行前、运行中、验收 |
 | SKIPPED、工具成功但领域失败、会话/参数错误 | [工具调用](references/tools.md)：E01–E04 |
 | include 失败、HWH 陈旧、XSA/IRQ 解析异常、导出错版 | [构建与制品](references/artifacts.md)：E05–E08、H20 |
 | 冷启动超时、缺依赖、真实入口不同、锁忙或 GUI 卡住 | [启动连接](references/startup.md)：E09、E10、E12、H13、H14 |

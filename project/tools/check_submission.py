@@ -24,6 +24,8 @@ def main():
         'skill/pynq-pl-preserve/SKILL.md', 'skill/pynq-pl-preserve/LICENSE',
         'skill/pynq-debug-cards/SKILL.md', 'skill/pynq-debug-cards/LICENSE',
         'skill/pynq-debug-cards/origins.json',
+        'skill/pynq-debug-cards/references/ross_workflow.md',
+        'skill/pynq-debug-cards/sources/ross_mcp_cases.json',
         'skill/validation/evidence/delivery_replay/result.json',
         'report/submission_checklist.md', 'report/report_materials.md',
         'report/templates/official_report_template.docx',

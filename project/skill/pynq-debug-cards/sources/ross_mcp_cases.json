@@ -1,0 +1,175 @@
+{
+  "schema": "pynq-ross-experience-excerpts-1",
+  "assembled_on": "2026-11-05",
+  "scope": "2026-11-04 GPU集成复验的Vivado MCP会话命令与原生日志技术摘录；GPU方案的设计形成过程另见报告第7.2节。",
+  "skill_application_boundary": "联合使用方式为模型按需读取本队Skill，再使用ROSS工具执行；此处证据覆盖任务状态、参数绑定、日志判读与检查点签核，校验器效果另由受控仿真实验给出。",
+  "cases": [
+    {
+      "id": "ross-integration-01",
+      "title": "按工程状态确认命令实际执行",
+      "stage": "2026-11-04 集成复验",
+      "source": {
+        "source_alias": "three_option_integration",
+        "session_file_sha256": "ed24f6ceb868c67e5457c37895ed893da09429f505234bbff24b8f0ad2974f23",
+        "native_log_sha256": "6fd34f66329d8f57c75b8d6fa8d4db6cd06b80a259b25c2143b80b58bff06bdf"
+      },
+      "representation": "原始会话命令记录的技术字段摘录；命令中的工作目录已匿名化。",
+      "calls": [
+        {
+          "command_id": 14,
+          "command_path_anonymized": "reset_run synth_button_r23",
+          "code": 0,
+          "elapsed_seconds": 0.125,
+          "timestamp": "2026-11-04T14:46:00.4388964+08:00",
+          "output_excerpt_exact": [],
+          "output_truncated_in_session": false
+        },
+        {
+          "command_id": 15,
+          "command_path_anonymized": "source <candidate>/recovery_preflight.tcl",
+          "code": 0,
+          "elapsed_seconds": 0,
+          "timestamp": "2026-11-04T14:46:01.9990245+08:00",
+          "output_excerpt_exact": [
+            "SKIPPED (duplicate): This command already completed successfully 70 seconds ago."
+          ],
+          "output_truncated_in_session": false
+        },
+        {
+          "command_id": 16,
+          "command_path_anonymized": "source -notrace <candidate>/recovery_preflight.tcl",
+          "code": 0,
+          "elapsed_seconds": 0.038,
+          "timestamp": "2026-11-04T14:46:18.8870405+08:00",
+          "output_excerpt_exact": [
+            "THREE_RECOVERY_PREFLIGHT_PASS"
+          ],
+          "output_truncated_in_session": false
+        },
+        {
+          "command_id": 17,
+          "command_path_anonymized": "launch_runs synth_button_r23 -jobs 2",
+          "code": 0,
+          "elapsed_seconds": 1.218,
+          "timestamp": "2026-11-04T14:46:21.8392927+08:00",
+          "output_excerpt_exact": [],
+          "output_truncated_in_session": false
+        }
+      ],
+      "engineering_observation": "复位综合运行后，同一 source 文本命中工具判重；code=0、elapsed=0 对应跳过，不能代表当前工程已重检。",
+      "resolution": "使用合法的 source -notrace 重新执行预检，取得本阶段 PASS，再启动综合运行。",
+      "skill_rule": "E01：把工程状态、执行阶段和原生返回内容共同纳入完成判据；SKIPPED 与实际执行分开记录。"
+    },
+    {
+      "id": "ross-integration-02",
+      "title": "为各测试顶层绑定真实参数接口",
+      "stage": "2026-11-04 集成复验",
+      "source": {
+        "source_alias": "pair_parameter_verification",
+        "session_file_sha256": "5d26f4c98e288c7c52fe51ade4040013b520f1f9ab716b94d6e4181ef79de994",
+        "native_log_sha256": "f7336a394d65deb449c8f19716dd68607980d00ea96a7cbaaf17f7a601868740"
+      },
+      "representation": "原始会话字段与原生 Vivado 日志技术摘录；命令中的工作目录已匿名化。",
+      "calls": [
+        {
+          "command_id": 1,
+          "command_path_anonymized": "source <verification>/verify_pair.tcl",
+          "code": 1,
+          "elapsed_seconds": 42.838,
+          "timestamp": "2026-11-04T13:54:25.0083962+08:00",
+          "output_excerpt_exact": [
+            "ERROR: [XSIM 43-3281] Parameter/Generic TILE_DESCRIPTOR_CACHE_ENABLE  specified in commandline not found in design."
+          ],
+          "output_truncated_in_session": false
+        },
+        {
+          "command_id": 3,
+          "command_path_anonymized": "source <verification>/verify_pair_r2.tcl",
+          "code": 0,
+          "elapsed_seconds": 544.438,
+          "timestamp": "2026-11-04T14:03:53.8709942+08:00",
+          "output_excerpt_exact": [
+            "GPU_CACHE_SIM_PASS=tile_cancel_1"
+          ],
+          "output_truncated_in_session": true
+        }
+      ],
+      "native_log_excerpt": [
+        {
+          "native_log_lines": [
+            2974
+          ],
+          "text_exact": "GPAIR_SIM_COMPLETE"
+        }
+      ],
+      "engineering_observation": "批量仿真的前项已有 PASS，后项仍因测试顶层不声明 TILE_DESCRIPTOR_CACHE_ENABLE 而展开失败。需以整个批次的完成标记验收。",
+      "resolution": "清除传给 clear_fill 测试顶层的无效缓存/流水线参数；保留该顶层实际声明的测试参数，并在 core 测试顶层继续验证组合配置。",
+      "corrected_parameter_example": "tb_scene2d_clear_fill_renderer: TEST_TILE_PIPELINE_CANCEL=1 TILE_PIXEL_PAIR_ENABLE=$pair",
+      "skill_rule": "E02/E04 与 pynq-pl-preserve 参数绑定：先检查顶层声明，再配置实际测试实例；工具调用、展开、仿真完成分别判定。"
+    },
+    {
+      "id": "ross-integration-03",
+      "title": "按当前时序状态选择签核路径",
+      "stage": "2026-11-04 集成复验",
+      "source": {
+        "source_alias": "cache_pipeline_signoff",
+        "session_file_sha256": "ac3e6af019a2e27616df425861f5769fb717c02cb1ee8fb4749fd92dabc5dc9c",
+        "native_log_sha256": "540cadab50a9f34802d3902ef1edb6103ca3cb8c3c2cb863e86918dd1993fcd5"
+      },
+      "representation": "原始会话字段、完整原生日志与对应恢复脚本的技术摘要；命令中的工作目录已匿名化。",
+      "calls": [
+        {
+          "command_id": 30,
+          "command_path_anonymized": "source <candidate>/continue_full_build.tcl",
+          "code": 1,
+          "elapsed_seconds": 2093.951,
+          "timestamp": "2026-11-04T14:39:23.6030936+08:00",
+          "output_excerpt_exact": [],
+          "output_truncated_in_session": true
+        },
+        {
+          "command_id": 31,
+          "command_path_anonymized": "source <candidate>/recover_signoff.tcl",
+          "code": 0,
+          "elapsed_seconds": 200.016,
+          "timestamp": "2026-11-04T14:43:38.4753883+08:00",
+          "output_excerpt_exact": [
+            "CACHE_PIPELINE_SIGNOFF_COMPLETE"
+          ],
+          "output_truncated_in_session": false
+        }
+      ],
+      "native_log_excerpt": [
+        {
+          "native_log_lines": [
+            11888,
+            11889
+          ],
+          "text_exact": "INFO: [Physopt 32-668] Current Timing Summary | WNS=0.002 | TNS=0.000 | WHS=0.032 | THS=0.000 |"
+        },
+        {
+          "native_log_lines": [
+            12090
+          ],
+          "text_exact": "INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.002 | TNS=-0.011 | WHS=-2.155 | THS=-2.155 |"
+        },
+        {
+          "native_log_lines": [
+            12145
+          ],
+          "text_exact": "CACHE_PIPELINE_FLOW FAILED: Timing failed: min"
+        },
+        {
+          "native_log_lines": [
+            12301
+          ],
+          "text_exact": "CACHE_PIPELINE_SIGNOFF_COMPLETE"
+        }
+      ],
+      "engineering_observation": "完整实现与布局布线后物理优化已取得正时序裕量；随后旧签核脚本无条件执行局部 reroute，新增 hold 违例。长返回被截断，需读取原生日志确认失败阶段。",
+      "resolution": "重新打开已通过的 postroute_physopt 检查点，保留原有时序检查与导出步骤，去掉仅适用于旧实现的四行引脚选择/reroute；本次恢复不修改 RTL、不重做综合、不放宽约束。",
+      "skill_rule": "E02 与工件一致性规则：保留已通过阶段的检查点；修复命令依赖当前失败证据，不将历史修补无条件重放。",
+      "precision_note": "原生日志分别记录物理优化后的正时序裕量、再次局部布线产生的hold违例及恢复签核完成；elapsed_seconds记录各次命令耗时。"
+    }
+  ]
+}

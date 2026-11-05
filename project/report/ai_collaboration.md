@@ -84,3 +84,7 @@ Tile 描述符缓存完成后，局部增量为 27 LUT、25 FF，BRAM/DSP/MMCM �
 2. 模型提出修改候选，开发者选择验证范围和组合顺序。
 3. 用共同输入、参考输出与工具报告验证候选，按反馈修正参数、依赖或边界逻辑。
 4. 通过标准部署入口完成板测，将有效方法整理为构建脚本、测试和 Skill。
+
+## ROSS 工具使用与经验复用
+
+[完整报告第 7.5 节](设计报告与大模型协作记录.md#ross-tools)整理三组实际 MCP 会话的调用、诊断和复验结果；[第 8.5 节](设计报告与大模型协作记录.md#ross-skill)说明本队 Skill 如何配合 ROSS 组织任务与验收。GPU 方案形成的对话与集成复验记录分别保留发生阶段。命令字段及来源摘要见 [MCP 案例](../skill/pynq-debug-cards/sources/ross_mcp_cases.json)，联合操作入口见 [工作流](../skill/pynq-debug-cards/references/ross_workflow.md)。

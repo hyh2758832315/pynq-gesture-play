@@ -15,6 +15,7 @@
 | Skill 章节 | [当前报告](../skill/report.md)、[使用说明](../skill/README.md)、[原始实验](../skill/validation/README.md) |
 | 测量表与证据引用 | [阶段指标 CSV](../data/report_metrics.csv)，每行列出单位、配置/测量范围和原始证据路径（相对 project 根目录）；最新 GPU 数据由上面的三配置入口提供 |
 | 视频、报告、海报共用规划 | [录制及可视化规划](presentation_plan/README.md) |
+| ROSS 使用经验与 Skill 联合流程 | [报告正文](设计报告与大模型协作记录.md#ross-tools)、[真实 MCP 案例](../skill/pynq-debug-cards/sources/ross_mcp_cases.json)、[可复用工作流](../skill/pynq-debug-cards/references/ross_workflow.md) |
 | 验证与协作过程 | [验证记录](validation.md)、[协作记录](ai_collaboration.md) |
 
 当前配对硬件和运行程序见 board/runtime，GPU 配置及文件摘要见 [优化报告](gpu_optimization.md)。三个配置共用 BUILD_ID 0xC0061000，上传/渲染重叠均关闭。720p60 表示 HDMI 扫描刷新率；17 表示电机数量；灵巧手调度时序图统一使用 t。各优化表保留所列输入、配置和测量范围，便于对应到可复现命令。

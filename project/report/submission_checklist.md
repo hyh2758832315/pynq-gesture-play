@@ -11,7 +11,7 @@
 | 上板工程、实测输出 | board/runtime/、sim/evidence/gpu_optimization/；基线见 sim/evidence/v3_release/ | Studio 安装、四游戏回放及真人交互验收 |
 | PYNQ Skill | skill/README.md，两项能力、20 张卡片 | 已提供 |
 | Skill 用法、失效条件、来源及效果 | skill/README.md、report.md、origins.json | 已提供 |
-| 提示词、模型回答、自我纠错 | [完整报告第 7 章](设计报告与大模型协作记录.md)、ai_collaboration.md | Markdown 真实对话节选、约束补充、工具反馈与修订复验 |
+| 提示词、模型回答、自我纠错 | [完整报告第 7 章](设计报告与大模型协作记录.md)、ai_collaboration.md | Markdown 真实对话、ROSS/MCP 调用与诊断、约束补充及修订复验 |
 | 设计报告 | [设计报告与大模型协作记录](设计报告与大模型协作记录.md) | 独立成篇，覆盖原理、接口、优化、协作、Skill 与复现 |
 | 从零复现 | [完整报告第 9 章](设计报告与大模型协作记录.md)、README.md、board/README.md | 环境、接线、三配置重建、配包、首次安装、自启动与正常停止 |
 | 开源与再分发 | report/licensing.md | 公开源码仓库；自有内容 MIT，第三方保留原许可 |
@@ -28,7 +28,7 @@
 | 创新性与应用价值 | 30 | [完整报告](设计报告与大模型协作记录.md)：单板视觉、独立 OSD、命令式 2D 渲染与实体手协同；统一内容创作、测试及部署 |
 | 性能与资源优化 | 20 | [GPU 对照](gpu_optimization.md)：缓存、流水线、条件双像素的机制；同输入周期、CRC、资源与完整实现时序；既有视觉和通信数据见设计报告 |
 | 功能正确性与完整性 | 20 | [验证汇总](validation.md)：RTL 自检、Studio 回归、四游戏 PC/PYNQ 比较、现场交互、启动及正常释放 |
-| 大模型协作与技能包 | 15 | [关键对话](ai_collaboration.md)、[PYNQ Skill](../skill/README.md)：人工目标、模型方案、工具验证、修正，以及可迁移校验工具和诊断卡片 |
+| 大模型协作与技能包 | 15 | [关键对话](ai_collaboration.md)、[PYNQ Skill](../skill/README.md)：人工目标、模型方案、ROSS/MCP 工具记录与修正，以及可迁移校验工具、诊断卡片和联合使用流程 |
 | 文档质量与可复现性 | 15 | [复现入口](../README.md)：三配置完整构建、同输入仿真、配套运行包生成、Studio 安装；文件与数据可逐项核验 |
 
 协作记录按主办方确认采用 Markdown。Skill 保留适用范围、用法、验证效果、提炼来源和失效条件，供其他 PYNQ 项目直接复用。各评分项均提供设计说明、验证结果或复现入口，便于逐项核查。

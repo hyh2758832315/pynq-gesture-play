@@ -43,3 +43,5 @@
 [17] Xilinx. [PYNQ-ComputerVision](https://github.com/Xilinx/PYNQ-ComputerVision)[CP/OL]. PYNQ 中 OpenCV 算子 PL 加速的公开方法参考；本项目硬件实现入口为包内 RTL。
 
 各来源的具体使用范围见 [许可说明](licensing.md)；项目级 MIT 不替代第三方组件许可。
+
+[18] AMD. [ROSS Agentic AI Assistant](https://github.com/Xilinx/ross-ai-assistant)[CP/OL]；[Vivado MCP Server 接入文档](https://github.com/Xilinx/ross-ai-assistant/blob/main/docs/getting-started/vivado-mcp.md)[EB/OL]. Vivado 会话、Tcl 执行与工具工作流参考。本队 PYNQ Skill 提供配套任务核对和结果验收方法，见[联合工作流](../skill/pynq-debug-cards/references/ross_workflow.md)。

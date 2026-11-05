@@ -1,6 +1,6 @@
 # PYNQ 开发技能包
 
-技能包版本：0.2.2
+技能包版本：0.2.3
 署名：
 
 本目录面向 PYNQ/Zynq 的 PL 开发验证与 PS/PL 集成排错，提供校验脚本和按症状
@@ -71,6 +71,10 @@ python -X utf8 -B pynq-pl-preserve/scripts/preserve.py verify outputs/example_go
 或实时输入的一组卡片，核对条件后按处理步骤执行，以卡片的完成条件收口。
 模型读取 SKILL.md 后按症状加载相关组，人工也可直接阅读。卡片将已有工程
 观察整理为条件核对、处理步骤和完成检查，使用者据此验证当前工程。
+
+### 与 AMD ROSS 联合使用
+
+ROSS 提供 Vivado 会话与工具执行接口，本包提供与任务相关的诊断、行为比对和结果验收方法。按 [联合工作流](pynq-debug-cards/references/ross_workflow.md)核对会话与阶段、读取完整日志、验证输出和正式制品。增加流水等有意改变延迟的优化采用同输入有序输出/CRC 检查；保持周期行为的自包含叶模块使用 `pynq-pl-preserve`。各方法依据工程改动选择，工具调用与设计结果分别核验。
 
 ## 失效条件与适配
 

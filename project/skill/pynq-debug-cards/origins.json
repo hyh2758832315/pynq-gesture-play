@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "attribution": "",
   "sources": {
     "preflight_cards": {
@@ -81,6 +81,14 @@
       "bytes": 489,
       "original_sha256": "9a5eb5a7b469976803de522a7842307844d401d39640fc2a43d8b976f326dd7c",
       "representation": "technical_summary"
+    },
+    "ross_mcp_cases": {
+      "snapshot": "sources/ross_mcp_cases.json",
+      "sha256": "4d5ae9dd6868c3ee9069fce5b2e33460b2a8729c315a085321020dd9cc0c8609",
+      "bytes": 8368,
+      "representation": "anonymized_session_and_native_log_excerpts",
+      "recording_scope": "GPU integration verification on 2026-11-04",
+      "source_identity": "Original session and native-log SHA-256, command numbers and exact excerpts are embedded per case."
     }
   },
   "cards": [
@@ -90,7 +98,10 @@
       "file": "references/tools.md",
       "anchor": "e01",
       "source": "preflight_cards",
-      "basis": "documented engineering observation; see source technical summary"
+      "basis": "documented engineering observation; see source technical summary",
+      "additional_sources": [
+        "ross_mcp_cases"
+      ]
     },
     {
       "id": "E02",
@@ -98,7 +109,10 @@
       "file": "references/tools.md",
       "anchor": "e02",
       "source": "preflight_cards",
-      "basis": "documented engineering observation; see source technical summary"
+      "basis": "documented engineering observation; see source technical summary",
+      "additional_sources": [
+        "ross_mcp_cases"
+      ]
     },
     {
       "id": "E03",
@@ -114,7 +128,10 @@
       "file": "references/tools.md",
       "anchor": "e04",
       "source": "preflight_cards",
-      "basis": "documented engineering observation; see source technical summary"
+      "basis": "documented engineering observation; see source technical summary",
+      "additional_sources": [
+        "ross_mcp_cases"
+      ]
     },
     {
       "id": "E05",
@@ -154,7 +171,10 @@
       "file": "references/artifacts.md",
       "anchor": "h20",
       "source": "export_validation",
-      "basis": "documented engineering observation; see source technical summary"
+      "basis": "documented engineering observation; see source technical summary",
+      "additional_sources": [
+        "ross_mcp_cases"
+      ]
     },
     {
       "id": "E09",

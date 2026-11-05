@@ -10,7 +10,7 @@
   "submission_checklist": "report/submission_checklist.md",
   "deployment_checklist": "report/missing_items.md",
   "skill_delivery": {
-    "version": "0.2.2",
+    "version": "0.2.3",
     "entry": "skill/README.md",
     "report": "skill/report.md",
     "components": [
@@ -20,7 +20,7 @@
       },
       {
         "name": "pynq-debug-cards",
-        "version": "0.1.0",
+        "version": "0.1.1",
         "cards": 20
       }
     ]
@@ -20783,8 +20783,8 @@
       "bytes": 2105701
     },
     "report/ai_collaboration.md": {
-      "sha256": "5bf8d542559176be83cef66ae9bda5eecf80d82f0978a5b383c09b6de139d98d",
-      "bytes": 6534
+      "sha256": "bf4a1e674ae6bc4f48886cf29375d04be4830a305c2353e65c6789545c934a20",
+      "bytes": 7105
     },
     "report/design_report.md": {
       "sha256": "cff5cfcce3bbeecdabec4500a6881b4761da22d5b09e2fcf56663480a3738ba7",
@@ -22507,16 +22507,16 @@
       "bytes": 356
     },
     "report/references.md": {
-      "sha256": "5ccfdf234c7fc169665477066a080d6c55bd4d6cf7f319ed50605f4363d4ba92",
-      "bytes": 3755
+      "sha256": "6f3120f51b3dab47145ac8e3ded8452ae32e8101f6d5f74724bc22fe2d673bcb",
+      "bytes": 4177
     },
     "report/render_reports.py": {
       "sha256": "fd737dc2e1d3523b9dc5fd82c67c1df1ed8403d631c40676bd4fd4fd81604af7",
       "bytes": 5578
     },
     "report/report_materials.md": {
-      "sha256": "2df3d0b507b3d436127b408f3cfc29be2951551903a7971958d5626226a04b72",
-      "bytes": 2701
+      "sha256": "76bb69177ee60eb1603dba056139c4eb712dea0e8cff055738eeba4f79f6a271",
+      "bytes": 2970
     },
     "report/requirements/open_topic_guide.md": {
       "sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
@@ -22539,8 +22539,8 @@
       "bytes": 966929
     },
     "report/submission_checklist.md": {
-      "sha256": "a00cd8afbbf11c9578e887523da0017442aa69b5cf0a7d56444be22e6f53b5a7",
-      "bytes": 3501
+      "sha256": "5e4668290c7ccb3c4a2a4195511bf06462c77c30b74210e01c06a84b6560752b",
+      "bytes": 3537
     },
     "report/templates/official_report_template.docx": {
       "sha256": "4c70c9294d3b302c8035547bf692cad8a4a815f3f17c6c39ddf1c9ded6c841b7",
@@ -22555,8 +22555,8 @@
       "bytes": 3441
     },
     "report/设计报告与大模型协作记录.md": {
-      "sha256": "0e5470ab157509cfe0c1d0d1238c484c27c0b810a501a00718668f45150d1740",
-      "bytes": 70418
+      "sha256": "e514fdbc8cc73ca7e73de67ab62955b21744ae9617022b4f01f8a4f47ef9fa32",
+      "bytes": 78112
     },
     "sim/evidence/export_pairing.json": {
       "sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee",
@@ -22975,32 +22975,32 @@
       "bytes": 1056
     },
     "skill/README.md": {
-      "sha256": "f735939b8f55b00036de82a6800da2b12391690020ea1c73b929dd2acd108e95",
-      "bytes": 5839
+      "sha256": "d1d496a662b3b220ca07545cf8649a5396aedd727b772ee7f6eed72a66e1658b",
+      "bytes": 6366
     },
     "skill/format_check.json": {
-      "sha256": "4acdda4015176b68d2cc21f945912bbec0ef61c1370288c99b2dea6a2bcc7a98",
-      "bytes": 1066
+      "sha256": "23b4159a8c7bc4205ac9706388dc4fb900b337d5a5f110f8d4a00e835342417a",
+      "bytes": 1087
     },
     "skill/inventory.json": {
-      "sha256": "94a3b593c3c9232022d186064bcd4c8accaeb5cfbe9cf141d429a1b8960558cc",
-      "bytes": 16948
+      "sha256": "eb6ff913de31cfa9a523ab9b16eda9c15122b8a2acb23219ee1aa0a11655d338",
+      "bytes": 17287
     },
     "skill/pynq-debug-cards/LICENSE": {
       "sha256": "1927183113d3e8d83ee1face9fa7f2027b274ee0677a0831410e5017fcbdbce8",
       "bytes": 1056
     },
     "skill/pynq-debug-cards/README.md": {
-      "sha256": "d110df729aaad36c274d86aab196f5ec7603eff88df81068d2d407a1247d9470",
-      "bytes": 2229
+      "sha256": "915b714c571e69776b593950c7d7319d426ba05c464e74cf85f21b1fa328ff16",
+      "bytes": 2711
     },
     "skill/pynq-debug-cards/SKILL.md": {
-      "sha256": "6dd1591d0004837112642b2f4b1395e86e034d66149cc9da5fab704cc913ce64",
-      "bytes": 1826
+      "sha256": "1423db405875f9e43460051f4e96cb1e49be265754242421237dd1dc290a2e05",
+      "bytes": 1992
     },
     "skill/pynq-debug-cards/origins.json": {
-      "sha256": "5d548d263a227090354a9a314c6ff7a42995f23ab24b87dc8db9695f60cfc2a7",
-      "bytes": 9382
+      "sha256": "6c8b40d3060cef5863ceffdbf87b348e7d62f69d667872148362bfbc4c80f296",
+      "bytes": 10090
     },
     "skill/pynq-debug-cards/references/artifacts.md": {
       "sha256": "71ad3a7d835d871d9d0be6200a9a1ed6d17f09636b30fc4cf0aaa67044c7ff46",
@@ -23013,6 +23013,10 @@
     "skill/pynq-debug-cards/references/input.md": {
       "sha256": "6a5a6f72b8c85a54624d98b75a209546638eef481b48f3909d98f7ec1a668846",
       "bytes": 1619
+    },
+    "skill/pynq-debug-cards/references/ross_workflow.md": {
+      "sha256": "68ca88a948fa97f0bf863cacf9d1e7b5195868cc2d55055b370e8926b9cc9e32",
+      "bytes": 7921
     },
     "skill/pynq-debug-cards/references/startup.md": {
       "sha256": "58d878f090565b30bbf946a58922cc2bf8aea22408a435aca140c72f7257e729",
@@ -23053,6 +23057,10 @@
     "skill/pynq-debug-cards/sources/repeat_mmio.txt": {
       "sha256": "391257895887aefa3e758b51feabdd70a09d000b1fafd4e52634fc0aa0ed8efb",
       "bytes": 498
+    },
+    "skill/pynq-debug-cards/sources/ross_mcp_cases.json": {
+      "sha256": "4d5ae9dd6868c3ee9069fce5b2e33460b2a8729c315a085321020dd9cc0c8609",
+      "bytes": 8368
     },
     "skill/pynq-debug-cards/sources/studio_start.txt": {
       "sha256": "cca24a01fdf2ddbee16d30c83e1f3c0b00e66534ba835dfe785839cc4d24468a",
@@ -23107,8 +23115,8 @@
       "bytes": 17331
     },
     "skill/report.md": {
-      "sha256": "44f70af7c0e90343485e81397121d94e24c4609d96d5dc41e94ff83362abdcb5",
-      "bytes": 5491
+      "sha256": "87b0dc0de2fc25a4a48e3b9943817e6a8917a6aaa63fd7d48f3aff7d9d6ae193",
+      "bytes": 6252
     },
     "skill/validation/README.md": {
       "sha256": "47061c50ee52781e6dc6b4f6489f084e650ca20fb887ee13893d6f2039d6884a",
@@ -32111,8 +32119,8 @@
       "bytes": 3231
     },
     "tools/check_submission.py": {
-      "sha256": "f104d41b0f98e4eda7fe37cec497a8b17747396a8777b6db1c767e1f4b7765ea",
-      "bytes": 4825
+      "sha256": "27c3d1292a7ebf160944513ed5f7bf9cb6a3a37ee1fd2dc0f9992422d080ac8a",
+      "bytes": 4949
     },
     "tools/draw_gpu_buffer_timing.py": {
       "sha256": "16d354ec5ca7b81694c936fbe82be6919c1d7d9078dc0d53892db8445b525dbc",

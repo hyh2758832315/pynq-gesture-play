@@ -39,7 +39,7 @@ Studio 安装、离线测试与硬件重建命令见 [工程 README](project/REA
 
 ## Skill 与报告
 
-[PYNQ Skill](project/skill/README.md) 提供 PL 行为保持校验和 20 张诊断卡片，包含可运行示例、适用条件及验证结果。
+[PYNQ Skill](project/skill/README.md) 提供 PL 行为保持校验和 20 张诊断卡片，包含可运行示例、适用条件及验证结果；[ROSS 联合工作流](project/skill/pynq-debug-cards/references/ross_workflow.md)说明如何组织 MCP 任务、核对日志与验收设计结果。
 
 [设计报告与大模型协作记录](project/report/设计报告与大模型协作记录.md) · [关键协作对话](project/report/ai_collaboration.md) · [官方要求对照](project/report/submission_checklist.md) · [第三方及许可](project/report/licensing.md)
 
