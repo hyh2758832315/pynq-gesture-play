@@ -20,7 +20,7 @@
   "board/runtime/deployment_manifest.json": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\deployment_manifest.json",
     "sha256": "5efd63005162b7871fcce7c658b4a28b16f6002a567000f7513112c15d96ed8b",
-    "current_sha256": "77e083bddf389581a3321c56af125aaf7690e37e95e7c34b97001e5c0d88d06a",
+    "current_sha256": "968c6cbb4b2e1fd38a334a79321e7feabfadaca9546183025de20bbceab1c525",
     "changed": true
   },
   "board/runtime/install_button_games.py": {
@@ -1244,8 +1244,8 @@
   "board/runtime/hand-runtime/tools/power_feedback_readonly.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\hand-runtime\\tools\\power_feedback_readonly.py",
     "sha256": "d5330ccb373b325f6f4d4afb30111bf2d0cce4127d07d2a765c9930c73d6be39",
-    "current_sha256": "d5330ccb373b325f6f4d4afb30111bf2d0cce4127d07d2a765c9930c73d6be39",
-    "changed": false
+    "current_sha256": "cf74e0c83683a1e1edc8a0d6f7925267b8dd08de4f27c5f4f5e62f5c67c5ab27",
+    "changed": true
   },
   "board/runtime/hand-runtime/tools/profile_playback_offline.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\hand-runtime\\tools\\profile_playback_offline.py",
@@ -3198,8 +3198,8 @@
   "board/runtime/python/pynq_multimodal_game/hand_startup.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\python\\pynq_multimodal_game\\hand_startup.py",
     "sha256": "bcc3e2e544eb0c074c0deea256cd72afecd8413ea9cf1136c136b26958b4af0a",
-    "current_sha256": "bcc3e2e544eb0c074c0deea256cd72afecd8413ea9cf1136c136b26958b4af0a",
-    "changed": false
+    "current_sha256": "9399321711fb5723ac6f335c12a9e5f0d76afb6aad5fc83827db2596f637566d",
+    "changed": true
   },
   "board/runtime/python/pynq_multimodal_game/headless_runner.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\board_runtime\\python\\pynq_multimodal_game\\headless_runner.py",
@@ -13280,8 +13280,8 @@
   "src/development/subprojects/ps_ui_r23b2/python/pynq_multimodal_game/hand_startup.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\subprojects\\ps_ui_r23b2\\python\\pynq_multimodal_game\\hand_startup.py",
     "sha256": "bcc3e2e544eb0c074c0deea256cd72afecd8413ea9cf1136c136b26958b4af0a",
-    "current_sha256": "bcc3e2e544eb0c074c0deea256cd72afecd8413ea9cf1136c136b26958b4af0a",
-    "changed": false
+    "current_sha256": "9399321711fb5723ac6f335c12a9e5f0d76afb6aad5fc83827db2596f637566d",
+    "changed": true
   },
   "src/development/subprojects/ps_ui_r23b2/python/pynq_multimodal_game/headless_runner.py": {
     "source": "build\\v3-release-repo\\releases\\v3.0\\source\\subprojects\\ps_ui_r23b2\\python\\pynq_multimodal_game\\headless_runner.py",

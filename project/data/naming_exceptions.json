@@ -1,5 +1,8 @@
 {
-  "non_english_or_special_paths": [],
+  "non_english_or_special_paths": [
+    "project/report/PYNQ的多模态GPU渲染游戏技术报告.pdf",
+    "project/report/设计报告与大模型协作记录.md"
+  ],
   "case_sensitive_tool_and_standard_paths": [
     "LICENSE",
     "README.md",
@@ -196,6 +199,7 @@
     "project/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/.Xil/c6v_wrapper_propImpl.xdc",
     "project/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/ISEWrap.js",
     "project/build/hardware/c6_latency/c6_latency.runs/synth_button_r23/ISEWrap.sh",
+    "project/report/PYNQ的多模态GPU渲染游戏技术报告.pdf",
     "project/report/figures/gpu_buffer_timing_handoff/FILE_MANIFEST.json",
     "project/report/figures/gpu_buffer_timing_handoff/SOURCE_INDEX.json",
     "project/report/figures/gpu_buffer_timing_handoff/START_HERE.md",
@@ -324,5 +328,5 @@
     "project/src/studio/python/pynq_multimodal_game/_vendor/voice_rule_cooperative_20261012/RULE_SESSION_README.md",
     "project/src/studio/python/pynq_multimodal_game/_vendor/voice_rule_cooperative_20261012/STARTUP_RULES_README.md"
   ],
-  "note": "README.md, SKILL.md, LICENSE are conventional entrypoints; vendor and Vivado names retain their references. Strict lowercase rule requires organizer confirmation."
+  "note": "README.md, SKILL.md and LICENSE retain conventional names; vendor and Vivado references retain their original case. The consolidated report and supplied PDF retain their requested Chinese display filenames. Build and executable entry paths are unchanged."
 }

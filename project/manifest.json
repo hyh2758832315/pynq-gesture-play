@@ -6,7 +6,7 @@
     "cache_pipeline_pair"
   ],
   "default_gpu_profile": "cache_pipeline_pair",
-  "publication_date": "2026-11-04",
+  "publication_date": "2026-11-05",
   "submission_checklist": "report/submission_checklist.md",
   "deployment_checklist": "report/missing_items.md",
   "skill_delivery": {
@@ -31,12 +31,12 @@
       "bytes": 1056
     },
     "README.md": {
-      "sha256": "3bb6526590bbf33d28a731b23887bdaf31359950e01d1f7dd532d2c53f229f30",
-      "bytes": 8647
+      "sha256": "44208d0f581b2bf028f3a77dc262094be5a611f2aee0377e73471da11ba7b710",
+      "bytes": 8810
     },
     "board/README.md": {
-      "sha256": "328b3d6b47bdbb84edc6f30251d038d2e8d3c9840159b88478ccf55971401ca4",
-      "bytes": 2376
+      "sha256": "69d55f821d739a5ff2c58eaaf39d67742dc7b44df3da150897e1c7aa3487f0e9",
+      "bytes": 9877
     },
     "board/runtime/board/pynq_z2/c2_headless.py": {
       "sha256": "c11e18ea218ed2c5e122d8b4af6f014fd2215d038fe2149d0c92c04e004874d7",
@@ -551,7 +551,7 @@
       "bytes": 713
     },
     "board/runtime/deployment_manifest.json": {
-      "sha256": "18acc3445e9acfde4189ebe75d15b7bd0b7dedf7f55a6a6d35be48e09c31ae81",
+      "sha256": "968c6cbb4b2e1fd38a334a79321e7feabfadaca9546183025de20bbceab1c525",
       "bytes": 86888
     },
     "board/runtime/docs/HANDOFF.md": {
@@ -843,7 +843,7 @@
       "bytes": 3444
     },
     "board/runtime/hand-runtime/tools/power_feedback_readonly.py": {
-      "sha256": "d5330ccb373b325f6f4d4afb30111bf2d0cce4127d07d2a765c9930c73d6be39",
+      "sha256": "cf74e0c83683a1e1edc8a0d6f7925267b8dd08de4f27c5f4f5e62f5c67c5ab27",
       "bytes": 6418
     },
     "board/runtime/hand-runtime/tools/profile_playback_offline.py": {
@@ -2399,7 +2399,7 @@
       "bytes": 7339
     },
     "board/runtime/python/pynq_multimodal_game/hand_startup.py": {
-      "sha256": "e354ac69f0938eb36da1057bfe50686eda7976aa9c67a81c7678e34a927b2682",
+      "sha256": "9399321711fb5723ac6f335c12a9e5f0d76afb6aad5fc83827db2596f637566d",
       "bytes": 4429
     },
     "board/runtime/python/pynq_multimodal_game/headless_runner.py": {
@@ -2653,6 +2653,10 @@
     "board/runtime/tools/unified_input_validation.py": {
       "sha256": "5ee67168bb0ea159d9638ad31fe5496908090b94d3ae842e1f71b2aef86071f8",
       "bytes": 13657
+    },
+    "board/voice-view-shell.service": {
+      "sha256": "74ee0ab7c0aa276746a746ff525887a4faee1f69dba7009360205f307e419d50",
+      "bytes": 469
     },
     "build/hardware/c6_latency/archive_project_summary.txt": {
       "sha256": "47358fafb31f51390685eec549fb8f4caf69aa89a8a15f62a61c2c814b4ec602",
@@ -20327,8 +20331,8 @@
       "bytes": 185021
     },
     "data/naming_exceptions.json": {
-      "sha256": "ada03aed4fca97476b6f0e874b6bfafc9316bc93f2b9aa241dd19315ddbe0523",
-      "bytes": 32855
+      "sha256": "c96e47d5930af627190e0321e00e31acc45e03d7287dec7bf696676f12d46eaf",
+      "bytes": 33483
     },
     "data/normalization_record.json": {
       "sha256": "01d454ea20e7f093b2011474a8bbbae0456e1b9f063f28b1c9da439a5f1b5b1a",
@@ -20771,16 +20775,20 @@
       "bytes": 726
     },
     "data/source_origins.json": {
-      "sha256": "dfe3863a8d2503f4e50b22013ce20588770f5e8970bb8871c10661ee490a9d2a",
-      "bytes": 1226917
+      "sha256": "51f5419f89b814a88e5215a8cb14ec7aecbd88b33d1d1eb2d0f7deb0db8a3968",
+      "bytes": 1226914
+    },
+    "report/PYNQ的多模态GPU渲染游戏技术报告.pdf": {
+      "sha256": "6015d536c6b0c6b28c458b641cdca3717a57a871e3dbf4a9b0cf5384a80b7e06",
+      "bytes": 2105701
     },
     "report/ai_collaboration.md": {
       "sha256": "5bf8d542559176be83cef66ae9bda5eecf80d82f0978a5b383c09b6de139d98d",
       "bytes": 6534
     },
     "report/design_report.md": {
-      "sha256": "d59cb8fdd65fb17bf3d6028e28b4f8f77547f80f724061c89bb1e4d450a0b1a1",
-      "bytes": 11624
+      "sha256": "cff5cfcce3bbeecdabec4500a6881b4761da22d5b09e2fcf56663480a3738ba7",
+      "bytes": 11753
     },
     "report/figures/gpu_buffer_timing_handoff/FILE_MANIFEST.json": {
       "sha256": "1e2c933a7335ce87e1aca99b73e67481edd0f49893b4be31bb3fdccdf059cf9e",
@@ -22507,8 +22515,8 @@
       "bytes": 5578
     },
     "report/report_materials.md": {
-      "sha256": "3e4bfa5fcd75c4ab8628d86ea5e8d78d6e56240edbdb2d01efaca55471f7b786",
-      "bytes": 2323
+      "sha256": "2df3d0b507b3d436127b408f3cfc29be2951551903a7971958d5626226a04b72",
+      "bytes": 2701
     },
     "report/requirements/open_topic_guide.md": {
       "sha256": "bd57e4f8b911bd7b872eab51000576512b542410a7eca6166c31d319de0d5678",
@@ -22531,8 +22539,8 @@
       "bytes": 966929
     },
     "report/submission_checklist.md": {
-      "sha256": "ec050819b2b3854420eda308ceb216a85cf87b041e464e8e41c43aef9b4a2aec",
-      "bytes": 3160
+      "sha256": "a00cd8afbbf11c9578e887523da0017442aa69b5cf0a7d56444be22e6f53b5a7",
+      "bytes": 3501
     },
     "report/templates/official_report_template.docx": {
       "sha256": "4c70c9294d3b302c8035547bf692cad8a4a815f3f17c6c39ddf1c9ded6c841b7",
@@ -22543,8 +22551,12 @@
       "bytes": 407
     },
     "report/validation.md": {
-      "sha256": "b14c2a325b3d45939e594346973b7368b3e02b4a58cd3878f057bb0ac17f0035",
-      "bytes": 2750
+      "sha256": "ff669fe826145ac7c61ea8d84d336d9d1eb1f51ba8b28a4ea7b9eb32ca1bc5ef",
+      "bytes": 3441
+    },
+    "report/设计报告与大模型协作记录.md": {
+      "sha256": "0e5470ab157509cfe0c1d0d1238c484c27c0b810a501a00718668f45150d1740",
+      "bytes": 70418
     },
     "sim/evidence/export_pairing.json": {
       "sha256": "d3c6475cbe84ab097584295106193459046f076983d73e6e96e51724d39cecee",
@@ -23929,6 +23941,10 @@
     "src/development/board/pynq_z2/scripts/voice_xrt_sync.cpp": {
       "sha256": "749283cac0029e6391995394f4ee20bb64dca764c62db42fb84504d467a3acfe",
       "bytes": 1342
+    },
+    "src/development/board/pynq_z2/studio_autostart.conf": {
+      "sha256": "b81fa469f38bd1f11249579bad22aae0217f4891aef0796285637d034a6b0b4b",
+      "bytes": 392
     },
     "src/development/board/pynq_z2/verify_c0.py": {
       "sha256": "4ec4d944f920a5cfc4ed29ab06dd66c9795a22a72e1c0e59624297e2a5dfc42f",
@@ -28323,7 +28339,7 @@
       "bytes": 7339
     },
     "src/development/subprojects/ps_ui_r23b2/python/pynq_multimodal_game/hand_startup.py": {
-      "sha256": "e354ac69f0938eb36da1057bfe50686eda7976aa9c67a81c7678e34a927b2682",
+      "sha256": "9399321711fb5723ac6f335c12a9e5f0d76afb6aad5fc83827db2596f637566d",
       "bytes": 4429
     },
     "src/development/subprojects/ps_ui_r23b2/python/pynq_multimodal_game/headless_runner.py": {
@@ -32091,12 +32107,12 @@
       "bytes": 4215
     },
     "tools/check_runtime.py": {
-      "sha256": "f9b477832e2e02bebe2b2e17d0d5f872ec0b05ececf2d598254cf4493843f06c",
-      "bytes": 1991
+      "sha256": "ae139e3885e31e5564892a766a290cd61f57b29340bfb772e6a65aca9815b82e",
+      "bytes": 3231
     },
     "tools/check_submission.py": {
-      "sha256": "936b74e193cdb4e48646592a4944ac323e05609f5faecbd2f7082ef0519ac825",
-      "bytes": 4441
+      "sha256": "f104d41b0f98e4eda7fe37cec497a8b17747396a8777b6db1c767e1f4b7765ea",
+      "bytes": 4825
     },
     "tools/draw_gpu_buffer_timing.py": {
       "sha256": "16d354ec5ca7b81694c936fbe82be6919c1d7d9078dc0d53892db8445b525dbc",

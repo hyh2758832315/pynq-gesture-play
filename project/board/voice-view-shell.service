@@ -1,0 +1,19 @@
+[Unit]
+Description=PYNQ Studio installed system
+Wants=network-online.target
+After=network-online.target bootpy.service clear_pl_statefile.service
+
+[Service]
+Type=simple
+User=root
+Environment=XILINX_XRT=/usr
+Environment=PYTHONPATH=
+ExecStart=/usr/local/share/pynq-venv/bin/python -B -u /home/xilinx/voice-view-game/.studio-system/boot/system_autostart.py
+Restart=no
+KillSignal=SIGINT
+KillMode=mixed
+TimeoutStopSec=90
+SendSIGKILL=no
+
+[Install]
+WantedBy=multi-user.target

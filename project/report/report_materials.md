@@ -1,10 +1,11 @@
 # 技术报告、数据与图稿入口
 
-报告正文见 [系统设计](design_report.md)，下表提供接口、性能、数据和可编辑图稿。[官方 Word 模板](templates/official_report_template.docx)提供报告排版格式。
+完整正文见 [设计报告与大模型协作记录](设计报告与大模型协作记录.md)，统一给出设计、数据、协作、Skill 与复现步骤。下表提供专题材料和可编辑图稿。[官方 Word 模板](templates/official_report_template.docx)提供报告排版格式。
 
 | 内容 | 材料 |
 | --- | --- |
-| 系统背景、PL/PS 分工及复现步骤 | [设计报告](design_report.md)、[系统架构报告](reference_v2_design/gesture_play_v2_junior.pdf) |
+| 设计与协作完整正文 | [设计报告与大模型协作记录](设计报告与大模型协作记录.md)，含当前 GPU 三配置对照和完整复现步骤 |
+| 系统专题材料 | [系统概要](design_report.md)、[架构专题 PDF](reference_v2_design/gesture_play_v2_junior.pdf)、[技术报告 PDF](PYNQ的多模态GPU渲染游戏技术报告.pdf)；PDF 对应各自所载的配置和实验条件 |
 | 当前 GPU 三配置优化、资源与板测 | [二维 GPU 优化与验证](gpu_optimization.md)、[逐帧周期对比](../data/gpu_optimization/measurements.csv)、[完整实现资源](../data/gpu_optimization/resources.csv) |
 | 阶段性能与机制对照 | [2026-10 性能报告](reference_v2_performance/performance_resource_report.pdf)、[GPU 阶段实验报告](gpu_ai_preparation/gpu_optimization_report.pdf)，保留各阶段输入与测量条件 |
 | PL/PS 完整系统图 | [中英文可编辑母图](figures/pl_ps_v3/README.md) |

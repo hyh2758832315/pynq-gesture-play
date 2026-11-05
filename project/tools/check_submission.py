@@ -29,6 +29,9 @@ def main():
         'report/templates/official_report_template.docx',
         'report/requirements/recheck_20261104.json', 'data/report_metrics.csv',
         'report/ai_collaboration.md', 'report/gpu_optimization.md',
+        'report/设计报告与大模型协作记录.md',
+        'board/voice-view-shell.service',
+        'src/development/board/pynq_z2/studio_autostart.conf',
         'build/scripts/apply_gpu_profile.tcl', 'tools/prepare_runtime.py',
         'data/gpu_optimization/measurements.csv', 'data/gpu_optimization/resources.csv',
         'sim/gpu_optimization/run_compare.tcl',
@@ -54,7 +57,10 @@ def main():
 
     docs=[ROOT/'README.md', *(ROOT/'skill').rglob('*.md')]
     docs += [ROOT/'report'/n for n in ('submission_checklist.md','report_materials.md',
-                                     'licensing.md','publication_trace.md','missing_items.md')]
+                                     'licensing.md','publication_trace.md','missing_items.md',
+                                     '设计报告与大模型协作记录.md','design_report.md',
+                                     'ai_collaboration.md','gpu_optimization.md')]
+    docs.append(ROOT/'board/README.md')
     links=0
     for doc in docs:
         for match in re.finditer(r'(?<!!)\[[^\]\n]+\]\(([^)\n]+)\)', doc.read_text('utf-8')):

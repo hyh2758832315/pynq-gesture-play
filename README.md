@@ -41,7 +41,7 @@ Studio 安装、离线测试与硬件重建命令见 [工程 README](project/REA
 
 [PYNQ Skill](project/skill/README.md) 提供 PL 行为保持校验和 20 张诊断卡片，包含可运行示例、适用条件及验证结果。
 
-[设计报告](project/report/design_report.md) · [大模型协作](project/report/ai_collaboration.md) · [官方要求对照](project/report/submission_checklist.md) · [第三方及许可](project/report/licensing.md)
+[设计报告与大模型协作记录](project/report/设计报告与大模型协作记录.md) · [关键协作对话](project/report/ai_collaboration.md) · [官方要求对照](project/report/submission_checklist.md) · [第三方及许可](project/report/licensing.md)
 
 项目自有源码、文档及自制测试动画采用 [MIT](LICENSE)，第三方范围见 [许可说明](THIRD_PARTY_NOTICES.md)。
 

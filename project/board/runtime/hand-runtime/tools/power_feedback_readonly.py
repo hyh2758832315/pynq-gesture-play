@@ -20,7 +20,7 @@ PINS = {
     "src/pynq_usb_hand/probe.py": "c7a349070d83001fde1c6c60859a38c93a2b5515ab634eeed8c8c89bdda3882c",
     "src/pynq_usb_hand/transport.py": "81460ff83a05ba31f2d5657b05b0810992b3fd6dc2c772305ea7c114b781bf16",
     "src/pynq_usb_hand/assets.py": "6f9242f7354746e51ff2ffe019b0c51189cdf2b4111113f9ecc0199041fec9a7",
-    "frozen_manifest.json": "5bbe20b6f9ce099eda45026db7e9965defa700d466a83d21e34403bbbd136128",
+    "frozen_manifest.json": "8d14e83d5493653d73525c5820cc779eadfea324be5ced2c7fc8bb0301984c9b",
 }
 for relative, expected in PINS.items():
     if hashlib.sha256((ROOT / relative).read_bytes()).hexdigest() != expected:

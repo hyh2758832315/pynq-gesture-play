@@ -13,7 +13,7 @@ from .startup_checks import verify_hand_readonly_report
 
 
 EXPECTED_MOTOR_IDS = tuple(range(1, 18))
-FROZEN_MANIFEST_SHA256 = "5bbe20b6f9ce099eda45026db7e9965defa700d466a83d21e34403bbbd136128"
+FROZEN_MANIFEST_SHA256 = "8d14e83d5493653d73525c5820cc779eadfea324be5ced2c7fc8bb0301984c9b"
 READONLY_SOURCE_SHA256 = {
     "src/pynq_usb_hand/__init__.py": "3c6f4a858fe730ce1185288680ae07a2679d25a1e5a672b75189c7f3a0256c90",
     "src/pynq_usb_hand/probe.py": "c7a349070d83001fde1c6c60859a38c93a2b5515ab634eeed8c8c89bdda3882c",

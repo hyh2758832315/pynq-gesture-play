@@ -11,7 +11,7 @@
 | 可复现构建、实现报告 | build/scripts、build/hardware、build/reports |
 | 上板工程、脚本、实测 | board/runtime、sim/evidence/gpu_optimization；基线见 sim/evidence/v3_release |
 | 测试数据、参考结果 | data、report/reference_v2_performance/data，以及各游戏测试工程 |
-| 设计报告、协作记录 | report/design_report.md、report/ai_collaboration.md、两份 reference_v2 报告目录 |
+| 设计报告、协作记录 | [完整设计报告与大模型协作记录](report/设计报告与大模型协作记录.md)；各专题材料由正文引用 |
 | Skill | [skill/README.md](skill/README.md) |
 
 各复现入口均以本目录为基准。第三方源码及 Vivado 文件的约定大小写见 data/naming_exceptions.json。
@@ -92,7 +92,7 @@ RTL 可复现自检入口：`vivado -mode batch -source sim/run_frame_owner.tcl`
 
 ## 报告及许可
 
-[设计报告](report/design_report.md) 介绍系统设计与实现，优化数据保留测量版本与实验条件。项目自有源码与文档采用 [MIT](LICENSE)；第三方范围见 [许可说明](report/licensing.md)。工程验证范围见 [检查清单](report/missing_items.md)。
+[设计报告与大模型协作记录](report/设计报告与大模型协作记录.md)完整介绍选题、系统原理、软硬件接口、优化对照、真实协作与 Skill 提炼，并给出从环境准备到板端验收的复现命令。项目自有源码与文档采用 [MIT](LICENSE)；第三方范围见 [许可说明](report/licensing.md)。工程验证范围见 [检查清单](report/missing_items.md)。
 
 ## 提交材料
 
